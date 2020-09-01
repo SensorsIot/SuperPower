@@ -1,0 +1,102 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_02x20_Odd_Even J1
+U 1 1 5C3DC065
+P 6400 3600
+F 0 "J1" H 6450 2450 60  0000 C CNN
+F 1 "RPi_GPIO" H 6450 2350 60  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 7550 3600 60  0001 C CNN
+F 3 "" H 6400 3600 60  0000 C CNN
+	1    6400 3600
+	1    0    0    -1  
+$EndComp
+Text GLabel 6000 2800 0    50   Input ~ 0
+SDA
+Text GLabel 6000 2900 0    50   Input ~ 0
+SCL
+Wire Wire Line
+	6000 2800 6200 2800
+Wire Wire Line
+	6000 2900 6200 2900
+$Comp
+L power:+3.3V #PWR0106
+U 1 1 5C3DD62D
+P 5550 2600
+F 0 "#PWR0106" H 5550 2450 50  0001 C CNN
+F 1 "+3.3V" H 5565 2773 50  0000 C CNN
+F 2 "" H 5550 2600 50  0001 C CNN
+F 3 "" H 5550 2600 50  0001 C CNN
+	1    5550 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 2700 5550 2700
+Wire Wire Line
+	5550 2700 5550 2600
+$Comp
+L power:GND #PWR0108
+U 1 1 5C3DDE65
+P 5350 3250
+F 0 "#PWR0108" H 5350 3000 50  0001 C CNN
+F 1 "GND" H 5355 3077 50  0000 C CNN
+F 2 "" H 5350 3250 50  0001 C CNN
+F 3 "" H 5350 3250 50  0001 C CNN
+	1    5350 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 3100 5350 3100
+Wire Wire Line
+	5350 3100 5350 3250
+$Comp
+L power:GND #PWR0107
+U 1 1 5CDAA9DB
+P 5900 3950
+F 0 "#PWR0107" H 5900 3700 50  0001 C CNN
+F 1 "GND" H 5905 3777 50  0000 C CNN
+F 2 "" H 5900 3950 50  0001 C CNN
+F 3 "" H 5900 3950 50  0001 C CNN
+	1    5900 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 3900 5900 3900
+Wire Wire Line
+	5900 3900 5900 3950
+$Comp
+L power:+5V #PWR0114
+U 1 1 5CE134C5
+P 6850 2500
+F 0 "#PWR0114" H 6850 2350 50  0001 C CNN
+F 1 "+5V" H 6865 2673 50  0000 C CNN
+F 2 "" H 6850 2500 50  0001 C CNN
+F 3 "" H 6850 2500 50  0001 C CNN
+	1    6850 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 2500 6850 2700
+Wire Wire Line
+	6850 2800 6700 2800
+Wire Wire Line
+	6700 2700 6850 2700
+Connection ~ 6850 2700
+Wire Wire Line
+	6850 2700 6850 2800
+Wire Wire Line
+	6200 4300 6150 4300
+$EndSCHEMATC
