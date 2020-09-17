@@ -23,4 +23,8 @@ Text HLabel 1300 1550 0    50   Output ~ 0
 VOUT
 Text HLabel 1300 1700 0    50   BiDi ~ 0
 VBAT
+Text HLabel 1300 1900 0    50   Input ~ 0
+SCL
+Text HLabel 1300 2000 0    50   BiDi ~ 0
+SDA
 $EndSCHEMATC

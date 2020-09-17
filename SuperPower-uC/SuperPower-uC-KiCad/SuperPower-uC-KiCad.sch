@@ -189,4 +189,8 @@ Wire Wire Line
 	4700 5450 4700 5000
 Wire Wire Line
 	4700 5000 4300 5000
+Text Notes 5050 3150 0    50   ~ 0
+Permanent Power Jumper
+Text Notes 7400 2550 0    50   ~ 0
+FDTI
 $EndSCHEMATC
