@@ -17,4 +17,8 @@ Text HLabel 1600 1350 0    50   Input ~ 0
 SCL
 Text HLabel 1600 1500 0    50   BiDi ~ 0
 SDA
+Text HLabel 1600 1800 0    50   Input ~ 0
+VIN
+Text HLabel 1600 1950 0    50   Output ~ 0
+VOUT
 $EndSCHEMATC

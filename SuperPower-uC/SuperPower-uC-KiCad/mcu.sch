@@ -15,4 +15,12 @@ Comment4 ""
 $EndDescr
 Text HLabel 1300 1000 0    50   Input ~ 0
 3v3_MCU
+Text HLabel 1300 1150 0    50   BiDi ~ 0
+SDA
+Text HLabel 1300 1300 0    50   Input ~ 0
+SCL
+Text HLabel 1300 1550 0    50   Input ~ 0
+D+
+Text HLabel 1300 1650 0    50   Input ~ 0
+D-
 $EndSCHEMATC
