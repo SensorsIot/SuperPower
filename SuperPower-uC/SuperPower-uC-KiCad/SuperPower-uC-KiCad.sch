@@ -193,7 +193,7 @@ Wire Wire Line
 Text Notes 5050 3150 0    50   ~ 0
 Permanent Power Jumper
 Text Notes 7400 2550 0    50   ~ 0
-FDTI
+FTDI
 Text Notes 5350 4650 0    50   ~ 0
 Bypass Jumper
 $EndSCHEMATC
