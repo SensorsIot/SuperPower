@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:SuperPower-uC-KiCad-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -193,4 +194,6 @@ Text Notes 5050 3150 0    50   ~ 0
 Permanent Power Jumper
 Text Notes 7400 2550 0    50   ~ 0
 FDTI
+Text Notes 5350 4650 0    50   ~ 0
+Bypass Jumper
 $EndSCHEMATC

@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:SuperPower-uC-KiCad-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -21,4 +22,66 @@ Text HLabel 1600 1800 0    50   Input ~ 0
 VIN
 Text HLabel 1600 1950 0    50   Output ~ 0
 VOUT
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5F67167D
+P 2300 1300
+F 0 "TP?" H 2358 1418 50  0000 L CNN
+F 1 "TestPoint" H 2358 1327 50  0000 L CNN
+F 2 "" H 2500 1300 50  0001 C CNN
+F 3 "~" H 2500 1300 50  0001 C CNN
+	1    2300 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5F672560
+P 2300 1550
+F 0 "TP?" H 2358 1668 50  0000 L CNN
+F 1 "TestPoint" H 2358 1577 50  0000 L CNN
+F 2 "" H 2500 1550 50  0001 C CNN
+F 3 "~" H 2500 1550 50  0001 C CNN
+	1    2300 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5F672853
+P 2300 1800
+F 0 "TP?" H 2358 1918 50  0000 L CNN
+F 1 "TestPoint" H 2358 1827 50  0000 L CNN
+F 2 "" H 2500 1800 50  0001 C CNN
+F 3 "~" H 2500 1800 50  0001 C CNN
+	1    2300 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5F672BEE
+P 2300 2050
+F 0 "TP?" H 2358 2168 50  0000 L CNN
+F 1 "TestPoint" H 2358 2077 50  0000 L CNN
+F 2 "" H 2500 2050 50  0001 C CNN
+F 3 "~" H 2500 2050 50  0001 C CNN
+	1    2300 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 1350 2300 1350
+Wire Wire Line
+	2300 1350 2300 1300
+Wire Wire Line
+	1600 1500 2100 1500
+Wire Wire Line
+	2100 1500 2100 1550
+Wire Wire Line
+	2100 1550 2300 1550
+Wire Wire Line
+	1600 1800 2300 1800
+Wire Wire Line
+	1600 1950 2050 1950
+Wire Wire Line
+	2050 1950 2050 2050
+Wire Wire Line
+	2050 2050 2300 2050
 $EndSCHEMATC
