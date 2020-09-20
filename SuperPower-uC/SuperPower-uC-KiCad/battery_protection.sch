@@ -5,11 +5,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 7
-Title ""
-Date ""
-Rev ""
+Title "SuperPower-uC"
+Date "2020-09-20"
+Rev "0.1"
 Comp ""
-Comment1 ""
+Comment1 "Licence: CERN-OHL-W"
 Comment2 ""
 Comment3 ""
 Comment4 ""
