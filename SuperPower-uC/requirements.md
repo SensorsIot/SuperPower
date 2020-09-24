@@ -1,4 +1,6 @@
 # Filtered Requirements
+[Requirements ESP32 Boards shared spreadsheet](https://docs.google.com/spreadsheets/d/1Awvs3CumJ9qQSrG_uEvt4s6nZwliIjnMdfPibDWA3kU/edit#gid=1880015614&fvid=1986096210)
+
 |  | Requirement | Why ? | Discord username | Category | status |
 |--|-------------|-------|------------------|----------|--------|
 | 1  | Support different ESP modules                         | ESP32 WROOM, WROVER, S2                                                                                                                                                                                                                                                                                                                                          | wassfila       | uC           |  |
