@@ -3,13 +3,11 @@ The Super Power uC Project is the SuperPower for microcontrollers. A ultra low p
 USB and Solar charging for any type of Microcontroller (3.3v). 
 
 ### Super Power Variants
-#### SuperPower UCOV ([u]Micro[C]ontroller [O]riginal [V]erison)
-UCOV is the original version of the SuperPower Board for microcontrollers which consists of an ESP32 as microcontroller.
-#### SuperPower LOCO ([Lo]w [Co]st)
-LOCO is the low cost variant of the UCOV Board.
-#### SuperPower NOUCO ([No] [u]Micro[Co]ntroller)
-NOUCO is the UCOV without a microcontroller but output pins to use any microcontroller. 
-(NOTE: using the devault DEvBoards for various microcontroller often don't use low power regulators and LEDs which draw most of the current)
+#### Original Variant
+The original version of the SuperPower Board consists of an ESP32 as microcontroller and it tries to fulfill most of the requirements.
+We tried to find the best components to fit the requirements with ultra low power. 
+#### Low Cost Variant
+The low cost variant is a variant with different and cheap components. It does not fulfill the requirements 100% but still is low power.
 
 # How we work
 
