@@ -2,10 +2,16 @@
 The Super Power uC Project is the SuperPower for microcontrollers. A ultra low power charging device for
 USB and Solar charging for any type of Microcontroller (3.3v). 
 
+### Requirements
+With the help of a lot participants we collected a list of requirements for this project. You can find them [here](/SuperPower-uC/requirements.md)
+
 ### Super Power Variants
 #### Original Variant [(Link)](/SuperPower-uC/original/)
 The original version of the SuperPower Board consists of an ESP32 as microcontroller and it tries to fulfill most of the requirements.
 We tried to find the best components to fit the requirements with ultra low power. 
+
+[BOM](/SuperPower-uC/original/bom.md)
+
 #### Low Cost Variant [(Link)](/SuperPower-uC/lowcost/)
 The low cost variant is a variant with different and cheap components. It does not fulfill the requirements 100% but still is low power.
 
