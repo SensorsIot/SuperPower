@@ -43,10 +43,17 @@ Wire Wire Line
 	7700 1100 7600 1100
 Connection ~ 7600 1100
 $Comp
+<<<<<<< HEAD
 L power:GND #PWR0101
 U 1 1 5F6B22FA
 P 7750 4500
 F 0 "#PWR0101" H 7750 4250 50  0001 C CNN
+=======
+L power:GND #PWR02
+U 1 1 5F6B22FA
+P 7750 4500
+F 0 "#PWR02" H 7750 4250 50  0001 C CNN
+>>>>>>> 33dbcd2... Adding library and slightly modified sheets.
 F 1 "GND" H 7755 4327 50  0000 C CNN
 F 2 "" H 7750 4500 50  0001 C CNN
 F 3 "" H 7750 4500 50  0001 C CNN
