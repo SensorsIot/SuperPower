@@ -75,17 +75,6 @@ F 3 "" H 6400 2750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3650 3200 3650 3350
-$Comp
-L Transistor_FET:TSM2301ACX Q?
-U 1 1 5F716125
-P 6850 3600
-F 0 "Q?" V 7099 3600 50  0000 C CNN
-F 1 "TSM2301ACX" V 6750 3850 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 7050 3525 50  0001 L CIN
-F 3 "https://www.taiwansemi.com/products/datasheet/TSM2301A_C15.pdf" H 6850 3600 50  0001 L CNN
-	1    6850 3600
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	6850 3350 6850 3400
 Wire Wire Line
@@ -223,5 +212,16 @@ F 2 "" H 6850 4200 50  0001 C CNN
 F 3 "~" H 6850 4200 50  0001 C CNN
 	1    6850 4200
 	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PMOS_GDS Q?
+U 1 1 5F71103F
+P 6850 3600
+F 0 "Q?" V 7099 3600 50  0000 C CNN
+F 1 "Q_PMOS_GDS" V 7190 3600 50  0000 C CNN
+F 2 "" H 7050 3700 50  0001 C CNN
+F 3 "~" H 6850 3600 50  0001 C CNN
+	1    6850 3600
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
