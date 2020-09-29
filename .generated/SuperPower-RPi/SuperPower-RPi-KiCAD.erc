@@ -1,0 +1,23 @@
+ERC report (Tue Sep 29 22:05:02 2020, Encoding UTF8 )
+
+***** Sheet /
+
+***** Sheet /Pi-Boost-Conv/
+
+***** Sheet /Pi-Output-Protection/
+
+***** Sheet /Pi-Connection/
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(195.58 mm, 43.18 mm): Pin 4 (Power input) of component J1 is not driven (Net 3).
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(198.12 mm, 109.22 mm): Pin 25 (Power input) of component J1 is not driven (Net 16).
+
+***** Sheet /Pi-Input-Source/
+
+***** Sheet /Pi-MCU/
+
+***** Sheet /Pi-Batt/
+
+***** Sheet /Pi-Charger/
+
+ ** ERC messages: 2  Errors 0  Warnings 2
