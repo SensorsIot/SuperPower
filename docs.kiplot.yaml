@@ -1,0 +1,31 @@
+kiplot:
+  version: 1
+
+preflight:
+  run_erc: true
+  run_drc: true
+  check_zone_fills: true
+  ignore_unconnected: false
+
+outputs:
+  - name: 'print schema'
+    comment: "Print schematic (PDF)"
+    type: pdf_sch_print
+    dir: docs
+    options:
+      output: '%p-Schematic.%x'
+
+  - name: 'print schema'
+    comment: "Print schematic (SVG)"
+    type: svg_sch_print
+    dir: docs
+    options:
+      output: '%p-Schematic.%x'
+
+#  - name: 'print board'
+#    comment: "Print board (PDF)"
+#    type: pdf_pcb_print
+#    layers: 'all'
+#    dir: docs
+#    options:
+#      output: '%p-Board.%x'
