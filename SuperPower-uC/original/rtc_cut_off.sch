@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:SuperPower-uC-KiCad-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 7
+Sheet 1 1
 Title "SuperPower-uC"
 Date "2020-09-20"
 Rev "0.1"
@@ -34,52 +33,21 @@ F 3 "~" H 6100 3150 50  0001 C CNN
 	1    6100 3150
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6700 3050 6550 3050
 $Comp
 L power:GND #PWR0101
 U 1 1 5F71610D
-P 6250 3850
-F 0 "#PWR0101" H 6250 3600 50  0001 C CNN
-F 1 "GND" H 6255 3677 50  0000 C CNN
-F 2 "" H 6250 3850 50  0001 C CNN
-F 3 "" H 6250 3850 50  0001 C CNN
-	1    6250 3850
+P 6300 3850
+F 0 "#PWR0101" H 6300 3600 50  0001 C CNN
+F 1 "GND" H 6305 3677 50  0000 C CNN
+F 2 "" H 6300 3850 50  0001 C CNN
+F 3 "" H 6300 3850 50  0001 C CNN
+	1    6300 3850
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C1
-U 1 1 5F716113
-P 6400 2900
-F 0 "C1" H 6515 2946 50  0000 L CNN
-F 1 "100nF" H 6515 2855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6438 2750 50  0001 C CNN
-F 3 "~" H 6400 2900 50  0001 C CNN
-	1    6400 2900
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
-	5900 3850 6250 3850
-Connection ~ 6400 3050
-$Comp
-L power:GND #PWR0102
-U 1 1 5F71611C
-P 6400 2750
-F 0 "#PWR0102" H 6400 2500 50  0001 C CNN
-F 1 "GND" H 6405 2577 50  0000 C CNN
-F 2 "" H 6400 2750 50  0001 C CNN
-F 3 "" H 6400 2750 50  0001 C CNN
-	1    6400 2750
-	-1   0    0    1   
-$EndComp
+	5900 3850 6300 3850
 Wire Wire Line
 	3650 3200 3650 3350
-Wire Wire Line
-	6850 3350 6850 3400
-Wire Wire Line
-	6650 3700 6650 4200
-Wire Wire Line
-	7050 3700 7050 4200
 $Comp
 L Device:R R3
 U 1 1 5F716136
@@ -92,44 +60,31 @@ F 3 "~" H 6550 3200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6400 3150 6400 3050
-Wire Wire Line
 	4250 3650 4500 3650
 $Comp
 L power:GND #PWR0103
 U 1 1 5F716148
-P 4400 2750
-F 0 "#PWR0103" H 4400 2500 50  0001 C CNN
-F 1 "GND" H 4405 2577 50  0000 C CNN
-F 2 "" H 4400 2750 50  0001 C CNN
-F 3 "" H 4400 2750 50  0001 C CNN
-	1    4400 2750
-	-1   0    0    1   
+P 3650 3650
+F 0 "#PWR0103" H 3650 3400 50  0001 C CNN
+F 1 "GND" H 3655 3477 50  0000 C CNN
+F 2 "" H 3650 3650 50  0001 C CNN
+F 3 "" H 3650 3650 50  0001 C CNN
+	1    3650 3650
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R1
 U 1 1 5F716154
-P 4400 3000
-F 0 "R1" H 4600 2950 50  0000 R CNN
-F 1 "10k" H 4650 3050 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4330 3000 50  0001 C CNN
-F 3 "~" H 4400 3000 50  0001 C CNN
-	1    4400 3000
+P 3650 3500
+F 0 "R1" H 3850 3450 50  0000 R CNN
+F 1 "10k" H 3900 3550 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3580 3500 50  0001 C CNN
+F 3 "~" H 3650 3500 50  0001 C CNN
+	1    3650 3500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4400 2750 4400 2850
-Wire Wire Line
-	4400 3150 4400 3350
-Wire Wire Line
-	4400 3350 4500 3350
-Connection ~ 6550 3050
-Wire Wire Line
-	6550 3050 6400 3050
-Wire Wire Line
 	5900 3350 6550 3350
-Wire Wire Line
-	6550 3350 6850 3350
 Connection ~ 6550 3350
 $Comp
 L RV-3028-C7:RV-3028-C7 U1
@@ -149,15 +104,13 @@ Text Label 4250 3550 0    50   ~ 0
 SCL
 Text Label 4250 3650 0    50   ~ 0
 SDA
-Text Label 3650 2650 1    50   ~ 0
+Text Label 3650 2950 1    50   ~ 0
 VIN
 Wire Wire Line
-	3650 2550 3650 2800
-Text Label 6700 3050 2    50   ~ 0
+	3650 2850 3650 3100
+Text Label 6550 2900 1    50   ~ 0
 VIN
-Text Label 7050 3900 3    50   ~ 0
-VIN
-Text Label 6650 3900 3    50   ~ 0
+Text Label 7450 3550 0    50   ~ 0
 VOUT
 Text Label 1850 1350 2    50   ~ 0
 SCL
@@ -167,49 +120,24 @@ Text Label 1850 1800 2    50   ~ 0
 VIN
 Text Label 1850 1950 2    50   ~ 0
 VOUT
-Text Notes 7100 3750 0    50   Italic 0
+Text Notes 6900 3750 0    50   Italic 0
 Example P-Channel Mosfet.\nCan be replaced by any other type.
-Text Notes 6800 4600 0    50   Italic 0
+Text Notes 7900 3250 0    50   Italic 0
 If shorted, VIN is directly\nconnected to VOUT
 Text Notes 4000 3850 0    50   Italic 0
 i2c pullup\non another sheet
-Text Notes 3500 3100 2    50   Italic 0
-external\ntrigger\nsolder pad or pin header\ntrigger device must handle VIN
-$Comp
-L Connector:TestPoint_2Pole TP1
-U 1 1 5F718F8C
-P 3650 3000
-F 0 "TP1" V 3604 3058 50  0000 L CNN
-F 1 "TestPoint_2Pole" V 3695 3058 50  0000 L CNN
-F 2 "" H 3650 3000 50  0001 C CNN
-F 3 "~" H 3650 3000 50  0001 C CNN
-	1    3650 3000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3650 3350 4400 3350
-Connection ~ 4400 3350
-$Comp
-L Connector:TestPoint_2Pole TP2
-U 1 1 5F71BA3A
-P 6850 4200
-F 0 "TP2" H 6850 4300 50  0000 C CNN
-F 1 "TestPoint_2Pole" H 6850 4100 50  0000 C CNN
-F 2 "" H 6850 4200 50  0001 C CNN
-F 3 "~" H 6850 4200 50  0001 C CNN
-	1    6850 4200
-	1    0    0    -1  
-$EndComp
+Text Notes 3400 3000 2    50   Italic 0
+external\ntrigger\npin header, switch, etc.\ntrigger device must handle VIN
 $Comp
 L Device:Q_PMOS_GDS Q1
 U 1 1 5F71103F
-P 6850 3600
-F 0 "Q1" V 7099 3600 50  0000 C CNN
-F 1 "Q_PMOS_GDS" V 7190 3600 50  0000 C CNN
-F 2 "" H 7050 3700 50  0001 C CNN
-F 3 "~" H 6850 3600 50  0001 C CNN
-	1    6850 3600
-	0    1    1    0   
+P 7000 3350
+F 0 "Q1" H 7250 3400 50  0000 C CNN
+F 1 "Q_PMOS_GDS" H 7450 3300 50  0000 C CNN
+F 2 "" H 7200 3450 50  0001 C CNN
+F 3 "~" H 7000 3350 50  0001 C CNN
+	1    7000 3350
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1600 1950 1850 1950
@@ -217,8 +145,6 @@ Wire Wire Line
 	1600 1350 1850 1350
 Wire Wire Line
 	1600 1500 1850 1500
-Wire Wire Line
-	6400 3050 5900 3050
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5F765992
@@ -235,7 +161,74 @@ Wire Wire Line
 Wire Wire Line
 	5900 3150 5950 3150
 Wire Wire Line
-	6400 3150 6250 3150
-Wire Wire Line
 	4500 3550 4250 3550
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 5F76444B
+P 7900 3400
+F 0 "J1" H 8000 3450 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 7550 3350 50  0000 C CNN
+F 2 "" H 7900 3400 50  0001 C CNN
+F 3 "~" H 7900 3400 50  0001 C CNN
+	1    7900 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6550 3350 6800 3350
+Wire Wire Line
+	7100 3550 7700 3550
+Wire Wire Line
+	7700 3550 7700 3400
+Wire Wire Line
+	7100 3150 7700 3150
+Wire Wire Line
+	7700 3150 7700 3300
+$Comp
+L Device:C C1
+U 1 1 5F716113
+P 6300 3600
+F 0 "C1" H 6415 3646 50  0000 L CNN
+F 1 "100nF" H 6415 3555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6338 3450 50  0001 C CNN
+F 3 "~" H 6300 3600 50  0001 C CNN
+	1    6300 3600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6300 3150 6300 3450
+Wire Wire Line
+	6300 3150 6250 3150
+Wire Wire Line
+	6300 3750 6300 3850
+Connection ~ 6300 3850
+Connection ~ 3650 3350
+Wire Wire Line
+	3650 3350 4500 3350
+Wire Wire Line
+	5900 3050 6300 3050
+Wire Wire Line
+	6300 3150 6300 3050
+Connection ~ 6300 3150
+Connection ~ 6300 3050
+Wire Wire Line
+	6300 3050 6550 3050
+Connection ~ 6550 3050
+Wire Wire Line
+	6550 2750 6550 3050
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5F78D93A
+P 3450 3100
+F 0 "J?" H 3500 3150 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 3100 3050 50  0000 C CNN
+F 2 "" H 3450 3100 50  0001 C CNN
+F 3 "~" H 3450 3100 50  0001 C CNN
+	1    3450 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 3050 7100 3050
+Wire Wire Line
+	7100 3050 7100 3150
+Connection ~ 7100 3150
 $EndSCHEMATC
