@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:SuperPower-RPi-KiCAD-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -28,7 +27,7 @@ U 1 1 5F6B08E8
 P 7800 3000
 F 0 "J1" H 7800 4481 50  0000 C CNN
 F 1 "Raspberry_Pi_2_3" H 7800 4390 50  0000 C CNN
-F 2 "" H 7800 3000 50  0001 C CNN
+F 2 "SuperPower-RPi-KiCAD:PinSocket_2x20_P2.54mm_Vertical" H 7800 3000 50  0001 C CNN
 F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 7800 3000 50  0001 C CNN
 	1    7800 3000
 	1    0    0    -1  
@@ -125,4 +124,48 @@ NoConn ~ 7000 3700
 NoConn ~ 7900 1700
 NoConn ~ 8000 1700
 NoConn ~ 7850 2200
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5F78A333
+P 750 6950
+F 0 "H1" H 850 6996 50  0000 L CNN
+F 1 "MountingHole" H 850 6905 50  0000 L CNN
+F 2 "SuperPower-RPi-KiCAD:RPi_Hat_Mounting_Hole" H 750 6950 50  0001 C CNN
+F 3 "~" H 750 6950 50  0001 C CNN
+	1    750  6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5F78A445
+P 750 7150
+F 0 "H2" H 850 7196 50  0000 L CNN
+F 1 "MountingHole" H 850 7105 50  0000 L CNN
+F 2 "SuperPower-RPi-KiCAD:RPi_Hat_Mounting_Hole" H 750 7150 50  0001 C CNN
+F 3 "~" H 750 7150 50  0001 C CNN
+	1    750  7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5F78A5EF
+P 750 7350
+F 0 "H3" H 850 7396 50  0000 L CNN
+F 1 "MountingHole" H 850 7305 50  0000 L CNN
+F 2 "SuperPower-RPi-KiCAD:RPi_Hat_Mounting_Hole" H 750 7350 50  0001 C CNN
+F 3 "~" H 750 7350 50  0001 C CNN
+	1    750  7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5F78A6A2
+P 750 7550
+F 0 "H4" H 850 7596 50  0000 L CNN
+F 1 "MountingHole" H 850 7505 50  0000 L CNN
+F 2 "SuperPower-RPi-KiCAD:RPi_Hat_Mounting_Hole" H 750 7550 50  0001 C CNN
+F 3 "~" H 750 7550 50  0001 C CNN
+	1    750  7550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
