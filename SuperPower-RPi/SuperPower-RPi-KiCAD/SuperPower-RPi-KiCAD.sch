@@ -64,6 +64,7 @@ F0 "Pi-Boost-Conv" 50
 F1 "Pi-Boost-Conv.sch" 50
 F2 "Vin" I L 5450 3650 50 
 F3 "Vout" O R 6450 3650 50 
+F4 "EN" I L 5450 4200 50 
 $EndSheet
 $Sheet
 S 7450 3450 1250 1150

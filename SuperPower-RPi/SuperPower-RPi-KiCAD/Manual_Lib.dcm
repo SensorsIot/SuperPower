@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TPS61088
+D  10-A Fully-Integrated Synchronous Boost Converter
+F https://www.ti.com/lit/ds/symlink/tps61088.pdf?ts=1601341027862
+$ENDCMP
+#
+#End Doc Library

@@ -13,8 +13,177 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 6950 2150 0    50   BiDi ~ 0
+Text HLabel 4700 2700 0    50   BiDi ~ 0
 BATT
 Text Notes 1050 5600 0    50   ~ 0
-NOTE:\nBattery Connection will be made on this page, along \nwith any battery specific protection circuits.
+NOTE:\n
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5F701F7D
+P 7350 2700
+F 0 "J2" H 7430 2692 50  0000 L CNN
+F 1 "Conn_01x02" H 7430 2601 50  0000 L CNN
+F 2 "" H 7350 2700 50  0001 C CNN
+F 3 "~" H 7350 2700 50  0001 C CNN
+	1    7350 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 5F702A8B
+P 6250 3650
+F 0 "D1" V 6204 3730 50  0000 L CNN
+F 1 "SS34" V 6295 3730 50  0000 L CNN
+F 2 "" H 6250 3650 50  0001 C CNN
+F 3 "~" H 6250 3650 50  0001 C CNN
+	1    6250 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5F703173
+P 5950 4150
+F 0 "#PWR02" H 5950 3900 50  0001 C CNN
+F 1 "GND" H 5955 3977 50  0000 C CNN
+F 2 "" H 5950 4150 50  0001 C CNN
+F 3 "" H 5950 4150 50  0001 C CNN
+	1    5950 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5F7036D1
+P 6250 3000
+F 0 "R2" H 6320 3046 50  0000 L CNN
+F 1 "10k" H 6320 2955 50  0000 L CNN
+F 2 "" V 6180 3000 50  0001 C CNN
+F 3 "~" H 6250 3000 50  0001 C CNN
+	1    6250 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PMOS_GSD Q1
+U 1 1 5F704F9B
+P 5800 2800
+F 0 "Q1" V 6142 2800 50  0000 C CNN
+F 1 "SSM3J328R" V 6051 2800 50  0000 C CNN
+F 2 "" H 6000 2900 50  0001 C CNN
+F 3 "~" H 5800 2800 50  0001 C CNN
+	1    5800 2800
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6250 2700 6250 2850
+Wire Wire Line
+	6000 2700 6250 2700
+Connection ~ 6250 2700
+Wire Wire Line
+	6250 2700 6900 2700
+$Comp
+L Device:Q_NPN_BCE Q2
+U 1 1 5F708549
+P 5900 3400
+F 0 "Q2" H 6091 3446 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 6091 3355 50  0000 L CNN
+F 2 "" H 6100 3500 50  0001 C CNN
+F 3 "~" H 5900 3400 50  0001 C CNN
+	1    5900 3400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3600 5800 3850
+Wire Wire Line
+	5800 3850 5950 3850
+Wire Wire Line
+	6250 3850 6250 3800
+Wire Wire Line
+	6250 3500 6250 3400
+Wire Wire Line
+	6100 3400 6250 3400
+Connection ~ 6250 3400
+Wire Wire Line
+	6250 3400 6250 3150
+Wire Wire Line
+	5800 3200 5800 3150
+Wire Wire Line
+	5950 4150 5950 3850
+Connection ~ 5950 3850
+Wire Wire Line
+	5950 3850 6250 3850
+$Comp
+L Device:R R1
+U 1 1 5F709FD7
+P 5150 2900
+F 0 "R1" H 5220 2946 50  0000 L CNN
+F 1 "4.1k" H 5220 2855 50  0000 L CNN
+F 2 "" V 5080 2900 50  0001 C CNN
+F 3 "~" H 5150 2900 50  0001 C CNN
+	1    5150 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 2750 5150 2700
+Wire Wire Line
+	5150 2700 5600 2700
+Wire Wire Line
+	5150 3050 5150 3150
+Wire Wire Line
+	5150 3150 5800 3150
+Connection ~ 5800 3150
+Wire Wire Line
+	5800 3150 5800 3000
+Wire Wire Line
+	4700 2700 5150 2700
+Connection ~ 5150 2700
+Text Notes 5150 4750 0    50   ~ 0
+Questions:\nCan we swap out the NPN for an NMOS?\nCan we increase the resistance of ?  
+$Comp
+L power:GND #PWR03
+U 1 1 5F70F58A
+P 6900 3450
+F 0 "#PWR03" H 6900 3200 50  0001 C CNN
+F 1 "GND" H 6905 3277 50  0000 C CNN
+F 2 "" H 6900 3450 50  0001 C CNN
+F 3 "" H 6900 3450 50  0001 C CNN
+	1    6900 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5F70FBD7
+P 7150 3050
+F 0 "TP2" V 7150 3238 50  0000 L CNN
+F 1 "TestPoint" V 7195 3238 50  0001 L CNN
+F 2 "" H 7350 3050 50  0001 C CNN
+F 3 "~" H 7350 3050 50  0001 C CNN
+	1    7150 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5F710403
+P 7150 2450
+F 0 "TP1" V 7150 2638 50  0000 L CNN
+F 1 "TestPoint" V 7195 2638 50  0001 L CNN
+F 2 "" H 7350 2450 50  0001 C CNN
+F 3 "~" H 7350 2450 50  0001 C CNN
+	1    7150 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7150 2450 6900 2450
+Wire Wire Line
+	6900 2450 6900 2700
+Connection ~ 6900 2700
+Wire Wire Line
+	6900 2700 7150 2700
+Wire Wire Line
+	7150 3050 6900 3050
+Wire Wire Line
+	6900 3050 6900 3450
+Wire Wire Line
+	6900 3050 6900 2800
+Wire Wire Line
+	6900 2800 7150 2800
+Connection ~ 6900 3050
 $EndSCHEMATC
