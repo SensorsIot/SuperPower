@@ -37,18 +37,18 @@ Wire Wire Line
 	4700 4450 4500 4450
 Wire Wire Line
 	4700 5500 4700 4450
-Text Label 2950 4250 2    50   ~ 0
+Text Label 2950 4500 2    50   ~ 0
 SCL
 Text Label 9150 4150 2    50   ~ 0
 SCL
 Text Label 9150 4050 2    50   ~ 0
 SDA
-Text Label 2950 4150 2    50   ~ 0
+Text Label 2950 4400 2    50   ~ 0
 SDA
 Wire Wire Line
-	3200 4250 2950 4250
+	3200 4500 2950 4500
 Wire Wire Line
-	3200 4150 2950 4150
+	3200 4400 2950 4400
 Wire Wire Line
 	8700 3650 9350 3650
 Wire Wire Line
@@ -90,6 +90,8 @@ U 5F6AC66E
 F0 "Pi-Input-Source" 50
 F1 "Pi-Input-Source.sch" 50
 F2 "Vout" O R 2300 3650 50 
+F3 "D+" O R 2300 3950 50 
+F4 "D-" O R 2300 4000 50 
 $EndSheet
 $Sheet
 S 3250 1250 1300 1200
@@ -106,6 +108,7 @@ U 5F6AC644
 F0 "Pi-Batt" 50
 F1 "Pi-Batt.sch" 50
 F2 "BATT" B R 4450 5500 50 
+F3 "Thermistor" O R 4450 5600 50 
 $EndSheet
 $Sheet
 S 3200 3400 1300 1200
@@ -115,7 +118,21 @@ F1 "Pi-Charger.sch" 50
 F2 "Vin" I L 3200 3650 50 
 F3 "Vout" O R 4500 3650 50 
 F4 "Batt" B R 4500 4450 50 
-F5 "SDA" B L 3200 4150 50 
-F6 "SCL" B L 3200 4250 50 
+F5 "SDA" B L 3200 4400 50 
+F6 "SCL" B L 3200 4500 50 
+F7 "Thermistor" I R 4500 4350 50 
+F8 "D+" I L 3200 3950 50 
+F9 "D-" I L 3200 4000 50 
 $EndSheet
+NoConn ~ 5450 4200
+Wire Wire Line
+	4450 5600 4850 5600
+Wire Wire Line
+	4850 5600 4850 4350
+Wire Wire Line
+	4850 4350 4500 4350
+Wire Wire Line
+	2300 3950 3200 3950
+Wire Wire Line
+	3200 4000 2300 4000
 $EndSCHEMATC

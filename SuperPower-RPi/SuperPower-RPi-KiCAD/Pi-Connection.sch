@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:SuperPower-RPi-KiCAD-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -42,24 +41,6 @@ Wire Wire Line
 Wire Wire Line
 	7700 1100 7600 1100
 Connection ~ 7600 1100
-$Comp
-<<<<<<< HEAD
-L power:GND #PWR0101
-U 1 1 5F6B22FA
-P 7750 4500
-F 0 "#PWR0101" H 7750 4250 50  0001 C CNN
-=======
-L power:GND #PWR08
-U 1 1 5F6B22FA
-P 7750 4500
-F 0 "#PWR08" H 7750 4250 50  0001 C CNN
->>>>>>> 429014dc8c5de1a59999ac83e75dacf332432e06
-F 1 "GND" H 7755 4327 50  0000 C CNN
-F 2 "" H 7750 4500 50  0001 C CNN
-F 3 "" H 7750 4500 50  0001 C CNN
-	1    7750 4500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7400 4300 7400 4400
 Wire Wire Line
@@ -132,4 +113,15 @@ NoConn ~ 7000 3700
 NoConn ~ 7900 1700
 NoConn ~ 8000 1700
 NoConn ~ 7850 2200
+$Comp
+L power:GND #PWR09
+U 1 1 5F7975F1
+P 7750 4500
+F 0 "#PWR09" H 7750 4250 50  0001 C CNN
+F 1 "GND" H 7755 4327 50  0000 C CNN
+F 2 "" H 7750 4500 50  0001 C CNN
+F 3 "" H 7750 4500 50  0001 C CNN
+	1    7750 4500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -19,4 +19,7 @@ Text HLabel 2300 1950 0    50   BiDi ~ 0
 SCL
 Text HLabel 3050 2600 0    50   BiDi ~ 0
 GPIO0
+NoConn ~ 2550 1400
+NoConn ~ 2300 1950
+NoConn ~ 3050 2600
 $EndSCHEMATC
