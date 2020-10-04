@@ -13,7 +13,7 @@ All hardware designs and products you can find in this repository is licensed un
 
 [Discord Channel](https://discord.gg/dCr86Hk)  
 
-[Google Drive Project Files](https://drive.google.com/drive/folders/1w3U5OjFCr0vc1ZHyUKympC7aVEZiL1S2)
+[Google Drive Project Files](https://drive.google.com/drive/folders/1lCirijHUkISdUYBIRblkILHM6fstifWS)
 
 [![Video](http://img.youtube.com/vi/-SJbdPvgQnE/0.jpg)](https://www.youtube.com/watch?v=-SJbdPvgQnE "Video")
 
