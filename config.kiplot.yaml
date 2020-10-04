@@ -15,7 +15,7 @@ outputs:
   - name: 'print schema'
     comment: "Print schematic (SVG)"
     type: svg_sch_print
-    dir: build
+    dir: docs
     options:
       output: '%p-Schematic.%x'
 
@@ -33,7 +33,7 @@ outputs:
   - name: 'plot images of pcb TOP'
     comment: 'Exports the PCB as a 2D model (SVG, PNG or JPG).'
     type: 'pcbdraw'
-    dir: 'build/img'
+    dir: 'img'
     options:
       # [boolean=false] render the bottom side of the board (default is top side)
       bottom: false
@@ -68,7 +68,7 @@ outputs:
   - name: 'plot images of pcb BOTTOM'
     comment: 'Exports the PCB as a 2D model (SVG, PNG or JPG).'
     type: 'pcbdraw'
-    dir: 'build/img'
+    dir: 'img'
     options:
       # [boolean=false] render the bottom side of the board (default is top side)
       bottom: true
