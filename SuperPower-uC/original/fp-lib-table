@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name RV-3028-C7)(type KiCad)(uri components/RV-3028-C7)(options "")(descr ""))
+)

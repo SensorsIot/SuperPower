@@ -1,4 +1,4 @@
-ERC report (Tue Sep 29 23:07:35 2020, Encoding UTF8 )
+ERC report (Sun Oct  4 17:10:28 2020, Encoding UTF8 )
 
 ***** Sheet /
 
@@ -7,6 +7,14 @@ ERC report (Tue Sep 29 23:07:35 2020, Encoding UTF8 )
 ***** Sheet /Charging Module/
 
 ***** Sheet /RTC and Cut-Off Module/
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(114.30 mm, 90.17 mm): Pin 3 (Input) of component U1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(114.30 mm, 92.71 mm): Pin 4 (Bidirectional) of component U1 is unconnected.
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(149.86 mm, 80.01 mm): Pin 6 (Power input) of component U1 is not driven (Net 17).
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(160.02 mm, 97.79 mm): Pin 1 (Power input) of component #PWR0101 is not driven (Net 19).
 
 ***** Sheet /Regulator Module/
 
@@ -14,4 +22,4 @@ ERC report (Tue Sep 29 23:07:35 2020, Encoding UTF8 )
 
 ***** Sheet /Charger I/O/
 
- ** ERC messages: 0  Errors 0  Warnings 0
+ ** ERC messages: 4  Errors 0  Warnings 4
