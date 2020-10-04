@@ -13,7 +13,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 7300 2900 2    50   Output ~ 0
+Text HLabel 7650 2900 2    50   Output ~ 0
 Vout
 Text Notes 6950 5750 0    50   ~ 0
 NOTE:\nProbably USB-C and screw-terminals for solar.  MicroUSB possible. 
@@ -88,7 +88,7 @@ Wire Wire Line
 Wire Wire Line
 	6950 3650 6950 3850
 Wire Wire Line
-	7150 2900 7300 2900
+	7150 2900 7450 2900
 Wire Wire Line
 	5150 2900 5550 2900
 Text Notes 4150 6150 0    50   ~ 0
@@ -178,4 +178,18 @@ Wire Wire Line
 	5150 3600 5400 3600
 Text Notes 6250 2050 0    50   ~ 0
 Should the USB VBUS be moved to after the input protection?
+$Comp
+L power:PWR_FLAG #FLG0106
+U 1 1 5F79AC3D
+P 7450 2900
+F 0 "#FLG0106" H 7450 2975 50  0001 C CNN
+F 1 "PWR_FLAG" V 7450 3028 50  0001 L CNN
+F 2 "" H 7450 2900 50  0001 C CNN
+F 3 "~" H 7450 2900 50  0001 C CNN
+	1    7450 2900
+	1    0    0    -1  
+$EndComp
+Connection ~ 7450 2900
+Wire Wire Line
+	7450 2900 7650 2900
 $EndSCHEMATC
