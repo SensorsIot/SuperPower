@@ -308,22 +308,11 @@ Wire Wire Line
 	2200 6950 2200 7000
 Text Notes 3300 4850 0    50   ~ 0
 So you can disable \nVBUS if you only \nneed data\n
-$Comp
-L tmp_library:IP4220CZ6 D1
-U 1 1 5F762CF3
-P 4500 6850
-F 0 "D1" H 4475 7265 50  0000 C CNN
-F 1 "IP4220CZ6" H 4475 7174 50  0000 C CNN
-F 2 "" H 4850 6850 50  0001 C CNN
-F 3 "" H 4850 6850 50  0001 C CNN
-	1    4500 6850
-	1    0    0    -1  
-$EndComp
-Text Label 5250 6800 2    50   ~ 0
+Text Label 5150 6800 2    50   ~ 0
 VBUS
 Wire Wire Line
-	5250 6800 4950 6800
-Text Label 5250 6700 2    50   ~ 0
+	5150 6800 4850 6800
+Text Label 5150 6700 2    50   ~ 0
 D-
 Text Label 3750 6700 0    50   ~ 0
 D+
@@ -338,14 +327,25 @@ F 3 "" H 3750 6800 50  0001 C CNN
 	1    3750 6800
 	0    1    1    0   
 $EndComp
-NoConn ~ 4950 6900
+NoConn ~ 4850 6900
 NoConn ~ 4000 6900
 Wire Wire Line
-	4950 6700 5250 6700
+	4850 6700 5150 6700
 Wire Wire Line
 	4000 6700 3750 6700
 Wire Wire Line
 	4000 6800 3750 6800
 Text Notes 4200 6350 0    50   ~ 0
 ESD Protection
+$Comp
+L IP4220CZ6:IP4220CZ6 U?
+U 1 1 5F7BABE7
+P 4500 6750
+F 0 "U?" H 4425 7065 50  0000 C CNN
+F 1 "IP4220CZ6" H 4425 6974 50  0000 C CNN
+F 2 "" H 4500 6750 50  0001 C CNN
+F 3 "" H 4500 6750 50  0001 C CNN
+	1    4500 6750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
