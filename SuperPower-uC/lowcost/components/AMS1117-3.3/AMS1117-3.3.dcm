@@ -1,7 +1,7 @@
 EESchema-DOCLIB  Version 2.0
 #
 $CMP AMS1117-3.3
-F https://datasheet.lcsc.com/szlcsc/1811201117_Advanced-Monolithic-Systems-AMS-AMS1117-3-3_C6186.pdf
+F http://www.advanced-monolithic.com/pdf/ds1117.pdf
 $ENDCMP
 #
 #End Doc Library

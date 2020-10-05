@@ -1,7 +1,7 @@
 EESchema-DOCLIB  Version 2.0
 #
 $CMP PCF8563T
-F https://datasheet.lcsc.com/szlcsc/NXP-Semicon-PCF8563T-5-518_C7440.pdf
+F https://www.nxp.com/docs/en/data-sheet/PCF8563.pdf
 $ENDCMP
 #
 #End Doc Library
