@@ -42,6 +42,6 @@ jobs:
     - name: upload results
       uses: actions/upload-artifact@v2
       with:
-        name: build
+        name: Generated Schematics and Layouts
         path: build
 
