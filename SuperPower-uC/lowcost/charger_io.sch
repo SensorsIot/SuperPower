@@ -15,8 +15,8 @@ Comment4 ""
 $EndDescr
 Text HLabel 1300 1500 0    50   Output ~ 0
 VCHARGE
-Text HLabel 1300 1650 0    50   Input ~ 0
-D+
+Text HLabel 1300 1650 0    50   Output ~ 0
+TX
 Text HLabel 1300 1750 0    50   Input ~ 0
-D-
+RX
 $EndSCHEMATC

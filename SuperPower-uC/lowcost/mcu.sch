@@ -19,10 +19,10 @@ Text HLabel 1300 1150 0    50   BiDi ~ 0
 SDA
 Text HLabel 1300 1300 0    50   Input ~ 0
 SCL
-Text HLabel 1300 1550 0    50   Input ~ 0
-D+
+Text HLabel 1300 1550 0    50   Output ~ 0
+TX
 Text HLabel 1300 1650 0    50   Input ~ 0
-D-
+RX
 Text HLabel 1300 1850 0    50   Output ~ 0
 INT
 $EndSCHEMATC

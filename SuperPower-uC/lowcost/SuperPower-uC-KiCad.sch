@@ -65,9 +65,9 @@ F1 "mcu.sch" 50
 F2 "3v3_MCU" I L 6850 2850 50 
 F3 "SDA" B L 6850 3200 50 
 F4 "SCL" I L 6850 3100 50 
-F5 "D+" I R 8100 3150 50 
-F6 "D-" I R 8100 3050 50 
-F7 "INT" O L 6850 3000 50 
+F5 "INT" O L 6850 3000 50 
+F6 "TX" O R 8100 3050 50 
+F7 "RX" I R 8100 3150 50 
 $EndSheet
 Wire Wire Line
 	3050 4350 2950 4350
@@ -122,7 +122,7 @@ Cut-Off Circuit
 Text Notes 3600 4350 0    50   ~ 0
 Micro-USB
 Text Notes 3600 4450 0    50   ~ 0
-Screw Terminal
+Solar input
 Text Notes 3600 4550 0    50   ~ 0
 Solder Pads
 Wire Wire Line
@@ -167,8 +167,6 @@ Wire Wire Line
 	4700 5000 4300 5000
 Text Notes 5050 3150 0    50   ~ 0
 Permanent Power Jumper
-Text Notes 7400 2550 0    50   ~ 0
-FTDI
 Text Notes 5350 4650 0    50   ~ 0
 Bypass Jumper
 Wire Wire Line
@@ -198,10 +196,12 @@ S 3050 4000 1250 1150
 U 5F63B107
 F0 "Charger I/O" 50
 F1 "charger_io.sch" 50
-F2 "D+" I R 4300 4900 50 
-F3 "D-" I R 4300 5000 50 
-F4 "VCHARGE" O L 3050 4350 50 
+F2 "VCHARGE" O L 3050 4350 50 
+F3 "TX" O R 4300 4900 50 
+F4 "RX" I R 4300 5000 50 
 $EndSheet
 Text Notes 3450 2500 0    50   ~ 0
 Power on INT
+Text Notes 3600 4650 0    50   ~ 0
+FTDI
 $EndSCHEMATC
