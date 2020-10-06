@@ -37,4 +37,6 @@ Wire Wire Line
 	1600 1500 1850 1500
 Wire Wire Line
 	1600 1800 1850 1800
+Text HLabel 1600 2100 0    50   Output ~ 0
+INT
 $EndSCHEMATC

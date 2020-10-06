@@ -13,18 +13,363 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 1300 1000 0    50   Input ~ 0
-VBUS_IN
-Text HLabel 1300 1150 0    50   Input ~ 0
-VIN
-Text HLabel 1300 1300 0    50   Input ~ 0
-VSOLAR_IN
-Text HLabel 1300 1550 0    50   Output ~ 0
+Text HLabel 1350 950  2    50   Output ~ 0
 VOUT
-Text HLabel 1300 1700 0    50   BiDi ~ 0
+Text HLabel 1150 950  0    50   BiDi ~ 0
 VBAT
-Text HLabel 1300 1900 0    50   Input ~ 0
-SCL
-Text HLabel 1300 2000 0    50   BiDi ~ 0
+Text HLabel 1550 4250 2    50   Output ~ 0
+INT
+Wire Wire Line
+	1150 950  1350 950 
+$Comp
+L Transistor_FET:AO3401A Q2
+U 1 1 5F82C373
+P 1400 4550
+F 0 "Q2" H 1600 4700 50  0000 C CNN
+F 1 "AO3401A" H 1700 4400 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1600 4475 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 1400 4550 50  0001 L CNN
+	1    1400 4550
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5F832323
+P 1150 4750
+F 0 "R7" V 1050 4800 50  0000 L CNN
+F 1 "1M" V 1050 4550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1080 4750 50  0001 C CNN
+F 3 "~" H 1150 4750 50  0001 C CNN
+F 4 "C22935" H 1150 4750 50  0001 C CNN "LCSC"
+	1    1150 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F833F9C
+P 1500 4950
+F 0 "#PWR?" H 1500 4700 50  0001 C CNN
+F 1 "GND" H 1505 4777 50  0000 C CNN
+F 2 "" H 1500 4950 50  0001 C CNN
+F 3 "" H 1500 4950 50  0001 C CNN
+	1    1500 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 4900 1500 4900
+Wire Wire Line
+	1500 4900 1500 4950
+Wire Wire Line
+	1500 4900 1500 4750
+Connection ~ 1500 4900
+Wire Wire Line
+	1200 4550 1150 4550
+Wire Wire Line
+	1150 4550 1150 4600
+Wire Wire Line
+	1500 4350 1500 4250
+Wire Wire Line
+	1500 4250 1550 4250
+$Comp
+L Device:C C4
+U 1 1 5F837984
+P 1150 4350
+F 0 "C4" H 1150 4450 50  0000 L CNN
+F 1 "10u" H 1150 4250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1188 4200 50  0001 C CNN
+F 3 "~" H 1150 4350 50  0001 C CNN
+F 4 "C19702" H 1150 4350 50  0001 C CNN "LCSC"
+	1    1150 4350
+	1    0    0    -1  
+$EndComp
+Text HLabel 1100 4150 0    50   BiDi ~ 0
+VBAT
+Wire Wire Line
+	1100 4150 1150 4150
+Wire Wire Line
+	1150 4150 1150 4200
+Wire Wire Line
+	1150 4500 1150 4550
+Connection ~ 1150 4550
+Wire Wire Line
+	2350 3200 2350 3250
+Wire Wire Line
+	2100 3200 2350 3200
+Wire Wire Line
+	1350 3100 1400 3100
+Connection ~ 1350 3100
+Wire Wire Line
+	1350 2950 1350 3100
+Wire Wire Line
+	1400 2950 1350 2950
+Wire Wire Line
+	2150 3300 2100 3300
+Wire Wire Line
+	2150 2950 2150 3300
+Wire Wire Line
+	2100 2950 2150 2950
+Wire Wire Line
+	1700 2950 1800 2950
+Wire Wire Line
+	1200 3600 1300 3600
+Connection ~ 1200 3600
+Wire Wire Line
+	1200 3600 1200 3650
+Wire Wire Line
+	1100 3600 1200 3600
+Wire Wire Line
+	1300 3300 1400 3300
+Wire Wire Line
+	1100 3100 1350 3100
+Connection ~ 1100 3100
+Wire Wire Line
+	1100 3100 1100 3300
+Wire Wire Line
+	1050 3100 1100 3100
+Wire Wire Line
+	2700 3100 2100 3100
+Connection ~ 2700 3100
+Wire Wire Line
+	2700 3450 2700 3100
+Wire Wire Line
+	2750 3450 2700 3450
+Wire Wire Line
+	2900 3100 2700 3100
+Wire Wire Line
+	3350 3100 3300 3100
+Connection ~ 3100 3450
+Wire Wire Line
+	3150 3450 3100 3450
+Wire Wire Line
+	3100 3450 3050 3450
+Wire Wire Line
+	3100 3400 3100 3450
+Text HLabel 3150 3450 2    50   Input ~ 0
+CHARGE-DISABLE
+Text HLabel 3350 3100 2    50   BiDi ~ 0
+VBAT
+$Comp
+L Transistor_FET:AO3401A Q1
+U 1 1 5F8021C7
+P 3100 3200
+F 0 "Q1" V 3442 3200 50  0000 C CNN
+F 1 "AO3401A" V 3351 3200 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3300 3125 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 3100 3200 50  0001 L CNN
+	1    3100 3200
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5F7FD127
+P 1100 3450
+F 0 "C3" H 1100 3550 50  0000 L CNN
+F 1 "1u" H 1100 3350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1138 3300 50  0001 C CNN
+F 3 "~" H 1100 3450 50  0001 C CNN
+F 4 "C15849" H 1100 3450 50  0001 C CNN "LCSC"
+	1    1100 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F7FA92C
+P 2350 3250
+F 0 "#PWR?" H 2350 3000 50  0001 C CNN
+F 1 "GND" H 2355 3077 50  0000 C CNN
+F 2 "" H 2350 3250 50  0001 C CNN
+F 3 "" H 2350 3250 50  0001 C CNN
+	1    2350 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F7F85B4
+P 1200 3650
+F 0 "#PWR?" H 1200 3400 50  0001 C CNN
+F 1 "GND" H 1205 3477 50  0000 C CNN
+F 2 "" H 1200 3650 50  0001 C CNN
+F 3 "" H 1200 3650 50  0001 C CNN
+	1    1200 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5F7F2CDA
+P 1950 2950
+F 0 "D1" H 2050 2850 50  0000 C CNN
+F 1 "LED" H 1900 2800 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1950 2950 50  0001 C CNN
+F 3 "~" H 1950 2950 50  0001 C CNN
+F 4 "C72041" H 1950 2950 50  0001 C CNN "LCSC"
+	1    1950 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5F7F0EE3
+P 2900 3450
+F 0 "R6" V 2800 3500 50  0000 L CNN
+F 1 "180k" V 2800 3250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2830 3450 50  0001 C CNN
+F 3 "~" H 2900 3450 50  0001 C CNN
+F 4 "C22827" H 2900 3450 50  0001 C CNN "LCSC"
+	1    2900 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5F7F0AC0
+P 1300 3450
+F 0 "R5" H 1370 3496 50  0000 L CNN
+F 1 "1.8k" H 1350 3300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1230 3450 50  0001 C CNN
+F 3 "~" H 1300 3450 50  0001 C CNN
+F 4 "C4177" H 1300 3450 50  0001 C CNN "LCSC"
+	1    1300 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5F7F0079
+P 1550 2950
+F 0 "R4" V 1650 3000 50  0000 L CNN
+F 1 "1k" V 1650 2800 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1480 2950 50  0001 C CNN
+F 3 "~" H 1550 2950 50  0001 C CNN
+F 4 "C21190" V 1550 2950 50  0001 C CNN "LCSC"
+	1    1550 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TP4054:TP4054 U4
+U 1 1 5F7EF510
+P 1750 3200
+F 0 "U4" H 1950 3450 50  0000 C CNN
+F 1 "TP4054" H 1650 3450 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 1750 2950 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Nanjing-Extension-Microelectronics-TP4054_C32574.pdf" H 1750 3200 50  0001 C CNN
+F 4 " C32574" H 1750 3200 50  0001 C CNN "LCSC"
+	1    1750 3200
+	-1   0    0    1   
+$EndComp
+Text HLabel 1050 3100 0    50   Input ~ 0
+VCHARGE
+Wire Wire Line
+	1450 1750 1350 1750
+Text HLabel 1350 1750 0    50   BiDi ~ 0
+VBAT
+Wire Wire Line
+	2000 2350 2100 2350
+$Comp
+L power:GND #PWR?
+U 1 1 5F7EE01C
+P 2100 2350
+F 0 "#PWR?" H 2100 2100 50  0001 C CNN
+F 1 "GND" H 2105 2177 50  0000 C CNN
+F 2 "" H 2100 2350 50  0001 C CNN
+F 3 "" H 2100 2350 50  0001 C CNN
+	1    2100 2350
+	1    0    0    -1  
+$EndComp
+Connection ~ 2300 2050
+Wire Wire Line
+	2300 2250 2000 2250
+Wire Wire Line
+	2300 2050 2300 2250
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 5F7ECA21
+P 1800 2250
+F 0 "J2" H 1908 2431 50  0000 C CNN
+F 1 "Thermistor" H 1908 2340 50  0000 C CNN
+F 2 "" H 1800 2250 50  0001 C CNN
+F 3 "~" H 1800 2250 50  0001 C CNN
+	1    1800 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1550 2250 1550
+Wire Wire Line
+	2250 1450 2350 1450
+Connection ~ 1200 1350
+Wire Wire Line
+	950  1350 1200 1350
+$Comp
+L power:GND #PWR?
+U 1 1 5F7E81F4
+P 950 1350
+F 0 "#PWR?" H 950 1100 50  0001 C CNN
+F 1 "GND" H 955 1177 50  0000 C CNN
+F 2 "" H 950 1350 50  0001 C CNN
+F 3 "" H 950 1350 50  0001 C CNN
+	1    950  1350
+	1    0    0    -1  
+$EndComp
+Connection ~ 1450 1450
+Wire Wire Line
+	1450 1350 1450 1450
+Wire Wire Line
+	1200 1350 1450 1350
+Wire Wire Line
+	1450 1550 1450 1450
+Wire Wire Line
+	1450 1650 1200 1650
+Wire Wire Line
+	2300 2050 2600 2050
+Wire Wire Line
+	2600 1650 2600 1750
+Wire Wire Line
+	2250 1650 2600 1650
+Wire Wire Line
+	2250 1750 2300 1750
+$Comp
+L Device:C C2
+U 1 1 5F7E2A6A
+P 1200 1500
+F 0 "C2" H 1200 1600 50  0000 L CNN
+F 1 "0.1u" H 1200 1400 50  0000 L CNN
+F 2 "" H 1238 1350 50  0001 C CNN
+F 3 "~" H 1200 1500 50  0001 C CNN
+	1    1200 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5F7E249E
+P 2300 1900
+F 0 "R3" H 2370 1946 50  0000 L CNN
+F 1 "10k" H 2370 1855 50  0000 L CNN
+F 2 "" V 2230 1900 50  0001 C CNN
+F 3 "~" H 2300 1900 50  0001 C CNN
+	1    2300 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5F7E20B2
+P 2600 1900
+F 0 "R2" H 2670 1946 50  0000 L CNN
+F 1 "100" H 2670 1855 50  0000 L CNN
+F 2 "" V 2530 1900 50  0001 C CNN
+F 3 "~" H 2600 1900 50  0001 C CNN
+	1    2600 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LC709203FQH:LC709203FQH U3
+U 1 1 5F7E175C
+P 1850 1600
+F 0 "U3" H 1850 1975 50  0000 C CNN
+F 1 "LC709203FQH" H 1850 1884 50  0000 C CNN
+F 2 "Package_DFN_QFN:WDFN-8-1EP_4x3mm_P0.65mm_EP2.4x1.8mm" H 1900 1350 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/LC709203F-D.PDF" H 1850 1650 50  0001 C CNN
+F 4 " C152311" H 1850 1600 50  0001 C CNN "LCSC"
+	1    1850 1600
+	1    0    0    -1  
+$EndComp
+Text HLabel 2350 1550 2    50   BiDi ~ 0
 SDA
+Text HLabel 2350 1450 2    50   Input ~ 0
+SCL
 $EndSCHEMATC

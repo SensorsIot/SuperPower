@@ -23,4 +23,6 @@ Text HLabel 1300 1550 0    50   Input ~ 0
 D+
 Text HLabel 1300 1650 0    50   Input ~ 0
 D-
+Text HLabel 1300 1850 0    50   Output ~ 0
+INT
 $EndSCHEMATC

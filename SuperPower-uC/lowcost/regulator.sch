@@ -25,4 +25,6 @@ Text HLabel 1150 1100 0    50   Input ~ 0
 5V_EN
 Text HLabel 1150 1450 0    50   Output ~ 0
 3v3_MCU
+Text HLabel 1150 1900 0    50   Input ~ 0
+INT
 $EndSCHEMATC
