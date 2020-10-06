@@ -1,6 +1,5 @@
 (sym_lib_table
   (lib (name AMS1117-3.3)(type Legacy)(uri ${KIPRJMOD}/components/AMS1117-3.3/AMS1117-3.3.lib)(options "")(descr ""))
-  (lib (name AO3401A)(type Legacy)(uri ${KIPRJMOD}/components/AO3401A/AO3401A.lib)(options "")(descr ""))
   (lib (name CH340G)(type Legacy)(uri ${KIPRJMOD}/components/CH340G/CH340G.lib)(options "")(descr ""))
   (lib (name ESP32-WROOM32)(type Legacy)(uri ${KIPRJMOD}/components/ESP32-WROOM32/ESP32-WROOM32.lib)(options "")(descr ""))
   (lib (name FS312F-G)(type Legacy)(uri ${KIPRJMOD}/components/FS312F-G/FS312F-G.lib)(options "")(descr ""))
