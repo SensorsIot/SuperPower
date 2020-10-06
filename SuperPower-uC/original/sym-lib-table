@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name RV-3028-C7)(type Legacy)(uri ${KIPRJMOD}/components/RV-3028-C7/RV-3028-C7.lib)(options "")(descr ""))
+  (lib (name IP4220CZ6)(type Legacy)(uri ${KIPRJMOD}/components/IP4220CZ6/IP4220CZ6.lib)(options "")(descr ""))
 )
