@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:SuperPower-uC-KiCad-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -27,17 +28,6 @@ Text HLabel 3750 3950 0    50   Input ~ 0
 SCL
 Text HLabel 3750 4050 0    50   BiDi ~ 0
 SDA
-$Comp
-L Battery_Management:LTC4162 U1
-U 1 1 5F742483
-P 5600 4000
-F 0 "U1" H 5200 5050 50  0000 C CNN
-F 1 "LTC4162" H 5850 5050 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-28-1EP_4x5mm_P0.5mm_EP2.65x3.65mm_ThermalVias" H 5250 5050 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/LTC4162-L.pdf" H 5200 5050 50  0001 C CNN
-	1    5600 4000
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C1
 U 1 1 5F74384D
@@ -20795,7 +20785,7 @@ Connection ~ 2950 4800
 Wire Wire Line
 	2950 4550 2950 4800
 $Comp
-L Jumper:SolderJumper_4_Open JP1
+L solderjumper_4_open:SolderJumper_4_Open JP1
 U 1 1 5F74EA04
 P 3200 4550
 F 0 "JP1" H 3444 4621 50  0000 L CNN
@@ -20835,7 +20825,7 @@ Wire Wire Line
 Wire Wire Line
 	3800 4650 3800 4350
 $Comp
-L Jumper:SolderJumper_4_Open JP2
+L solderjumper_4_open:SolderJumper_4_Open JP2
 U 1 1 5F74FE6F
 P 3800 4800
 F 0 "JP2" H 4044 4871 50  0000 L CNN
@@ -20913,4 +20903,15 @@ Wire Wire Line
 	7650 4350 8000 4350
 Wire Wire Line
 	6400 2700 6700 2700
+$Comp
+L ltc4162:LTC4162 U1
+U 1 1 5F742483
+P 5600 4000
+F 0 "U1" H 5200 5050 50  0000 C CNN
+F 1 "LTC4162" H 5850 5050 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-28-1EP_4x5mm_P0.5mm_EP2.65x3.65mm_ThermalVias" H 5250 5050 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/LTC4162-L.pdf" H 5200 5050 50  0001 C CNN
+	1    5600 4000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

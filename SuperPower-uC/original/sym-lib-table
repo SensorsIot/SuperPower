@@ -1,5 +1,4 @@
 (sym_lib_table
-  (lib (name All_lib_files)(type Legacy)(uri ${KIPRJMOD}/lib/*.lib)(options "")(descr "")(disabled))
   (lib (name ltc4162)(type Legacy)(uri ${KIPRJMOD}/lib/ltc4162.lib)(options "")(descr ""))
   (lib (name solderjumper_4_open)(type Legacy)(uri ${KIPRJMOD}/lib/solderjumper_4_open.lib)(options "")(descr ""))
 )
