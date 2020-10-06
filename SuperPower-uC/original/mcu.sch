@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:SuperPower-uC-KiCad-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -24,4 +23,15 @@ Text HLabel 1300 1550 0    50   Input ~ 0
 D+
 Text HLabel 1300 1650 0    50   Input ~ 0
 D-
+$Comp
+L RF_Module:ESP32-WROOM-32 U1
+U 1 1 5F7CF431
+P 4700 2350
+F 0 "U1" H 4700 3931 50  0000 C CNN
+F 1 "ESP32-WROOM-32" H 4700 3840 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 4700 850 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 4400 2400 50  0001 C CNN
+	1    4700 2350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
