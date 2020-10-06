@@ -25,4 +25,8 @@ Text HLabel 1300 1650 0    50   Input ~ 0
 RX
 Text HLabel 1300 1850 0    50   Output ~ 0
 INT
+Text HLabel 1300 2050 0    50   Input ~ 0
+RST
+Text HLabel 1300 2150 0    50   Input ~ 0
+GPIO0
 $EndSCHEMATC

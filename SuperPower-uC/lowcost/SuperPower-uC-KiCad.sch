@@ -68,6 +68,8 @@ F4 "SCL" I L 6850 3100 50
 F5 "INT" O L 6850 3000 50 
 F6 "TX" O R 8100 3050 50 
 F7 "RX" I R 8100 3150 50 
+F8 "RST" I R 8100 2850 50 
+F9 "GPIO0" I R 8100 2950 50 
 $EndSheet
 Wire Wire Line
 	3050 4350 2950 4350
@@ -150,10 +152,6 @@ Wire Wire Line
 Wire Wire Line
 	8350 5400 4750 5400
 Wire Wire Line
-	4750 5400 4750 4900
-Wire Wire Line
-	4750 4900 4300 4900
-Wire Wire Line
 	8350 3150 8350 5400
 Wire Wire Line
 	8100 3050 8400 3050
@@ -161,10 +159,6 @@ Wire Wire Line
 	8400 3050 8400 5450
 Wire Wire Line
 	8400 5450 4700 5450
-Wire Wire Line
-	4700 5450 4700 5000
-Wire Wire Line
-	4700 5000 4300 5000
 Text Notes 5050 3150 0    50   ~ 0
 Permanent Power Jumper
 Text Notes 5350 4650 0    50   ~ 0
@@ -197,11 +191,41 @@ U 5F63B107
 F0 "Charger I/O" 50
 F1 "charger_io.sch" 50
 F2 "VCHARGE" O L 3050 4350 50 
-F3 "TX" O R 4300 4900 50 
-F4 "RX" I R 4300 5000 50 
+F3 "TX" O R 4300 4750 50 
+F4 "RX" I R 4300 4850 50 
+F5 "RST" O R 4300 5100 50 
+F6 "GPIO0" O R 4300 5000 50 
 $EndSheet
 Text Notes 3450 2500 0    50   ~ 0
 Power on INT
 Text Notes 3600 4650 0    50   ~ 0
 FTDI
+Wire Wire Line
+	4750 4750 4300 4750
+Wire Wire Line
+	4750 4750 4750 5400
+Wire Wire Line
+	4300 4850 4700 4850
+Wire Wire Line
+	4700 4850 4700 5450
+Wire Wire Line
+	8100 2950 8450 2950
+Wire Wire Line
+	8450 2950 8450 5500
+Wire Wire Line
+	8450 5500 4650 5500
+Wire Wire Line
+	4650 5500 4650 5000
+Wire Wire Line
+	4650 5000 4300 5000
+Wire Wire Line
+	4300 5100 4600 5100
+Wire Wire Line
+	4600 5100 4600 5550
+Wire Wire Line
+	4600 5550 8500 5550
+Wire Wire Line
+	8500 5550 8500 2850
+Wire Wire Line
+	8500 2850 8100 2850
 $EndSCHEMATC
