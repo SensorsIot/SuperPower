@@ -258,8 +258,8 @@ $EndComp
 Text HLabel 1050 3100 0    50   Input ~ 0
 VCHARGE
 Wire Wire Line
-	1450 1750 1350 1750
-Text HLabel 1350 1750 0    50   BiDi ~ 0
+	1450 1750 1400 1750
+Text HLabel 1150 1650 0    50   BiDi ~ 0
 VBAT
 Wire Wire Line
 	2000 2350 2100 2350
@@ -378,4 +378,12 @@ Text HLabel 2350 1550 2    50   BiDi ~ 0
 SDA
 Text HLabel 2350 1450 2    50   Input ~ 0
 SCL
+Wire Wire Line
+	1400 1750 1400 1550
+Wire Wire Line
+	1400 1550 1450 1550
+Connection ~ 1450 1550
+Connection ~ 1200 1650
+Wire Wire Line
+	1200 1650 1150 1650
 $EndSCHEMATC

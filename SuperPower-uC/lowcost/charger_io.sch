@@ -44,17 +44,6 @@ F 4 "C6186" H 2100 1700 50  0001 C CNN "LCSC"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:USB_B_Micro J3
-U 1 1 5F7CD55F
-P 1350 1500
-F 0 "J3" H 1407 1967 50  0000 C CNN
-F 1 "USB_B_Micro" H 1407 1876 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_Amphenol_10104110_Horizontal" H 1500 1450 50  0001 C CNN
-F 3 "~" H 1500 1450 50  0001 C CNN
-	1    1350 1500
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x02_Male J4
 U 1 1 5F7CE401
 P 3800 1150
@@ -198,37 +187,30 @@ Wire Wire Line
 Wire Wire Line
 	3500 1250 3500 1300
 Wire Wire Line
-	1650 1500 1900 1500
-Wire Wire Line
 	1900 2600 2450 2600
 Wire Wire Line
-	1900 1500 1900 2600
+	1900 1700 1900 2600
 Wire Wire Line
 	2450 2700 1800 2700
 Wire Wire Line
-	1800 2700 1800 1600
-Wire Wire Line
-	1800 1600 1650 1600
+	1800 2700 1800 1400
 $Comp
 L power:GND #PWR?
 U 1 1 5F7EBB3E
-P 1350 2000
-F 0 "#PWR?" H 1350 1750 50  0001 C CNN
-F 1 "GND" H 1355 1827 50  0000 C CNN
-F 2 "" H 1350 2000 50  0001 C CNN
-F 3 "" H 1350 2000 50  0001 C CNN
-	1    1350 2000
+P 850 2450
+F 0 "#PWR?" H 850 2200 50  0001 C CNN
+F 1 "GND" H 855 2277 50  0000 C CNN
+F 2 "" H 850 2450 50  0001 C CNN
+F 3 "" H 850 2450 50  0001 C CNN
+	1    850  2450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1250 1900 1350 1900
+	850  2450 850  2400
 Wire Wire Line
-	1350 2000 1350 1900
-Connection ~ 1350 1900
+	1600 900  2150 900 
 Wire Wire Line
-	1650 1300 2150 1300
-Wire Wire Line
-	2150 1300 2150 1350
+	2150 900  2150 1150
 Wire Wire Line
 	2150 2050 2150 2200
 Wire Wire Line
@@ -313,14 +295,60 @@ Wire Wire Line
 	1900 2800 1900 3350
 Connection ~ 1900 3350
 Wire Wire Line
-	3600 1150 3350 1150
+	3600 1150 3450 1150
 Wire Wire Line
-	2150 1300 2150 1150
-Wire Wire Line
-	2150 1150 3150 1150
-Connection ~ 2150 1300
+	2150 1150 3050 1150
 Wire Wire Line
 	3600 850  3250 850 
 Wire Wire Line
-	3250 850  3250 1050
+	3250 850  3250 1000
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J?
+U 1 1 5F7DCB22
+P 1000 1500
+F 0 "J?" H 1107 2367 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 1107 2276 50  0000 C CNN
+F 2 "" H 1150 1500 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1150 1500 50  0001 C CNN
+	1    1000 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 1700 1900 1700
+Wire Wire Line
+	1600 1700 1600 1600
+Connection ~ 1600 1700
+Wire Wire Line
+	1600 1500 1600 1400
+Wire Wire Line
+	1600 1400 1800 1400
+Connection ~ 1600 1400
+Connection ~ 2150 1150
+Wire Wire Line
+	2150 1150 2150 1350
+NoConn ~ 1600 1100
+NoConn ~ 1600 1200
+NoConn ~ 1600 2100
+NoConn ~ 1600 2000
+Wire Wire Line
+	700  2400 850  2400
+Connection ~ 850  2400
+Wire Wire Line
+	850  2400 1000 2400
+NoConn ~ 3150 2900
+NoConn ~ 3150 2800
+NoConn ~ 3150 2700
+NoConn ~ 3150 2600
+NoConn ~ 3150 2300
+$Comp
+L Jumper:SolderJumper_3_Open JP1
+U 1 1 5F7FF752
+P 3250 1150
+F 0 "JP1" H 3100 1100 50  0000 C CNN
+F 1 "SolderJumper_3_Open" H 3450 1250 50  0000 C CNN
+F 2 "" H 3250 1150 50  0001 C CNN
+F 3 "~" H 3250 1150 50  0001 C CNN
+	1    3250 1150
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC

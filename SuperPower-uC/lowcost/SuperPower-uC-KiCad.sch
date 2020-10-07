@@ -122,7 +122,7 @@ RTC
 Text Notes 5350 4450 0    50   ~ 0
 Cut-Off Circuit
 Text Notes 3600 4350 0    50   ~ 0
-Micro-USB
+USB-C
 Text Notes 3600 4450 0    50   ~ 0
 Solar input
 Text Notes 3600 4550 0    50   ~ 0
