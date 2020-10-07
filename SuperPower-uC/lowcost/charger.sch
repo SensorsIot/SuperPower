@@ -45,8 +45,6 @@ F 3 "" H 1500 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1150 5100 1500 5100
-Wire Wire Line
 	1500 5100 1500 5150
 Wire Wire Line
 	1500 5100 1500 4950
@@ -96,14 +94,14 @@ VBAT
 $Comp
 L Transistor_FET:AO3401A Q1
 U 1 1 5F8021C7
-P 3950 2250
-F 0 "Q1" V 4292 2250 50  0000 C CNN
-F 1 "AO3401A" V 4201 2250 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4150 2175 50  0001 L CIN
-F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 3950 2250 50  0001 L CNN
-F 4 "C347476" V 3950 2250 50  0001 C CNN "LCSC"
-	1    3950 2250
-	0    1    -1   0   
+P 2700 4800
+F 0 "Q1" V 3042 4800 50  0000 C CNN
+F 1 "AO3401A" V 2951 4800 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 2900 4725 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 2700 4800 50  0001 L CNN
+F 4 "C347476" V 2700 4800 50  0001 C CNN "LCSC"
+	1    2700 4800
+	1    0    0    1   
 $EndComp
 $Comp
 L Device:C C3
@@ -411,4 +409,27 @@ F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 1400 4750 50  000
 	1    1400 4750
 	1    0    0    -1  
 $EndComp
+$Comp
+L Diode:SM4007 D3
+U 1 1 5F7ECCE7
+P 1000 4950
+F 0 "D3" H 1100 4900 50  0000 C CNN
+F 1 "SM4007" H 1000 4800 50  0000 C CNN
+F 2 "Diode_SMD:D_MELF" H 1000 4775 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/A400/SMD1N400%23DIO.pdf" H 1000 4950 50  0001 C CNN
+F 4 "C64898" H 1000 4950 50  0001 C CNN "LCSC"
+	1    1000 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1150 4750 1000 4750
+Wire Wire Line
+	1000 4750 1000 4800
+Wire Wire Line
+	1000 5100 1150 5100
+Connection ~ 1150 5100
+Wire Wire Line
+	1150 5100 1500 5100
+Text Notes 1300 4350 0    50   ~ 0
+Power on Interrupt
 $EndSCHEMATC
