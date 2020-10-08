@@ -13,7 +13,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 2000 2200 0    50   Output ~ 0
+Text HLabel 2000 2200 0    50   BiDi ~ 0
 VBAT
 $Comp
 L FS312F-G:FS312F-G U1

@@ -13,14 +13,10 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 1350 950  2    50   Output ~ 0
-VOUT
-Text HLabel 1150 950  0    50   BiDi ~ 0
+Text HLabel 3050 3700 2    50   BiDi ~ 0
 VBAT
 Text HLabel 1550 4450 2    50   Output ~ 0
 INT
-Wire Wire Line
-	1150 950  1350 950 
 $Comp
 L Device:R R7
 U 1 1 5F832323
@@ -69,8 +65,6 @@ F 4 "C19702" H 1150 4550 50  0001 C CNN "LCSC"
 	1    1150 4550
 	1    0    0    -1  
 $EndComp
-Text HLabel 1100 4350 0    50   BiDi ~ 0
-VBAT
 Wire Wire Line
 	1100 4350 1150 4350
 Wire Wire Line
@@ -89,8 +83,6 @@ Wire Wire Line
 	3050 3700 2800 3700
 Text HLabel 3100 3400 2    50   Input ~ 0
 CHARGE-DISABLE
-Text HLabel 3050 3700 2    50   BiDi ~ 0
-VBAT
 $Comp
 L Transistor_FET:AO3401A Q1
 U 1 1 5F8021C7
@@ -432,4 +424,6 @@ Wire Wire Line
 	1150 5100 1500 5100
 Text Notes 1300 4350 0    50   ~ 0
 Power on Interrupt
+Text HLabel 1100 4350 0    50   BiDi ~ 0
+VBAT
 $EndSCHEMATC

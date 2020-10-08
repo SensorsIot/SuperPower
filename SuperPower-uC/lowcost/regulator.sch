@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text HLabel 1150 800  0    50   Input ~ 0
-VIN
+VBAT
 Text HLabel 1150 1600 0    50   Output ~ 0
 3v3
 Text HLabel 1150 1750 0    50   Output ~ 0

@@ -35,7 +35,7 @@ U 1 1 5F7FF752
 P 6350 2900
 F 0 "JP1" H 6200 2850 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 6550 3000 50  0000 C CNN
-F 2 "" H 6350 2900 50  0001 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 6350 2900 50  0001 C CNN
 F 3 "~" H 6350 2900 50  0001 C CNN
 	1    6350 2900
 	-1   0    0    1   

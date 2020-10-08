@@ -18,20 +18,19 @@ S 1300 2100 1250 1150
 U 5F639CFE
 F0 "Battery Module" 50
 F1 "battery_protection.sch" 50
-F2 "VBAT" O R 2550 2550 50 
+F2 "VBAT" B R 2550 2550 50 
 $EndSheet
 $Sheet
 S 3050 2100 1250 1150
 U 5F639F48
 F0 "Charging Module" 50
 F1 "charger.sch" 50
-F2 "VOUT" O R 4300 2550 50 
-F3 "VBAT" B L 3050 2550 50 
-F4 "SCL" I R 4300 3050 50 
-F5 "SDA" I R 4300 3150 50 
-F6 "INT" O R 4300 2900 50 
-F7 "VCHARGE" I L 3050 3000 50 
-F8 "CHARGE-DISABLE" I R 4300 2800 50 
+F2 "SCL" I R 4300 3050 50 
+F3 "SDA" I R 4300 3150 50 
+F4 "INT" O R 4300 2900 50 
+F5 "VCHARGE" I L 3050 3000 50 
+F6 "CHARGE-DISABLE" I R 4300 2800 50 
+F7 "VBAT" B L 3050 2550 50 
 $EndSheet
 $Sheet
 S 4950 4000 1250 1150
@@ -40,22 +39,23 @@ F0 "RTC and Cut-Off Module" 50
 F1 "rtc_cut_off.sch" 50
 F2 "SCL" I R 6200 4100 50 
 F3 "SDA" B R 6200 4200 50 
-F4 "VIN" I L 4950 4650 50 
-F5 "VOUT" O L 4950 4450 50 
-F6 "INT" O R 6200 4350 50 
+F4 "INT" O R 6200 4350 50 
+F5 "VBAT" I L 4950 4450 50 
+F6 "3.3V_EN" O R 6200 4600 50 
+F7 "5V_EN" O R 6200 4500 50 
 $EndSheet
 $Sheet
 S 4900 2100 1250 1150
 U 5F63A0E9
 F0 "Regulator Module" 50
 F1 "regulator.sch" 50
-F2 "VIN" I L 4900 2550 50 
-F3 "3v3" O R 6150 2250 50 
-F4 "5V" O R 6150 2400 50 
-F5 "3v3_EN" I R 6150 2550 50 
-F6 "5V_EN" I R 6150 2700 50 
-F7 "3v3_MCU" O R 6150 2850 50 
-F8 "INT" I R 6150 3000 50 
+F2 "3v3" O R 6150 2250 50 
+F3 "5V" O R 6150 2400 50 
+F4 "3v3_EN" I R 6150 2550 50 
+F5 "5V_EN" I R 6150 2700 50 
+F6 "3v3_MCU" O R 6150 2850 50 
+F7 "INT" I R 6150 3000 50 
+F8 "VBAT" I L 4900 2550 50 
 $EndSheet
 $Sheet
 S 6850 2100 1250 1150
@@ -78,7 +78,7 @@ Wire Wire Line
 Wire Wire Line
 	2950 3000 3050 3000
 Wire Wire Line
-	2550 2550 3050 2550
+	2550 2550 2900 2550
 Wire Wire Line
 	6850 2850 6150 2850
 Wire Wire Line
@@ -90,15 +90,9 @@ Wire Wire Line
 Wire Wire Line
 	6600 4100 6200 4100
 Wire Wire Line
-	4300 2550 4550 2550
-Wire Wire Line
-	4550 2550 4550 4650
-Wire Wire Line
-	4550 4650 4950 4650
-Wire Wire Line
 	4950 4450 4700 4450
 Wire Wire Line
-	4700 4450 4700 2550
+	4700 4450 4700 3600
 Wire Wire Line
 	4700 2550 4900 2550
 Text Notes 1400 2300 0    50   ~ 0
@@ -117,10 +111,8 @@ Text Notes 5150 2500 0    50   ~ 0
 5V Buck/Boost
 Text Notes 7400 2450 0    50   ~ 0
 MCU
-Text Notes 5350 4350 0    50   ~ 0
+Text Notes 5300 4350 0    50   ~ 0
 RTC
-Text Notes 5350 4450 0    50   ~ 0
-Cut-Off Circuit
 Text Notes 3600 4350 0    50   ~ 0
 USB-C
 Text Notes 3600 4450 0    50   ~ 0
@@ -145,7 +137,7 @@ Wire Wire Line
 Connection ~ 6650 3550
 Wire Wire Line
 	6650 3550 6650 4200
-Text Notes 5350 4550 0    50   ~ 0
+Text Notes 5300 4550 0    50   ~ 0
 Manual Wake
 Wire Wire Line
 	8100 3150 8350 3150
@@ -161,7 +153,7 @@ Wire Wire Line
 	8400 5450 4700 5450
 Text Notes 5050 3150 0    50   ~ 0
 Permanent Power Jumper
-Text Notes 5350 4650 0    50   ~ 0
+Text Notes 5300 4650 0    50   ~ 0
 Bypass Jumper
 Wire Wire Line
 	6650 3200 6650 3550
@@ -228,4 +220,30 @@ Wire Wire Line
 	8500 5550 8500 2850
 Wire Wire Line
 	8500 2850 8100 2850
+Wire Wire Line
+	4700 3600 2900 3600
+Wire Wire Line
+	2900 3600 2900 2550
+Connection ~ 4700 3600
+Wire Wire Line
+	4700 3600 4700 2550
+Connection ~ 2900 2550
+Wire Wire Line
+	2900 2550 3050 2550
+Text Notes 5300 4450 0    50   ~ 0
+IO Expander
+Text Notes 5300 4750 0    50   ~ 0
+I2C pullup
+Wire Wire Line
+	6500 4600 6500 2550
+Wire Wire Line
+	6200 4600 6500 4600
+Wire Wire Line
+	6150 2550 6500 2550
+Wire Wire Line
+	6150 2700 6450 2700
+Wire Wire Line
+	6450 2700 6450 4500
+Wire Wire Line
+	6450 4500 6200 4500
 $EndSCHEMATC
