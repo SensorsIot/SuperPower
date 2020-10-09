@@ -13,7 +13,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 3400 1550 0    50   Input ~ 0
+Text HLabel 2500 1550 0    50   Input ~ 0
 3v3_MCU
 Text HLabel 1300 1150 0    50   BiDi ~ 0
 SDA
@@ -52,7 +52,7 @@ F 3 "~" H 9450 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3600 1550 3400 1550
+	3600 1550 2750 1550
 Wire Wire Line
 	3600 1750 3400 1750
 Wire Wire Line
@@ -99,19 +99,6 @@ F 3 "" H 5750 1450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5250 1450 5750 1450
-$Comp
-L power:GND #PWR0116
-U 1 1 5F8A73B4
-P 2450 1450
-F 0 "#PWR0116" H 2450 1200 50  0001 C CNN
-F 1 "GND" H 2455 1277 50  0000 C CNN
-F 2 "" H 2450 1450 50  0001 C CNN
-F 3 "" H 2450 1450 50  0001 C CNN
-	1    2450 1450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2450 1450 3600 1450
 Wire Wire Line
 	5400 1750 5200 1750
 Wire Wire Line
@@ -406,4 +393,39 @@ Text HLabel 9250 4400 0    50   Input ~ 0
 3v3
 Text HLabel 9250 2700 0    50   Input ~ 0
 5V
+$Comp
+L Device:C C20
+U 1 1 5F818647
+P 2750 1400
+F 0 "C20" H 2865 1446 50  0000 L CNN
+F 1 "0.1u" H 2865 1355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2788 1250 50  0001 C CNN
+F 3 "~" H 2750 1400 50  0001 C CNN
+F 4 "C14858" H 2750 1400 50  0001 C CNN "LCSC"
+	1    2750 1400
+	1    0    0    -1  
+$EndComp
+Connection ~ 2750 1550
+Wire Wire Line
+	2750 1550 2500 1550
+Wire Wire Line
+	2750 1250 3100 1250
+Wire Wire Line
+	3100 1250 3100 1450
+Wire Wire Line
+	3100 1450 3600 1450
+Wire Wire Line
+	3100 1250 3250 1250
+Connection ~ 3100 1250
+$Comp
+L power:GND #PWR?
+U 1 1 5F82BD5E
+P 3250 1250
+F 0 "#PWR?" H 3250 1000 50  0001 C CNN
+F 1 "GND" H 3255 1077 50  0000 C CNN
+F 2 "" H 3250 1250 50  0001 C CNN
+F 3 "" H 3250 1250 50  0001 C CNN
+	1    3250 1250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
