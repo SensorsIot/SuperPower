@@ -398,6 +398,7 @@ F 0 "Q2" H 1604 4796 50  0000 L CNN
 F 1 "2N7002" H 1604 4705 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 1600 4675 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 1400 4750 50  0001 L CNN
+F 4 "C8545" H 1400 4750 50  0001 C CNN "LCSC"
 	1    1400 4750
 	1    0    0    -1  
 $EndComp
