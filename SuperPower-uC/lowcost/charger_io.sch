@@ -57,27 +57,14 @@ NoConn ~ 4700 2850
 Wire Wire Line
 	5250 2900 5250 3100
 Connection ~ 5250 2900
-Connection ~ 4700 3150
 Wire Wire Line
 	4700 3150 4900 3150
 Wire Wire Line
 	4700 3250 4700 3150
-Connection ~ 4700 3450
 Wire Wire Line
 	4700 3450 4700 3350
 Wire Wire Line
 	4700 3450 5000 3450
-$Comp
-L Connector:USB_C_Receptacle_USB2.0 J3
-U 1 1 5F7DCB22
-P 4100 3250
-F 0 "J3" H 4207 4117 50  0000 C CNN
-F 1 "USB_C_Receptacle_USB2.0" H 4207 4026 50  0000 C CNN
-F 2 "Connector_USB:USB_C_Receptacle_XKB_U262-16XN-4BVC11" H 4250 3250 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/2002271811_XKB-Connectivity-U262-161N-4BVC11_C319148.pdf" H 4250 3250 50  0001 C CNN
-	1    4100 3250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6350 2600 6350 2750
 Wire Wire Line
@@ -351,4 +338,17 @@ Text HLabel 5300 4050 0    50   Output ~ 0
 TX
 Text HLabel 6700 2600 2    50   Output ~ 0
 VCHARGE
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J3
+U 1 1 5F80E438
+P 4100 3250
+F 0 "J3" H 4207 4117 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 4207 4026 50  0000 C CNN
+F 2 "" H 4250 3250 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 4250 3250 50  0001 C CNN
+	1    4100 3250
+	1    0    0    -1  
+$EndComp
+Connection ~ 4700 3150
+Connection ~ 4700 3450
 $EndSCHEMATC
