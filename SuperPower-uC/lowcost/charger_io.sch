@@ -73,8 +73,8 @@ U 1 1 5F7DCB22
 P 4100 3250
 F 0 "J3" H 4207 4117 50  0000 C CNN
 F 1 "USB_C_Receptacle_USB2.0" H 4207 4026 50  0000 C CNN
-F 2 "" H 4250 3250 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 4250 3250 50  0001 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_XKB_U262-16XN-4BVC11" H 4250 3250 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/2002271811_XKB-Connectivity-U262-161N-4BVC11_C319148.pdf" H 4250 3250 50  0001 C CNN
 	1    4100 3250
 	1    0    0    -1  
 $EndComp
