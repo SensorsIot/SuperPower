@@ -28,8 +28,20 @@ author = 'SuperPower Team, ESP Team, Raspi Team'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    "recommonmark",
     "sphinx_rtd_theme",
 ]
+
+extensions = ['recommonmark']
+
+# for Sphinx-1.3
+from recommonmark.parser import CommonMarkParser
+
+source_parsers = {
+    '.md': CommonMarkParser,
+}
+
+source_suffix = ['.rst', '.md']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

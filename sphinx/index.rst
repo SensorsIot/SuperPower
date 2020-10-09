@@ -8,8 +8,15 @@ Welcome to SuperPower's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: ESP32 Solar:
 
+   uc/requirements.rst
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Raspi Power:
+
+   rpi/requirements.rst
 
 
 Indices and tables
