@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:SuperPower-uC-KiCad-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -247,7 +246,7 @@ L Connector:Conn_01x02_Male J5
 U 1 1 5F7331CA
 P 6900 5200
 F 0 "J5" H 7008 5381 50  0000 C CNN
-F 1 "Conn_01x02_SolderPad" H 7008 5290 50  0000 C CNN
+F 1 "S2B-PH-SM4-TB(LF)(SN)" H 7008 5290 50  0000 C CNN
 F 2 "" H 6900 5200 50  0001 C CNN
 F 3 "~" H 6900 5200 50  0001 C CNN
 	1    6900 5200
