@@ -19,16 +19,16 @@ Text HLabel 3250 3000 0    50   BiDi ~ 0
 SDA
 Text HLabel 3250 3150 0    50   Input ~ 0
 SCL
-Text HLabel 6850 3950 0    50   Input ~ 0
+Text HLabel 6750 3800 0    50   Input ~ 0
 D+
-Text HLabel 6850 4050 0    50   Input ~ 0
+Text HLabel 6750 3900 0    50   Input ~ 0
 D-
 $Comp
 L RF_Module:ESP32-WROOM-32D U?
 U 1 1 5F821A8B
 P 4550 3950
-F 0 "U?" H 4550 5531 50  0000 C CNN
-F 1 "ESP32-WROOM-32D" H 4550 5440 50  0000 C CNN
+F 0 "U?" H 4650 5500 50  0000 C CNN
+F 1 "ESP32-WROOM-32D" H 5000 5400 50  0000 C CNN
 F 2 "RF_Module:ESP32-WROOM-32" H 4550 2450 50  0001 C CNN
 F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf" H 4250 4000 50  0001 C CNN
 	1    4550 3950
@@ -37,18 +37,18 @@ $EndComp
 $Comp
 L Interface_USB:CP2102N-A01-GQFN24 U?
 U 1 1 5F82298E
-P 7550 3550
-F 0 "U?" H 7550 4631 50  0000 C CNN
-F 1 "CP2102N-A01-GQFN24" H 7550 4540 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 8000 2750 50  0001 L CNN
-F 3 "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" H 7600 2500 50  0001 C CNN
-	1    7550 3550
+P 7450 3400
+F 0 "U?" H 7600 4350 50  0000 C CNN
+F 1 "CP2102N-A01-GQFN24" H 8000 4250 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 7900 2600 50  0001 L CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" H 7500 2350 50  0001 C CNN
+	1    7450 3400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6850 3950 6950 3950
+	6750 3800 6850 3800
 Wire Wire Line
-	6850 4050 6950 4050
+	6750 3900 6850 3900
 Wire Wire Line
 	4550 2150 4550 2250
 $Comp
@@ -65,31 +65,31 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5F825D6E
-P 7600 4600
-F 0 "#PWR?" H 7600 4350 50  0001 C CNN
-F 1 "GND" H 7605 4427 50  0000 C CNN
-F 2 "" H 7600 4600 50  0001 C CNN
-F 3 "" H 7600 4600 50  0001 C CNN
-	1    7600 4600
+P 7500 4400
+F 0 "#PWR?" H 7500 4150 50  0001 C CNN
+F 1 "GND" H 7505 4227 50  0000 C CNN
+F 2 "" H 7500 4400 50  0001 C CNN
+F 3 "" H 7500 4400 50  0001 C CNN
+	1    7500 4400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7550 4450 7550 4500
+	7450 4300 7450 4350
 Wire Wire Line
-	7550 4500 7600 4500
+	7450 4350 7500 4350
 Wire Wire Line
-	7600 4500 7600 4600
+	7500 4350 7500 4400
 Wire Wire Line
-	7650 4450 7650 4500
+	7550 4300 7550 4350
 Wire Wire Line
-	7650 4500 7600 4500
-Connection ~ 7600 4500
+	7550 4350 7500 4350
+Connection ~ 7500 4350
 Wire Wire Line
 	4550 5450 4550 5350
-NoConn ~ 8150 3850
-NoConn ~ 8150 3950
-NoConn ~ 8150 4050
-NoConn ~ 8150 4150
+NoConn ~ 8050 3700
+NoConn ~ 8050 3800
+NoConn ~ 8050 3900
+NoConn ~ 8050 4000
 $Comp
 L Device:R R?
 U 1 1 5F826575
@@ -112,4 +112,177 @@ Wire Wire Line
 Connection ~ 4550 2250
 Wire Wire Line
 	4550 2250 4550 2550
+Wire Wire Line
+	5150 2850 5400 2850
+Text Label 5400 2850 2    50   ~ 0
+TXD
+Text Label 5400 3050 2    50   ~ 0
+RXD
+Wire Wire Line
+	5150 3050 5400 3050
+NoConn ~ 8050 2900
+NoConn ~ 8050 2800
+$Comp
+L Device:R_Small R?
+U 1 1 5F848A0E
+P 8250 3100
+F 0 "R?" V 8150 3100 50  0000 C CNN
+F 1 "470" V 8250 3100 39  0000 C CNN
+F 2 "" H 8250 3100 50  0001 C CNN
+F 3 "~" H 8250 3100 50  0001 C CNN
+	1    8250 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F849260
+P 6750 3550
+F 0 "R?" H 6809 3596 50  0000 L CNN
+F 1 "22k" H 6809 3505 50  0000 L CNN
+F 2 "" H 6750 3550 50  0001 C CNN
+F 3 "~" H 6750 3550 50  0001 C CNN
+	1    6750 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3450 6750 3400
+Wire Wire Line
+	6750 3400 6850 3400
+Wire Wire Line
+	6750 3650 6750 3700
+Wire Wire Line
+	6750 3700 6850 3700
+Wire Wire Line
+	8150 3200 8050 3200
+NoConn ~ 8050 3500
+NoConn ~ 8050 3300
+Wire Wire Line
+	8050 3400 8650 3400
+Text Label 8650 3400 2    50   ~ 0
+DTR
+$Comp
+L Device:R_Small R?
+U 1 1 5F847C15
+P 8250 3200
+F 0 "R?" V 8350 3200 50  0000 C CNN
+F 1 "470" V 8250 3200 39  0000 C CNN
+F 2 "" H 8250 3200 50  0001 C CNN
+F 3 "~" H 8250 3200 50  0001 C CNN
+	1    8250 3200
+	0    1    1    0   
+$EndComp
+Text Label 8650 3000 2    50   ~ 0
+RTS
+Wire Wire Line
+	8050 3100 8150 3100
+Text Label 8650 3200 2    50   ~ 0
+RXD
+Wire Wire Line
+	8350 3100 8650 3100
+Text Label 8650 3100 2    50   ~ 0
+TXD
+Wire Wire Line
+	8050 3000 8150 3000
+Wire Wire Line
+	8150 3000 8150 2900
+Wire Wire Line
+	8150 2900 8350 2900
+Wire Wire Line
+	8350 2900 8350 3000
+Wire Wire Line
+	8350 3000 8650 3000
+Wire Wire Line
+	8350 3200 8650 3200
+NoConn ~ 6850 3100
+NoConn ~ 6850 3200
+$Comp
+L Device:R_Small R?
+U 1 1 5F850123
+P 6750 2600
+F 0 "R?" H 6809 2646 50  0000 L CNN
+F 1 "4.7k" H 6809 2555 50  0000 L CNN
+F 2 "" H 6750 2600 50  0001 C CNN
+F 3 "~" H 6750 2600 50  0001 C CNN
+	1    6750 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 2700 6750 2800
+Wire Wire Line
+	6750 2800 6850 2800
+Wire Wire Line
+	6750 2500 6750 2400
+Wire Wire Line
+	7350 2500 7350 2450
+Wire Wire Line
+	7450 2500 7450 2450
+Wire Wire Line
+	7450 2450 7400 2450
+Wire Wire Line
+	7400 2450 7400 2400
+Wire Wire Line
+	7400 2400 6750 2400
+Connection ~ 7400 2450
+Wire Wire Line
+	7400 2450 7350 2450
+$Comp
+L Device:C_Small C?
+U 1 1 5F853152
+P 7300 2200
+F 0 "C?" H 7100 2250 50  0000 L CNN
+F 1 "1µF" H 7050 2150 50  0000 L CNN
+F 2 "" H 7300 2200 50  0001 C CNN
+F 3 "~" H 7300 2200 50  0001 C CNN
+	1    7300 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F853ED8
+P 7500 2200
+F 0 "C?" H 7592 2246 50  0000 L CNN
+F 1 "0.1µF" H 7592 2155 50  0000 L CNN
+F 2 "" H 7500 2200 50  0001 C CNN
+F 3 "~" H 7500 2200 50  0001 C CNN
+	1    7500 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 2300 7300 2350
+Wire Wire Line
+	7300 2350 7400 2350
+Wire Wire Line
+	7500 2350 7500 2300
+Wire Wire Line
+	7400 2350 7400 2400
+Connection ~ 7400 2350
+Wire Wire Line
+	7400 2350 7500 2350
+Connection ~ 7400 2400
+Wire Wire Line
+	7300 2100 7300 2050
+Wire Wire Line
+	7500 2050 7500 2100
+Wire Wire Line
+	7300 2050 7400 2050
+Wire Wire Line
+	7400 2050 7400 2000
+Wire Wire Line
+	7400 2000 7900 2000
+Wire Wire Line
+	7900 2000 7900 2050
+Connection ~ 7400 2050
+Wire Wire Line
+	7400 2050 7500 2050
+$Comp
+L power:GND #PWR?
+U 1 1 5F85BF22
+P 7900 2050
+F 0 "#PWR?" H 7900 1800 50  0001 C CNN
+F 1 "GND" H 7905 1877 50  0000 C CNN
+F 2 "" H 7900 2050 50  0001 C CNN
+F 3 "" H 7900 2050 50  0001 C CNN
+	1    7900 2050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
