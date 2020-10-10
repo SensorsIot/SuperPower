@@ -52,8 +52,6 @@ Wire Wire Line
 	3800 4150 3950 4150
 NoConn ~ 4700 3750
 NoConn ~ 4700 3850
-NoConn ~ 4700 2950
-NoConn ~ 4700 2850
 Wire Wire Line
 	5250 2900 5250 3100
 Connection ~ 5250 2900
@@ -351,4 +349,44 @@ F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 4250 32
 $EndComp
 Connection ~ 4700 3150
 Connection ~ 4700 3450
+$Comp
+L Device:R R19
+U 1 1 5F81A493
+P 4850 2850
+F 0 "R19" V 4750 2750 50  0000 C CNN
+F 1 "5.1k" V 4750 2950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4780 2850 50  0001 C CNN
+F 3 "~" H 4850 2850 50  0001 C CNN
+F 4 "C23186" V 4850 2850 50  0001 C CNN "LCSC"
+	1    4850 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R20
+U 1 1 5F81C386
+P 4850 2950
+F 0 "R20" V 4950 2850 50  0000 C CNN
+F 1 "5.1k" V 4950 3050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4780 2950 50  0001 C CNN
+F 3 "~" H 4850 2950 50  0001 C CNN
+F 4 "C23186" V 4850 2950 50  0001 C CNN "LCSC"
+	1    4850 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 2850 5000 2950
+$Comp
+L power:GND #PWR?
+U 1 1 5F820F01
+P 5100 2950
+F 0 "#PWR?" H 5100 2700 50  0001 C CNN
+F 1 "GND" H 5105 2777 50  0000 C CNN
+F 2 "" H 5100 2950 50  0001 C CNN
+F 3 "" H 5100 2950 50  0001 C CNN
+	1    5100 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 2950 5000 2950
+Connection ~ 5000 2950
 $EndSCHEMATC
