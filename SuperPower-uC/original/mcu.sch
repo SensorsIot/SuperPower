@@ -103,8 +103,6 @@ F 3 "~" H 3000 1950 50  0001 C CNN
 $EndComp
 Text Label 3400 1750 2    50   ~ 0
 RTS
-Wire Wire Line
-	2800 1850 2900 1850
 Text Label 3400 1950 2    50   ~ 0
 RXD
 Wire Wire Line
@@ -372,8 +370,6 @@ Text HLabel 6000 4950 2    50   BiDi ~ 0
 SDA
 Text HLabel 5300 3250 1    50   Input ~ 0
 3v3_MCU
-Text Notes 950  1800 0    50   ~ 0
-NEEDS VBUS\n+ clarify SUSPEND functionality
 Wire Wire Line
 	5300 3250 5300 3350
 Text Label 4500 3550 0    50   ~ 0
@@ -469,28 +465,6 @@ F 3 "~" H 5550 1850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
-U 1 1 5F8DFE61
-P 5550 1100
-F 0 "R?" H 5609 1146 50  0000 L CNN
-F 1 "12k" H 5609 1055 50  0000 L CNN
-F 2 "" H 5550 1100 50  0001 C CNN
-F 3 "~" H 5550 1100 50  0001 C CNN
-	1    5550 1100
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:Q_NPN_CEB Q?
-U 1 1 5F8E1EE6
-P 5150 1100
-F 0 "Q?" H 5341 1146 50  0000 L CNN
-F 1 "Q_NPN_CEB" H 5341 1055 50  0000 L CNN
-F 2 "" H 5350 1200 50  0001 C CNN
-F 3 "~" H 5150 1100 50  0001 C CNN
-	1    5150 1100
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Device:Q_NPN_CEB Q?
 U 1 1 5F8E617A
 P 5150 1850
@@ -502,19 +476,11 @@ F 3 "~" H 5150 1850 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5350 1100 5450 1100
-Wire Wire Line
 	5350 1850 5450 1850
-Wire Wire Line
-	5050 1300 5050 1400
 Wire Wire Line
 	5750 1400 5750 1850
 Wire Wire Line
 	5750 1850 5650 1850
-Wire Wire Line
-	5050 900  5050 800 
-Wire Wire Line
-	5050 800  5900 800 
 Wire Wire Line
 	5050 2050 5050 2150
 Wire Wire Line
@@ -536,24 +502,15 @@ Wire Wire Line
 Text Label 4850 1550 0    50   ~ 0
 DTR
 Wire Wire Line
-	5050 1400 5750 1400
-Connection ~ 5750 1400
-Wire Wire Line
 	5750 1400 5900 1400
 Text Notes 3650 1450 0    50   ~ 0
 Autoflash circuit\n\nDTR RTS   EN IO0\n\n 1   1     1   1\n 0   0     1   1\n 1   0     0   1\n 0   1     1   0
 Wire Notes Line
 	3600 750  4400 750 
 Wire Notes Line
-	4400 750  4400 1500
-Wire Notes Line
 	4400 1500 3600 1500
 Wire Notes Line
 	3600 1500 3600 750 
-Wire Notes Line
-	3600 900  4400 900 
-Wire Notes Line
-	3600 1100 4400 1100
 Wire Notes Line
 	4000 900  4000 1500
 Text Notes 5300 700  2    50   ~ 0
@@ -566,4 +523,50 @@ Wire Notes Line
 	3550 2200 3550 600 
 Wire Notes Line
 	6850 600  6850 2200
+Connection ~ 5750 1400
+Wire Notes Line
+	3600 1100 4400 1100
+Wire Notes Line
+	3600 900  4400 900 
+Wire Notes Line
+	4400 750  4400 1500
+Wire Wire Line
+	5050 1400 5750 1400
+Wire Wire Line
+	5050 800  5900 800 
+Wire Wire Line
+	5050 900  5050 800 
+Wire Wire Line
+	5050 1300 5050 1400
+Wire Wire Line
+	5350 1100 5450 1100
+$Comp
+L Device:Q_NPN_CEB Q?
+U 1 1 5F8E1EE6
+P 5150 1100
+F 0 "Q?" H 5341 1146 50  0000 L CNN
+F 1 "Q_NPN_CEB" H 5341 1055 50  0000 L CNN
+F 2 "" H 5350 1200 50  0001 C CNN
+F 3 "~" H 5150 1100 50  0001 C CNN
+	1    5150 1100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F8DFE61
+P 5550 1100
+F 0 "R?" H 5609 1146 50  0000 L CNN
+F 1 "12k" H 5609 1055 50  0000 L CNN
+F 2 "" H 5550 1100 50  0001 C CNN
+F 3 "~" H 5550 1100 50  0001 C CNN
+	1    5550 1100
+	0    -1   -1   0   
+$EndComp
+Text HLabel 1050 2050 1    50   Input ~ 0
+VBUS
+Wire Wire Line
+	1050 2050 1050 2150
+Connection ~ 1050 2150
+Wire Wire Line
+	2900 1850 2800 1850
 $EndSCHEMATC
