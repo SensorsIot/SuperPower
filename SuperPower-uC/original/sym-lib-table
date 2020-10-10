@@ -1,4 +1,5 @@
 (sym_lib_table
-  (lib (name ltc4162)(type Legacy)(uri ${KIPRJMOD}/components/LTC4162/ltc4162.lib)(options "")(descr ""))
+  (lib (name ltc4162-l)(type Legacy)(uri ${KIPRJMOD}/components/LTC4162-L/ltc4162-l.lib)(options "")(descr ""))
   (lib (name solderjumper_4_open)(type Legacy)(uri ${KIPRJMOD}/components/solderjumper_4_open/solderjumper_4_open.lib)(options "")(descr ""))
+  (lib (name SuperPower-uC-KiCad-rescue)(type Legacy)(uri ${KIPRJMOD}/SuperPower-uC-KiCad-rescue.lib)(options "")(descr ""))
 )

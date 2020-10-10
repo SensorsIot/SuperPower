@@ -20893,7 +20893,7 @@ Wire Wire Line
 	7650 3100 7000 3100
 Connection ~ 7000 3100
 Text Notes 5900 1250 0    50   ~ 0
-TODO : Add this option to reduce Iquiescent in ship mode.
+Add this option to reduce Iquiescent in ship mode.
 Wire Wire Line
 	3750 4050 5000 4050
 Wire Wire Line
@@ -20901,11 +20901,13 @@ Wire Wire Line
 Wire Wire Line
 	7650 4350 8000 4350
 $Comp
-L ltc4162:LTC4162 U1
+L ltc4162-l:LTC4162-L U1
 U 1 1 5F742483
 P 5600 4000
+AR Path="/5F742483" Ref="U1"  Part="1" 
+AR Path="/5F639F48/5F742483" Ref="U1"  Part="1" 
 F 0 "U1" H 5200 5050 50  0000 C CNN
-F 1 "LTC4162" H 5850 5050 50  0000 C CNN
+F 1 "LTC4162-L" H 5850 5050 50  0000 C CNN
 F 2 "Package_DFN_QFN:QFN-28-1EP_4x5mm_P0.5mm_EP2.65x3.65mm_ThermalVias" H 5250 5050 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/LTC4162-L.pdf" H 5200 5050 50  0001 C CNN
 	1    5600 4000
