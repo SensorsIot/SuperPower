@@ -18,16 +18,29 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: nerdyscout/kicad-exports@v2.0
-      name: kiplot-SuperPower-uC
+      name: kiplot-SuperPower-uC-original
       with:
       # Required - kiplot config file
         config: config.kiplot.yaml
       # optional - prefix to output defined in config
-        dir: build/SuperPower-uC
+        dir: build/SuperPower-uC/original
       # optional - schematic file
         schema: 'SuperPower-uC/original/SuperPower-uC-KiCad.sch'
       # optional - PCB design file
         board: 'SuperPower-uC/original/SuperPower-uC-KiCad.kicad_pcb'
+
+    - uses: nerdyscout/kicad-exports@v2.0
+      name: kiplot-SuperPower-uC-lowcost
+      with:
+      # Required - kiplot config file
+        config: config.kiplot.yaml
+      # optional - prefix to output defined in config
+        dir: build/SuperPower-uC/lowcost
+      # optional - schematic file
+        schema: 'SuperPower-uC/lowcost/SuperPower-uC-KiCad.sch'
+      # optional - PCB design file
+        board: 'SuperPower-uC/lowcost/SuperPower-uC-KiCad.kicad_pcb'
+
     - uses: nerdyscout/kicad-exports@v2.0
       name: kiplot-SuperPower-RPi
       with:

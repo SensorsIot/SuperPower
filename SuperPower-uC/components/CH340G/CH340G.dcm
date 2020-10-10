@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CH340G
+F https://www.mpja.com/download/35227cpdata.pdf
+$ENDCMP
+#
+#End Doc Library
