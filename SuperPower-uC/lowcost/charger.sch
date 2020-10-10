@@ -156,8 +156,6 @@ F 4 "C4177" V 2450 3200 50  0001 C CNN "LCSC"
 $EndComp
 Text HLabel 900  3300 0    50   Input ~ 0
 VCHARGE
-Wire Wire Line
-	1450 1750 1400 1750
 Text HLabel 1150 1650 0    50   BiDi ~ 0
 VBAT
 Wire Wire Line
@@ -277,11 +275,6 @@ Text HLabel 2350 1550 2    50   BiDi ~ 0
 SDA
 Text HLabel 2350 1450 2    50   Input ~ 0
 SCL
-Wire Wire Line
-	1400 1750 1400 1550
-Wire Wire Line
-	1400 1550 1450 1550
-Connection ~ 1450 1550
 Connection ~ 1200 1650
 Wire Wire Line
 	1200 1650 1150 1650
@@ -415,4 +408,5 @@ Text Notes 1300 4350 0    50   ~ 0
 Power on Interrupt
 Text HLabel 1100 4350 0    50   BiDi ~ 0
 VBAT
+NoConn ~ 1450 1750
 $EndSCHEMATC

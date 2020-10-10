@@ -43,12 +43,12 @@ $EndComp
 $Comp
 L Connector:Conn_01x16_Female J6
 U 1 1 5F896962
-P 9450 3700
-F 0 "J6" H 9478 3676 50  0000 L CNN
-F 1 "main pin header" H 9478 3585 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 9450 3700 50  0001 C CNN
-F 3 "~" H 9450 3700 50  0001 C CNN
-	1    9450 3700
+P 9450 3800
+F 0 "J6" H 9478 3776 50  0000 L CNN
+F 1 "main pin header" H 9478 3685 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 9450 3800 50  0001 C CNN
+F 3 "~" H 9450 3800 50  0001 C CNN
+	1    9450 3800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -286,7 +286,7 @@ Wire Wire Line
 Text Label 9050 4200 0    50   ~ 0
 IO13
 Wire Wire Line
-	9250 4500 8950 4500
+	9250 4600 8950 4600
 Wire Wire Line
 	9250 2800 8950 2800
 $Comp
@@ -303,12 +303,12 @@ $EndComp
 $Comp
 L power:GND #PWR0120
 U 1 1 5F8C9F4B
-P 8950 4500
-F 0 "#PWR0120" H 8950 4250 50  0001 C CNN
-F 1 "GND" H 8955 4327 50  0000 C CNN
-F 2 "" H 8950 4500 50  0001 C CNN
-F 3 "" H 8950 4500 50  0001 C CNN
-	1    8950 4500
+P 8950 4600
+F 0 "#PWR0120" H 8950 4350 50  0001 C CNN
+F 1 "GND" H 8955 4427 50  0000 C CNN
+F 2 "" H 8950 4600 50  0001 C CNN
+F 3 "" H 8950 4600 50  0001 C CNN
+	1    8950 4600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -387,9 +387,9 @@ Wire Wire Line
 	9250 2600 9050 2600
 Text Label 9050 2600 0    50   ~ 0
 IO15
-Text HLabel 9250 4300 0    50   Input ~ 0
-3v3_MCU
 Text HLabel 9250 4400 0    50   Input ~ 0
+3v3_MCU
+Text HLabel 9250 4500 0    50   Input ~ 0
 3v3
 Text HLabel 9250 2700 0    50   Input ~ 0
 5V
@@ -418,14 +418,15 @@ Wire Wire Line
 	3100 1250 3250 1250
 Connection ~ 3100 1250
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0116
 U 1 1 5F82BD5E
 P 3250 1250
-F 0 "#PWR?" H 3250 1000 50  0001 C CNN
+F 0 "#PWR0116" H 3250 1000 50  0001 C CNN
 F 1 "GND" H 3255 1077 50  0000 C CNN
 F 2 "" H 3250 1250 50  0001 C CNN
 F 3 "" H 3250 1250 50  0001 C CNN
 	1    3250 1250
 	1    0    0    -1  
 $EndComp
+NoConn ~ 9250 4300
 $EndSCHEMATC

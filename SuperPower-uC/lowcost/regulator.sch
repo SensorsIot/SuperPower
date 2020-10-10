@@ -74,7 +74,7 @@ $EndComp
 Wire Wire Line
 	2750 1200 2850 1200
 Wire Wire Line
-	2750 2350 3000 2350
+	2750 2350 2950 2350
 $Comp
 L Device:R R13
 U 1 1 5F813622
@@ -149,9 +149,6 @@ F 3 "" H 3400 1500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3400 1400 3400 1500
-Wire Wire Line
-	2550 1500 2850 1500
-Connection ~ 2550 1500
 Connection ~ 3400 1500
 Wire Wire Line
 	3400 3050 3000 3050
@@ -219,7 +216,6 @@ $EndComp
 Connection ~ 2850 1200
 Wire Wire Line
 	2850 1200 3050 1200
-Connection ~ 2850 1500
 Wire Wire Line
 	2850 1500 3400 1500
 Wire Wire Line
@@ -503,4 +499,34 @@ F 4 "C18701" H 3350 4500 50  0001 C CNN "LCSC"
 $EndComp
 Text HLabel 4950 3750 2    50   Output ~ 0
 5V
+$Comp
+L power:PWR_FLAG #FLG0105
+U 1 1 5F875FD2
+P 2950 2250
+F 0 "#FLG0105" H 2950 2325 50  0001 C CNN
+F 1 "PWR_FLAG" H 2950 2423 50  0000 C CNN
+F 2 "" H 2950 2250 50  0001 C CNN
+F 3 "~" H 2950 2250 50  0001 C CNN
+	1    2950 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 2250 2950 2350
+Connection ~ 2950 2350
+Wire Wire Line
+	2950 2350 3000 2350
+$Comp
+L power:PWR_FLAG #FLG0106
+U 1 1 5F877C10
+P 3050 1050
+F 0 "#FLG0106" H 3050 1125 50  0001 C CNN
+F 1 "PWR_FLAG" H 3050 1223 50  0000 C CNN
+F 2 "" H 3050 1050 50  0001 C CNN
+F 3 "~" H 3050 1050 50  0001 C CNN
+	1    3050 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 1050 3050 1200
+Connection ~ 3050 1200
 $EndSCHEMATC

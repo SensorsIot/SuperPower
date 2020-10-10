@@ -69,8 +69,6 @@ Wire Wire Line
 	6700 2600 6350 2600
 Wire Wire Line
 	5250 2900 6150 2900
-Wire Wire Line
-	6700 2900 6550 2900
 Connection ~ 5000 5100
 Wire Wire Line
 	5000 4550 5000 5100
@@ -166,7 +164,7 @@ Wire Wire Line
 Wire Wire Line
 	6600 3000 6600 3050
 Wire Wire Line
-	6700 3000 6600 3000
+	6850 3000 6600 3000
 $Comp
 L power:GND #PWR0123
 U 1 1 5F7E4D0C
@@ -179,9 +177,9 @@ F 3 "" H 6600 3050 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	5300 4150 5550 4150
+	5400 4150 5550 4150
 Wire Wire Line
-	5300 4050 5550 4050
+	5400 4050 5550 4050
 Connection ~ 5550 3950
 Wire Wire Line
 	5550 3750 5550 3950
@@ -297,13 +295,13 @@ $EndComp
 $Comp
 L Connector:Conn_01x02_Male J4
 U 1 1 5F7CE401
-P 6900 2900
-F 0 "J4" H 7008 3081 50  0000 C CNN
-F 1 "Solar in" H 7008 2990 50  0000 C CNN
-F 2 "Connector_JST:JST_EH_S2B-EH_1x02_P2.50mm_Horizontal" H 6900 2900 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1811051822_JST-Sales-America-S2B-XH-A-LF-SN_C157931.pdf" H 6900 2900 50  0001 C CNN
-F 4 "C157931" H 6900 2900 50  0001 C CNN "LCSC"
-	1    6900 2900
+P 7050 2900
+F 0 "J4" H 7158 3081 50  0000 C CNN
+F 1 "Solar in" H 7158 2990 50  0000 C CNN
+F 2 "Connector_JST:JST_EH_S2B-EH_1x02_P2.50mm_Horizontal" H 7050 2900 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811051822_JST-Sales-America-S2B-XH-A-LF-SN_C157931.pdf" H 7050 2900 50  0001 C CNN
+F 4 "C157931" H 7050 2900 50  0001 C CNN "LCSC"
+	1    7050 2900
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -330,9 +328,9 @@ F 4 "C14267" H 5900 4050 50  0001 C CNN "LCSC"
 	1    5900 4050
 	1    0    0    -1  
 $EndComp
-Text HLabel 5300 4150 0    50   Input ~ 0
+Text HLabel 5400 4150 0    50   Input ~ 0
 RX
-Text HLabel 5300 4050 0    50   Output ~ 0
+Text HLabel 5400 4050 0    50   Output ~ 0
 TX
 Text HLabel 6700 2600 2    50   Output ~ 0
 VCHARGE
@@ -376,10 +374,10 @@ $EndComp
 Wire Wire Line
 	5000 2850 5000 2950
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0124
 U 1 1 5F820F01
 P 5100 2950
-F 0 "#PWR?" H 5100 2700 50  0001 C CNN
+F 0 "#PWR0124" H 5100 2700 50  0001 C CNN
 F 1 "GND" H 5105 2777 50  0000 C CNN
 F 2 "" H 5100 2950 50  0001 C CNN
 F 3 "" H 5100 2950 50  0001 C CNN
@@ -389,4 +387,44 @@ $EndComp
 Wire Wire Line
 	5100 2950 5000 2950
 Connection ~ 5000 2950
+$Comp
+L power:GND #PWR0125
+U 1 1 5F8616D9
+P 5100 3950
+F 0 "#PWR0125" H 5100 3700 50  0001 C CNN
+F 1 "GND" H 5105 3777 50  0000 C CNN
+F 2 "" H 5100 3950 50  0001 C CNN
+F 3 "" H 5100 3950 50  0001 C CNN
+	1    5100 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3950 5250 3950
+Connection ~ 5250 3950
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F872CCA
+P 5250 2650
+F 0 "#FLG0101" H 5250 2725 50  0001 C CNN
+F 1 "PWR_FLAG" H 5250 2823 50  0000 C CNN
+F 2 "" H 5250 2650 50  0001 C CNN
+F 3 "~" H 5250 2650 50  0001 C CNN
+	1    5250 2650
+	1    0    0    -1  
+$EndComp
+Connection ~ 5250 2650
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 5F8735A3
+P 6350 2600
+F 0 "#FLG0104" H 6350 2675 50  0001 C CNN
+F 1 "PWR_FLAG" H 6350 2773 50  0000 C CNN
+F 2 "" H 6350 2600 50  0001 C CNN
+F 3 "~" H 6350 2600 50  0001 C CNN
+	1    6350 2600
+	1    0    0    -1  
+$EndComp
+Connection ~ 6350 2600
+Wire Wire Line
+	6550 2900 6850 2900
 $EndSCHEMATC
