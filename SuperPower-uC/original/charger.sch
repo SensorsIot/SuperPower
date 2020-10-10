@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:SuperPower-uC-KiCad-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -14,13 +13,13 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 3200 2250 0    50   Input ~ 0
+Text HLabel 1350 3000 0    50   Input ~ 0
 VBUS_IN
-Text HLabel 3200 2400 0    50   Input ~ 0
+Text HLabel 1350 3250 0    50   Input ~ 0
 VIN
-Text HLabel 3200 2550 0    50   Input ~ 0
+Text HLabel 1350 3450 0    50   Input ~ 0
 VSOLAR_IN
-Text HLabel 6700 2700 2    50   Output ~ 0
+Text HLabel 7700 1600 2    50   Output ~ 0
 VOUT
 Text HLabel 8000 4350 2    50   BiDi ~ 0
 VBAT
@@ -86,12 +85,12 @@ $EndComp
 $Comp
 L power:VCC #PWR08
 U 1 1 5F745F21
-P 6400 2500
-F 0 "#PWR08" H 6400 2350 50  0001 C CNN
-F 1 "VCC" H 6415 2673 50  0000 C CNN
-F 2 "" H 6400 2500 50  0001 C CNN
-F 3 "" H 6400 2500 50  0001 C CNN
-	1    6400 2500
+P 6400 1500
+F 0 "#PWR08" H 6400 1350 50  0001 C CNN
+F 1 "VCC" H 6415 1673 50  0000 C CNN
+F 2 "" H 6400 1500 50  0001 C CNN
+F 3 "" H 6400 1500 50  0001 C CNN
+	1    6400 1500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -179,7 +178,7 @@ Wire Wire Line
 Wire Wire Line
 	7000 3100 7000 3150
 Wire Wire Line
-	6400 2500 6400 2700
+	6400 1500 6400 1600
 Connection ~ 6400 2700
 $Comp
 L Device:C C5
@@ -14434,8 +14433,8 @@ B4 1F 00 00 40 7C DA 0F 00 00 20 BE 1F 82 9D ED 76 19 87 77 83 00 00 00 00 49 45
 EndData
 $EndBitmap
 $Bitmap
-Pos 7000 1350
-Scale 0.500000
+Pos 6400 850 
+Scale 0.250000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 04 D3 00 00 02 D5 08 02 00 00 00 65 7A 30 
 38 00 00 00 03 73 42 49 54 08 08 08 DB E1 4F E0 00 00 00 09 70 48 59 73 00 00 0A F0 00 00 0A F0 
@@ -20164,7 +20163,7 @@ $EndBitmap
 Text Notes 5450 7100 0    50   ~ 0
 1MHz < fosc < 2.5MHz\n\nRt=93.1KOhm @F=1.01MHz (Fmin)\nRT=63.4kOhm @F=1.48MHz (Fdefault)\nRt=46.4Kohm @F=2.02MHz\nRt=37.4Kohm @F=2.51MHz (Fmax)
 $Bitmap
-Pos 1550 3850
+Pos 1500 4100
 Scale 0.600000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 02 59 00 00 00 DA 08 02 00 00 00 1A 21 C0 
@@ -20765,7 +20764,7 @@ F4 77 40 0B 01 00 00 80 FE 0E 68 21 00 00 00 D0 DF 01 2D 04 00 00 00 FA 3B A0 85
 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
-Text Notes 1100 3550 0    50   ~ 0
+Text Notes 950  3850 0    50   ~ 0
 Inductor common values :\n- 4.7uH -> Vin_max=23.5V @Fsw=1.5MHz\n- 6.8uH -> Vin_max=34V @Fsw=1.5MHz
 Wire Wire Line
 	4800 4650 4250 4650
@@ -20893,7 +20892,7 @@ NTCbias
 Wire Wire Line
 	7650 3100 7000 3100
 Connection ~ 7000 3100
-Text Notes 5950 2000 0    50   ~ 0
+Text Notes 5900 1250 0    50   ~ 0
 TODO : Add this option to reduce Iquiescent in ship mode.
 Wire Wire Line
 	3750 4050 5000 4050
@@ -20901,8 +20900,6 @@ Wire Wire Line
 	3750 3950 5000 3950
 Wire Wire Line
 	7650 4350 8000 4350
-Wire Wire Line
-	6400 2700 6700 2700
 $Comp
 L ltc4162:LTC4162 U1
 U 1 1 5F742483
@@ -20914,4 +20911,177 @@ F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/LTC4162
 	1    5600 4000
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:D D?
+U 1 1 5F81B922
+P 2000 3000
+F 0 "D?" H 2000 2783 50  0000 C CNN
+F 1 "D" H 2000 2874 50  0000 C CNN
+F 2 "" H 2000 3000 50  0001 C CNN
+F 3 "~" H 2000 3000 50  0001 C CNN
+	1    2000 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5F821455
+P 2000 3250
+F 0 "D?" H 2000 3033 50  0000 C CNN
+F 1 "D" H 2000 3124 50  0000 C CNN
+F 2 "" H 2000 3250 50  0001 C CNN
+F 3 "~" H 2000 3250 50  0001 C CNN
+	1    2000 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5F8215E1
+P 2000 3450
+F 0 "D?" H 2000 3233 50  0000 C CNN
+F 1 "D" H 2000 3324 50  0000 C CNN
+F 2 "" H 2000 3450 50  0001 C CNN
+F 3 "~" H 2000 3450 50  0001 C CNN
+	1    2000 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1350 3450 1850 3450
+Wire Wire Line
+	1850 3000 1350 3000
+Wire Wire Line
+	1350 3250 1850 3250
+Wire Wire Line
+	2150 3000 2500 3000
+Wire Wire Line
+	2500 3000 2500 3250
+Wire Wire Line
+	2500 3450 2150 3450
+Wire Wire Line
+	2150 3250 2500 3250
+Connection ~ 2500 3250
+Wire Wire Line
+	2500 3250 2500 3450
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5F8314D1
+P 8300 5000
+F 0 "J?" H 8272 4974 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 8272 4883 50  0000 R CNN
+F 2 "" H 8300 5000 50  0001 C CNN
+F 3 "~" H 8300 5000 50  0001 C CNN
+	1    8300 5000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F832657
+P 8000 5200
+F 0 "#PWR?" H 8000 4950 50  0001 C CNN
+F 1 "GND" H 8005 5027 50  0000 C CNN
+F 2 "" H 8000 5200 50  0001 C CNN
+F 3 "" H 8000 5200 50  0001 C CNN
+	1    8000 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 5200 8000 5100
+Wire Wire Line
+	8000 5100 8100 5100
+Wire Wire Line
+	8100 5000 8000 5000
+Wire Wire Line
+	8000 5000 8000 4900
+Text Label 8000 4900 0    50   ~ 0
+NTC
+Wire Wire Line
+	2500 3250 2750 3250
+Wire Wire Line
+	2750 2700 3150 2700
+Wire Wire Line
+	2750 2700 2750 3250
+Connection ~ 3150 2700
+$Comp
+L Device:Q_PMOS_DGS Q?
+U 1 1 5F8471F5
+P 7150 1700
+F 0 "Q?" V 7492 1700 50  0000 C CNN
+F 1 "Q_PMOS_DGS" V 7401 1700 50  0000 C CNN
+F 2 "" H 7350 1800 50  0001 C CNN
+F 3 "~" H 7150 1700 50  0001 C CNN
+	1    7150 1700
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 5F84F43E
+P 7050 2600
+F 0 "Q?" H 7254 2646 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 7254 2555 50  0000 L CNN
+F 2 "" H 7250 2700 50  0001 C CNN
+F 3 "~" H 7050 2600 50  0001 C CNN
+	1    7050 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5F8508E1
+P 7150 2200
+F 0 "R?" H 7218 2246 50  0000 L CNN
+F 1 "390kOhm" H 7218 2155 50  0000 L CNN
+F 2 "" V 7190 2190 50  0001 C CNN
+F 3 "~" H 7150 2200 50  0001 C CNN
+	1    7150 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 1900 7150 2000
+Wire Wire Line
+	7150 2400 7150 2350
+$Comp
+L Device:R_US R?
+U 1 1 5F85C6FA
+P 6700 1800
+F 0 "R?" H 6768 1846 50  0000 L CNN
+F 1 "1MOhm" H 6768 1755 50  0000 L CNN
+F 2 "" V 6740 1790 50  0001 C CNN
+F 3 "~" H 6700 1800 50  0001 C CNN
+	1    6700 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 1600 6700 1600
+Wire Wire Line
+	6700 1600 6700 1650
+Wire Wire Line
+	6700 2000 7150 2000
+Connection ~ 7150 2000
+Wire Wire Line
+	7150 2000 7150 2050
+Wire Wire Line
+	6700 1950 6700 2000
+$Comp
+L power:GND #PWR?
+U 1 1 5F880629
+P 7150 2850
+F 0 "#PWR?" H 7150 2600 50  0001 C CNN
+F 1 "GND" H 7155 2677 50  0000 C CNN
+F 2 "" H 7150 2850 50  0001 C CNN
+F 3 "" H 7150 2850 50  0001 C CNN
+	1    7150 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 2800 7150 2850
+Wire Wire Line
+	7350 1600 7700 1600
+Text Label 6700 2600 0    50   ~ 0
+VCC2P5
+Wire Wire Line
+	6700 2600 6850 2600
+Wire Wire Line
+	6700 1600 6400 1600
+Connection ~ 6700 1600
+Connection ~ 6400 1600
+Wire Wire Line
+	6400 1600 6400 2700
 $EndSCHEMATC
