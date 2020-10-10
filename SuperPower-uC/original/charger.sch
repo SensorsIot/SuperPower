@@ -21086,4 +21086,68 @@ Connection ~ 6700 1600
 Connection ~ 6400 1600
 Wire Wire Line
 	6400 1600 6400 2700
+$Comp
+L Device:LED_ARGB D?
+U 1 1 5F82327A
+P 3400 6100
+F 0 "D?" H 3400 6597 50  0000 C CNN
+F 1 "LED_ARGB" H 3400 6506 50  0000 C CNN
+F 2 "" H 3400 6050 50  0001 C CNN
+F 3 "~" H 3400 6050 50  0001 C CNN
+	1    3400 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5F829517
+P 2950 5900
+F 0 "R?" V 2745 5900 50  0000 C CNN
+F 1 "TBDOhm" V 2836 5900 50  0000 C CNN
+F 2 "" V 2990 5890 50  0001 C CNN
+F 3 "~" H 2950 5900 50  0001 C CNN
+	1    2950 5900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3100 5900 3200 5900
+$Comp
+L Device:R_US R?
+U 1 1 5F82E68E
+P 2950 6100
+F 0 "R?" V 2745 6100 50  0000 C CNN
+F 1 "TBDOhm" V 2836 6100 50  0000 C CNN
+F 2 "" V 2990 6090 50  0001 C CNN
+F 3 "~" H 2950 6100 50  0001 C CNN
+	1    2950 6100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5F82E97C
+P 2950 6300
+F 0 "R?" V 2745 6300 50  0000 C CNN
+F 1 "TBDOhm" V 2836 6300 50  0000 C CNN
+F 2 "" V 2990 6290 50  0001 C CNN
+F 3 "~" H 2950 6300 50  0001 C CNN
+	1    2950 6300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3100 6100 3200 6100
+Wire Wire Line
+	3100 6300 3200 6300
+Text Notes 3650 5900 0    50   ~ 0
+RGB LED (dual fonction) :\n- Charging Status\n- Battery Gauge Level
+Text Label 2550 5900 0    50   ~ 0
+LED_R
+Wire Wire Line
+	2550 5900 2800 5900
+Wire Wire Line
+	2550 6100 2800 6100
+Wire Wire Line
+	2550 6300 2800 6300
+Text Label 2550 6100 0    50   ~ 0
+LED_G
+Text Label 2550 6300 0    50   ~ 0
+LED_B
 $EndSCHEMATC
