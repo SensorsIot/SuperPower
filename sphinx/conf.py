@@ -30,13 +30,11 @@ author = 'SuperPower Team, ESP Team, Raspi Team'
 extensions = [
     "recommonmark",
     "sphinx_rtd_theme",
+#    'm2r',
 ]
-
-extensions = ['recommonmark']
 
 # for Sphinx-1.3
 from recommonmark.parser import CommonMarkParser
-
 source_parsers = {
     '.md': CommonMarkParser,
 }
