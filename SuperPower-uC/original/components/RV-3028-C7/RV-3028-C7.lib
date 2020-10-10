@@ -1,0 +1,32 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# RV-3028-C7
+#
+DEF RV-3028-C7 U 0 40 Y Y 1 L N
+F0 "U" -500 525 50 H V L BNN
+F1 "RV-3028-C7" -500 -600 50 H V L BNN
+F2 "IC_RV-3028-C7" 0 0 50 H I L BNN
+F3 "Micro Crystal" 0 0 50 H I L BNN
+F4 "Manufacturer Recommendations" 0 0 50 H I L BNN
+F5 "1.1" 0 0 50 H I L BNN
+F6 "0.8 mm" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 10 -500 500 -500 -500 N
+P 2 0 0 10 -500 -500 500 -500 N
+P 2 0 0 10 500 -500 500 500 N
+P 2 0 0 10 500 500 -500 500 N
+X CLKOUT 1 700 -100 200 L 40 40 0 0 O C
+X ~INT~ 2 700 100 200 L 40 40 0 0 O 
+X SCL 3 -700 -100 200 R 40 40 0 0 I C
+X SDA 4 -700 -200 200 R 40 40 0 0 B 
+X VSS 5 700 -400 200 L 40 40 0 0 W 
+X VBACKUP 6 700 300 200 L 40 40 0 0 W 
+X VDD 7 700 400 200 L 40 40 0 0 W 
+X EVI 8 -700 100 200 R 40 40 0 0 I 
+ENDDRAW
+ENDDEF
+#
+# End Library

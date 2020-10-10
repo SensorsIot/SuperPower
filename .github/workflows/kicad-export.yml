@@ -1,0 +1,60 @@
+name: kicad-export
+
+on:
+#   push:
+#     paths:
+#     - '**.sch'
+#     - '**.kicad_pcb'
+  pull_request:
+   paths:
+     - '**.sch'
+     - '**.kicad_pcb'
+
+#on: push
+
+jobs:
+  kicad-export:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: nerdyscout/kicad-exports@v2.0
+      name: kiplot-SuperPower-uC-original
+      with:
+      # Required - kiplot config file
+        config: config.kiplot.yaml
+      # optional - prefix to output defined in config
+        dir: build/SuperPower-uC/original
+      # optional - schematic file
+        schema: 'SuperPower-uC/original/SuperPower-uC-KiCad.sch'
+      # optional - PCB design file
+        board: 'SuperPower-uC/original/SuperPower-uC-KiCad.kicad_pcb'
+
+    - uses: nerdyscout/kicad-exports@v2.0
+      name: kiplot-SuperPower-uC-lowcost
+      with:
+      # Required - kiplot config file
+        config: config.kiplot.yaml
+      # optional - prefix to output defined in config
+        dir: build/SuperPower-uC/lowcost
+      # optional - schematic file
+        schema: 'SuperPower-uC/lowcost/SuperPower-uC-KiCad.sch'
+      # optional - PCB design file
+        board: 'SuperPower-uC/lowcost/SuperPower-uC-KiCad.kicad_pcb'
+
+    - uses: nerdyscout/kicad-exports@v2.0
+      name: kiplot-SuperPower-RPi
+      with:
+      # Required - kiplot config file
+        config: config.kiplot.yaml
+      # optional - prefix to output defined in config
+        dir: build/SuperPower-RPi
+      # optional - schematic file
+        schema: 'SuperPower-RPi/SuperPower-RPi-KiCAD/SuperPower-RPi-KiCAD.sch'
+      # optional - PCB design file
+        board: 'SuperPower-RPi/SuperPower-RPi-KiCAD/SuperPower-RPi-KiCAD.kicad_pcb'
+    - name: upload results
+      uses: actions/upload-artifact@v2
+      with:
+        name: Generated Schematics and Layouts
+        path: build
+

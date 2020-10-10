@@ -9,6 +9,10 @@ USB and Solar charging for any type of Microcontroller (3.3v).
 The original version of the SuperPower Board consists of an ESP32 as microcontroller and it tries to fulfill most of the requirements.
 We tried to find the best components to fit the requirements with ultra low power. 
 
+[Schematic](/SuperPower-uC/original/schematic.md)
+
+[Layout](/SuperPower-uC/original/layout.md)
+
 ### BOM
 
 |      | Component  | Description                                                  | Datasheet                                                    |
@@ -21,8 +25,8 @@ We tried to find the best components to fit the requirements with ultra low powe
 | 6    | CP2102N    | highly-integrated USB-to-UART bridge controller              | [Link](https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf) |
 | 7    | MCP23009   | 8-Bit I2C I/O Expander with Open-Drain Output                | [Link](http://ww1.microchip.com/downloads/en/DeviceDoc/20002121C.pdf) |
 
-
 ## Low Cost Variant
+
 [/SuperPower-uC/lowcost/](/SuperPower-uC/lowcost/)
 
 The low cost variant is a variant with different and cheap components. It does not fulfill the requirements 100% but still is low power.

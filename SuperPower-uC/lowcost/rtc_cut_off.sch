@@ -1,0 +1,365 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 7
+Title "SuperPower-uC"
+Date "2020-09-20"
+Rev "0.1"
+Comp ""
+Comment1 "Licence: CERN-OHL-W"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 2850 1800 2    50   Input ~ 0
+SCL
+Text HLabel 2850 1900 2    50   BiDi ~ 0
+SDA
+Text HLabel 1950 1800 0    50   Output ~ 0
+INT
+Text HLabel 3350 1600 2    50   Input ~ 0
+VBAT
+$Comp
+L PCF8563T:PCF8563T U7
+U 1 1 5F7FEE8D
+P 2400 1700
+F 0 "U7" H 2400 2025 50  0000 C CNN
+F 1 "PCF8563T" H 2400 1934 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2450 1350 50  0001 C CNN
+F 3 "https://www.nxp.com/docs/en/data-sheet/PCF8563.pdf" H 2650 1900 50  0001 C CNN
+F 4 "C7440" H 2400 1700 50  0001 C CNN "LCSC"
+	1    2400 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1800 1950 1800
+Wire Wire Line
+	2850 1800 2800 1800
+Wire Wire Line
+	2850 1900 2800 1900
+$Comp
+L power:GND #PWR0106
+U 1 1 5F801372
+P 1950 1950
+F 0 "#PWR0106" H 1950 1700 50  0001 C CNN
+F 1 "GND" H 1955 1777 50  0000 C CNN
+F 2 "" H 1950 1950 50  0001 C CNN
+F 3 "" H 1950 1950 50  0001 C CNN
+	1    1950 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 1950 1950 1900
+Wire Wire Line
+	1950 1900 2000 1900
+$Comp
+L Device:C C8
+U 1 1 5F801D7F
+P 3300 1750
+F 0 "C8" H 3415 1796 50  0000 L CNN
+F 1 "0.1u" H 3415 1705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3338 1600 50  0001 C CNN
+F 3 "~" H 3300 1750 50  0001 C CNN
+F 4 "C14858" H 3300 1750 50  0001 C CNN "LCSC"
+	1    3300 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Crystal Y2
+U 1 1 5F802F79
+P 1650 1600
+F 0 "Y2" H 1650 1868 50  0000 C CNN
+F 1 "32.768KHz" H 1650 1777 50  0000 C CNN
+F 2 "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm" H 1650 1600 50  0001 C CNN
+F 3 "1901081604_Seiko-Epson-Q13FC1350000400_C32346.pdf" H 1650 1600 50  0001 C CNN
+F 4 "C32346" H 1650 1600 50  0001 C CNN "LCSC"
+	1    1650 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5F8043AA
+P 3300 1950
+F 0 "#PWR0107" H 3300 1700 50  0001 C CNN
+F 1 "GND" H 3305 1777 50  0000 C CNN
+F 2 "" H 3300 1950 50  0001 C CNN
+F 3 "" H 3300 1950 50  0001 C CNN
+	1    3300 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 1950 3300 1900
+Wire Wire Line
+	2000 1600 1800 1600
+Wire Wire Line
+	1500 1600 1500 1700
+Wire Wire Line
+	1500 1700 2000 1700
+NoConn ~ 2800 1700
+$Comp
+L XC6206P332MR:XC6206P332MR U8
+U 1 1 5F806B5A
+P 4850 2900
+F 0 "U8" H 4850 3115 50  0000 C CNN
+F 1 "XC6206P332MR" H 4850 3024 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4900 2550 50  0001 C CNN
+F 3 "https://www.torexsemi.com/file/xc6206/XC6206.pdf" H 5050 2900 50  0001 C CNN
+F 4 "C5446" H 4850 2900 50  0001 C CNN "LCSC"
+	1    4850 2900
+	1    0    0    -1  
+$EndComp
+Text HLabel 5250 3000 2    50   Input ~ 0
+VBAT
+Wire Wire Line
+	5250 3000 5200 3000
+Text HLabel 5400 3300 2    50   BiDi ~ 0
+SDA
+Text HLabel 5400 3400 2    50   Input ~ 0
+SCL
+$Comp
+L Device:C C9
+U 1 1 5F8078F3
+P 4450 3200
+F 0 "C9" H 4565 3246 50  0000 L CNN
+F 1 "0.1u" H 4565 3155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4488 3050 50  0001 C CNN
+F 3 "~" H 4450 3200 50  0001 C CNN
+F 4 "C14858" H 4450 3200 50  0001 C CNN "LCSC"
+	1    4450 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3000 4450 3000
+Wire Wire Line
+	4450 3000 4450 3050
+Wire Wire Line
+	4850 3200 4850 3300
+Wire Wire Line
+	4850 3400 4450 3400
+Wire Wire Line
+	4450 3400 4450 3350
+$Comp
+L Device:R R12
+U 1 1 5F8095DB
+P 5050 3400
+F 0 "R12" V 5150 3450 50  0000 C CNN
+F 1 "10k" V 5150 3300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4980 3400 50  0001 C CNN
+F 3 "~" H 5050 3400 50  0001 C CNN
+F 4 "C25804" H 5050 3400 50  0001 C CNN "LCSC"
+	1    5050 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5F80A0C7
+P 5050 3300
+F 0 "R11" V 4950 3350 50  0000 C CNN
+F 1 "10k" V 4950 3200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4980 3300 50  0001 C CNN
+F 3 "~" H 5050 3300 50  0001 C CNN
+F 4 "C25804" H 5050 3300 50  0001 C CNN "LCSC"
+	1    5050 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 3300 4900 3300
+Connection ~ 4850 3300
+Wire Wire Line
+	4850 3300 4850 3400
+Wire Wire Line
+	4850 3400 4900 3400
+Connection ~ 4850 3400
+Wire Wire Line
+	5200 3300 5400 3300
+Wire Wire Line
+	5200 3400 5400 3400
+$Comp
+L power:GND #PWR0108
+U 1 1 5F80C4A4
+P 4250 3000
+F 0 "#PWR0108" H 4250 2750 50  0001 C CNN
+F 1 "GND" H 4255 2827 50  0000 C CNN
+F 2 "" H 4250 3000 50  0001 C CNN
+F 3 "" H 4250 3000 50  0001 C CNN
+	1    4250 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3000 4250 3000
+Connection ~ 4450 3000
+$Comp
+L TCA6408APWR:TCA6408A U9
+U 1 1 5F8103C2
+P 2350 3450
+F 0 "U9" H 2600 3700 50  0000 C CNN
+F 1 "TCA6408A" H 2250 3700 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 2400 3950 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/tca6408a.pdf?ts=1602171918658&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTCA6408A" H 2600 3700 50  0001 C CNN
+F 4 "C206177" H 2600 4100 50  0001 C CNN "LCSC"
+	1    2350 3450
+	1    0    0    -1  
+$EndComp
+Text HLabel 2800 3300 2    50   Input ~ 0
+VBAT
+Text HLabel 1900 3300 0    50   Input ~ 0
+VBAT
+Wire Wire Line
+	2750 3300 2800 3300
+Wire Wire Line
+	1950 3300 1900 3300
+NoConn ~ 1950 3500
+Wire Wire Line
+	1900 3300 1900 3400
+Wire Wire Line
+	1900 3400 1950 3400
+$Comp
+L power:GND #PWR0109
+U 1 1 5F81AC3F
+P 1350 4050
+F 0 "#PWR0109" H 1350 3800 50  0001 C CNN
+F 1 "GND" H 1355 3877 50  0000 C CNN
+F 2 "" H 1350 4050 50  0001 C CNN
+F 3 "" H 1350 4050 50  0001 C CNN
+	1    1350 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 4000 1350 4050
+$Comp
+L Transistor_FET:2N7002 Q1
+U 1 1 5F81E351
+P 1450 3600
+F 0 "Q1" H 1655 3646 50  0000 L CNN
+F 1 "2N7002" H 1655 3555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1650 3525 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 1450 3600 50  0001 L CNN
+F 4 "" H 1450 3600 50  0001 C CNN "Field4"
+F 5 "C8545" H 1450 3600 50  0001 C CNN "LCSC"
+	1    1450 3600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 3600 1650 3600
+Wire Wire Line
+	1350 3800 1350 4000
+Connection ~ 1350 4000
+Wire Wire Line
+	1350 4000 1950 4000
+Text HLabel 1300 3350 0    50   Output ~ 0
+INT
+Wire Wire Line
+	1300 3350 1350 3350
+Wire Wire Line
+	1350 3350 1350 3400
+Text HLabel 2800 3500 2    50   Input ~ 0
+SCL
+Text HLabel 2800 3400 2    50   BiDi ~ 0
+SDA
+Wire Wire Line
+	2800 3400 2750 3400
+Wire Wire Line
+	2750 3500 2800 3500
+Text HLabel 2800 3600 2    50   Output ~ 0
+INT
+Wire Wire Line
+	2800 3600 2750 3600
+Text HLabel 1900 3700 0    50   Output ~ 0
+3.3V_EN
+Text HLabel 1900 3800 0    50   Output ~ 0
+5V_EN
+Wire Wire Line
+	1900 3700 1950 3700
+Wire Wire Line
+	1900 3800 1950 3800
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 5F83F86A
+P 1750 2650
+F 0 "JP2" H 1750 2855 50  0000 C CNN
+F 1 "INT override" H 1750 2764 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 1750 2650 50  0001 C CNN
+F 3 "~" H 1750 2650 50  0001 C CNN
+	1    1750 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5F8401EB
+P 2400 2650
+F 0 "#PWR0110" H 2400 2400 50  0001 C CNN
+F 1 "GND" H 2405 2477 50  0000 C CNN
+F 2 "" H 2400 2650 50  0001 C CNN
+F 3 "" H 2400 2650 50  0001 C CNN
+	1    2400 2650
+	1    0    0    -1  
+$EndComp
+Text HLabel 1500 2650 0    50   Output ~ 0
+INT
+Wire Wire Line
+	1500 2650 1600 2650
+Wire Wire Line
+	1900 2650 2000 2650
+$Comp
+L Device:R R18
+U 1 1 5F8066A1
+P 2150 2650
+F 0 "R18" V 2050 2700 50  0000 C CNN
+F 1 "1k" V 2050 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2080 2650 50  0001 C CNN
+F 3 "~" H 2150 2650 50  0001 C CNN
+F 4 "C21190" H 2150 2650 50  0001 C CNN "LCSC"
+	1    2150 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2300 2650 2400 2650
+Wire Wire Line
+	2850 3700 2750 3700
+Wire Wire Line
+	2750 3800 2850 3800
+Wire Wire Line
+	2850 3900 2750 3900
+Wire Wire Line
+	2750 4000 2850 4000
+Wire Wire Line
+	2850 4100 1900 4100
+Wire Wire Line
+	1900 4100 1900 3900
+Wire Wire Line
+	1900 3900 1950 3900
+$Comp
+L Connector:Conn_01x06_Female J7
+U 1 1 5F8150AB
+P 3050 3900
+F 0 "J7" H 3078 3876 50  0000 L CNN
+F 1 "IO expander pins" H 3078 3785 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 3050 3900 50  0001 C CNN
+F 3 "~" H 3050 3900 50  0001 C CNN
+	1    3050 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 5F815E7A
+P 2750 4250
+F 0 "#PWR0111" H 2750 4000 50  0001 C CNN
+F 1 "GND" H 2755 4077 50  0000 C CNN
+F 2 "" H 2750 4250 50  0001 C CNN
+F 3 "" H 2750 4250 50  0001 C CNN
+	1    2750 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 4200 2750 4200
+Wire Wire Line
+	2750 4200 2750 4250
+NoConn ~ 1200 350 
+Wire Wire Line
+	2800 1600 3300 1600
+Connection ~ 3300 1600
+Wire Wire Line
+	3300 1600 3350 1600
+$EndSCHEMATC
