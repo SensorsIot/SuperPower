@@ -41,8 +41,8 @@ Sphinx official documentation : https://www.sphinx-doc.org/en/master/
 
 * Answer : md Markdown is designed for a single page document. While rts (reStructured) is designed for a hierarchical structure with cross-references
 
-sphinx quick start : https://www.sphinx-doc.org/en/master/usage/quickstart.html
+sphinx quick start : [https://www.sphinx-doc.org/en/master/usage/quickstart.html](https://www.sphinx-doc.org/en/master/usage/quickstart.html)
 
-docutils rts : https://docutils.sourceforge.io/rst.html
+docutils rts : [https://docutils.sourceforge.io/rst.html](https://docutils.sourceforge.io/rst.html)
 
-docutils rts quick ref : https://docutils.sourceforge.io/docs/user/rst/quickref.html
+docutils rts quick ref : [https://docutils.sourceforge.io/docs/user/rst/quickref.html](https://docutils.sourceforge.io/docs/user/rst/quickref.html)

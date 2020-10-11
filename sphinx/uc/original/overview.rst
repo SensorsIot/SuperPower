@@ -1,4 +1,3 @@
-###############
 Premium Variant
 ###############
 
@@ -7,6 +6,27 @@ We tried to find the best components to fit the requirements with ultra low powe
 
 Schematics
 ~~~~~~~~~~
+
+Top View
+++++++++
+
+.. image:: ../../../.generated/SuperPower-uC/build/SuperPower-uC-Schematic.svg
+
+Charging Module
++++++++++++++++
+
+.. image:: ../../../.generated/SuperPower-uC/build/charger-ChargingModule.svg
+
+Charger IO
+++++++++++
+
+.. image:: ../../../.generated/SuperPower-uC/build/charger_io-ChargerI-O.svg
+
+RTC cut-off
++++++++++++
+
+.. image:: ../../../.generated/SuperPower-uC/build/rtc_cut_off-RTCandCut-OffModule.svg
+
 
 Layout
 ~~~~~~
