@@ -61,17 +61,6 @@ F 3 "" H 5600 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+BATT #PWR014
-U 1 1 5F744E2E
-P 7650 4250
-F 0 "#PWR014" H 7650 4100 50  0001 C CNN
-F 1 "+BATT" H 7665 4423 50  0000 C CNN
-F 2 "" H 7650 4250 50  0001 C CNN
-F 3 "" H 7650 4250 50  0001 C CNN
-	1    7650 4250
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:VDD #PWR04
 U 1 1 5F7457C8
 P 3600 2400
@@ -336,8 +325,6 @@ Wire Wire Line
 Connection ~ 7000 4850
 Wire Wire Line
 	7000 4850 7000 4750
-Wire Wire Line
-	7650 4250 7650 4350
 Connection ~ 7650 4350
 Wire Wire Line
 	6400 5000 6400 4900
