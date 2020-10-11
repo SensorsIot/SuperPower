@@ -9333,4 +9333,47 @@ Text Notes 9150 3300 0    50   ~ 10
 Inductor Value Setting
 Text Notes 800  2150 0    50   ~ 0
 TODO :\nAdd Hierachical Block Connectors
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5F831EE9
+P 9650 5950
+F 0 "J?" H 9622 5924 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 9622 5833 50  0000 R CNN
+F 2 "" H 9650 5950 50  0001 C CNN
+F 3 "~" H 9650 5950 50  0001 C CNN
+	1    9650 5950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F831EF3
+P 9350 6150
+F 0 "#PWR?" H 9350 5900 50  0001 C CNN
+F 1 "GND" H 9355 5977 50  0000 C CNN
+F 2 "" H 9350 6150 50  0001 C CNN
+F 3 "" H 9350 6150 50  0001 C CNN
+	1    9350 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 6150 9350 6050
+Wire Wire Line
+	9350 6050 9450 6050
+Wire Wire Line
+	9450 5950 9350 5950
+Wire Wire Line
+	9350 5950 9350 5850
+$Comp
+L power:+BATT #PWR?
+U 1 1 5F837E39
+P 9350 5850
+F 0 "#PWR?" H 9350 5700 50  0001 C CNN
+F 1 "+BATT" H 9365 6023 50  0000 C CNN
+F 2 "" H 9350 5850 50  0001 C CNN
+F 3 "" H 9350 5850 50  0001 C CNN
+	1    9350 5850
+	1    0    0    -1  
+$EndComp
+Text Notes 9450 5550 0    50   ~ 0
+External Battery connector
 $EndSCHEMATC
