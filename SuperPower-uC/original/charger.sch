@@ -9275,7 +9275,7 @@ Wire Wire Line
 Wire Wire Line
 	1350 1900 1450 1900
 Text Notes 1150 1000 0    50   ~ 0
-RGB LED (dual fonction) :\n- Charging Status\n- Battery Gauge Level
+RGB LED (dual fonction) :\n- Charging Status\n- Battery Fuel Gauge
 Text Label 800  1500 0    50   ~ 0
 LED_R
 Wire Wire Line
@@ -9409,4 +9409,49 @@ Wire Wire Line
 	6400 1100 6400 1500
 Wire Notes Line
 	7800 750  7800 1150
+$Comp
+L Device:LED D?
+U 1 1 5F83318B
+P 2150 3750
+F 0 "D?" H 2143 3495 50  0000 C CNN
+F 1 "LED" H 2143 3586 50  0000 C CNN
+F 2 "" H 2150 3750 50  0001 C CNN
+F 3 "~" H 2150 3750 50  0001 C CNN
+	1    2150 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5F84595F
+P 2800 3750
+F 0 "R?" V 2595 3750 50  0000 C CNN
+F 1 "TBDOhm" V 2686 3750 50  0000 C CNN
+F 2 "" V 2840 3740 50  0001 C CNN
+F 3 "~" H 2800 3750 50  0001 C CNN
+	1    2800 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 3750 2950 3750
+Wire Wire Line
+	2300 3750 2650 3750
+$Comp
+L power:VCC #PWR?
+U 1 1 5F851525
+P 1750 3450
+F 0 "#PWR?" H 1750 3300 50  0001 C CNN
+F 1 "VCC" H 1765 3623 50  0000 C CNN
+F 2 "" H 1750 3450 50  0001 C CNN
+F 3 "" H 1750 3450 50  0001 C CNN
+	1    1750 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 3750 1750 3750
+Wire Wire Line
+	1750 3750 1750 3450
+Text Notes 1750 3950 0    50   ~ 0
+Used as an option and/or debug
+Text Notes 3200 3850 0    50   ~ 0
+TODO : Add Hierarchical Block Connector ->
 $EndSCHEMATC
