@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LTC4162-L
+D 35V/3.2A Multicell  Lithium-Ion/LiFePO4/Lead Step-Down Battery Charger with PowerPath and I2C Telemetry
+K PowerPath, Battery, Charger, Lithium
+F https://www.analog.com/media/en/technical-documentation/data-sheets/LTC4162-L.pdf
+$ENDCMP
+#
+#End Doc Library

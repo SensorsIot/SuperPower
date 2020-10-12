@@ -1,0 +1,35 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# SolderJumper_4_Open
+#
+DEF SolderJumper_4_Open JP 0 0 Y N 1 F N
+F0 "JP" -100 -100 50 H V C CNN
+F1 "SolderJumper_4_Open" 500 100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SolderJumper*Open*
+$ENDFPLIST
+DRAW
+A -60 0 40 901 -901 0 1 0 N -60 40 -60 -40
+A -60 0 40 901 -901 0 1 0 F -60 40 -60 -40
+A 0 60 40 1 1799 0 1 0 N 40 60 -40 60
+A 0 60 40 1 1799 0 1 0 F 40 60 -40 60
+A 60 0 40 -899 899 0 1 0 N 60 -40 60 40
+A 60 0 40 -899 899 0 1 0 F 60 -40 60 40
+S -40 40 40 -40 0 1 0 F
+P 2 0 1 0 -120 0 -100 0 N
+P 2 0 1 0 -60 40 -60 -40 N
+P 2 0 1 0 -40 60 40 60 N
+P 2 0 1 0 0 -50 0 -40 N
+P 2 0 1 0 60 40 60 -40 N
+P 2 0 1 0 120 0 100 0 N
+X A 1 -200 0 100 R 50 50 1 1 P
+X B 2 0 200 100 D 50 50 1 1 P
+X C 3 200 0 100 L 50 50 1 1 P
+X Com 4 0 -150 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
