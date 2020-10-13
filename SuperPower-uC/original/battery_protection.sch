@@ -293,4 +293,47 @@ F 3 "https://www.diodes.com/assets/Datasheets/DMN2019UTS.pdf" H 2450 5200 50  00
 	1    2650 5200
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R_US R3
+U 1 1 5F862979
+P 5750 1650
+F 0 "R3" V 5650 1600 50  0000 L CNN
+F 1 "0Ohm" V 5850 1550 50  0000 L CNN
+F 2 "" V 5790 1640 50  0001 C CNN
+F 3 "~" H 5750 1650 50  0001 C CNN
+	1    5750 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:-BATT #PWR06
+U 1 1 5F863EE5
+P 5250 1800
+F 0 "#PWR06" H 5250 1650 50  0001 C CNN
+F 1 "-BATT" H 5265 1973 50  0000 C CNN
+F 2 "" H 5250 1800 50  0001 C CNN
+F 3 "" H 5250 1800 50  0001 C CNN
+	1    5250 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5F86433E
+P 6250 1800
+F 0 "#PWR07" H 6250 1550 50  0001 C CNN
+F 1 "GND" H 6255 1627 50  0000 C CNN
+F 2 "" H 6250 1800 50  0001 C CNN
+F 3 "" H 6250 1800 50  0001 C CNN
+	1    6250 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 1800 5250 1650
+Wire Wire Line
+	5250 1650 5600 1650
+Wire Wire Line
+	5900 1650 6250 1650
+Wire Wire Line
+	6250 1650 6250 1800
+Text Notes 5200 1450 0    50   ~ 0
+In case of using an external battery\nwith an embedded protection circuit.
 $EndSCHEMATC
