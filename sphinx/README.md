@@ -13,7 +13,9 @@ Note : `requirements.txt` contain install versions of `Sphinx`, readthedocs them
 This file is important to reproduce the same result on each generation, especially on readthedocs hosting account where it can be pointed out in the configuration.
 
 ## View generated website locally
-any local webserver can be used, as example here VSCode plugin :
+As sphinx generates a static website, it might be enough for some browsers to open the index file `sphinx\_build\html\index.html`
+
+or any local webserver can be used, as example here VSCode plugin :
 
 * in VSCode install LiveServer Plugin
 * open in VSCode the file : `sphinx\_build\html\index.html`
@@ -42,6 +44,8 @@ Sphinx official documentation : https://www.sphinx-doc.org/en/master/
 * Answer : md Markdown is designed for a single page document. While rts (reStructured) is designed for a hierarchical structure with cross-references
 
 sphinx quick start : [https://www.sphinx-doc.org/en/master/usage/quickstart.html](https://www.sphinx-doc.org/en/master/usage/quickstart.html)
+
+Cheat Sheet:  https://sphinx-tutorial.readthedocs.io/cheatsheet/
 
 docutils rts : [https://docutils.sourceforge.io/rst.html](https://docutils.sourceforge.io/rst.html)
 
