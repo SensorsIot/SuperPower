@@ -6,7 +6,7 @@ Sphinx how to
 Sphinx is a python module that generates this website, it is possible to run it locally with the following commands
 
     cd sphinx/
-    pip install requirements.txt
+    pip install -r requirements.txt
     make html
 
 Note : `requirements.txt` contain install versions of `Sphinx`, readthedocs theme `sphinx-rtd-theme` and other extension.
