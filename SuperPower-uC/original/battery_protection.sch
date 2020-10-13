@@ -122,17 +122,6 @@ F 3 "" H 1750 5800 50  0001 C CNN
 	1    1750 5800
 	-1   0    0    1   
 $EndComp
-$Comp
-L Transistor_FET:DMG6968UTS Q6
-U 1 1 5F79C65E
-P 2650 5200
-F 0 "Q6" H 3094 5196 50  0000 L CNN
-F 1 "DMG6968UTS" H 3094 5105 50  0000 L CNN
-F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 2850 5450 50  0001 L CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds31793.pdf" H 2450 5200 50  0001 C CNN
-	1    2650 5200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2250 5200 2250 4800
 Wire Wire Line
@@ -293,4 +282,15 @@ Wire Wire Line
 	900  850  1050 850 
 Text Label 1050 850  0    50   ~ 0
 +BATT
+$Comp
+L dmn2019uts:DMN2019UTS Q?
+U 1 1 5F864512
+P 2650 5200
+F 0 "Q?" H 3094 5196 50  0000 L CNN
+F 1 "DMN2019UTS" H 3094 5105 50  0000 L CNN
+F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 2850 5450 50  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/DMN2019UTS.pdf" H 2450 5200 50  0001 C CNN
+	1    2650 5200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
