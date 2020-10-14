@@ -232,8 +232,6 @@ IO22
 Text Label 7050 3250 2    50   ~ 0
 IO23
 Wire Wire Line
-	9800 3050 9600 3050
-Wire Wire Line
 	9800 3150 9600 3150
 Wire Wire Line
 	9800 3250 9600 3250
@@ -244,40 +242,42 @@ Wire Wire Line
 Wire Wire Line
 	9800 3550 9600 3550
 Wire Wire Line
-	9800 3750 9600 3750
-Wire Wire Line
-	9600 3650 9800 3650
+	9800 3650 9600 3650
 Wire Wire Line
 	9800 3850 9600 3850
 Wire Wire Line
-	9600 3950 9800 3950
+	9600 3750 9800 3750
+Wire Wire Line
+	9800 3950 9600 3950
 Wire Wire Line
 	9600 4050 9800 4050
-Text Label 9600 3050 0    50   ~ 0
-IO36
+Wire Wire Line
+	9600 4150 9800 4150
 Text Label 9600 3150 0    50   ~ 0
-IO39
+IO36
 Text Label 9600 3250 0    50   ~ 0
-IO34
+IO39
 Text Label 9600 3350 0    50   ~ 0
-IO35
+IO34
 Text Label 9600 3450 0    50   ~ 0
-IO32
+IO35
 Text Label 9600 3550 0    50   ~ 0
-IO33
+IO32
 Text Label 9600 3650 0    50   ~ 0
-IO25
+IO33
 Text Label 9600 3750 0    50   ~ 0
-IO26
+IO25
 Text Label 9600 3850 0    50   ~ 0
-IO27
+IO26
 Text Label 9600 3950 0    50   ~ 0
-IO14
+IO27
 Text Label 9600 4050 0    50   ~ 0
+IO14
+Text Label 9600 4150 0    50   ~ 0
 IO12
 Wire Wire Line
-	9800 4150 9600 4150
-Text Label 9600 4150 0    50   ~ 0
+	9800 4250 9600 4250
+Text Label 9600 4250 0    50   ~ 0
 IO13
 Wire Wire Line
 	9800 4550 9450 4550
@@ -417,7 +417,6 @@ F 3 "" H 4150 2950 50  0001 C CNN
 	1    4150 2950
 	1    0    0    -1  
 $EndComp
-NoConn ~ 9800 4250
 Wire Wire Line
 	4150 2950 4350 2950
 Connection ~ 4350 2950
@@ -487,4 +486,8 @@ Text Notes 650  750  0    50   ~ 0
 labels\n
 Text Notes 9100 850  0    50   ~ 0
 Main pin Headers\n
+Text Label 9600 3050 0    50   ~ 0
+RST
+Wire Wire Line
+	9600 3050 9800 3050
 $EndSCHEMATC
