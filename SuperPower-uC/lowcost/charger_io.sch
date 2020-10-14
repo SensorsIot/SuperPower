@@ -237,6 +237,7 @@ F 0 "J3" H 3107 4467 50  0000 C CNN
 F 1 "USB_C_Receptacle_USB2.0" H 3107 4376 50  0000 C CNN
 F 2 "" H 3150 3600 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 3150 3600 50  0001 C CNN
+F 4 "C319148" H 3000 3600 50  0001 C CNN "LCSC"
 	1    3000 3600
 	1    0    0    -1  
 $EndComp
