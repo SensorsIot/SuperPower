@@ -19,7 +19,7 @@ Welcome to SuperPower's documentation!
    :caption: ESP32 Solar
 
    uc/overview.rst
-   uc/original/overview.rst
+   uc/original/overview_pz.rst
    uc/low/overview.rst
    uc/requirements.rst
    uc/development.md
@@ -35,7 +35,6 @@ Welcome to SuperPower's documentation!
    :caption: Common
 
    README.md
-   testjs.rst
 
 
 Indices and tables
