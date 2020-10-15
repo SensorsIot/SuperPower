@@ -176,7 +176,7 @@ F 4 "C206177" H 5250 3500 50  0001 C CNN "LCSC"
 	1    5000 2850
 	1    0    0    -1  
 $EndComp
-Text HLabel 1050 1350 0    50   Input ~ 0
+Text HLabel 1300 1350 0    50   Input ~ 0
 VBAT
 Wire Wire Line
 	4600 2700 4550 2700
@@ -220,13 +220,13 @@ Wire Wire Line
 	4000 3400 4600 3400
 Wire Wire Line
 	4000 2750 4000 2800
-Text HLabel 1050 1100 0    50   Input ~ 0
+Text HLabel 1300 1100 0    50   Input ~ 0
 SCL
-Text HLabel 1050 1000 0    50   BiDi ~ 0
+Text HLabel 1300 1000 0    50   BiDi ~ 0
 SDA
-Text HLabel 1050 1600 0    50   Output ~ 0
+Text HLabel 1300 1600 0    50   Output ~ 0
 3.3V_EN
-Text HLabel 1050 1750 0    50   Output ~ 0
+Text HLabel 1300 1750 0    50   Output ~ 0
 5V_EN
 $Comp
 L Jumper:SolderJumper_2_Open JP2
@@ -250,7 +250,7 @@ F 3 "" H 7950 3850 50  0001 C CNN
 	1    7950 3850
 	1    0    0    -1  
 $EndComp
-Text HLabel 1050 1900 0    50   Output ~ 0
+Text HLabel 1300 1900 0    50   Output ~ 0
 INT
 Wire Wire Line
 	7450 3850 7550 3850
@@ -276,54 +276,37 @@ Wire Wire Line
 	5500 3300 5400 3300
 Wire Wire Line
 	5400 3400 5500 3400
-Wire Wire Line
-	5500 3500 4550 3500
-Wire Wire Line
-	4550 3500 4550 3300
-Wire Wire Line
-	4550 3300 4600 3300
-$Comp
-L Connector:Conn_01x06_Female J7
-U 1 1 5F8150AB
-P 5700 3300
-F 0 "J7" H 5728 3276 50  0000 L CNN
-F 1 "IO expander pins" H 5728 3185 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 5700 3300 50  0001 C CNN
-F 3 "~" H 5700 3300 50  0001 C CNN
-	1    5700 3300
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0111
 U 1 1 5F815E7A
-P 5400 3650
-F 0 "#PWR0111" H 5400 3400 50  0001 C CNN
-F 1 "GND" H 5405 3477 50  0000 C CNN
-F 2 "" H 5400 3650 50  0001 C CNN
-F 3 "" H 5400 3650 50  0001 C CNN
-	1    5400 3650
+P 5400 3550
+F 0 "#PWR0111" H 5400 3300 50  0001 C CNN
+F 1 "GND" H 5405 3377 50  0000 C CNN
+F 2 "" H 5400 3550 50  0001 C CNN
+F 3 "" H 5400 3550 50  0001 C CNN
+	1    5400 3550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5500 3600 5400 3600
+	5500 3500 5400 3500
 Wire Wire Line
-	5400 3600 5400 3650
+	5400 3500 5400 3550
 NoConn ~ 1200 350 
 Wire Wire Line
 	5600 4750 6100 4750
 Connection ~ 6100 4750
 Connection ~ 4550 2700
-Text Label 1350 1000 2    50   ~ 0
+Text Label 1600 1000 2    50   ~ 0
 SDA
-Text Label 1350 1100 2    50   ~ 0
+Text Label 1600 1100 2    50   ~ 0
 SCL
-Text Label 1350 1350 2    50   ~ 0
+Text Label 1600 1350 2    50   ~ 0
 VBAT
-Text Label 1350 1900 2    50   ~ 0
+Text Label 1600 1900 2    50   ~ 0
 INT
-Text Label 1350 1600 2    50   ~ 0
+Text Label 1600 1600 2    50   ~ 0
 3.3_EN
-Text Label 1350 1750 2    50   ~ 0
+Text Label 1600 1750 2    50   ~ 0
 5V_EN
 Text Label 6950 3850 0    50   ~ 0
 INT
@@ -342,17 +325,17 @@ INT
 Wire Wire Line
 	5400 3000 5650 3000
 Wire Wire Line
-	1050 1900 1350 1900
+	1300 1900 1600 1900
 Wire Wire Line
-	1050 1750 1350 1750
+	1300 1750 1600 1750
 Wire Wire Line
-	1050 1600 1350 1600
+	1300 1600 1600 1600
 Wire Wire Line
-	1050 1350 1350 1350
+	1300 1350 1600 1350
 Wire Wire Line
-	1050 1100 1350 1100
+	1300 1100 1600 1100
 Wire Wire Line
-	1050 1000 1350 1000
+	1300 1000 1600 1000
 Text Label 5650 2800 2    50   ~ 0
 SDA
 Text Label 5650 2900 2    50   ~ 0
@@ -451,4 +434,25 @@ Wire Notes Line
 	1650 2150 550  2150
 Wire Notes Line
 	550  2150 550  600 
+Text HLabel 1300 2000 0    50   Input ~ 0
+CHARGE-DISABLE
+Text Label 1600 2000 2    50   ~ 0
+CH-DIS
+Wire Wire Line
+	1600 2000 1300 2000
+Text Label 4250 3300 0    50   ~ 0
+CH-DIS
+Wire Wire Line
+	4250 3300 4600 3300
+$Comp
+L Connector:Conn_01x05_Female J7
+U 1 1 5F89992F
+P 5700 3300
+F 0 "J7" H 5728 3326 50  0000 L CNN
+F 1 "IO Expander Pins" H 5728 3235 50  0000 L CNN
+F 2 "" H 5700 3300 50  0001 C CNN
+F 3 "~" H 5700 3300 50  0001 C CNN
+	1    5700 3300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
