@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP SolderJumper_4_Open
-D Solder Jumper, 4-pole, open
-K Solder Jumper SPDT
-F ~
-$ENDCMP
-#
-#End Doc Library
