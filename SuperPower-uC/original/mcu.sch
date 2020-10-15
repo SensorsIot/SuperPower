@@ -312,36 +312,36 @@ Wire Notes Line
 Wire Notes Line
 	1550 2400 1550 3600
 Wire Wire Line
-	5900 4650 5650 4650
+	9100 4350 8850 4350
 Wire Wire Line
-	5900 4950 5650 4950
+	9100 4650 8850 4650
 Wire Wire Line
-	5650 4850 5900 4850
-Text Label 5900 4850 2    50   ~ 0
+	8850 4550 9100 4550
+Text Label 9100 4550 2    50   ~ 0
 RXD
-Text Label 5900 4750 2    50   ~ 0
+Text Label 9100 4450 2    50   ~ 0
 TXD
 Wire Wire Line
-	5650 4750 5900 4750
+	8850 4450 9100 4450
 $Comp
 L power:GND #PWR?
 U 1 1 5F824CEA
-P 4300 6300
-F 0 "#PWR?" H 4300 6050 50  0001 C CNN
-F 1 "GND" H 4305 6127 50  0000 C CNN
-F 2 "" H 4300 6300 50  0001 C CNN
-F 3 "" H 4300 6300 50  0001 C CNN
-	1    4300 6300
+P 7500 6000
+F 0 "#PWR?" H 7500 5750 50  0001 C CNN
+F 1 "GND" H 7505 5827 50  0000 C CNN
+F 2 "" H 7500 6000 50  0001 C CNN
+F 3 "" H 7500 6000 50  0001 C CNN
+	1    7500 6000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3800 4550 4050 4550
-Text Label 3800 4650 0    50   ~ 0
+	7000 4250 7250 4250
+Text Label 7000 4350 0    50   ~ 0
 EN
 Wire Wire Line
-	3800 4650 4050 4650
+	7000 4350 7250 4350
 Wire Wire Line
-	5650 5750 5900 5750
+	8850 5450 9100 5450
 $Comp
 L Device:R_Small R?
 U 1 1 5F8C7F33
@@ -530,12 +530,12 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x16_Female J?
 U 1 1 5F88C49E
-P 8550 4750
-F 0 "J?" H 8578 4726 50  0000 L CNN
-F 1 "Conn_01x16_Female" H 8578 4635 50  0000 L CNN
-F 2 "" H 8550 4750 50  0001 C CNN
-F 3 "~" H 8550 4750 50  0001 C CNN
-	1    8550 4750
+P 5800 4750
+F 0 "J?" H 5828 4726 50  0000 L CNN
+F 1 "Conn_01x16_Female" H 5828 4635 50  0000 L CNN
+F 2 "" H 5800 4750 50  0001 C CNN
+F 3 "~" H 5800 4750 50  0001 C CNN
+	1    5800 4750
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -615,11 +615,11 @@ Wire Wire Line
 Connection ~ 2000 2000
 Wire Wire Line
 	2000 2000 2000 2050
-Text Label 3800 4550 2    50   ~ 0
+Text Label 7000 4250 2    50   ~ 0
 3v3_MCU
-Text Label 5900 4650 2    50   ~ 0
+Text Label 9100 4350 2    50   ~ 0
 SCL
-Text Label 5900 4950 2    50   ~ 0
+Text Label 9100 4650 2    50   ~ 0
 SDA
 Text Label 7450 1200 1    50   ~ 0
 3v3_MCU
@@ -703,83 +703,83 @@ Wire Notes Line
 	1550 650  1550 2250
 Wire Notes Line
 	1550 2250 650  2250
-Text Label 5900 5750 2    50   ~ 0
+Text Label 9100 5450 2    50   ~ 0
 IO0
 Wire Wire Line
-	5300 6100 5300 6350
-Text Label 5300 6350 1    50   ~ 0
+	8500 5800 8500 6050
+Text Label 8500 6050 1    50   ~ 0
 IO2
 Wire Wire Line
-	5650 5350 5900 5350
-Text Label 5900 5350 2    50   ~ 0
+	8850 5050 9100 5050
+Text Label 9100 5050 2    50   ~ 0
 IO5
 Wire Wire Line
-	5650 5650 5900 5650
-Text Label 5900 5650 2    50   ~ 0
+	8850 5350 9100 5350
+Text Label 9100 5350 2    50   ~ 0
 IO4
 Wire Wire Line
-	4050 5750 3800 5750
-Text Label 3800 5750 0    50   ~ 0
+	7250 5450 7000 5450
+Text Label 7000 5450 0    50   ~ 0
 IO12
 Wire Wire Line
-	4500 6100 4500 6350
-Text Label 4500 6350 1    50   ~ 0
+	7700 5800 7700 6050
+Text Label 7700 6050 1    50   ~ 0
 IO13
 Wire Wire Line
-	4050 5650 3800 5650
-Text Label 3800 5650 0    50   ~ 0
+	7250 5350 7000 5350
+Text Label 7000 5350 0    50   ~ 0
 IO14
 Wire Wire Line
-	5200 6100 5200 6350
-Text Label 5200 6350 1    50   ~ 0
+	8400 5800 8400 6050
+Text Label 8400 6050 1    50   ~ 0
 IO15
 Wire Wire Line
-	5650 5550 5900 5550
-Text Label 5900 5550 2    50   ~ 0
+	8850 5250 9100 5250
+Text Label 9100 5250 2    50   ~ 0
 IO16
 Wire Wire Line
-	5650 5450 5900 5450
-Text Label 5900 5450 2    50   ~ 0
+	8850 5150 9100 5150
+Text Label 9100 5150 2    50   ~ 0
 IO17
 Wire Wire Line
-	5650 5250 5900 5250
-Text Label 5900 5250 2    50   ~ 0
+	8850 4950 9100 4950
+Text Label 9100 4950 2    50   ~ 0
 IO18
 Wire Wire Line
-	5650 5150 5900 5150
-Text Label 5900 5150 2    50   ~ 0
+	8850 4850 9100 4850
+Text Label 9100 4850 2    50   ~ 0
 IO19
 Wire Wire Line
-	5650 4550 5900 4550
-Text Label 5900 4550 2    50   ~ 0
+	8850 4250 9100 4250
+Text Label 9100 4250 2    50   ~ 0
 IO23
 Wire Wire Line
-	4050 5350 3800 5350
-Text Label 3800 5350 0    50   ~ 0
+	7250 5050 7000 5050
+Text Label 7000 5050 0    50   ~ 0
 IO25
 Wire Wire Line
-	4050 5450 3800 5450
-Text Label 3800 5450 0    50   ~ 0
+	7250 5150 7000 5150
+Text Label 7000 5150 0    50   ~ 0
 IO26
 Wire Wire Line
-	4050 5550 3800 5550
-Text Label 3800 5550 0    50   ~ 0
+	7250 5250 7000 5250
+Text Label 7000 5250 0    50   ~ 0
 IO27
 Wire Wire Line
-	4050 5150 3800 5150
-Text Label 3800 5150 0    50   ~ 0
+	7250 4850 7000 4850
+Text Label 7000 4850 0    50   ~ 0
 IO32
 Wire Wire Line
-	4050 5250 3800 5250
-Text Label 3800 5250 0    50   ~ 0
+	7250 4950 7000 4950
+Text Label 7000 4950 0    50   ~ 0
 IO33
 Wire Wire Line
-	4050 4950 3800 4950
-Text Label 3800 4950 0    50   ~ 0
+	7250 4650 7000 4650
+Text Label 7000 4650 0    50   ~ 0
 IO34
 Wire Wire Line
-	4050 5050 3800 5050
-Text Label 3800 5050 0    50   ~ 0
+	7250 4750 7000 4750
+Text Label 7000 4750 0    50   ~ 0
 IO35
 Text Label 2550 2400 0    50   ~ 0
 D+
@@ -797,65 +797,65 @@ Note: the VBUS label on the chip differs from the USB VBUS local label.
 $Comp
 L ESP32-WROOM32:ESP32-WROOM32 U?
 U 1 1 5FAE4A6B
-P 4850 4850
-F 0 "U?" H 4850 5665 50  0000 C CNN
-F 1 "ESP32-WROOM32" H 4850 5574 50  0000 C CNN
-F 2 "RF_Module:ESP32-WROOM-32" H 4900 5550 50  0001 C CNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 4850 4750 50  0001 C CNN
-F 4 "C82899" H 4850 4850 50  0001 C CNN "LCSC"
-	1    4850 4850
+P 8050 4550
+F 0 "U?" H 8050 5365 50  0000 C CNN
+F 1 "ESP32-WROOM32" H 8050 5274 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 8100 5250 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 8050 4450 50  0001 C CNN
+F 4 "C82899" H 8050 4550 50  0001 C CNN "LCSC"
+	1    8050 4550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6050 4500 6050 4400
+	9250 4200 9250 4100
 $Comp
 L power:GND #PWR?
 U 1 1 5FB0D332
-P 6050 4500
-F 0 "#PWR?" H 6050 4250 50  0001 C CNN
-F 1 "GND" H 6055 4327 50  0000 C CNN
-F 2 "" H 6050 4500 50  0001 C CNN
-F 3 "" H 6050 4500 50  0001 C CNN
-	1    6050 4500
+P 9250 4200
+F 0 "#PWR?" H 9250 3950 50  0001 C CNN
+F 1 "GND" H 9255 4027 50  0000 C CNN
+F 2 "" H 9250 4200 50  0001 C CNN
+F 3 "" H 9250 4200 50  0001 C CNN
+	1    9250 4200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3350 4550 3350 4450
+	6550 4250 6550 4150
 $Comp
 L power:GND #PWR?
 U 1 1 5FB122F6
-P 3350 4550
-F 0 "#PWR?" H 3350 4300 50  0001 C CNN
-F 1 "GND" H 3355 4377 50  0000 C CNN
-F 2 "" H 3350 4550 50  0001 C CNN
-F 3 "" H 3350 4550 50  0001 C CNN
-	1    3350 4550
+P 6550 4250
+F 0 "#PWR?" H 6550 4000 50  0001 C CNN
+F 1 "GND" H 6555 4077 50  0000 C CNN
+F 2 "" H 6550 4250 50  0001 C CNN
+F 3 "" H 6550 4250 50  0001 C CNN
+	1    6550 4250
 	1    0    0    -1  
 $EndComp
-NoConn ~ 5650 5050
+NoConn ~ 8850 4750
 Wire Wire Line
-	4300 6300 4300 6200
+	7500 6000 7500 5900
 Wire Wire Line
-	4300 6200 4400 6200
+	7500 5900 7600 5900
 Wire Wire Line
-	4400 6200 4400 6100
+	7600 5900 7600 5800
 Wire Wire Line
-	5650 4450 5750 4450
+	8850 4150 8950 4150
 Wire Wire Line
-	5750 4450 5750 4400
+	8950 4150 8950 4100
 Wire Wire Line
-	5750 4350 5650 4350
+	8950 4050 8850 4050
 Wire Wire Line
-	6050 4400 5750 4400
-Connection ~ 5750 4400
+	9250 4100 8950 4100
+Connection ~ 8950 4100
 Wire Wire Line
-	5750 4400 5750 4350
+	8950 4100 8950 4050
 Wire Wire Line
-	3350 4450 4050 4450
-NoConn ~ 4600 6100
-NoConn ~ 4700 6100
-NoConn ~ 4800 6100
-NoConn ~ 4900 6100
-NoConn ~ 5000 6100
-NoConn ~ 5100 6100
+	6550 4150 7250 4150
+NoConn ~ 7800 5800
+NoConn ~ 7900 5800
+NoConn ~ 8000 5800
+NoConn ~ 8100 5800
+NoConn ~ 8200 5800
+NoConn ~ 8300 5800
 $EndSCHEMATC
