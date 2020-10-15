@@ -1,0 +1,31 @@
+<script src="../../_static/svg-pan-zoom.min.js"></script>
+<h2>Schematics</h2>
+<h3>Top View</h3>
+<embed id="schematics-top" type="image/svg+xml" style="width:100%;cursor:grab;"  src="../../_images/SuperPower-uC-Schematic.svg" />
+
+<h3>Charging Module</h3>
+<embed id="schematics-charging" type="image/svg+xml" style="width:100%;cursor:grab;"  src="../../_images/charger-ChargingModule.svg" />
+
+<h3>Charger IO</h3>
+<embed id="schematics-charger" type="image/svg+xml" style="width:100%;cursor:grab;"  src="../../_images/charger_io-ChargerI-O.svg" />
+
+<h3>RTC cut-off</h3>
+<embed id="schematics-rtc" type="image/svg+xml" style="width:100%;cursor:grab;"  src="../../_images/rtc_cut_off-RTCandCut-OffModule.svg" />
+
+<script>
+    window.onload = function() {
+        let params = {
+            panEnabled: true,
+            zoomEnabled: true,
+            mouseWheelZoomEnabled: true,
+            preventMouseEventsDefault: true,
+            zoomScaleSensitivity: 0.6,
+            minZoom: 0.5,
+            maxZoom: 10,
+        };
+        svgPanZoom('#schematics-top'        ,params);
+        svgPanZoom('#schematics-charging'   ,params);
+        svgPanZoom('#schematics-charger'    ,params);
+        svgPanZoom('#schematics-rtc'        ,params);
+    };
+</script>

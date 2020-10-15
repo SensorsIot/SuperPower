@@ -1,0 +1,15 @@
+Reference, Quantity, Value, Datasheet, Footprint, LCSC
+U1 ,1,FS312F-G,https://www.ic-fortune.com/upload/Download/FS312F-G-DS-12_EN.pdf,Package_TO_SOT_SMD:SOT-23-6_Handsoldering,C82736
+U10 ,1,FP6291LR,www.feeling-tech.com.tw/km-master/ezcatfiles/cust/img/img/24/fp6291v064.pdf,Package_TO_SOT_SMD:SOT-23-6_Handsoldering,C18701
+U11 U12 ,2,ME6210A33P,https://datasheet.lcsc.com/szlcsc/1810201611_MICRONE-Nanjing-Micro-One-Elec-ME6210A33PG_C85233.pdf,Package_TO_SOT_SMD:SOT-89-3_Handsoldering,C85233
+U13 ,1,ESP32-WROOM32,https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf,RF_Module:ESP32-WROOM-32,C82899
+U2 ,1,FS8205A,https://www.ic-fortune.com/upload/Download/FS8205A-DS-12_EN.pdf,Package_SO:TSSOP-8_4.4x3mm_P0.65mm,C16052
+U3 ,1,LC709203FQH,https://www.onsemi.com/pub/Collateral/LC709203F-D.PDF,Package_DFN_QFN:WDFN-8-1EP_4x3mm_P0.65mm_EP2.4x1.8mm,C152311
+U4 ,1,TP4056,https://dlnmh9ip6v2uc.cloudfront.net/datasheets/Prototyping/TP4056.pdf,Package_SO:SOP-8_3.9x4.9mm_P1.27mm,C16581
+U5 ,1,CH340G,https://www.mpja.com/download/35227cpdata.pdf,Package_SO:SOP-16_4.55x10.3mm_P1.27mm,C14267
+U6 ,1,AMS1117-3.3,http://www.advanced-monolithic.com/pdf/ds1117.pdf,Package_TO_SOT_SMD:SOT-223-3_TabPin2,C6186
+U7 ,1,PCF8563T,https://www.nxp.com/docs/en/data-sheet/PCF8563.pdf,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,C7440
+U8 ,1,XC6206P332MR,https://www.torexsemi.com/file/xc6206/XC6206.pdf,Package_TO_SOT_SMD:SOT-23_Handsoldering,C5446
+U9 ,1,TCA6408A,https://www.ti.com/lit/ds/symlink/tca6408a.pdf?ts=1602171918658&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTCA6408A,Package_SO:TSSOP-16_4.4x5mm_P0.65mm,C206177
+Y1 ,1,12MHZ,https://datasheet.lcsc.com/szlcsc/Yangxing-Tech-X322512MSB4SI_C9002.pdf,Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering,C9002
+Y2 ,1,32.768KHz,1901081604_Seiko-Epson-Q13FC1350000400_C32346.pdf,Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm,C32346

@@ -26,7 +26,8 @@ fp-info-cache
 
 # Exported BOM files
 *.xml
-*.csv
+# The Exported BOM files are needed and will be included as is from the generated documentation
+#*.csv
 
 *.~vsdx
 
