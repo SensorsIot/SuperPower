@@ -16,7 +16,7 @@ $EndDescr
 Text HLabel 900  850  0    50   Output ~ 0
 VBAT
 $Comp
-L Battery_Management:AP9101CK6_v2 U1
+L ap9101ck6_v2:AP9101CK6_v2 U1
 U 1 1 5F786C83
 P 2650 4400
 F 0 "U1" H 2650 4767 50  0000 C CNN
