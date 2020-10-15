@@ -64,11 +64,6 @@ Wire Wire Line
 	5450 3250 4950 3250
 Wire Wire Line
 	5300 3550 4950 3550
-Wire Wire Line
-	4950 3050 4950 3250
-Connection ~ 4950 3250
-Wire Wire Line
-	4950 3250 4600 3250
 $Comp
 L Device:R R1
 U 1 1 5F7CFA8D
@@ -95,7 +90,7 @@ F 4 "C14858" H 4950 3400 50  0001 C CNN "LCSC"
 $EndComp
 Connection ~ 4950 3550
 Wire Wire Line
-	4950 3550 4600 3550
+	4950 3550 4300 3550
 Connection ~ 5300 3550
 Wire Wire Line
 	5300 3550 5300 3350
@@ -125,23 +120,21 @@ Connection ~ 6350 3900
 $Comp
 L Connector:Conn_01x02_Male J1
 U 1 1 5F7D5382
-P 4150 3350
-F 0 "J1" H 4258 3531 50  0000 C CNN
-F 1 "Battery connector" H 4258 3440 50  0000 C CNN
-F 2 "Connector_JST:JST_EH_S2B-EH_1x02_P2.50mm_Horizontal" H 4150 3350 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1811051822_JST-Sales-America-S2B-XH-A-LF-SN_C157931.pdf" H 4150 3350 50  0001 C CNN
-F 4 "C157931" H 4150 3350 50  0001 C CNN "LCSC"
-	1    4150 3350
+P 3850 3350
+F 0 "J1" H 3958 3531 50  0000 C CNN
+F 1 "Battery connector" H 3958 3440 50  0000 C CNN
+F 2 "Connector_JST:JST_EH_S2B-EH_1x02_P2.50mm_Horizontal" H 3850 3350 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811051822_JST-Sales-America-S2B-XH-A-LF-SN_C157931.pdf" H 3850 3350 50  0001 C CNN
+F 4 "C157931" H 3850 3350 50  0001 C CNN "LCSC"
+	1    3850 3350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4600 3250 4600 3350
+	4300 3350 4050 3350
 Wire Wire Line
-	4600 3350 4350 3350
+	4050 3450 4300 3450
 Wire Wire Line
-	4350 3450 4600 3450
-Wire Wire Line
-	4600 3450 4600 3550
+	4300 3450 4300 3550
 NoConn ~ 5450 4100
 NoConn ~ 6150 4100
 NoConn ~ 5450 3150
@@ -192,14 +185,36 @@ Wire Notes Line
 	550  1750 550  550 
 Text HLabel 850  1050 0    50   BiDi ~ 0
 VBAT
-Text Label 4700 3050 0    50   ~ 0
+Text Label 4050 3050 0    50   ~ 0
 VBAT
 Wire Wire Line
-	4700 3050 4950 3050
+	4050 3050 4300 3050
 Text Label 1100 1050 2    50   ~ 0
 VBAT
 Wire Wire Line
 	1100 1050 850  1050
 Text Notes 600  650  0    50   ~ 0
 Labels\n
+$Comp
+L Device:R R21
+U 1 1 5F88C76A
+P 4650 3250
+F 0 "R21" V 4850 3150 50  0000 L CNN
+F 1 "100" V 4750 3150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4580 3250 50  0001 C CNN
+F 3 "~" H 4650 3250 50  0001 C CNN
+F 4 "C22775" H 4650 3250 50  0001 C CNN "LCSC"
+	1    4650 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4300 3050 4300 3250
+Wire Wire Line
+	4800 3250 4950 3250
+Connection ~ 4950 3250
+Wire Wire Line
+	4500 3250 4300 3250
+Connection ~ 4300 3250
+Wire Wire Line
+	4300 3250 4300 3350
 $EndSCHEMATC
