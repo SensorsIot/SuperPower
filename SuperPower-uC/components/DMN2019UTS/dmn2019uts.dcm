@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DMN2019UTS
+D 20V Vds, 5.4A Id, Dual N-Channel MOSFET with ESD protection, TSSOP-8
+K N-Channel MOSFET
+F https://www.diodes.com/assets/Datasheets/DMN2019UTS.pdf
+$ENDCMP
+#
+#End Doc Library

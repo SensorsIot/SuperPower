@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AP9101CK6_v2
+D Li+ Battery Protection IC for Single Cell Pack, SOT23-6
+K battery protection li-ion li-po
+F https://www.diodes.com/assets/Datasheets/AP9101C.pdf
+$ENDCMP
+#
+#End Doc Library

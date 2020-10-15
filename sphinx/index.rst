@@ -19,6 +19,7 @@ Welcome to SuperPower's documentation!
    :caption: ESP32 Solar
 
    uc/overview.rst
+   uc/common.rst
    uc/original/overview_pz.rst
    uc/low/overview.rst
    uc/requirements.rst
