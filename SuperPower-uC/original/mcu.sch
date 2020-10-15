@@ -862,4 +862,12 @@ Wire Wire Line
 	3750 2600 4350 2600
 Text Label 4350 2600 2    50   ~ 0
 CHR1
+Wire Wire Line
+	7250 4450 7000 4450
+Text Label 7000 4450 0    50   ~ 0
+IO36
+Wire Wire Line
+	7250 4550 7000 4550
+Text Label 7000 4550 0    50   ~ 0
+IO39
 $EndSCHEMATC
