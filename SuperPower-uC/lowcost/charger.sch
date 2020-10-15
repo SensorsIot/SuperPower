@@ -346,9 +346,9 @@ CHRG
 Text Label 6900 4600 2    50   ~ 0
 STDBY
 Wire Wire Line
-	5850 4600 5550 4600
+	5850 4600 5500 4600
 Wire Wire Line
-	5550 4850 5850 4850
+	5500 4850 5850 4850
 Wire Wire Line
 	4550 5300 5300 5300
 Wire Wire Line
@@ -365,10 +365,6 @@ Wire Wire Line
 	4700 5600 4550 5600
 Wire Wire Line
 	4700 5600 4800 5600
-Text Label 5550 4600 0    50   ~ 0
-STDBY
-Text Label 5550 4850 0    50   ~ 0
-STDBY
 Text Label 5050 5500 0    50   ~ 0
 STDBY
 Wire Wire Line
@@ -488,4 +484,8 @@ Wire Notes Line
 	600  1850 600  600 
 Text Notes 650  750  0    50   ~ 0
 Labels\n
+Text Label 5500 4600 0    50   ~ 0
+VCHARGE
+Text Label 5500 4850 0    50   ~ 0
+VCHARGE
 $EndSCHEMATC
