@@ -442,8 +442,8 @@ Wire Wire Line
 Wire Wire Line
 	6750 4600 7850 4600
 NoConn ~ 6750 4950
-Text Notes 7300 5550 0    50   ~ 0
-C501, C502, C503 = Ceramic\nC504 = Low ESR Tantalum
+Text Notes 8200 4900 0    50   ~ 0
+Low ESR Tantalum
 Wire Notes Line
 	3700 3600 3700 6000
 Wire Notes Line
