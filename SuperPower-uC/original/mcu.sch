@@ -312,50 +312,36 @@ Wire Notes Line
 Wire Notes Line
 	1550 2400 1550 3600
 Wire Wire Line
-	7400 5050 7150 5050
+	5900 4650 5650 4650
 Wire Wire Line
-	7400 4950 7150 4950
+	5900 4950 5650 4950
 Wire Wire Line
-	7150 3850 7400 3850
-Text Label 7400 3850 2    50   ~ 0
+	5650 4850 5900 4850
+Text Label 5900 4850 2    50   ~ 0
 RXD
-Text Label 7400 3650 2    50   ~ 0
+Text Label 5900 4750 2    50   ~ 0
 TXD
 Wire Wire Line
-	7150 3650 7400 3650
-Wire Wire Line
-	6550 6250 6550 6150
+	5650 4750 5900 4750
 $Comp
 L power:GND #PWR?
 U 1 1 5F824CEA
-P 6550 6250
-F 0 "#PWR?" H 6550 6000 50  0001 C CNN
-F 1 "GND" H 6555 6077 50  0000 C CNN
-F 2 "" H 6550 6250 50  0001 C CNN
-F 3 "" H 6550 6250 50  0001 C CNN
-	1    6550 6250
-	1    0    0    -1  
-$EndComp
-$Comp
-L RF_Module:ESP32-WROOM-32D U?
-U 1 1 5F821A8B
-P 6550 4750
-F 0 "U?" H 6650 6300 50  0000 C CNN
-F 1 "ESP32-WROOM-32D" H 7000 6200 50  0000 C CNN
-F 2 "RF_Module:ESP32-WROOM-32" H 6550 3250 50  0001 C CNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf" H 6250 4800 50  0001 C CNN
-	1    6550 4750
+P 4300 6300
+F 0 "#PWR?" H 4300 6050 50  0001 C CNN
+F 1 "GND" H 4305 6127 50  0000 C CNN
+F 2 "" H 4300 6300 50  0001 C CNN
+F 3 "" H 4300 6300 50  0001 C CNN
+	1    4300 6300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6550 3250 6550 3350
-Text Label 5750 3550 0    50   ~ 0
+	3800 4550 4050 4550
+Text Label 3800 4650 0    50   ~ 0
 EN
 Wire Wire Line
-	5750 3550 5950 3550
-NoConn ~ 5950 3850
+	3800 4650 4050 4650
 Wire Wire Line
-	7150 3550 7400 3550
+	5650 5750 5900 5750
 $Comp
 L Device:R_Small R?
 U 1 1 5F8C7F33
@@ -629,11 +615,11 @@ Wire Wire Line
 Connection ~ 2000 2000
 Wire Wire Line
 	2000 2000 2000 2050
-Text Label 6550 3250 1    50   ~ 0
+Text Label 3800 4550 2    50   ~ 0
 3v3_MCU
-Text Label 7400 5050 2    50   ~ 0
+Text Label 5900 4650 2    50   ~ 0
 SCL
-Text Label 7400 4950 2    50   ~ 0
+Text Label 5900 4950 2    50   ~ 0
 SDA
 Text Label 7450 1200 1    50   ~ 0
 3v3_MCU
@@ -717,83 +703,83 @@ Wire Notes Line
 	1550 650  1550 2250
 Wire Notes Line
 	1550 2250 650  2250
-Text Label 7400 3550 2    50   ~ 0
+Text Label 5900 5750 2    50   ~ 0
 IO0
 Wire Wire Line
-	7150 3750 7400 3750
-Text Label 7400 3750 2    50   ~ 0
+	5300 6100 5300 6350
+Text Label 5300 6350 1    50   ~ 0
 IO2
 Wire Wire Line
-	7150 4050 7400 4050
-Text Label 7400 4050 2    50   ~ 0
+	5650 5350 5900 5350
+Text Label 5900 5350 2    50   ~ 0
 IO5
 Wire Wire Line
-	7150 3950 7400 3950
-Text Label 7400 3950 2    50   ~ 0
+	5650 5650 5900 5650
+Text Label 5900 5650 2    50   ~ 0
 IO4
 Wire Wire Line
-	7150 4150 7400 4150
-Text Label 7400 4150 2    50   ~ 0
+	4050 5750 3800 5750
+Text Label 3800 5750 0    50   ~ 0
 IO12
 Wire Wire Line
-	7150 4250 7400 4250
-Text Label 7400 4250 2    50   ~ 0
+	4500 6100 4500 6350
+Text Label 4500 6350 1    50   ~ 0
 IO13
 Wire Wire Line
-	7150 4350 7400 4350
-Text Label 7400 4350 2    50   ~ 0
+	4050 5650 3800 5650
+Text Label 3800 5650 0    50   ~ 0
 IO14
 Wire Wire Line
-	7150 4450 7400 4450
-Text Label 7400 4450 2    50   ~ 0
+	5200 6100 5200 6350
+Text Label 5200 6350 1    50   ~ 0
 IO15
 Wire Wire Line
-	7150 4550 7400 4550
-Text Label 7400 4550 2    50   ~ 0
+	5650 5550 5900 5550
+Text Label 5900 5550 2    50   ~ 0
 IO16
 Wire Wire Line
-	7150 4650 7400 4650
-Text Label 7400 4650 2    50   ~ 0
+	5650 5450 5900 5450
+Text Label 5900 5450 2    50   ~ 0
 IO17
 Wire Wire Line
-	7150 4750 7400 4750
-Text Label 7400 4750 2    50   ~ 0
+	5650 5250 5900 5250
+Text Label 5900 5250 2    50   ~ 0
 IO18
 Wire Wire Line
-	7150 4850 7400 4850
-Text Label 7400 4850 2    50   ~ 0
+	5650 5150 5900 5150
+Text Label 5900 5150 2    50   ~ 0
 IO19
 Wire Wire Line
-	7150 5150 7400 5150
-Text Label 7400 5150 2    50   ~ 0
+	5650 4550 5900 4550
+Text Label 5900 4550 2    50   ~ 0
 IO23
 Wire Wire Line
-	7150 5250 7400 5250
-Text Label 7400 5250 2    50   ~ 0
+	4050 5350 3800 5350
+Text Label 3800 5350 0    50   ~ 0
 IO25
 Wire Wire Line
-	7150 5350 7400 5350
-Text Label 7400 5350 2    50   ~ 0
+	4050 5450 3800 5450
+Text Label 3800 5450 0    50   ~ 0
 IO26
 Wire Wire Line
-	7150 5450 7400 5450
-Text Label 7400 5450 2    50   ~ 0
+	4050 5550 3800 5550
+Text Label 3800 5550 0    50   ~ 0
 IO27
 Wire Wire Line
-	7150 5550 7400 5550
-Text Label 7400 5550 2    50   ~ 0
+	4050 5150 3800 5150
+Text Label 3800 5150 0    50   ~ 0
 IO32
 Wire Wire Line
-	7150 5650 7400 5650
-Text Label 7400 5650 2    50   ~ 0
+	4050 5250 3800 5250
+Text Label 3800 5250 0    50   ~ 0
 IO33
 Wire Wire Line
-	7150 5750 7400 5750
-Text Label 7400 5750 2    50   ~ 0
+	4050 4950 3800 4950
+Text Label 3800 4950 0    50   ~ 0
 IO34
 Wire Wire Line
-	7150 5850 7400 5850
-Text Label 7400 5850 2    50   ~ 0
+	4050 5050 3800 5050
+Text Label 3800 5050 0    50   ~ 0
 IO35
 Text Label 2550 2400 0    50   ~ 0
 D+
@@ -808,4 +794,68 @@ Wire Wire Line
 	2100 1000 1900 1000
 Text Notes 1750 3400 0    39   ~ 0
 Note: the VBUS label on the chip differs from the USB VBUS local label.
+$Comp
+L ESP32-WROOM32:ESP32-WROOM32 U?
+U 1 1 5FAE4A6B
+P 4850 4850
+F 0 "U?" H 4850 5665 50  0000 C CNN
+F 1 "ESP32-WROOM32" H 4850 5574 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 4900 5550 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 4850 4750 50  0001 C CNN
+F 4 "C82899" H 4850 4850 50  0001 C CNN "LCSC"
+	1    4850 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 4500 6050 4400
+$Comp
+L power:GND #PWR?
+U 1 1 5FB0D332
+P 6050 4500
+F 0 "#PWR?" H 6050 4250 50  0001 C CNN
+F 1 "GND" H 6055 4327 50  0000 C CNN
+F 2 "" H 6050 4500 50  0001 C CNN
+F 3 "" H 6050 4500 50  0001 C CNN
+	1    6050 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 4550 3350 4450
+$Comp
+L power:GND #PWR?
+U 1 1 5FB122F6
+P 3350 4550
+F 0 "#PWR?" H 3350 4300 50  0001 C CNN
+F 1 "GND" H 3355 4377 50  0000 C CNN
+F 2 "" H 3350 4550 50  0001 C CNN
+F 3 "" H 3350 4550 50  0001 C CNN
+	1    3350 4550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5650 5050
+Wire Wire Line
+	4300 6300 4300 6200
+Wire Wire Line
+	4300 6200 4400 6200
+Wire Wire Line
+	4400 6200 4400 6100
+Wire Wire Line
+	5650 4450 5750 4450
+Wire Wire Line
+	5750 4450 5750 4400
+Wire Wire Line
+	5750 4350 5650 4350
+Wire Wire Line
+	6050 4400 5750 4400
+Connection ~ 5750 4400
+Wire Wire Line
+	5750 4400 5750 4350
+Wire Wire Line
+	3350 4450 4050 4450
+NoConn ~ 4600 6100
+NoConn ~ 4700 6100
+NoConn ~ 4800 6100
+NoConn ~ 4900 6100
+NoConn ~ 5000 6100
+NoConn ~ 5100 6100
 $EndSCHEMATC
