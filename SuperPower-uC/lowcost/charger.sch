@@ -365,10 +365,8 @@ Wire Wire Line
 	4700 5600 4550 5600
 Wire Wire Line
 	4700 5600 4800 5600
-Text Label 5050 5500 0    50   ~ 0
-STDBY
 Wire Wire Line
-	5050 5500 5300 5500
+	4950 5500 5300 5500
 Wire Wire Line
 	7650 3200 7650 3350
 Wire Wire Line
@@ -487,5 +485,7 @@ Labels\n
 Text Label 5500 4600 0    50   ~ 0
 VCHARGE
 Text Label 5500 4850 0    50   ~ 0
+VCHARGE
+Text Label 4950 5500 0    50   ~ 0
 VCHARGE
 $EndSCHEMATC
