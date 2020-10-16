@@ -225,7 +225,7 @@ Wire Wire Line
 	2900 1950 3150 1950
 Connection ~ 3150 1950
 Wire Wire Line
-	3150 1950 3150 2250
+	3150 1950 3150 2150
 Wire Wire Line
 	2900 1550 2900 1200
 Wire Wire Line
@@ -233,8 +233,6 @@ Wire Wire Line
 Connection ~ 3150 1200
 Wire Wire Line
 	3150 1200 3150 1000
-Wire Wire Line
-	1750 3700 1750 3900
 Text Notes 8150 2450 0    50   ~ 0
 Chinese Chip price range from LCSC (10/2020) :\n$0.075-0.115 @qt=10\n$0.054-0.087 @qt=100
 Wire Wire Line
@@ -336,4 +334,57 @@ Wire Wire Line
 	6250 1650 6250 1800
 Text Notes 5200 1450 0    50   ~ 0
 In case of using an external battery\nwith an embedded protection circuit.
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F8B1179
+P 3500 2250
+F 0 "#FLG0101" H 3500 2325 50  0001 C CNN
+F 1 "PWR_FLAG" H 3500 2423 50  0000 C CNN
+F 2 "" H 3500 2250 50  0001 C CNN
+F 3 "~" H 3500 2250 50  0001 C CNN
+	1    3500 2250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3500 2250 3500 2150
+Wire Wire Line
+	3500 2150 3150 2150
+Connection ~ 3150 2150
+Wire Wire Line
+	3150 2150 3150 2250
+Connection ~ 1750 3800
+Wire Wire Line
+	1750 3800 1750 3900
+Wire Wire Line
+	1750 3700 1750 3800
+Wire Wire Line
+	1400 3800 1750 3800
+Wire Wire Line
+	1400 3700 1400 3800
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5F8B2D96
+P 1400 3700
+F 0 "#FLG0102" H 1400 3775 50  0001 C CNN
+F 1 "PWR_FLAG" H 1400 3873 50  0000 C CNN
+F 2 "" H 1400 3700 50  0001 C CNN
+F 3 "~" H 1400 3700 50  0001 C CNN
+	1    1400 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 4300 1750 4300
+Wire Wire Line
+	1400 4200 1400 4300
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5F8B93BE
+P 1400 4200
+F 0 "#FLG0103" H 1400 4275 50  0001 C CNN
+F 1 "PWR_FLAG" H 1400 4373 50  0000 C CNN
+F 2 "" H 1400 4200 50  0001 C CNN
+F 3 "~" H 1400 4200 50  0001 C CNN
+	1    1400 4200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

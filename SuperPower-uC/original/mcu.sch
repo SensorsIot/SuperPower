@@ -870,7 +870,7 @@ Wire Wire Line
 	7250 4550 7000 4550
 Text Label 7000 4550 0    50   ~ 0
 IO39
-Text Notes 7350 3500 0    50   ~ 10
+Text Notes 5100 3750 0    50   ~ 10
 Top of the board
 Wire Wire Line
 	6000 4650 6250 4650
