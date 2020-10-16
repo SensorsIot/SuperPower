@@ -9,10 +9,23 @@ Author:
 Log:
     - (16/10/2020):
         - Create this script
+
+Note:
+    This script is base on BLARG batch command:
+        {echo "(sym_lib_table"; for i in **/*.lib; do echo "    (lib (name $i:t:r)(type Legacy)(uri \${KIPRJMOD}/../components/$i)(options \"\")(descr \"\"))" ;done; echo ")" }> ../original/sym-lib-table
+
+        ```
+        (sym_lib_table
+            (lib (name dmn2019uts)(type Legacy)(uri ${KIPRJMOD}/../components/DMN2019UTS/dmn2019uts.lib)(options "")(descr ""))
+        )
+        ´´´ 
 """
 import os
 
 SCRIPT_PATH = os.path.dirname(__file__)
+KICAD_PROJECT_PATH = r"${KIPRJMOD}"
+PREAMBULE = "(sym_lib_table"
+END = ")"
 
 
 def extract_files_list(path: str):
@@ -23,7 +36,7 @@ def extract_files_list(path: str):
 
     Returns:
     --------
-        A list of files without extension.
+        A list of files.
     """
     files_list = set()
 
@@ -35,16 +48,43 @@ def extract_files_list(path: str):
     return sorted(list(files_list))
 
 
+def write_sym_lib_table(libraries_list: list, sym_lib_table_file: str):
+    """Write all the libraries path in the `sym-lib-table`.
+    Parameters:
+    -----------
+        libraries_list: a list of strings (the paths to the librairies).
+        sym_lib_table_file: a string which contains the path to the `sym-lib-table`
+
+    Returns:
+    --------
+        None
+    """
+    kicad_project_path = os.path.dirname(sym_lib_table_file)
+
+    libraries_relatives_paths = list(map(lambda library_path: os.path.join(KICAD_PROJECT_PATH, os.path.relpath(library_path, start=kicad_project_path)), libraries_list))
+
+    libraries_names = list(map(lambda library_path: library_path[max(library_path.rfind('/'), library_path.rfind('\\')) + 1: library_path.rfind('.lib')], libraries_list))
+
+    content = list(map(lambda name_path_tuple: r'  (lib (name %s)(type Legacy)(uri %s)(options "")(descr ""))' % (name_path_tuple), zip(libraries_names, libraries_relatives_paths)))
+
+    sym_lib_table_file_lines = "\n".join([PREAMBULE] + content + [END])
+
+    open(sym_lib_table_file, mode='w').write(sym_lib_table_file_lines)
+
+
 def main():
     files_list = extract_files_list(SCRIPT_PATH)
 
-    libraries_list = list(filter(lambda filename: filename.endswith(".lib") and not filename.endswith("cache.lib"), files_list))
-    sym_lib_table_list = list(filter(lambda filename: filename.endswith("sym-lib-table"), files_list))
+    libraries_list = list(filter(lambda filename: filename.endswith(
+        ".lib") and not filename.endswith("cache.lib"), files_list))
 
-    print("\n".join(libraries_list))
-    print()
-    print("\n".join(sym_lib_table_list))
-    
+    sym_lib_table_list = list(
+        filter(lambda filename: filename.endswith("sym-lib-table"), files_list))
+
+    for sym_lib_table in sym_lib_table_list:
+        write_sym_lib_table(libraries_list=libraries_list,
+                            sym_lib_table_file=sym_lib_table)
+
 
 if __name__ == "__main__":
     main()
