@@ -875,7 +875,7 @@ Top of the board
 Wire Wire Line
 	6000 4650 6250 4650
 Text Label 6250 4650 2    50   ~ 0
-IO0
+IO35
 Wire Wire Line
 	6000 4250 6250 4250
 Text Label 6250 4250 2    50   ~ 0
@@ -883,79 +883,73 @@ IO5
 Wire Wire Line
 	6000 4550 6250 4550
 Text Label 6250 4550 2    50   ~ 0
-IO4
+IO34
 Wire Wire Line
 	6000 4450 6250 4450
 Text Label 6250 4450 2    50   ~ 0
-IO16
+IO39
 Wire Wire Line
 	6000 4350 6250 4350
 Text Label 6250 4350 2    50   ~ 0
-IO17
+IO36
 Wire Wire Line
 	6000 4150 6250 4150
 Text Label 6250 4150 2    50   ~ 0
-IO18
+EN
 Wire Wire Line
 	6000 4050 6250 4050
-Text Label 6250 4050 2    50   ~ 0
-IO19
+Text Label 6250 4050 0    50   ~ 0
+3v3_MCU
 Wire Wire Line
 	6000 5350 6250 5350
 Text Label 6250 5350 2    50   ~ 0
-IO0
+IO12
 Wire Wire Line
 	6000 4950 6250 4950
 Text Label 6250 4950 2    50   ~ 0
-IO5
+IO25
 Wire Wire Line
 	6000 5250 6250 5250
 Text Label 6250 5250 2    50   ~ 0
-IO4
+IO14
 Wire Wire Line
 	6000 5150 6250 5150
 Text Label 6250 5150 2    50   ~ 0
-IO16
+IO27
 Wire Wire Line
 	6000 5050 6250 5050
 Text Label 6250 5050 2    50   ~ 0
-IO17
+IO26
 Wire Wire Line
 	6000 4850 6250 4850
 Text Label 6250 4850 2    50   ~ 0
-IO18
+IO33
 Wire Wire Line
 	6000 4750 6250 4750
 Text Label 6250 4750 2    50   ~ 0
-IO19
-Wire Wire Line
-	10000 4650 9750 4650
-Text Label 9750 4650 0    50   ~ 0
-IO0
+IO32
 Wire Wire Line
 	10000 4250 9750 4250
 Text Label 9750 4250 0    50   ~ 0
-IO5
+SCL
 Wire Wire Line
 	10000 4550 9750 4550
 Text Label 9750 4550 0    50   ~ 0
-IO4
+SDA
 Wire Wire Line
 	10000 4450 9750 4450
 Text Label 9750 4450 0    50   ~ 0
-IO16
+RXD
 Wire Wire Line
 	10000 4350 9750 4350
 Text Label 9750 4350 0    50   ~ 0
-IO17
+TXD
 Wire Wire Line
 	10000 4150 9750 4150
 Text Label 9750 4150 0    50   ~ 0
-IO18
+IO23
 Wire Wire Line
-	10000 4050 9750 4050
-Text Label 9750 4050 0    50   ~ 0
-IO19
+	10000 4050 9650 4050
 Wire Wire Line
 	10000 5350 9750 5350
 Text Label 9750 5350 0    50   ~ 0
@@ -987,17 +981,58 @@ IO19
 Wire Wire Line
 	10000 5550 9750 5550
 Text Label 9750 5550 0    50   ~ 0
-IO0
+IO15
 Wire Wire Line
 	10000 5450 9750 5450
 Text Label 9750 5450 0    50   ~ 0
-IO4
-Wire Wire Line
-	6000 5450 6250 5450
-Text Label 6250 5450 2    50   ~ 0
-IO0
+IO2
 Wire Wire Line
 	6000 5550 6250 5550
 Text Label 6250 5550 2    50   ~ 0
-IO4
+IO13
+Text Notes 5350 4450 0    50   ~ 0
+Sensor_VP\nSensor_VN
+$Comp
+L power:GND #PWR?
+U 1 1 5F8A7C35
+P 6350 5550
+F 0 "#PWR?" H 6350 5300 50  0001 C CNN
+F 1 "GND" H 6355 5377 50  0000 C CNN
+F 2 "" H 6350 5550 50  0001 C CNN
+F 3 "" H 6350 5550 50  0001 C CNN
+	1    6350 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 5550 6350 5450
+Wire Wire Line
+	6000 5450 6350 5450
+$Comp
+L power:GND #PWR?
+U 1 1 5F8B01AA
+P 9650 4150
+F 0 "#PWR?" H 9650 3900 50  0001 C CNN
+F 1 "GND" H 9655 3977 50  0000 C CNN
+F 2 "" H 9650 4150 50  0001 C CNN
+F 3 "" H 9650 4150 50  0001 C CNN
+	1    9650 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 4150 9650 4050
+Wire Wire Line
+	10000 4650 9650 4650
+$Comp
+L power:GND #PWR?
+U 1 1 5F8D45C5
+P 9650 4750
+F 0 "#PWR?" H 9650 4500 50  0001 C CNN
+F 1 "GND" H 9655 4577 50  0000 C CNN
+F 2 "" H 9650 4750 50  0001 C CNN
+F 3 "" H 9650 4750 50  0001 C CNN
+	1    9650 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 4750 9650 4650
 $EndSCHEMATC
