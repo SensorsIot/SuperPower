@@ -33,19 +33,6 @@ F6 "CHARGE-DISABLE" I R 4300 3100 50
 F7 "VBAT" B L 3050 2550 50 
 $EndSheet
 $Sheet
-S 4950 4000 1250 1150
-U 5F63A00B
-F0 "RTC and Cut-Off Module" 50
-F1 "rtc_cut_off.sch" 50
-F2 "SCL" I R 6200 4100 50 
-F3 "SDA" B R 6200 4200 50 
-F4 "INT" O R 6200 4350 50 
-F5 "VBAT" I L 4950 4100 50 
-F6 "3.3V_EN" O R 6200 4600 50 
-F7 "5V_EN" O R 6200 4500 50 
-F8 "CHARGE-DISABLE" I L 4950 5000 50 
-$EndSheet
-$Sheet
 S 4900 2100 1250 1150
 U 5F63A0E9
 F0 "Regulator Module" 50
@@ -113,7 +100,7 @@ Text Notes 5150 2500 0    50   ~ 0
 5V Buck/Boost
 Text Notes 7400 2450 0    50   ~ 0
 MCU
-Text Notes 5300 4350 0    50   ~ 0
+Text Notes 5250 4350 0    50   ~ 0
 RTC
 Text Notes 3600 4350 0    50   ~ 0
 USB-C
@@ -139,7 +126,7 @@ Wire Wire Line
 Connection ~ 6650 3550
 Wire Wire Line
 	6650 3550 6650 4200
-Text Notes 5300 4550 0    50   ~ 0
+Text Notes 5250 4550 0    50   ~ 0
 Manual Wake
 Wire Wire Line
 	8100 3150 8350 3150
@@ -153,7 +140,7 @@ Wire Wire Line
 	8400 3050 8400 5450
 Wire Wire Line
 	8400 5450 4700 5450
-Text Notes 5300 4650 0    50   ~ 0
+Text Notes 5250 4650 0    50   ~ 0
 Bypass Jumper
 Wire Wire Line
 	6650 3200 6650 3550
@@ -227,9 +214,9 @@ Wire Wire Line
 Connection ~ 2900 2550
 Wire Wire Line
 	2900 2550 3050 2550
-Text Notes 5300 4450 0    50   ~ 0
+Text Notes 5250 4450 0    50   ~ 0
 IO Expander
-Text Notes 5300 4750 0    50   ~ 0
+Text Notes 5250 4750 0    50   ~ 0
 I2C pullup
 Wire Wire Line
 	6500 4600 6500 2550
@@ -257,4 +244,17 @@ Wire Wire Line
 	4800 4650 4800 5000
 Wire Wire Line
 	4800 5000 4950 5000
+$Sheet
+S 4950 4000 1250 1150
+U 5F63A00B
+F0 "RTC and Cut-Off Module" 50
+F1 "rtc_cut_off.sch" 50
+F2 "SCL" I R 6200 4100 50 
+F3 "SDA" B R 6200 4200 50 
+F4 "INT" O R 6200 4350 50 
+F5 "VBAT" I L 4950 4100 50 
+F6 "5V_EN" O R 6200 4500 50 
+F7 "CHARGE-DISABLE" I L 4950 5000 50 
+F8 "3v3V_EN" O R 6200 4600 50 
+$EndSheet
 $EndSCHEMATC

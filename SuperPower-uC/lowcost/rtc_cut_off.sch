@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 7
+Sheet 7 7
 Title "SuperPower-uC"
 Date "2020-09-20"
 Rev "0.1"
@@ -99,25 +99,25 @@ $EndComp
 $Comp
 L Device:C C9
 U 1 1 5F8078F3
-P 7450 2800
-F 0 "C9" H 7565 2846 50  0000 L CNN
-F 1 "0.1µF" H 7565 2755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7488 2650 50  0001 C CNN
-F 3 "~" H 7450 2800 50  0001 C CNN
-F 4 "C14858" H 7450 2800 50  0001 C CNN "LCSC"
-	1    7450 2800
+P 7350 2800
+F 0 "C9" H 7465 2846 50  0000 L CNN
+F 1 "0.1µF" H 7465 2755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7388 2650 50  0001 C CNN
+F 3 "~" H 7350 2800 50  0001 C CNN
+F 4 "C14858" H 7350 2800 50  0001 C CNN "LCSC"
+	1    7350 2800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7500 2600 7450 2600
+	7500 2600 7350 2600
 Wire Wire Line
-	7450 2600 7450 2650
+	7350 2600 7350 2650
 Wire Wire Line
 	7850 2800 7850 2900
 Wire Wire Line
-	7850 3000 7450 3000
+	7850 3000 7350 3000
 Wire Wire Line
-	7450 3000 7450 2950
+	7350 3000 7350 2950
 $Comp
 L Device:R R12
 U 1 1 5F8095DB
@@ -153,17 +153,17 @@ Connection ~ 7850 3000
 $Comp
 L power:GND #PWR0108
 U 1 1 5F80C4A4
-P 7250 2600
-F 0 "#PWR0108" H 7250 2350 50  0001 C CNN
-F 1 "GND" H 7255 2427 50  0000 C CNN
-F 2 "" H 7250 2600 50  0001 C CNN
-F 3 "" H 7250 2600 50  0001 C CNN
-	1    7250 2600
+P 7100 2600
+F 0 "#PWR0108" H 7100 2350 50  0001 C CNN
+F 1 "GND" H 7105 2427 50  0000 C CNN
+F 2 "" H 7100 2600 50  0001 C CNN
+F 3 "" H 7100 2600 50  0001 C CNN
+	1    7100 2600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7450 2600 7250 2600
-Connection ~ 7450 2600
+	7350 2600 7100 2600
+Connection ~ 7350 2600
 $Comp
 L TCA6408APWR:TCA6408A U9
 U 1 1 5F8103C2
@@ -176,7 +176,7 @@ F 4 "C206177" H 5250 3450 50  0001 C CNN "LCSC"
 	1    5000 2800
 	1    0    0    -1  
 $EndComp
-Text HLabel 1300 1350 0    50   Input ~ 0
+Text HLabel 1350 1200 0    50   Input ~ 0
 VBAT
 Wire Wire Line
 	4600 2650 4550 2650
@@ -220,13 +220,13 @@ Wire Wire Line
 	4000 3350 4600 3350
 Wire Wire Line
 	4000 2700 4000 2750
-Text HLabel 1300 1100 0    50   Input ~ 0
+Text HLabel 1350 950  0    50   Input ~ 0
 SCL
-Text HLabel 1300 1000 0    50   BiDi ~ 0
+Text HLabel 1350 850  0    50   BiDi ~ 0
 SDA
-Text HLabel 1300 1600 0    50   Output ~ 0
-3.3V_EN
-Text HLabel 1300 1750 0    50   Output ~ 0
+Text HLabel 1350 1450 0    50   Output ~ 0
+3v3V_EN
+Text HLabel 1350 1550 0    50   Output ~ 0
 5V_EN
 $Comp
 L Jumper:SolderJumper_2_Open JP2
@@ -250,7 +250,7 @@ F 3 "" H 8000 3900 50  0001 C CNN
 	1    8000 3900
 	1    0    0    -1  
 $EndComp
-Text HLabel 1300 1900 0    50   Output ~ 0
+Text HLabel 1350 1900 0    50   Output ~ 0
 INT
 Wire Wire Line
 	7500 3900 7600 3900
@@ -296,17 +296,17 @@ Wire Wire Line
 	5600 4750 6100 4750
 Connection ~ 6100 4750
 Connection ~ 4550 2650
-Text Label 1600 1000 2    50   ~ 0
+Text Label 1750 850  2    50   ~ 0
 SDA
-Text Label 1600 1100 2    50   ~ 0
+Text Label 1750 950  2    50   ~ 0
 SCL
-Text Label 1600 1350 2    50   ~ 0
+Text Label 1750 1200 2    50   ~ 0
 VBAT
-Text Label 1600 1900 2    50   ~ 0
+Text Label 1750 1900 2    50   ~ 0
 INT
-Text Label 1600 1600 2    50   ~ 0
+Text Label 1750 1450 2    50   ~ 0
 3.3_EN
-Text Label 1600 1750 2    50   ~ 0
+Text Label 1750 1550 2    50   ~ 0
 5V_EN
 Text Label 7000 3900 0    50   ~ 0
 INT
@@ -325,17 +325,17 @@ INT
 Wire Wire Line
 	5400 2950 5650 2950
 Wire Wire Line
-	1300 1900 1600 1900
+	1350 1900 1750 1900
 Wire Wire Line
-	1300 1750 1600 1750
+	1350 1550 1750 1550
 Wire Wire Line
-	1300 1600 1600 1600
+	1350 1450 1750 1450
 Wire Wire Line
-	1300 1350 1600 1350
+	1350 1200 1750 1200
 Wire Wire Line
-	1300 1100 1600 1100
+	1350 950  1750 950 
 Wire Wire Line
-	1300 1000 1600 1000
+	1350 850  1750 850 
 Text Label 5650 2750 2    50   ~ 0
 SDA
 Text Label 5650 2850 2    50   ~ 0
@@ -427,21 +427,15 @@ INT overrride\n(MCU always on)
 Text Notes 3550 2250 0    50   ~ 0
 IO Expander
 Wire Notes Line
-	550  600  1650 600 
-Wire Notes Line
-	1650 600  1650 2150
-Wire Notes Line
-	1650 2150 550  2150
-Wire Notes Line
 	550  2150 550  600 
-Text HLabel 1300 2000 0    50   Input ~ 0
+Text HLabel 1350 2000 0    50   Input ~ 0
 CHARGE-DISABLE
-Text Label 1600 2000 2    50   ~ 0
+Text Label 1750 2000 2    50   ~ 0
 CH-DIS
 Wire Wire Line
-	1600 2000 1300 2000
+	1750 2000 1350 2000
 Text Label 4250 3250 0    50   ~ 0
-CH-DIS
+CH_DIS
 Wire Wire Line
 	4250 3250 4600 3250
 $Comp
@@ -455,4 +449,47 @@ F 3 "~" H 5950 3250 50  0001 C CNN
 	1    5950 3250
 	1    0    0    -1  
 $EndComp
+Wire Notes Line
+	6750 4350 8400 4350
+Wire Notes Line
+	8400 4350 8400 5250
+Wire Notes Line
+	8400 5250 6750 5250
+Wire Notes Line
+	6750 5250 6750 4350
+$Comp
+L Jumper:SolderJumper_2_Open JP4
+U 1 1 5F8A654B
+P 7600 4850
+F 0 "JP4" H 7600 5055 50  0000 C CNN
+F 1 "3v3_MCU_I2C" H 7600 4964 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 7600 4850 50  0001 C CNN
+F 3 "~" H 7600 4850 50  0001 C CNN
+	1    7600 4850
+	1    0    0    -1  
+$EndComp
+Text Label 7450 3000 0    50   ~ 0
+V_I2C
+Wire Wire Line
+	7450 4850 6950 4850
+Text Notes 6800 4450 0    50   ~ 0
+For MCU always on applications
+Text HLabel 1350 1650 0    50   Input ~ 0
+3v3_MCU
+Wire Wire Line
+	1350 1650 1750 1650
+Text Label 1750 1650 2    50   ~ 0
+3v3_MCU
+Wire Notes Line
+	550  600  1850 600 
+Wire Notes Line
+	1850 600  1850 2150
+Wire Notes Line
+	1850 2150 550  2150
+Text Label 6950 4850 0    50   ~ 0
+3v3_MCU
+Wire Wire Line
+	8100 4850 7750 4850
+Text Label 8100 4850 2    50   ~ 0
+V_I2C
 $EndSCHEMATC
