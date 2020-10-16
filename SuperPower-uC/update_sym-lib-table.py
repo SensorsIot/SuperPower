@@ -11,7 +11,7 @@ Log:
         - Create this script
 
 Note:
-    This script is base on BLARG batch command:
+    This script is base on BLARG bash command:
         {echo "(sym_lib_table"; for i in **/*.lib; do echo "    (lib (name $i:t:r)(type Legacy)(uri \${KIPRJMOD}/../components/$i)(options \"\")(descr \"\"))" ;done; echo ")" }> ../original/sym-lib-table
 
         ```
