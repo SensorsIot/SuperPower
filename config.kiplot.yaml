@@ -12,9 +12,16 @@ preflight:
       regexp:  '(Power input) of component'
 
 outputs:
-  - name: 'print schema'
-    comment: "Print schematic (SVG)"
+  - name: 'Print Schema as PDF'
+    comment: "Print schematic (PDF)"
     type: pdf_sch_print
+    dir: schematics
+    options:
+      output: '%p-Schematic.%x'
+
+  - name: 'Pront Schema as SVGs'
+    comment: "Print schematic (SVG)"
+    type: svg_sch_print
     dir: schematics
     options:
       output: '%p-Schematic.%x'
