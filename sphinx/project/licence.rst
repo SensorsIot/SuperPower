@@ -1,0 +1,5 @@
+#######
+Licence
+#######
+
+.. include:: LICENCE.txt
