@@ -135,4 +135,6 @@ Wire Wire Line
 	2300 3950 3200 3950
 Wire Wire Line
 	3200 4000 2300 4000
+Text Notes 9000 1850 0    50   ~ 0
+Add extra interfaces block.
 $EndSCHEMATC

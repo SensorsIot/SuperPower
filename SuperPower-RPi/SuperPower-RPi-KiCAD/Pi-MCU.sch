@@ -22,4 +22,6 @@ GPIO0
 NoConn ~ 2550 1400
 NoConn ~ 2300 1950
 NoConn ~ 3050 2600
+Text Notes 1900 5950 0    50   ~ 0
+Add SWD pads in TagConnect
 $EndSCHEMATC
