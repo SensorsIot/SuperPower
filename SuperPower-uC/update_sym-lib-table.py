@@ -61,11 +61,14 @@ def write_sym_lib_table(libraries_list: list, sym_lib_table_file: str):
     """
     kicad_project_path = os.path.dirname(sym_lib_table_file)
 
-    libraries_relatives_paths = list(map(lambda library_path: os.path.join(KICAD_PROJECT_PATH, os.path.relpath(library_path, start=kicad_project_path)), libraries_list))
+    libraries_relatives_paths = list(map(lambda library_path: os.path.join(
+        KICAD_PROJECT_PATH, os.path.relpath(library_path, start=kicad_project_path)), libraries_list))
 
-    libraries_names = list(map(lambda library_path: library_path[max(library_path.rfind('/'), library_path.rfind('\\')) + 1: library_path.rfind('.lib')], libraries_list))
+    libraries_names = list(map(lambda library_path: library_path[max(library_path.rfind(
+        '/'), library_path.rfind('\\')) + 1: library_path.rfind('.lib')], libraries_list))
 
-    content = list(map(lambda name_path_tuple: r'  (lib (name %s)(type Legacy)(uri %s)(options "")(descr ""))' % (name_path_tuple), zip(libraries_names, libraries_relatives_paths)))
+    content = list(map(lambda name_path_tuple: r'  (lib (name %s)(type Legacy)(uri %s)(options "")(descr ""))' % (
+        name_path_tuple), zip(libraries_names, libraries_relatives_paths)))
 
     sym_lib_table_file_lines = "\n".join([PREAMBULE] + content + [END])
 
