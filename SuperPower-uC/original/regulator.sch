@@ -177,7 +177,7 @@ F 4 "C201586" H 9250 2050 50  0001 C CNN "LCSC"
 	1    9250 2050
 	1    0    0    -1  
 $EndComp
-Text Label 7900 1850 0    50   ~ 0
+Text Label 8000 1850 0    50   ~ 0
 VIN
 $Comp
 L power:GND #PWR0503
@@ -213,7 +213,7 @@ Wire Wire Line
 Connection ~ 8300 1850
 Wire Wire Line
 	8300 1850 7950 1850
-Text Label 8500 2150 0    50   ~ 0
+Text Label 7950 2800 0    50   ~ 0
 3v3_EN
 Wire Wire Line
 	8500 2150 8900 2150
@@ -310,7 +310,7 @@ Wire Wire Line
 	4450 5000 4450 5150
 Wire Wire Line
 	5350 4800 5300 4800
-Text Label 5000 4800 0    50   ~ 0
+Text Label 4450 4050 0    50   ~ 0
 5V_EN
 Wire Wire Line
 	4900 4600 5350 4600
@@ -388,8 +388,6 @@ F 3 "" H 4450 5200 50  0001 C CNN
 	1    4450 5200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5350 5200 5350 5600
 $Comp
 L power:GND #PWR0510
 U 1 1 5F8B4428
@@ -401,7 +399,6 @@ F 3 "" H 5350 5600 50  0001 C CNN
 	1    5350 5600
 	1    0    0    -1  
 $EndComp
-Connection ~ 5350 5600
 Text Notes 9100 4600 0    50   ~ 0
 5V up to 1000 mA
 Text Notes 3850 5000 0    50   ~ 0
@@ -413,9 +410,6 @@ Wire Wire Line
 	4450 5150 4450 5200
 Wire Wire Line
 	4450 4700 4850 4700
-Wire Wire Line
-	5350 5000 5350 5200
-Connection ~ 5350 5200
 Wire Wire Line
 	8100 4600 9000 4600
 NoConn ~ 6750 5450
@@ -461,37 +455,11 @@ Wire Wire Line
 Connection ~ 4500 1900
 Wire Wire Line
 	4500 1900 4050 1900
-$Comp
-L Connector:Conn_01x02_Male J581
-U 1 1 5F8E8184
-P 7750 2150
-F 0 "J581" H 7750 2250 50  0000 C CNN
-F 1 "Bypass Jumper" H 7900 2000 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7750 2150 50  0001 C CNN
-F 3 "~" H 7750 2150 50  0001 C CNN
-	1    7750 2150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7950 2150 7950 1850
 Connection ~ 7950 1850
 Wire Wire Line
 	7950 1850 7900 1850
-Wire Wire Line
-	7950 2250 8500 2250
-Wire Wire Line
-	8500 2250 8500 2150
-$Comp
-L Connector:Conn_01x02_Male J501
-U 1 1 5F8F5500
-P 3950 4150
-F 0 "J501" H 4058 4331 50  0000 C CNN
-F 1 "Bypass Jumper" H 4058 4240 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3950 4150 50  0001 C CNN
-F 3 "~" H 3950 4150 50  0001 C CNN
-	1    3950 4150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4150 4250 4150 4700
 Connection ~ 4150 4700
@@ -501,7 +469,38 @@ Wire Wire Line
 	5300 4800 5300 4150
 Wire Wire Line
 	5300 4150 4150 4150
-Connection ~ 5300 4800
 Wire Wire Line
-	5300 4800 5000 4800
+	5350 5000 5350 5600
+$Comp
+L Connector:Conn_01x03_Male J501
+U 1 1 5F8CD677
+P 7750 2250
+F 0 "J501" H 7858 2531 50  0000 C CNN
+F 1 "Bypass Jumper" H 7650 2450 50  0000 C CNN
+F 2 "" H 7750 2250 50  0001 C CNN
+F 3 "~" H 7750 2250 50  0001 C CNN
+	1    7750 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 2250 8500 2150
+Wire Wire Line
+	7950 2250 8500 2250
+Wire Wire Line
+	7950 2350 7950 2800
+$Comp
+L Connector:Conn_01x03_Male J502
+U 1 1 5F8DE6DE
+P 3950 4150
+F 0 "J502" H 4058 4431 50  0000 C CNN
+F 1 "Bypass Jumper" H 4058 4340 50  0000 C CNN
+F 2 "" H 3950 4150 50  0001 C CNN
+F 3 "~" H 3950 4150 50  0001 C CNN
+	1    3950 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 4050 4700 4050
+Text Notes 750  2450 0    50   ~ 0
+Bypass jumpers are tri-state\nNo jumper = Permanent off\nJumper on 1 and 2 = Permanent on with MCU\nJumper on 2 and 3 = Tied to GPIO
 $EndSCHEMATC
