@@ -482,10 +482,10 @@ Wire Wire Line
 Text Notes 850  2450 0    50   ~ 0
 Bypass jumpers are tri-state\nNo jumper = Permanent off\nJumper on 1 and 2 = Permanent on with MCU\nJumper on 2 and 3 = Tied to GPIO
 $Comp
-L Connector:Conn_01x03_Male J?
+L Connector:Conn_01x03_Male J501
 U 1 1 5F8F9C6A
 P 7750 2250
-F 0 "J?" H 7858 2531 50  0000 C CNN
+F 0 "J501" H 7858 2531 50  0000 C CNN
 F 1 "Bypass Jumper" H 7650 2100 50  0000 C CNN
 F 2 "" H 7750 2250 50  0001 C CNN
 F 3 "~" H 7750 2250 50  0001 C CNN
@@ -495,10 +495,10 @@ $EndComp
 Wire Wire Line
 	7950 2350 7950 2850
 $Comp
-L Connector:Conn_01x03_Male J?
+L Connector:Conn_01x03_Male J502
 U 1 1 5F904AE0
 P 3950 4150
-F 0 "J?" H 4058 4431 50  0000 C CNN
+F 0 "J502" H 4058 4431 50  0000 C CNN
 F 1 "Bypass Jumper" H 4050 4350 50  0000 C CNN
 F 2 "" H 3950 4150 50  0001 C CNN
 F 3 "~" H 3950 4150 50  0001 C CNN
