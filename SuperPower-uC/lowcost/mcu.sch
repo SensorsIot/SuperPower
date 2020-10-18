@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 7
+Sheet 5 7
 Title "SuperPower-uC"
 Date "2020-09-20"
 Rev "0.1"
@@ -25,28 +25,6 @@ Text HLabel 1150 1850 0    50   Input ~ 0
 RST
 Text HLabel 1150 1750 0    50   Input ~ 0
 GPIO0
-$Comp
-L Connector:Conn_01x16_Female J5
-U 1 1 5F88CF74
-P 10000 1950
-F 0 "J5" H 10028 1926 50  0000 L CNN
-F 1 "main pin header" H 10028 1835 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 10000 1950 50  0001 C CNN
-F 3 "~" H 10000 1950 50  0001 C CNN
-	1    10000 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x16_Female J6
-U 1 1 5F896962
-P 10000 3750
-F 0 "J6" H 10028 3726 50  0000 L CNN
-F 1 "main pin header" H 10028 3635 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 10000 3750 50  0001 C CNN
-F 3 "~" H 10000 3750 50  0001 C CNN
-	1    10000 3750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5200 3250 4350 3250
 Wire Wire Line
@@ -232,8 +210,6 @@ IO22
 Text Label 7050 3250 2    50   ~ 0
 IO23
 Wire Wire Line
-	9800 3150 9600 3150
-Wire Wire Line
 	9800 3250 9600 3250
 Wire Wire Line
 	9800 3350 9600 3350
@@ -244,65 +220,54 @@ Wire Wire Line
 Wire Wire Line
 	9800 3650 9600 3650
 Wire Wire Line
-	9800 3850 9600 3850
-Wire Wire Line
-	9600 3750 9800 3750
+	9800 3750 9600 3750
 Wire Wire Line
 	9800 3950 9600 3950
 Wire Wire Line
-	9600 4050 9800 4050
+	9600 3850 9800 3850
+Wire Wire Line
+	9800 4050 9600 4050
 Wire Wire Line
 	9600 4150 9800 4150
-Text Label 9600 3150 0    50   ~ 0
-IO36
+Wire Wire Line
+	9600 4250 9800 4250
 Text Label 9600 3250 0    50   ~ 0
-IO39
+IO36
 Text Label 9600 3350 0    50   ~ 0
-IO34
+IO39
 Text Label 9600 3450 0    50   ~ 0
-IO35
+IO34
 Text Label 9600 3550 0    50   ~ 0
-IO32
+IO35
 Text Label 9600 3650 0    50   ~ 0
-IO33
+IO32
 Text Label 9600 3750 0    50   ~ 0
-IO25
+IO33
 Text Label 9600 3850 0    50   ~ 0
-IO26
+IO25
 Text Label 9600 3950 0    50   ~ 0
-IO27
+IO26
 Text Label 9600 4050 0    50   ~ 0
-IO14
+IO27
 Text Label 9600 4150 0    50   ~ 0
+IO14
+Text Label 9600 4250 0    50   ~ 0
 IO12
 Wire Wire Line
-	9800 4250 9600 4250
-Text Label 9600 4250 0    50   ~ 0
+	9800 4350 9600 4350
+Text Label 9600 4350 0    50   ~ 0
 IO13
 Wire Wire Line
-	9800 4550 9400 4550
-Wire Wire Line
-	9800 2750 9400 2750
-$Comp
-L power:GND #PWR0119
-U 1 1 5F8C9874
-P 9400 2750
-F 0 "#PWR0119" H 9400 2500 50  0001 C CNN
-F 1 "GND" H 9405 2577 50  0000 C CNN
-F 2 "" H 9400 2750 50  0001 C CNN
-F 3 "" H 9400 2750 50  0001 C CNN
-	1    9400 2750
-	1    0    0    -1  
-$EndComp
+	9800 4450 9250 4450
 $Comp
 L power:GND #PWR0120
 U 1 1 5F8C9F4B
-P 9400 4550
-F 0 "#PWR0120" H 9400 4300 50  0001 C CNN
-F 1 "GND" H 9405 4377 50  0000 C CNN
-F 2 "" H 9400 4550 50  0001 C CNN
-F 3 "" H 9400 4550 50  0001 C CNN
-	1    9400 4550
+P 9250 4450
+F 0 "#PWR0120" H 9250 4200 50  0001 C CNN
+F 1 "GND" H 9255 4277 50  0000 C CNN
+F 2 "" H 9250 4450 50  0001 C CNN
+F 3 "" H 9250 4450 50  0001 C CNN
+	1    9250 4450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -328,8 +293,8 @@ Wire Wire Line
 Wire Wire Line
 	9600 2250 9800 2250
 Wire Wire Line
-	9600 2350 9800 2350
-Text Label 9600 2350 0    50   ~ 0
+	9600 1150 9800 1150
+Text Label 9600 1150 0    50   ~ 0
 IO0
 Text Label 9600 2250 0    50   ~ 0
 IO4
@@ -354,8 +319,8 @@ IO22
 Text Label 9600 1250 0    50   ~ 0
 IO23
 Wire Wire Line
-	9800 2450 9600 2450
-Text Label 9600 2450 0    50   ~ 0
+	9800 2350 9600 2350
+Text Label 9600 2350 0    50   ~ 0
 IO2
 Text Label 1250 1150 0    50   ~ 0
 IO22
@@ -378,8 +343,8 @@ IO0
 Wire Wire Line
 	1150 1750 1250 1750
 Wire Wire Line
-	9800 2550 9600 2550
-Text Label 9600 2550 0    50   ~ 0
+	9800 2450 9600 2450
+Text Label 9600 2450 0    50   ~ 0
 IO15
 Text HLabel 1100 2200 0    50   Input ~ 0
 3v3_MCU
@@ -438,15 +403,11 @@ Wire Notes Line
 	3400 5450 3400 2300
 Text Notes 3500 2450 0    50   ~ 0
 MCU
-Text Label 9400 2650 0    50   ~ 0
+Text Label 9400 4650 0    50   ~ 0
 5V
-Text Label 9400 4450 0    50   ~ 0
-3v3
 Wire Wire Line
-	9400 4450 9800 4450
-Wire Wire Line
-	9800 4350 9400 4350
-Text Label 9400 4350 0    50   ~ 0
+	9800 2650 9400 2650
+Text Label 9400 2650 0    50   ~ 0
 3v3_MCU
 Text Label 3950 3250 0    50   ~ 0
 3v3_MCU
@@ -473,7 +434,7 @@ Text Label 1250 2200 0    50   ~ 0
 Text Label 1250 2100 0    50   ~ 0
 5V
 Wire Wire Line
-	9400 2650 9800 2650
+	9400 4650 9800 4650
 Wire Notes Line
 	600  650  1850 650 
 Wire Notes Line
@@ -486,8 +447,70 @@ Text Notes 650  750  0    50   ~ 0
 labels\n
 Text Notes 9100 850  0    50   ~ 0
 Main pin Headers\n
-Text Label 9600 3050 0    50   ~ 0
+Text Label 9600 3150 0    50   ~ 0
 RST
 Wire Wire Line
-	9600 3050 9800 3050
+	9600 3150 9800 3150
+Wire Wire Line
+	9800 2550 9250 2550
+$Comp
+L power:GND #PWR?
+U 1 1 5F8D40E5
+P 9250 2550
+F 0 "#PWR?" H 9250 2300 50  0001 C CNN
+F 1 "GND" H 9255 2377 50  0000 C CNN
+F 2 "" H 9250 2550 50  0001 C CNN
+F 3 "" H 9250 2550 50  0001 C CNN
+	1    9250 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x17_Female J5
+U 1 1 5F904645
+P 10000 1950
+F 0 "J5" H 10028 1976 50  0000 L CNN
+F 1 "main pin header right" H 10028 1885 50  0000 L CNN
+F 2 "" H 10000 1950 50  0001 C CNN
+F 3 "~" H 10000 1950 50  0001 C CNN
+	1    10000 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x17_Female J6
+U 1 1 5F90988E
+P 10000 3850
+F 0 "J6" H 10028 3876 50  0000 L CNN
+F 1 "main pin header left" H 10028 3785 50  0000 L CNN
+F 2 "" H 10000 3850 50  0001 C CNN
+F 3 "~" H 10000 3850 50  0001 C CNN
+	1    10000 3850
+	1    0    0    -1  
+$EndComp
+Text Label 9400 4550 0    50   ~ 0
+Vin
+Wire Wire Line
+	9400 4550 9800 4550
+Text HLabel 1100 2400 0    50   Output ~ 0
+Vin
+Wire Wire Line
+	1100 2400 1250 2400
+Text Label 1250 2400 0    50   ~ 0
+Vin
+Wire Wire Line
+	9400 2750 9800 2750
+Text Label 9400 2750 0    50   ~ 0
+3v3
+Wire Wire Line
+	9800 3050 9250 3050
+$Comp
+L power:GND #PWR?
+U 1 1 5F982B4C
+P 9250 3050
+F 0 "#PWR?" H 9250 2800 50  0001 C CNN
+F 1 "GND" H 9255 2877 50  0000 C CNN
+F 2 "" H 9250 3050 50  0001 C CNN
+F 3 "" H 9250 3050 50  0001 C CNN
+	1    9250 3050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -59,6 +59,7 @@ F7 "RST" I R 8100 2850 50
 F8 "GPIO0" I R 8100 2950 50 
 F9 "3v3" I L 6850 2250 50 
 F10 "5V" I L 6850 2400 50 
+F11 "Vin" O R 8100 2400 50 
 $EndSheet
 Wire Wire Line
 	3050 4350 2950 4350
@@ -70,14 +71,6 @@ Wire Wire Line
 	2550 2550 2900 2550
 Wire Wire Line
 	6850 2850 6150 2850
-Wire Wire Line
-	6850 3200 6650 3200
-Wire Wire Line
-	6650 4200 6200 4200
-Wire Wire Line
-	6850 3100 6600 3100
-Wire Wire Line
-	6600 4100 6200 4100
 Wire Wire Line
 	4950 4100 4700 4100
 Wire Wire Line
@@ -108,24 +101,6 @@ Text Notes 3600 4450 0    50   ~ 0
 Solar input
 Text Notes 3600 4550 0    50   ~ 0
 Solder Pads
-Wire Wire Line
-	4300 2850 4600 2850
-Wire Wire Line
-	4600 2850 4600 3500
-Wire Wire Line
-	4600 3500 6600 3500
-Connection ~ 6600 3500
-Wire Wire Line
-	6600 3500 6600 4100
-Wire Wire Line
-	4300 2950 4550 2950
-Wire Wire Line
-	4550 2950 4550 3550
-Wire Wire Line
-	4550 3550 6650 3550
-Connection ~ 6650 3550
-Wire Wire Line
-	6650 3550 6650 4200
 Text Notes 5250 4550 0    50   ~ 0
 Manual Wake
 Wire Wire Line
@@ -142,25 +117,6 @@ Wire Wire Line
 	8400 5450 4700 5450
 Text Notes 5250 4650 0    50   ~ 0
 Bypass Jumper
-Wire Wire Line
-	6650 3200 6650 3550
-Wire Wire Line
-	6600 3100 6600 3500
-Wire Wire Line
-	6200 4350 6400 4350
-Wire Wire Line
-	6400 4350 6400 3450
-Wire Wire Line
-	6400 3000 6150 3000
-Wire Wire Line
-	4300 2700 4650 2700
-Wire Wire Line
-	4650 2700 4650 3450
-Wire Wire Line
-	4650 3450 6400 3450
-Connection ~ 6400 3450
-Wire Wire Line
-	6400 3450 6400 3000
 $Sheet
 S 3050 4000 1250 1150
 U 5F63B107
@@ -171,6 +127,7 @@ F3 "TX" O R 4300 4750 50
 F4 "RX" I R 4300 4850 50 
 F5 "RST" O R 4300 5100 50 
 F6 "GPIO0" O R 4300 5000 50 
+F7 "Vin" I L 3050 5000 50 
 $EndSheet
 Text Notes 3450 2500 0    50   ~ 0
 Power on INT
@@ -257,4 +214,59 @@ F6 "5V_EN" O R 6200 4500 50
 F7 "CHARGE-DISABLE" I L 4950 5000 50 
 F8 "3v3V_EN" O R 6200 4600 50 
 $EndSheet
+Wire Wire Line
+	8100 2400 8600 2400
+Wire Wire Line
+	8600 2400 8600 5650
+Wire Wire Line
+	8600 5650 2850 5650
+Wire Wire Line
+	2850 5650 2850 5000
+Wire Wire Line
+	2850 5000 3050 5000
+Wire Wire Line
+	6200 4350 6400 4350
+Wire Wire Line
+	6400 3000 6150 3000
+Wire Wire Line
+	6400 3450 6400 3000
+Wire Wire Line
+	6400 4350 6400 3450
+Connection ~ 6400 3450
+Wire Wire Line
+	4650 3450 6400 3450
+Wire Wire Line
+	4300 2700 4650 2700
+Wire Wire Line
+	4650 2700 4650 3450
+Wire Wire Line
+	4300 2850 4600 2850
+Wire Wire Line
+	4300 2950 4550 2950
+Wire Wire Line
+	4550 2950 4550 3550
+Wire Wire Line
+	4600 2850 4600 3500
+Wire Wire Line
+	6600 4100 6200 4100
+Wire Wire Line
+	6650 4200 6200 4200
+Wire Wire Line
+	6850 3100 6600 3100
+Wire Wire Line
+	6850 3200 6650 3200
+Wire Wire Line
+	6650 3200 6650 3550
+Wire Wire Line
+	6650 3550 6650 4200
+Connection ~ 6650 3550
+Wire Wire Line
+	4550 3550 6650 3550
+Wire Wire Line
+	6600 3100 6600 3500
+Wire Wire Line
+	6600 3500 6600 4100
+Connection ~ 6600 3500
+Wire Wire Line
+	4600 3500 6600 3500
 $EndSCHEMATC

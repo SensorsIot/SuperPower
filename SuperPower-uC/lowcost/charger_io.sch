@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 7
+Sheet 6 7
 Title "SuperPower-uC"
 Date "2020-09-20"
 Rev "0.1"
@@ -466,35 +466,35 @@ Wire Notes Line
 	2300 4850 2300 2200
 Text Notes 2350 2350 0    50   ~ 0
 USB C Input\n
-Text HLabel 1150 900  0    50   Output ~ 0
+Text HLabel 1150 950  0    50   Output ~ 0
 VCHARGE
-Text HLabel 1150 1150 0    50   Input ~ 0
+Text HLabel 1150 1250 0    50   Input ~ 0
 RX
-Text HLabel 1150 1050 0    50   Output ~ 0
+Text HLabel 1150 1150 0    50   Output ~ 0
 TX
-Text HLabel 1150 1350 0    50   Output ~ 0
-GPIO0
 Text HLabel 1150 1500 0    50   Output ~ 0
+GPIO0
+Text HLabel 1150 1600 0    50   Output ~ 0
 RST
 Wire Wire Line
-	1150 900  1500 900 
-Wire Wire Line
-	1150 1050 1500 1050
-Wire Wire Line
-	1500 1350 1150 1350
+	1150 950  1600 950 
 Wire Wire Line
 	1150 1150 1500 1150
 Wire Wire Line
 	1500 1500 1150 1500
-Text Label 1500 900  2    50   ~ 0
+Wire Wire Line
+	1150 1250 1500 1250
+Wire Wire Line
+	1500 1600 1150 1600
+Text Label 1600 950  2    50   ~ 0
 VCHARGE
-Text Label 1500 1050 2    50   ~ 0
-TX
 Text Label 1500 1150 2    50   ~ 0
+TX
+Text Label 1500 1250 2    50   ~ 0
 RX
-Text Label 1500 1350 2    50   ~ 0
-GPIO0
 Text Label 1500 1500 2    50   ~ 0
+GPIO0
+Text Label 1500 1600 2    50   ~ 0
 RST
 Text Label 9450 3500 2    50   ~ 0
 RST
@@ -526,4 +526,14 @@ Wire Notes Line
 	550  1750 550  550 
 Text Notes 600  650  0    50   ~ 0
 Labels\n
+Text HLabel 1150 850  0    50   Input ~ 0
+Vin
+Wire Wire Line
+	1150 850  1600 850 
+Text Label 1600 850  2    50   ~ 0
+Vin_header
+Text Label 4400 2700 0    50   ~ 0
+Vin_header
+Wire Wire Line
+	4400 2700 4900 2700
 $EndSCHEMATC
