@@ -836,7 +836,7 @@ Text Notes 2050 1200 0    39   ~ 0
 Text Label 3150 850  2    50   ~ 0
 VBUS
 Wire Wire Line
-	3150 850  3150 1000
+	3150 850  3150 950 
 Text Notes 3150 850  0    39   ~ 0
 2
 Wire Notes Line
@@ -873,122 +873,114 @@ IO39
 Text Notes 5100 3750 0    50   ~ 10
 Top of the board
 Wire Wire Line
-	6000 4650 6250 4650
-Text Label 6250 4650 2    50   ~ 0
-IO35
-Wire Wire Line
-	6000 4250 6250 4250
-Text Label 6250 4250 2    50   ~ 0
-IO5
-Wire Wire Line
 	6000 4550 6250 4550
 Text Label 6250 4550 2    50   ~ 0
-IO34
+IO35
 Wire Wire Line
 	6000 4450 6250 4450
 Text Label 6250 4450 2    50   ~ 0
-IO39
+IO34
 Wire Wire Line
 	6000 4350 6250 4350
 Text Label 6250 4350 2    50   ~ 0
+IO39
+Wire Wire Line
+	6000 4250 6250 4250
+Text Label 6250 4250 2    50   ~ 0
 IO36
 Wire Wire Line
 	6000 4150 6250 4150
 Text Label 6250 4150 2    50   ~ 0
 EN
 Wire Wire Line
-	6000 4050 6250 4050
-Text Label 6250 4050 0    50   ~ 0
-3v3_MCU
-Wire Wire Line
-	6000 5350 6250 5350
-Text Label 6250 5350 2    50   ~ 0
-IO12
-Wire Wire Line
-	6000 4950 6250 4950
-Text Label 6250 4950 2    50   ~ 0
-IO25
-Wire Wire Line
 	6000 5250 6250 5250
 Text Label 6250 5250 2    50   ~ 0
-IO14
-Wire Wire Line
-	6000 5150 6250 5150
-Text Label 6250 5150 2    50   ~ 0
-IO27
-Wire Wire Line
-	6000 5050 6250 5050
-Text Label 6250 5050 2    50   ~ 0
-IO26
+IO12
 Wire Wire Line
 	6000 4850 6250 4850
 Text Label 6250 4850 2    50   ~ 0
-IO33
+IO25
+Wire Wire Line
+	6000 5150 6250 5150
+Text Label 6250 5150 2    50   ~ 0
+IO14
+Wire Wire Line
+	6000 5050 6250 5050
+Text Label 6250 5050 2    50   ~ 0
+IO27
+Wire Wire Line
+	6000 4950 6250 4950
+Text Label 6250 4950 2    50   ~ 0
+IO26
 Wire Wire Line
 	6000 4750 6250 4750
 Text Label 6250 4750 2    50   ~ 0
+IO33
+Wire Wire Line
+	6000 4650 6250 4650
+Text Label 6250 4650 2    50   ~ 0
 IO32
-Wire Wire Line
-	10000 4250 9750 4250
-Text Label 9750 4250 0    50   ~ 0
-SCL
-Wire Wire Line
-	10000 4550 9750 4550
-Text Label 9750 4550 0    50   ~ 0
-SDA
-Wire Wire Line
-	10000 4450 9750 4450
-Text Label 9750 4450 0    50   ~ 0
-RXD
-Wire Wire Line
-	10000 4350 9750 4350
-Text Label 9750 4350 0    50   ~ 0
-TXD
 Wire Wire Line
 	10000 4150 9750 4150
 Text Label 9750 4150 0    50   ~ 0
+SCL
+Wire Wire Line
+	10000 4450 9750 4450
+Text Label 9750 4450 0    50   ~ 0
+SDA
+Wire Wire Line
+	10000 4350 9750 4350
+Text Label 9750 4350 0    50   ~ 0
+RXD
+Wire Wire Line
+	10000 4250 9750 4250
+Text Label 9750 4250 0    50   ~ 0
+TXD
+Wire Wire Line
+	10000 4050 9750 4050
+Text Label 9750 4050 0    50   ~ 0
 IO23
 Wire Wire Line
-	10000 4050 9650 4050
-Wire Wire Line
-	10000 5350 9750 5350
-Text Label 9750 5350 0    50   ~ 0
-IO0
-Wire Wire Line
-	10000 4950 9750 4950
-Text Label 9750 4950 0    50   ~ 0
-IO5
-Wire Wire Line
-	10000 5250 9750 5250
-Text Label 9750 5250 0    50   ~ 0
-IO4
+	10000 5550 9350 5550
 Wire Wire Line
 	10000 5150 9750 5150
 Text Label 9750 5150 0    50   ~ 0
-IO16
-Wire Wire Line
-	10000 5050 9750 5050
-Text Label 9750 5050 0    50   ~ 0
-IO17
-Wire Wire Line
-	10000 4850 9750 4850
-Text Label 9750 4850 0    50   ~ 0
-IO18
+IO0
 Wire Wire Line
 	10000 4750 9750 4750
 Text Label 9750 4750 0    50   ~ 0
+IO5
+Wire Wire Line
+	10000 5050 9750 5050
+Text Label 9750 5050 0    50   ~ 0
+IO4
+Wire Wire Line
+	10000 4950 9750 4950
+Text Label 9750 4950 0    50   ~ 0
+IO16
+Wire Wire Line
+	10000 4850 9750 4850
+Text Label 9750 4850 0    50   ~ 0
+IO17
+Wire Wire Line
+	10000 4650 9750 4650
+Text Label 9750 4650 0    50   ~ 0
+IO18
+Wire Wire Line
+	10000 4550 9750 4550
+Text Label 9750 4550 0    50   ~ 0
 IO19
 Wire Wire Line
-	10000 5550 9750 5550
-Text Label 9750 5550 0    50   ~ 0
+	10000 5350 9750 5350
+Text Label 9750 5350 0    50   ~ 0
 IO15
 Wire Wire Line
-	10000 5450 9750 5450
-Text Label 9750 5450 0    50   ~ 0
+	10000 5250 9750 5250
+Text Label 9750 5250 0    50   ~ 0
 IO2
 Wire Wire Line
-	6000 5550 6250 5550
-Text Label 6250 5550 2    50   ~ 0
+	6000 5350 6250 5350
+Text Label 6250 5350 2    50   ~ 0
 IO13
 Text Notes 5350 4450 0    50   ~ 0
 Sensor_VP\nSensor_VN
@@ -1010,29 +1002,66 @@ Wire Wire Line
 $Comp
 L power:GND #PWR034
 U 1 1 5F8B01AA
-P 9650 4150
-F 0 "#PWR034" H 9650 3900 50  0001 C CNN
-F 1 "GND" H 9655 3977 50  0000 C CNN
-F 2 "" H 9650 4150 50  0001 C CNN
-F 3 "" H 9650 4150 50  0001 C CNN
-	1    9650 4150
+P 9350 5650
+F 0 "#PWR034" H 9350 5400 50  0001 C CNN
+F 1 "GND" H 9355 5477 50  0000 C CNN
+F 2 "" H 9350 5650 50  0001 C CNN
+F 3 "" H 9350 5650 50  0001 C CNN
+	1    9350 5650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9650 4150 9650 4050
-Wire Wire Line
-	10000 4650 9650 4650
+	9350 5650 9350 5550
 $Comp
-L power:GND #PWR035
-U 1 1 5F8D45C5
-P 9650 4750
-F 0 "#PWR035" H 9650 4500 50  0001 C CNN
-F 1 "GND" H 9655 4577 50  0000 C CNN
-F 2 "" H 9650 4750 50  0001 C CNN
-F 3 "" H 9650 4750 50  0001 C CNN
-	1    9650 4750
+L power:PWR_FLAG #FLG?
+U 1 1 5F8C8948
+P 2800 900
+AR Path="/5F639CFE/5F8C8948" Ref="#FLG?"  Part="1" 
+AR Path="/5F63A193/5F8C8948" Ref="#FLG0105"  Part="1" 
+F 0 "#FLG0105" H 2800 975 50  0001 C CNN
+F 1 "PWR_FLAG" H 2800 1073 50  0000 C CNN
+F 2 "" H 2800 900 50  0001 C CNN
+F 3 "~" H 2800 900 50  0001 C CNN
+	1    2800 900 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9650 4750 9650 4650
+	2800 900  2800 950 
+Wire Wire Line
+	2800 950  3150 950 
+Connection ~ 3150 950 
+Wire Wire Line
+	3150 950  3150 1000
+Wire Wire Line
+	6000 5550 6250 5550
+Text Label 6250 5550 2    50   ~ 0
+VBUS
+Wire Wire Line
+	6000 4050 6100 4050
+Text Label 6250 4050 0    50   ~ 0
+3v3_MCU
+Wire Wire Line
+	6100 3950 6100 4050
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5F97EB10
+P 6100 3950
+AR Path="/5F639CFE/5F97EB10" Ref="#FLG?"  Part="1" 
+AR Path="/5F63A193/5F97EB10" Ref="#FLG0106"  Part="1" 
+F 0 "#FLG0106" H 6100 4025 50  0001 C CNN
+F 1 "PWR_FLAG" H 6100 4123 50  0000 C CNN
+F 2 "" H 6100 3950 50  0001 C CNN
+F 3 "~" H 6100 3950 50  0001 C CNN
+	1    6100 3950
+	1    0    0    -1  
+$EndComp
+Connection ~ 6100 4050
+Wire Wire Line
+	6100 4050 6250 4050
+Text Notes 9350 5150 0    50   ~ 0
+IO0 -->
+Text Notes 5600 5700 0    50   ~ 0
+VBATT or VBUS?
+Text Notes 5000 3500 0    394  ~ 0
+WORK IN PROGRESS
 $EndSCHEMATC
