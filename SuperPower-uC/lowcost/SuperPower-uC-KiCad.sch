@@ -70,7 +70,7 @@ Wire Wire Line
 Wire Wire Line
 	2550 2550 2900 2550
 Wire Wire Line
-	6850 2850 6150 2850
+	6850 2850 6550 2850
 Wire Wire Line
 	4950 4100 4700 4100
 Wire Wire Line
@@ -213,6 +213,7 @@ F5 "VBAT" I L 4950 4100 50
 F6 "5V_EN" O R 6200 4500 50 
 F7 "CHARGE-DISABLE" I L 4950 5000 50 
 F8 "3v3V_EN" O R 6200 4600 50 
+F9 "3v3_MCU" I R 6200 4700 50 
 $EndSheet
 Wire Wire Line
 	8100 2400 8600 2400
@@ -269,4 +270,11 @@ Wire Wire Line
 Connection ~ 6600 3500
 Wire Wire Line
 	4600 3500 6600 3500
+Wire Wire Line
+	6550 2850 6550 4700
+Wire Wire Line
+	6550 4700 6200 4700
+Connection ~ 6550 2850
+Wire Wire Line
+	6550 2850 6150 2850
 $EndSCHEMATC
