@@ -431,7 +431,7 @@ Wire Notes Line
 Text HLabel 1350 2000 0    50   Input ~ 0
 CHARGE-DISABLE
 Text Label 1750 2000 2    50   ~ 0
-CH-DIS
+CH_DIS
 Wire Wire Line
 	1750 2000 1350 2000
 Text Label 4250 3250 0    50   ~ 0
