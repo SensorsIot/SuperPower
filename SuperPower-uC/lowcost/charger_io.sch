@@ -104,12 +104,10 @@ Wire Wire Line
 	8400 2900 8400 2700
 Connection ~ 8400 2900
 Wire Wire Line
-	8400 2900 7850 2900
+	8400 2900 8100 2900
 Wire Wire Line
 	8350 3000 8350 3250
 Connection ~ 8350 3000
-Wire Wire Line
-	8350 3000 7850 3000
 Wire Wire Line
 	8400 3000 8400 2900
 Wire Wire Line
@@ -528,4 +526,34 @@ F 3 "~" H 5550 2700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4100 3000 4700 3000
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5F9E682C
+P 8100 2900
+F 0 "TP6" H 8150 3000 50  0000 L CNN
+F 1 "TestPoint" H 8158 2927 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 8300 2900 50  0001 C CNN
+F 3 "~" H 8300 2900 50  0001 C CNN
+	1    8100 2900
+	1    0    0    -1  
+$EndComp
+Connection ~ 8100 2900
+Wire Wire Line
+	8100 2900 7850 2900
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5F9ED833
+P 8100 3000
+F 0 "TP7" H 8050 3200 50  0000 L CNN
+F 1 "TestPoint" H 8158 3027 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 8300 3000 50  0001 C CNN
+F 3 "~" H 8300 3000 50  0001 C CNN
+	1    8100 3000
+	-1   0    0    1   
+$EndComp
+Connection ~ 8100 3000
+Wire Wire Line
+	8100 3000 7850 3000
+Wire Wire Line
+	8100 3000 8350 3000
 $EndSCHEMATC
