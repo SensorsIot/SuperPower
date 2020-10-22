@@ -534,4 +534,18 @@ Wire Notes Line
 	3350 4000 6700 4000
 Wire Notes Line
 	6700 1850 6700 4000
+Wire Wire Line
+	7350 3000 7050 3000
+Connection ~ 7350 3000
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5F983B69
+P 7050 3000
+F 0 "TP4" H 6900 3050 50  0000 L CNN
+F 1 "TestPoint" H 6950 2950 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 7250 3000 50  0001 C CNN
+F 3 "~" H 7250 3000 50  0001 C CNN
+	1    7050 3000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

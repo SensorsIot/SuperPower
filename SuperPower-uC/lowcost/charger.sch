@@ -488,4 +488,18 @@ Text Label 5500 4850 0    50   ~ 0
 VCHARGE
 Text Label 4950 5500 0    50   ~ 0
 VCHARGE
+Wire Wire Line
+	7100 3000 6850 3000
+Connection ~ 7100 3000
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5F97D9CC
+P 6850 3000
+F 0 "TP3" H 6650 3100 50  0000 L CNN
+F 1 "TestPoint" H 6550 3200 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 7050 3000 50  0001 C CNN
+F 3 "~" H 7050 3000 50  0001 C CNN
+	1    6850 3000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
