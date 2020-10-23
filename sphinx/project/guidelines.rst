@@ -1,6 +1,6 @@
 Guidelines
 ======================================
-
+Good schematics show you the circuit. Bad schematics make you decipher them.
 Here you can find a bunch of guidelines we set up to get consistent schematics along the project.
 
 Schematics
@@ -44,3 +44,21 @@ Schematic Symbols
 .. image:: ../_static/pin-draw-do.jpg
 	:height: 300px
 
+Direct connections, within reason
+--------------------------------------
+* reduce wire crossing and alike as much as possible for clarity
+* draw dots on junctions if your tool does not do it for you (if not you should use a better one)
+
+.. image:: ../_static/wire-dont.jpg
+	:height: 300px
+
+.. image:: ../_static/wire-do.jpg
+	:height: 300px
+
+NETs and Labels
+--------------------------------------
+* Give your NETs nicely readable names
+* But keep them reasonably short 
+* Always try to use your tool to select a NET instead of writing it by hand to avoind spelling mistakes
+* Use upper case for NET Labels
+* See this `ANSI/IEEE standard <https://www.altium.com/files/libraries/ls0001_pinabbreviation.pdf>`_  for recommended pin name abbreviations.
