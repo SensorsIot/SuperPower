@@ -36,24 +36,25 @@ $EndSheet
 $Sheet
 S 4950 4000 1250 1150
 U 5F63A00B
-F0 "RTC and Cut-Off Module" 50
+F0 "RTC" 50
 F1 "rtc_cut_off.sch" 50
 F2 "SCL" I R 6200 4100 50 
 F3 "SDA" B R 6200 4200 50 
 F4 "VIN" I L 4950 4650 50 
-F5 "VOUT" O L 4950 4450 50 
+F5 "INT" O L 4950 4450 50 
 $EndSheet
 $Sheet
 S 4900 2100 1250 1150
 U 5F63A0E9
-F0 "Regulator Module" 50
+F0 "Regulator and Cut-Off Module" 50
 F1 "regulator.sch" 50
-F2 "VIN" I L 4900 2550 50 
+F2 "INT" I L 4900 2800 50 
 F3 "3v3" O R 6150 2250 50 
 F4 "5V" O R 6150 2400 50 
 F5 "3v3_EN" I R 6150 2550 50 
 F6 "5V_EN" I R 6150 2700 50 
 F7 "3v3_MCU" O R 6150 2850 50 
+F8 "VIN" I L 4900 2550 50 
 $EndSheet
 $Sheet
 S 6850 2100 1250 1150
@@ -65,6 +66,8 @@ F3 "SDA" B L 6850 3150 50
 F4 "SCL" I L 6850 3050 50 
 F5 "D+" I R 8100 3150 50 
 F6 "D-" I R 8100 3050 50 
+F7 "5V_EN" O L 6850 2700 50 
+F8 "3v3_EN" O L 6850 2550 50 
 $EndSheet
 $Sheet
 S 3050 4000 1250 1150
@@ -120,9 +123,9 @@ Wire Wire Line
 Wire Wire Line
 	4950 4450 4700 4450
 Wire Wire Line
-	4700 4450 4700 2550
+	4700 4450 4700 2800
 Wire Wire Line
-	4700 2550 4900 2550
+	4700 2800 4900 2800
 Text Notes 1400 2300 0    50   ~ 0
 Battery Holder
 Text Notes 1400 2450 0    50   ~ 0
@@ -139,9 +142,9 @@ Text Notes 5150 2500 0    50   ~ 0
 5V Buck/Boost
 Text Notes 7400 2450 0    50   ~ 0
 MCU
-Text Notes 5350 4350 0    50   ~ 0
-RTC
 Text Notes 5350 4450 0    50   ~ 0
+RTC
+Text Notes 5150 2600 0    50   ~ 0
 Cut-Off Circuit
 Text Notes 3600 4350 0    50   ~ 0
 USB-C
@@ -193,6 +196,11 @@ Text Notes 5050 3150 0    50   ~ 0
 Permanent Power Jumper
 Text Notes 7400 2550 0    50   ~ 0
 FTDI
-Text Notes 5350 4650 0    50   ~ 0
-Bypass Jumper
+Wire Wire Line
+	4550 2550 4900 2550
+Connection ~ 4550 2550
+Wire Wire Line
+	6850 2550 6150 2550
+Wire Wire Line
+	6850 2700 6150 2700
 $EndSCHEMATC

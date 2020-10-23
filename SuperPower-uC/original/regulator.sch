@@ -13,8 +13,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 1150 800  0    50   Input ~ 0
-VIN
+Text HLabel 1150 1250 0    50   Input ~ 0
+INT
 Text HLabel 1150 1600 0    50   Output ~ 0
 3v3
 Text HLabel 1150 1750 0    50   Output ~ 0
@@ -28,13 +28,13 @@ Text HLabel 1150 1450 0    50   Output ~ 0
 $Comp
 L LM3671:LM3671 U541
 U 1 1 5F82FAE6
-P 5000 2100
-F 0 "U541" H 5000 2425 50  0000 C CNN
-F 1 "LM3671" H 5000 2334 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 5000 1900 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/lm3671.pdf?ts=1601919963072&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FLM3671" H 5200 2300 50  0001 C CNN
-F 4 "C201586" H 5000 2100 50  0001 C CNN "LCSC"
-	1    5000 2100
+P 5200 2750
+F 0 "U541" H 5200 3075 50  0000 C CNN
+F 1 "LM3671" H 5200 2984 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 5200 2550 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/lm3671.pdf?ts=1601919963072&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FLM3671" H 5400 2950 50  0001 C CNN
+F 4 "C201586" H 5200 2750 50  0001 C CNN "LCSC"
+	1    5200 2750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -49,19 +49,17 @@ F 3 "https://datasheet.lcsc.com/szlcsc/Texas-Instruments-TI-TPS61032PWPR_C88716.
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1150 800  1750 800 
+	1150 1250 1750 1250
 Wire Wire Line
 	1150 950  1750 950 
 Wire Wire Line
 	1150 1100 1750 1100
 Wire Wire Line
-	1150 1450 1750 1450
-Wire Wire Line
 	1150 1600 1750 1600
 Wire Wire Line
 	1150 1750 1750 1750
-Text Label 1350 800  0    50   ~ 0
-VIN
+Text Label 1350 1250 0    50   ~ 0
+INT
 Text Label 1350 950  0    50   ~ 0
 3v3_EN
 Text Label 1350 1100 0    50   ~ 0
@@ -72,89 +70,84 @@ Text Label 1350 1600 0    50   ~ 0
 3v3
 Text Label 1350 1750 0    50   ~ 0
 5V
-Text Label 3650 1900 0    50   ~ 0
-VIN
 $Comp
 L power:GND #PWR0501
 U 1 1 5F832BD9
-P 4050 2450
-F 0 "#PWR0501" H 4050 2200 50  0001 C CNN
-F 1 "GND" H 4055 2277 50  0000 C CNN
-F 2 "" H 4050 2450 50  0001 C CNN
-F 3 "" H 4050 2450 50  0001 C CNN
-	1    4050 2450
+P 4250 3100
+F 0 "#PWR0501" H 4250 2850 50  0001 C CNN
+F 1 "GND" H 4255 2927 50  0000 C CNN
+F 2 "" H 4250 3100 50  0001 C CNN
+F 3 "" H 4250 3100 50  0001 C CNN
+	1    4250 3100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4650 2100 4050 2100
+	4850 2750 4250 2750
 Wire Wire Line
-	4050 2100 4050 2450
+	4250 2750 4250 3100
 $Comp
 L Device:C_Small C541
 U 1 1 5F8377E6
-P 4050 2000
-F 0 "C541" H 4142 2046 50  0000 L CNN
-F 1 "4.7μF" H 4142 1955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4050 2000 50  0001 C CNN
-F 3 "~" H 4050 2000 50  0001 C CNN
-	1    4050 2000
+P 4250 2650
+F 0 "C541" H 4342 2696 50  0000 L CNN
+F 1 "4.7μF" H 4342 2605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4250 2650 50  0001 C CNN
+F 3 "~" H 4250 2650 50  0001 C CNN
+	1    4250 2650
 	1    0    0    -1  
 $EndComp
-Connection ~ 4050 2100
+Connection ~ 4250 2750
 Wire Wire Line
-	4650 2000 4650 1900
+	4850 2650 4850 2550
 Wire Wire Line
-	4650 1900 4500 1900
-Connection ~ 4050 1900
-Wire Wire Line
-	4050 1900 3650 1900
+	4850 2550 4700 2550
 $Comp
 L Device:L L541
 U 1 1 5F839BA5
-P 5500 2000
-F 0 "L541" V 5690 2000 50  0000 C CNN
-F 1 "2.2μH" V 5599 2000 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5500 2000 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/TDK-MLZ1608A2R2WT000_C76797.pdf" H 5500 2000 50  0001 C CNN
-	1    5500 2000
+P 5700 2650
+F 0 "L541" V 5890 2650 50  0000 C CNN
+F 1 "2.2μH" V 5799 2650 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5700 2650 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/TDK-MLZ1608A2R2WT000_C76797.pdf" H 5700 2650 50  0001 C CNN
+	1    5700 2650
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5650 2000 5650 2200
+	5850 2650 5850 2850
 Wire Wire Line
-	5650 2200 5350 2200
+	5850 2850 5550 2850
 Wire Wire Line
-	5650 2000 5800 2000
-Connection ~ 5650 2000
+	5850 2650 6000 2650
+Connection ~ 5850 2650
 $Comp
 L Device:C_Small C542
 U 1 1 5F83A904
-P 5800 2100
-F 0 "C542" H 5892 2146 50  0000 L CNN
-F 1 "10μF" H 5892 2055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5800 2100 50  0001 C CNN
-F 3 "~" H 5800 2100 50  0001 C CNN
-	1    5800 2100
+P 6000 2750
+F 0 "C542" H 6092 2796 50  0000 L CNN
+F 1 "10μF" H 6092 2705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6000 2750 50  0001 C CNN
+F 3 "~" H 6000 2750 50  0001 C CNN
+	1    6000 2750
 	1    0    0    -1  
 $EndComp
-Connection ~ 5800 2000
+Connection ~ 6000 2650
 $Comp
 L power:GND #PWR0502
 U 1 1 5F83AD82
-P 5800 2450
-F 0 "#PWR0502" H 5800 2200 50  0001 C CNN
-F 1 "GND" H 5805 2277 50  0000 C CNN
-F 2 "" H 5800 2450 50  0001 C CNN
-F 3 "" H 5800 2450 50  0001 C CNN
-	1    5800 2450
+P 6000 3100
+F 0 "#PWR0502" H 6000 2850 50  0001 C CNN
+F 1 "GND" H 6005 2927 50  0000 C CNN
+F 2 "" H 6000 3100 50  0001 C CNN
+F 3 "" H 6000 3100 50  0001 C CNN
+	1    6000 3100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5800 2200 5800 2450
-Text Label 6100 2000 0    50   ~ 0
+	6000 2850 6000 3100
+Text Label 6300 2650 0    50   ~ 0
 3v3_MCU
 Wire Wire Line
-	5800 2000 6450 2000
+	6000 2650 6650 2650
 Wire Notes Line
 	3350 900  6850 900 
 Wire Notes Line
@@ -177,7 +170,7 @@ F 4 "C201586" H 9250 2050 50  0001 C CNN "LCSC"
 	1    9250 2050
 	1    0    0    -1  
 $EndComp
-Text Label 7900 1850 0    50   ~ 0
+Text Label 7950 1850 0    50   ~ 0
 VIN
 $Comp
 L power:GND #PWR0503
@@ -208,8 +201,6 @@ $EndComp
 Connection ~ 8300 2050
 Wire Wire Line
 	8900 1950 8900 1850
-Wire Wire Line
-	8900 1850 8300 1850
 Connection ~ 8300 1850
 Wire Wire Line
 	8300 1850 7950 1850
@@ -313,7 +304,7 @@ Wire Wire Line
 Text Label 4500 4050 0    50   ~ 0
 5V_EN
 Wire Wire Line
-	4900 4600 5350 4600
+	4900 4600 5100 4600
 $Comp
 L Device:C_Small C503
 U 1 1 5F878340
@@ -455,17 +446,14 @@ Wire Notes Line
 Text Notes 6350 3800 0    118  ~ 0
 5V boost regulator
 Wire Wire Line
-	4500 1900 4500 2200
+	4700 2550 4700 2850
 Wire Wire Line
-	4500 2200 4650 2200
-Connection ~ 4500 1900
+	4700 2850 4850 2850
+Connection ~ 4700 2550
 Wire Wire Line
-	4500 1900 4050 1900
+	4700 2550 4250 2550
 Wire Wire Line
 	7950 2150 7950 1850
-Connection ~ 7950 1850
-Wire Wire Line
-	7950 1850 7900 1850
 Wire Wire Line
 	7950 2250 8500 2250
 Wire Wire Line
@@ -507,4 +495,88 @@ F 3 "~" H 3950 4150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4150 4050 4750 4050
+Text Label 3850 1850 1    50   ~ 0
+VIN
+Text Notes 4350 2050 0    50   Italic 0
+RTC Bypass
+$Comp
+L Device:Q_PMOS_GDS Q?
+U 1 1 5F93A677
+P 3750 2150
+AR Path="/5F63A00B/5F93A677" Ref="Q?"  Part="1" 
+AR Path="/5F63A0E9/5F93A677" Ref="Q501"  Part="1" 
+F 0 "Q501" H 3600 1850 50  0000 C CNN
+F 1 "P-MOS" H 3650 1950 50  0000 C CNN
+F 2 "" H 3950 2250 50  0001 C CNN
+F 3 "~" H 3750 2150 50  0001 C CNN
+	1    3750 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 800  1750 800 
+Text Label 1350 800  0    50   ~ 0
+VIN
+Wire Wire Line
+	1150 1450 1750 1450
+Text Label 3550 2150 0    50   ~ 0
+INT
+Wire Wire Line
+	3850 1750 3850 1950
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5F93A67D
+P 4400 2200
+AR Path="/5F63A00B/5F93A67D" Ref="J?"  Part="1" 
+AR Path="/5F63A0E9/5F93A67D" Ref="J503"  Part="1" 
+F 0 "J503" H 4500 2250 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 4050 2150 50  0000 C CNN
+F 2 "" H 4400 2200 50  0001 C CNN
+F 3 "~" H 4400 2200 50  0001 C CNN
+	1    4400 2200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3850 2350 3850 2550
+Wire Wire Line
+	3850 2550 4250 2550
+Connection ~ 4250 2550
+Wire Wire Line
+	3850 2350 4200 2350
+Wire Wire Line
+	4200 2350 4200 2200
+Connection ~ 3850 2350
+Wire Wire Line
+	3850 1950 4200 1950
+Wire Wire Line
+	4200 1950 4200 2100
+Connection ~ 3850 1950
+Text HLabel 1150 800  0    50   Input ~ 0
+VIN
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5F9C0313
+P 4700 2550
+F 0 "#FLG0102" H 4700 2625 50  0001 C CNN
+F 1 "PWR_FLAG" H 4700 2723 50  0000 C CNN
+F 2 "" H 4700 2550 50  0001 C CNN
+F 3 "~" H 4700 2550 50  0001 C CNN
+	1    4700 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 1850 8900 1850
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F9C255E
+P 5100 4600
+F 0 "#FLG0101" H 5100 4675 50  0001 C CNN
+F 1 "PWR_FLAG" H 5100 4773 50  0000 C CNN
+F 2 "" H 5100 4600 50  0001 C CNN
+F 3 "~" H 5100 4600 50  0001 C CNN
+	1    5100 4600
+	1    0    0    -1  
+$EndComp
+Connection ~ 5100 4600
+Wire Wire Line
+	5100 4600 5350 4600
 $EndSCHEMATC
