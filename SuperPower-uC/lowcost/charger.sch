@@ -81,18 +81,6 @@ F 3 "" H 4700 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D1
-U 1 1 5F7F2CDA
-P 6000 4850
-F 0 "D1" H 6100 4750 50  0000 C CNN
-F 1 "LED" H 5950 4700 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6000 4850 50  0001 C CNN
-F 3 "~" H 6000 4850 50  0001 C CNN
-F 4 "C84256" H 6000 4850 50  0001 C CNN "LCSC"
-	1    6000 4850
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:R R5
 U 1 1 5F7F0AC0
 P 4550 5450
@@ -103,18 +91,6 @@ F 3 "~" H 4550 5450 50  0001 C CNN
 F 4 "C4177" H 4550 5450 50  0001 C CNN "LCSC"
 	1    4550 5450
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R4
-U 1 1 5F7F0079
-P 6400 4850
-F 0 "R4" V 6500 4900 50  0000 L CNN
-F 1 "1.8k" V 6500 4700 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6330 4850 50  0001 C CNN
-F 3 "~" H 6400 4850 50  0001 C CNN
-F 4 "C4177" V 6400 4850 50  0001 C CNN "LCSC"
-	1    6400 4850
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	4350 3500 4450 3500
@@ -310,45 +286,13 @@ $EndComp
 Wire Wire Line
 	6150 4600 6250 4600
 Wire Wire Line
-	6150 4850 6250 4850
-Connection ~ 6600 5500
-Connection ~ 6600 5200
-Wire Wire Line
-	6600 5500 6100 5500
-Wire Wire Line
-	6600 5200 6100 5200
-$Comp
-L Device:R R6
-U 1 1 5F7F0EE3
-P 6600 5350
-F 0 "R6" H 6450 5300 50  0000 L CNN
-F 1 "180k" H 6350 5400 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6530 5350 50  0001 C CNN
-F 3 "~" H 6600 5350 50  0001 C CNN
-F 4 "C22827" H 6600 5350 50  0001 C CNN "LCSC"
-	1    6600 5350
-	-1   0    0    1   
-$EndComp
-Text Label 6350 5300 2    50   ~ 0
-CHRG
-Text Label 6350 5400 2    50   ~ 0
-STDBY
-Wire Wire Line
 	6100 5300 6350 5300
 Wire Wire Line
-	6100 5400 6350 5400
-Wire Wire Line
-	6550 4850 6900 4850
-Wire Wire Line
 	6550 4600 6900 4600
-Text Label 6900 4850 2    50   ~ 0
-CHRG
 Text Label 6900 4600 2    50   ~ 0
 STDBY
 Wire Wire Line
 	5850 4600 5500 4600
-Wire Wire Line
-	5500 4850 5850 4850
 Wire Wire Line
 	4550 5300 5300 5300
 Wire Wire Line
@@ -454,12 +398,6 @@ Text Label 4950 2600 2    50   ~ 0
 SCL
 Text Label 8000 2700 2    50   ~ 0
 INT
-Text Label 7550 5200 2    50   ~ 0
-CHARGE_DISABLE
-Wire Wire Line
-	6600 5200 7550 5200
-Wire Wire Line
-	6600 5500 7200 5500
 Wire Wire Line
 	4150 4450 4600 4450
 Wire Wire Line
@@ -484,8 +422,6 @@ Text Notes 650  750  0    50   ~ 0
 Labels\n
 Text Label 5500 4600 0    50   ~ 0
 VCHARGE
-Text Label 5500 4850 0    50   ~ 0
-VCHARGE
 Text Label 4950 5500 0    50   ~ 0
 VCHARGE
 Wire Wire Line
@@ -502,4 +438,45 @@ F 3 "~" H 7050 3000 50  0001 C CNN
 	1    6850 3000
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6750 5500 7200 5500
+Wire Wire Line
+	6750 5500 6100 5500
+Connection ~ 6750 5500
+Text Label 6450 5400 2    50   ~ 0
+STDBY
+Wire Wire Line
+	6100 5400 6450 5400
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5F98D422
+P 6350 5050
+F 0 "TP4" H 6200 5100 50  0000 L CNN
+F 1 "TestPoint" H 6050 5250 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6550 5050 50  0001 C CNN
+F 3 "~" H 6550 5050 50  0001 C CNN
+	1    6350 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 5200 7550 5200
+Text Label 7550 5200 2    50   ~ 0
+CHARGE_DISABLE
+$Comp
+L Device:R R6
+U 1 1 5F7F0EE3
+P 6750 5350
+F 0 "R6" H 6600 5300 50  0000 L CNN
+F 1 "180k" H 6500 5400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6680 5350 50  0001 C CNN
+F 3 "~" H 6750 5350 50  0001 C CNN
+F 4 "C22827" H 6750 5350 50  0001 C CNN "LCSC"
+	1    6750 5350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6750 5200 6100 5200
+Connection ~ 6750 5200
+Wire Wire Line
+	6350 5300 6350 5050
 $EndSCHEMATC

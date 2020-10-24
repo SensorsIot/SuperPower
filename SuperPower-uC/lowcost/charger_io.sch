@@ -472,7 +472,6 @@ $EndComp
 Wire Wire Line
 	3600 3000 3900 3000
 NoConn ~ 3600 3400
-NoConn ~ 3200 3600
 $Comp
 L Connector:TestPoint TP1
 U 1 1 5F960985
@@ -513,17 +512,6 @@ Wire Wire Line
 Connection ~ 7200 5600
 Wire Wire Line
 	7200 5600 7600 5600
-$Comp
-L Connector:TestPoint TP2
-U 1 1 5F973D21
-P 5350 2700
-F 0 "TP2" H 5400 2850 50  0000 L CNN
-F 1 "TestPoint" H 5408 2727 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 5550 2700 50  0001 C CNN
-F 3 "~" H 5550 2700 50  0001 C CNN
-	1    5350 2700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4100 3000 4700 3000
 $Comp
@@ -556,4 +544,7 @@ Wire Wire Line
 	8100 3000 7850 3000
 Wire Wire Line
 	8100 3000 8350 3000
+Wire Wire Line
+	3200 3600 3300 3600
+Connection ~ 3300 3600
 $EndSCHEMATC

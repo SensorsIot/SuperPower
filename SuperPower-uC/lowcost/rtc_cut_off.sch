@@ -228,46 +228,8 @@ Text HLabel 1350 1450 0    50   Output ~ 0
 3v3V_EN
 Text HLabel 1350 1550 0    50   Output ~ 0
 5V_EN
-$Comp
-L Jumper:SolderJumper_2_Open JP2
-U 1 1 5F83F86A
-P 7350 3900
-F 0 "JP2" H 7350 4105 50  0000 C CNN
-F 1 "INT override" H 7350 4014 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 7350 3900 50  0001 C CNN
-F 3 "~" H 7350 3900 50  0001 C CNN
-	1    7350 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0110
-U 1 1 5F8401EB
-P 8000 3900
-F 0 "#PWR0110" H 8000 3650 50  0001 C CNN
-F 1 "GND" H 8005 3727 50  0000 C CNN
-F 2 "" H 8000 3900 50  0001 C CNN
-F 3 "" H 8000 3900 50  0001 C CNN
-	1    8000 3900
-	1    0    0    -1  
-$EndComp
 Text HLabel 1350 1900 0    50   Output ~ 0
 INT
-Wire Wire Line
-	7500 3900 7600 3900
-$Comp
-L Device:R R18
-U 1 1 5F8066A1
-P 7750 3900
-F 0 "R18" V 7650 3950 50  0000 C CNN
-F 1 "1k" V 7650 3800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7680 3900 50  0001 C CNN
-F 3 "~" H 7750 3900 50  0001 C CNN
-F 4 "C21190" H 7750 3900 50  0001 C CNN "LCSC"
-	1    7750 3900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7900 3900 8000 3900
 Wire Wire Line
 	5700 2600 5350 2600
 Wire Wire Line
@@ -308,10 +270,6 @@ Text Label 1750 1450 2    50   ~ 0
 3.3_EN
 Text Label 1750 1550 2    50   ~ 0
 5V_EN
-Text Label 7000 3900 0    50   ~ 0
-INT
-Wire Wire Line
-	7000 3900 7200 3900
 Text Label 4600 4950 0    50   ~ 0
 INT
 Wire Wire Line
@@ -387,14 +345,6 @@ Wire Wire Line
 Text Notes 650  750  0    50   ~ 0
 Labels\n
 Wire Notes Line
-	6800 3400 8400 3400
-Wire Notes Line
-	8400 3400 8400 4250
-Wire Notes Line
-	8400 4250 6800 4250
-Wire Notes Line
-	6800 4250 6800 3400
-Wire Notes Line
 	3950 4100 6650 4100
 Wire Notes Line
 	6650 4100 6650 5650
@@ -414,8 +364,6 @@ Text Notes 6800 2200 0    50   ~ 0
 I2C pullup\n
 Text Notes 4000 4250 0    50   ~ 0
 RTC\n
-Text Notes 6850 3600 0    50   ~ 0
-INT overrride\n(MCU always on)
 Text Notes 3400 2000 0    50   ~ 0
 IO Expander
 Wire Notes Line
@@ -431,29 +379,29 @@ CH_DIS
 Wire Wire Line
 	4200 2800 4550 2800
 Wire Notes Line
-	6750 4350 8400 4350
+	6800 3400 8450 3400
 Wire Notes Line
-	8400 4350 8400 5250
+	8450 3400 8450 4300
 Wire Notes Line
-	8400 5250 6750 5250
+	8450 4300 6800 4300
 Wire Notes Line
-	6750 5250 6750 4350
+	6800 4300 6800 3400
 $Comp
 L Jumper:SolderJumper_2_Open JP4
 U 1 1 5F8A654B
-P 7600 4850
-F 0 "JP4" H 7600 5055 50  0000 C CNN
-F 1 "3v3_MCU_I2C" H 7600 4964 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 7600 4850 50  0001 C CNN
-F 3 "~" H 7600 4850 50  0001 C CNN
-	1    7600 4850
+P 7650 3900
+F 0 "JP4" H 7650 4105 50  0000 C CNN
+F 1 "3v3_MCU_I2C" H 7650 4014 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 7650 3900 50  0001 C CNN
+F 3 "~" H 7650 3900 50  0001 C CNN
+	1    7650 3900
 	1    0    0    -1  
 $EndComp
 Text Label 7450 3000 0    50   ~ 0
 V_I2C
 Wire Wire Line
-	7450 4850 6950 4850
-Text Notes 6800 4450 0    50   ~ 0
+	7500 3900 7000 3900
+Text Notes 6850 3500 0    50   ~ 0
 For MCU always on applications
 Text HLabel 1350 1650 0    50   Input ~ 0
 3v3_MCU
@@ -467,11 +415,11 @@ Wire Notes Line
 	1850 600  1850 2150
 Wire Notes Line
 	1850 2150 550  2150
-Text Label 6950 4850 0    50   ~ 0
+Text Label 7000 3900 0    50   ~ 0
 3v3_MCU
 Wire Wire Line
-	8100 4850 7750 4850
-Text Label 8100 4850 2    50   ~ 0
+	8150 3900 7800 3900
+Text Label 8150 3900 2    50   ~ 0
 V_I2C
 Text Label 4650 3350 0    50   ~ 0
 3.3_EN
@@ -534,18 +482,4 @@ Wire Notes Line
 	3350 4000 6700 4000
 Wire Notes Line
 	6700 1850 6700 4000
-Wire Wire Line
-	7350 3000 7050 3000
-Connection ~ 7350 3000
-$Comp
-L Connector:TestPoint TP4
-U 1 1 5F983B69
-P 7050 3000
-F 0 "TP4" H 6900 3050 50  0000 L CNN
-F 1 "TestPoint" H 6950 2950 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 7250 3000 50  0001 C CNN
-F 3 "~" H 7250 3000 50  0001 C CNN
-	1    7050 3000
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC
