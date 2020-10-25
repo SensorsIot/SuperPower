@@ -1062,6 +1062,9 @@ Text Notes 9350 5150 0    50   ~ 0
 IO0 -->
 Text Notes 5600 5700 0    50   ~ 0
 VBATT or VBUS?
+NoConn ~ 4350 2400
+NoConn ~ 4350 2500
+NoConn ~ 4350 2600
 Text Notes 5000 3500 0    394  ~ 0
 WORK IN PROGRESS
 $EndSCHEMATC
