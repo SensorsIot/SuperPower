@@ -454,4 +454,16 @@ Text Label 4200 2500 0    50   ~ 0
 INT_IO
 Text Label 4450 3450 0    50   ~ 0
 INT_IO
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5F96E9B6
+P 3800 2250
+F 0 "TP2" H 3858 2368 50  0000 L CNN
+F 1 "TestPoint" H 3858 2277 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 4000 2250 50  0001 C CNN
+F 3 "~" H 4000 2250 50  0001 C CNN
+	1    3800 2250
+	1    0    0    -1  
+$EndComp
+Connection ~ 3800 2250
 $EndSCHEMATC
