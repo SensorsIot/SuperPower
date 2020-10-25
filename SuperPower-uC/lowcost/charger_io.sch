@@ -210,17 +210,6 @@ F 3 "" H 6700 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG0101
-U 1 1 5F872CCA
-P 3900 3000
-F 0 "#FLG0101" H 3900 3075 50  0001 C CNN
-F 1 "PWR_FLAG" H 3900 3173 50  0000 C CNN
-F 2 "" H 3900 3000 50  0001 C CNN
-F 3 "~" H 3900 3000 50  0001 C CNN
-	1    3900 3000
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:PWR_FLAG #FLG0104
 U 1 1 5F8735A3
 P 4900 2700
@@ -272,7 +261,6 @@ F 3 "~" H 4900 3000 50  0001 C CNN
 	1    4900 3000
 	-1   0    0    1   
 $EndComp
-Connection ~ 3900 3000
 Wire Wire Line
 	7050 5400 7050 5600
 Text Label 7600 5600 2    50   ~ 0
@@ -324,8 +312,6 @@ F 3 "" H 4100 3300 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Connection ~ 4100 3000
-Wire Wire Line
-	4100 3000 3900 3000
 Text Label 8200 2700 2    50   ~ 0
 3v3FTDI
 Wire Wire Line
@@ -469,8 +455,6 @@ F 4 "C319164" H 3300 3200 50  0001 C CNN "LCSC"
 	1    3300 3200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3600 3000 3900 3000
 NoConn ~ 3600 3400
 $Comp
 L Connector:TestPoint TP1
@@ -547,4 +531,6 @@ Wire Wire Line
 Wire Wire Line
 	3200 3600 3300 3600
 Connection ~ 3300 3600
+Wire Wire Line
+	3600 3000 4100 3000
 $EndSCHEMATC
