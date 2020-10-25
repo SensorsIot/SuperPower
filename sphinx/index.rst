@@ -11,6 +11,7 @@ Welcome to SuperPower's documentation!
    :caption: Project
 
    project/README.md
+   project/guidelines.rst
    project/licence.rst
 
 
