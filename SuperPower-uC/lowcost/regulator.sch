@@ -78,7 +78,7 @@ F 4 "C22827" H 2250 3350 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2550 3200 2250 3200
+	2550 3200 2400 3200
 $Comp
 L Transistor_FET:2N7002 Q7
 U 1 1 5F816283
@@ -169,7 +169,7 @@ F 4 "C14858" H 3100 3350 50  0001 C CNN "LCSC"
 $EndComp
 Connection ~ 3100 3200
 Wire Wire Line
-	3100 3200 3400 3200
+	3100 3200 3250 3200
 Wire Wire Line
 	3100 3500 3800 3500
 Wire Wire Line
@@ -184,24 +184,24 @@ Wire Wire Line
 	7850 3750 7100 3750
 Connection ~ 2250 3200
 Wire Wire Line
-	2900 2900 3100 2900
+	3050 2900 3250 2900
 $Comp
 L Jumper:SolderJumper_2_Open JP3
 U 1 1 5F81FE3B
-P 2750 2900
-F 0 "JP3" H 2750 3105 50  0000 C CNN
-F 1 "MCULDO_override" H 2750 3014 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 2750 2900 50  0001 C CNN
-F 3 "~" H 2750 2900 50  0001 C CNN
-	1    2750 2900
+P 2900 2900
+F 0 "JP3" H 2900 3105 50  0000 C CNN
+F 1 "MCU_EN" H 2900 3014 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 2900 2900 50  0001 C CNN
+F 3 "~" H 2900 2900 50  0001 C CNN
+	1    2900 2900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2250 2900 2250 3200
+	2400 2900 2400 3200
 Wire Wire Line
-	3100 2900 3100 3200
+	3250 2900 3250 3200
 Wire Wire Line
-	2250 2900 2600 2900
+	2400 2900 2750 2900
 $Comp
 L Device:C C16
 U 1 1 5F868BFD
@@ -350,9 +350,9 @@ U 1 1 5F83343D
 P 6400 5000
 F 0 "D4" H 6400 4783 50  0000 C CNN
 F 1 "D_Schottky" H 6400 4874 50  0000 C CNN
-F 2 "Diode_SMD:D_SMA_Handsoldering" H 6400 5000 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1903051003_MDD-Jiangsu-Yutai-Elec-SS34_C8678.pdf" H 6400 5000 50  0001 C CNN
-F 4 "C8678" H 6400 5000 50  0001 C CNN "LCSC"
+F 2 "Diode_SMD:D_SOD-123" H 6400 5000 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Changjiang-Electronics-Tech-CJ-B5819W_C8598.pdf" H 6400 5000 50  0001 C CNN
+F 4 " C8598" H 6400 5000 50  0001 C CNN "LCSC"
 	1    6400 5000
 	-1   0    0    1   
 $EndComp
@@ -648,4 +648,10 @@ Wire Wire Line
 Connection ~ 6050 5650
 Wire Wire Line
 	6050 5650 6200 5650
+Connection ~ 2400 3200
+Wire Wire Line
+	2400 3200 2250 3200
+Connection ~ 3250 3200
+Wire Wire Line
+	3250 3200 3400 3200
 $EndSCHEMATC
