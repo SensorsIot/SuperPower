@@ -25,8 +25,6 @@ or any local webserver can be used, as example here VSCode plugin :
 
 readthedocs hosting link : [https://superpower.readthedocs.io/en/latest/](https://superpower.readthedocs.io/en/latest/)
 
-github pages link : tbd
-
 ## Create your own sphinx project
 
     pip install sphinx
@@ -36,7 +34,15 @@ the last steps creates the documentation source from which the main file `index.
 
 Getting started with sphinx from readthedocs : [getting-started-with-sphinx](https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html)
 
-Sphinx official documentation : https://www.sphinx-doc.org/en/master/
+Sphinx official documentation : [https://www.sphinx-doc.org/en/master/](https://www.sphinx-doc.org/en/master/)
+
+## Optional use virtual env
+in order not to conflict between existing python modules on the system and the ones used in this project, it is highly recommended to use a virtual environment
+
+    >python -m venv venv
+    >venv\Scripts\activate.bat
+
+more about virtual environments [tutorial](https://docs.python.org/3/tutorial/venv.html)
 
 ## Get started writing reSructuredText
 * Question : Why do I have to learn yet another markup format ? sphinx support github's .md why not just use that ?
@@ -45,7 +51,7 @@ Sphinx official documentation : https://www.sphinx-doc.org/en/master/
 
 sphinx quick start : [https://www.sphinx-doc.org/en/master/usage/quickstart.html](https://www.sphinx-doc.org/en/master/usage/quickstart.html)
 
-Cheat Sheet:  https://sphinx-tutorial.readthedocs.io/cheatsheet/
+Cheat Sheet:  [https://sphinx-tutorial.readthedocs.io/cheatsheet/](https://sphinx-tutorial.readthedocs.io/cheatsheet/)
 
 docutils rts : [https://docutils.sourceforge.io/rst.html](https://docutils.sourceforge.io/rst.html)
 
