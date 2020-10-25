@@ -418,8 +418,6 @@ Text Label 4450 3750 0    50   ~ 0
 CH_DIS
 Wire Wire Line
 	4450 3750 4800 3750
-Text Label 4450 3450 0    50   ~ 0
-INT
 Wire Wire Line
 	4450 3450 4800 3450
 Wire Notes Line
@@ -452,4 +450,8 @@ F 3 "~" H 5000 3550 50  0001 C CNN
 	1    5000 3550
 	1    0    0    -1  
 $EndComp
+Text Label 4200 2500 0    50   ~ 0
+INT_IO
+Text Label 4450 3450 0    50   ~ 0
+INT_IO
 $EndSCHEMATC
