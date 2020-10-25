@@ -238,21 +238,6 @@ Wire Wire Line
 	5700 2800 5350 2800
 Wire Wire Line
 	5350 2900 5700 2900
-$Comp
-L power:GND #PWR0111
-U 1 1 5F815E7A
-P 4850 3700
-F 0 "#PWR0111" H 4850 3450 50  0001 C CNN
-F 1 "GND" H 4855 3527 50  0000 C CNN
-F 2 "" H 4850 3700 50  0001 C CNN
-F 3 "" H 4850 3700 50  0001 C CNN
-	1    4850 3700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5000 3650 4850 3650
-Wire Wire Line
-	4850 3650 4850 3700
 NoConn ~ 1200 350 
 Wire Wire Line
 	5600 4750 6100 4750
@@ -421,59 +406,22 @@ Wire Wire Line
 	8150 3900 7800 3900
 Text Label 8150 3900 2    50   ~ 0
 V_I2C
-Text Label 4650 3350 0    50   ~ 0
+Text Label 4450 3550 0    50   ~ 0
 3.3_EN
-Text Label 4650 3450 0    50   ~ 0
+Text Label 4450 3650 0    50   ~ 0
 5V_EN
 Wire Wire Line
-	4650 3350 5000 3350
+	4450 3550 4800 3550
 Wire Wire Line
-	4650 3450 5000 3450
-Text Label 4650 3550 0    50   ~ 0
+	4450 3650 4800 3650
+Text Label 4450 3750 0    50   ~ 0
 CH_DIS
 Wire Wire Line
-	4650 3550 5000 3550
-$Comp
-L Connector:Conn_01x05_Female J7
-U 1 1 5F8F17B1
-P 5900 2800
-F 0 "J7" H 5928 2826 50  0000 L CNN
-F 1 "expander pins nc" H 5928 2735 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 5900 2800 50  0001 C CNN
-F 3 "~" H 5900 2800 50  0001 C CNN
-	1    5900 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x05_Female J8
-U 1 1 5F8F2498
-P 5200 3450
-F 0 "J8" H 5228 3476 50  0000 L CNN
-F 1 "expander pins" H 5228 3385 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 5200 3450 50  0001 C CNN
-F 3 "~" H 5200 3450 50  0001 C CNN
-	1    5200 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0129
-U 1 1 5F9003C7
-P 5550 3050
-F 0 "#PWR0129" H 5550 2800 50  0001 C CNN
-F 1 "GND" H 5555 2877 50  0000 C CNN
-F 2 "" H 5550 3050 50  0001 C CNN
-F 3 "" H 5550 3050 50  0001 C CNN
-	1    5550 3050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5700 3000 5550 3000
-Wire Wire Line
-	5550 3000 5550 3050
-Text Label 4650 3250 0    50   ~ 0
+	4450 3750 4800 3750
+Text Label 4450 3450 0    50   ~ 0
 INT
 Wire Wire Line
-	4650 3250 5000 3250
+	4450 3450 4800 3450
 Wire Notes Line
 	3350 4000 3350 1850
 Wire Notes Line
@@ -482,4 +430,26 @@ Wire Notes Line
 	3350 4000 6700 4000
 Wire Notes Line
 	6700 1850 6700 4000
+$Comp
+L Connector:Conn_01x04_Female J7
+U 1 1 5F957DF8
+P 5900 2700
+F 0 "J7" H 5928 2676 50  0000 L CNN
+F 1 "expander pins nc" H 5928 2585 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 5900 2700 50  0001 C CNN
+F 3 "~" H 5900 2700 50  0001 C CNN
+	1    5900 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J8
+U 1 1 5F958A11
+P 5000 3550
+F 0 "J8" H 5028 3526 50  0000 L CNN
+F 1 "expander pins" H 5028 3435 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 5000 3550 50  0001 C CNN
+F 3 "~" H 5000 3550 50  0001 C CNN
+	1    5000 3550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
