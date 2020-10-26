@@ -167,59 +167,59 @@ Connection ~ 7350 2600
 $Comp
 L TCA6408APWR:TCA6408A U9
 U 1 1 5F8103C2
-P 4950 2350
-F 0 "U9" H 5200 2600 50  0000 C CNN
-F 1 "TCA6408A" H 4850 2600 50  0000 C CNN
-F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 5000 2850 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/tca6408a.pdf?ts=1602171918658&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTCA6408A" H 5200 2600 50  0001 C CNN
-F 4 "C206177" H 5200 3000 50  0001 C CNN "LCSC"
-	1    4950 2350
+P 5500 3000
+F 0 "U9" H 5750 3250 50  0000 C CNN
+F 1 "TCA6408A" H 5400 3250 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 5550 3500 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/tca6408a.pdf?ts=1602171918658&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTCA6408A" H 5750 3250 50  0001 C CNN
+F 4 "C206177" H 5750 3650 50  0001 C CNN "LCSC"
+	1    5500 3000
 	1    0    0    -1  
 $EndComp
 Text HLabel 1350 1200 0    50   Input ~ 0
 VBAT
 Wire Wire Line
-	4550 2200 4500 2200
-NoConn ~ 4550 2400
+	5100 2850 5050 2850
+NoConn ~ 5100 3050
 Wire Wire Line
-	4500 2200 4500 2300
+	5050 2850 5050 2950
 Wire Wire Line
-	4500 2300 4550 2300
+	5050 2950 5100 2950
 $Comp
 L power:GND #PWR0109
 U 1 1 5F81AC3F
-P 3800 2950
-F 0 "#PWR0109" H 3800 2700 50  0001 C CNN
-F 1 "GND" H 3805 2777 50  0000 C CNN
-F 2 "" H 3800 2950 50  0001 C CNN
-F 3 "" H 3800 2950 50  0001 C CNN
-	1    3800 2950
+P 3950 3600
+F 0 "#PWR0109" H 3950 3350 50  0001 C CNN
+F 1 "GND" H 3955 3427 50  0000 C CNN
+F 2 "" H 3950 3600 50  0001 C CNN
+F 3 "" H 3950 3600 50  0001 C CNN
+	1    3950 3600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3800 2900 3800 2950
+	3950 3550 3950 3600
 $Comp
 L Transistor_FET:2N7002 Q1
 U 1 1 5F81E351
-P 3900 2500
-F 0 "Q1" H 4105 2546 50  0000 L CNN
-F 1 "2N7002" H 4105 2455 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4100 2425 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 3900 2500 50  0001 L CNN
-F 4 "" H 3900 2500 50  0001 C CNN "Field4"
-F 5 "C8545" H 3900 2500 50  0001 C CNN "LCSC"
-	1    3900 2500
+P 4050 3150
+F 0 "Q1" H 4255 3196 50  0000 L CNN
+F 1 "2N7002" H 4255 3105 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4250 3075 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 4050 3150 50  0001 L CNN
+F 4 "" H 4050 3150 50  0001 C CNN "Field4"
+F 5 "C8545" H 4050 3150 50  0001 C CNN "LCSC"
+	1    4050 3150
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	4550 2500 4100 2500
+	5100 3150 5000 3150
 Wire Wire Line
-	3800 2700 3800 2900
-Connection ~ 3800 2900
+	3950 3350 3950 3550
+Connection ~ 3950 3550
 Wire Wire Line
-	3800 2900 4550 2900
+	3950 3550 5100 3550
 Wire Wire Line
-	3800 2250 3800 2300
+	3950 2900 3950 2950
 Text HLabel 1350 950  0    50   Input ~ 0
 SCL
 Text HLabel 1350 850  0    50   BiDi ~ 0
@@ -230,19 +230,11 @@ Text HLabel 1350 1550 0    50   Output ~ 0
 5V_EN
 Text HLabel 1350 1900 0    50   Output ~ 0
 INT
-Wire Wire Line
-	5700 2600 5350 2600
-Wire Wire Line
-	5350 2700 5700 2700
-Wire Wire Line
-	5700 2800 5350 2800
-Wire Wire Line
-	5350 2900 5700 2900
 NoConn ~ 1200 350 
 Wire Wire Line
 	5600 4750 6100 4750
 Connection ~ 6100 4750
-Connection ~ 4500 2200
+Connection ~ 5050 2850
 Text Label 1750 850  2    50   ~ 0
 SDA
 Text Label 1750 950  2    50   ~ 0
@@ -259,14 +251,14 @@ Text Label 4600 4950 0    50   ~ 0
 INT
 Wire Wire Line
 	4600 4950 4800 4950
-Text Label 3600 2250 0    50   ~ 0
+Text Label 3750 2900 0    50   ~ 0
 INT
 Wire Wire Line
-	3600 2250 3800 2250
-Text Label 5600 2500 2    50   ~ 0
+	3750 2900 3950 2900
+Text Label 6150 3150 2    50   ~ 0
 INT
 Wire Wire Line
-	5350 2500 5600 2500
+	5900 3150 6150 3150
 Wire Wire Line
 	1350 1900 1750 1900
 Wire Wire Line
@@ -279,26 +271,18 @@ Wire Wire Line
 	1350 950  1750 950 
 Wire Wire Line
 	1350 850  1750 850 
-Text Label 5600 2300 2    50   ~ 0
+Text Label 6150 2950 2    50   ~ 0
 SDA
-Text Label 5600 2400 2    50   ~ 0
+Text Label 6150 3050 2    50   ~ 0
 SCL
 Wire Wire Line
-	5350 2300 5600 2300
+	5900 2950 6150 2950
 Wire Wire Line
-	5350 2400 5600 2400
-Text Label 5600 2200 2    50   ~ 0
+	5900 3050 6150 3050
+Text Label 6150 2850 2    50   ~ 0
 VBAT
 Wire Wire Line
-	5350 2200 5600 2200
-Text Label 4200 2600 0    50   ~ 0
-3.3_EN
-Text Label 4200 2700 0    50   ~ 0
-5V_EN
-Wire Wire Line
-	4200 2600 4550 2600
-Wire Wire Line
-	4200 2700 4550 2700
+	5900 2850 6150 2850
 Text Label 8650 2900 2    50   ~ 0
 SDA
 Text Label 8650 3000 2    50   ~ 0
@@ -311,10 +295,10 @@ Text Label 8450 2600 2    50   ~ 0
 VBAT
 Wire Wire Line
 	8200 2600 8450 2600
-Text Label 4300 2200 0    50   ~ 0
+Text Label 4850 2850 0    50   ~ 0
 VBAT
 Wire Wire Line
-	4300 2200 4500 2200
+	4850 2850 5050 2850
 Text Label 6350 4750 2    50   ~ 0
 VBAT
 Wire Wire Line
@@ -359,10 +343,6 @@ Text Label 1750 2000 2    50   ~ 0
 CH_DIS
 Wire Wire Line
 	1750 2000 1350 2000
-Text Label 4200 2800 0    50   ~ 0
-CH_DIS
-Wire Wire Line
-	4200 2800 4550 2800
 Wire Notes Line
 	6800 3400 8450 3400
 Wire Notes Line
@@ -406,20 +386,6 @@ Wire Wire Line
 	8150 3900 7800 3900
 Text Label 8150 3900 2    50   ~ 0
 V_I2C
-Text Label 4450 3550 0    50   ~ 0
-3.3_EN
-Text Label 4450 3650 0    50   ~ 0
-5V_EN
-Wire Wire Line
-	4450 3550 4800 3550
-Wire Wire Line
-	4450 3650 4800 3650
-Text Label 4450 3750 0    50   ~ 0
-CH_DIS
-Wire Wire Line
-	4450 3750 4800 3750
-Wire Wire Line
-	4450 3450 4800 3450
 Wire Notes Line
 	3350 4000 3350 1850
 Wire Notes Line
@@ -429,41 +395,58 @@ Wire Notes Line
 Wire Notes Line
 	6700 1850 6700 4000
 $Comp
-L Connector:Conn_01x04_Female J7
-U 1 1 5F957DF8
-P 5900 2700
-F 0 "J7" H 5928 2676 50  0000 L CNN
-F 1 "expander pins nc" H 5928 2585 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 5900 2700 50  0001 C CNN
-F 3 "~" H 5900 2700 50  0001 C CNN
-	1    5900 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x04_Female J8
-U 1 1 5F958A11
-P 5000 3550
-F 0 "J8" H 5028 3526 50  0000 L CNN
-F 1 "expander pins" H 5028 3435 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 5000 3550 50  0001 C CNN
-F 3 "~" H 5000 3550 50  0001 C CNN
-	1    5000 3550
-	1    0    0    -1  
-$EndComp
-Text Label 4200 2500 0    50   ~ 0
-INT_IO
-Text Label 4450 3450 0    50   ~ 0
-INT_IO
-$Comp
 L Connector:TestPoint TP2
 U 1 1 5F96E9B6
-P 3800 2250
-F 0 "TP2" H 3858 2368 50  0000 L CNN
-F 1 "TestPoint" H 3858 2277 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 4000 2250 50  0001 C CNN
-F 3 "~" H 4000 2250 50  0001 C CNN
-	1    3800 2250
+P 3950 2900
+F 0 "TP2" H 4008 3018 50  0000 L CNN
+F 1 "TestPoint" H 4008 2927 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 4150 2900 50  0001 C CNN
+F 3 "~" H 4150 2900 50  0001 C CNN
+	1    3950 2900
 	1    0    0    -1  
 $EndComp
-Connection ~ 3800 2250
+Connection ~ 3950 2900
+Wire Wire Line
+	5950 3250 5900 3250
+Wire Wire Line
+	5900 3350 5950 3350
+Wire Wire Line
+	5950 3450 5900 3450
+Wire Wire Line
+	5900 3550 5950 3550
+Text GLabel 5950 3250 2    50   Input ~ 0
+exp7
+Text GLabel 5950 3350 2    50   Input ~ 0
+exp6
+Text GLabel 5950 3450 2    50   Input ~ 0
+exp5
+Text GLabel 5950 3550 2    50   Input ~ 0
+exp4
+Text GLabel 4950 3050 0    50   Input ~ 0
+INT_IO
+Wire Wire Line
+	4650 3450 5100 3450
+Wire Wire Line
+	4650 3350 5100 3350
+Wire Wire Line
+	4650 3250 5100 3250
+Wire Wire Line
+	4950 3050 5000 3050
+Wire Wire Line
+	5000 3050 5000 3150
+Connection ~ 5000 3150
+Wire Wire Line
+	5000 3150 4250 3150
+Text GLabel 4650 3250 0    50   Input ~ 0
+3v3_EN
+Text GLabel 4650 3350 0    50   Input ~ 0
+5V_EN
+Text GLabel 4650 3450 0    50   Input ~ 0
+CH_DIS
+Text Label 4800 3250 0    50   ~ 0
+3.3_EN
+Text Label 4800 3350 0    50   ~ 0
+5V_EN
+Text Label 4800 3450 0    50   ~ 0
+CH_DIS
 $EndSCHEMATC
