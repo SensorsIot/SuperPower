@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 7
+Sheet 5 7
 Title "SuperPower-uC"
 Date "2020-09-20"
 Rev "0.1"
@@ -25,28 +25,6 @@ Text HLabel 1150 1850 0    50   Input ~ 0
 RST
 Text HLabel 1150 1750 0    50   Input ~ 0
 GPIO0
-$Comp
-L Connector:Conn_01x16_Female J5
-U 1 1 5F88CF74
-P 10000 1950
-F 0 "J5" H 10028 1926 50  0000 L CNN
-F 1 "main pin header" H 10028 1835 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 10000 1950 50  0001 C CNN
-F 3 "~" H 10000 1950 50  0001 C CNN
-	1    10000 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x16_Female J6
-U 1 1 5F896962
-P 10000 3750
-F 0 "J6" H 10028 3726 50  0000 L CNN
-F 1 "main pin header" H 10028 3635 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 10000 3750 50  0001 C CNN
-F 3 "~" H 10000 3750 50  0001 C CNN
-	1    10000 3750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5200 3250 4350 3250
 Wire Wire Line
@@ -232,130 +210,117 @@ IO22
 Text Label 7050 3250 2    50   ~ 0
 IO23
 Wire Wire Line
-	9800 3150 9600 3150
+	9900 3550 9700 3550
 Wire Wire Line
-	9800 3250 9600 3250
+	9900 3650 9700 3650
 Wire Wire Line
-	9800 3350 9600 3350
+	9900 3750 9700 3750
 Wire Wire Line
-	9800 3450 9600 3450
+	9900 3850 9700 3850
 Wire Wire Line
-	9800 3550 9600 3550
+	9900 3950 9700 3950
 Wire Wire Line
-	9800 3650 9600 3650
+	9900 4050 9700 4050
 Wire Wire Line
-	9800 3850 9600 3850
+	9900 4250 9700 4250
 Wire Wire Line
-	9600 3750 9800 3750
+	9700 4150 9900 4150
 Wire Wire Line
-	9800 3950 9600 3950
+	9900 4350 9700 4350
 Wire Wire Line
-	9600 4050 9800 4050
+	9700 4450 9900 4450
 Wire Wire Line
-	9600 4150 9800 4150
-Text Label 9600 3150 0    50   ~ 0
+	9700 4550 9900 4550
+Text Label 9700 3550 0    50   ~ 0
 IO36
-Text Label 9600 3250 0    50   ~ 0
+Text Label 9700 3650 0    50   ~ 0
 IO39
-Text Label 9600 3350 0    50   ~ 0
+Text Label 9700 3750 0    50   ~ 0
 IO34
-Text Label 9600 3450 0    50   ~ 0
+Text Label 9700 3850 0    50   ~ 0
 IO35
-Text Label 9600 3550 0    50   ~ 0
+Text Label 9700 3950 0    50   ~ 0
 IO32
-Text Label 9600 3650 0    50   ~ 0
+Text Label 9700 4050 0    50   ~ 0
 IO33
-Text Label 9600 3750 0    50   ~ 0
+Text Label 9700 4150 0    50   ~ 0
 IO25
-Text Label 9600 3850 0    50   ~ 0
+Text Label 9700 4250 0    50   ~ 0
 IO26
-Text Label 9600 3950 0    50   ~ 0
+Text Label 9700 4350 0    50   ~ 0
 IO27
-Text Label 9600 4050 0    50   ~ 0
+Text Label 9700 4450 0    50   ~ 0
 IO14
-Text Label 9600 4150 0    50   ~ 0
+Text Label 9700 4550 0    50   ~ 0
 IO12
 Wire Wire Line
-	9800 4250 9600 4250
-Text Label 9600 4250 0    50   ~ 0
+	9900 4650 9700 4650
+Text Label 9700 4650 0    50   ~ 0
 IO13
 Wire Wire Line
-	9800 4550 9400 4550
-Wire Wire Line
-	9800 2750 9400 2750
-$Comp
-L power:GND #PWR0119
-U 1 1 5F8C9874
-P 9400 2750
-F 0 "#PWR0119" H 9400 2500 50  0001 C CNN
-F 1 "GND" H 9405 2577 50  0000 C CNN
-F 2 "" H 9400 2750 50  0001 C CNN
-F 3 "" H 9400 2750 50  0001 C CNN
-	1    9400 2750
-	1    0    0    -1  
-$EndComp
+	9900 4750 9350 4750
 $Comp
 L power:GND #PWR0120
 U 1 1 5F8C9F4B
-P 9400 4550
-F 0 "#PWR0120" H 9400 4300 50  0001 C CNN
-F 1 "GND" H 9405 4377 50  0000 C CNN
-F 2 "" H 9400 4550 50  0001 C CNN
-F 3 "" H 9400 4550 50  0001 C CNN
-	1    9400 4550
+P 9350 4750
+F 0 "#PWR0120" H 9350 4500 50  0001 C CNN
+F 1 "GND" H 9355 4577 50  0000 C CNN
+F 2 "" H 9350 4750 50  0001 C CNN
+F 3 "" H 9350 4750 50  0001 C CNN
+	1    9350 4750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9600 1250 9800 1250
+	9700 1150 9900 1150
 Wire Wire Line
-	9600 1350 9800 1350
+	9700 1250 9900 1250
 Wire Wire Line
-	9600 1450 9800 1450
+	9700 1350 9900 1350
 Wire Wire Line
-	9600 1550 9800 1550
+	9700 1450 9900 1450
 Wire Wire Line
-	9600 1650 9800 1650
+	9700 1550 9900 1550
 Wire Wire Line
-	9600 1750 9800 1750
+	9700 1650 9900 1650
 Wire Wire Line
-	9600 1850 9800 1850
+	9700 1750 9900 1750
 Wire Wire Line
-	9600 1950 9800 1950
+	9700 1850 9900 1850
 Wire Wire Line
-	9600 2050 9800 2050
+	9700 1950 9900 1950
 Wire Wire Line
-	9600 2150 9800 2150
+	9700 2050 9900 2050
 Wire Wire Line
-	9600 2250 9800 2250
+	9700 2150 9900 2150
 Wire Wire Line
-	9600 2350 9800 2350
-Text Label 9600 2350 0    50   ~ 0
+	9700 1050 9900 1050
+Text Label 9700 1050 0    50   ~ 0
 IO0
-Text Label 9600 2250 0    50   ~ 0
+Text Label 9700 2150 0    50   ~ 0
 IO4
-Text Label 9600 2150 0    50   ~ 0
+Text Label 9700 2050 0    50   ~ 0
 IO16
-Text Label 9600 2050 0    50   ~ 0
+Text Label 9700 1950 0    50   ~ 0
 IO17
-Text Label 9600 1950 0    50   ~ 0
+Text Label 9700 1850 0    50   ~ 0
 IO5
-Text Label 9600 1850 0    50   ~ 0
+Text Label 9700 1750 0    50   ~ 0
 IO18
-Text Label 9600 1750 0    50   ~ 0
+Text Label 9700 1650 0    50   ~ 0
 IO19
-Text Label 9600 1650 0    50   ~ 0
+Text Label 9700 1550 0    50   ~ 0
 IO21
-Text Label 9600 1550 0    50   ~ 0
+Text Label 9700 1450 0    50   ~ 0
 RX
-Text Label 9600 1450 0    50   ~ 0
+Text Label 9700 1350 0    50   ~ 0
 TX
-Text Label 9600 1350 0    50   ~ 0
+Text Label 9700 1250 0    50   ~ 0
 IO22
-Text Label 9600 1250 0    50   ~ 0
+Text Label 9700 1150 0    50   ~ 0
 IO23
 Wire Wire Line
-	9800 2450 9600 2450
-Text Label 9600 2450 0    50   ~ 0
+	9900 2250 9700 2250
+Text Label 9700 2250 0    50   ~ 0
 IO2
 Text Label 1250 1150 0    50   ~ 0
 IO22
@@ -378,8 +343,8 @@ IO0
 Wire Wire Line
 	1150 1750 1250 1750
 Wire Wire Line
-	9800 2550 9600 2550
-Text Label 9600 2550 0    50   ~ 0
+	9900 2350 9700 2350
+Text Label 9700 2350 0    50   ~ 0
 IO15
 Text HLabel 1100 2200 0    50   Input ~ 0
 3v3_MCU
@@ -423,11 +388,7 @@ Connection ~ 4350 2950
 Wire Notes Line
 	11000 700  9000 700 
 Wire Notes Line
-	9000 700  9000 5000
-Wire Notes Line
-	9000 5000 11000 5000
-Wire Notes Line
-	11000 700  11000 5000
+	9000 5450 11000 5450
 Wire Notes Line
 	3400 2300 8000 2300
 Wire Notes Line
@@ -438,15 +399,11 @@ Wire Notes Line
 	3400 5450 3400 2300
 Text Notes 3500 2450 0    50   ~ 0
 MCU
-Text Label 9400 2650 0    50   ~ 0
+Text Label 9500 4950 0    50   ~ 0
 5V
-Text Label 9400 4450 0    50   ~ 0
-3v3
 Wire Wire Line
-	9400 4450 9800 4450
-Wire Wire Line
-	9800 4350 9400 4350
-Text Label 9400 4350 0    50   ~ 0
+	9900 2550 9500 2550
+Text Label 9500 2550 0    50   ~ 0
 3v3_MCU
 Text Label 3950 3250 0    50   ~ 0
 3v3_MCU
@@ -473,7 +430,7 @@ Text Label 1250 2200 0    50   ~ 0
 Text Label 1250 2100 0    50   ~ 0
 5V
 Wire Wire Line
-	9400 2650 9800 2650
+	9500 4950 9900 4950
 Wire Notes Line
 	600  650  1850 650 
 Wire Notes Line
@@ -486,8 +443,106 @@ Text Notes 650  750  0    50   ~ 0
 labels\n
 Text Notes 9100 850  0    50   ~ 0
 Main pin Headers\n
-Text Label 9600 3050 0    50   ~ 0
+Text Label 9700 3450 0    50   ~ 0
 RST
 Wire Wire Line
-	9600 3050 9800 3050
+	9700 3450 9900 3450
+Wire Wire Line
+	9900 2450 9350 2450
+$Comp
+L power:GND #PWR0119
+U 1 1 5F8D40E5
+P 9350 2450
+F 0 "#PWR0119" H 9350 2200 50  0001 C CNN
+F 1 "GND" H 9355 2277 50  0000 C CNN
+F 2 "" H 9350 2450 50  0001 C CNN
+F 3 "" H 9350 2450 50  0001 C CNN
+	1    9350 2450
+	1    0    0    -1  
+$EndComp
+Text Label 9500 4850 0    50   ~ 0
+Vin
+Wire Wire Line
+	9500 4850 9900 4850
+Text HLabel 1100 2400 0    50   Output ~ 0
+Vin
+Wire Wire Line
+	1100 2400 1250 2400
+Text Label 1250 2400 0    50   ~ 0
+Vin
+Wire Wire Line
+	9500 2650 9900 2650
+Text Label 9500 2650 0    50   ~ 0
+3v3
+Wire Wire Line
+	9900 3350 9350 3350
+$Comp
+L power:GND #PWR0128
+U 1 1 5F982B4C
+P 9350 3350
+F 0 "#PWR0128" H 9350 3100 50  0001 C CNN
+F 1 "GND" H 9355 3177 50  0000 C CNN
+F 2 "" H 9350 3350 50  0001 C CNN
+F 3 "" H 9350 3350 50  0001 C CNN
+	1    9350 3350
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	9000 700  9000 5450
+Wire Notes Line
+	11000 700  11000 5450
+$Comp
+L Connector:Conn_01x21_Female J5
+U 1 1 5FA06BF5
+P 10100 2050
+F 0 "J5" H 10128 2076 50  0000 L CNN
+F 1 "main pin header fight" H 10128 1985 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x21_P2.54mm_Vertical" H 10100 2050 50  0001 C CNN
+F 3 "~" H 10100 2050 50  0001 C CNN
+	1    10100 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 2750 9900 2750
+Wire Wire Line
+	9900 2850 9850 2850
+Wire Wire Line
+	9850 2950 9900 2950
+Wire Wire Line
+	9900 3050 9850 3050
+Wire Wire Line
+	9850 5050 9900 5050
+Wire Wire Line
+	9850 5350 9900 5350
+Wire Wire Line
+	9850 5150 9900 5150
+$Comp
+L Connector:Conn_01x21_Female J6
+U 1 1 5FA047AE
+P 10100 4350
+F 0 "J6" H 10128 4376 50  0000 L CNN
+F 1 "main pin header left" H 10128 4285 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x21_P2.54mm_Vertical" H 10100 4350 50  0001 C CNN
+F 3 "~" H 10100 4350 50  0001 C CNN
+	1    10100 4350
+	1    0    0    -1  
+$EndComp
+Text GLabel 9850 5050 0    50   Input ~ 0
+INT_IO
+Text GLabel 9850 5150 0    50   Input ~ 0
+3v3_EN
+Text GLabel 9850 5250 0    50   Input ~ 0
+5V_EN
+Text GLabel 9850 5350 0    50   Input ~ 0
+CH_DIS
+Wire Wire Line
+	9850 5250 9900 5250
+Text GLabel 9850 2750 0    50   Input ~ 0
+exp7
+Text GLabel 9850 2850 0    50   Input ~ 0
+exp6
+Text GLabel 9850 2950 0    50   Input ~ 0
+exp5
+Text GLabel 9850 3050 0    50   Input ~ 0
+exp4
 $EndSCHEMATC
