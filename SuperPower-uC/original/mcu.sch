@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 7
 Title "SuperPower-uC"
-Date "2020-10-15"
+Date "2020-10-27"
 Rev "0.1"
 Comp ""
 Comment1 "Licence: CERN-OHL-W"
@@ -385,33 +385,33 @@ Text Label 6650 1550 0    50   ~ 0
 DTR
 Wire Wire Line
 	7550 1400 7700 1400
-Text Notes 5450 1450 0    50   ~ 0
+Text Notes 5500 1450 0    50   ~ 0
 Autoflash circuit\n\nDTR RTS   EN IO0\n\n 1   1     1   1\n 0   0     1   1\n 1   0     0   1\n 0   1     1   0
 Wire Notes Line
-	5400 750  6200 750 
+	5450 750  6250 750 
 Wire Notes Line
-	6200 1500 5400 1500
+	6250 1500 5450 1500
 Wire Notes Line
-	5400 1500 5400 750 
+	5450 1500 5450 750 
 Wire Notes Line
-	5800 900  5800 1500
+	5850 900  5850 1500
 Text Notes 7100 700  2    50   ~ 10
 Autoflash/reset circuit and soft start circuit
 Wire Notes Line
-	5350 600  8650 600 
+	5350 600  8800 600 
 Wire Notes Line
-	8650 2200 5350 2200
+	8800 2800 5350 2800
 Wire Notes Line
-	5350 2200 5350 600 
+	5350 2800 5350 600 
 Wire Notes Line
-	8650 600  8650 2200
+	8800 600  8800 2800
 Connection ~ 7550 1400
 Wire Notes Line
-	5400 1100 6200 1100
+	5450 1100 6250 1100
 Wire Notes Line
-	5400 900  6200 900 
+	5450 900  6250 900 
 Wire Notes Line
-	6200 750  6200 1500
+	6250 750  6250 1500
 Wire Wire Line
 	6850 1400 7550 1400
 Wire Wire Line
@@ -460,51 +460,51 @@ $EndComp
 $Comp
 L Device:LED D6
 U 1 1 5F8952EC
-P 2550 5100
-F 0 "D6" V 2589 4982 50  0000 R CNN
-F 1 "RXT" V 2498 4982 50  0000 R CNN
-F 2 "" H 2550 5100 50  0001 C CNN
-F 3 "~" H 2550 5100 50  0001 C CNN
-	1    2550 5100
+P 2550 5400
+F 0 "D6" V 2589 5282 50  0000 R CNN
+F 1 "RXT" V 2498 5282 50  0000 R CNN
+F 2 "" H 2550 5400 50  0001 C CNN
+F 3 "~" H 2550 5400 50  0001 C CNN
+	1    2550 5400
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:LED D7
 U 1 1 5F8969D8
-P 2950 5100
-F 0 "D7" V 2989 4982 50  0000 R CNN
-F 1 "TXT" V 2898 4982 50  0000 R CNN
-F 2 "" H 2950 5100 50  0001 C CNN
-F 3 "~" H 2950 5100 50  0001 C CNN
-	1    2950 5100
+P 2950 5400
+F 0 "D7" V 2989 5282 50  0000 R CNN
+F 1 "TXT" V 2898 5282 50  0000 R CNN
+F 2 "" H 2950 5400 50  0001 C CNN
+F 3 "~" H 2950 5400 50  0001 C CNN
+	1    2950 5400
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_Small R22
 U 1 1 5F89B65F
-P 2550 4750
-F 0 "R22" H 2609 4796 50  0000 L CNN
-F 1 "270" H 2609 4705 50  0000 L CNN
-F 2 "" H 2550 4750 50  0001 C CNN
-F 3 "~" H 2550 4750 50  0001 C CNN
-	1    2550 4750
+P 2550 5050
+F 0 "R22" H 2609 5096 50  0000 L CNN
+F 1 "270" H 2609 5005 50  0000 L CNN
+F 2 "" H 2550 5050 50  0001 C CNN
+F 3 "~" H 2550 5050 50  0001 C CNN
+	1    2550 5050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R25
 U 1 1 5F89BC91
-P 2950 4750
-F 0 "R25" H 3009 4796 50  0000 L CNN
-F 1 "270" H 3009 4705 50  0000 L CNN
-F 2 "" H 2950 4750 50  0001 C CNN
-F 3 "~" H 2950 4750 50  0001 C CNN
-	1    2950 4750
+P 2950 5050
+F 0 "R25" H 3009 5096 50  0000 L CNN
+F 1 "270" H 3009 5005 50  0000 L CNN
+F 2 "" H 2950 5050 50  0001 C CNN
+F 3 "~" H 2950 5050 50  0001 C CNN
+	1    2950 5050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2950 4850 2950 4950
+	2950 5150 2950 5250
 Wire Wire Line
-	2550 4850 2550 4950
+	2550 5150 2550 5250
 Text Label 2700 1150 2    50   ~ 0
 VBUS
 Text Label 850  3200 1    50   ~ 0
@@ -549,31 +549,31 @@ TXT
 Text Label 2850 2300 0    50   ~ 0
 VIO
 Wire Wire Line
-	2550 4650 2550 4550
+	2550 4950 2550 4850
 Wire Wire Line
-	2950 4550 2950 4650
+	2950 4850 2950 4950
 Wire Wire Line
-	2950 4550 2950 4450
-Text Label 2950 4450 0    50   ~ 0
+	2950 4850 2950 4750
+Text Label 2950 4750 0    50   ~ 0
 VIO
-Text Label 2950 5400 2    50   ~ 0
+Text Label 2950 5700 2    50   ~ 0
 TXT
-Text Label 2550 5400 2    50   ~ 0
+Text Label 2550 5700 2    50   ~ 0
 RXT
 Wire Wire Line
-	2950 5250 2950 5400
+	2950 5550 2950 5700
 Wire Wire Line
-	2550 5250 2550 5400
-Text Notes 2400 4350 0    50   ~ 10
+	2550 5550 2550 5700
+Text Notes 2400 4650 0    50   ~ 10
 Transmit and Receive Toggle
 Wire Notes Line
-	2350 4250 3650 4250
+	2350 4550 3650 4550
 Wire Notes Line
-	3650 4250 3650 5600
+	3650 4550 3650 6150
 Wire Notes Line
-	3650 5600 2350 5600
+	3650 6150 2350 6150
 Wire Notes Line
-	2350 4250 2350 5600
+	2350 4550 2350 6150
 Text Notes 700  700  0    50   ~ 10
 Interface
 Text Label 1750 2350 0    50   ~ 0
@@ -779,37 +779,37 @@ Wire Wire Line
 Wire Wire Line
 	2700 1150 2700 1300
 Wire Wire Line
-	2950 4550 3350 4550
+	2950 4850 3350 4850
 Text Label 3200 1350 0    50   ~ 0
 RSTb
 Wire Wire Line
 	3400 1350 3200 1350
-Connection ~ 2950 4550
+Connection ~ 2950 4850
 Wire Wire Line
-	2550 4550 2950 4550
+	2550 4850 2950 4850
 Wire Wire Line
 	3900 950  3900 800 
 Text Label 3900 800  0    50   ~ 0
 VIO
 Wire Wire Line
 	2850 2300 2850 2450
-Text Notes 3100 5500 0    50   ~ 0
+Text Notes 3100 5800 0    50   ~ 0
 Pull-up
-Text Label 3350 5400 2    50   ~ 0
+Text Label 3350 5700 2    50   ~ 0
 RSTb
 Wire Wire Line
-	3350 4850 3350 5400
+	3350 5350 3350 5700
 Wire Wire Line
-	3350 4650 3350 4550
+	3350 5150 3350 4850
 $Comp
 L Device:R_Small R26
 U 1 1 5F850123
-P 3350 4750
-F 0 "R26" H 3409 4796 50  0000 L CNN
-F 1 "4.7k" H 3409 4705 50  0000 L CNN
-F 2 "" H 3350 4750 50  0001 C CNN
-F 3 "~" H 3350 4750 50  0001 C CNN
-	1    3350 4750
+P 3350 5250
+F 0 "R26" H 3409 5296 50  0000 L CNN
+F 1 "4.7k" H 3409 5205 50  0000 L CNN
+F 2 "" H 3350 5250 50  0001 C CNN
+F 3 "~" H 3350 5250 50  0001 C CNN
+	1    3350 5250
 	1    0    0    -1  
 $EndComp
 Text Notes 2500 3200 0    39   ~ 0
@@ -825,11 +825,11 @@ Wire Wire Line
 Text Notes 3800 800  0    39   ~ 0
 2
 Wire Notes Line
-	5200 600  5200 4100
+	5200 600  5200 4400
 Wire Notes Line
-	5200 4100 2350 4100
+	5200 4400 2350 4400
 Wire Notes Line
-	2350 600  2350 4100
+	2350 600  2350 4400
 NoConn ~ 4400 2950
 NoConn ~ 4400 3050
 NoConn ~ 4400 3150
@@ -1134,4 +1134,12 @@ Wire Wire Line
 	10200 5750 9950 5750
 Text Label 9950 5750 2    50   ~ 0
 3v3_EN
+Text Notes 2400 6100 0    50   ~ 0
+Indicator LEDs showing\nthe serial bus status.\nAn RSTb pull-up resistor
+Text Notes 7900 2700 0    50   ~ 0
+Soft start circuit:\nAllows the regulator\nto be in steady state\nbefore starting\nthe MCU\n(prevent brownout)
+Text Notes 6650 2700 0    50   ~ 0
+Autoflash/reset circuit:\nAllows the USB-UART\nbridge to reset the MCU\nand to boot the MCU\nin flashing\n(programmation) mode.
+Text Notes 2500 4300 0    50   ~ 0
+USB - UART bridge:\nAllows the MCU to communicate and to be flashed\n(programmed) via the USB bus
 $EndSCHEMATC
