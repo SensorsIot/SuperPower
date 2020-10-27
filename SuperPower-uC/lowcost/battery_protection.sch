@@ -61,7 +61,7 @@ Wire Wire Line
 	5300 3350 5450 3350
 Connection ~ 5450 3900
 Wire Wire Line
-	5450 3250 4950 3250
+	5450 3250 5150 3250
 Wire Wire Line
 	5300 3550 4950 3550
 $Comp
@@ -151,20 +151,6 @@ F 3 "~" H 4950 3550 50  0001 C CNN
 	1    4950 3550
 	-1   0    0    1   
 $EndComp
-$Comp
-L power:PWR_FLAG #FLG0103
-U 1 1 5F859212
-P 6750 3900
-F 0 "#FLG0103" H 6750 3975 50  0001 C CNN
-F 1 "PWR_FLAG" H 6750 4073 50  0000 C CNN
-F 2 "" H 6750 3900 50  0001 C CNN
-F 3 "~" H 6750 3900 50  0001 C CNN
-	1    6750 3900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6550 3900 6750 3900
-Connection ~ 6550 3900
 Text Notes 3400 2350 0    50   ~ 0
 Protection circuit
 Wire Notes Line
@@ -211,10 +197,24 @@ Wire Wire Line
 	4300 3050 4300 3250
 Wire Wire Line
 	4800 3250 4950 3250
-Connection ~ 4950 3250
 Wire Wire Line
 	4500 3250 4300 3250
 Connection ~ 4300 3250
 Wire Wire Line
 	4300 3250 4300 3350
+Connection ~ 4950 3250
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F9839DC
+P 5150 3250
+F 0 "#FLG0101" H 5150 3325 50  0001 C CNN
+F 1 "PWR_FLAG" H 5150 3423 50  0000 C CNN
+F 2 "" H 5150 3250 50  0001 C CNN
+F 3 "~" H 5150 3250 50  0001 C CNN
+	1    5150 3250
+	1    0    0    -1  
+$EndComp
+Connection ~ 5150 3250
+Wire Wire Line
+	5150 3250 4950 3250
 $EndSCHEMATC

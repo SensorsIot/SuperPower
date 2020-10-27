@@ -33,19 +33,6 @@ F6 "CHARGE-DISABLE" I R 4300 3100 50
 F7 "VBAT" B L 3050 2550 50 
 $EndSheet
 $Sheet
-S 4950 4000 1250 1150
-U 5F63A00B
-F0 "RTC and Cut-Off Module" 50
-F1 "rtc_cut_off.sch" 50
-F2 "SCL" I R 6200 4100 50 
-F3 "SDA" B R 6200 4200 50 
-F4 "INT" O R 6200 4350 50 
-F5 "VBAT" I L 4950 4100 50 
-F6 "3.3V_EN" O R 6200 4600 50 
-F7 "5V_EN" O R 6200 4500 50 
-F8 "CHARGE-DISABLE" I L 4950 5000 50 
-$EndSheet
-$Sheet
 S 4900 2100 1250 1150
 U 5F63A0E9
 F0 "Regulator Module" 50
@@ -72,6 +59,7 @@ F7 "RST" I R 8100 2850 50
 F8 "GPIO0" I R 8100 2950 50 
 F9 "3v3" I L 6850 2250 50 
 F10 "5V" I L 6850 2400 50 
+F11 "Vin" O R 8100 2400 50 
 $EndSheet
 Wire Wire Line
 	3050 4350 2950 4350
@@ -82,15 +70,7 @@ Wire Wire Line
 Wire Wire Line
 	2550 2550 2900 2550
 Wire Wire Line
-	6850 2850 6150 2850
-Wire Wire Line
-	6850 3200 6650 3200
-Wire Wire Line
-	6650 4200 6200 4200
-Wire Wire Line
-	6850 3100 6600 3100
-Wire Wire Line
-	6600 4100 6200 4100
+	6850 2850 6550 2850
 Wire Wire Line
 	4950 4100 4700 4100
 Wire Wire Line
@@ -113,7 +93,7 @@ Text Notes 5150 2500 0    50   ~ 0
 5V Buck/Boost
 Text Notes 7400 2450 0    50   ~ 0
 MCU
-Text Notes 5300 4350 0    50   ~ 0
+Text Notes 5250 4350 0    50   ~ 0
 RTC
 Text Notes 3600 4350 0    50   ~ 0
 USB-C
@@ -121,25 +101,7 @@ Text Notes 3600 4450 0    50   ~ 0
 Solar input
 Text Notes 3600 4550 0    50   ~ 0
 Solder Pads
-Wire Wire Line
-	4300 2850 4600 2850
-Wire Wire Line
-	4600 2850 4600 3500
-Wire Wire Line
-	4600 3500 6600 3500
-Connection ~ 6600 3500
-Wire Wire Line
-	6600 3500 6600 4100
-Wire Wire Line
-	4300 2950 4550 2950
-Wire Wire Line
-	4550 2950 4550 3550
-Wire Wire Line
-	4550 3550 6650 3550
-Connection ~ 6650 3550
-Wire Wire Line
-	6650 3550 6650 4200
-Text Notes 5300 4550 0    50   ~ 0
+Text Notes 5250 4550 0    50   ~ 0
 Manual Wake
 Wire Wire Line
 	8100 3150 8350 3150
@@ -153,27 +115,8 @@ Wire Wire Line
 	8400 3050 8400 5450
 Wire Wire Line
 	8400 5450 4700 5450
-Text Notes 5300 4650 0    50   ~ 0
+Text Notes 5250 4650 0    50   ~ 0
 Bypass Jumper
-Wire Wire Line
-	6650 3200 6650 3550
-Wire Wire Line
-	6600 3100 6600 3500
-Wire Wire Line
-	6200 4350 6400 4350
-Wire Wire Line
-	6400 4350 6400 3450
-Wire Wire Line
-	6400 3000 6150 3000
-Wire Wire Line
-	4300 2700 4650 2700
-Wire Wire Line
-	4650 2700 4650 3450
-Wire Wire Line
-	4650 3450 6400 3450
-Connection ~ 6400 3450
-Wire Wire Line
-	6400 3450 6400 3000
 $Sheet
 S 3050 4000 1250 1150
 U 5F63B107
@@ -184,6 +127,7 @@ F3 "TX" O R 4300 4750 50
 F4 "RX" I R 4300 4850 50 
 F5 "RST" O R 4300 5100 50 
 F6 "GPIO0" O R 4300 5000 50 
+F7 "Vin" I L 3050 5000 50 
 $EndSheet
 Text Notes 3450 2500 0    50   ~ 0
 Power on INT
@@ -227,9 +171,9 @@ Wire Wire Line
 Connection ~ 2900 2550
 Wire Wire Line
 	2900 2550 3050 2550
-Text Notes 5300 4450 0    50   ~ 0
+Text Notes 5250 4450 0    50   ~ 0
 IO Expander
-Text Notes 5300 4750 0    50   ~ 0
+Text Notes 5250 4750 0    50   ~ 0
 I2C pullup
 Wire Wire Line
 	6500 4600 6500 2550
@@ -257,4 +201,80 @@ Wire Wire Line
 	4800 4650 4800 5000
 Wire Wire Line
 	4800 5000 4950 5000
+$Sheet
+S 4950 4000 1250 1150
+U 5F63A00B
+F0 "RTC and Cut-Off Module" 50
+F1 "rtc_cut_off.sch" 50
+F2 "SCL" I R 6200 4100 50 
+F3 "SDA" B R 6200 4200 50 
+F4 "INT" O R 6200 4350 50 
+F5 "VBAT" I L 4950 4100 50 
+F6 "5V_EN" O R 6200 4500 50 
+F7 "CHARGE-DISABLE" I L 4950 5000 50 
+F8 "3v3V_EN" O R 6200 4600 50 
+F9 "3v3_MCU" I R 6200 4700 50 
+$EndSheet
+Wire Wire Line
+	8100 2400 8600 2400
+Wire Wire Line
+	8600 2400 8600 5650
+Wire Wire Line
+	8600 5650 2850 5650
+Wire Wire Line
+	2850 5650 2850 5000
+Wire Wire Line
+	2850 5000 3050 5000
+Wire Wire Line
+	6200 4350 6400 4350
+Wire Wire Line
+	6400 3000 6150 3000
+Wire Wire Line
+	6400 3450 6400 3000
+Wire Wire Line
+	6400 4350 6400 3450
+Connection ~ 6400 3450
+Wire Wire Line
+	4650 3450 6400 3450
+Wire Wire Line
+	4300 2700 4650 2700
+Wire Wire Line
+	4650 2700 4650 3450
+Wire Wire Line
+	4300 2850 4600 2850
+Wire Wire Line
+	4300 2950 4550 2950
+Wire Wire Line
+	4550 2950 4550 3550
+Wire Wire Line
+	4600 2850 4600 3500
+Wire Wire Line
+	6600 4100 6200 4100
+Wire Wire Line
+	6650 4200 6200 4200
+Wire Wire Line
+	6850 3100 6600 3100
+Wire Wire Line
+	6850 3200 6650 3200
+Wire Wire Line
+	6650 3200 6650 3550
+Wire Wire Line
+	6650 3550 6650 4200
+Connection ~ 6650 3550
+Wire Wire Line
+	4550 3550 6650 3550
+Wire Wire Line
+	6600 3100 6600 3500
+Wire Wire Line
+	6600 3500 6600 4100
+Connection ~ 6600 3500
+Wire Wire Line
+	4600 3500 6600 3500
+Wire Wire Line
+	6550 2850 6550 4700
+Wire Wire Line
+	6550 4700 6200 4700
+Connection ~ 6550 2850
+Wire Wire Line
+	6550 2850 6150 2850
 $EndSCHEMATC
