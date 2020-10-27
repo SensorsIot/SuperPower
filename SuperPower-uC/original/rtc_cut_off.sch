@@ -20,43 +20,41 @@ SDA
 Text HLabel 1600 1800 0    50   Input ~ 0
 VIN
 Text HLabel 1600 1950 0    50   Output ~ 0
-VOUT
+INT
 NoConn ~ 5900 3550
 $Comp
 L Device:R R18
 U 1 1 5F716104
-P 6100 3150
-F 0 "R18" V 6100 3200 50  0000 R CNN
-F 1 "10k" V 6200 3250 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6030 3150 50  0001 C CNN
-F 3 "~" H 6100 3150 50  0001 C CNN
-	1    6100 3150
+P 6600 3150
+F 0 "R18" V 6600 3200 50  0000 R CNN
+F 1 "10k" V 6700 3200 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6530 3150 50  0001 C CNN
+F 3 "~" H 6600 3150 50  0001 C CNN
+	1    6600 3150
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR025
 U 1 1 5F71610D
-P 6300 3850
-F 0 "#PWR025" H 6300 3600 50  0001 C CNN
-F 1 "GND" H 6305 3677 50  0000 C CNN
-F 2 "" H 6300 3850 50  0001 C CNN
-F 3 "" H 6300 3850 50  0001 C CNN
-	1    6300 3850
+P 6800 3850
+F 0 "#PWR025" H 6800 3600 50  0001 C CNN
+F 1 "GND" H 6805 3677 50  0000 C CNN
+F 2 "" H 6800 3850 50  0001 C CNN
+F 3 "" H 6800 3850 50  0001 C CNN
+	1    6800 3850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5900 3850 6300 3850
 Wire Wire Line
 	3650 3200 3650 3350
 $Comp
 L Device:R R19
 U 1 1 5F716136
-P 6550 3200
-F 0 "R19" H 6500 3150 50  0000 R CNN
-F 1 "10k" H 6500 3250 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6480 3200 50  0001 C CNN
-F 3 "~" H 6550 3200 50  0001 C CNN
-	1    6550 3200
+P 7050 3200
+F 0 "R19" H 7000 3150 50  0000 R CNN
+F 1 "10k" H 7000 3250 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6980 3200 50  0001 C CNN
+F 3 "~" H 7050 3200 50  0001 C CNN
+	1    7050 3200
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -83,9 +81,6 @@ F 3 "~" H 3650 3500 50  0001 C CNN
 	1    3650 3500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5900 3350 6550 3350
-Connection ~ 6550 3350
 $Comp
 L RV-3028-C7:RV-3028-C7 U3
 U 1 1 5F7160EF
@@ -108,10 +103,6 @@ Text Label 3650 2950 1    50   ~ 0
 VIN
 Wire Wire Line
 	3650 2850 3650 3100
-Text Label 7100 2900 1    50   ~ 0
-VIN
-Text Label 7450 3550 0    50   ~ 0
-VOUT
 Text Label 1850 1350 2    50   ~ 0
 SCL
 Text Label 1850 1500 2    50   ~ 0
@@ -119,26 +110,11 @@ SDA
 Text Label 1850 1800 2    50   ~ 0
 VIN
 Text Label 1850 1950 2    50   ~ 0
-VOUT
-Text Notes 6900 3750 0    50   Italic 0
-Example P-Channel Mosfet.\nCan be replaced by any other type.
-Text Notes 7900 3250 0    50   Italic 0
-If shorted, VIN is directly\nconnected to VOUT
+INT
 Text Notes 4000 3850 0    50   Italic 0
 i2c pullup\non another sheet
 Text Notes 3400 3000 2    50   Italic 0
-external\ntrigger\npin header, switch, etc.\ntrigger device must handle VIN
-$Comp
-L Device:Q_PMOS_GDS Q6
-U 1 1 5F71103F
-P 7000 3350
-F 0 "Q6" H 7250 3400 50  0000 C CNN
-F 1 "Q_PMOS_GDS" H 7450 3300 50  0000 C CNN
-F 2 "" H 7200 3450 50  0001 C CNN
-F 3 "~" H 7000 3350 50  0001 C CNN
-	1    7000 3350
-	1    0    0    -1  
-$EndComp
+external\ntrigger\npin header on board\ntrigger device must handle VIN
 Wire Wire Line
 	1600 1950 1850 1950
 Wire Wire Line
@@ -159,50 +135,24 @@ $EndComp
 Wire Wire Line
 	1600 1800 1950 1800
 Wire Wire Line
-	5900 3150 5950 3150
-Wire Wire Line
 	4500 3550 4250 3550
-$Comp
-L Connector:Conn_01x02_Male J5
-U 1 1 5F76444B
-P 7900 3400
-F 0 "J5" H 8000 3450 50  0000 C CNN
-F 1 "Conn_01x02_Male" H 7550 3350 50  0000 C CNN
-F 2 "" H 7900 3400 50  0001 C CNN
-F 3 "~" H 7900 3400 50  0001 C CNN
-	1    7900 3400
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6550 3350 6800 3350
-Wire Wire Line
-	7100 3550 7700 3550
-Wire Wire Line
-	7700 3550 7700 3400
-Wire Wire Line
-	7100 3150 7700 3150
-Wire Wire Line
-	7700 3150 7700 3300
 $Comp
 L Device:C C8
 U 1 1 5F716113
-P 6300 3600
-F 0 "C8" H 6415 3646 50  0000 L CNN
-F 1 "100nF" H 6415 3555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6338 3450 50  0001 C CNN
-F 3 "~" H 6300 3600 50  0001 C CNN
-	1    6300 3600
+P 6800 3600
+F 0 "C8" H 6915 3646 50  0000 L CNN
+F 1 "100nF" H 6915 3555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6838 3450 50  0001 C CNN
+F 3 "~" H 6800 3600 50  0001 C CNN
+	1    6800 3600
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6300 3750 6300 3850
-Connection ~ 6300 3850
+	6800 3750 6800 3850
+Connection ~ 6800 3850
 Connection ~ 3650 3350
 Wire Wire Line
 	3650 3350 4500 3350
-Connection ~ 6550 3050
-Wire Wire Line
-	7100 2750 7100 3050
 $Comp
 L Connector:Conn_01x02_Male J4
 U 1 1 5F78D93A
@@ -215,22 +165,46 @@ F 3 "~" H 3450 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6550 3050 7100 3050
+	6950 3150 6950 3850
 Wire Wire Line
-	7100 3050 7100 3150
-Connection ~ 7100 3150
-Connection ~ 7100 3050
+	6950 3850 6800 3850
 Wire Wire Line
-	5900 3050 6300 3050
+	6750 3150 6950 3150
 Wire Wire Line
-	6450 3150 6450 3850
+	6800 3450 6800 3050
+Connection ~ 6800 3050
 Wire Wire Line
-	6450 3850 6300 3850
+	6800 3050 7050 3050
 Wire Wire Line
-	6250 3150 6450 3150
+	7050 3350 7850 3350
+Connection ~ 7050 3350
+Text Label 7650 3350 0    50   ~ 0
+INT
+Text Label 6600 2800 1    50   ~ 0
+VIN
 Wire Wire Line
-	6300 3450 6300 3050
-Connection ~ 6300 3050
+	6600 2700 6600 3050
+Connection ~ 6600 3050
 Wire Wire Line
-	6300 3050 6550 3050
+	6600 3050 6800 3050
+Connection ~ 5900 3150
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5FABB3BB
+P 5900 3150
+F 0 "#FLG0102" H 5900 3225 50  0001 C CNN
+F 1 "PWR_FLAG" H 5650 3200 50  0000 C CNN
+F 2 "" H 5900 3150 50  0001 C CNN
+F 3 "~" H 5900 3150 50  0001 C CNN
+	1    5900 3150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5900 3150 6450 3150
+Wire Wire Line
+	5900 3050 6600 3050
+Wire Wire Line
+	5900 3350 7050 3350
+Wire Wire Line
+	5900 3850 6800 3850
 $EndSCHEMATC
