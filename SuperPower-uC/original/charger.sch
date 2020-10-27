@@ -9211,70 +9211,8 @@ Wire Wire Line
 Wire Wire Line
 	6700 1500 6400 1500
 Connection ~ 6700 1500
-$Comp
-L Device:LED_ARGB D1
-U 1 1 5F82327A
-P 1650 1700
-F 0 "D1" H 1650 2197 50  0000 C CNN
-F 1 "LED_ARGB" H 1650 2106 50  0000 C CNN
-F 2 "" H 1650 1650 50  0001 C CNN
-F 3 "~" H 1650 1650 50  0001 C CNN
-	1    1650 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US R4
-U 1 1 5F829517
-P 1200 1500
-F 0 "R4" V 995 1500 50  0000 C CNN
-F 1 "TBDOhm" V 1086 1500 50  0000 C CNN
-F 2 "" V 1240 1490 50  0001 C CNN
-F 3 "~" H 1200 1500 50  0001 C CNN
-	1    1200 1500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1350 1500 1450 1500
-$Comp
-L Device:R_US R5
-U 1 1 5F82E68E
-P 1200 1700
-F 0 "R5" V 995 1700 50  0000 C CNN
-F 1 "TBDOhm" V 1086 1700 50  0000 C CNN
-F 2 "" V 1240 1690 50  0001 C CNN
-F 3 "~" H 1200 1700 50  0001 C CNN
-	1    1200 1700
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R6
-U 1 1 5F82E97C
-P 1200 1900
-F 0 "R6" V 995 1900 50  0000 C CNN
-F 1 "TBDOhm" V 1086 1900 50  0000 C CNN
-F 2 "" V 1240 1890 50  0001 C CNN
-F 3 "~" H 1200 1900 50  0001 C CNN
-	1    1200 1900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1350 1700 1450 1700
-Wire Wire Line
-	1350 1900 1450 1900
 Text Notes 1150 1000 0    50   ~ 0
 RGB LED (dual fonction) :\n- Charging Status\n- Battery Fuel Gauge
-Text Label 800  1500 0    50   ~ 0
-LED_R
-Wire Wire Line
-	800  1500 1050 1500
-Wire Wire Line
-	800  1700 1050 1700
-Wire Wire Line
-	800  1900 1050 1900
-Text Label 800  1700 0    50   ~ 0
-LED_G
-Text Label 800  1900 0    50   ~ 0
-LED_B
 Wire Wire Line
 	2500 2700 3150 2700
 Text Notes 8550 5650 0    50   ~ 0
