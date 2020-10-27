@@ -444,8 +444,6 @@ F 3 "~" H 6700 1150 50  0001 C CNN
 	1    6700 1150
 	0    -1   -1   0   
 $EndComp
-Text HLabel 1050 1200 1    50   Input ~ 0
-VBUS
 Wire Wire Line
 	3850 1400 3750 1400
 $Comp
@@ -540,8 +538,6 @@ Text Label 1100 1350 0    50   ~ 0
 VBUS
 Text Label 1100 1500 0    50   ~ 0
 3v3_MCU
-Wire Wire Line
-	1050 1200 1050 1350
 Wire Wire Line
 	1050 1350 1100 1350
 Wire Wire Line
