@@ -1037,7 +1037,7 @@ $EndComp
 NoConn ~ 5000 2350
 NoConn ~ 5000 2450
 NoConn ~ 5000 2550
-Text Notes 5200 3600 0    394  ~ 0
+Text Notes 5200 3500 0    394  ~ 0
 WORK IN PROGRESS
 Wire Wire Line
 	9950 5650 10200 5650

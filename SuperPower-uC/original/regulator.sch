@@ -200,7 +200,7 @@ Wire Wire Line
 Connection ~ 8300 1850
 Wire Wire Line
 	8300 1850 7950 1850
-Text Label 7950 2850 0    50   ~ 0
+Text Label 7950 2850 2    50   ~ 0
 3v3_EN
 $Comp
 L Device:L L581
@@ -295,30 +295,30 @@ Wire Wire Line
 	4700 5000 4700 5150
 Wire Wire Line
 	5600 4800 5550 4800
-Text Label 4750 4050 0    50   ~ 0
+Text Label 5000 4050 2    50   ~ 0
 5V_EN
 Wire Wire Line
 	5150 4600 5350 4600
 $Comp
 L Device:C_Small C503
 U 1 1 5F878340
-P 8050 4700
-F 0 "C503" H 7958 4654 50  0000 R CNN
-F 1 "2.2μF" H 7958 4745 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8050 4700 50  0001 C CNN
-F 3 "~" H 8050 4700 50  0001 C CNN
-	1    8050 4700
+P 8050 4800
+F 0 "C503" H 7958 4754 50  0000 R CNN
+F 1 "2.2μF" H 7958 4845 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8050 4800 50  0001 C CNN
+F 3 "~" H 8050 4800 50  0001 C CNN
+	1    8050 4800
 	1    0    0    1   
 $EndComp
 $Comp
 L Device:CP_Small C504
 U 1 1 5F8791E6
-P 8350 4700
-F 0 "C504" H 8438 4746 50  0000 L CNN
-F 1 "220μF" H 8438 4655 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-12_Kemet-T_Pad1.50x2.35mm_HandSolder" H 8350 4700 50  0001 C CNN
-F 3 "~" H 8350 4700 50  0001 C CNN
-	1    8350 4700
+P 8350 4800
+F 0 "C504" H 8438 4846 50  0000 L CNN
+F 1 "220μF" H 8438 4755 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-12_Kemet-T_Pad1.50x2.35mm_HandSolder" H 8350 4800 50  0001 C CNN
+F 3 "~" H 8350 4800 50  0001 C CNN
+	1    8350 4800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -332,10 +332,6 @@ F 3 "" H 7000 5600 50  0001 C CNN
 	1    7000 5600
 	1    0    0    -1  
 $EndComp
-Connection ~ 8050 4600
-Connection ~ 8350 4600
-Wire Wire Line
-	8050 4600 8350 4600
 $Comp
 L power:GND #PWR0505
 U 1 1 5F883C83
@@ -390,8 +386,6 @@ Wire Wire Line
 Wire Wire Line
 	5600 5000 5600 5200
 Connection ~ 5600 5200
-Wire Wire Line
-	8350 4600 9250 4600
 NoConn ~ 7000 5450
 $Comp
 L Device:C_Small C502
@@ -413,10 +407,8 @@ Wire Wire Line
 	5100 5000 5100 5150
 Wire Wire Line
 	5100 5150 4700 5150
-Wire Wire Line
-	7000 4600 8050 4600
 NoConn ~ 7000 4950
-Text Notes 8450 4900 0    50   ~ 0
+Text Notes 8450 5000 0    50   ~ 0
 Low ESR Tantalum
 Wire Notes Line
 	3700 3600 3700 6000
@@ -613,14 +605,26 @@ Wire Wire Line
 Wire Notes Line
 	7350 900  7350 3350
 Wire Wire Line
-	8050 5600 8200 5600
+	8050 4900 8050 5500
 Wire Wire Line
-	8050 4800 8050 5600
+	7000 4600 8050 4600
 Wire Wire Line
-	8350 4800 8350 5600
+	8350 4700 8350 4600
+Connection ~ 8350 4600
 Wire Wire Line
-	8350 5600 8200 5600
-Connection ~ 8200 5600
-NoConn ~ 7950 2850
-NoConn ~ 5000 4050
+	8350 4600 9050 4600
+Wire Wire Line
+	8050 4700 8050 4600
+Connection ~ 8050 4600
+Wire Wire Line
+	8050 4600 8350 4600
+Wire Wire Line
+	8350 5500 8350 4900
+Wire Wire Line
+	8050 5500 8200 5500
+Wire Wire Line
+	8200 5600 8200 5500
+Connection ~ 8200 5500
+Wire Wire Line
+	8200 5500 8350 5500
 $EndSCHEMATC
