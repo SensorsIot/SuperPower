@@ -142,7 +142,7 @@ F 3 "" H 5950 2150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5950 1800 5950 2150
-Text Label 6250 1600 0    50   ~ 0
+Text Label 6600 1600 2    50   ~ 0
 3v3_MCU
 Wire Wire Line
 	5950 1600 6600 1600
@@ -241,10 +241,10 @@ F 3 "" H 10050 2400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10050 2150 10050 2400
-Text Label 10350 1950 0    50   ~ 0
+Text Label 10550 1950 2    50   ~ 0
 3v3
 Wire Wire Line
-	10050 1950 10700 1950
+	10050 1950 10550 1950
 Wire Notes Line
 	7350 900  10850 900 
 Wire Notes Line
@@ -431,8 +431,6 @@ Wire Wire Line
 	4400 4700 4650 4700
 Wire Wire Line
 	5550 4800 5550 4150
-Wire Wire Line
-	5550 4150 4400 4150
 Text Notes 850  2450 0    50   ~ 0
 Bypass jumpers are tri-state\nNo jumper = Permanent off\nJumper on 1 and 2 = Permanent on with MCU\nJumper on 2 and 3 = Tied to GPIO
 $Comp
@@ -597,12 +595,8 @@ Wire Wire Line
 	8050 5500 8200 5500
 Wire Wire Line
 	8200 5600 8200 5500
-Connection ~ 8200 5500
 Wire Wire Line
-	8350 5600 8200 5600
-Connection ~ 8200 5600
-NoConn ~ 7950 2850
-NoConn ~ 5000 4050
+	8350 5500 8200 5500
 $Comp
 L Device:Q_PMOS_GDS Q?
 U 1 1 5F93A677
@@ -636,4 +630,7 @@ Wire Wire Line
 Connection ~ 3950 2900
 Wire Wire Line
 	4400 2700 4250 2700
+Connection ~ 8200 5500
+Wire Wire Line
+	4400 4150 5550 4150
 $EndSCHEMATC
