@@ -9168,7 +9168,7 @@ Text Notes 3050 1400 0    50   ~ 0
  -> 3.2A is the max current value for the chip\nCommon settings : 10mohm -> 3.20A / 16mohm -> 2.00A\nLow Current sett. : 22mohm -> 1.45A / 33mohm -> 0.97A
 Text Notes 9150 3300 0    50   ~ 10
 Inductor Value Setting
-Text Notes 350  250  0    50   ~ 0
+Text Notes 950  950  0    50   ~ 0
 TODO :\nAdd Hierachical Block Connectors
 $Comp
 L Connector:Conn_01x02_Male J3
