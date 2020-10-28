@@ -47,17 +47,17 @@ Wire Wire Line
 	1150 1600 1750 1600
 Wire Wire Line
 	1150 1750 1750 1750
-Text Label 1350 1250 0    50   ~ 0
+Text Label 1750 1250 2    50   ~ 0
 INT
-Text Label 1350 950  0    50   ~ 0
+Text Label 1750 950  2    50   ~ 0
 3v3_EN
-Text Label 1350 1100 0    50   ~ 0
+Text Label 1750 1100 2    50   ~ 0
 5V_EN
-Text Label 1350 1450 0    50   ~ 0
+Text Label 1750 1450 2    50   ~ 0
 3v3_MCU
-Text Label 1350 1600 0    50   ~ 0
+Text Label 1750 1600 2    50   ~ 0
 3v3
-Text Label 1350 1750 0    50   ~ 0
+Text Label 1750 1750 2    50   ~ 0
 5V
 $Comp
 L power:GND #PWR0501
@@ -190,7 +190,7 @@ Text Notes 3300 2300 0    50   Italic 0
 RTC Bypass
 Wire Wire Line
 	1150 800  1750 800 
-Text Label 1350 800  0    50   ~ 0
+Text Label 1750 800  2    50   ~ 0
 VIN
 Wire Wire Line
 	1150 1450 1750 1450
@@ -227,7 +227,7 @@ $EndComp
 Text Label 4050 1500 2    50   ~ 0
 VIN
 Wire Wire Line
-	3950 3000 4700 3000
+	3950 2950 4700 2950
 Wire Wire Line
 	8800 2250 8800 2150
 Wire Notes Line
@@ -316,7 +316,7 @@ Wire Wire Line
 	4200 2000 4200 2100
 Connection ~ 3950 2850
 Wire Wire Line
-	3950 2850 3950 3000
+	3950 2850 3950 2950
 Wire Wire Line
 	3950 2350 3950 2400
 Wire Wire Line
@@ -325,7 +325,7 @@ Wire Wire Line
 	3950 1500 3950 2350
 Connection ~ 3950 2350
 Wire Wire Line
-	4700 2000 4700 3000
+	4700 2000 4700 2950
 Connection ~ 4700 2000
 $Comp
 L Device:C_Small C542
