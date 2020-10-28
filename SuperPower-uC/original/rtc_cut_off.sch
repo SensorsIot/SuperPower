@@ -62,12 +62,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR024
 U 1 1 5F716148
-P 3650 3650
-F 0 "#PWR024" H 3650 3400 50  0001 C CNN
-F 1 "GND" H 3655 3477 50  0000 C CNN
-F 2 "" H 3650 3650 50  0001 C CNN
-F 3 "" H 3650 3650 50  0001 C CNN
-	1    3650 3650
+P 3650 3750
+F 0 "#PWR024" H 3650 3500 50  0001 C CNN
+F 1 "GND" H 3655 3577 50  0000 C CNN
+F 2 "" H 3650 3750 50  0001 C CNN
+F 3 "" H 3650 3750 50  0001 C CNN
+	1    3650 3750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -99,7 +99,7 @@ Text Label 4250 3550 0    50   ~ 0
 SCL
 Text Label 4250 3650 0    50   ~ 0
 SDA
-Text Label 3650 2950 1    50   ~ 0
+Text Label 3650 2850 3    50   ~ 0
 VIN
 Wire Wire Line
 	3650 2850 3650 3100
@@ -176,11 +176,11 @@ Connection ~ 6800 3050
 Wire Wire Line
 	6800 3050 7050 3050
 Wire Wire Line
-	7050 3350 7850 3350
+	7050 3350 7400 3350
 Connection ~ 7050 3350
-Text Label 7650 3350 0    50   ~ 0
+Text Label 7400 3350 2    50   ~ 0
 INT
-Text Label 6600 2800 1    50   ~ 0
+Text Label 6600 2700 3    50   ~ 0
 VIN
 Wire Wire Line
 	6600 2700 6600 3050
@@ -207,4 +207,6 @@ Wire Wire Line
 	5900 3350 7050 3350
 Wire Wire Line
 	5900 3850 6800 3850
+Wire Wire Line
+	3650 3650 3650 3750
 $EndSCHEMATC
