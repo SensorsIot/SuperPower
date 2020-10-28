@@ -1019,21 +1019,6 @@ Wire Wire Line
 	6200 5700 6450 5700
 Text Label 6450 5700 2    50   ~ 0
 VBUS
-Wire Wire Line
-	1450 1450 1550 1450
-$Comp
-L power:PWR_FLAG #FLG?
-U 1 1 5F97EB10
-P 1450 1450
-AR Path="/5F639CFE/5F97EB10" Ref="#FLG?"  Part="1" 
-AR Path="/5F63A193/5F97EB10" Ref="#FLG0106"  Part="1" 
-F 0 "#FLG0106" H 1450 1525 50  0001 C CNN
-F 1 "PWR_FLAG" H 1700 1500 50  0000 C CNN
-F 2 "" H 1450 1450 50  0001 C CNN
-F 3 "~" H 1450 1450 50  0001 C CNN
-	1    1450 1450
-	0    -1   -1   0   
-$EndComp
 NoConn ~ 5000 2400
 NoConn ~ 5000 2500
 NoConn ~ 5000 2600
@@ -1043,7 +1028,6 @@ Wire Wire Line
 	9950 5700 10200 5700
 Text Label 9950 5700 2    50   ~ 0
 3v3_MCU
-Connection ~ 1550 1450
 Wire Wire Line
 	6600 5700 6600 5600
 $Comp
@@ -1083,41 +1067,9 @@ Wire Wire Line
 Wire Wire Line
 	1250 1600 1800 1600
 Wire Wire Line
-	1150 1600 1250 1600
-$Comp
-L power:PWR_FLAG #FLG?
-U 1 1 5F9CE27B
-P 1150 1600
-AR Path="/5F639CFE/5F9CE27B" Ref="#FLG?"  Part="1" 
-AR Path="/5F63A193/5F9CE27B" Ref="#FLG0109"  Part="1" 
-F 0 "#FLG0109" H 1150 1675 50  0001 C CNN
-F 1 "PWR_FLAG" H 1400 1650 50  0000 C CNN
-F 2 "" H 1150 1600 50  0001 C CNN
-F 3 "~" H 1150 1600 50  0001 C CNN
-	1    1150 1600
-	0    -1   -1   0   
-$EndComp
-Connection ~ 1250 1600
-Wire Wire Line
 	950  1150 950  1750
 Wire Wire Line
 	950  1750 1800 1750
-Wire Wire Line
-	850  1750 950  1750
-$Comp
-L power:PWR_FLAG #FLG?
-U 1 1 5F9D76D4
-P 850 1750
-AR Path="/5F639CFE/5F9D76D4" Ref="#FLG?"  Part="1" 
-AR Path="/5F63A193/5F9D76D4" Ref="#FLG0110"  Part="1" 
-F 0 "#FLG0110" H 850 1825 50  0001 C CNN
-F 1 "PWR_FLAG" H 1100 1800 50  0000 C CNN
-F 2 "" H 850 1750 50  0001 C CNN
-F 3 "~" H 850 1750 50  0001 C CNN
-	1    850  1750
-	0    -1   -1   0   
-$EndComp
-Connection ~ 950  1750
 Text Label 1800 1600 0    50   ~ 0
 3v3
 Text Label 1800 1750 0    50   ~ 0
