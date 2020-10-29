@@ -147,11 +147,7 @@ Text Label 6250 1600 0    50   ~ 0
 Wire Wire Line
 	5950 1600 6600 1600
 Wire Notes Line
-	3350 900  6850 900 
-Wire Notes Line
 	6850 900  6850 3350
-Wire Notes Line
-	6850 3350 3350 3350
 Text Notes 4400 1150 0    118  ~ 0
 MCU Regulator
 $Comp
@@ -256,7 +252,7 @@ Wire Notes Line
 Wire Notes Line
 	10850 3350 7350 3350
 Wire Notes Line
-	3350 3350 3350 900 
+	3150 3350 3150 900 
 Text Notes 8250 1150 0    118  ~ 0
 Peripheral Regulator
 $Comp
@@ -473,7 +469,7 @@ F 3 "~" H 4200 4150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4400 4050 5000 4050
-Text Notes 4300 2600 0    50   Italic 0
+Text Notes 3300 2400 0    50   Italic 0
 RTC Bypass
 Wire Wire Line
 	1150 800  1750 800 
@@ -481,40 +477,32 @@ Text Label 1350 800  0    50   ~ 0
 VIN
 Wire Wire Line
 	1150 1450 1750 1450
-Text Label 3650 2700 0    50   ~ 0
+Text Label 4400 2700 2    50   ~ 0
 INT
 $Comp
 L Connector:Conn_01x02_Male J?
 U 1 1 5F93A67D
-P 4500 2750
+P 3400 2650
 AR Path="/5F63A00B/5F93A67D" Ref="J?"  Part="1" 
 AR Path="/5F63A0E9/5F93A67D" Ref="J503"  Part="1" 
-F 0 "J503" H 4600 2800 50  0000 C CNN
-F 1 "Conn_01x02_Male" H 4600 2950 50  0000 C CNN
-F 2 "" H 4500 2750 50  0001 C CNN
-F 3 "~" H 4500 2750 50  0001 C CNN
-	1    4500 2750
-	-1   0    0    1   
+F 0 "J503" H 3500 2750 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 3500 2850 50  0000 C CNN
+F 2 "" H 3400 2650 50  0001 C CNN
+F 3 "~" H 3400 2650 50  0001 C CNN
+	1    3400 2650
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3950 2900 3950 3100
-Wire Wire Line
-	3950 2900 4300 2900
-Wire Wire Line
-	4300 2900 4300 2750
-Wire Wire Line
-	3950 2500 4300 2500
-Wire Wire Line
-	4300 2500 4300 2650
 Text HLabel 1150 800  0    50   Input ~ 0
 VIN
 Wire Wire Line
 	8300 1850 8900 1850
 $Comp
-L power:PWR_FLAG #FLG0101
+L power:PWR_FLAG #FLG0108
 U 1 1 5F9C255E
 P 5350 4600
-F 0 "#FLG0101" H 5350 4675 50  0001 C CNN
+F 0 "#FLG0108" H 5350 4675 50  0001 C CNN
 F 1 "PWR_FLAG" H 5350 4773 50  0000 C CNN
 F 2 "" H 5350 4600 50  0001 C CNN
 F 3 "~" H 5350 4600 50  0001 C CNN
@@ -569,20 +557,6 @@ $EndComp
 Wire Wire Line
 	8300 2400 8750 2400
 Connection ~ 8300 2400
-Connection ~ 3950 2900
-$Comp
-L Device:Q_PMOS_GDS Q?
-U 1 1 5F93A677
-P 3850 2700
-AR Path="/5F63A00B/5F93A677" Ref="Q?"  Part="1" 
-AR Path="/5F63A0E9/5F93A677" Ref="Q501"  Part="1" 
-F 0 "Q501" H 3700 2400 50  0000 C CNN
-F 1 "P-MOS" H 3750 2500 50  0000 C CNN
-F 2 "" H 4050 2800 50  0001 C CNN
-F 3 "~" H 3850 2700 50  0001 C CNN
-	1    3850 2700
-	1    0    0    -1  
-$EndComp
 Text Label 4050 1500 2    50   ~ 0
 VIN
 Wire Wire Line
@@ -590,7 +564,6 @@ Wire Wire Line
 Connection ~ 4200 1500
 Wire Wire Line
 	3950 1500 3950 2500
-Connection ~ 3950 2500
 Wire Wire Line
 	3950 3100 4800 3100
 Wire Wire Line
@@ -623,4 +596,37 @@ Wire Wire Line
 Connection ~ 8200 5600
 NoConn ~ 7950 2850
 NoConn ~ 5000 4050
+$Comp
+L Device:Q_PMOS_GDS Q?
+U 1 1 5F93A677
+P 4050 2700
+AR Path="/5F63A00B/5F93A677" Ref="Q?"  Part="1" 
+AR Path="/5F63A0E9/5F93A677" Ref="Q501"  Part="1" 
+F 0 "Q501" H 3900 2800 50  0000 C CNN
+F 1 "P-MOS" H 3900 2900 50  0000 C CNN
+F 2 "" H 4250 2800 50  0001 C CNN
+F 3 "~" H 4050 2700 50  0001 C CNN
+	1    4050 2700
+	-1   0    0    1   
+$EndComp
+Wire Notes Line
+	3150 3350 6850 3350
+Wire Notes Line
+	3150 900  6850 900 
+Wire Wire Line
+	3950 2500 3850 2500
+Wire Wire Line
+	3850 2500 3850 2650
+Wire Wire Line
+	3850 2650 3600 2650
+Connection ~ 3950 2500
+Wire Wire Line
+	3600 2750 3850 2750
+Wire Wire Line
+	3850 2750 3850 2900
+Wire Wire Line
+	3850 2900 3950 2900
+Connection ~ 3950 2900
+Wire Wire Line
+	4400 2700 4250 2700
 $EndSCHEMATC
