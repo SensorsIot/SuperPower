@@ -1022,8 +1022,6 @@ VBUS
 NoConn ~ 5000 2400
 NoConn ~ 5000 2500
 NoConn ~ 5000 2600
-Text Notes 5200 3550 0    394  ~ 0
-WORK IN PROGRESS
 Wire Wire Line
 	9950 5700 10200 5700
 Text Label 9950 5700 2    50   ~ 0
