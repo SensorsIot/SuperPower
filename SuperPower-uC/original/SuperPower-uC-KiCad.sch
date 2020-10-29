@@ -178,7 +178,7 @@ Wire Wire Line
 $Sheet
 S 3050 4000 1250 1150
 U 5F63B107
-F0 "Charger I/O" 50
+F0 "Charger inputs and USB IO" 50
 F1 "charger_io.sch" 50
 F2 "VBUS" O R 4300 5000 50 
 F3 "D+" I R 4300 4800 50 
