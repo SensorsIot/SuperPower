@@ -15,10 +15,8 @@ Comment4 ""
 $EndDescr
 Text HLabel 1300 1050 0    50   Output ~ 0
 VBUS
-Text HLabel 1300 1200 0    50   Output ~ 0
-VSOLAR
-Text HLabel 1300 1350 0    50   Output ~ 0
-VOUT
+Text HLabel 1300 1150 0    50   Output ~ 0
+CHARGER_VIN
 Text HLabel 1300 1650 0    50   Input ~ 0
 D+
 Text HLabel 1300 1750 0    50   Input ~ 0
@@ -101,14 +99,14 @@ Wire Wire Line
 	3100 5450 3650 5450
 Wire Wire Line
 	3650 5450 3650 5550
-Text Label 1600 1750 2    50   ~ 0
+Text Label 1950 1750 2    50   ~ 0
 D-
-Text Label 1600 1650 2    50   ~ 0
+Text Label 1950 1650 2    50   ~ 0
 D+
 Wire Wire Line
-	1600 1750 1300 1750
+	1950 1750 1300 1750
 Wire Wire Line
-	1600 1650 1300 1650
+	1950 1650 1300 1650
 Text Notes 4250 5750 0    50   ~ 0
 Pull-Down via 5k1\nresistor for 5V 3A PD
 $Comp
@@ -143,7 +141,7 @@ Connection ~ 4750 3100
 Wire Wire Line
 	4750 3100 4750 3000
 Wire Wire Line
-	7100 5200 7350 5200
+	7100 5200 7500 5200
 Wire Wire Line
 	4650 2900 5100 2900
 $Comp
@@ -161,12 +159,12 @@ Wire Wire Line
 	7250 5400 7250 5300
 Wire Wire Line
 	7250 5300 7100 5300
-Text Label 1700 1050 2    50   ~ 0
+Text Label 1950 1050 2    50   ~ 0
 VBUS
 Text Label 5100 2900 2    50   ~ 0
-VSOLAR
-Text Label 7350 5200 2    50   ~ 0
-VOUT
+V_CHARGE
+Text Label 7500 5200 2    50   ~ 0
+V_CHARGE
 $Comp
 L Connector:Screw_Terminal_01x02 J11
 U 1 1 5F74DB0F
@@ -178,8 +176,8 @@ F 3 "~" H 6800 3150 50  0001 C CNN
 	1    6800 3150
 	-1   0    0    1   
 $EndComp
-Text Label 7250 3050 2    50   ~ 0
-VOUT
+Text Label 7400 3050 2    50   ~ 0
+V_CHARGE
 $Comp
 L power:GND #PWR043
 U 1 1 5F74EE5A
@@ -196,7 +194,7 @@ Wire Wire Line
 Wire Wire Line
 	7200 3150 7000 3150
 Wire Wire Line
-	7000 3050 7250 3050
+	7000 3050 7400 3050
 Text Notes 3350 2250 0    50   ~ 0
 Barrel Jack\n
 Text Notes 5900 4200 0    50   ~ 0
@@ -210,15 +208,9 @@ Wire Notes Line
 Text Notes 1200 4250 0    50   ~ 0
 USB-C
 Wire Wire Line
-	1700 1050 1300 1050
-Text Label 1700 1200 2    50   ~ 0
-VSOLAR
-Text Label 1700 1350 2    50   ~ 0
-VOUT
+	1950 1050 1300 1050
 Wire Wire Line
-	1700 1350 1300 1350
-Wire Wire Line
-	1300 1200 1700 1200
+	1950 1150 1300 1150
 $Comp
 L Connector:Conn_01x02_Male J10
 U 1 1 5F7331CA
@@ -251,10 +243,6 @@ Wire Notes Line
 	5800 2100 5800 7450
 Wire Notes Line
 	1100 4050 8400 4050
-Wire Notes Line
-	3250 2100 8400 2100
-Wire Notes Line
-	8400 6450 5800 6450
 Wire Notes Line
 	8400 2100 8400 6450
 $Comp
@@ -351,4 +339,187 @@ Wire Wire Line
 Connection ~ 3650 5850
 Wire Wire Line
 	3650 5850 3650 5750
+$Comp
+L Device:Q_PMOS_GSD Q?
+U 1 1 5FA2BED8
+P 9500 3050
+AR Path="/5F639F48/5FA2BED8" Ref="Q?"  Part="1" 
+AR Path="/5F63B107/5FA2BED8" Ref="Q?"  Part="1" 
+F 0 "Q?" V 9842 3050 50  0000 C CNN
+F 1 "Q_PMOS_GSD" V 9751 3050 50  0000 C CNN
+F 2 "" H 9700 3150 50  0001 C CNN
+F 3 "~" H 9500 3050 50  0001 C CNN
+	1    9500 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Q_PMOS_GSD Q?
+U 1 1 5FA2BEDE
+P 9500 4450
+AR Path="/5F639F48/5FA2BEDE" Ref="Q?"  Part="1" 
+AR Path="/5F63B107/5FA2BEDE" Ref="Q?"  Part="1" 
+F 0 "Q?" V 9842 4450 50  0000 C CNN
+F 1 "Q_PMOS_GSD" V 9751 4450 50  0000 C CNN
+F 2 "" H 9700 4550 50  0001 C CNN
+F 3 "~" H 9500 4450 50  0001 C CNN
+	1    9500 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FA2BEE4
+P 9500 3550
+AR Path="/5F639F48/5FA2BEE4" Ref="R?"  Part="1" 
+AR Path="/5F63B107/5FA2BEE4" Ref="R?"  Part="1" 
+F 0 "R?" H 9559 3596 50  0000 L CNN
+F 1 "12k" H 9559 3505 50  0000 L CNN
+F 2 "" H 9500 3550 50  0001 C CNN
+F 3 "~" H 9500 3550 50  0001 C CNN
+	1    9500 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FA2BEEA
+P 9500 4950
+AR Path="/5F639F48/5FA2BEEA" Ref="R?"  Part="1" 
+AR Path="/5F63B107/5FA2BEEA" Ref="R?"  Part="1" 
+F 0 "R?" H 9559 4996 50  0000 L CNN
+F 1 "12k" H 9559 4905 50  0000 L CNN
+F 2 "" H 9500 4950 50  0001 C CNN
+F 3 "~" H 9500 4950 50  0001 C CNN
+	1    9500 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FA2BEF0
+P 9300 4750
+AR Path="/5F639F48/5FA2BEF0" Ref="R?"  Part="1" 
+AR Path="/5F63B107/5FA2BEF0" Ref="R?"  Part="1" 
+F 0 "R?" V 9496 4750 50  0000 C CNN
+F 1 "1k" V 9405 4750 50  0000 C CNN
+F 2 "" H 9300 4750 50  0001 C CNN
+F 3 "~" H 9300 4750 50  0001 C CNN
+	1    9300 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FA2BEF8
+P 9500 5150
+AR Path="/5F639F48/5FA2BEF8" Ref="#PWR?"  Part="1" 
+AR Path="/5F63B107/5FA2BEF8" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9500 4900 50  0001 C CNN
+F 1 "GND" H 9505 4977 50  0000 C CNN
+F 2 "" H 9500 5150 50  0001 C CNN
+F 3 "" H 9500 5150 50  0001 C CNN
+	1    9500 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FA2BEFE
+P 9500 3750
+AR Path="/5F639F48/5FA2BEFE" Ref="#PWR?"  Part="1" 
+AR Path="/5F63B107/5FA2BEFE" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9500 3500 50  0001 C CNN
+F 1 "GND" H 9505 3577 50  0000 C CNN
+F 2 "" H 9500 3750 50  0001 C CNN
+F 3 "" H 9500 3750 50  0001 C CNN
+	1    9500 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 5050 9500 5150
+Wire Wire Line
+	9500 4750 9500 4650
+Wire Wire Line
+	9300 4350 9100 4350
+Wire Wire Line
+	9300 2950 9100 2950
+Wire Wire Line
+	9500 3750 9500 3650
+$Comp
+L Diode:1N5819 D?
+U 1 1 5FA2BF09
+P 9800 3150
+AR Path="/5F639F48/5FA2BF09" Ref="D?"  Part="1" 
+AR Path="/5F63B107/5FA2BF09" Ref="D?"  Part="1" 
+F 0 "D?" V 9754 3230 50  0000 L CNN
+F 1 "1N5819" V 9845 3230 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 9800 2975 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 9800 3150 50  0001 C CNN
+	1    9800 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N5819 D?
+U 1 1 5FA2BF0F
+P 9800 4550
+AR Path="/5F639F48/5FA2BF0F" Ref="D?"  Part="1" 
+AR Path="/5F63B107/5FA2BF0F" Ref="D?"  Part="1" 
+F 0 "D?" V 9754 4630 50  0000 L CNN
+F 1 "1N5819" V 9845 4630 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 9800 4375 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 9800 4550 50  0001 C CNN
+	1    9800 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9400 4750 9500 4750
+Wire Wire Line
+	9500 4750 9500 4850
+Connection ~ 9500 4750
+Wire Wire Line
+	9500 4750 9800 4750
+Wire Wire Line
+	9800 4750 9800 4700
+Wire Wire Line
+	9800 4400 9800 4350
+Wire Wire Line
+	9800 4350 9700 4350
+Wire Wire Line
+	9800 3000 9800 2950
+Wire Wire Line
+	9800 2950 9700 2950
+Wire Wire Line
+	9500 3250 9500 3350
+Wire Wire Line
+	9500 3350 9800 3350
+Wire Wire Line
+	9800 3350 9800 3300
+Connection ~ 9500 3350
+Wire Wire Line
+	9500 3350 9500 3450
+Wire Wire Line
+	9100 4750 9200 4750
+Text Label 10450 2950 2    50   ~ 0
+CHARGER_VIN
+Wire Wire Line
+	9800 2950 10450 2950
+Connection ~ 9800 2950
+Text Label 10450 4350 2    50   ~ 0
+CHARGER_VIN
+Wire Wire Line
+	9800 4350 10450 4350
+Connection ~ 9800 4350
+Text Label 9100 4350 2    50   ~ 0
+V_CHARGE
+Text Label 9100 2950 2    50   ~ 0
+VBUS
+Wire Notes Line
+	11050 2100 11050 6450
+Wire Notes Line
+	3250 2100 11050 2100
+Wire Notes Line
+	5800 6450 11050 6450
+Text Notes 8450 2250 0    50   ~ 0
+Power oring
+Text Label 9100 4750 2    50   ~ 0
+VBUS
+Text Notes 8450 6400 0    50   ~ 0
+This circuit (power oring) allows to have concurrent power inputs,\nthe input with the highest voltage (with respect to the ground)\nwill be providing power to the charging IC (CHARGER_VIN).
+Text Label 1950 1150 2    50   ~ 0
+CHARGER_VIN
 $EndSCHEMATC
