@@ -638,8 +638,6 @@ Wire Wire Line
 	7650 4800 7400 4800
 Text Label 7400 4800 0    50   ~ 0
 IO35
-Text Notes 2600 4050 0    39   ~ 0
-Note 2: the VBUS label on the chip differs from the USB VBUS local label.
 $Comp
 L ESP32-WROOM32:ESP32-WROOM32 U5
 U 1 1 5FAE4A6B
@@ -717,17 +715,6 @@ NoConn ~ 4500 1600
 NoConn ~ 4500 2100
 NoConn ~ 4500 2200
 $Comp
-L Interface_USB:CP2102N-A01-GQFN28 U4
-U 1 1 5FC7D0C0
-P 4000 2300
-F 0 "U4" H 3650 1000 50  0000 C CNN
-F 1 "CP2102N-A01-GQFN28" H 3450 900 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm" H 4450 1100 50  0001 L CNN
-F 3 "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" H 4050 1550 50  0001 C CNN
-	1    4000 2300
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR030
 U 1 1 5F825D6E
 P 4000 3700
@@ -786,16 +773,10 @@ F 3 "~" H 3450 5300 50  0001 C CNN
 $EndComp
 Text Notes 2600 3250 0    39   ~ 0
 Note 1: place the \ncapacitors near VDD
-Text Notes 3850 1650 0    39   ~ 0
-2
-Text Notes 2800 1200 0    39   ~ 0
-2
 Text Label 3900 850  2    50   ~ 0
 VBUS
 Wire Wire Line
 	3900 850  3900 950 
-Text Notes 3900 850  0    39   ~ 0
-2
 Wire Notes Line
 	5300 650  5300 4450
 Wire Notes Line
@@ -1118,4 +1099,15 @@ Text Label 1650 1900 0    50   ~ 0
 VIN
 Wire Wire Line
 	950  1900 1650 1900
+$Comp
+L Interface_USB:CP2102N-A01-GQFN28 U4
+U 1 1 5FC7D0C0
+P 4000 2300
+F 0 "U4" H 3650 1000 50  0000 C CNN
+F 1 "CP2102N-A01-GQFN28" H 3450 900 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm" H 4450 1100 50  0001 L CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" H 4050 1550 50  0001 C CNN
+	1    4000 2300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
