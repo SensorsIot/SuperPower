@@ -13,17 +13,17 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 1150 1250 0    50   Input ~ 0
+Text HLabel 1150 1400 0    50   Input ~ 0
 INT
-Text HLabel 1150 1600 0    50   Output ~ 0
-3v3
 Text HLabel 1150 1750 0    50   Output ~ 0
+3v3
+Text HLabel 1150 1900 0    50   Output ~ 0
 5V
 Text HLabel 1150 950  0    50   Input ~ 0
-3v3_EN
+EN_3V3
 Text HLabel 1150 1100 0    50   Input ~ 0
-5V_EN
-Text HLabel 1150 1450 0    50   Output ~ 0
+EN_5V
+Text HLabel 1150 1600 0    50   Output ~ 0
 3v3_MCU
 $Comp
 L LM3671:LM3671 U541
@@ -38,26 +38,26 @@ F 4 "C201586" H 5150 1700 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1150 1250 1750 1250
+	1150 1400 1750 1400
 Wire Wire Line
 	1150 950  1750 950 
 Wire Wire Line
 	1150 1100 1750 1100
 Wire Wire Line
-	1150 1600 1750 1600
-Wire Wire Line
 	1150 1750 1750 1750
-Text Label 1750 1250 2    50   ~ 0
+Wire Wire Line
+	1150 1900 1750 1900
+Text Label 1750 1400 2    50   ~ 0
 INT
 Text Label 1750 950  2    50   ~ 0
-3v3_EN
+EN_3V3
 Text Label 1750 1100 2    50   ~ 0
-5V_EN
-Text Label 1750 1450 2    50   ~ 0
-3v3_MCU
+EN_5V
 Text Label 1750 1600 2    50   ~ 0
-3v3
+3v3_MCU
 Text Label 1750 1750 2    50   ~ 0
+3v3
+Text Label 1750 1900 2    50   ~ 0
 5V
 $Comp
 L power:GND #PWR0501
@@ -138,8 +138,6 @@ F 3 "~" H 8450 1850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8800 1950 8800 1650
-Text Label 8250 2700 1    50   ~ 0
-3v3_EN
 $Comp
 L Device:C_Small C582
 U 1 1 5F84EA93
@@ -182,35 +180,16 @@ Wire Notes Line
 	10350 6000 10350 3600
 Wire Notes Line
 	10350 3600 3700 3600
-Wire Wire Line
-	8550 2250 8550 2150
 Text Notes 850  2450 0    50   ~ 0
 Bypass jumpers are tri-state\nNo jumper = Permanent off\nJumper on 1 and 2 = Permanent on with MCU\nJumper on 2 and 3 = Tied to GPIO
-Text Notes 3300 2300 0    50   Italic 0
-RTC Bypass
 Wire Wire Line
 	1150 800  1750 800 
 Text Label 1750 800  2    50   ~ 0
 VIN
 Wire Wire Line
-	1150 1450 1750 1450
+	1150 1600 1750 1600
 Text Label 4400 2600 2    50   ~ 0
 INT
-$Comp
-L Connector:Conn_01x02_Male J?
-U 1 1 5F93A67D
-P 3500 2550
-AR Path="/5F63A00B/5F93A67D" Ref="J?"  Part="1" 
-AR Path="/5F63A0E9/5F93A67D" Ref="J503"  Part="1" 
-F 0 "J503" H 3600 2650 50  0000 C CNN
-F 1 "RTC Bypass" H 3550 2750 50  0000 C CNN
-F 2 "" H 3500 2550 50  0001 C CNN
-F 3 "~" H 3500 2550 50  0001 C CNN
-	1    3500 2550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3950 2800 3950 2850
 Text HLabel 1150 800  0    50   Input ~ 0
 VIN
 $Comp
@@ -232,33 +211,10 @@ Wire Wire Line
 	8800 2250 8800 2150
 Wire Notes Line
 	7350 900  7350 3350
-$Comp
-L Device:Q_PMOS_GDS Q?
-U 1 1 5F93A677
-P 4050 2600
-AR Path="/5F63A00B/5F93A677" Ref="Q?"  Part="1" 
-AR Path="/5F63A0E9/5F93A677" Ref="Q501"  Part="1" 
-F 0 "Q501" H 3900 2700 50  0000 C CNN
-F 1 "P-MOS" H 3900 2800 50  0000 C CNN
-F 2 "" H 4250 2700 50  0001 C CNN
-F 3 "~" H 4050 2600 50  0001 C CNN
-	1    4050 2600
-	-1   0    0    1   
-$EndComp
 Wire Notes Line
 	3150 3350 6850 3350
 Wire Notes Line
 	3150 900  6850 900 
-Wire Wire Line
-	3800 2350 3800 2550
-Wire Wire Line
-	3800 2550 3700 2550
-Wire Wire Line
-	3700 2650 3800 2650
-Wire Wire Line
-	3800 2650 3800 2850
-Wire Wire Line
-	3800 2850 3950 2850
 Wire Wire Line
 	4400 2600 4250 2600
 Wire Wire Line
@@ -314,16 +270,6 @@ Wire Wire Line
 Connection ~ 4200 2000
 Wire Wire Line
 	4200 2000 4200 2100
-Connection ~ 3950 2850
-Wire Wire Line
-	3950 2850 3950 2950
-Wire Wire Line
-	3950 2350 3950 2400
-Wire Wire Line
-	3950 2350 3800 2350
-Wire Wire Line
-	3950 1500 3950 2350
-Connection ~ 3950 2350
 Wire Wire Line
 	4700 2000 4700 2950
 Connection ~ 4700 2000
@@ -385,11 +331,8 @@ Wire Wire Line
 Connection ~ 10250 1950
 Wire Wire Line
 	8800 2450 8800 2500
-Connection ~ 8800 2150
 Wire Wire Line
 	8800 2150 8900 2150
-Wire Wire Line
-	8550 2150 8800 2150
 Wire Wire Line
 	8800 1950 8900 1950
 Wire Wire Line
@@ -402,26 +345,7 @@ Wire Wire Line
 Wire Wire Line
 	8450 2050 8900 2050
 Wire Wire Line
-	8250 2350 8250 2700
-Wire Wire Line
-	8150 2250 8550 2250
-Wire Wire Line
-	8250 1650 8450 1650
-$Comp
-L Connector:Conn_01x03_Male J501
-U 1 1 5F8F9C6A
-P 7950 2250
-F 0 "J501" H 7700 2400 50  0000 C CNN
-F 1 "Bypass Jumper" H 7900 2500 50  0000 C CNN
-F 2 "" H 7950 2250 50  0001 C CNN
-F 3 "~" H 7950 2250 50  0001 C CNN
-	1    7950 2250
-	1    0    0    -1  
-$EndComp
-Text Label 8250 1650 0    50   ~ 0
-VIN
-Wire Wire Line
-	8250 2150 8250 1650
+	8150 1650 8450 1650
 Wire Wire Line
 	8450 2050 8450 2500
 Wire Wire Line
@@ -430,10 +354,6 @@ Connection ~ 8450 2050
 Connection ~ 8800 2500
 Wire Wire Line
 	8800 2500 8800 2550
-Wire Wire Line
-	8250 2150 8150 2150
-Wire Wire Line
-	8150 2350 8250 2350
 Text Notes 6300 3800 0    118  ~ 0
 5V boost regulator
 Wire Wire Line
@@ -441,8 +361,6 @@ Wire Wire Line
 Wire Wire Line
 	6650 5500 6750 5500
 Connection ~ 6650 5500
-Wire Wire Line
-	5600 4300 5500 4300
 Wire Wire Line
 	5800 4500 5900 4500
 Wire Wire Line
@@ -506,7 +424,7 @@ F 3 "https://datasheet.lcsc.com/szlcsc/Texas-Instruments-TI-TPS61032PWPR_C88716.
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5500 4200 6500 4200
+	5250 4200 6500 4200
 Connection ~ 8700 4900
 Wire Wire Line
 	8800 4900 8700 4900
@@ -557,25 +475,7 @@ F 3 "~" H 6650 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5500 4100 5950 4100
-$Comp
-L Connector:Conn_01x03_Male J502
-U 1 1 5F904AE0
-P 5300 4200
-F 0 "J502" H 5408 4481 50  0000 C CNN
-F 1 "Bypass Jumper" H 5400 4400 50  0000 C CNN
-F 2 "" H 5300 4200 50  0001 C CNN
-F 3 "~" H 5300 4200 50  0001 C CNN
-	1    5300 4200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	6500 4700 6500 4200
-Wire Wire Line
-	5600 4600 5700 4600
-Connection ~ 5600 4600
-Wire Wire Line
-	5600 4300 5600 4600
 Text Notes 8900 4900 0    50   ~ 0
 Low ESR Tantalum
 NoConn ~ 8150 4850
@@ -655,8 +555,6 @@ F 3 "~" H 8600 4700 50  0001 C CNN
 	1    8600 4700
 	1    0    0    1   
 $EndComp
-Text Label 5950 4100 2    50   ~ 0
-5V_EN
 Wire Wire Line
 	6750 4700 6500 4700
 Wire Wire Line
@@ -669,8 +567,6 @@ Wire Wire Line
 Connection ~ 5800 4600
 Wire Wire Line
 	5800 4500 5800 4600
-Wire Wire Line
-	5250 4600 5600 4600
 $Comp
 L Device:C_Small C501
 U 1 1 5F854712
@@ -725,4 +621,40 @@ F 3 "~" H 10100 1850 50  0001 C CNN
 	1    10100 1850
 	1    0    0    -1  
 $EndComp
+Text Label 8150 1650 0    50   ~ 0
+VIN
+Connection ~ 8800 2150
+Wire Wire Line
+	8150 2150 8800 2150
+Text Label 8150 2150 0    50   ~ 0
+EN_3V3
+$Comp
+L Device:Q_PMOS_GDS Q?
+U 1 1 5F93A677
+P 4050 2600
+AR Path="/5F63A00B/5F93A677" Ref="Q?"  Part="1" 
+AR Path="/5F63A0E9/5F93A677" Ref="Q501"  Part="1" 
+F 0 "Q501" H 3900 2700 50  0000 C CNN
+F 1 "P-MOS" H 3900 2800 50  0000 C CNN
+F 2 "" H 4250 2700 50  0001 C CNN
+F 3 "~" H 4050 2600 50  0001 C CNN
+	1    4050 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3950 1500 3950 2400
+Wire Wire Line
+	3950 2800 3950 2950
+Wire Wire Line
+	5250 4600 5700 4600
+Text Label 5250 4200 0    50   ~ 0
+EN_5V
+Text Label 4050 2950 0    50   ~ 0
+EN_MCU_REG
+Text HLabel 1150 1250 0    50   Input ~ 0
+EN_MCU_REG
+Wire Wire Line
+	1150 1250 1750 1250
+Text Label 1750 1250 2    50   ~ 0
+EN_MCU_REG
 $EndSCHEMATC

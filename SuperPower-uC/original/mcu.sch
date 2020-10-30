@@ -1024,8 +1024,6 @@ NoConn ~ 5000 2500
 NoConn ~ 5000 2600
 Wire Wire Line
 	9950 5700 10200 5700
-Text Label 9950 5700 2    50   ~ 0
-3v3_MCU
 Wire Wire Line
 	6600 5700 6600 5600
 $Comp
@@ -1055,9 +1053,9 @@ $EndComp
 Text HLabel 1700 1150 1    50   Input ~ 0
 VBUS
 Text HLabel 1500 1900 0    50   Output ~ 0
-3v3_EN
+EN_3V3
 Text HLabel 1500 2050 0    50   Output ~ 0
-5V_EN
+EN_5V
 Wire Wire Line
 	1700 1300 1700 1150
 Wire Wire Line
@@ -1097,11 +1095,13 @@ Text HLabel 950  1150 1    50   Input ~ 0
 Text HLabel 1250 1150 1    50   Input ~ 0
 3v3
 Text Label 1800 1900 0    50   ~ 0
-3v3_EN
+EN_3V3
 Text Label 1800 2050 0    50   ~ 0
-5V_EN
+EN_5V
 Wire Wire Line
 	1500 1900 1800 1900
 Wire Wire Line
 	1500 2050 1800 2050
+Text Label 9950 5700 2    50   ~ 0
+3v3_MCU
 $EndSCHEMATC

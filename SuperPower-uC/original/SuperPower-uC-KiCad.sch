@@ -54,8 +54,8 @@ F6 "D-" I R 8100 3050 50
 F7 "VBUS" I R 8100 2950 50 
 F8 "5V" I L 6850 2700 50 
 F9 "3v3" I L 6850 2800 50 
-F10 "3v3_EN" O L 6850 2550 50 
-F11 "5V_EN" O L 6850 2450 50 
+F10 "EN_3V3" O L 6850 2550 50 
+F11 "EN_5V" O L 6850 2450 50 
 $EndSheet
 Wire Wire Line
 	2550 2550 3050 2550
@@ -90,12 +90,10 @@ Battery Holder
 Text Notes 1400 2450 0    50   ~ 0
 Battery Protection
 Text Notes 3450 2300 0    50   ~ 0
-Charger
-Text Notes 3450 2400 0    50   ~ 0
-Fuel Gauge
-Text Notes 5150 2300 0    50   ~ 0
+Charger IC
+Text Notes 5150 2700 0    50   ~ 0
 3v3_LDO
-Text Notes 5150 2400 0    50   ~ 0
+Text Notes 5150 2600 0    50   ~ 0
 3v3_LDO_MCU
 Text Notes 5150 2500 0    50   ~ 0
 5V Buck/Boost
@@ -103,7 +101,7 @@ Text Notes 7400 2450 0    50   ~ 0
 MCU
 Text Notes 5350 4450 0    50   ~ 0
 RTC
-Text Notes 5150 2600 0    50   ~ 0
+Text Notes 4950 2350 0    50   ~ 0
 Cut-Off Circuit
 Text Notes 3600 4350 0    50   ~ 0
 USB-C
@@ -147,7 +145,7 @@ Wire Wire Line
 	8400 5450 4700 5450
 Wire Wire Line
 	4700 5450 4700 4900
-Text Notes 5050 3150 0    50   ~ 0
+Text Notes 7100 2700 0    50   ~ 0
 Permanent Power Jumper
 Text Notes 7400 2550 0    50   ~ 0
 FTDI
@@ -166,10 +164,11 @@ F1 "regulator.sch" 50
 F2 "INT" I L 4900 2800 50 
 F3 "3v3" O R 6150 2800 50 
 F4 "5V" O R 6150 2700 50 
-F5 "3v3_EN" I R 6150 2550 50 
-F6 "5V_EN" I R 6150 2450 50 
-F7 "3v3_MCU" O R 6150 2900 50 
-F8 "VIN" I L 4900 2550 50 
+F5 "3v3_MCU" O R 6150 2900 50 
+F6 "VIN" I L 4900 2550 50 
+F7 "EN_3V3" I R 6150 2550 50 
+F8 "EN_5V" I R 6150 2450 50 
+F9 "EN_MCU_REG" I R 6150 2350 50 
 $EndSheet
 Wire Wire Line
 	6150 2700 6850 2700
