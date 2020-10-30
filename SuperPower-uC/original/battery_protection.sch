@@ -13,7 +13,7 @@ Comment2 ""
 Comment3 "Available for Lithium / LiPo or LiFePO4 Chemistry"
 Comment4 "Available for internal (18650 Battery Holder) or external (Connector) Battery"
 $EndDescr
-Text HLabel 900  850  0    50   Output ~ 0
+Text HLabel 900  850  0    50   BiDi ~ 0
 VBAT
 $Comp
 L ap9101ck6_v2:AP9101CK6_v2 U1

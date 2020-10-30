@@ -176,52 +176,52 @@ F 3 "" H 2800 1950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2950 1600 3500 1600
-Text HLabel 1550 1150 1    50   Input ~ 0
+Text HLabel 1400 1150 1    50   Input ~ 0
 3v3_MCU
 $Comp
 L Device:R_Small R21
 U 1 1 5F87BDCC
-P 1200 3800
-F 0 "R21" H 1259 3846 50  0000 L CNN
-F 1 "4.7k" H 1259 3755 50  0000 L CNN
-F 2 "" H 1200 3800 50  0001 C CNN
-F 3 "~" H 1200 3800 50  0001 C CNN
-	1    1200 3800
+P 1200 3950
+F 0 "R21" H 1259 3996 50  0000 L CNN
+F 1 "4.7k" H 1259 3905 50  0000 L CNN
+F 2 "" H 1200 3950 50  0001 C CNN
+F 3 "~" H 1200 3950 50  0001 C CNN
+	1    1200 3950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R20
 U 1 1 5F87D3E5
-P 850 3800
-F 0 "R20" H 909 3846 50  0000 L CNN
-F 1 "4.7k" H 909 3755 50  0000 L CNN
-F 2 "" H 850 3800 50  0001 C CNN
-F 3 "~" H 850 3800 50  0001 C CNN
-	1    850  3800
+P 850 3950
+F 0 "R20" H 909 3996 50  0000 L CNN
+F 1 "4.7k" H 909 3905 50  0000 L CNN
+F 2 "" H 850 3950 50  0001 C CNN
+F 3 "~" H 850 3950 50  0001 C CNN
+	1    850  3950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	850  3600 850  3700
+	850  3750 850  3850
 Wire Wire Line
-	1200 3600 1200 3700
+	1200 3750 1200 3850
 Wire Wire Line
-	1200 3900 1200 4100
+	1200 4050 1200 4250
 Wire Wire Line
-	850  3900 850  4100
-Text Notes 700  3150 0    50   ~ 10
+	850  4050 850  4250
+Text Notes 700  3300 0    50   ~ 10
 I²C pull-up resistors
 Wire Notes Line
-	650  3050 1550 3050
+	650  3200 1550 3200
 Wire Notes Line
-	650  4250 650  3050
+	650  4400 650  3200
 Text Notes 2500 750  0    50   ~ 10
 USB - UART bridge
 Wire Notes Line
 	2450 650  5300 650 
 Wire Notes Line
-	1550 4250 650  4250
+	1550 4400 650  4400
 Wire Notes Line
-	1550 3050 1550 4250
+	1550 3200 1550 4400
 Wire Wire Line
 	9500 4400 9250 4400
 Wire Wire Line
@@ -495,13 +495,13 @@ Wire Wire Line
 	2650 5200 2650 5300
 Text Label 2800 1200 2    50   ~ 0
 VBUS
-Text Label 850  3600 1    50   ~ 0
+Text Label 850  3750 1    50   ~ 0
 3v3_MCU
-Text Label 1200 3600 1    50   ~ 0
+Text Label 1200 3750 1    50   ~ 0
 3v3_MCU
-Text Label 1200 4100 0    50   ~ 0
+Text Label 1200 4250 0    50   ~ 0
 SDA
-Text Label 850  4100 0    50   ~ 0
+Text Label 850  4250 0    50   ~ 0
 SCL
 Wire Wire Line
 	2800 1550 2800 1600
@@ -514,16 +514,16 @@ Text Label 9500 4700 2    50   ~ 0
 SDA
 Text Label 8200 1200 1    50   ~ 0
 3v3_MCU
-Text Label 1800 1300 0    50   ~ 0
+Text Label 1650 1300 0    50   ~ 0
 VBUS
-Text Label 1800 1450 0    50   ~ 0
+Text Label 1650 1450 0    50   ~ 0
 3v3_MCU
 Wire Wire Line
-	1700 1300 1800 1300
+	1550 1300 1650 1300
 Wire Wire Line
-	1550 1150 1550 1450
+	1400 1150 1400 1450
 Wire Wire Line
-	1550 1450 1800 1450
+	1400 1450 1650 1450
 Text Label 5100 2800 2    50   ~ 0
 TXT
 Text Label 2950 2350 0    50   ~ 0
@@ -557,7 +557,7 @@ Wire Notes Line
 Text Notes 700  750  0    50   ~ 10
 Interface
 Wire Notes Line
-	650  2900 650  650 
+	650  3050 650  650 
 Wire Notes Line
 	650  650  2300 650 
 Text Label 9500 5500 2    50   ~ 0
@@ -1009,8 +1009,8 @@ F 3 "" H 6800 5600 50  0001 C CNN
 	1    6800 5600
 	1    0    0    -1  
 $EndComp
-Text Notes 5950 6000 0    50   ~ 0
-VBATT or VBUS?\nVin? 3v3?
+Text Notes 6000 3500 0    197  ~ 0
+NEED TO ADD HEADER TO ENABLE\nMCU_REG, 3V3_REG and 5V_REG
 $Comp
 L Connector:Conn_01x17_Female J6
 U 1 1 5F88C49E
@@ -1022,15 +1022,15 @@ F 3 "~" H 6200 4900 50  0001 C CNN
 	1    6200 4900
 	-1   0    0    -1  
 $EndComp
-Text HLabel 1700 1150 1    50   Input ~ 0
+Text HLabel 1550 1150 1    50   Input ~ 0
 VBUS
 Wire Wire Line
-	1700 1300 1700 1150
+	1550 1300 1550 1150
 Wire Wire Line
 	1250 1150 1250 1600
 Wire Wire Line
-	950  1150 950  1750
-Text Label 1800 1600 0    50   ~ 0
+	1100 1150 1100 1750
+Text Label 1650 1600 0    50   ~ 0
 3v3
 Wire Wire Line
 	6400 5500 6800 5500
@@ -1052,62 +1052,70 @@ Text Notes 6750 2750 0    50   ~ 0
 Autoflash/reset circuit:\nAllows the USB-UART\nbridge to reset the MCU\nand to boot the MCU\nin flashing\n(programmation) mode.
 Text Notes 2600 4350 0    50   ~ 0
 USB - UART bridge:\nAllows the MCU to communicate and to be flashed\n(programmed) via the USB bus
-Text HLabel 950  1150 1    50   Input ~ 0
+Text HLabel 1100 1150 1    50   Input ~ 0
 5V
 Text HLabel 1250 1150 1    50   Input ~ 0
 3v3
 Text Label 10150 5600 2    50   ~ 0
 3v3_MCU
 Wire Wire Line
-	1250 1600 1800 1600
+	1250 1600 1650 1600
 Wire Wire Line
-	1450 1900 1750 1900
-Text Label 1750 1900 0    50   ~ 0
+	1350 2050 1650 2050
+Text Label 1650 2050 0    50   ~ 0
 EN_MCU_REG
-Text HLabel 1450 1900 0    50   Output ~ 0
+Text HLabel 1350 2050 0    50   Output ~ 0
 EN_MCU_REG
 Wire Wire Line
-	1450 2200 1750 2200
+	1350 2350 1650 2350
 Wire Wire Line
-	1450 2050 1750 2050
-Text Label 1750 2200 0    50   ~ 0
+	1350 2200 1650 2200
+Text Label 1650 2350 0    50   ~ 0
 EN_5V
-Text Label 1750 2050 0    50   ~ 0
+Text Label 1650 2200 0    50   ~ 0
 EN_3V3
-Text Label 1800 1750 0    50   ~ 0
+Text Label 1650 1750 0    50   ~ 0
 5V
 Wire Wire Line
-	950  1750 1800 1750
-Text HLabel 1450 2200 0    50   Output ~ 0
+	1100 1750 1650 1750
+Text HLabel 1350 2350 0    50   Output ~ 0
 EN_5V
-Text HLabel 1450 2050 0    50   Output ~ 0
+Text HLabel 1350 2200 0    50   Output ~ 0
 EN_3V3
 Wire Notes Line
-	2300 2900 650  2900
+	2300 3050 650  3050
 Wire Notes Line
-	2300 650  2300 2900
-Text Label 1750 2650 0    50   ~ 0
+	2300 650  2300 3050
+Text Label 1650 2800 0    50   ~ 0
 D-
-Text Label 1750 2800 0    50   ~ 0
+Text Label 1650 2950 0    50   ~ 0
 D+
-Text Label 1750 2350 0    50   ~ 0
+Text Label 1650 2500 0    50   ~ 0
 SCL
-Text Label 1750 2500 0    50   ~ 0
+Text Label 1650 2650 0    50   ~ 0
 SDA
 Wire Wire Line
-	1500 2350 1750 2350
+	1400 2500 1650 2500
 Wire Wire Line
-	1500 2500 1750 2500
-Text HLabel 1500 2350 0    50   Input ~ 0
+	1400 2650 1650 2650
+Text HLabel 1400 2500 0    50   Input ~ 0
 SCL
-Text HLabel 1500 2500 0    50   BiDi ~ 0
+Text HLabel 1400 2650 0    50   BiDi ~ 0
 SDA
 Wire Wire Line
-	1500 2650 1750 2650
+	1400 2800 1650 2800
 Wire Wire Line
-	1500 2800 1750 2800
-Text HLabel 1500 2650 0    50   Input ~ 0
+	1400 2950 1650 2950
+Text HLabel 1400 2800 0    50   Input ~ 0
 D-
-Text HLabel 1500 2800 0    50   Input ~ 0
+Text HLabel 1400 2950 0    50   Input ~ 0
 D+
+Text HLabel 950  1150 1    50   Input ~ 0
+VIN
+Wire Wire Line
+	950  1150 950  1900
+Text Label 1650 1900 0    50   ~ 0
+VIN
+Wire Wire Line
+	950  1900 1650 1900
 $EndSCHEMATC
