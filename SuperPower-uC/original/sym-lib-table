@@ -2,6 +2,8 @@
   (lib (name AMS1117-3.3)(type Legacy)(uri ${KIPRJMOD}/../components/AMS1117-3.3/AMS1117-3.3.lib)(options "")(descr ""))
   (lib (name ap9101ck6_v2)(type Legacy)(uri ${KIPRJMOD}/../components/AP9101CK6_v2/ap9101ck6_v2.lib)(options "")(descr ""))
   (lib (name CH340G)(type Legacy)(uri ${KIPRJMOD}/../components/CH340G/CH340G.lib)(options "")(descr ""))
+  (lib (name cn1185)(type Legacy)(uri ${KIPRJMOD}/../components/CN1185/cn1185.lib)(options "")(descr ""))
+  (lib (name dfls230l)(type Legacy)(uri ${KIPRJMOD}/../components/DFLS230L/dfls230l.lib)(options "")(descr ""))
   (lib (name dmg6968uts)(type Legacy)(uri ${KIPRJMOD}/../components/DMG6968UTS/dmg6968uts.lib)(options "")(descr ""))
   (lib (name dmn2019uts)(type Legacy)(uri ${KIPRJMOD}/../components/DMN2019UTS/dmn2019uts.lib)(options "")(descr ""))
   (lib (name ESP32-WROOM32)(type Legacy)(uri ${KIPRJMOD}/../components/ESP32-WROOM32/ESP32-WROOM32.lib)(options "")(descr ""))
