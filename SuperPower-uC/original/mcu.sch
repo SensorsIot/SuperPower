@@ -13,8 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 1550 2650 0    50   Input ~ 0
-D+
 $Comp
 L Device:R_Small R27
 U 1 1 5F848A0E
