@@ -529,8 +529,6 @@ Wire Wire Line
 Wire Wire Line
 	8100 3000 8350 3000
 Wire Wire Line
-	3200 3600 3300 3600
-Connection ~ 3300 3600
-Wire Wire Line
 	3600 3000 4100 3000
+NoConn ~ 3200 3600
 $EndSCHEMATC
