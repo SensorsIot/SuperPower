@@ -17,9 +17,9 @@ Text HLabel 7600 1350 2    50   Output ~ 0
 VOUT
 Text HLabel 8000 4350 2    50   BiDi ~ 0
 VBAT
-Text HLabel 4850 3950 0    50   Input ~ 0
+Text HLabel 4800 3950 0    50   Input ~ 0
 SCL
-Text HLabel 4850 4050 0    50   BiDi ~ 0
+Text HLabel 4800 4050 0    50   BiDi ~ 0
 SDA
 $Comp
 L Device:C C2
@@ -4601,9 +4601,9 @@ Connection ~ 7000 3100
 Text Notes 6450 650  0    50   ~ 0
 Add this option to reduce Iquiescent in ship mode (see page 31 of the datasheet).
 Wire Wire Line
-	4850 4050 5000 4050
+	4800 4050 5000 4050
 Wire Wire Line
-	4850 3950 5000 3950
+	4800 3950 5000 3950
 Wire Wire Line
 	7700 4350 8000 4350
 $Comp
@@ -4888,8 +4888,6 @@ Wire Wire Line
 	1900 3750 1900 3650
 Text Notes 1850 3900 0    50   ~ 0
 Used as an option and/or debug
-Text Notes 3200 3900 0    50   ~ 0
-TODO : Add Hierarchical Block Connector ->
 $Comp
 L Device:R_US R6
 U 1 1 5F845E81
@@ -5038,4 +5036,14 @@ Text Notes 3200 5550 0    50   ~ 10
 Cell count setting (1 to 8)
 Text Notes 3200 5650 0    50   ~ 0
 See Table 5 in the datasheet
+Text HLabel 1200 1400 0    50   Input ~ 0
+3v3_MCU
+Wire Wire Line
+	1200 1400 1750 1400
+Text Label 1750 1400 2    50   ~ 0
+3v3_MCU
+Text Label 4600 3850 0    50   ~ 0
+3v3_MCU
+Wire Wire Line
+	4600 3850 5000 3850
 $EndSCHEMATC
