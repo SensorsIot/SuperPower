@@ -13,14 +13,10 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 7600 1350 2    50   Output ~ 0
+Text HLabel 1200 1550 0    50   Output ~ 0
 VOUT
-Text HLabel 8000 4350 2    50   BiDi ~ 0
+Text HLabel 1200 1650 0    50   BiDi ~ 0
 VBAT
-Text HLabel 4800 3950 0    50   Input ~ 0
-SCL
-Text HLabel 4800 4050 0    50   BiDi ~ 0
-SDA
 $Comp
 L Device:C C2
 U 1 1 5F74384D
@@ -317,7 +313,6 @@ Wire Wire Line
 Connection ~ 7000 4850
 Wire Wire Line
 	7000 4850 7000 4750
-Connection ~ 7700 4350
 Wire Wire Line
 	6400 4950 6400 4900
 $Comp
@@ -4601,11 +4596,11 @@ Connection ~ 7000 3100
 Text Notes 6450 650  0    50   ~ 0
 Add this option to reduce Iquiescent in ship mode (see page 31 of the datasheet).
 Wire Wire Line
-	4800 4050 5000 4050
+	4600 4050 5000 4050
 Wire Wire Line
-	4800 3950 5000 3950
+	4600 3950 5000 3950
 Wire Wire Line
-	7700 4350 8000 4350
+	1750 1650 1200 1650
 $Comp
 L ltc4162-l:LTC4162-L U?
 U 1 1 5F742483
@@ -4826,9 +4821,8 @@ Wire Wire Line
 	7200 950  7500 950 
 Wire Wire Line
 	7500 950  7500 1350
-Connection ~ 7500 1350
 Wire Wire Line
-	7500 1350 7600 1350
+	1750 1550 1200 1550
 Wire Notes Line
 	6400 1050 7900 1050
 Wire Notes Line
@@ -5036,14 +5030,44 @@ Text Notes 3200 5550 0    50   ~ 10
 Cell count setting (1 to 8)
 Text Notes 3200 5650 0    50   ~ 0
 See Table 5 in the datasheet
-Text HLabel 1200 1400 0    50   Input ~ 0
+Text HLabel 1200 1900 0    50   Input ~ 0
 3v3_MCU
 Wire Wire Line
-	1200 1400 1750 1400
-Text Label 1750 1400 2    50   ~ 0
+	1200 1900 1750 1900
+Text Label 1750 1900 2    50   ~ 0
 3v3_MCU
 Text Label 4600 3850 0    50   ~ 0
 3v3_MCU
 Wire Wire Line
 	4600 3850 5000 3850
+Text Label 7850 1350 2    50   ~ 0
+VOUT
+Wire Wire Line
+	7850 1350 7500 1350
+Connection ~ 7500 1350
+Text Label 1750 1550 2    50   ~ 0
+VOUT
+Text Label 8150 4350 2    50   ~ 0
+VBAT
+Wire Wire Line
+	7700 4350 8150 4350
+Connection ~ 7700 4350
+Text HLabel 1200 2000 0    50   Input ~ 0
+SCL
+Text HLabel 1200 2100 0    50   BiDi ~ 0
+SDA
+Wire Wire Line
+	1200 2100 1750 2100
+Wire Wire Line
+	1200 2000 1750 2000
+Text Label 1750 1650 2    50   ~ 0
+VBAT
+Text Label 1750 2000 2    50   ~ 0
+SCL
+Text Label 1750 2100 2    50   ~ 0
+SDA
+Text Label 4600 3950 0    50   ~ 0
+SCL
+Text Label 4600 4050 0    50   ~ 0
+SDA
 $EndSCHEMATC
