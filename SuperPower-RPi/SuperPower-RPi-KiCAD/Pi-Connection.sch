@@ -13,115 +13,136 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 7200 1100 0    50   Input ~ 0
-Vin(5V)
-Text HLabel 3650 1050 0    50   BiDi ~ 0
+Text HLabel 6800 3000 2    50   BiDi ~ 0
 SDA
-Text HLabel 3700 1300 0    50   BiDi ~ 0
+Text HLabel 6800 3100 2    50   BiDi ~ 0
 SCL
-Text Notes 2100 3550 0    50   ~ 0
+Text Notes 1500 6450 0    50   ~ 0
 NOTE: Connection To Pi is made on this sheet. Mainly to the 40-pin connector.
-$Comp
-L Connector:Raspberry_Pi_2_3 J1
-U 1 1 5F6B08E8
-P 7800 3000
-F 0 "J1" H 7800 4481 50  0000 C CNN
-F 1 "Raspberry_Pi_2_3" H 7800 4390 50  0000 C CNN
-F 2 "" H 7800 3000 50  0001 C CNN
-F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 7800 3000 50  0001 C CNN
-	1    7800 3000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	7600 1700 7600 1100
+	5400 4900 5400 5000
 Wire Wire Line
-	7600 1100 7200 1100
+	5400 5000 5500 5000
 Wire Wire Line
-	7700 1700 7700 1100
+	6100 5000 6100 4900
 Wire Wire Line
-	7700 1100 7600 1100
-Connection ~ 7600 1100
+	5750 5100 5750 5000
+Connection ~ 5750 5000
 Wire Wire Line
-	7400 4300 7400 4400
+	5750 5000 5800 5000
 Wire Wire Line
-	7400 4400 7500 4400
+	5500 4900 5500 5000
+Connection ~ 5500 5000
 Wire Wire Line
-	8100 4400 8100 4300
+	5500 5000 5600 5000
 Wire Wire Line
-	7750 4500 7750 4400
-Connection ~ 7750 4400
+	5600 4900 5600 5000
+Connection ~ 5600 5000
 Wire Wire Line
-	7750 4400 7800 4400
+	5600 5000 5700 5000
 Wire Wire Line
-	7500 4300 7500 4400
-Connection ~ 7500 4400
+	5700 4900 5700 5000
+Connection ~ 5700 5000
 Wire Wire Line
-	7500 4400 7600 4400
+	5700 5000 5750 5000
 Wire Wire Line
-	7600 4300 7600 4400
-Connection ~ 7600 4400
+	5800 4900 5800 5000
+Connection ~ 5800 5000
 Wire Wire Line
-	7600 4400 7700 4400
+	5800 5000 5900 5000
 Wire Wire Line
-	7700 4300 7700 4400
-Connection ~ 7700 4400
+	5900 4900 5900 5000
+Connection ~ 5900 5000
 Wire Wire Line
-	7700 4400 7750 4400
+	5900 5000 6000 5000
 Wire Wire Line
-	7800 4300 7800 4400
-Connection ~ 7800 4400
+	6000 4900 6000 5000
+Connection ~ 6000 5000
 Wire Wire Line
-	7800 4400 7900 4400
-Wire Wire Line
-	7900 4300 7900 4400
-Connection ~ 7900 4400
-Wire Wire Line
-	7900 4400 8000 4400
-Wire Wire Line
-	8000 4300 8000 4400
-Connection ~ 8000 4400
-Wire Wire Line
-	8000 4400 8100 4400
-NoConn ~ 8600 3800
-NoConn ~ 8600 3700
-NoConn ~ 8600 3500
-NoConn ~ 8600 3400
-NoConn ~ 8600 3300
-NoConn ~ 8600 3200
-NoConn ~ 8600 3100
-NoConn ~ 8600 2900
-NoConn ~ 8600 2800
-NoConn ~ 8600 2700
-NoConn ~ 8600 2500
-NoConn ~ 8600 2400
-NoConn ~ 8600 2200
-NoConn ~ 8600 2100
-NoConn ~ 7000 2100
-NoConn ~ 7000 2200
-NoConn ~ 7000 2400
-NoConn ~ 7000 2500
-NoConn ~ 7000 2600
-NoConn ~ 7000 2800
-NoConn ~ 7000 2900
-NoConn ~ 7000 3000
-NoConn ~ 7000 3200
-NoConn ~ 7000 3300
-NoConn ~ 7000 3400
-NoConn ~ 7000 3500
-NoConn ~ 7000 3600
-NoConn ~ 7000 3700
-NoConn ~ 7900 1700
-NoConn ~ 8000 1700
-NoConn ~ 7850 2200
+	6000 5000 6100 5000
+NoConn ~ 6600 4400
+NoConn ~ 6600 4300
+NoConn ~ 6600 4100
+NoConn ~ 6600 4000
+NoConn ~ 6600 3900
+NoConn ~ 6600 3800
+NoConn ~ 6600 3700
+NoConn ~ 6600 3500
+NoConn ~ 6600 3400
+NoConn ~ 6600 3300
+NoConn ~ 6600 2800
+NoConn ~ 6600 2700
+NoConn ~ 5000 2700
+NoConn ~ 5000 2800
+NoConn ~ 5000 3000
+NoConn ~ 5000 3100
+NoConn ~ 5000 3200
+NoConn ~ 5000 3400
+NoConn ~ 5000 3500
+NoConn ~ 5000 3600
+NoConn ~ 5000 3800
+NoConn ~ 5000 3900
+NoConn ~ 5000 4000
+NoConn ~ 5000 4100
+NoConn ~ 5000 4200
+NoConn ~ 5000 4300
 $Comp
 L power:GND #PWR09
 U 1 1 5F7975F1
-P 7750 4500
-F 0 "#PWR09" H 7750 4250 50  0001 C CNN
-F 1 "GND" H 7755 4327 50  0000 C CNN
-F 2 "" H 7750 4500 50  0001 C CNN
-F 3 "" H 7750 4500 50  0001 C CNN
-	1    7750 4500
+P 5750 5100
+F 0 "#PWR09" H 5750 4850 50  0001 C CNN
+F 1 "GND" H 5755 4927 50  0000 C CNN
+F 2 "" H 5750 5100 50  0001 C CNN
+F 3 "" H 5750 5100 50  0001 C CNN
+	1    5750 5100
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6800 3100 6600 3100
+Wire Wire Line
+	6600 3000 6800 3000
+$Comp
+L power:+3.3V #PWR016
+U 1 1 5FA1CC78
+P 6050 2150
+F 0 "#PWR016" H 6050 2000 50  0001 C CNN
+F 1 "+3.3V" H 6065 2323 50  0000 C CNN
+F 2 "" H 6050 2150 50  0001 C CNN
+F 3 "" H 6050 2150 50  0001 C CNN
+	1    6050 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Raspberry_Pi_2_3 J1
+U 1 1 5F6B08E8
+P 5800 3600
+F 0 "J1" H 5150 4850 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 6450 4850 50  0000 C CNN
+F 2 "" H 5800 3600 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 5800 3600 50  0001 C CNN
+	1    5800 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2200 6000 2200
+Wire Wire Line
+	6050 2200 6050 2150
+Wire Wire Line
+	6000 2200 6000 2300
+Connection ~ 6000 2200
+Wire Wire Line
+	6000 2200 6050 2200
+Wire Wire Line
+	5900 2300 5900 2200
+Connection ~ 5600 2200
+Wire Wire Line
+	5700 2200 5600 2200
+Wire Wire Line
+	5700 2300 5700 2200
+Wire Wire Line
+	5600 2200 5400 2200
+Wire Wire Line
+	5600 2300 5600 2200
+Text HLabel 5400 2200 0    50   Input ~ 0
+Vin(5V)
 $EndSCHEMATC

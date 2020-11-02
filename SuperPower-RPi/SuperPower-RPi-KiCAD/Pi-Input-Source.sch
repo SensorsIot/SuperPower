@@ -170,10 +170,10 @@ Connection ~ 7450 2900
 Wire Wire Line
 	7450 2900 7650 2900
 $Comp
-L Connector:USB_C_Plug_USB2.0 P?
+L Connector:USB_C_Plug_USB2.0 P1
 U 1 1 5FA09B52
 P 4550 3500
-F 0 "P?" H 4657 4367 50  0000 C CNN
+F 0 "P1" H 4657 4367 50  0000 C CNN
 F 1 "USB_C_Plug_USB2.0" H 4657 4276 50  0000 C CNN
 F 2 "" H 4700 3500 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 4700 3500 50  0001 C CNN
