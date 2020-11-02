@@ -1,0 +1,29 @@
+﻿,Requirement,Discord username,Category
+1,Support different ESP modules,wassfila,uC
+2,power cut-off circuit + RTC Timer,Informatic0re,power
+4,3v3 Output,Andreas Spiess,power
+5,5V Output,Andreas Spiess,feature
+6,USB charging,Andreas Spiess,charging
+7,Solar charging,Andreas Spiess,charging
+8,Charging while powering,Andreas Spiess,charging
+9,Replacable batteries,Andreas Spiess,battery
+11,Low voltage signal/alarm/interrupt,Andreas Spiess,power
+12,Battery low voltage protection,Andreas Spiess,battery
+13,Over charge and discharge protection,Andreas Spiess,battery
+14,charge indicator,Andreas Spiess,charging
+25,Charger control (enable/disable),tealbrains,charging
+26,"Li-Ion Chemistry as 18650, 16340 and FlatPack",tealbrains,battery
+28,Hysterisis between battery low and battery ready.,metimmee,feature
+32,Modular architecture with optional components,wassfila,organisation
+33,Test Points,Informatic0re,feature
+34,Expose ESP32 Serial pinouts for flashing,wassfila,uC
+35,LOW power consumption (of the regulator board itself),,
+37,Usb C,fabrifer020,feature
+38,Reverse voltage protection,fabrifer020,safety
+40,Controllable 3v3 Output,leven,
+43,Expose Battery pins (post protection),tealbrains,feature
+46,Having Both Holder And Connecter,Trance_Paradox,feature
+50,Short Circuit Protection on the output,johnheuk,safety
+53,Barrel Jack / Screw Terminals,johnheuk,feature
+63,Expose unused ESP32 GPIO Pins,wassfila,uC
+88,Open Hardware License,Noki,

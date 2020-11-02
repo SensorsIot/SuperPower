@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PCF8563T
+F https://www.nxp.com/docs/en/data-sheet/PCF8563.pdf
+$ENDCMP
+#
+#End Doc Library

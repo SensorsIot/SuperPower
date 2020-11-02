@@ -1,0 +1,19 @@
+ERC report (Mon Nov  2 18:48:03 2020, Encoding UTF8 )
+
+***** Sheet /
+
+***** Sheet /Battery Module/
+
+***** Sheet /Charging Module/
+
+***** Sheet /RTC/
+
+***** Sheet /MCU Module/
+
+***** Sheet /Regulator and Cut-Off Module/
+
+***** Sheet /Charger inputs and USB IO/
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(78.74 mm, 130.81 mm): Pin A4 (Power input) of component J7 is not driven (Net 118).
+
+ ** ERC messages: 1  Errors 0  Warnings 1

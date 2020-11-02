@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AMS1117-3.3
+F http://www.advanced-monolithic.com/pdf/ds1117.pdf
+$ENDCMP
+#
+#End Doc Library
