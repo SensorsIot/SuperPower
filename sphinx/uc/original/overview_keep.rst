@@ -4,8 +4,50 @@ Premium Variant
 The original version of the SuperPower Board consists of an ESP32 as microcontroller and it tries to fulfill most of the requirements.
 We tried to find the best components to fit the requirements with ultra low power.
 
-.. raw:: html
-    :file: schematics.html
+Schematics
+~~~~~~~~~~
+
+Top View
+++++++++
+
+.. image:: ../../../.generated/SuperPower-uC/original/schematics/main.svg
+
+Charging Module
++++++++++++++++
+
+.. image:: ../../../.generated/SuperPower-uC/original/schematics/charger.svg
+
+Charger IO
+++++++++++
+
+.. image:: ../../../.generated/SuperPower-uC/original/schematics/charger_io.svg
+
+RTC cut-off
++++++++++++
+
+.. image:: ../../../.generated/SuperPower-uC/original/schematics/rtc_cut_off.svg
+
+
+MCU
++++
+
+.. image:: ../../../.generated/SuperPower-uC/original/schematics/mcu.svg
+
+Regulator
++++++++++
+
+.. image:: ../../../.generated/SuperPower-uC/original/schematics/regulator.svg
+
+Battery Protection
+++++++++++++++++++
+
+.. image:: ../../../.generated/SuperPower-uC/original/schematics/battery_protection.svg
+
+
+
+
+Layout
+~~~~~~
 
 BOM
 ~~~
