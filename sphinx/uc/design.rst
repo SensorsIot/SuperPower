@@ -1,6 +1,6 @@
-###############
-Common Features
-###############
+################
+Use Case Diagram
+################
 
 Battery protection
 ------------------
