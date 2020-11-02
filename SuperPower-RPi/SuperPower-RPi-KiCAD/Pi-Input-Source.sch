@@ -16,7 +16,7 @@ $EndDescr
 Text HLabel 7650 2900 2    50   Output ~ 0
 Vout
 Text Notes 6950 5750 0    50   ~ 0
-NOTE:\nProbably USB-C and screw-terminals for solar.  MicroUSB possible. 
+NOTE:\nProbably USB-C and screw-terminals for solar.  \nMicroUSB possible. 
 $Comp
 L Device:Q_PMOS_GSD Q3
 U 1 1 5F703042
@@ -40,38 +40,27 @@ F 3 "" H 6950 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_C_Plug P1
-U 1 1 5F704D8C
-P 4550 3900
-F 0 "P1" H 4657 5167 50  0000 C CNN
-F 1 "USB_C_Plug" H 4657 5076 50  0000 C CNN
-F 2 "" H 4700 3900 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 4700 3900 50  0001 C CNN
-	1    4550 3900
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0102
 U 1 1 5F709AD2
-P 4400 5750
-F 0 "#PWR0102" H 4400 5500 50  0001 C CNN
-F 1 "GND" H 4405 5577 50  0000 C CNN
-F 2 "" H 4400 5750 50  0001 C CNN
-F 3 "" H 4400 5750 50  0001 C CNN
-	1    4400 5750
+P 4400 4650
+F 0 "#PWR0102" H 4400 4400 50  0001 C CNN
+F 1 "GND" H 4405 4477 50  0000 C CNN
+F 2 "" H 4400 4650 50  0001 C CNN
+F 3 "" H 4400 4650 50  0001 C CNN
+	1    4400 4650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4250 5500 4250 5650
+	4250 4400 4250 4550
 Wire Wire Line
-	4250 5650 4400 5650
+	4250 4550 4400 4550
 Wire Wire Line
-	4550 5650 4550 5500
+	4550 4550 4550 4400
 Wire Wire Line
-	4400 5750 4400 5650
-Connection ~ 4400 5650
+	4400 4650 4400 4550
+Connection ~ 4400 4550
 Wire Wire Line
-	4400 5650 4550 5650
+	4400 4550 4550 4550
 $Comp
 L Device:R R12
 U 1 1 5F70A531
@@ -91,7 +80,7 @@ Wire Wire Line
 	7150 2900 7450 2900
 Wire Wire Line
 	5150 2900 5550 2900
-Text Notes 4150 6150 0    50   ~ 0
+Text Notes 4150 5050 0    50   ~ 0
 Primary USB Power Input
 $Comp
 L Connector:Screw_Terminal_01x02 J3
@@ -156,18 +145,6 @@ $EndComp
 Connection ~ 5800 2900
 Wire Wire Line
 	5800 2900 6750 2900
-NoConn ~ 5150 5200
-NoConn ~ 5150 5100
-NoConn ~ 5150 4900
-NoConn ~ 5150 4800
-NoConn ~ 5150 4600
-NoConn ~ 5150 4500
-NoConn ~ 5150 4300
-NoConn ~ 5150 4200
-NoConn ~ 5150 4000
-NoConn ~ 5150 3900
-NoConn ~ 5150 3200
-NoConn ~ 5150 3100
 Text HLabel 5400 3600 2    50   Output ~ 0
 D+
 Text HLabel 5400 3400 2    50   Output ~ 0
@@ -192,4 +169,17 @@ $EndComp
 Connection ~ 7450 2900
 Wire Wire Line
 	7450 2900 7650 2900
+$Comp
+L Connector:USB_C_Plug_USB2.0 P?
+U 1 1 5FA09B52
+P 4550 3500
+F 0 "P?" H 4657 4367 50  0000 C CNN
+F 1 "USB_C_Plug_USB2.0" H 4657 4276 50  0000 C CNN
+F 2 "" H 4700 3500 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 4700 3500 50  0001 C CNN
+	1    4550 3500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5150 3200
+NoConn ~ 5150 3100
 $EndSCHEMATC
