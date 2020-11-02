@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DFLS230L
+D 2.0A Surface Mount Schottky Barrier Rectifier
+K diode Schottky
+F https://www.diodes.com/assets/Datasheets/ds30515.pdf
+$ENDCMP
+#
+#End Doc Library

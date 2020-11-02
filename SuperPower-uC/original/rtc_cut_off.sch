@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:SuperPower-uC-KiCad-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -21,5 +20,222 @@ SDA
 Text HLabel 1600 1800 0    50   Input ~ 0
 VIN
 Text HLabel 1600 1950 0    50   Output ~ 0
-VOUT
+INT
+NoConn ~ 5900 3550
+$Comp
+L Device:R R15
+U 1 1 5F716104
+P 6100 3600
+F 0 "R15" H 6300 3550 50  0000 R CNN
+F 1 "10k" H 6300 3650 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6030 3600 50  0001 C CNN
+F 3 "~" H 6100 3600 50  0001 C CNN
+	1    6100 3600
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR026
+U 1 1 5F71610D
+P 6100 3950
+F 0 "#PWR026" H 6100 3700 50  0001 C CNN
+F 1 "GND" H 6105 3777 50  0000 C CNN
+F 2 "" H 6100 3950 50  0001 C CNN
+F 3 "" H 6100 3950 50  0001 C CNN
+	1    6100 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 5F716136
+P 6500 3100
+F 0 "R16" H 6450 3050 50  0000 R CNN
+F 1 "10k" H 6450 3150 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6430 3100 50  0001 C CNN
+F 3 "~" H 6500 3100 50  0001 C CNN
+	1    6500 3100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4250 3650 4500 3650
+$Comp
+L RV-3028-C7:RV-3028-C7 U3
+U 1 1 5F7160EF
+P 5200 3450
+F 0 "U3" H 5200 4117 50  0000 C CNN
+F 1 "RV-3028-C7" H 5200 4026 50  0000 C CNN
+F 2 "RV-3028-C7:IC_RV-3028-C7" H 5200 3450 50  0001 L BNN
+F 3 "Micro Crystal" H 5200 3450 50  0001 L BNN
+F 4 "Manufacturer Recommendations" H 5200 3450 50  0001 L BNN "Field4"
+F 5 "1.1" H 5200 3450 50  0001 L BNN "Field5"
+F 6 "0.8 mm" H 5200 3450 50  0001 L BNN "Field6"
+	1    5200 3450
+	1    0    0    -1  
+$EndComp
+Text Label 4250 3550 0    50   ~ 0
+SCL
+Text Label 4250 3650 0    50   ~ 0
+SDA
+Text Label 1850 1350 2    50   ~ 0
+SCL
+Text Label 1850 1500 2    50   ~ 0
+SDA
+Text Label 1850 1800 2    50   ~ 0
+VIN
+Text Label 1850 1950 2    50   ~ 0
+INT
+Text Notes 4150 3950 0    50   Italic 0
+I²C pull-up\non another\nsheet
+Text Notes 3550 2800 0    50   Italic 0
+External trigger\npin header on board\ntrigger device must handle VIN
+Wire Wire Line
+	1600 1950 1850 1950
+Wire Wire Line
+	1600 1350 1850 1350
+Wire Wire Line
+	1600 1500 1850 1500
+$Comp
+L power:PWR_FLAG #FLG06
+U 1 1 5F765992
+P 1950 1800
+F 0 "#FLG06" H 1950 1875 50  0001 C CNN
+F 1 "PWR_FLAG" V 1950 1928 50  0000 L CNN
+F 2 "" H 1950 1800 50  0001 C CNN
+F 3 "~" H 1950 1800 50  0001 C CNN
+	1    1950 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1600 1800 1950 1800
+Wire Wire Line
+	4500 3550 4250 3550
+$Comp
+L Device:C C8
+U 1 1 5F716113
+P 7150 3100
+F 0 "C8" H 7265 3146 50  0000 L CNN
+F 1 "100nF" H 7265 3055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7188 2950 50  0001 C CNN
+F 3 "~" H 7150 3100 50  0001 C CNN
+	1    7150 3100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7150 2950 7150 2850
+Text Label 6850 3350 2    50   ~ 0
+INT
+$Comp
+L power:PWR_FLAG #FLG07
+U 1 1 5FABB3BB
+P 6200 3050
+F 0 "#FLG07" H 6200 3125 50  0001 C CNN
+F 1 "PWR_FLAG" H 6250 3200 50  0000 C CNN
+F 2 "" H 6200 3050 50  0001 C CNN
+F 3 "~" H 6200 3050 50  0001 C CNN
+	1    6200 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3850 6100 3850
+Wire Wire Line
+	3750 3250 3850 3250
+Wire Wire Line
+	3750 3150 3850 3150
+Wire Wire Line
+	3850 3750 3850 3850
+$Comp
+L Connector:Conn_01x02_Male J4
+U 1 1 5F78D93A
+P 3550 3150
+F 0 "J4" H 3600 3200 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 3200 3100 50  0000 C CNN
+F 2 "" H 3550 3150 50  0001 C CNN
+F 3 "~" H 3550 3150 50  0001 C CNN
+	1    3550 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2900 3850 3150
+Text Label 3850 2900 3    50   ~ 0
+VIN
+$Comp
+L Device:R R14
+U 1 1 5F716154
+P 3850 3600
+F 0 "R14" H 4050 3550 50  0000 R CNN
+F 1 "10k" H 4050 3650 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3780 3600 50  0001 C CNN
+F 3 "~" H 3850 3600 50  0001 C CNN
+	1    3850 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR025
+U 1 1 5F716148
+P 3850 3850
+F 0 "#PWR025" H 3850 3600 50  0001 C CNN
+F 1 "GND" H 3855 3677 50  0000 C CNN
+F 2 "" H 3850 3850 50  0001 C CNN
+F 3 "" H 3850 3850 50  0001 C CNN
+	1    3850 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 3250 3850 3350
+Wire Wire Line
+	4500 3350 3850 3350
+Wire Wire Line
+	3850 3350 3850 3450
+Connection ~ 3850 3350
+Wire Wire Line
+	6100 3850 6100 3950
+Wire Wire Line
+	5900 3150 6100 3150
+Wire Wire Line
+	6100 3150 6100 3450
+Wire Wire Line
+	6100 3750 6100 3850
+Connection ~ 6100 3850
+Wire Wire Line
+	6100 3150 6200 3150
+Wire Wire Line
+	6200 3150 6200 3050
+Connection ~ 6100 3150
+$Comp
+L power:GND #PWR027
+U 1 1 5FBD2731
+P 7150 3350
+F 0 "#PWR027" H 7150 3100 50  0001 C CNN
+F 1 "GND" H 7155 3177 50  0000 C CNN
+F 2 "" H 7150 3350 50  0001 C CNN
+F 3 "" H 7150 3350 50  0001 C CNN
+	1    7150 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 3250 7150 3350
+Wire Wire Line
+	5900 3350 6500 3350
+Wire Wire Line
+	6500 3250 6500 3350
+Wire Wire Line
+	6500 2850 6500 2950
+Wire Wire Line
+	6000 3050 5900 3050
+Wire Wire Line
+	6000 3050 6000 2850
+Wire Wire Line
+	6000 2850 6500 2850
+Connection ~ 6500 2850
+Connection ~ 6500 3350
+Wire Wire Line
+	6500 3350 6850 3350
+Text Label 6850 2650 3    50   ~ 0
+VIN
+Wire Wire Line
+	6850 2850 7150 2850
+Wire Wire Line
+	6500 2850 6850 2850
+Connection ~ 6850 2850
+Wire Wire Line
+	6850 2650 6850 2850
 $EndSCHEMATC

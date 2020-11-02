@@ -12,20 +12,27 @@ preflight:
       regexp:  '(Power input) of component'
 
 outputs:
-  - name: 'print schema'
-    comment: "Print schematic (SVG)"
-    type: svg_sch_print
-    dir: build
+  - name: 'Print Schema as PDF'
+    comment: "Print schematic (PDF)"
+    type: pdf_sch_print
+    dir: schematics
     options:
       output: '%p-Schematic.%x'
 
-#  - name: 'print board'
-#    comment: "Print board (PDF)"
-#    type: pdf_pcb_print
-#    layers: 'all'
-#    dir: build
-#    options:
-#      output: '%p-Board.%x'
+  - name: 'Pront Schema as SVGs'
+    comment: "Print schematic (SVG)"
+    type: svg_sch_print
+    dir: schematics
+    options:
+      output: '%p-Schematic.%x'
+
+  - name: 'print board'
+    comment: "Print board (PDF)"
+    type: pdf_pcb_print
+    layers: 'all'
+    dir: layout
+    options:
+      output: '%p-Board.%x'
 
   # PcbDraw - Beautiful 2D PCB render:
   # Uses configurable colors.
@@ -33,7 +40,7 @@ outputs:
   - name: 'plot images of pcb TOP'
     comment: 'Exports the PCB as a 2D model (SVG, PNG or JPG).'
     type: 'pcbdraw'
-    dir: 'build/img'
+    dir: 'layout'
     options:
       # [boolean=false] render the bottom side of the board (default is top side)
       bottom: false
@@ -68,7 +75,7 @@ outputs:
   - name: 'plot images of pcb BOTTOM'
     comment: 'Exports the PCB as a 2D model (SVG, PNG or JPG).'
     type: 'pcbdraw'
-    dir: 'build/img'
+    dir: 'layout'
     options:
       # [boolean=false] render the bottom side of the board (default is top side)
       bottom: true
