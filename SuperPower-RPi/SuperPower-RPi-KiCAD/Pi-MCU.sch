@@ -13,37 +13,35 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 3200 1950 0    50   BiDi ~ 0
+Text HLabel 3200 4700 0    50   BiDi ~ 0
 SDA
-Text HLabel 3350 2300 0    50   BiDi ~ 0
+Text HLabel 4950 3000 2    50   BiDi ~ 0
 SCL
-Text HLabel 2950 3750 0    50   BiDi ~ 0
+Text HLabel 2350 4100 0    50   BiDi ~ 0
 GPIO0
-NoConn ~ 3200 1950
-NoConn ~ 3350 2300
-NoConn ~ 2950 3750
-Text Notes 1050 4350 0    50   ~ 0
-Add SWD pads in TagConnect\nAdd jumper for measuring MCU current.
+NoConn ~ 2350 4100
+Text Notes 1000 7200 0    50   ~ 0
+Add jumper for measuring MCU current.
 $Comp
 L MCU_ST_STM32F4:STM32F412RGTx U3
 U 1 1 5F935A6D
-P 4700 3350
-F 0 "U3" H 4650 3500 50  0000 C CNN
-F 1 "STM32F412RGTx" H 4700 3350 50  0000 C CNN
-F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 4100 1650 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00213872.pdf" H 4700 3350 50  0001 C CNN
-	1    4700 3350
+P 4100 3700
+F 0 "U3" H 4050 3850 50  0000 C CNN
+F 1 "STM32F412RGTx" H 4100 3700 50  0000 C CNN
+F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 3500 2000 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00213872.pdf" H 4100 3700 50  0001 C CNN
+	1    4100 3700
 	1    0    0    -1  
 $EndComp
 $Comp
 L MCU_Microchip_ATtiny:ATtiny1614-SS U4
 U 1 1 5F9378C2
-P 9200 3650
-F 0 "U4" H 9200 3750 50  0000 C CNN
-F 1 "ATtiny1614-SS" H 9200 3600 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 9200 3650 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny1614-data-sheet-40001995A.pdf" H 9200 3650 50  0001 C CNN
-	1    9200 3650
+P 8750 3950
+F 0 "U4" H 8750 4050 50  0000 C CNN
+F 1 "ATtiny1614-SS" H 8750 3900 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 8750 3950 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny1614-data-sheet-40001995A.pdf" H 8750 3950 50  0001 C CNN
+	1    8750 3950
 	1    0    0    -1  
 $EndComp
 Text HLabel 8800 1550 0    50   BiDi ~ 0
@@ -102,4 +100,405 @@ $EndComp
 Connection ~ 9150 1150
 Wire Wire Line
 	9150 1150 9300 1150
+$Comp
+L power:+3.3V #PWR022
+U 1 1 5FA273CF
+P 4150 1650
+F 0 "#PWR022" H 4150 1500 50  0001 C CNN
+F 1 "+3.3V" H 4165 1823 50  0000 C CNN
+F 2 "" H 4150 1650 50  0001 C CNN
+F 3 "" H 4150 1650 50  0001 C CNN
+	1    4150 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 2000 4000 1900
+Wire Wire Line
+	4000 1900 4100 1900
+Wire Wire Line
+	4300 1900 4300 2000
+Wire Wire Line
+	4200 2000 4200 1900
+Connection ~ 4200 1900
+Wire Wire Line
+	4200 1900 4300 1900
+Wire Wire Line
+	4100 2000 4100 1900
+Connection ~ 4100 1900
+Wire Wire Line
+	4100 1900 4150 1900
+Wire Wire Line
+	4150 1650 4150 1900
+Connection ~ 4150 1900
+Wire Wire Line
+	4150 1900 4200 1900
+$Comp
+L power:+3.3V #PWR025
+U 1 1 5FA2A2A7
+P 8750 3050
+F 0 "#PWR025" H 8750 2900 50  0001 C CNN
+F 1 "+3.3V" H 8765 3223 50  0000 C CNN
+F 2 "" H 8750 3050 50  0001 C CNN
+F 3 "" H 8750 3050 50  0001 C CNN
+	1    8750 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 3250 8750 3050
+$Comp
+L Device:C_Small C25
+U 1 1 5FA2B8E5
+P 9250 2900
+F 0 "C25" H 9158 2854 50  0000 R CNN
+F 1 "0.1uF" H 9158 2945 50  0000 R CNN
+F 2 "" H 9250 2900 50  0001 C CNN
+F 3 "~" H 9250 2900 50  0001 C CNN
+	1    9250 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C23
+U 1 1 5FA2BF54
+P 5150 1650
+F 0 "C23" H 5058 1604 50  0000 R CNN
+F 1 "0.1uF" H 5058 1695 50  0000 R CNN
+F 2 "" H 5150 1650 50  0001 C CNN
+F 3 "~" H 5150 1650 50  0001 C CNN
+	1    5150 1650
+	-1   0    0    1   
+$EndComp
+Text Notes 4500 7200 0    50   ~ 0
+I2C Pins: (SDA/SCL)\nI2C1: PB7/PB6\nI2C2: PB3/PB10\nI2C3: PC9/PA8 <--
+Wire Wire Line
+	3200 4700 3400 4700
+Wire Wire Line
+	4950 3000 4800 3000
+$Comp
+L power:GND #PWR023
+U 1 1 5FA2E541
+P 4150 5800
+F 0 "#PWR023" H 4150 5550 50  0001 C CNN
+F 1 "GND" H 4155 5627 50  0000 C CNN
+F 2 "" H 4150 5800 50  0001 C CNN
+F 3 "" H 4150 5800 50  0001 C CNN
+	1    4150 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR026
+U 1 1 5FA2E9B4
+P 8750 4750
+F 0 "#PWR026" H 8750 4500 50  0001 C CNN
+F 1 "GND" H 8755 4577 50  0000 C CNN
+F 2 "" H 8750 4750 50  0001 C CNN
+F 3 "" H 8750 4750 50  0001 C CNN
+	1    8750 4750
+	1    0    0    -1  
+$EndComp
+Text HLabel 9600 3650 2    50   BiDi ~ 0
+SDA
+Wire Wire Line
+	9600 3650 9350 3650
+Text HLabel 9600 3750 2    50   BiDi ~ 0
+SCL
+Wire Wire Line
+	9600 3750 9350 3750
+$Comp
+L power:+3.3V #PWR027
+U 1 1 5FA2FF44
+P 9600 3250
+F 0 "#PWR027" H 9600 3100 50  0001 C CNN
+F 1 "+3.3V" H 9615 3423 50  0000 C CNN
+F 2 "" H 9600 3250 50  0001 C CNN
+F 3 "" H 9600 3250 50  0001 C CNN
+	1    9600 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R15
+U 1 1 5FA305E2
+P 9600 3400
+F 0 "R15" H 9659 3446 50  0000 L CNN
+F 1 "10k" H 9659 3355 50  0000 L CNN
+F 2 "" H 9600 3400 50  0001 C CNN
+F 3 "~" H 9600 3400 50  0001 C CNN
+	1    9600 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 3300 9600 3250
+Wire Wire Line
+	9350 3550 9600 3550
+Wire Wire Line
+	9600 3550 9600 3500
+Wire Wire Line
+	9600 3550 9850 3550
+Connection ~ 9600 3550
+Text Label 9850 3550 0    50   ~ 0
+Reset
+Wire Wire Line
+	8750 4650 8750 4750
+Text HLabel 7750 3900 0    50   BiDi ~ 0
+GPIO0
+Text Label 5250 3500 2    50   ~ 0
+SWDIO
+Wire Wire Line
+	4800 3500 5250 3500
+Text Label 5250 3600 2    50   ~ 0
+SWCLK
+Wire Wire Line
+	5250 3600 4800 3600
+$Comp
+L Connector_Generic:Conn_01x06 J5
+U 1 1 5FA35302
+P 1050 2900
+F 0 "J5" H 968 3225 50  0000 C CNN
+F 1 "Conn_01x06" H 968 3226 50  0001 C CNN
+F 2 "" H 1050 2900 50  0001 C CNN
+F 3 "~" H 1050 2900 50  0001 C CNN
+	1    1050 2900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR019
+U 1 1 5FA362EB
+P 1550 2600
+F 0 "#PWR019" H 1550 2450 50  0001 C CNN
+F 1 "+3.3V" H 1565 2773 50  0000 C CNN
+F 2 "" H 1550 2600 50  0001 C CNN
+F 3 "" H 1550 2600 50  0001 C CNN
+	1    1550 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 2700 1550 2700
+Wire Wire Line
+	1550 2700 1550 2600
+Text Label 1600 2800 2    50   ~ 0
+SWDIO
+Text Label 1600 3000 2    50   ~ 0
+SWCLK
+Text Label 1600 2900 2    50   ~ 0
+nRESET
+Wire Wire Line
+	1600 3000 1250 3000
+Wire Wire Line
+	1250 2900 1600 2900
+Wire Wire Line
+	1250 2800 1600 2800
+Text Label 2900 2200 0    50   ~ 0
+nRESET
+Wire Wire Line
+	3400 2200 2900 2200
+$Comp
+L power:GND #PWR018
+U 1 1 5FA39A26
+P 1350 3300
+F 0 "#PWR018" H 1350 3050 50  0001 C CNN
+F 1 "GND" H 1355 3127 50  0000 C CNN
+F 2 "" H 1350 3300 50  0001 C CNN
+F 3 "" H 1350 3300 50  0001 C CNN
+	1    1350 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 3100 1350 3100
+Wire Wire Line
+	1350 3100 1350 3300
+Text Label 1600 3200 2    50   ~ 0
+SWO
+Wire Wire Line
+	1600 3200 1250 3200
+Text Notes 1150 3650 0    50   ~ 0
+TAG Connect
+Text Label 5250 3400 2    50   ~ 0
+CAN1_TX
+Text Label 5250 3300 2    50   ~ 0
+CAN1_RX
+Wire Wire Line
+	5250 3300 4800 3300
+Wire Wire Line
+	4800 3400 5250 3400
+Text Label 5200 5100 2    50   ~ 0
+CAN2_TX
+Wire Wire Line
+	5200 5100 4800 5100
+Text Label 5200 5000 2    50   ~ 0
+CAN2_RX
+Wire Wire Line
+	5200 5000 4800 5000
+$Comp
+L Device:C_Small C22
+U 1 1 5FA438D1
+P 3300 2750
+F 0 "C22" H 3209 2704 50  0000 R CNN
+F 1 "4.7uF" H 3209 2795 50  0000 R CNN
+F 2 "" H 3300 2750 50  0001 C CNN
+F 3 "~" H 3300 2750 50  0001 C CNN
+	1    3300 2750
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR021
+U 1 1 5FA44160
+P 3300 2900
+F 0 "#PWR021" H 3300 2650 50  0001 C CNN
+F 1 "GND" H 3305 2727 50  0000 C CNN
+F 2 "" H 3300 2900 50  0001 C CNN
+F 3 "" H 3300 2900 50  0001 C CNN
+	1    3300 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 2900 3300 2850
+Wire Wire Line
+	3300 2650 3300 2600
+Wire Wire Line
+	3300 2600 3400 2600
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5FA488EA
+P 6700 5500
+F 0 "SW1" V 6746 5452 50  0000 R CNN
+F 1 "Tact" V 6655 5452 50  0000 R CNN
+F 2 "" H 6700 5700 50  0001 C CNN
+F 3 "~" H 6700 5700 50  0001 C CNN
+	1    6700 5500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C24
+U 1 1 5FA4ADCC
+P 7050 5500
+F 0 "C24" H 6958 5454 50  0000 R CNN
+F 1 "0.1uF" H 6958 5545 50  0000 R CNN
+F 2 "" H 7050 5500 50  0001 C CNN
+F 3 "~" H 7050 5500 50  0001 C CNN
+	1    7050 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR024
+U 1 1 5FA4B4BE
+P 6800 5900
+F 0 "#PWR024" H 6800 5650 50  0001 C CNN
+F 1 "GND" H 6805 5727 50  0000 C CNN
+F 2 "" H 6800 5900 50  0001 C CNN
+F 3 "" H 6800 5900 50  0001 C CNN
+	1    6800 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 5900 6800 5800
+Wire Wire Line
+	6800 5800 6700 5800
+Wire Wire Line
+	6700 5800 6700 5700
+Wire Wire Line
+	6800 5800 7050 5800
+Wire Wire Line
+	7050 5800 7050 5600
+Connection ~ 6800 5800
+Text Label 7100 5200 0    50   ~ 0
+nRESET
+Wire Wire Line
+	7050 5400 7050 5200
+Wire Wire Line
+	7050 5200 6700 5200
+Wire Wire Line
+	6700 5200 6700 5300
+Wire Wire Line
+	7100 5200 7050 5200
+Connection ~ 7050 5200
+Wire Wire Line
+	4400 2000 4400 1900
+Wire Wire Line
+	4400 1900 4300 1900
+Connection ~ 4300 1900
+$Comp
+L Manual_Lib:ME6210A33M3G U5
+U 1 1 5FA5D721
+P 1900 1250
+F 0 "U5" H 1900 1492 50  0000 C CNN
+F 1 "ME6210A33M3G" H 1900 1401 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2350 1000 50  0001 L CIN
+F 3 "https://datasheet.lcsc.com/szlcsc/1810201611_MICRONE-Nanjing-Micro-One-Elec-ME6210A33PG_C85233.pdf" H 1900 1200 50  0001 C CNN
+F 4 "MicrOne" H 2500 850 50  0001 C CNN "Mfg"
+F 5 "ME6210A33M3G" H 2650 900 50  0001 C CNN "Mfg PN"
+	1    1900 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C21
+U 1 1 5FA5DD96
+P 2300 1450
+F 0 "C21" H 2208 1404 50  0000 R CNN
+F 1 "10uF" H 2208 1495 50  0000 R CNN
+F 2 "" H 2300 1450 50  0001 C CNN
+F 3 "~" H 2300 1450 50  0001 C CNN
+	1    2300 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C20
+U 1 1 5FA5E248
+P 1400 1450
+F 0 "C20" H 1308 1404 50  0000 R CNN
+F 1 "10uF" H 1308 1495 50  0000 R CNN
+F 2 "" H 1400 1450 50  0001 C CNN
+F 3 "~" H 1400 1450 50  0001 C CNN
+	1    1400 1450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2200 1250 2300 1250
+Wire Wire Line
+	2300 1250 2300 1350
+$Comp
+L power:GND #PWR020
+U 1 1 5FA628B7
+P 1950 1700
+F 0 "#PWR020" H 1950 1450 50  0001 C CNN
+F 1 "GND" H 1955 1527 50  0000 C CNN
+F 2 "" H 1950 1700 50  0001 C CNN
+F 3 "" H 1950 1700 50  0001 C CNN
+	1    1950 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 1700 1950 1600
+Wire Wire Line
+	1900 1600 1950 1600
+Wire Wire Line
+	2300 1600 2300 1550
+Wire Wire Line
+	1900 1600 1900 1550
+Connection ~ 1950 1600
+Wire Wire Line
+	1950 1600 2300 1600
+Wire Wire Line
+	1900 1600 1400 1600
+Wire Wire Line
+	1400 1600 1400 1550
+Connection ~ 1900 1600
+Wire Wire Line
+	1400 1350 1400 1250
+Wire Wire Line
+	1400 1250 1600 1250
+Wire Wire Line
+	1400 1250 1350 1250
+Connection ~ 1400 1250
+Text HLabel 1350 1250 0    50   Input ~ 0
+VBAT_IN
+Wire Wire Line
+	3900 2000 3900 1850
+Wire Wire Line
+	3900 1850 3450 1850
+Text Label 3450 1850 0    50   ~ 0
+VBAT_REG
+Text Label 2700 1250 2    50   ~ 0
+VBAT_REG
+Wire Wire Line
+	2300 1250 2700 1250
+Connection ~ 2300 1250
 $EndSCHEMATC

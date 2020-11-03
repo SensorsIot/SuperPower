@@ -56,7 +56,7 @@ Wire Wire Line
 Wire Wire Line
 	2300 3650 3200 3650
 Wire Wire Line
-	4500 3650 5450 3650
+	4500 3650 4800 3650
 $Sheet
 S 5450 3450 1000 1150
 U 5F6AC4E0
@@ -101,6 +101,7 @@ F1 "Pi-MCU.sch" 50
 F2 "SDA" B L 3250 1750 50 
 F3 "SCL" B L 3250 1850 50 
 F4 "GPIO0" B R 4550 1900 50 
+F5 "VBAT_IN" I L 3250 2250 50 
 $EndSheet
 $Sheet
 S 3200 5350 1250 1050
@@ -137,4 +138,15 @@ Wire Wire Line
 	3200 4000 2300 4000
 Text Notes 9000 1850 0    50   ~ 0
 Add extra interfaces block.
+Wire Wire Line
+	3250 2250 3050 2250
+Wire Wire Line
+	3050 2250 3050 2900
+Wire Wire Line
+	3050 2900 4800 2900
+Wire Wire Line
+	4800 2900 4800 3650
+Connection ~ 4800 3650
+Wire Wire Line
+	4800 3650 5450 3650
 $EndSCHEMATC
