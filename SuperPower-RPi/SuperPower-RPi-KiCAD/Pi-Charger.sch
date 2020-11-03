@@ -21,6 +21,9 @@ F 0 "U2" H 5650 4717 50  0000 C CNN
 F 1 "BQ25895RTW" H 5650 4626 50  0000 C CNN
 F 2 "Package_DFN_QFN:Texas_S-PWQFN-N24_EP2.7x2.7mm_ThermalVias" H 5550 4750 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/bq25895.pdf" H 5450 4550 50  0001 C CNN
+F 4 "296-44345-1-ND" H 5650 3750 50  0001 C CNN "Digi-Key PN"
+F 5 "Texas Instruments" H 5650 3750 50  0001 C CNN "Mfg"
+F 6 "BQ25895RTWR" H 5650 3750 50  0001 C CNN "Mfg PN"
 	1    5650 3750
 	1    0    0    -1  
 $EndComp

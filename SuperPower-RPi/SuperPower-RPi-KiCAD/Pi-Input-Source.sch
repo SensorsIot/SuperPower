@@ -345,10 +345,10 @@ Overvoltage Protection
 Text Notes 6450 4850 0    50   ~ 0
 Vz(D4) + Vgs(th)(Q2) is critical for overvoltage threshold.
 $Comp
-L Device:Q_PMOS_GSD Q?
+L Device:Q_PMOS_GSD Q2
 U 1 1 5FA8A6C8
 P 7900 3550
-F 0 "Q?" V 8242 3550 50  0000 C CNN
+F 0 "Q2" V 8242 3550 50  0000 C CNN
 F 1 "Q_PMOS_GSD" V 8151 3550 50  0000 C CNN
 F 2 "" H 8100 3650 50  0001 C CNN
 F 3 "~" H 7900 3550 50  0001 C CNN
@@ -356,10 +356,10 @@ F 3 "~" H 7900 3550 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Connector:USB_C_Receptacle_USB2.0 J?
+L Connector:USB_C_Receptacle_USB2.0 J6
 U 1 1 5FA11947
 P 2450 3600
-F 0 "J?" H 2557 4467 50  0000 C CNN
+F 0 "J6" H 2557 4467 50  0000 C CNN
 F 1 "USB_C_Receptacle_USB2.0" H 2557 4376 50  0000 C CNN
 F 2 "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 2600 3600 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1811131825_Korean-Hroparts-Elec-TYPE-C-31-M-12_C165948.pdf" H 2600 3600 50  0001 C CNN
