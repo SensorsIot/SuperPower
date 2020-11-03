@@ -16,17 +16,6 @@ $EndDescr
 NoConn ~ 3050 3200
 NoConn ~ 3050 3300
 $Comp
-L Connector:USB_C_Plug_USB2.0 P1
-U 1 1 5FA09B52
-P 2450 3600
-F 0 "P1" H 2557 4467 50  0000 C CNN
-F 1 "USB_C_Plug_USB2.0" H 2557 4376 50  0000 C CNN
-F 2 "" H 2600 3600 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 2600 3600 50  0001 C CNN
-	1    2450 3600
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:PWR_FLAG #FLG0106
 U 1 1 5F79AC3D
 P 4950 3000
@@ -38,9 +27,9 @@ F 3 "~" H 4950 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3050 3700 3300 3700
+	3050 3700 3150 3700
 Wire Wire Line
-	3300 3500 3050 3500
+	3300 3500 3150 3500
 Text HLabel 3300 3500 2    50   Output ~ 0
 D-
 Text HLabel 3300 3700 2    50   Output ~ 0
@@ -167,7 +156,7 @@ U 1 1 5FA88013
 P 4850 3250
 F 0 "D3" V 4804 3320 50  0000 L CNN
 F 1 "D_Zener_Small" V 4895 3320 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-123" V 4850 3250 50  0001 C CNN
+F 2 "" V 4850 3250 50  0001 C CNN
 F 3 "~" V 4850 3250 50  0001 C CNN
 	1    4850 3250
 	0    1    1    0   
@@ -366,4 +355,33 @@ F 3 "~" H 7900 3550 50  0001 C CNN
 	1    7900 3550
 	1    0    0    1   
 $EndComp
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J?
+U 1 1 5FA11947
+P 2450 3600
+F 0 "J?" H 2557 4467 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 2557 4376 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 2600 3600 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811131825_Korean-Hroparts-Elec-TYPE-C-31-M-12_C165948.pdf" H 2600 3600 50  0001 C CNN
+F 4 "Korean Hroparts Elec" H 2450 3600 50  0001 C CNN "Mfg"
+F 5 "TYPE-C-31-M-12" H 2450 3600 50  0001 C CNN "Mfg PN"
+	1    2450 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 3600 3150 3600
+Wire Wire Line
+	3150 3600 3150 3500
+Connection ~ 3150 3500
+Wire Wire Line
+	3150 3500 3050 3500
+Wire Wire Line
+	3050 3800 3150 3800
+Wire Wire Line
+	3150 3800 3150 3700
+Connection ~ 3150 3700
+Wire Wire Line
+	3150 3700 3300 3700
+NoConn ~ 3050 4200
+NoConn ~ 3050 4100
 $EndSCHEMATC
