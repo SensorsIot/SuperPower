@@ -157,7 +157,7 @@ F 3 "~" H 4550 3100 50  0001 C CNN
 $EndComp
 Text HLabel 9550 3000 2    50   Output ~ 0
 Vout
-Text Notes 4850 5850 0    50   ~ 0
+Text Notes 2450 5900 0    50   ~ 0
 NOTE:\nProbably USB-C and screw-terminals for solar.  \nMicroUSB possible. 
 Text Notes 4150 2150 0    50   ~ 0
 Should the USB VBUS be moved to after the input protection?
@@ -167,7 +167,7 @@ U 1 1 5FA88013
 P 4850 3250
 F 0 "D3" V 4804 3320 50  0000 L CNN
 F 1 "D_Zener_Small" V 4895 3320 50  0000 L CNN
-F 2 "" V 4850 3250 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123" V 4850 3250 50  0001 C CNN
 F 3 "~" V 4850 3250 50  0001 C CNN
 	1    4850 3250
 	0    1    1    0   
@@ -254,17 +254,6 @@ F 2 "" V 7200 3250 50  0001 C CNN
 F 3 "~" V 7200 3250 50  0001 C CNN
 	1    7200 3250
 	0    1    1    0   
-$EndComp
-$Comp
-L Device:Q_PMOS_GSD Q6
-U 1 1 5FA8CB6D
-P 7900 3550
-F 0 "Q6" H 7750 3600 50  0000 C CNN
-F 1 "Q_PMOS_GSD" V 8150 3650 50  0000 C CNN
-F 2 "" H 8100 3650 50  0001 C CNN
-F 3 "~" H 7900 3550 50  0001 C CNN
-	1    7900 3550
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R18
@@ -364,4 +353,17 @@ Text Notes 4100 4250 0    50   ~ 0
 Reverse Polarity Protection
 Text Notes 6950 4500 0    50   ~ 0
 Overvoltage Protection
+Text Notes 6450 4850 0    50   ~ 0
+Vz(D4) + Vgs(th)(Q2) is critical for overvoltage threshold.
+$Comp
+L Device:Q_PMOS_GSD Q?
+U 1 1 5FA8A6C8
+P 7900 3550
+F 0 "Q?" V 8242 3550 50  0000 C CNN
+F 1 "Q_PMOS_GSD" V 8151 3550 50  0000 C CNN
+F 2 "" H 8100 3650 50  0001 C CNN
+F 3 "~" H 7900 3550 50  0001 C CNN
+	1    7900 3550
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC

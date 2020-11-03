@@ -18,19 +18,19 @@ Wire Wire Line
 Wire Wire Line
 	6950 1900 6950 4100
 Wire Wire Line
-	4550 1900 6950 1900
+	6550 1900 6950 1900
 Wire Wire Line
 	9150 4150 9350 4150
 Wire Wire Line
 	9350 4050 9150 4050
-Text Label 3000 1850 2    50   ~ 0
+Text Label 4900 1850 2    50   ~ 0
 SCL
-Text Label 3000 1750 2    50   ~ 0
+Text Label 4900 1750 2    50   ~ 0
 SDA
 Wire Wire Line
-	3250 1850 3000 1850
+	5250 1850 4900 1850
 Wire Wire Line
-	3250 1750 3000 1750
+	5250 1750 4900 1750
 Wire Wire Line
 	4450 5500 4700 5500
 Wire Wire Line
@@ -91,17 +91,17 @@ F0 "Pi-Input-Source" 50
 F1 "Pi-Input-Source.sch" 50
 F2 "Vout" O R 2300 3650 50 
 F3 "D+" O R 2300 3950 50 
-F4 "D-" O R 2300 4000 50 
+F4 "D-" O R 2300 4050 50 
 $EndSheet
 $Sheet
-S 3250 1250 1300 1200
+S 5250 1250 1300 1200
 U 5F6AC872
 F0 "Pi-MCU" 50
 F1 "Pi-MCU.sch" 50
-F2 "SDA" B L 3250 1750 50 
-F3 "SCL" B L 3250 1850 50 
-F4 "GPIO0" B R 4550 1900 50 
-F5 "VBAT_IN" I L 3250 2250 50 
+F2 "SDA" B L 5250 1750 50 
+F3 "SCL" B L 5250 1850 50 
+F4 "GPIO0" B R 6550 1900 50 
+F5 "VBAT_IN" I L 5250 2250 50 
 $EndSheet
 $Sheet
 S 3200 5350 1250 1050
@@ -123,7 +123,7 @@ F5 "SDA" B L 3200 4400 50
 F6 "SCL" B L 3200 4500 50 
 F7 "Thermistor" I R 4500 4350 50 
 F8 "D+" I L 3200 3950 50 
-F9 "D-" I L 3200 4000 50 
+F9 "D-" I L 3200 4050 50 
 $EndSheet
 NoConn ~ 5450 4200
 Wire Wire Line
@@ -135,18 +135,14 @@ Wire Wire Line
 Wire Wire Line
 	2300 3950 3200 3950
 Wire Wire Line
-	3200 4000 2300 4000
+	3200 4050 2300 4050
 Text Notes 9000 1850 0    50   ~ 0
 Add extra interfaces block.
 Wire Wire Line
-	3250 2250 3050 2250
-Wire Wire Line
-	3050 2250 3050 2900
-Wire Wire Line
-	3050 2900 4800 2900
-Wire Wire Line
-	4800 2900 4800 3650
+	5250 2250 4800 2250
 Connection ~ 4800 3650
 Wire Wire Line
 	4800 3650 5450 3650
+Wire Wire Line
+	4800 2250 4800 3650
 $EndSCHEMATC
