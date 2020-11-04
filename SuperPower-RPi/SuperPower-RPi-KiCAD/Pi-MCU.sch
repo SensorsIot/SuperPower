@@ -918,4 +918,25 @@ $EndComp
 Connection ~ 3300 2950
 Wire Wire Line
 	3300 2900 3300 2950
+$Comp
+L Device:C_Small C33
+U 1 1 5FA8C003
+P 5650 1350
+F 0 "C33" H 5558 1304 50  0000 R CNN
+F 1 "0.1uF" H 5558 1395 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5650 1350 50  0001 C CNN
+F 3 "~" H 5650 1350 50  0001 C CNN
+	1    5650 1350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 1500 5650 1500
+Wire Wire Line
+	5650 1500 5650 1450
+Connection ~ 5250 1500
+Wire Wire Line
+	5650 1250 5650 1200
+Wire Wire Line
+	5650 1200 5250 1200
+Connection ~ 5250 1200
 $EndSCHEMATC
