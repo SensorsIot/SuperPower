@@ -166,17 +166,6 @@ F 3 "~" H 7800 3350 50  0001 C CNN
 	1    7800 3350
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Battery_Cell BT2
-U 1 1 5F7561CD
-P 7000 4650
-F 0 "BT2" H 7118 4746 50  0000 L CNN
-F 1 "Battery_Cell" H 7118 4655 50  0000 L CNN
-F 2 "" V 7000 4710 50  0001 C CNN
-F 3 "~" V 7000 4710 50  0001 C CNN
-	1    7000 4650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7000 3550 7000 3850
 $Comp
@@ -190,17 +179,15 @@ F 3 "" H 7000 4950 50  0001 C CNN
 	1    7000 4950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7000 4950 7000 4850
 $Comp
 L Device:C C6
 U 1 1 5F759045
-P 7700 4600
-F 0 "C6" H 7815 4646 50  0000 L CNN
-F 1 "10µF" H 7815 4555 50  0000 L CNN
-F 2 "" H 7738 4450 50  0001 C CNN
-F 3 "~" H 7700 4600 50  0001 C CNN
-	1    7700 4600
+P 7000 4600
+F 0 "C6" H 7115 4646 50  0000 L CNN
+F 1 "10µF" H 7115 4555 50  0000 L CNN
+F 2 "" H 7038 4450 50  0001 C CNN
+F 3 "~" H 7000 4600 50  0001 C CNN
+	1    7000 4600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -302,17 +289,6 @@ F 3 "" H 6400 5350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6400 5350 6400 5250
-Wire Wire Line
-	7000 4350 7700 4350
-Wire Wire Line
-	7700 4350 7700 4450
-Wire Wire Line
-	7700 4750 7700 4850
-Wire Wire Line
-	7700 4850 7000 4850
-Connection ~ 7000 4850
-Wire Wire Line
-	7000 4850 7000 4750
 Wire Wire Line
 	6400 4950 6400 4900
 $Comp
@@ -1901,7 +1877,7 @@ Wire Notes Line
 	2950 1950 5600 1950
 Text Notes 6000 6150 0    50   ~ 0
 If the application does not require temperature\ncontrolled charging, then the thermistor should be\nreplaced with a resistor of equal value to the bias resistor\nRNTCBIAS to continuously simulate 25°C.\n-> See page 20 of the Datasheet.
-Text Notes 8000 5250 0    50   ~ 0
+Text Notes 7350 5000 0    50   ~ 0
 Batt+ Capacitor :\n-> needed in case of no battery detected after a charging process started.\n10uF or more (see page 32 of the Datasheet)
 $Bitmap
 Pos 3150 7150
@@ -4740,9 +4716,9 @@ Wire Notes Line
 Text Notes 2850 5850 0    50   ~ 10
 Switching Frequency Setting
 Wire Notes Line
-	8250 4550 8250 5000
+	7600 4600 7600 4750
 Wire Notes Line
-	8000 4550 8250 4550
+	7350 4600 7600 4600
 Wire Notes Line
 	6250 5150 6100 5150
 Wire Notes Line
@@ -4805,7 +4781,7 @@ F 3 "" H 10000 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 9900 5600 0    50   ~ 0
-External Battery connector
+Battery connector\n(Battery Power Output)
 $Comp
 L Device:R_US R12
 U 1 1 5F8322FE
@@ -5049,9 +5025,6 @@ Text Label 1750 1550 2    50   ~ 0
 VOUT
 Text Label 8150 4350 2    50   ~ 0
 VBAT
-Wire Wire Line
-	7700 4350 8150 4350
-Connection ~ 7700 4350
 Text HLabel 1200 2000 0    50   Input ~ 0
 SCL
 Text HLabel 1200 2100 0    50   BiDi ~ 0
@@ -5070,4 +5043,20 @@ Text Label 4600 3950 0    50   ~ 0
 SCL
 Text Label 4600 4050 0    50   ~ 0
 SDA
+Wire Notes Line
+	8500 5300 11050 5300
+Wire Notes Line
+	11050 5300 11050 6450
+Wire Notes Line
+	11050 6450 8500 6450
+Wire Notes Line
+	8500 6450 8500 5300
+Wire Wire Line
+	7000 4350 8150 4350
+Wire Wire Line
+	7000 4750 7000 4950
+Text Notes 8550 5450 0    50   ~ 10
+Connectors
+Text Notes 7550 4150 0    59   ~ 12
+! The battery is implemented on the "Battery Module" Sheet !
 $EndSCHEMATC

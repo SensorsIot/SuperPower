@@ -387,4 +387,10 @@ Wire Wire Line
 Wire Wire Line
 	2950 1650 2850 1650
 Connection ~ 3150 1850
+Text Notes 1750 1250 0    50   ~ 0
+External Battery connector
+Wire Notes Line
+	2150 1300 2150 1600
+Wire Notes Line
+	2150 1600 2600 1600
 $EndSCHEMATC
