@@ -21,8 +21,9 @@ U 1 1 5F701F7D
 P 8150 2400
 F 0 "J2" H 8230 2392 50  0000 L CNN
 F 1 "Conn_01x02" H 8230 2301 50  0000 L CNN
-F 2 "" H 8150 2400 50  0001 C CNN
+F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 8150 2400 50  0001 C CNN
 F 3 "~" H 8150 2400 50  0001 C CNN
+F 4 "FIX FOOTPRINT" H 8150 2400 50  0001 C CNN "Mfg"
 	1    8150 2400
 	1    0    0    -1  
 $EndComp
@@ -34,6 +35,7 @@ F 0 "D1" V 6054 3430 50  0000 L CNN
 F 1 "SS34" V 6145 3430 50  0000 L CNN
 F 2 "Diode_SMD:D_SOD-123" H 6100 3350 50  0001 C CNN
 F 3 "~" H 6100 3350 50  0001 C CNN
+F 4 "FIX FOOTPRINT" H 6100 3350 50  0001 C CNN "Mfg"
 	1    6100 3350
 	0    1    1    0   
 $EndComp
@@ -183,7 +185,7 @@ U 1 1 5F7ACDE2
 P 4400 5900
 F 0 "J4" H 4480 5892 50  0000 L CNN
 F 1 "Conn_01x02" H 4480 5801 50  0000 L CNN
-F 2 "" H 4400 5900 50  0001 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" H 4400 5900 50  0001 C CNN
 F 3 "~" H 4400 5900 50  0001 C CNN
 	1    4400 5900
 	1    0    0    -1  
@@ -226,4 +228,6 @@ Text Notes 5150 4100 0    50   ~ 0
 Reverse Polarity Protection
 Text Notes 3950 6650 0    50   ~ 0
 Thermistor Connection\n(Optional)
+Text Notes 7650 3650 0    50   ~ 0
+Battery Connection
 $EndSCHEMATC
