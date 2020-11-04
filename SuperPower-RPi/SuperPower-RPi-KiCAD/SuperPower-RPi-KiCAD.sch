@@ -145,4 +145,48 @@ Wire Wire Line
 	4800 3650 5450 3650
 Wire Wire Line
 	4800 2250 4800 3650
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5FA3F339
+P 5150 7150
+F 0 "H1" H 5250 7150 50  0000 L CNN
+F 1 "MountingHole" H 5250 7105 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO14580_Pad_TopBottom" H 5150 7150 50  0001 C CNN
+F 3 "~" H 5150 7150 50  0001 C CNN
+	1    5150 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5FA3F7AE
+P 5450 7150
+F 0 "H2" H 5550 7150 50  0000 L CNN
+F 1 "MountingHole" H 5550 7105 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO14580_Pad_TopBottom" H 5450 7150 50  0001 C CNN
+F 3 "~" H 5450 7150 50  0001 C CNN
+	1    5450 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5FA3F9F0
+P 5750 7150
+F 0 "H3" H 5850 7150 50  0000 L CNN
+F 1 "MountingHole" H 5850 7105 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO14580_Pad_TopBottom" H 5750 7150 50  0001 C CNN
+F 3 "~" H 5750 7150 50  0001 C CNN
+	1    5750 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5FA3FCA7
+P 6050 7150
+F 0 "H4" H 6150 7150 50  0000 L CNN
+F 1 "MountingHole" H 6150 7105 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO14580_Pad_TopBottom" H 6050 7150 50  0001 C CNN
+F 3 "~" H 6050 7150 50  0001 C CNN
+	1    6050 7150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
