@@ -72,28 +72,6 @@ F 3 "" H 6300 750 50  0001 C CNN
 	1    6300 750 
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Q_NMOS_DGS Q2
-U 1 1 5F74657E
-P 4150 2900
-F 0 "Q2" V 4492 2900 50  0000 C CNN
-F 1 "Q_NMOS_DGS" V 4401 2900 50  0000 C CNN
-F 2 "" H 4350 3000 50  0001 C CNN
-F 3 "~" H 4150 2900 50  0001 C CNN
-	1    4150 2900
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:Q_NMOS_DGS Q3
-U 1 1 5F7470FF
-P 6900 3350
-F 0 "Q3" H 7104 3396 50  0000 L CNN
-F 1 "Q_NMOS_DGS" H 7104 3305 50  0000 L CNN
-F 2 "" H 7100 3450 50  0001 C CNN
-F 3 "~" H 6900 3350 50  0001 C CNN
-	1    6900 3350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5000 3100 4950 3100
 Wire Wire Line
@@ -108,9 +86,6 @@ Wire Wire Line
 	5000 3550 3850 3550
 Wire Wire Line
 	3850 2800 3950 2800
-Wire Wire Line
-	4350 2800 4450 2800
-Connection ~ 4450 2800
 Connection ~ 3850 2800
 Wire Wire Line
 	3850 2600 3850 2700
@@ -119,7 +94,7 @@ Wire Wire Line
 Wire Wire Line
 	4150 3100 4150 3400
 Wire Wire Line
-	4450 2800 4450 3250
+	4450 2800 4450 2850
 Wire Wire Line
 	4950 2800 4950 3100
 Wire Wire Line
@@ -151,9 +126,7 @@ Wire Wire Line
 Connection ~ 5600 2800
 Connection ~ 6300 3100
 Wire Wire Line
-	6300 3100 7000 3100
-Wire Wire Line
-	7000 3100 7000 3150
+	6300 3100 6950 3100
 Connection ~ 6300 2800
 $Comp
 L Device:C C7
@@ -4567,8 +4540,7 @@ NTC
 Text Label 6250 4500 0    50   ~ 0
 NTCbias
 Wire Wire Line
-	7800 3100 7000 3100
-Connection ~ 7000 3100
+	7800 3100 7050 3100
 Text Notes 6450 650  0    50   ~ 0
 Add this option to reduce Iquiescent in ship mode (see page 31 of the datasheet).
 Wire Wire Line
@@ -4610,10 +4582,10 @@ Wire Wire Line
 Text Label 8850 5850 0    50   ~ 0
 NTC
 $Comp
-L Device:Q_PMOS_DGS Q5
+L Device:Q_PMOS_DGS Q4
 U 1 1 5F8471F5
 P 7050 1450
-F 0 "Q5" V 7392 1450 50  0000 C CNN
+F 0 "Q4" V 7392 1450 50  0000 C CNN
 F 1 "Q_PMOS_DGS" V 7301 1450 50  0000 C CNN
 F 2 "" H 7250 1550 50  0001 C CNN
 F 3 "~" H 7050 1450 50  0001 C CNN
@@ -4621,10 +4593,10 @@ F 3 "~" H 7050 1450 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Device:Q_NMOS_DGS Q4
+L Device:Q_NMOS_DGS Q3
 U 1 1 5F84F43E
 P 6950 2450
-F 0 "Q4" H 7154 2496 50  0000 L CNN
+F 0 "Q3" H 7154 2496 50  0000 L CNN
 F 1 "Q_NMOS_DGS" H 7154 2405 50  0000 L CNN
 F 2 "" H 7150 2550 50  0001 C CNN
 F 3 "~" H 6950 2450 50  0001 C CNN
@@ -5066,4 +5038,49 @@ F 12 "https://octopart.com/ltc4162eufd-lad%23pbf-analog+devices-92333982?r=sp" H
 	1    5600 4000
 	1    0    0    -1  
 $EndComp
+$Comp
+L dmn3018ssd:DMN3018SSD Q2
+U 1 1 5FA650D4
+P 4150 2900
+F 0 "Q2" V 4525 2925 50  0000 C CNN
+F 1 "DMN3018SSD" V 4434 2925 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 4350 2825 50  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/DMN3018SSD.pdf" H 4150 2900 50  0001 C CNN
+F 4 "https://octopart.com/dmn3018ssd-13-diodes+inc.-26472698?r=sp" H 4150 2900 50  0001 C CNN "Octopart_link"
+F 5 "-" H 4150 2900 50  0001 C CNN "Farnell_link"
+F 6 "-" H 4150 2900 50  0001 C CNN "Farnell_ref"
+F 7 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMN3018SSD-13_C155277.html" H 4150 2900 50  0001 C CNN "LCSC_link"
+F 8 "C155277" H 4150 2900 50  0001 C CNN "LCSC_ref"
+F 9 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMN3018SSD-13?qs=%2Fha2pyFaduhiKtoBktzbgyUAHZPSS%252B8%252Bk9vZNvppSquz1WfnqvfRKg%3D%3D" H 4150 2900 50  0001 C CNN "Mouser_link"
+F 10 "621-DMN3018SSD-13 " H 4150 2900 50  0001 C CNN "Mouser_ref"
+F 11 "https://fr.rs-online.com/web/p/transistors-mosfet/7904592/" H 4150 2900 50  0001 C CNN "RS_link"
+F 12 "790-4592" H 4150 2900 50  0001 C CNN "RS_ref"
+	1    4150 2900
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4400 2750 4450 2750
+Wire Wire Line
+	4450 2750 4450 2800
+Connection ~ 4450 2800
+Wire Wire Line
+	4400 2850 4450 2850
+Connection ~ 4450 2850
+Wire Wire Line
+	4450 2850 4450 3250
+$Comp
+L dmn3018ssd:DMN3018SSD Q2
+U 2 1 5FA77E2A
+P 6900 3350
+F 0 "Q2" H 7138 3421 50  0000 L CNN
+F 1 "DMN3018SSD" H 7138 3330 50  0000 L CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 7100 3275 50  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/DMN3018SSD.pdf" H 6900 3350 50  0001 C CNN
+	2    6900 3350
+	1    0    0    -1  
+$EndComp
+Connection ~ 6950 3100
+Connection ~ 7050 3100
+Wire Wire Line
+	6950 3100 7050 3100
 $EndSCHEMATC
