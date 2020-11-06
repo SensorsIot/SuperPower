@@ -836,13 +836,22 @@ X D 8 100 250 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ltc4162-l_LTC4162-L
+# ltc4162eufd-lad_LTC4162EUFD-LAD
 #
-DEF ltc4162-l_LTC4162-L U 0 40 Y Y 1 F N
+DEF ltc4162eufd-lad_LTC4162EUFD-LAD U 0 40 Y Y 1 F N
 F0 "U" -400 1050 50 H V C CNN
-F1 "ltc4162-l_LTC4162-L" 300 1050 50 H V C CNN
+F1 "ltc4162eufd-lad_LTC4162EUFD-LAD" 300 1050 50 H V C CNN
 F2 "Package_DFN_QFN:QFN-28-1EP_4x5mm_P0.5mm_EP2.65x3.65mm_ThermalVias" -350 1050 50 H I C CNN
 F3 "" -400 1050 50 H I C CNN
+F4 "https://lcsc.com/product-detail/Pre-ordered-Products_Analog-Devices_LTC4162EUFD-LAD-TRPBF_Analog-Devices-ADI-LINEAR-LTC4162EUFD-LAD-TRPBF_C687387.html" 0 0 50 H I C CNN "LCSC_link"
+F5 "C687387" 0 0 50 H I C CNN "LCSC_ref"
+F6 "https://www.mouser.fr/ProductDetail/Analog-Devices/LTC4162EUFD-LADPBF?qs=MLItCLRbWsx0I%2FnYhNqKzA==" 0 0 50 H I C CNN "Mouser_link"
+F7 "584-4162EUFDLADPB " 0 0 50 H I C CNN "Mouser_ref"
+F8 "-" 0 0 50 H I C CNN "RS_link"
+F9 "-" 0 0 50 H I C CNN "RS_ref"
+F10 "-" 0 0 50 H I C CNN "Farnell_link"
+F11 "-" 0 0 50 H I C CNN "Farnell_ref"
+F12 "https://octopart.com/ltc4162eufd-lad%23pbf-analog+devices-92333982?r=sp" 0 0 50 H I C CNN "Octopart_link"
 DRAW
 S -500 1000 500 -1000 0 1 10 f
 X BOOST 1 600 550 100 L 50 50 1 1 O

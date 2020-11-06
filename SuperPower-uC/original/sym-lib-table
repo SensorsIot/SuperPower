@@ -14,6 +14,7 @@
   (lib (name LC709203FQH)(type Legacy)(uri ${KIPRJMOD}/../components/LC709203FQH/LC709203FQH.lib)(options "")(descr ""))
   (lib (name LM3671)(type Legacy)(uri ${KIPRJMOD}/../components/LM3671/LM3671.lib)(options "")(descr ""))
   (lib (name ltc4162-l)(type Legacy)(uri ${KIPRJMOD}/../components/LTC4162-L/ltc4162-l.lib)(options "")(descr ""))
+  (lib (name ltc4162eufd-lad)(type Legacy)(uri ${KIPRJMOD}/../components/LTC4162EUFD-LAD/ltc4162eufd-lad.lib)(options "")(descr ""))
   (lib (name ME6210A33P)(type Legacy)(uri ${KIPRJMOD}/../components/ME6210A33P/ME6210A33P.lib)(options "")(descr ""))
   (lib (name PCF8563T)(type Legacy)(uri ${KIPRJMOD}/../components/PCF8563T/PCF8563T.lib)(options "")(descr ""))
   (lib (name RV-3028-C7)(type Legacy)(uri ${KIPRJMOD}/../components/RV-3028-C7/RV-3028-C7.lib)(options "")(descr ""))

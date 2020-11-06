@@ -29,10 +29,10 @@ F 3 "~" H 3450 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R5
+L Device:R_US R7
 U 1 1 5F743F05
 P 4700 2800
-F 0 "R5" V 4495 2800 50  0000 C CNN
+F 0 "R7" V 4495 2800 50  0000 C CNN
 F 1 "11m" V 4586 2800 50  0000 C CNN
 F 2 "" V 4740 2790 50  0001 C CNN
 F 3 "~" H 4700 2800 50  0001 C CNN
@@ -4578,19 +4578,6 @@ Wire Wire Line
 Wire Wire Line
 	1750 1650 1200 1650
 $Comp
-L ltc4162-l:LTC4162-L U?
-U 1 1 5F742483
-P 5600 4000
-AR Path="/5F742483" Ref="U?"  Part="1" 
-AR Path="/5F639F48/5F742483" Ref="U2"  Part="1" 
-F 0 "U2" H 5200 5050 50  0000 C CNN
-F 1 "LTC4162-L" H 5850 5050 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-28-1EP_4x5mm_P0.5mm_EP2.65x3.65mm_ThermalVias" H 5250 5050 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/LTC4162-L.pdf" H 5200 5050 50  0001 C CNN
-	1    5600 4000
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x02_Male J2
 U 1 1 5F8314D1
 P 9150 5950
@@ -4827,10 +4814,10 @@ F 3 "~" H 2150 3750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_US R4
+L Device:R_US R6
 U 1 1 5F84595F
 P 2550 3750
-F 0 "R4" V 2345 3750 50  0000 C CNN
+F 0 "R6" V 2345 3750 50  0000 C CNN
 F 1 "TBDOhm" V 2436 3750 50  0000 C CNN
 F 2 "" V 2590 3740 50  0001 C CNN
 F 3 "~" H 2550 3750 50  0001 C CNN
@@ -4859,10 +4846,10 @@ Wire Wire Line
 Text Notes 1850 3900 0    50   ~ 0
 Used as an option and/or debug
 $Comp
-L Device:R_US R6
+L Device:R_US R4
 U 1 1 5F845E81
 P 900 5100
-F 0 "R6" V 695 5100 50  0000 C CNN
+F 0 "R4" V 695 5100 50  0000 C CNN
 F 1 "0" V 786 5100 50  0000 C CNN
 F 2 "" V 940 5090 50  0001 C CNN
 F 3 "~" H 900 5100 50  0001 C CNN
@@ -4870,10 +4857,10 @@ F 3 "~" H 900 5100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_US R7
+L Device:R_US R5
 U 1 1 5F846819
 P 1300 5100
-F 0 "R7" V 1095 5100 50  0000 C CNN
+F 0 "R5" V 1095 5100 50  0000 C CNN
 F 1 "0" V 1186 5100 50  0000 C CNN
 F 2 "" V 1340 5090 50  0001 C CNN
 F 3 "~" H 1300 5100 50  0001 C CNN
@@ -5059,4 +5046,24 @@ Text Notes 8550 5450 0    50   ~ 10
 Connectors
 Text Notes 7550 4150 0    59   ~ 12
 ! The battery is implemented on the "Battery Module" Sheet !
+$Comp
+L ltc4162eufd-lad:LTC4162EUFD-LAD U2
+U 1 1 5FA617A3
+P 5600 4000
+F 0 "U2" H 5200 5050 50  0000 C CNN
+F 1 "LTC4162EUFD-LAD" H 5950 5050 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-28-1EP_4x5mm_P0.5mm_EP2.65x3.65mm_ThermalVias" H 5250 5050 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/LTC4162-L.pdf" H 5200 5050 50  0001 C CNN
+F 4 "https://lcsc.com/product-detail/Pre-ordered-Products_Analog-Devices_LTC4162EUFD-LAD-TRPBF_Analog-Devices-ADI-LINEAR-LTC4162EUFD-LAD-TRPBF_C687387.html" H 5600 4000 50  0001 C CNN "LCSC_link"
+F 5 "C687387" H 5600 4000 50  0001 C CNN "LCSC_ref"
+F 6 "https://www.mouser.fr/ProductDetail/Analog-Devices/LTC4162EUFD-LADPBF?qs=MLItCLRbWsx0I%2FnYhNqKzA==" H 5600 4000 50  0001 C CNN "Mouser_link"
+F 7 "584-4162EUFDLADPB " H 5600 4000 50  0001 C CNN "Mouser_ref"
+F 8 "-" H 5600 4000 50  0001 C CNN "RS_link"
+F 9 "-" H 5600 4000 50  0001 C CNN "RS_ref"
+F 10 "-" H 5600 4000 50  0001 C CNN "Farnell_link"
+F 11 "-" H 5600 4000 50  0001 C CNN "Farnell_ref"
+F 12 "https://octopart.com/ltc4162eufd-lad%23pbf-analog+devices-92333982?r=sp" H 5600 4000 50  0001 C CNN "Octopart_link"
+	1    5600 4000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
