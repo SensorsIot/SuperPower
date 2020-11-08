@@ -4789,21 +4789,10 @@ Wire Wire Line
 	5000 3750 2700 3750
 Wire Wire Line
 	2300 3750 2400 3750
-$Comp
-L power:VCC #PWR08
-U 1 1 5F851525
-P 1900 3650
-F 0 "#PWR08" H 1900 3500 50  0001 C CNN
-F 1 "VCC" H 1915 3823 50  0000 C CNN
-F 2 "" H 1900 3650 50  0001 C CNN
-F 3 "" H 1900 3650 50  0001 C CNN
-	1    1900 3650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	2000 3750 1900 3750
+	2000 3750 1650 3750
 Wire Wire Line
-	1900 3750 1900 3650
+	1650 3750 1650 3650
 Text Notes 1850 3900 0    50   ~ 0
 Used as an option and/or debug
 $Comp
@@ -5101,4 +5090,6 @@ Wire Wire Line
 Wire Wire Line
 	7400 1400 7400 1350
 Connection ~ 7400 1350
+Text Label 1650 3650 0    50   ~ 0
+3v3_MCU
 $EndSCHEMATC
