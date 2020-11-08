@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DMP3028LSD
+D -4.7A Id, -30V Vds, Dual P-Channel Power MOSFET, 38mOhm Ron, 22nC Qg (typ), SO-8
+K P-Channel MOSFET
+F https://www.diodes.com/assets/Datasheets/DMP3028LSD.pdf
+$ENDCMP
+#
+#End Doc Library

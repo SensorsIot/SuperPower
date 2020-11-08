@@ -4582,17 +4582,6 @@ Wire Wire Line
 Text Label 8850 5850 0    50   ~ 0
 NTC
 $Comp
-L Device:Q_PMOS_DGS Q4
-U 1 1 5F8471F5
-P 7050 1450
-F 0 "Q4" V 7392 1450 50  0000 C CNN
-F 1 "Q_PMOS_DGS" V 7301 1450 50  0000 C CNN
-F 2 "" H 7250 1550 50  0001 C CNN
-F 3 "~" H 7050 1450 50  0001 C CNN
-	1    7050 1450
-	0    1    -1   0   
-$EndComp
-$Comp
 L Device:Q_NMOS_DGS Q3
 U 1 1 5F84F43E
 P 6950 2450
@@ -4654,7 +4643,7 @@ $EndComp
 Wire Wire Line
 	7050 2650 7050 2750
 Wire Wire Line
-	7250 1350 7500 1350
+	7400 1350 7500 1350
 Text Label 6450 2450 0    50   ~ 0
 VCC2P5
 Wire Wire Line
@@ -5083,4 +5072,33 @@ Connection ~ 6950 3100
 Connection ~ 7050 3100
 Wire Wire Line
 	6950 3100 7050 3100
+$Comp
+L dmp3028lsd:DMP3028LSD Q4
+U 1 1 5FA8B713
+P 7050 1450
+F 0 "Q4" V 7425 1475 50  0000 C CNN
+F 1 "DMP3028LSD" V 7334 1475 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 7250 1375 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/DMP3028LSD.pdf" V 7050 1450 50  0001 L CNN
+F 4 "https://octopart.com/dmp3028lsd-13-diodes+inc.-67250487?r=sp" H 7050 1450 50  0001 C CNN "Octopart_link"
+F 5 "-" H 7050 1450 50  0001 C CNN "Farnell_link"
+F 6 "-" H 7050 1450 50  0001 C CNN "Farnell_ref"
+F 7 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMP3028LSD-13_C397949.html" H 7050 1450 50  0001 C CNN "LCSC_link"
+F 8 "C397949" H 7050 1450 50  0001 C CNN "LCSC_ref"
+F 9 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMP3028LSD-13?qs=%2Fha2pyFadugUkRnXWzNfjPB%2F2%2FpUVmcBtenJqlz85NswHo6v693iIw%3D%3D" H 7050 1450 50  0001 C CNN "Mouser_link"
+F 10 "DMP3028LSD-13 " H 7050 1450 50  0001 C CNN "Mouser_ref"
+F 11 "-" H 7050 1450 50  0001 C CNN "RS_link"
+F 12 "-" H 7050 1450 50  0001 C CNN "RS_ref"
+	1    7050 1450
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	7300 1300 7400 1300
+Wire Wire Line
+	7400 1300 7400 1350
+Wire Wire Line
+	7300 1400 7400 1400
+Wire Wire Line
+	7400 1400 7400 1350
+Connection ~ 7400 1350
 $EndSCHEMATC
