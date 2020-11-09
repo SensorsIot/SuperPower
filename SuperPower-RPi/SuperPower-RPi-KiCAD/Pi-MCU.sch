@@ -42,17 +42,6 @@ Wire Wire Line
 	7850 1500 8250 1500
 Wire Wire Line
 	8250 1350 8250 1500
-$Comp
-L power:+3.3V #PWR017
-U 1 1 5FA249AF
-P 8100 1000
-F 0 "#PWR017" H 8100 850 50  0001 C CNN
-F 1 "+3.3V" H 8115 1173 50  0000 C CNN
-F 2 "" H 8100 1000 50  0001 C CNN
-F 3 "" H 8100 1000 50  0001 C CNN
-	1    8100 1000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8250 1100 8250 1150
 Wire Wire Line
@@ -96,17 +85,6 @@ Wire Wire Line
 Connection ~ 4150 2250
 Wire Wire Line
 	4150 2250 4200 2250
-$Comp
-L power:+3.3V #PWR025
-U 1 1 5FA2A2A7
-P 8500 2400
-F 0 "#PWR025" H 8500 2250 50  0001 C CNN
-F 1 "+3.3V" H 8515 2573 50  0000 C CNN
-F 2 "" H 8500 2400 50  0001 C CNN
-F 3 "" H 8500 2400 50  0001 C CNN
-	1    8500 2400
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C_Small C25
 U 1 1 5FA2B8E5
@@ -437,17 +415,6 @@ Wire Wire Line
 Connection ~ 1400 1250
 Text HLabel 1350 1250 0    50   Input ~ 0
 VBAT_IN
-Wire Wire Line
-	3900 2350 3900 2200
-Wire Wire Line
-	3900 2200 3450 2200
-Text Label 3450 2200 0    50   ~ 0
-VBAT_REG
-Text Label 2700 1250 2    50   ~ 0
-VBAT_REG
-Wire Wire Line
-	2300 1250 2700 1250
-Connection ~ 2300 1250
 Wire Wire Line
 	4300 5950 4200 5950
 Wire Wire Line
@@ -879,51 +846,20 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J9
 U 1 1 5FA8EFDB
-P 2300 2650
-F 0 "J9" H 2218 2775 50  0000 C CNN
-F 1 "Conn_01x02" H 2218 2776 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2300 2650 50  0001 C CNN
-F 3 "~" H 2300 2650 50  0001 C CNN
-	1    2300 2650
+P 2300 2450
+F 0 "J9" H 2218 2575 50  0000 C CNN
+F 1 "Conn_01x02" H 2218 2576 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2300 2450 50  0001 C CNN
+F 3 "~" H 2300 2450 50  0001 C CNN
+	1    2300 2450
 	-1   0    0    -1  
 $EndComp
-$Comp
-L power:+3.3V #PWR036
-U 1 1 5FA9023B
-P 2600 2550
-F 0 "#PWR036" H 2600 2400 50  0001 C CNN
-F 1 "+3.3V" H 2615 2723 50  0000 C CNN
-F 2 "" H 2600 2550 50  0001 C CNN
-F 3 "" H 2600 2550 50  0001 C CNN
-	1    2600 2550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	2500 2750 2550 2750
+	2500 2450 2600 2450
 Wire Wire Line
-	2500 2650 2600 2650
-Wire Wire Line
-	2600 2650 2600 2550
+	2600 2450 2600 2350
 Text Notes 9650 1900 0    50   ~ 0
 Wire Reset to RPi-GPIO?
-$Comp
-L Device:Jumper_NO_Small JP1
-U 1 1 5FAAD012
-P 2300 2950
-F 0 "JP1" H 2300 3043 50  0000 C CNN
-F 1 "Jumper_NO_Small" H 2300 3044 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 2300 2950 50  0001 C CNN
-F 3 "~" H 2300 2950 50  0001 C CNN
-	1    2300 2950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2400 2950 2550 2950
-Wire Wire Line
-	2550 2950 2550 2750
-Connection ~ 2550 2750
-Wire Wire Line
-	2550 2750 2750 2750
 $Comp
 L Device:R_Small R19
 U 1 1 5FAC6856
@@ -965,6 +901,63 @@ Text Notes 7550 5600 0    50   ~ 0
 Voltage divider + diode for 5v_RPI measurement
 Text Notes 3850 800  0    50   ~ 0
 Swap to Battery Powered
+Text HLabel 2200 2750 0    50   Input ~ 0
+BOOT0
+$Comp
+L Device:Jumper_NO_Small JP1
+U 1 1 5FAAD012
+P 2450 2750
+F 0 "JP1" H 2450 2650 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 2450 2844 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 2450 2750 50  0001 C CNN
+F 3 "~" H 2450 2750 50  0001 C CNN
+	1    2450 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2750 2600 2750
+Wire Wire Line
+	2500 2550 2600 2550
+Wire Wire Line
+	2600 2550 2600 2750
+Connection ~ 2600 2750
+Wire Wire Line
+	2600 2750 2750 2750
+Wire Wire Line
+	2350 2750 2200 2750
+$Comp
+L power:+3.3V #PWR036
+U 1 1 5FA9023B
+P 2600 2350
+F 0 "#PWR036" H 2600 2200 50  0001 C CNN
+F 1 "+3.3V" H 2615 2523 50  0000 C CNN
+F 2 "" H 2600 2350 50  0001 C CNN
+F 3 "" H 2600 2350 50  0001 C CNN
+	1    2600 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR025
+U 1 1 5FA2A2A7
+P 8500 2400
+F 0 "#PWR025" H 8500 2250 50  0001 C CNN
+F 1 "+3.3V" H 8515 2573 50  0000 C CNN
+F 2 "" H 8500 2400 50  0001 C CNN
+F 3 "" H 8500 2400 50  0001 C CNN
+	1    8500 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR017
+U 1 1 5FA249AF
+P 8100 1000
+F 0 "#PWR017" H 8100 850 50  0001 C CNN
+F 1 "+3.3V" H 8115 1173 50  0000 C CNN
+F 2 "" H 8100 1000 50  0001 C CNN
+F 3 "" H 8100 1000 50  0001 C CNN
+	1    8100 1000
+	1    0    0    -1  
+$EndComp
 $Comp
 L power:+3.3V #PWR033
 U 1 1 5FB28CED
@@ -987,6 +980,33 @@ F 3 "" H 4150 1000 50  0001 C CNN
 	1    4150 1000
 	1    0    0    -1  
 $EndComp
-Text HLabel 2200 2950 0    50   Input ~ 0
-BOOT0
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FB90BA7
+P 2450 1150
+F 0 "#PWR?" H 2450 1000 50  0001 C CNN
+F 1 "+3.3V" H 2465 1323 50  0000 C CNN
+F 2 "" H 2450 1150 50  0001 C CNN
+F 3 "" H 2450 1150 50  0001 C CNN
+	1    2450 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 1250 2450 1150
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FB98D8D
+P 3900 2150
+F 0 "#PWR?" H 3900 2000 50  0001 C CNN
+F 1 "+3.3V" H 3915 2323 50  0000 C CNN
+F 2 "" H 3900 2150 50  0001 C CNN
+F 3 "" H 3900 2150 50  0001 C CNN
+	1    3900 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2150 3900 2350
+Connection ~ 2300 1250
+Wire Wire Line
+	2300 1250 2450 1250
 $EndSCHEMATC

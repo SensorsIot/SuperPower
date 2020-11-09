@@ -102,17 +102,6 @@ Wire Wire Line
 Wire Wire Line
 	6600 3000 6800 3000
 $Comp
-L power:+3.3V #PWR016
-U 1 1 5FA1CC78
-P 6050 2150
-F 0 "#PWR016" H 6050 2000 50  0001 C CNN
-F 1 "+3.3V" H 6065 2323 50  0000 C CNN
-F 2 "" H 6050 2150 50  0001 C CNN
-F 3 "" H 6050 2150 50  0001 C CNN
-	1    6050 2150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Raspberry_Pi_2_3 J1
 U 1 1 5F6B08E8
 P 5800 3600
@@ -123,17 +112,6 @@ F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/r
 	1    5800 3600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5900 2200 6000 2200
-Wire Wire Line
-	6050 2200 6050 2150
-Wire Wire Line
-	6000 2200 6000 2300
-Connection ~ 6000 2200
-Wire Wire Line
-	6000 2200 6050 2200
-Wire Wire Line
-	5900 2300 5900 2200
 Connection ~ 5600 2200
 Wire Wire Line
 	5700 2200 5600 2200
@@ -145,18 +123,6 @@ Wire Wire Line
 	5600 2300 5600 2200
 Text HLabel 5400 2200 0    50   Input ~ 0
 Vin(5V)
-$Comp
-L power:PWR_FLAG #FLG0107
-U 1 1 5FB5CE0F
-P 5850 2200
-F 0 "#FLG0107" H 5850 2275 50  0001 C CNN
-F 1 "PWR_FLAG" H 5850 2373 50  0001 C CNN
-F 2 "" H 5850 2200 50  0001 C CNN
-F 3 "~" H 5850 2200 50  0001 C CNN
-	1    5850 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5900 2200 5850 2200
-Connection ~ 5900 2200
+NoConn ~ 5900 2300
+NoConn ~ 6000 2300
 $EndSCHEMATC
