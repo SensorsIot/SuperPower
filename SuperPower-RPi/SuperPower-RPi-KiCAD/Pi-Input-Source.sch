@@ -89,9 +89,10 @@ U 1 1 5F70C370
 P 2400 1850
 F 0 "J3" H 2318 1525 50  0000 C CNN
 F 1 "Screw_Terminal_01x02" H 2318 1616 50  0000 C CNN
-F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_2-GF-3.5_1x02_P3.50mm_Vertical_ThreadedFlange_MountHole" H 2400 1850 50  0001 C CNN
-F 3 "~" H 2400 1850 50  0001 C CNN
-F 4 "FIX FOOTPRINT" H 2400 1850 50  0001 C CNN "Mfg"
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 2400 1850 50  0001 C CNN
+F 3 "https://www.adafruit.com/product/724" H 2400 1850 50  0001 C CNN
+F 4 "Adafruit" H 2400 1850 50  0001 C CNN "Mfg"
+F 5 "724" H 2400 1850 50  0001 C CNN "Mfg PN"
 	1    2400 1850
 	-1   0    0    1   
 $EndComp
@@ -149,9 +150,7 @@ $EndComp
 Text HLabel 9550 3000 2    50   Output ~ 0
 Vout
 Text Notes 2450 5900 0    50   ~ 0
-NOTE:\nProbably USB-C and screw-terminals for solar.  \nMicroUSB possible. 
-Text Notes 4150 2150 0    50   ~ 0
-Should the USB VBUS be moved to after the input protection?
+NOTE:\nscrew-terminals for solar.  
 $Comp
 L Device:D_Zener_Small D3
 U 1 1 5FA88013
@@ -405,4 +404,6 @@ $EndComp
 Connection ~ 9150 3000
 Wire Wire Line
 	9150 3000 8800 3000
+Text Notes 1950 1400 0    50   ~ 0
+https://www.adafruit.com/product/724
 $EndSCHEMATC

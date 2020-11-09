@@ -21,18 +21,6 @@ Text HLabel 3150 4150 0    50   BiDi ~ 0
 GPIO0
 Text Notes 1000 7200 0    50   ~ 0
 Add jumper for measuring MCU current.
-$Comp
-L MCU_ST_STM32F4:STM32F412RGTx U3
-U 1 1 5F935A6D
-P 4100 4050
-F 0 "U3" H 4050 4200 50  0000 C CNN
-F 1 "STM32F412RGTx" H 4100 4050 50  0000 C CNN
-F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 3500 2350 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00213872.pdf" H 4100 4050 50  0001 C CNN
-F 4 "ST" H 4100 4050 50  0001 C CNN "Mfg"
-	1    4100 4050
-	1    0    0    -1  
-$EndComp
 Text HLabel 7850 1400 0    50   BiDi ~ 0
 SDA
 Text HLabel 7850 1500 0    50   BiDi ~ 0
@@ -89,17 +77,6 @@ $EndComp
 Connection ~ 8100 1100
 Wire Wire Line
 	8100 1100 8250 1100
-$Comp
-L power:+3.3V #PWR022
-U 1 1 5FA273CF
-P 4150 1000
-F 0 "#PWR022" H 4150 850 50  0001 C CNN
-F 1 "+3.3V" H 4165 1173 50  0000 C CNN
-F 2 "" H 4150 1000 50  0001 C CNN
-F 3 "" H 4150 1000 50  0001 C CNN
-	1    4150 1000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4000 2350 4000 2250
 Wire Wire Line
@@ -172,56 +149,50 @@ $EndComp
 $Comp
 L power:GND #PWR026
 U 1 1 5FA2E9B4
-P 8500 4150
-F 0 "#PWR026" H 8500 3900 50  0001 C CNN
-F 1 "GND" H 8505 3977 50  0000 C CNN
-F 2 "" H 8500 4150 50  0001 C CNN
-F 3 "" H 8500 4150 50  0001 C CNN
-	1    8500 4150
+P 8500 3950
+F 0 "#PWR026" H 8500 3700 50  0001 C CNN
+F 1 "GND" H 8505 3777 50  0000 C CNN
+F 2 "" H 8500 3950 50  0001 C CNN
+F 3 "" H 8500 3950 50  0001 C CNN
+	1    8500 3950
 	1    0    0    -1  
 $EndComp
-Text HLabel 9350 3050 2    50   BiDi ~ 0
+Text HLabel 9350 2950 2    50   BiDi ~ 0
 SDA
-Wire Wire Line
-	9350 3050 9100 3050
 Text HLabel 9350 3150 2    50   BiDi ~ 0
 SCL
-Wire Wire Line
-	9350 3150 9100 3150
 $Comp
 L power:+3.3V #PWR027
 U 1 1 5FA2FF44
-P 9350 2650
-F 0 "#PWR027" H 9350 2500 50  0001 C CNN
-F 1 "+3.3V" H 9365 2823 50  0000 C CNN
-F 2 "" H 9350 2650 50  0001 C CNN
-F 3 "" H 9350 2650 50  0001 C CNN
-	1    9350 2650
+P 9950 3150
+F 0 "#PWR027" H 9950 3000 50  0001 C CNN
+F 1 "+3.3V" H 9965 3323 50  0000 C CNN
+F 2 "" H 9950 3150 50  0001 C CNN
+F 3 "" H 9950 3150 50  0001 C CNN
+	1    9950 3150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R15
 U 1 1 5FA305E2
-P 9350 2800
-F 0 "R15" H 9409 2846 50  0000 L CNN
-F 1 "DNP" H 9409 2755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9350 2800 50  0001 C CNN
-F 3 "~" H 9350 2800 50  0001 C CNN
-	1    9350 2800
+P 9950 3300
+F 0 "R15" H 10009 3346 50  0000 L CNN
+F 1 "DNP" H 10009 3255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9950 3300 50  0001 C CNN
+F 3 "~" H 9950 3300 50  0001 C CNN
+	1    9950 3300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9350 2700 9350 2650
+	9950 3200 9950 3150
 Wire Wire Line
-	9100 2950 9350 2950
+	9950 3450 9950 3400
 Wire Wire Line
-	9350 2950 9350 2900
+	9950 3450 10200 3450
+Connection ~ 9950 3450
 Wire Wire Line
-	9350 2950 9600 2950
-Connection ~ 9350 2950
-Wire Wire Line
-	8500 4050 8500 4150
-Text HLabel 7550 2950 0    50   BiDi ~ 0
+	8500 3850 8500 3950
+Text HLabel 9350 3050 2    50   BiDi ~ 0
 GPIO0
 Text Label 5250 3850 2    50   ~ 0
 SWDIO
@@ -234,41 +205,41 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x06 J5
 U 1 1 5FA35302
-P 1050 2900
-F 0 "J5" H 968 3225 50  0000 C CNN
-F 1 "Conn_01x06" H 968 3226 50  0001 C CNN
-F 2 "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical" H 1050 2900 50  0001 C CNN
-F 3 "~" H 1050 2900 50  0001 C CNN
-	1    1050 2900
+P 1200 3750
+F 0 "J5" H 1118 4075 50  0000 C CNN
+F 1 "Conn_01x06" H 1118 4076 50  0001 C CNN
+F 2 "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical" H 1200 3750 50  0001 C CNN
+F 3 "~" H 1200 3750 50  0001 C CNN
+	1    1200 3750
 	-1   0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR019
 U 1 1 5FA362EB
-P 1550 2600
-F 0 "#PWR019" H 1550 2450 50  0001 C CNN
-F 1 "+3.3V" H 1565 2773 50  0000 C CNN
-F 2 "" H 1550 2600 50  0001 C CNN
-F 3 "" H 1550 2600 50  0001 C CNN
-	1    1550 2600
+P 1700 3450
+F 0 "#PWR019" H 1700 3300 50  0001 C CNN
+F 1 "+3.3V" H 1715 3623 50  0000 C CNN
+F 2 "" H 1700 3450 50  0001 C CNN
+F 3 "" H 1700 3450 50  0001 C CNN
+	1    1700 3450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1250 2700 1550 2700
+	1400 3550 1700 3550
 Wire Wire Line
-	1550 2700 1550 2600
-Text Label 1600 2800 2    50   ~ 0
+	1700 3550 1700 3450
+Text Label 1750 3650 2    50   ~ 0
 SWDIO
-Text Label 1600 3000 2    50   ~ 0
+Text Label 1750 3850 2    50   ~ 0
 SWCLK
-Text Label 1600 2900 2    50   ~ 0
+Text Label 1750 3750 2    50   ~ 0
 nRESET
 Wire Wire Line
-	1600 3000 1250 3000
+	1750 3850 1400 3850
 Wire Wire Line
-	1250 2900 1600 2900
+	1400 3750 1750 3750
 Wire Wire Line
-	1250 2800 1600 2800
+	1400 3650 1750 3650
 Text Label 2900 2550 0    50   ~ 0
 nRESET
 Wire Wire Line
@@ -276,23 +247,23 @@ Wire Wire Line
 $Comp
 L power:GND #PWR018
 U 1 1 5FA39A26
-P 1350 3300
-F 0 "#PWR018" H 1350 3050 50  0001 C CNN
-F 1 "GND" H 1355 3127 50  0000 C CNN
-F 2 "" H 1350 3300 50  0001 C CNN
-F 3 "" H 1350 3300 50  0001 C CNN
-	1    1350 3300
+P 1500 4150
+F 0 "#PWR018" H 1500 3900 50  0001 C CNN
+F 1 "GND" H 1505 3977 50  0000 C CNN
+F 2 "" H 1500 4150 50  0001 C CNN
+F 3 "" H 1500 4150 50  0001 C CNN
+	1    1500 4150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1250 3100 1350 3100
+	1400 3950 1500 3950
 Wire Wire Line
-	1350 3100 1350 3300
-Text Label 1600 3200 2    50   ~ 0
+	1500 3950 1500 4150
+Text Label 1750 4050 2    50   ~ 0
 SWO
 Wire Wire Line
-	1600 3200 1250 3200
-Text Notes 1150 3650 0    50   ~ 0
+	1750 4050 1400 4050
+Text Notes 1300 4500 0    50   ~ 0
 TAG Connect
 Text Label 5250 3750 2    50   ~ 0
 CAN1_TX
@@ -503,21 +474,8 @@ Wire Wire Line
 Connection ~ 4150 5950
 Wire Wire Line
 	4150 5950 4100 5950
-$Comp
-L MCU_Microchip_ATtiny:ATtiny1614-SS U4
-U 1 1 5F9378C2
-P 8500 3350
-F 0 "U4" H 8500 3450 50  0000 C CNN
-F 1 "DNP" H 8500 3300 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 8500 3350 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny1614-data-sheet-40001995A.pdf" H 8500 3350 50  0001 C CNN
-F 4 "MicroChip" H 8500 3350 50  0001 C CNN "Mfg"
-F 5 "ATTINY1614-SSFR" H 8500 3350 50  0001 C CNN "Mfg PN"
-	1    8500 3350
-	1    0    0    -1  
-$EndComp
 Text Notes 8250 4650 0    50   ~ 0
-ATtiny1614-SS\n(Optional instead of STM)
+ATtiny85-\n(Optional instead of STM)
 Wire Wire Line
 	8700 2450 8500 2450
 Connection ~ 8500 2450
@@ -587,7 +545,7 @@ Text Notes 9900 5000 0    50   ~ 0
 ATTiny Programming\nVia UPDI
 Text Label 9850 4400 0    50   ~ 0
 nRESET
-Text Label 9600 2950 0    50   ~ 0
+Text Label 10200 3450 0    50   ~ 0
 nRESET
 $Comp
 L Device:R_Small R9
@@ -617,34 +575,11 @@ F 3 "" H 2750 3150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2750 3150 2750 3100
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5FA2F740
-P 2700 2750
-AR Path="/5F6AC481/5FA2F740" Ref="TP?"  Part="1" 
-AR Path="/5F6AC872/5FA2F740" Ref="TP4"  Part="1" 
-F 0 "TP4" V 2700 2938 50  0000 L CNN
-F 1 "DNP" H 2758 2777 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 2900 2750 50  0001 C CNN
-F 3 "~" H 2900 2750 50  0001 C CNN
-	1    2700 2750
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2750 2750 2700 2750
 Connection ~ 2750 2750
 Wire Wire Line
 	3150 4150 3400 4150
 Wire Wire Line
-	7550 2950 7900 2950
-NoConn ~ 7900 3050
-NoConn ~ 7900 3150
-NoConn ~ 7900 3250
-NoConn ~ 9100 3650
-NoConn ~ 9100 3550
-NoConn ~ 9100 3450
-NoConn ~ 9100 3350
-NoConn ~ 9100 3250
+	9350 3050 9100 3050
 NoConn ~ 4800 4250
 NoConn ~ 4800 4350
 NoConn ~ 4800 4450
@@ -761,17 +696,6 @@ F 1 "GND" H 4805 1377 50  0000 C CNN
 F 2 "" H 4800 1550 50  0001 C CNN
 F 3 "" H 4800 1550 50  0001 C CNN
 	1    4800 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR033
-U 1 1 5FB28CED
-P 4400 2050
-F 0 "#PWR033" H 4400 1900 50  0001 C CNN
-F 1 "+3.3V" H 4415 2223 50  0000 C CNN
-F 2 "" H 4400 2050 50  0001 C CNN
-F 3 "" H 4400 2050 50  0001 C CNN
-	1    4400 2050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -903,7 +827,7 @@ Wire Wire Line
 	1600 5050 1600 5150
 Wire Wire Line
 	1600 5150 1400 5150
-NoConn ~ 1600 3200
+NoConn ~ 1750 4050
 $Comp
 L power:PWR_FLAG #FLG0108
 U 1 1 5FB9A2B2
@@ -939,4 +863,130 @@ Wire Wire Line
 Wire Wire Line
 	5650 1200 5250 1200
 Connection ~ 5250 1200
+$Comp
+L MCU_ST_STM32F4:STM32F412RETx U3
+U 1 1 5FA772FA
+P 4100 4050
+F 0 "U3" H 4100 4150 50  0000 C CNN
+F 1 "STM32F412RETx" H 4100 3950 50  0000 C CNN
+F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 3500 2350 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00213872.pdf" H 4100 4050 50  0001 C CNN
+F 4 "ST" H 4100 4050 50  0001 C CNN "Mfg"
+F 5 "STM32F412RET6" H 4100 4050 50  0001 C CNN "Mfg PN"
+	1    4100 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J9
+U 1 1 5FA8EFDB
+P 2300 2650
+F 0 "J9" H 2218 2775 50  0000 C CNN
+F 1 "Conn_01x02" H 2218 2776 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2300 2650 50  0001 C CNN
+F 3 "~" H 2300 2650 50  0001 C CNN
+	1    2300 2650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR036
+U 1 1 5FA9023B
+P 2600 2550
+F 0 "#PWR036" H 2600 2400 50  0001 C CNN
+F 1 "+3.3V" H 2615 2723 50  0000 C CNN
+F 2 "" H 2600 2550 50  0001 C CNN
+F 3 "" H 2600 2550 50  0001 C CNN
+	1    2600 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 2750 2550 2750
+Wire Wire Line
+	2500 2650 2600 2650
+Wire Wire Line
+	2600 2650 2600 2550
+Text Notes 9650 1900 0    50   ~ 0
+Wire Reset to RPi-GPIO?
+$Comp
+L Device:Jumper_NO_Small JP1
+U 1 1 5FAAD012
+P 2300 2950
+F 0 "JP1" H 2300 3043 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 2300 3044 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 2300 2950 50  0001 C CNN
+F 3 "~" H 2300 2950 50  0001 C CNN
+	1    2300 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 2950 2550 2950
+Wire Wire Line
+	2550 2950 2550 2750
+Connection ~ 2550 2750
+Wire Wire Line
+	2550 2750 2750 2750
+$Comp
+L Device:R_Small R19
+U 1 1 5FAC6856
+P 9650 900
+F 0 "R19" V 9550 950 50  0000 L CNN
+F 1 "DNP" V 9550 750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9650 900 50  0001 C CNN
+F 3 "~" H 9650 900 50  0001 C CNN
+	1    9650 900 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9750 900  9900 900 
+Connection ~ 9900 900 
+Wire Wire Line
+	9500 900  9550 900 
+Text HLabel 9500 900  0    50   Input ~ 0
+nRESET_Buf
+Wire Wire Line
+	9350 3150 9100 3150
+Wire Wire Line
+	9350 2950 9100 2950
+$Comp
+L MCU_Microchip_ATtiny:ATtiny85-20SU U4
+U 1 1 5FAE2AC9
+P 8500 3250
+F 0 "U4" H 7971 3296 50  0000 R CNN
+F 1 "ATtiny85-20SU" H 7971 3205 50  0000 R CNN
+F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 8500 3250 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 8500 3250 50  0001 C CNN
+	1    8500 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 3450 9950 3450
+NoConn ~ 9100 3350
+NoConn ~ 9100 3250
+Text Notes 7550 5600 0    50   ~ 0
+Voltage divider + diode for 5v_RPI measurement
+Text Notes 3850 800  0    50   ~ 0
+Swap to Battery Powered
+$Comp
+L power:+3.3V #PWR033
+U 1 1 5FB28CED
+P 4400 2050
+F 0 "#PWR033" H 4400 1900 50  0001 C CNN
+F 1 "+3.3V" H 4415 2223 50  0000 C CNN
+F 2 "" H 4400 2050 50  0001 C CNN
+F 3 "" H 4400 2050 50  0001 C CNN
+	1    4400 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR022
+U 1 1 5FA273CF
+P 4150 1000
+F 0 "#PWR022" H 4150 850 50  0001 C CNN
+F 1 "+3.3V" H 4165 1173 50  0000 C CNN
+F 2 "" H 4150 1000 50  0001 C CNN
+F 3 "" H 4150 1000 50  0001 C CNN
+	1    4150 1000
+	1    0    0    -1  
+$EndComp
+Text HLabel 2200 2950 0    50   Input ~ 0
+BOOT0
 $EndSCHEMATC
