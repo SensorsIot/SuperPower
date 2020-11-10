@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 8
+Sheet 8 8
 Title ""
 Date ""
 Rev ""
@@ -19,7 +19,7 @@ Text HLabel 4950 3350 2    50   BiDi ~ 0
 SCL
 Text HLabel 3150 4150 0    50   BiDi ~ 0
 GPIO0
-Text Notes 1000 7200 0    50   ~ 0
+Text Notes 800  7500 0    50   ~ 0
 Add jumper for measuring MCU current.
 Text HLabel 7850 1400 0    50   BiDi ~ 0
 SDA
@@ -107,7 +107,7 @@ F 3 "~" H 4450 1350 50  0001 C CNN
 	1    4450 1350
 	-1   0    0    -1  
 $EndComp
-Text Notes 4500 7200 0    50   ~ 0
+Text Notes 3150 7450 0    50   ~ 0
 I2C Pins: (SDA/SCL)\nI2C1: PB7/PB6\nI2C2: PB3/PB10\nI2C3: PC9/PA8 <--
 Wire Wire Line
 	3200 5050 3400 5050
@@ -587,7 +587,6 @@ NoConn ~ 4800 2950
 NoConn ~ 4800 2850
 NoConn ~ 4800 2750
 NoConn ~ 4800 2650
-NoConn ~ 4800 2550
 $Comp
 L power:GND #PWR021
 U 1 1 5FA44160
@@ -602,12 +601,12 @@ $EndComp
 $Comp
 L power:GND #PWR035
 U 1 1 5FAC45E3
-P 5450 2450
-F 0 "#PWR035" H 5450 2200 50  0001 C CNN
-F 1 "GND" H 5455 2277 50  0000 C CNN
-F 2 "" H 5450 2450 50  0001 C CNN
-F 3 "" H 5450 2450 50  0001 C CNN
-	1    5450 2450
+P 5600 2200
+F 0 "#PWR035" H 5600 1950 50  0001 C CNN
+F 1 "GND" H 5605 2027 50  0000 C CNN
+F 2 "" H 5600 2200 50  0001 C CNN
+F 3 "" H 5600 2200 50  0001 C CNN
+	1    5600 2200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -635,23 +634,23 @@ $EndComp
 $Comp
 L Device:C_Small C30
 U 1 1 5FADB8CB
-P 5200 2250
-F 0 "C30" H 5108 2204 50  0000 R CNN
-F 1 "10nF" H 5108 2295 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5200 2250 50  0001 C CNN
-F 3 "~" H 5200 2250 50  0001 C CNN
-	1    5200 2250
+P 5350 2000
+F 0 "C30" H 5258 1954 50  0000 R CNN
+F 1 "10nF" H 5258 2045 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5350 2000 50  0001 C CNN
+F 3 "~" H 5350 2000 50  0001 C CNN
+	1    5350 2000
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C32
 U 1 1 5FADBBC4
-P 5600 2250
-F 0 "C32" H 5508 2204 50  0000 R CNN
-F 1 "1.0uF" H 5508 2295 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5600 2250 50  0001 C CNN
-F 3 "~" H 5600 2250 50  0001 C CNN
-	1    5600 2250
+P 5750 2000
+F 0 "C32" H 5658 1954 50  0000 R CNN
+F 1 "1.0uF" H 5658 2045 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5750 2000 50  0001 C CNN
+F 3 "~" H 5750 2000 50  0001 C CNN
+	1    5750 2000
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -666,30 +665,23 @@ F 3 "" H 4800 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4400 2050 4400 2100
+	5750 1850 5750 1900
 Wire Wire Line
-	4400 2100 5200 2100
+	5350 1900 5350 1850
+Connection ~ 5350 1850
 Wire Wire Line
-	5600 2100 5600 2150
-Connection ~ 4400 2100
+	5350 1850 5750 1850
 Wire Wire Line
-	4400 2100 4400 2350
+	5350 2100 5350 2150
 Wire Wire Line
-	5200 2150 5200 2100
-Connection ~ 5200 2100
+	5350 2150 5600 2150
 Wire Wire Line
-	5200 2100 5600 2100
+	5750 2150 5750 2100
 Wire Wire Line
-	5200 2350 5200 2400
+	5600 2200 5600 2150
+Connection ~ 5600 2150
 Wire Wire Line
-	5200 2400 5450 2400
-Wire Wire Line
-	5600 2400 5600 2350
-Wire Wire Line
-	5450 2450 5450 2400
-Connection ~ 5450 2400
-Wire Wire Line
-	5450 2400 5600 2400
+	5600 2150 5750 2150
 Wire Wire Line
 	4150 1200 4450 1200
 Wire Wire Line
@@ -882,25 +874,12 @@ Wire Wire Line
 	9350 3150 9100 3150
 Wire Wire Line
 	9350 2950 9100 2950
-$Comp
-L MCU_Microchip_ATtiny:ATtiny85-20SU U4
-U 1 1 5FAE2AC9
-P 8500 3250
-F 0 "U4" H 7971 3296 50  0000 R CNN
-F 1 "ATtiny85-20SU" H 7971 3205 50  0000 R CNN
-F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 8500 3250 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 8500 3250 50  0001 C CNN
-	1    8500 3250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9100 3450 9950 3450
 NoConn ~ 9100 3350
 NoConn ~ 9100 3250
-Text Notes 7550 5600 0    50   ~ 0
-Voltage divider + diode for 5v_RPI measurement
-Text Notes 3850 800  0    50   ~ 0
-Swap to Battery Powered
+Text Notes 5700 7600 0    50   ~ 0
+Voltage divider + diode for\n5v_RPI measurement
 Text HLabel 2200 2750 0    50   Input ~ 0
 BOOT0
 $Comp
@@ -961,12 +940,12 @@ $EndComp
 $Comp
 L power:+3.3V #PWR033
 U 1 1 5FB28CED
-P 4400 2050
-F 0 "#PWR033" H 4400 1900 50  0001 C CNN
-F 1 "+3.3V" H 4415 2223 50  0000 C CNN
-F 2 "" H 4400 2050 50  0001 C CNN
-F 3 "" H 4400 2050 50  0001 C CNN
-	1    4400 2050
+P 4400 1800
+F 0 "#PWR033" H 4400 1650 50  0001 C CNN
+F 1 "+3.3V" H 4415 1973 50  0000 C CNN
+F 2 "" H 4400 1800 50  0001 C CNN
+F 3 "" H 4400 1800 50  0001 C CNN
+	1    4400 1800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -981,32 +960,149 @@ F 3 "" H 4150 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR016
 U 1 1 5FB90BA7
-P 2450 1150
-F 0 "#PWR?" H 2450 1000 50  0001 C CNN
-F 1 "+3.3V" H 2465 1323 50  0000 C CNN
-F 2 "" H 2450 1150 50  0001 C CNN
-F 3 "" H 2450 1150 50  0001 C CNN
-	1    2450 1150
+P 2400 1150
+F 0 "#PWR016" H 2400 1000 50  0001 C CNN
+F 1 "+3.3V" H 2415 1323 50  0000 C CNN
+F 2 "" H 2400 1150 50  0001 C CNN
+F 3 "" H 2400 1150 50  0001 C CNN
+	1    2400 1150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2450 1250 2450 1150
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR037
 U 1 1 5FB98D8D
-P 3900 2150
-F 0 "#PWR?" H 3900 2000 50  0001 C CNN
-F 1 "+3.3V" H 3915 2323 50  0000 C CNN
-F 2 "" H 3900 2150 50  0001 C CNN
-F 3 "" H 3900 2150 50  0001 C CNN
-	1    3900 2150
+P 3900 1800
+F 0 "#PWR037" H 3900 1650 50  0001 C CNN
+F 1 "+3.3V" H 3915 1973 50  0000 C CNN
+F 2 "" H 3900 1800 50  0001 C CNN
+F 3 "" H 3900 1800 50  0001 C CNN
+	1    3900 1800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3900 2150 3900 2350
+	3900 1800 3900 1850
 Connection ~ 2300 1250
+$Comp
+L Device:R_Small R21
+U 1 1 5FAAB54D
+P 6250 7000
+F 0 "R21" H 6309 7046 50  0000 L CNN
+F 1 "100k" H 6309 6955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6250 7000 50  0001 C CNN
+F 3 "~" H 6250 7000 50  0001 C CNN
+	1    6250 7000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R20
+U 1 1 5FAAC000
+P 6250 6650
+F 0 "R20" H 6309 6696 50  0000 L CNN
+F 1 "100k" H 6309 6605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6250 6650 50  0001 C CNN
+F 3 "~" H 6250 6650 50  0001 C CNN
+	1    6250 6650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR038
+U 1 1 5FAAC254
+P 6250 7200
+F 0 "#PWR038" H 6250 6950 50  0001 C CNN
+F 1 "GND" H 6255 7027 50  0000 C CNN
+F 2 "" H 6250 7200 50  0001 C CNN
+F 3 "" H 6250 7200 50  0001 C CNN
+	1    6250 7200
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	2300 1250 2450 1250
+	6250 7200 6250 7100
+Wire Wire Line
+	6250 6900 6250 6850
+$Comp
+L Device:D_Small D6
+U 1 1 5FAB9400
+P 6250 6350
+F 0 "D6" V 6296 6280 50  0000 R CNN
+F 1 "D_Small" V 6205 6280 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-523" V 6250 6350 50  0001 C CNN
+F 3 "~" V 6250 6350 50  0001 C CNN
+F 4 "FIX FOOTPRINT" H 6250 6350 50  0001 C CNN "Mfg"
+	1    6250 6350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6250 6550 6250 6450
+Text HLabel 6300 6150 2    50   Input ~ 0
+Vin(5V)
+Wire Wire Line
+	6250 6250 6250 6150
+Wire Wire Line
+	6250 6150 6300 6150
+Text Label 6050 6850 2    50   ~ 0
+V_mon
+Wire Wire Line
+	6050 6850 6250 6850
+Connection ~ 6250 6850
+Wire Wire Line
+	6250 6850 6250 6750
+Text Label 5200 2550 2    50   ~ 0
+V_mon
+Wire Wire Line
+	4400 1800 4400 1850
+Wire Wire Line
+	4400 1850 5350 1850
+Wire Wire Line
+	4800 2550 5200 2550
+$Comp
+L MCU_Microchip_ATtiny:ATtiny85-20SU U4
+U 1 1 5FAE2AC9
+P 8500 3250
+F 0 "U4" H 8100 3900 50  0000 R CNN
+F 1 "ATtiny85-20SU" H 8400 3800 50  0000 R CNN
+F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 8500 3250 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 8500 3250 50  0001 C CNN
+	1    8500 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C34
+U 1 1 5FAFC531
+P 3450 2000
+F 0 "C34" H 3358 1954 50  0000 R CNN
+F 1 "0.1uF" H 3358 2045 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3450 2000 50  0001 C CNN
+F 3 "~" H 3450 2000 50  0001 C CNN
+	1    3450 2000
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2400 1250 2400 1150
+Wire Wire Line
+	2300 1250 2400 1250
+Wire Wire Line
+	3900 1850 3450 1850
+Wire Wire Line
+	3450 1850 3450 1900
+Connection ~ 3900 1850
+Wire Wire Line
+	3900 1850 3900 2350
+$Comp
+L power:GND #PWR0113
+U 1 1 5FB5DC98
+P 3450 2150
+F 0 "#PWR0113" H 3450 1900 50  0001 C CNN
+F 1 "GND" H 3455 1977 50  0000 C CNN
+F 2 "" H 3450 2150 50  0001 C CNN
+F 3 "" H 3450 2150 50  0001 C CNN
+	1    3450 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 2150 3450 2100
+Connection ~ 4400 1850
+Wire Wire Line
+	4400 1850 4400 2350
 $EndSCHEMATC
