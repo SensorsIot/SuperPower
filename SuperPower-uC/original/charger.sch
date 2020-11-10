@@ -4940,7 +4940,7 @@ CHARGER_VIN
 Wire Wire Line
 	1750 1300 1200 1300
 Text Notes 3200 5550 0    50   ~ 10
-Cell count setting (1 to 8)
+Cell count setting (1 to 3)
 Text Notes 3200 5650 0    50   ~ 0
 See Table 5 in the datasheet
 Text HLabel 1200 1900 0    50   Input ~ 0
@@ -5004,15 +5004,15 @@ F 0 "U2" H 5200 5050 50  0000 C CNN
 F 1 "LTC4162EUFD-LAD" H 5950 5050 50  0000 C CNN
 F 2 "Package_DFN_QFN:QFN-28-1EP_4x5mm_P0.5mm_EP2.65x3.65mm_ThermalVias" H 5250 5050 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/LTC4162-L.pdf" H 5200 5050 50  0001 C CNN
-F 4 "https://lcsc.com/product-detail/Pre-ordered-Products_Analog-Devices_LTC4162EUFD-LAD-TRPBF_Analog-Devices-ADI-LINEAR-LTC4162EUFD-LAD-TRPBF_C687387.html" H 5600 4000 50  0001 C CNN "LCSC_link"
-F 5 "C687387" H 5600 4000 50  0001 C CNN "LCSC_ref"
-F 6 "https://www.mouser.fr/ProductDetail/Analog-Devices/LTC4162EUFD-LADPBF?qs=MLItCLRbWsx0I%2FnYhNqKzA==" H 5600 4000 50  0001 C CNN "Mouser_link"
-F 7 "584-4162EUFDLADPB " H 5600 4000 50  0001 C CNN "Mouser_ref"
-F 8 "-" H 5600 4000 50  0001 C CNN "RS_link"
-F 9 "-" H 5600 4000 50  0001 C CNN "RS_ref"
-F 10 "-" H 5600 4000 50  0001 C CNN "Farnell_link"
-F 11 "-" H 5600 4000 50  0001 C CNN "Farnell_ref"
-F 12 "https://octopart.com/ltc4162eufd-lad%23pbf-analog+devices-92333982?r=sp" H 5600 4000 50  0001 C CNN "Octopart_link"
+F 4 "https://octopart.com/ltc4162eufd-lad%23pbf-analog+devices-92333982?r=sp" H 5600 4000 50  0001 C CNN "Octopart_link"
+F 5 "-" H 5600 4000 50  0001 C CNN "Farnell_link"
+F 6 "-" H 5600 4000 50  0001 C CNN "Farnell_ref"
+F 7 "https://lcsc.com/product-detail/Pre-ordered-Products_Analog-Devices_LTC4162EUFD-LAD-TRPBF_Analog-Devices-ADI-LINEAR-LTC4162EUFD-LAD-TRPBF_C687387.html" H 5600 4000 50  0001 C CNN "LCSC_link"
+F 8 "C687387" H 5600 4000 50  0001 C CNN "LCSC_ref"
+F 9 "https://www.mouser.fr/ProductDetail/Analog-Devices/LTC4162EUFD-LADPBF?qs=MLItCLRbWsx0I%2FnYhNqKzA==" H 5600 4000 50  0001 C CNN "Mouser_link"
+F 10 "584-4162EUFDLADPB " H 5600 4000 50  0001 C CNN "Mouser_ref"
+F 11 "-" H 5600 4000 50  0001 C CNN "RS_link"
+F 12 "-" H 5600 4000 50  0001 C CNN "RS_ref"
 	1    5600 4000
 	1    0    0    -1  
 $EndComp

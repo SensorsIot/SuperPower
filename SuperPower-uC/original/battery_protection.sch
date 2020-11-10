@@ -278,6 +278,15 @@ F 0 "Q1" H 3094 5196 50  0000 L CNN
 F 1 "DMN2019UTS" H 3000 5050 50  0000 L CNN
 F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 2850 5450 50  0001 L CNN
 F 3 "https://www.diodes.com/assets/Datasheets/DMN2019UTS.pdf" H 2450 5200 50  0001 C CNN
+F 4 "-" H 2650 5200 50  0001 C CNN "Farnell_link"
+F 5 "-" H 2650 5200 50  0001 C CNN "Farnell_ref"
+F 6 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMN2019UTS-13_C260947.html" H 2650 5200 50  0001 C CNN "LCSC_link"
+F 7 "C260947" H 2650 5200 50  0001 C CNN "LCSC_ref"
+F 8 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMN2019UTS-13?qs=%2Fha2pyFadujmJKgyTdcUjBPbN0G7DesuMFVpb9R9LngEBXU4uTGuDw%3D%3D" H 2650 5200 50  0001 C CNN "Mouser_link"
+F 9 "621-DMN2019UTS-13" H 2650 5200 50  0001 C CNN "Mouser_ref"
+F 10 "https://octopart.com/dmn2019uts-13-diodes+inc.-21789369?r=sp" H 2650 5200 50  0001 C CNN "Octopart_link"
+F 11 "-" H 2650 5200 50  0001 C CNN "RS_link"
+F 12 "-" H 2650 5200 50  0001 C CNN "RS_ref"
 	1    2650 5200
 	1    0    0    -1  
 $EndComp
