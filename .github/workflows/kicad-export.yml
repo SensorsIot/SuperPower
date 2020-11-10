@@ -5,8 +5,8 @@ on:
      paths:
      - '**.sch'
      - '**.kicad_pcb'
-  pull_request:
-   paths:
+   pull_request:
+     paths:
      - '**.sch'
      - '**.kicad_pcb'
 
