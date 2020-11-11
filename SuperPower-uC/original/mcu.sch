@@ -550,10 +550,6 @@ Wire Notes Line
 	2450 4600 3750 4600
 Wire Notes Line
 	3750 4600 3750 6200
-Wire Notes Line
-	3750 6200 2450 6200
-Wire Notes Line
-	2450 4600 2450 6200
 Text Notes 700  750  0    50   ~ 10
 Interface
 Wire Notes Line
@@ -563,10 +559,6 @@ Wire Notes Line
 Text Label 9500 5500 2    50   ~ 0
 IO0
 Wire Wire Line
-	8900 5850 8900 6100
-Text Label 8900 6100 1    50   ~ 0
-IO2
-Wire Wire Line
 	9250 5100 9500 5100
 Text Label 9500 5100 2    50   ~ 0
 IO5
@@ -574,14 +566,6 @@ Wire Wire Line
 	9250 5400 9500 5400
 Text Label 9500 5400 2    50   ~ 0
 IO4
-Wire Wire Line
-	7650 5500 7400 5500
-Text Label 7400 5500 0    50   ~ 0
-IO12
-Wire Wire Line
-	8100 5850 8100 6100
-Text Label 8100 6100 1    50   ~ 0
-IO13
 Wire Wire Line
 	7650 5400 7400 5400
 Text Label 7400 5400 0    50   ~ 0
@@ -831,10 +815,6 @@ Wire Wire Line
 Text Label 6650 4200 2    50   ~ 0
 EN
 Wire Wire Line
-	6400 5300 6650 5300
-Text Label 6650 5300 2    50   ~ 0
-IO12
-Wire Wire Line
 	6400 4900 6650 4900
 Text Label 6650 4900 2    50   ~ 0
 IO25
@@ -910,14 +890,6 @@ Wire Wire Line
 	10400 5400 10150 5400
 Text Label 10150 5400 0    50   ~ 0
 IO15
-Wire Wire Line
-	10400 5300 10150 5300
-Text Label 10150 5300 0    50   ~ 0
-IO2
-Wire Wire Line
-	6400 5400 6650 5400
-Text Label 6650 5400 2    50   ~ 0
-IO13
 Text Notes 5750 4500 0    50   ~ 0
 Sensor_VP\nSensor_VN
 $Comp
@@ -1110,4 +1082,89 @@ F 3 "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" 
 	1    4000 2300
 	1    0    0    -1  
 $EndComp
+$Comp
+L LED:SK6812 D?
+U 1 1 5FAC41F6
+P 1700 7000
+F 0 "D?" H 2044 7046 50  0000 L CNN
+F 1 "SK6812" H 2044 6955 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 1750 6700 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 1800 6625 50  0001 L TNN
+	1    1700 7000
+	1    0    0    -1  
+$EndComp
+Text Label 1700 6450 3    50   ~ 0
+5V
+Wire Wire Line
+	1700 6700 1700 6550
+$Comp
+L Device:C_Small C?
+U 1 1 5FACEE26
+P 2100 6550
+F 0 "C?" H 2192 6596 50  0000 L CNN
+F 1 "0.1µF" H 2192 6505 50  0000 L CNN
+F 2 "" H 2100 6550 50  0001 C CNN
+F 3 "~" H 2100 6550 50  0001 C CNN
+	1    2100 6550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FAD0048
+P 2300 6600
+F 0 "#PWR?" H 2300 6350 50  0001 C CNN
+F 1 "GND" H 2305 6427 50  0000 C CNN
+F 2 "" H 2300 6600 50  0001 C CNN
+F 3 "" H 2300 6600 50  0001 C CNN
+	1    2300 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 6600 2300 6550
+Wire Wire Line
+	2300 6550 2200 6550
+Wire Wire Line
+	2000 6550 1700 6550
+Connection ~ 1700 6550
+Wire Wire Line
+	1700 6550 1700 6450
+NoConn ~ 2000 7000
+$Comp
+L power:GND #PWR?
+U 1 1 5FAF88EA
+P 1700 7300
+F 0 "#PWR?" H 1700 7050 50  0001 C CNN
+F 1 "GND" H 1705 7127 50  0000 C CNN
+F 2 "" H 1700 7300 50  0001 C CNN
+F 3 "" H 1700 7300 50  0001 C CNN
+	1    1700 7300
+	1    0    0    -1  
+$EndComp
+Text Label 900  7000 0    50   ~ 0
+RGBW_LED
+Wire Wire Line
+	900  7000 1400 7000
+Text Label 8900 6400 1    50   ~ 0
+RGBW_LED
+Wire Wire Line
+	8900 5850 8900 6400
+NoConn ~ 10400 5300
+Text Label 7300 5500 0    50   ~ 0
+EN_3V3
+Text Label 8100 6150 1    50   ~ 0
+EN_5V
+Wire Wire Line
+	7300 5500 7650 5500
+Wire Wire Line
+	8100 5850 8100 6150
+Wire Notes Line
+	800  6200 800  7650
+Wire Notes Line
+	800  7650 2450 7650
+Wire Notes Line
+	800  6200 3750 6200
+Wire Notes Line
+	2450 4600 2450 7650
+NoConn ~ 6400 5400
+NoConn ~ 6400 5300
 $EndSCHEMATC
