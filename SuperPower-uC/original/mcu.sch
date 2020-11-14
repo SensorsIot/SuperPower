@@ -176,52 +176,10 @@ F 3 "" H 2800 1950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2950 1600 3500 1600
-Text HLabel 1400 1150 1    50   Input ~ 0
-3v3_MCU
-$Comp
-L Device:R_Small R18
-U 1 1 5F87BDCC
-P 1200 3950
-F 0 "R18" H 1259 3996 50  0000 L CNN
-F 1 "4.7k" H 1259 3905 50  0000 L CNN
-F 2 "" H 1200 3950 50  0001 C CNN
-F 3 "~" H 1200 3950 50  0001 C CNN
-	1    1200 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R17
-U 1 1 5F87D3E5
-P 850 3950
-F 0 "R17" H 909 3996 50  0000 L CNN
-F 1 "4.7k" H 909 3905 50  0000 L CNN
-F 2 "" H 850 3950 50  0001 C CNN
-F 3 "~" H 850 3950 50  0001 C CNN
-	1    850  3950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	850  3750 850  3850
-Wire Wire Line
-	1200 3750 1200 3850
-Wire Wire Line
-	1200 4050 1200 4250
-Wire Wire Line
-	850  4050 850  4250
-Text Notes 700  3300 0    50   ~ 10
-I²C pull-up resistors
-Wire Notes Line
-	650  3200 1550 3200
-Wire Notes Line
-	650  4400 650  3200
 Text Notes 2500 750  0    50   ~ 10
 USB - UART bridge
 Wire Notes Line
 	2450 650  5300 650 
-Wire Notes Line
-	1550 4400 650  4400
-Wire Notes Line
-	1550 3200 1550 4400
 Wire Wire Line
 	9500 4400 9250 4400
 Wire Wire Line
@@ -495,35 +453,15 @@ Wire Wire Line
 	2650 5200 2650 5300
 Text Label 2800 1200 2    50   ~ 0
 VBUS
-Text Label 850  3750 1    50   ~ 0
-3v3_MCU
-Text Label 1200 3750 1    50   ~ 0
-3v3_MCU
-Text Label 1200 4250 0    50   ~ 0
-SDA
-Text Label 850  4250 0    50   ~ 0
-SCL
 Wire Wire Line
 	2800 1550 2800 1600
 Connection ~ 2800 1600
-Text Label 7400 4300 2    50   ~ 0
-3v3_MCU
 Text Label 9500 4400 2    50   ~ 0
 SCL
 Text Label 9500 4700 2    50   ~ 0
 SDA
 Text Label 8200 1200 1    50   ~ 0
 3v3_MCU
-Text Label 1650 1300 0    50   ~ 0
-VBUS
-Text Label 1650 1450 0    50   ~ 0
-3v3_MCU
-Wire Wire Line
-	1550 1300 1650 1300
-Wire Wire Line
-	1400 1150 1400 1450
-Wire Wire Line
-	1400 1450 1650 1450
 Text Label 5100 2800 2    50   ~ 0
 TXT
 Text Label 2950 2350 0    50   ~ 0
@@ -973,10 +911,6 @@ F 3 "~" H 6200 4900 50  0001 C CNN
 	1    6200 4900
 	-1   0    0    -1  
 $EndComp
-Text HLabel 1550 1150 1    50   Input ~ 0
-VBUS
-Wire Wire Line
-	1550 1300 1550 1150
 Wire Wire Line
 	1250 1150 1250 1600
 Wire Wire Line
@@ -1165,4 +1099,22 @@ Wire Notes Line
 	2450 4600 2450 7650
 NoConn ~ 6400 5400
 NoConn ~ 6400 5300
+Text Label 7400 4300 2    50   ~ 0
+3v3_MCU
+Wire Wire Line
+	1550 1300 1550 1150
+Text HLabel 1550 1150 1    50   Input ~ 0
+VBUS
+Wire Wire Line
+	1550 1300 1650 1300
+Text Label 1650 1300 0    50   ~ 0
+VBUS
+Wire Wire Line
+	1400 1150 1400 1450
+Text HLabel 1400 1150 1    50   Input ~ 0
+3v3_MCU
+Wire Wire Line
+	1400 1450 1650 1450
+Text Label 1650 1450 0    50   ~ 0
+3v3_MCU
 $EndSCHEMATC
