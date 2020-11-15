@@ -8,7 +8,7 @@ Title "SuperPower-uC"
 Date "2020-09-20"
 Rev "0.1"
 Comp "ManWithNoName"
-Comment1 "https://www.analog.com/media/en/technical-documentation/data-sheets/LTC4162-L.pdf"
+Comment1 "Licence: CERN-OHL-W"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -29,10 +29,10 @@ F 3 "~" H 3450 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R5
+L Device:R_US R7
 U 1 1 5F743F05
 P 4700 2800
-F 0 "R5" V 4495 2800 50  0000 C CNN
+F 0 "R7" V 4495 2800 50  0000 C CNN
 F 1 "11m" V 4586 2800 50  0000 C CNN
 F 2 "" V 4740 2790 50  0001 C CNN
 F 3 "~" H 4700 2800 50  0001 C CNN
@@ -40,10 +40,10 @@ F 3 "~" H 4700 2800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR016
+L power:GND #PWR015
 U 1 1 5F744802
 P 5800 5600
-F 0 "#PWR016" H 5800 5350 50  0001 C CNN
+F 0 "#PWR015" H 5800 5350 50  0001 C CNN
 F 1 "GND" H 5805 5427 50  0000 C CNN
 F 2 "" H 5800 5600 50  0001 C CNN
 F 3 "" H 5800 5600 50  0001 C CNN
@@ -51,10 +51,10 @@ F 3 "" H 5800 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VDD #PWR012
+L power:VDD #PWR011
 U 1 1 5F7457C8
 P 3850 2600
-F 0 "#PWR012" H 3850 2450 50  0001 C CNN
+F 0 "#PWR011" H 3850 2450 50  0001 C CNN
 F 1 "VDD" H 3865 2773 50  0000 C CNN
 F 2 "" H 3850 2600 50  0001 C CNN
 F 3 "" H 3850 2600 50  0001 C CNN
@@ -62,36 +62,14 @@ F 3 "" H 3850 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR017
+L power:VCC #PWR016
 U 1 1 5F745F21
 P 6300 750
-F 0 "#PWR017" H 6300 600 50  0001 C CNN
+F 0 "#PWR016" H 6300 600 50  0001 C CNN
 F 1 "VCC" H 6315 923 50  0000 C CNN
 F 2 "" H 6300 750 50  0001 C CNN
 F 3 "" H 6300 750 50  0001 C CNN
 	1    6300 750 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Q_NMOS_DGS Q2
-U 1 1 5F74657E
-P 4150 2900
-F 0 "Q2" V 4492 2900 50  0000 C CNN
-F 1 "Q_NMOS_DGS" V 4401 2900 50  0000 C CNN
-F 2 "" H 4350 3000 50  0001 C CNN
-F 3 "~" H 4150 2900 50  0001 C CNN
-	1    4150 2900
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:Q_NMOS_DGS Q3
-U 1 1 5F7470FF
-P 6900 3350
-F 0 "Q3" H 7104 3396 50  0000 L CNN
-F 1 "Q_NMOS_DGS" H 7104 3305 50  0000 L CNN
-F 2 "" H 7100 3450 50  0001 C CNN
-F 3 "~" H 6900 3350 50  0001 C CNN
-	1    6900 3350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -108,9 +86,6 @@ Wire Wire Line
 	5000 3550 3850 3550
 Wire Wire Line
 	3850 2800 3950 2800
-Wire Wire Line
-	4350 2800 4450 2800
-Connection ~ 4450 2800
 Connection ~ 3850 2800
 Wire Wire Line
 	3850 2600 3850 2700
@@ -119,7 +94,7 @@ Wire Wire Line
 Wire Wire Line
 	4150 3100 4150 3400
 Wire Wire Line
-	4450 2800 4450 3250
+	4450 2800 4450 2850
 Wire Wire Line
 	4950 2800 4950 3100
 Wire Wire Line
@@ -128,10 +103,10 @@ Wire Wire Line
 	5600 2800 5600 2900
 Connection ~ 4950 2800
 $Comp
-L power:GND #PWR011
+L power:GND #PWR010
 U 1 1 5F75199B
 P 3450 3300
-F 0 "#PWR011" H 3450 3050 50  0001 C CNN
+F 0 "#PWR010" H 3450 3050 50  0001 C CNN
 F 1 "GND" H 3455 3127 50  0000 C CNN
 F 2 "" H 3450 3300 50  0001 C CNN
 F 3 "" H 3450 3300 50  0001 C CNN
@@ -151,9 +126,7 @@ Wire Wire Line
 Connection ~ 5600 2800
 Connection ~ 6300 3100
 Wire Wire Line
-	6300 3100 7000 3100
-Wire Wire Line
-	7000 3100 7000 3150
+	6300 3100 6950 3100
 Connection ~ 6300 2800
 $Comp
 L Device:C C7
@@ -166,41 +139,28 @@ F 3 "~" H 7800 3350 50  0001 C CNN
 	1    7800 3350
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Battery_Cell BT2
-U 1 1 5F7561CD
-P 7000 4650
-F 0 "BT2" H 7118 4746 50  0000 L CNN
-F 1 "Battery_Cell" H 7118 4655 50  0000 L CNN
-F 2 "" V 7000 4710 50  0001 C CNN
-F 3 "~" V 7000 4710 50  0001 C CNN
-	1    7000 4650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7000 3550 7000 3850
 $Comp
-L power:GND #PWR019
+L power:GND #PWR018
 U 1 1 5F75816F
 P 7000 4950
-F 0 "#PWR019" H 7000 4700 50  0001 C CNN
+F 0 "#PWR018" H 7000 4700 50  0001 C CNN
 F 1 "GND" H 7005 4777 50  0000 C CNN
 F 2 "" H 7000 4950 50  0001 C CNN
 F 3 "" H 7000 4950 50  0001 C CNN
 	1    7000 4950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7000 4950 7000 4850
 $Comp
 L Device:C C6
 U 1 1 5F759045
-P 7700 4600
-F 0 "C6" H 7815 4646 50  0000 L CNN
-F 1 "10µF" H 7815 4555 50  0000 L CNN
-F 2 "" H 7738 4450 50  0001 C CNN
-F 3 "~" H 7700 4600 50  0001 C CNN
-	1    7700 4600
+P 7000 4600
+F 0 "C6" H 7115 4646 50  0000 L CNN
+F 1 "10µF" H 7115 4555 50  0000 L CNN
+F 2 "" H 7038 4450 50  0001 C CNN
+F 3 "~" H 7000 4600 50  0001 C CNN
+	1    7000 4600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -290,10 +250,10 @@ F 3 "~" H 6400 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR018
+L power:GND #PWR017
 U 1 1 5F770480
 P 6400 5350
-F 0 "#PWR018" H 6400 5100 50  0001 C CNN
+F 0 "#PWR017" H 6400 5100 50  0001 C CNN
 F 1 "GND" H 6405 5177 50  0000 C CNN
 F 2 "" H 6400 5350 50  0001 C CNN
 F 3 "" H 6400 5350 50  0001 C CNN
@@ -303,23 +263,12 @@ $EndComp
 Wire Wire Line
 	6400 5350 6400 5250
 Wire Wire Line
-	7000 4350 7700 4350
-Wire Wire Line
-	7700 4350 7700 4450
-Wire Wire Line
-	7700 4750 7700 4850
-Wire Wire Line
-	7700 4850 7000 4850
-Connection ~ 7000 4850
-Wire Wire Line
-	7000 4850 7000 4750
-Wire Wire Line
 	6400 4950 6400 4900
 $Comp
-L power:GND #PWR015
+L power:GND #PWR014
 U 1 1 5F77962A
 P 5300 5600
-F 0 "#PWR015" H 5300 5350 50  0001 C CNN
+F 0 "#PWR014" H 5300 5350 50  0001 C CNN
 F 1 "GND" H 5305 5427 50  0000 C CNN
 F 2 "" H 5300 5600 50  0001 C CNN
 F 3 "" H 5300 5600 50  0001 C CNN
@@ -337,10 +286,10 @@ Wire Wire Line
 Wire Wire Line
 	3450 2800 3850 2800
 $Comp
-L power:GND #PWR021
+L power:GND #PWR020
 U 1 1 5F780EF6
 P 7800 3600
-F 0 "#PWR021" H 7800 3350 50  0001 C CNN
+F 0 "#PWR020" H 7800 3350 50  0001 C CNN
 F 1 "GND" H 7805 3427 50  0000 C CNN
 F 2 "" H 7800 3600 50  0001 C CNN
 F 3 "" H 7800 3600 50  0001 C CNN
@@ -376,10 +325,10 @@ F 3 "~" H 4800 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR013
+L power:GND #PWR012
 U 1 1 5F75A8F8
 P 4300 5150
-F 0 "#PWR013" H 4300 4900 50  0001 C CNN
+F 0 "#PWR012" H 4300 4900 50  0001 C CNN
 F 1 "GND" H 4305 4977 50  0000 C CNN
 F 2 "" H 4300 5150 50  0001 C CNN
 F 3 "" H 4300 5150 50  0001 C CNN
@@ -387,10 +336,10 @@ F 3 "" H 4300 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR014
+L power:GND #PWR013
 U 1 1 5F75ACE4
 P 4800 5150
-F 0 "#PWR014" H 4800 4900 50  0001 C CNN
+F 0 "#PWR013" H 4800 4900 50  0001 C CNN
 F 1 "GND" H 4805 4977 50  0000 C CNN
 F 2 "" H 4800 5150 50  0001 C CNN
 F 3 "" H 4800 5150 50  0001 C CNN
@@ -1901,7 +1850,7 @@ Wire Notes Line
 	2950 1950 5600 1950
 Text Notes 6000 6150 0    50   ~ 0
 If the application does not require temperature\ncontrolled charging, then the thermistor should be\nreplaced with a resistor of equal value to the bias resistor\nRNTCBIAS to continuously simulate 25°C.\n-> See page 20 of the Datasheet.
-Text Notes 8000 5250 0    50   ~ 0
+Text Notes 7350 5000 0    50   ~ 0
 Batt+ Capacitor :\n-> needed in case of no battery detected after a charging process started.\n10uF or more (see page 32 of the Datasheet)
 $Bitmap
 Pos 3150 7150
@@ -4499,10 +4448,10 @@ Connection ~ 3900 5400
 Wire Wire Line
 	3200 5400 3900 5400
 $Comp
-L power:GND #PWR09
+L power:GND #PWR08
 U 1 1 5F75B0A7
 P 2950 5150
-F 0 "#PWR09" H 2950 4900 50  0001 C CNN
+F 0 "#PWR08" H 2950 4900 50  0001 C CNN
 F 1 "GND" H 2955 4977 50  0000 C CNN
 F 2 "" H 2950 5150 50  0001 C CNN
 F 3 "" H 2950 5150 50  0001 C CNN
@@ -4591,8 +4540,7 @@ NTC
 Text Label 6250 4500 0    50   ~ 0
 NTCbias
 Wire Wire Line
-	7800 3100 7000 3100
-Connection ~ 7000 3100
+	7800 3100 7050 3100
 Text Notes 6450 650  0    50   ~ 0
 Add this option to reduce Iquiescent in ship mode (see page 31 of the datasheet).
 Wire Wire Line
@@ -4601,19 +4549,6 @@ Wire Wire Line
 	4600 3950 5000 3950
 Wire Wire Line
 	1750 1650 1200 1650
-$Comp
-L ltc4162-l:LTC4162-L U?
-U 1 1 5F742483
-P 5600 4000
-AR Path="/5F742483" Ref="U?"  Part="1" 
-AR Path="/5F639F48/5F742483" Ref="U2"  Part="1" 
-F 0 "U2" H 5200 5050 50  0000 C CNN
-F 1 "LTC4162-L" H 5850 5050 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-28-1EP_4x5mm_P0.5mm_EP2.65x3.65mm_ThermalVias" H 5250 5050 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/LTC4162-L.pdf" H 5200 5050 50  0001 C CNN
-	1    5600 4000
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector:Conn_01x02_Male J2
 U 1 1 5F8314D1
@@ -4626,10 +4561,10 @@ F 3 "~" H 9150 5950 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR022
+L power:GND #PWR021
 U 1 1 5F832657
 P 8850 6150
-F 0 "#PWR022" H 8850 5900 50  0001 C CNN
+F 0 "#PWR021" H 8850 5900 50  0001 C CNN
 F 1 "GND" H 8855 5977 50  0000 C CNN
 F 2 "" H 8850 6150 50  0001 C CNN
 F 3 "" H 8850 6150 50  0001 C CNN
@@ -4647,21 +4582,10 @@ Wire Wire Line
 Text Label 8850 5850 0    50   ~ 0
 NTC
 $Comp
-L Device:Q_PMOS_DGS Q5
-U 1 1 5F8471F5
-P 7050 1450
-F 0 "Q5" V 7392 1450 50  0000 C CNN
-F 1 "Q_PMOS_DGS" V 7301 1450 50  0000 C CNN
-F 2 "" H 7250 1550 50  0001 C CNN
-F 3 "~" H 7050 1450 50  0001 C CNN
-	1    7050 1450
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:Q_NMOS_DGS Q4
+L Device:Q_NMOS_DGS Q3
 U 1 1 5F84F43E
 P 6950 2450
-F 0 "Q4" H 7154 2496 50  0000 L CNN
+F 0 "Q3" H 7154 2496 50  0000 L CNN
 F 1 "Q_NMOS_DGS" H 7154 2405 50  0000 L CNN
 F 2 "" H 7150 2550 50  0001 C CNN
 F 3 "~" H 6950 2450 50  0001 C CNN
@@ -4706,10 +4630,10 @@ Wire Wire Line
 Wire Wire Line
 	6600 1700 6600 1750
 $Comp
-L power:GND #PWR020
+L power:GND #PWR019
 U 1 1 5F880629
 P 7050 2750
-F 0 "#PWR020" H 7050 2500 50  0001 C CNN
+F 0 "#PWR019" H 7050 2500 50  0001 C CNN
 F 1 "GND" H 7055 2577 50  0000 C CNN
 F 2 "" H 7050 2750 50  0001 C CNN
 F 3 "" H 7050 2750 50  0001 C CNN
@@ -4719,7 +4643,7 @@ $EndComp
 Wire Wire Line
 	7050 2650 7050 2750
 Wire Wire Line
-	7250 1350 7500 1350
+	7400 1350 7500 1350
 Text Label 6450 2450 0    50   ~ 0
 VCC2P5
 Wire Wire Line
@@ -4740,9 +4664,9 @@ Wire Notes Line
 Text Notes 2850 5850 0    50   ~ 10
 Switching Frequency Setting
 Wire Notes Line
-	8250 4550 8250 5000
+	7600 4600 7600 4750
 Wire Notes Line
-	8000 4550 8250 4550
+	7350 4600 7600 4600
 Wire Notes Line
 	6250 5150 6100 5150
 Wire Notes Line
@@ -4775,10 +4699,10 @@ F 3 "~" H 10300 5950 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR024
+L power:GND #PWR023
 U 1 1 5F831EF3
 P 10000 6150
-F 0 "#PWR024" H 10000 5900 50  0001 C CNN
+F 0 "#PWR023" H 10000 5900 50  0001 C CNN
 F 1 "GND" H 10005 5977 50  0000 C CNN
 F 2 "" H 10000 6150 50  0001 C CNN
 F 3 "" H 10000 6150 50  0001 C CNN
@@ -4794,10 +4718,10 @@ Wire Wire Line
 Wire Wire Line
 	10000 5950 10000 5850
 $Comp
-L power:+BATT #PWR023
+L power:+BATT #PWR022
 U 1 1 5F837E39
 P 10000 5850
-F 0 "#PWR023" H 10000 5700 50  0001 C CNN
+F 0 "#PWR022" H 10000 5700 50  0001 C CNN
 F 1 "+BATT" H 10015 6023 50  0000 C CNN
 F 2 "" H 10000 5850 50  0001 C CNN
 F 3 "" H 10000 5850 50  0001 C CNN
@@ -4805,7 +4729,7 @@ F 3 "" H 10000 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 9900 5600 0    50   ~ 0
-External Battery connector
+Battery connector\n(Battery Power Output)
 $Comp
 L Device:R_US R12
 U 1 1 5F8322FE
@@ -4851,10 +4775,10 @@ F 3 "~" H 2150 3750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_US R4
+L Device:R_US R6
 U 1 1 5F84595F
 P 2550 3750
-F 0 "R4" V 2345 3750 50  0000 C CNN
+F 0 "R6" V 2345 3750 50  0000 C CNN
 F 1 "TBDOhm" V 2436 3750 50  0000 C CNN
 F 2 "" V 2590 3740 50  0001 C CNN
 F 3 "~" H 2550 3750 50  0001 C CNN
@@ -4865,28 +4789,17 @@ Wire Wire Line
 	5000 3750 2700 3750
 Wire Wire Line
 	2300 3750 2400 3750
-$Comp
-L power:VCC #PWR08
-U 1 1 5F851525
-P 1900 3650
-F 0 "#PWR08" H 1900 3500 50  0001 C CNN
-F 1 "VCC" H 1915 3823 50  0000 C CNN
-F 2 "" H 1900 3650 50  0001 C CNN
-F 3 "" H 1900 3650 50  0001 C CNN
-	1    1900 3650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	2000 3750 1900 3750
+	2000 3750 1650 3750
 Wire Wire Line
-	1900 3750 1900 3650
+	1650 3750 1650 3650
 Text Notes 1850 3900 0    50   ~ 0
 Used as an option and/or debug
 $Comp
-L Device:R_US R6
+L Device:R_US R4
 U 1 1 5F845E81
 P 900 5100
-F 0 "R6" V 695 5100 50  0000 C CNN
+F 0 "R4" V 695 5100 50  0000 C CNN
 F 1 "0" V 786 5100 50  0000 C CNN
 F 2 "" V 940 5090 50  0001 C CNN
 F 3 "~" H 900 5100 50  0001 C CNN
@@ -4894,10 +4807,10 @@ F 3 "~" H 900 5100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_US R7
+L Device:R_US R5
 U 1 1 5F846819
 P 1300 5100
-F 0 "R7" V 1095 5100 50  0000 C CNN
+F 0 "R5" V 1095 5100 50  0000 C CNN
 F 1 "0" V 1186 5100 50  0000 C CNN
 F 2 "" V 1340 5090 50  0001 C CNN
 F 3 "~" H 1300 5100 50  0001 C CNN
@@ -4985,10 +4898,10 @@ Connection ~ 5800 5200
 Wire Wire Line
 	2950 4550 2950 5150
 $Comp
-L power:GND #PWR010
+L power:GND #PWR09
 U 1 1 5FA22B83
 P 3300 5150
-F 0 "#PWR010" H 3300 4900 50  0001 C CNN
+F 0 "#PWR09" H 3300 4900 50  0001 C CNN
 F 1 "GND" H 3305 4977 50  0000 C CNN
 F 2 "" H 3300 5150 50  0001 C CNN
 F 3 "" H 3300 5150 50  0001 C CNN
@@ -5027,7 +4940,7 @@ CHARGER_VIN
 Wire Wire Line
 	1750 1300 1200 1300
 Text Notes 3200 5550 0    50   ~ 10
-Cell count setting (1 to 8)
+Cell count setting (1 to 3)
 Text Notes 3200 5650 0    50   ~ 0
 See Table 5 in the datasheet
 Text HLabel 1200 1900 0    50   Input ~ 0
@@ -5049,9 +4962,6 @@ Text Label 1750 1550 2    50   ~ 0
 VOUT
 Text Label 8150 4350 2    50   ~ 0
 VBAT
-Wire Wire Line
-	7700 4350 8150 4350
-Connection ~ 7700 4350
 Text HLabel 1200 2000 0    50   Input ~ 0
 SCL
 Text HLabel 1200 2100 0    50   BiDi ~ 0
@@ -5070,4 +4980,116 @@ Text Label 4600 3950 0    50   ~ 0
 SCL
 Text Label 4600 4050 0    50   ~ 0
 SDA
+Wire Notes Line
+	8500 5300 11050 5300
+Wire Notes Line
+	11050 5300 11050 6450
+Wire Notes Line
+	11050 6450 8500 6450
+Wire Notes Line
+	8500 6450 8500 5300
+Wire Wire Line
+	7000 4350 8150 4350
+Wire Wire Line
+	7000 4750 7000 4950
+Text Notes 8550 5450 0    50   ~ 10
+Connectors
+Text Notes 7550 4150 0    59   ~ 12
+! The battery is implemented on the "Battery Module" Sheet !
+$Comp
+L ltc4162eufd-lad:LTC4162EUFD-LAD U2
+U 1 1 5FA617A3
+P 5600 4000
+F 0 "U2" H 5200 5050 50  0000 C CNN
+F 1 "LTC4162EUFD-LAD" H 5950 5050 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-28-1EP_4x5mm_P0.5mm_EP2.65x3.65mm_ThermalVias" H 5250 5050 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/LTC4162-L.pdf" H 5200 5050 50  0001 C CNN
+F 4 "https://octopart.com/ltc4162eufd-lad%23pbf-analog+devices-92333982?r=sp" H 5600 4000 50  0001 C CNN "Octopart_link"
+F 5 "-" H 5600 4000 50  0001 C CNN "Farnell_link"
+F 6 "-" H 5600 4000 50  0001 C CNN "Farnell_ref"
+F 7 "https://lcsc.com/product-detail/Pre-ordered-Products_Analog-Devices_LTC4162EUFD-LAD-TRPBF_Analog-Devices-ADI-LINEAR-LTC4162EUFD-LAD-TRPBF_C687387.html" H 5600 4000 50  0001 C CNN "LCSC_link"
+F 8 "C687387" H 5600 4000 50  0001 C CNN "LCSC_ref"
+F 9 "https://www.mouser.fr/ProductDetail/Analog-Devices/LTC4162EUFD-LADPBF?qs=MLItCLRbWsx0I%2FnYhNqKzA==" H 5600 4000 50  0001 C CNN "Mouser_link"
+F 10 "584-4162EUFDLADPB " H 5600 4000 50  0001 C CNN "Mouser_ref"
+F 11 "-" H 5600 4000 50  0001 C CNN "RS_link"
+F 12 "-" H 5600 4000 50  0001 C CNN "RS_ref"
+	1    5600 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L dmn3018ssd:DMN3018SSD Q2
+U 1 1 5FA650D4
+P 4150 2900
+F 0 "Q2" V 4525 2925 50  0000 C CNN
+F 1 "DMN3018SSD" V 4434 2925 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 4350 2825 50  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/DMN3018SSD.pdf" H 4150 2900 50  0001 C CNN
+F 4 "https://octopart.com/dmn3018ssd-13-diodes+inc.-26472698?r=sp" H 4150 2900 50  0001 C CNN "Octopart_link"
+F 5 "-" H 4150 2900 50  0001 C CNN "Farnell_link"
+F 6 "-" H 4150 2900 50  0001 C CNN "Farnell_ref"
+F 7 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMN3018SSD-13_C155277.html" H 4150 2900 50  0001 C CNN "LCSC_link"
+F 8 "C155277" H 4150 2900 50  0001 C CNN "LCSC_ref"
+F 9 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMN3018SSD-13?qs=%2Fha2pyFaduhiKtoBktzbgyUAHZPSS%252B8%252Bk9vZNvppSquz1WfnqvfRKg%3D%3D" H 4150 2900 50  0001 C CNN "Mouser_link"
+F 10 "621-DMN3018SSD-13 " H 4150 2900 50  0001 C CNN "Mouser_ref"
+F 11 "https://fr.rs-online.com/web/p/transistors-mosfet/7904592/" H 4150 2900 50  0001 C CNN "RS_link"
+F 12 "790-4592" H 4150 2900 50  0001 C CNN "RS_ref"
+	1    4150 2900
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4400 2750 4450 2750
+Wire Wire Line
+	4450 2750 4450 2800
+Connection ~ 4450 2800
+Wire Wire Line
+	4400 2850 4450 2850
+Connection ~ 4450 2850
+Wire Wire Line
+	4450 2850 4450 3250
+$Comp
+L dmn3018ssd:DMN3018SSD Q2
+U 2 1 5FA77E2A
+P 6900 3350
+F 0 "Q2" H 7138 3421 50  0000 L CNN
+F 1 "DMN3018SSD" H 7138 3330 50  0000 L CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 7100 3275 50  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/DMN3018SSD.pdf" H 6900 3350 50  0001 C CNN
+	2    6900 3350
+	1    0    0    -1  
+$EndComp
+Connection ~ 6950 3100
+Connection ~ 7050 3100
+Wire Wire Line
+	6950 3100 7050 3100
+$Comp
+L dmp3028lsd:DMP3028LSD Q4
+U 1 1 5FA8B713
+P 7050 1450
+F 0 "Q4" V 7425 1475 50  0000 C CNN
+F 1 "DMP3028LSD" V 7334 1475 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 7250 1375 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/DMP3028LSD.pdf" V 7050 1450 50  0001 L CNN
+F 4 "https://octopart.com/dmp3028lsd-13-diodes+inc.-67250487?r=sp" H 7050 1450 50  0001 C CNN "Octopart_link"
+F 5 "-" H 7050 1450 50  0001 C CNN "Farnell_link"
+F 6 "-" H 7050 1450 50  0001 C CNN "Farnell_ref"
+F 7 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMP3028LSD-13_C397949.html" H 7050 1450 50  0001 C CNN "LCSC_link"
+F 8 "C397949" H 7050 1450 50  0001 C CNN "LCSC_ref"
+F 9 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMP3028LSD-13?qs=%2Fha2pyFadugUkRnXWzNfjPB%2F2%2FpUVmcBtenJqlz85NswHo6v693iIw%3D%3D" H 7050 1450 50  0001 C CNN "Mouser_link"
+F 10 "DMP3028LSD-13 " H 7050 1450 50  0001 C CNN "Mouser_ref"
+F 11 "-" H 7050 1450 50  0001 C CNN "RS_link"
+F 12 "-" H 7050 1450 50  0001 C CNN "RS_ref"
+	1    7050 1450
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	7300 1300 7400 1300
+Wire Wire Line
+	7400 1300 7400 1350
+Wire Wire Line
+	7300 1400 7400 1400
+Wire Wire Line
+	7400 1400 7400 1350
+Connection ~ 7400 1350
+Text Label 1650 3650 0    50   ~ 0
+3v3_MCU
 $EndSCHEMATC

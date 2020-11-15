@@ -16,17 +16,6 @@ $EndDescr
 Text HLabel 900  850  0    50   BiDi ~ 0
 VBAT
 $Comp
-L ap9101ck6_v2:AP9101CK6_v2 U1
-U 1 1 5F786C83
-P 2650 4400
-F 0 "U1" H 2650 4767 50  0000 C CNN
-F 1 "AP9101CK6_v2" H 2650 4676 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 2600 4400 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/AP9101C.pdf" H 2650 4450 50  0001 C CNN
-	1    2650 4400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R1
 U 1 1 5F78A1A3
 P 1750 4050
@@ -278,6 +267,15 @@ F 0 "Q1" H 3094 5196 50  0000 L CNN
 F 1 "DMN2019UTS" H 3000 5050 50  0000 L CNN
 F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 2850 5450 50  0001 L CNN
 F 3 "https://www.diodes.com/assets/Datasheets/DMN2019UTS.pdf" H 2450 5200 50  0001 C CNN
+F 4 "-" H 2650 5200 50  0001 C CNN "Farnell_link"
+F 5 "-" H 2650 5200 50  0001 C CNN "Farnell_ref"
+F 6 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMN2019UTS-13_C260947.html" H 2650 5200 50  0001 C CNN "LCSC_link"
+F 7 "C260947" H 2650 5200 50  0001 C CNN "LCSC_ref"
+F 8 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMN2019UTS-13?qs=%2Fha2pyFadujmJKgyTdcUjBPbN0G7DesuMFVpb9R9LngEBXU4uTGuDw%3D%3D" H 2650 5200 50  0001 C CNN "Mouser_link"
+F 9 "621-DMN2019UTS-13" H 2650 5200 50  0001 C CNN "Mouser_ref"
+F 10 "https://octopart.com/dmn2019uts-13-diodes+inc.-21789369?r=sp" H 2650 5200 50  0001 C CNN "Octopart_link"
+F 11 "-" H 2650 5200 50  0001 C CNN "RS_link"
+F 12 "-" H 2650 5200 50  0001 C CNN "RS_ref"
 	1    2650 5200
 	1    0    0    -1  
 $EndComp
@@ -387,4 +385,30 @@ Wire Wire Line
 Wire Wire Line
 	2950 1650 2850 1650
 Connection ~ 3150 1850
+Text Notes 1750 1250 0    50   ~ 0
+External Battery connector
+Wire Notes Line
+	2150 1300 2150 1600
+Wire Notes Line
+	2150 1600 2600 1600
+$Comp
+L AP9101CK6-AYTRG1:AP9101CK6-AYTRG1 U1
+U 1 1 5FAC8F16
+P 2650 4400
+F 0 "U1" H 2650 4767 50  0000 C CNN
+F 1 "AP9101CK6-AYTRG1" H 2650 4676 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 2600 4400 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/AP9101C.pdf" H 2650 4450 50  0001 C CNN
+F 4 "https://octopart.com/ap9101ck6-aytrg1-diodes+inc.-77041826?r=sp" H 2650 4400 50  0001 C CNN "Octopart_link"
+F 5 "-" H 2650 4400 50  0001 C CNN "Farnell_link"
+F 6 "-" H 2650 4400 50  0001 C CNN "Farnell_ref"
+F 7 "https://lcsc.com/product-detail/PMIC-Battery-Management_Diodes-Incorporated-AP9101CK6-AYTRG1_C507889.html" H 2650 4400 50  0001 C CNN "LCSC_link"
+F 8 "C507889" H 2650 4400 50  0001 C CNN "LCSC_ref"
+F 9 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/AP9101CK6-AYTRG1?qs=%2Fha2pyFaduj314vgBnd2FEjzur%252BdRnlg22EVpjIcgVi4TUljUlcE2A%3D%3D" H 2650 4949 50  0001 C CNN "Mouser_link"
+F 10 "621-AP9101CK6-AYTRG1" H 2650 4858 50  0001 C CNN "Mouser_ref"
+F 11 "-" H 2650 4767 50  0001 C CNN "RS_link"
+F 12 "-" H 2650 4676 50  0001 C CNN "RS_ref"
+	1    2650 4400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
