@@ -13,8 +13,397 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 7600 2900 0    50   Output ~ 0
+NoConn ~ 3050 3200
+NoConn ~ 3050 3300
+$Comp
+L power:PWR_FLAG #FLG0106
+U 1 1 5F79AC3D
+P 4950 3000
+F 0 "#FLG0106" H 4950 3075 50  0001 C CNN
+F 1 "PWR_FLAG" V 4950 3128 50  0001 L CNN
+F 2 "" H 4950 3000 50  0001 C CNN
+F 3 "~" H 4950 3000 50  0001 C CNN
+	1    4950 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 3700 3150 3700
+Wire Wire Line
+	3300 3500 3150 3500
+Text HLabel 3300 3500 2    50   Output ~ 0
+D-
+Text HLabel 3300 3700 2    50   Output ~ 0
+D+
+Wire Wire Line
+	4150 3000 4350 3000
+Connection ~ 4150 3000
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5F7A5141
+P 4150 3000
+F 0 "#FLG0102" H 4150 3075 50  0001 C CNN
+F 1 "PWR_FLAG" V 4150 3128 50  0001 L CNN
+F 2 "" H 4150 3000 50  0001 C CNN
+F 3 "~" H 4150 3000 50  0001 C CNN
+	1    4150 3000
+	1    0    0    -1  
+$EndComp
+Connection ~ 2650 1850
+Wire Wire Line
+	2700 1850 2650 1850
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F7A3576
+P 2700 1850
+F 0 "#FLG0101" H 2700 1925 50  0001 C CNN
+F 1 "PWR_FLAG" V 2700 1978 50  0001 L CNN
+F 2 "" H 2700 1850 50  0001 C CNN
+F 3 "~" H 2700 1850 50  0001 C CNN
+	1    2700 1850
+	0    1    1    0   
+$EndComp
+Text Notes 2000 2200 0    50   ~ 0
+Solar or Other Input Power
+Wire Wire Line
+	2650 1850 2650 1900
+Wire Wire Line
+	2600 1850 2650 1850
+$Comp
+L power:GND #PWR010
+U 1 1 5F70CF53
+P 2650 1900
+F 0 "#PWR010" H 2650 1650 50  0001 C CNN
+F 1 "GND" H 2655 1727 50  0000 C CNN
+F 2 "" H 2650 1900 50  0001 C CNN
+F 3 "" H 2650 1900 50  0001 C CNN
+	1    2650 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 1750 3450 3000
+Wire Wire Line
+	2600 1750 3450 1750
+$Comp
+L Connector:Screw_Terminal_01x02 J3
+U 1 1 5F70C370
+P 2400 1850
+F 0 "J3" H 2318 1525 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 2318 1616 50  0000 C CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 2400 1850 50  0001 C CNN
+F 3 "https://www.adafruit.com/product/724" H 2400 1850 50  0001 C CNN
+F 4 "Adafruit" H 2400 1850 50  0001 C CNN "Mfg"
+F 5 "724" H 2400 1850 50  0001 C CNN "Mfg PN"
+	1    2400 1850
+	-1   0    0    1   
+$EndComp
+Text Notes 2050 5150 0    50   ~ 0
+Primary USB Power Input
+Wire Wire Line
+	3050 3000 3450 3000
+Wire Wire Line
+	4750 3000 4850 3000
+Wire Wire Line
+	2300 4650 2450 4650
+Connection ~ 2300 4650
+Wire Wire Line
+	2300 4750 2300 4650
+Wire Wire Line
+	2450 4650 2450 4500
+Wire Wire Line
+	2150 4650 2300 4650
+Wire Wire Line
+	2150 4500 2150 4650
+$Comp
+L power:GND #PWR0102
+U 1 1 5F709AD2
+P 2300 4750
+F 0 "#PWR0102" H 2300 4500 50  0001 C CNN
+F 1 "GND" H 2305 4577 50  0000 C CNN
+F 2 "" H 2300 4750 50  0001 C CNN
+F 3 "" H 2300 4750 50  0001 C CNN
+	1    2300 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5F703EB6
+P 4550 3800
+F 0 "#PWR0101" H 4550 3550 50  0001 C CNN
+F 1 "GND" H 4555 3627 50  0000 C CNN
+F 2 "" H 4550 3800 50  0001 C CNN
+F 3 "" H 4550 3800 50  0001 C CNN
+	1    4550 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PMOS_GSD Q3
+U 1 1 5F703042
+P 4550 3100
+F 0 "Q3" V 4892 3100 50  0000 C CNN
+F 1 "Q_PMOS_GSD" V 4801 3100 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4750 3200 50  0001 C CNN
+F 3 "~" H 4550 3100 50  0001 C CNN
+F 4 "FIX FOOTPRINT" H 4550 3100 50  0001 C CNN "Mfg"
+	1    4550 3100
+	0    -1   -1   0   
+$EndComp
+Text HLabel 9550 3000 2    50   Output ~ 0
 Vout
-Text Notes 2350 4000 0    50   ~ 0
-NOTE:\nProbably USB-C and screw-terminals for solar.  MicroUSB possible. 
+Text Notes 2450 5900 0    50   ~ 0
+NOTE:\nscrew-terminals for solar.  
+$Comp
+L Device:D_Zener_Small D3
+U 1 1 5FA88013
+P 4850 3250
+F 0 "D3" V 4804 3320 50  0000 L CNN
+F 1 "D_Zener_Small" V 4895 3320 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 4850 3250 50  0001 C CNN
+F 3 "~" V 4850 3250 50  0001 C CNN
+F 4 "FIX FOOTPRINT" H 4850 3250 50  0001 C CNN "Mfg"
+	1    4850 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 3150 4850 3000
+Connection ~ 4850 3000
+Wire Wire Line
+	4850 3000 4950 3000
+Wire Wire Line
+	4850 3350 4850 3400
+Wire Wire Line
+	4850 3400 4550 3400
+Connection ~ 4550 3400
+Wire Wire Line
+	4550 3400 4550 3300
+$Comp
+L Device:R_Small R12
+U 1 1 5FA89BA0
+P 4550 3600
+F 0 "R12" H 4609 3646 50  0000 L CNN
+F 1 "100k" H 4609 3555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4550 3600 50  0001 C CNN
+F 3 "~" H 4550 3600 50  0001 C CNN
+F 4 "311-100KHRCT-ND" H 4550 3600 50  0001 C CNN "Digi-Key PN"
+F 5 "Yageo" H 4550 3600 50  0001 C CNN "Mfg"
+F 6 "RC0603FR-07100KL" H 4550 3600 50  0001 C CNN "Mfg PN"
+	1    4550 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3400 4550 3500
+Wire Wire Line
+	4550 3700 4550 3800
+$Comp
+L Device:R_Small R16
+U 1 1 5FA8B742
+P 6500 3250
+F 0 "R16" H 6442 3204 50  0000 R CNN
+F 1 "100k" H 6442 3295 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6500 3250 50  0001 C CNN
+F 3 "~" H 6500 3250 50  0001 C CNN
+F 4 "311-100KHRCT-ND" H 6500 3250 50  0001 C CNN "Digi-Key PN"
+F 5 "Yageo" H 6500 3250 50  0001 C CNN "Mfg"
+F 6 "RC0603FR-07100KL" H 6500 3250 50  0001 C CNN "Mfg PN"
+	1    6500 3250
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6500 3150 6500 3000
+Connection ~ 6500 3000
+$Comp
+L Device:D_Zener_Small D4
+U 1 1 5FA8BED1
+P 6500 3750
+F 0 "D4" V 6454 3820 50  0000 L CNN
+F 1 "D_Zener_Small" V 6545 3820 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 6500 3750 50  0001 C CNN
+F 3 "~" V 6500 3750 50  0001 C CNN
+F 4 "FIX FOOTPRINT" H 6500 3750 50  0001 C CNN "Mfg"
+	1    6500 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R17
+U 1 1 5FA8C2E3
+P 6850 3550
+F 0 "R17" V 6654 3550 50  0000 C CNN
+F 1 "100k" V 6745 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6850 3550 50  0001 C CNN
+F 3 "~" H 6850 3550 50  0001 C CNN
+F 4 "311-100KHRCT-ND" H 6850 3550 50  0001 C CNN "Digi-Key PN"
+F 5 "Yageo" H 6850 3550 50  0001 C CNN "Mfg"
+F 6 "RC0603FR-07100KL" H 6850 3550 50  0001 C CNN "Mfg PN"
+	1    6850 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener_Small D5
+U 1 1 5FA8C733
+P 7200 3250
+F 0 "D5" V 7154 3320 50  0000 L CNN
+F 1 "D_Zener_Small" V 7245 3320 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 7200 3250 50  0001 C CNN
+F 3 "~" V 7200 3250 50  0001 C CNN
+F 4 "FIX FOOTPRINT" H 7200 3250 50  0001 C CNN "Mfg"
+	1    7200 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R18
+U 1 1 5FA8D2AB
+P 8000 3950
+F 0 "R18" H 8059 3996 50  0000 L CNN
+F 1 "100k" H 8059 3905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8000 3950 50  0001 C CNN
+F 3 "~" H 8000 3950 50  0001 C CNN
+F 4 "311-100KHRCT-ND" H 8000 3950 50  0001 C CNN "Digi-Key PN"
+F 5 "Yageo" H 8000 3950 50  0001 C CNN "Mfg"
+F 6 "RC0603FR-07100KL" H 8000 3950 50  0001 C CNN "Mfg PN"
+	1    8000 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PMOS_GSD Q7
+U 1 1 5FA8D6D0
+P 8600 3100
+F 0 "Q7" V 8942 3100 50  0000 C CNN
+F 1 "Q_PMOS_GSD" V 8851 3100 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8800 3200 50  0001 C CNN
+F 3 "~" H 8600 3100 50  0001 C CNN
+F 4 "FIX FOOTPRINT" H 8600 3100 50  0001 C CNN "Mfg"
+	1    8600 3100
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6500 3350 6500 3550
+$Comp
+L power:GND #PWR0109
+U 1 1 5FA8E5E2
+P 6500 3900
+F 0 "#PWR0109" H 6500 3650 50  0001 C CNN
+F 1 "GND" H 6505 3727 50  0000 C CNN
+F 2 "" H 6500 3900 50  0001 C CNN
+F 3 "" H 6500 3900 50  0001 C CNN
+	1    6500 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3900 6500 3850
+Wire Wire Line
+	6750 3550 6500 3550
+Connection ~ 6500 3550
+Wire Wire Line
+	6500 3550 6500 3650
+Wire Wire Line
+	7200 3550 7200 3350
+Wire Wire Line
+	6950 3550 7200 3550
+Wire Wire Line
+	6500 3000 7200 3000
+Wire Wire Line
+	7200 3150 7200 3000
+Connection ~ 7200 3000
+Wire Wire Line
+	7200 3000 8000 3000
+Wire Wire Line
+	7700 3550 7200 3550
+Connection ~ 7200 3550
+Wire Wire Line
+	8000 3850 8000 3800
+Wire Wire Line
+	8000 3350 8000 3000
+Connection ~ 8000 3000
+Wire Wire Line
+	8000 3000 8400 3000
+$Comp
+L power:GND #PWR0110
+U 1 1 5FA92B9D
+P 8000 4100
+F 0 "#PWR0110" H 8000 3850 50  0001 C CNN
+F 1 "GND" H 8005 3927 50  0000 C CNN
+F 2 "" H 8000 4100 50  0001 C CNN
+F 3 "" H 8000 4100 50  0001 C CNN
+	1    8000 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 4100 8000 4050
+Wire Wire Line
+	8000 3800 8600 3800
+Wire Wire Line
+	8600 3800 8600 3300
+Connection ~ 8000 3800
+Wire Wire Line
+	8000 3800 8000 3750
+Wire Wire Line
+	9550 3000 9150 3000
+Wire Wire Line
+	3450 3000 4150 3000
+Connection ~ 3450 3000
+Wire Wire Line
+	4950 3000 6500 3000
+Connection ~ 4950 3000
+Text Notes 4100 4250 0    50   ~ 0
+Reverse Polarity Protection
+Text Notes 6950 4500 0    50   ~ 0
+Overvoltage Protection
+Text Notes 6450 4850 0    50   ~ 0
+Vz(D4) + Vgs(th)(Q2) is critical for overvoltage threshold.
+$Comp
+L Device:Q_PMOS_GSD Q2
+U 1 1 5FA8A6C8
+P 7900 3550
+F 0 "Q2" V 8242 3550 50  0000 C CNN
+F 1 "Q_PMOS_GSD" V 8151 3550 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8100 3650 50  0001 C CNN
+F 3 "~" H 7900 3550 50  0001 C CNN
+F 4 "FIX FOOTPRINT" H 7900 3550 50  0001 C CNN "Mfg"
+	1    7900 3550
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J6
+U 1 1 5FA11947
+P 2450 3600
+F 0 "J6" H 2557 4467 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 2557 4376 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 2600 3600 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811131825_Korean-Hroparts-Elec-TYPE-C-31-M-12_C165948.pdf" H 2600 3600 50  0001 C CNN
+F 4 "Korean Hroparts Elec" H 2450 3600 50  0001 C CNN "Mfg"
+F 5 "TYPE-C-31-M-12" H 2450 3600 50  0001 C CNN "Mfg PN"
+	1    2450 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 3600 3150 3600
+Wire Wire Line
+	3150 3600 3150 3500
+Connection ~ 3150 3500
+Wire Wire Line
+	3150 3500 3050 3500
+Wire Wire Line
+	3050 3800 3150 3800
+Wire Wire Line
+	3150 3800 3150 3700
+Connection ~ 3150 3700
+Wire Wire Line
+	3150 3700 3300 3700
+NoConn ~ 3050 4200
+NoConn ~ 3050 4100
+$Comp
+L power:PWR_FLAG #FLG0109
+U 1 1 5FBA187F
+P 9150 3000
+F 0 "#FLG0109" H 9150 3075 50  0001 C CNN
+F 1 "PWR_FLAG" V 9150 3128 50  0001 L CNN
+F 2 "" H 9150 3000 50  0001 C CNN
+F 3 "~" H 9150 3000 50  0001 C CNN
+	1    9150 3000
+	1    0    0    -1  
+$EndComp
+Connection ~ 9150 3000
+Wire Wire Line
+	9150 3000 8800 3000
+Text Notes 1950 1400 0    50   ~ 0
+https://www.adafruit.com/product/724
 $EndSCHEMATC
