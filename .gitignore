@@ -30,3 +30,7 @@ fp-info-cache
 #*.csv
 
 *.~vsdx
+
+# Pycharm files:
+.idea/
+venv/
