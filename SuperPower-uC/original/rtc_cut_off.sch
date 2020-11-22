@@ -17,8 +17,6 @@ Text HLabel 1600 1350 0    50   Input ~ 0
 SCL
 Text HLabel 1600 1500 0    50   BiDi ~ 0
 SDA
-Text HLabel 1600 1800 0    50   Input ~ 0
-VIN
 Text HLabel 1600 1950 0    50   Output ~ 0
 INT
 NoConn ~ 5900 3550
@@ -79,20 +77,14 @@ Text Label 1850 1350 2    50   ~ 0
 SCL
 Text Label 1850 1500 2    50   ~ 0
 SDA
-Text Label 1850 1800 2    50   ~ 0
-VIN
 Text Label 1850 1950 2    50   ~ 0
 INT
-Text Notes 3550 2800 0    50   Italic 0
-External trigger\npin header on board\ntrigger device must handle VIN
 Wire Wire Line
 	1600 1950 1850 1950
 Wire Wire Line
 	1600 1350 1850 1350
 Wire Wire Line
 	1600 1500 1850 1500
-Wire Wire Line
-	1600 1800 1850 1800
 Wire Wire Line
 	4500 3550 4250 3550
 $Comp
@@ -140,10 +132,6 @@ F 3 "~" H 3550 3150 50  0001 C CNN
 	1    3550 3150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3850 2900 3850 3150
-Text Label 3850 2900 3    50   ~ 0
-VIN
 $Comp
 L Device:R R604
 U 1 1 5F716154
@@ -216,15 +204,11 @@ Connection ~ 6500 2850
 Connection ~ 6500 3350
 Wire Wire Line
 	6500 3350 6850 3350
-Text Label 6850 2650 3    50   ~ 0
-VIN
 Wire Wire Line
 	6850 2850 7150 2850
 Wire Wire Line
 	6500 2850 6850 2850
 Connection ~ 6850 2850
-Wire Wire Line
-	6850 2650 6850 2850
 $Comp
 L Device:R_Small R?
 U 1 1 5FB76F56
@@ -252,10 +236,6 @@ F 3 "~" H 1650 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1650 3350 1650 3450
-Wire Wire Line
-	2000 3350 2000 3450
-Wire Wire Line
 	2000 3650 2000 3850
 Wire Wire Line
 	1650 3650 1650 3850
@@ -269,12 +249,32 @@ Wire Notes Line
 	2350 4000 1450 4000
 Wire Notes Line
 	2350 2800 2350 4000
-Text Label 1650 3350 1    50   ~ 0
-VIN
-Text Label 2000 3350 1    50   ~ 0
-VIN
 Text Label 2000 3850 0    50   ~ 0
 SDA
 Text Label 1650 3850 0    50   ~ 0
 SCL
+Text HLabel 1600 1800 0    50   Input ~ 0
+3v3_RTC
+Text Label 6850 2650 3    50   ~ 0
+VIN
+Wire Wire Line
+	6850 2650 6850 2850
+Wire Wire Line
+	3850 2900 3850 3150
+Text Label 3850 2900 3    50   ~ 0
+VIN
+Text Notes 3550 2800 0    50   Italic 0
+External trigger\npin header on board\ntrigger device must handle VIN
+Text Label 2000 3200 3    50   ~ 0
+VIN
+Text Label 1650 3200 3    50   ~ 0
+VIN
+Wire Wire Line
+	1600 1800 1850 1800
+Text Label 1850 1800 2    50   ~ 0
+VIN
+Wire Wire Line
+	2000 3200 2000 3450
+Wire Wire Line
+	1650 3200 1650 3450
 $EndSCHEMATC

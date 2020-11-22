@@ -704,18 +704,6 @@ NoConn ~ 4500 3200
 NoConn ~ 4500 3300
 NoConn ~ 4500 3400
 Wire Wire Line
-	4500 2400 5100 2400
-Text Label 5100 2400 2    50   ~ 0
-CHREN
-Wire Wire Line
-	4500 2500 5100 2500
-Text Label 5100 2500 2    50   ~ 0
-CHR0
-Wire Wire Line
-	4500 2600 5100 2600
-Text Label 5100 2600 2    50   ~ 0
-CHR1
-Wire Wire Line
 	7650 4500 7400 4500
 Text Label 7400 4500 0    50   ~ 0
 IO36
@@ -875,9 +863,6 @@ Wire Wire Line
 	6400 5600 6650 5600
 Text Label 6650 5600 2    50   ~ 0
 VBUS
-NoConn ~ 5100 2400
-NoConn ~ 5100 2500
-NoConn ~ 5100 2600
 Wire Wire Line
 	10150 5600 10400 5600
 Wire Wire Line
@@ -1065,7 +1050,6 @@ Text Label 8900 6400 1    50   ~ 0
 RGBW_LED
 Wire Wire Line
 	8900 5850 8900 6400
-NoConn ~ 10400 5300
 Text Label 7300 5500 0    50   ~ 0
 EN_3V3
 Text Label 8100 6150 1    50   ~ 0
@@ -1082,8 +1066,6 @@ Wire Notes Line
 	800  6200 3750 6200
 Wire Notes Line
 	2450 4600 2450 7650
-NoConn ~ 6400 5400
-NoConn ~ 6400 5300
 Text Label 7400 4300 2    50   ~ 0
 3v3_MCU
 Wire Wire Line
@@ -1120,4 +1102,55 @@ Wire Wire Line
 Wire Wire Line
 	2800 1850 2800 2100
 Connection ~ 2800 2100
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FBB75FF
+P 4700 2400
+F 0 "TP?" V 4700 2600 50  0000 L CNN
+F 1 "TestPoint" V 4700 2700 50  0001 L CNN
+F 2 "" H 4900 2400 50  0001 C CNN
+F 3 "~" H 4900 2400 50  0001 C CNN
+	1    4700 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FBC1FC0
+P 4700 2500
+F 0 "TP?" V 4700 2688 50  0000 L CNN
+F 1 "TestPoint" V 4745 2688 50  0001 L CNN
+F 2 "" H 4900 2500 50  0001 C CNN
+F 3 "~" H 4900 2500 50  0001 C CNN
+	1    4700 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FBC21DE
+P 4700 2600
+F 0 "TP?" V 4700 2788 50  0000 L CNN
+F 1 "TestPoint" V 4745 2788 50  0001 L CNN
+F 2 "" H 4900 2600 50  0001 C CNN
+F 3 "~" H 4900 2600 50  0001 C CNN
+	1    4700 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4700 2400 4500 2400
+Wire Wire Line
+	4500 2500 4700 2500
+Wire Wire Line
+	4700 2600 4500 2600
+Text Label 6800 5400 2    50   ~ 0
+EN_5V
+Text Label 6800 5300 2    50   ~ 0
+EN_3V3
+Wire Wire Line
+	6800 5300 6400 5300
+Wire Wire Line
+	6400 5400 6800 5400
+Text Label 9900 5300 0    50   ~ 0
+RGBW_LED
+Wire Wire Line
+	10400 5300 9900 5300
 $EndSCHEMATC

@@ -190,7 +190,7 @@ F0 "RTC" 50
 F1 "rtc_cut_off.sch" 50
 F2 "SCL" I R 6200 4100 50 
 F3 "SDA" B R 6200 4200 50 
-F4 "VIN" I L 4950 4200 50 
+F4 "3v3_RTC" I L 4950 4200 50 
 F5 "INT" O L 4950 4450 50 
 $EndSheet
 Wire Wire Line
