@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 8
+Sheet 6 8
 Title ""
 Date ""
 Rev ""
@@ -177,7 +177,7 @@ Wire Wire Line
 Wire Wire Line
 	7700 2500 7950 2500
 Connection ~ 7700 2750
-Text HLabel 4050 5900 0    50   Output ~ 0
+Text HLabel 3700 5900 0    50   Output ~ 0
 Thermistor
 $Comp
 L Connector_Generic:Conn_01x02 J4
@@ -191,20 +191,20 @@ F 3 "~" H 4400 5900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4200 5900 4050 5900
+	4200 5900 3900 5900
 $Comp
 L power:GND #PWR015
 U 1 1 5F7AD85C
-P 4100 6150
-F 0 "#PWR015" H 4100 5900 50  0001 C CNN
-F 1 "GND" H 4105 5977 50  0000 C CNN
-F 2 "" H 4100 6150 50  0001 C CNN
-F 3 "" H 4100 6150 50  0001 C CNN
-	1    4100 6150
+P 4100 6400
+F 0 "#PWR015" H 4100 6150 50  0001 C CNN
+F 1 "GND" H 4105 6227 50  0000 C CNN
+F 2 "" H 4100 6400 50  0001 C CNN
+F 3 "" H 4100 6400 50  0001 C CNN
+	1    4100 6400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4100 6150 4100 6000
+	4100 6400 4100 6250
 Wire Wire Line
 	4100 6000 4200 6000
 $Comp
@@ -226,8 +226,33 @@ Wire Wire Line
 Connection ~ 6100 2400
 Text Notes 5150 4100 0    50   ~ 0
 Reverse Polarity Protection
-Text Notes 3950 6650 0    50   ~ 0
+Text Notes 3900 7000 0    50   ~ 0
 Thermistor Connection\n(Optional)
 Text Notes 7650 3650 0    50   ~ 0
 Battery Connection
+$Comp
+L Device:R_Small R?
+U 1 1 5FBB505A
+P 3900 6100
+AR Path="/5F6AC481/5FBB505A" Ref="R?"  Part="1" 
+AR Path="/5F6AC644/5FBB505A" Ref="R22"  Part="1" 
+F 0 "R22" H 3841 6054 50  0000 R CNN
+F 1 "DNP" H 3841 6145 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3900 6100 50  0001 C CNN
+F 3 "~" H 3900 6100 50  0001 C CNN
+	1    3900 6100
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3900 6000 3900 5900
+Connection ~ 3900 5900
+Wire Wire Line
+	3900 5900 3700 5900
+Wire Wire Line
+	3900 6250 3900 6200
+Wire Wire Line
+	3900 6250 4100 6250
+Connection ~ 4100 6250
+Wire Wire Line
+	4100 6250 4100 6000
 $EndSCHEMATC

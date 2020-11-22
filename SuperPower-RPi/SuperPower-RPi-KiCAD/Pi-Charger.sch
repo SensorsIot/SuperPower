@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 8
+Sheet 7 8
 Title ""
 Date ""
 Rev ""
@@ -206,8 +206,6 @@ F 3 "" H 5050 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5050 4750 5050 4350
-Wire Wire Line
 	5050 4350 5250 4350
 $Comp
 L Device:C_Small C18
@@ -281,9 +279,7 @@ Wire Wire Line
 Connection ~ 2800 3050
 Wire Wire Line
 	2800 3050 5250 3050
-Wire Wire Line
-	6050 4450 6350 4450
-Text HLabel 6350 4450 2    50   Input ~ 0
+Text HLabel 6950 4750 2    50   Input ~ 0
 Thermistor
 $Comp
 L power:GND #PWR012
@@ -422,4 +418,75 @@ F 3 "" H 8100 4000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8100 4000 8100 3900
+$Comp
+L Device:R_Small R23
+U 1 1 5FBA68CC
+P 6650 4600
+F 0 "R23" H 6591 4554 50  0000 R CNN
+F 1 "5.23k" H 6591 4645 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6650 4600 50  0001 C CNN
+F 3 "~" H 6650 4600 50  0001 C CNN
+	1    6650 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R24
+U 1 1 5FBA6D8C
+P 6650 4950
+F 0 "R24" H 6591 4904 50  0000 R CNN
+F 1 "30.1k" H 6591 4995 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6650 4950 50  0001 C CNN
+F 3 "~" H 6650 4950 50  0001 C CNN
+	1    6650 4950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6650 4750 6950 4750
+Wire Wire Line
+	6650 4500 6650 4250
+Connection ~ 6150 4250
+Wire Wire Line
+	6150 4250 6650 4250
+Connection ~ 6650 4750
+Wire Wire Line
+	6650 4750 6650 4700
+Wire Wire Line
+	6650 4750 6650 4800
+Wire Wire Line
+	6650 4800 6550 4800
+Wire Wire Line
+	6550 4800 6550 4450
+Wire Wire Line
+	6550 4450 6050 4450
+Connection ~ 6650 4800
+Wire Wire Line
+	6650 4800 6650 4850
+$Comp
+L power:GND #PWR039
+U 1 1 5FBB2617
+P 6650 5100
+F 0 "#PWR039" H 6650 4850 50  0001 C CNN
+F 1 "GND" H 6655 4927 50  0000 C CNN
+F 2 "" H 6650 5100 50  0001 C CNN
+F 3 "" H 6650 5100 50  0001 C CNN
+	1    6650 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 5100 6650 5050
+$Comp
+L Device:Jumper_NC_Small JP?
+U 1 1 5FBBB98D
+P 5050 4550
+F 0 "JP?" V 5100 4750 50  0000 R CNN
+F 1 "NC" V 5000 4750 50  0000 R CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 5050 4550 50  0001 C CNN
+F 3 "~" H 5050 4550 50  0001 C CNN
+	1    5050 4550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5050 4450 5050 4350
+Wire Wire Line
+	5050 4650 5050 4750
 $EndSCHEMATC

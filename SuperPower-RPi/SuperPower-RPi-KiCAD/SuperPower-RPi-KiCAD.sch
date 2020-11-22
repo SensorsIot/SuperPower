@@ -115,7 +115,6 @@ F7 "Thermistor" I R 4500 4350 50
 F8 "D+" I L 3200 3950 50 
 F9 "D-" I L 3200 4050 50 
 $EndSheet
-NoConn ~ 5450 4200
 Wire Wire Line
 	4450 5600 4850 5600
 Wire Wire Line
@@ -132,7 +131,7 @@ Wire Wire Line
 	5250 2250 4800 2250
 Connection ~ 4800 3650
 Wire Wire Line
-	4800 3650 5450 3650
+	4800 3650 5350 3650
 Wire Wire Line
 	4800 2250 4800 3650
 $Comp
@@ -201,4 +200,11 @@ Wire Wire Line
 Connection ~ 9000 3650
 Wire Wire Line
 	9000 3650 9350 3650
+Wire Wire Line
+	5450 4200 5350 4200
+Wire Wire Line
+	5350 4200 5350 3650
+Connection ~ 5350 3650
+Wire Wire Line
+	5350 3650 5450 3650
 $EndSCHEMATC
