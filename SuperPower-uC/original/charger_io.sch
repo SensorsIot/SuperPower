@@ -141,36 +141,17 @@ Connection ~ 4750 3100
 Wire Wire Line
 	4750 3100 4750 3000
 Wire Wire Line
-	7100 5200 7500 5200
-Wire Wire Line
 	4650 2900 5100 2900
-$Comp
-L power:GND #PWR050
-U 1 1 5F733E8D
-P 7250 5400
-F 0 "#PWR050" H 7250 5150 50  0001 C CNN
-F 1 "GND" H 7255 5227 50  0000 C CNN
-F 2 "" H 7250 5400 50  0001 C CNN
-F 3 "" H 7250 5400 50  0001 C CNN
-	1    7250 5400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7250 5400 7250 5300
-Wire Wire Line
-	7250 5300 7100 5300
 Text Label 1950 1050 2    50   ~ 0
 VBUS
 Text Label 5100 2900 2    50   ~ 0
-V_CHARGE
-Text Label 7500 5200 2    50   ~ 0
 V_CHARGE
 $Comp
 L Connector:Screw_Terminal_01x02 J9
 U 1 1 5F74DB0F
 P 6800 3150
 F 0 "J9" H 6718 2825 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 6718 2916 50  0000 C CNN
+F 1 "DNP/Screw_Terminal_01x02" H 6718 2916 50  0000 C CNN
 F 2 "" H 6800 3150 50  0001 C CNN
 F 3 "~" H 6800 3150 50  0001 C CNN
 	1    6800 3150
@@ -197,8 +178,6 @@ Wire Wire Line
 	7000 3050 7400 3050
 Text Notes 3350 2250 0    50   ~ 0
 Barrel Jack\n
-Text Notes 5900 4200 0    50   ~ 0
-Solder Pads
 Text Notes 5900 2250 0    50   ~ 0
 Screw Terminal
 Wire Notes Line
@@ -211,17 +190,6 @@ Wire Wire Line
 	1950 1050 1300 1050
 Wire Wire Line
 	1950 1150 1300 1150
-$Comp
-L Connector:Conn_01x02_Male J10
-U 1 1 5F7331CA
-P 6900 5200
-F 0 "J10" H 6850 5450 50  0000 C CNN
-F 1 "S2B-PH-SM4-TB(LF)(SN)" H 7250 5350 50  0000 C CNN
-F 2 "" H 6900 5200 50  0001 C CNN
-F 3 "~" H 6900 5200 50  0001 C CNN
-	1    6900 5200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4100 5150 3700 5150
 Wire Wire Line
@@ -250,7 +218,7 @@ L Device:R_Small R33
 U 1 1 5F75A76F
 P 2200 6850
 F 0 "R33" H 2259 6896 50  0000 L CNN
-F 1 "0" H 2259 6805 50  0000 L CNN
+F 1 "DNP/0" H 2259 6805 50  0000 L CNN
 F 2 "" H 2200 6850 50  0001 C CNN
 F 3 "~" H 2200 6850 50  0001 C CNN
 	1    2200 6850
@@ -512,8 +480,6 @@ Wire Notes Line
 	11050 2100 11050 6450
 Wire Notes Line
 	3250 2100 11050 2100
-Wire Notes Line
-	5800 6450 11050 6450
 Text Notes 8450 2250 0    50   ~ 0
 Power oring
 Text Label 9100 4750 2    50   ~ 0

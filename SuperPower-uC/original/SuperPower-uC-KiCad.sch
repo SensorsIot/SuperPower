@@ -47,8 +47,6 @@ Wire Wire Line
 Wire Wire Line
 	6600 4100 6200 4100
 Wire Wire Line
-	4300 2550 4600 2550
-Wire Wire Line
 	4950 4450 4700 4450
 Wire Wire Line
 	4700 4450 4700 2800
@@ -119,9 +117,6 @@ Permanent\nPower Jumper
 Text Notes 7400 2550 0    50   ~ 0
 FTDI
 Wire Wire Line
-	4600 2550 4900 2550
-Connection ~ 4600 2550
-Wire Wire Line
 	6850 2550 6150 2550
 Wire Wire Line
 	6150 2700 6850 2700
@@ -160,14 +155,6 @@ Wire Wire Line
 Wire Wire Line
 	6150 2350 6850 2350
 Wire Wire Line
-	4600 2550 4600 1900
-Wire Wire Line
-	4600 1900 6500 1900
-Wire Wire Line
-	6500 1900 6500 2250
-Wire Wire Line
-	6500 2250 6850 2250
-Wire Wire Line
 	4300 2950 4500 2950
 Wire Wire Line
 	4500 2950 4500 3450
@@ -189,7 +176,6 @@ F9 "3v3" I L 6850 2800 50
 F10 "EN_3V3" O L 6850 2550 50 
 F11 "EN_5V" O L 6850 2450 50 
 F12 "EN_MCU_REG" O L 6850 2350 50 
-F13 "VIN" I L 6850 2250 50 
 $EndSheet
 Wire Wire Line
 	6500 3450 6500 2900
@@ -231,4 +217,6 @@ F8 "EN_5V" I R 6150 2450 50
 F9 "EN_MCU_REG" I R 6150 2350 50 
 F10 "3v3_RTC" O L 4900 3000 50 
 $EndSheet
+Wire Wire Line
+	4300 2550 4900 2550
 $EndSCHEMATC
