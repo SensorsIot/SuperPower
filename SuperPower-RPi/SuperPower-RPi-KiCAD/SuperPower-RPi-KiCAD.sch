@@ -131,8 +131,6 @@ Wire Wire Line
 	5250 2250 4800 2250
 Connection ~ 4800 3650
 Wire Wire Line
-	4800 3650 5350 3650
-Wire Wire Line
 	4800 2250 4800 3650
 $Comp
 L Mechanical:MountingHole H1
@@ -202,9 +200,26 @@ Wire Wire Line
 	9000 3650 9350 3650
 Wire Wire Line
 	5450 4200 5350 4200
-Wire Wire Line
-	5350 4200 5350 3650
-Connection ~ 5350 3650
+$Comp
+L Device:Jumper_NC_Small JP?
+U 1 1 5FBAF3BD
+P 5350 3950
+AR Path="/5F6AC481/5FBAF3BD" Ref="JP?"  Part="1" 
+AR Path="/5FBAF3BD" Ref="JP2"  Part="1" 
+F 0 "JP2" V 5400 4150 50  0000 R CNN
+F 1 "NC" V 5300 4150 50  0000 R CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 5350 3950 50  0001 C CNN
+F 3 "~" H 5350 3950 50  0001 C CNN
+	1    5350 3950
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
 	5350 3650 5450 3650
+Wire Wire Line
+	4800 3650 5350 3650
+Connection ~ 5350 3650
+Wire Wire Line
+	5350 4200 5350 4050
+Wire Wire Line
+	5350 3850 5350 3650
 $EndSCHEMATC

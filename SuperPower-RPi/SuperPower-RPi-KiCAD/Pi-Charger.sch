@@ -475,10 +475,10 @@ $EndComp
 Wire Wire Line
 	6650 5100 6650 5050
 $Comp
-L Device:Jumper_NC_Small JP?
+L Device:Jumper_NC_Small JP3
 U 1 1 5FBBB98D
 P 5050 4550
-F 0 "JP?" V 5100 4750 50  0000 R CNN
+F 0 "JP3" V 5100 4750 50  0000 R CNN
 F 1 "NC" V 5000 4750 50  0000 R CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 5050 4550 50  0001 C CNN
 F 3 "~" H 5050 4550 50  0001 C CNN
