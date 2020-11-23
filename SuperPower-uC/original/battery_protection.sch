@@ -7,11 +7,11 @@ Sheet 2 7
 Title "SuperPower-uC"
 Date "2020-09-20"
 Rev "0.1"
-Comp "ManWithNoName"
+Comp ""
 Comment1 "Licence: CERN-OHL-W"
 Comment2 ""
-Comment3 "Available for Lithium / LiPo or LiFePO4 Chemistry"
-Comment4 "Available for internal (18650 Battery Holder) or external (Connector) Battery"
+Comment3 ""
+Comment4 ""
 $EndDescr
 Text HLabel 900  850  0    50   BiDi ~ 0
 VBAT

@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 7
 Title "SuperPower-uC"
-Date "2020-10-27"
+Date "2020-09-20"
 Rev "0.1"
 Comp ""
 Comment1 "Licence: CERN-OHL-W"
