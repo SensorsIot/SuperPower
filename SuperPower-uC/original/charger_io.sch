@@ -31,6 +31,8 @@ $Comp
 L Connector:USB_C_Receptacle_USB2.0 J7
 U 1 1 5F725D86
 P 2500 5750
+AR Path="/5F725D86" Ref="J7"  Part="1" 
+AR Path="/5F63B107/5F725D86" Ref="J7"  Part="1" 
 F 0 "J7" H 2607 6617 50  0000 C CNN
 F 1 "USB_C_Receptacle_USB2.0" H 2607 6526 50  0000 C CNN
 F 2 "" H 2650 5750 50  0001 C CNN
@@ -488,4 +490,81 @@ Text Notes 8450 6400 0    50   ~ 0
 This circuit (power oring) allows to have concurrent power inputs,\nthe input with the highest voltage (with respect to the ground)\nwill be providing power to the charging IC (CHARGER_VIN).
 Text Label 1950 1150 2    50   ~ 0
 CHARGER_VIN
+$Comp
+L 150060vs75000:150060VS75000_0603 LED?
+U 1 1 5FC4B339
+P 7000 4750
+F 0 "LED?" V 7039 4632 50  0000 R CNN
+F 1 "150060VS75000_0603" V 6948 4632 50  0001 R CNN
+F 2 "" H 7000 4750 50  0001 C CNN
+F 3 "~" H 7000 4750 50  0001 C CNN
+F 4 "Wurth Elektronik " H 7000 4750 50  0001 C CNN "Mfr_name"
+F 5 "150060VS75000" H 7000 4750 50  0001 C CNN "Mfr_no"
+F 6 "0603" H 7200 4850 50  0001 C CNN "Package"
+F 7 "Green" V 6948 4632 50  0000 R CNN "Color"
+F 8 "https://octopart.com/150060vs75000-w%C3%BCrth+elektronik-29717778?r=sp" H 7000 4750 50  0001 C CNN "Octopart_link"
+F 9 "https://uk.farnell.com/wurth-elektronik/150060vs75000/led-0603-b-green-40mcd-570nm/dp/2322073?st=150060VS75000" H 7000 4750 50  0001 C CNN "Farnell_link"
+F 10 "2322073" H 7000 4750 50  0001 C CNN "Farnell_ref"
+F 11 "2020-11-23" H 7000 4750 50  0001 C CNN "Farnell_check_date"
+F 12 "£0.144" H 7000 4750 50  0001 C CNN "Farnell_price_qt=5"
+F 13 "4457" H 7000 4750 50  0001 C CNN "Farnell_stock"
+F 14 "-" H 7000 4750 50  0001 C CNN "LCSC_link"
+F 15 "-" H 7000 4750 50  0001 C CNN "LCSC_ref"
+F 16 "https://eu.mouser.com/ProductDetail/Wurth-Elektronik/150060VS75000?qs=%2Fha2pyFaduhwKZlJ%252BauMPIjo9WJ3TVadxkDfqVN3kSHKNXazy%252BR78Q==" H 7000 4750 50  0001 C CNN "Mouser_link"
+F 17 "710-150060VS75000" H 7000 4750 50  0001 C CNN "Mouser_ref"
+F 18 "2020-11-23" H 7000 4750 50  0001 C CNN "Mouser_check_date"
+F 19 "$0.151" H 7150 4550 50  0001 C CNN "Mouser_price_qt=1"
+F 20 "127902" H 7000 4750 50  0001 C CNN "Mouser_stock"
+F 21 "https://fr.rs-online.com/web/p/led/8154215/" H 7000 4750 50  0001 C CNN "RS_link"
+F 22 "815-4215" H 7000 4750 50  0001 C CNN "RS_ref"
+F 23 "2020-11-23" H 7000 4750 50  0001 C CNN "RS_check_date"
+F 24 "0.101€" H 7000 4750 50  0001 C CNN "RS_price_qt=100"
+F 25 "500" H 7000 4750 50  0001 C CNN "RS_stock"
+F 26 "1.00" H 7000 4750 50  0001 C CNN "Release_version"
+F 27 "2020-11-23" H 7000 4750 50  0001 C CNN "Release_date"
+F 28 "ManWithNoName" H 7000 4750 50  0001 C CNN "Designer"
+F 29 "TO_CHECK" H 7000 4750 50  0001 C CNN "Status"
+	1    7000 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FC4C6CF
+P 7000 5150
+AR Path="/5F639F48/5FC4C6CF" Ref="R?"  Part="1" 
+AR Path="/5F63B107/5FC4C6CF" Ref="R?"  Part="1" 
+F 0 "R?" H 7059 5196 50  0000 L CNN
+F 1 "2.2k" H 7059 5105 50  0000 L CNN
+F 2 "" H 7000 5150 50  0001 C CNN
+F 3 "~" H 7000 5150 50  0001 C CNN
+	1    7000 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 4900 7000 5050
+$Comp
+L power:GND #PWR?
+U 1 1 5FC4E3C0
+P 7000 5400
+AR Path="/5F639F48/5FC4E3C0" Ref="#PWR?"  Part="1" 
+AR Path="/5F63B107/5FC4E3C0" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7000 5150 50  0001 C CNN
+F 1 "GND" H 7005 5227 50  0000 C CNN
+F 2 "" H 7000 5400 50  0001 C CNN
+F 3 "" H 7000 5400 50  0001 C CNN
+	1    7000 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 5250 7000 5400
+Wire Wire Line
+	7000 4600 7000 4500
+Wire Wire Line
+	7000 4500 6800 4500
+Text Label 6800 4500 2    50   ~ 0
+CHARGER_VIN
+Text Notes 5900 4200 0    50   ~ 0
+Power Source LED
+Wire Notes Line
+	5800 5800 8400 5800
 $EndSCHEMATC

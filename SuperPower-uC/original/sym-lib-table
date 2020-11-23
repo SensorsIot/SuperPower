@@ -29,4 +29,7 @@
   (lib (name solderjumper_4_open)(type Legacy)(uri ${KIPRJMOD}/../components/solderjumper_4_open/solderjumper_4_open.lib)(options "")(descr ""))
   (lib (name TPS70933DRV)(type Legacy)(uri ${KIPRJMOD}/../components/TPS70933DRV/TPS70933DRVT.lib)(options "")(descr ""))
   (lib (name TPS63070NRM)(type Legacy)(uri ${KIPRJMOD}/../components/TPS63070RNM/TPS63070RNMT.lib)(options "")(descr ""))
+  (lib (name 150060rs75000)(type Legacy)(uri ${KIPRJMOD}/../components/150060rs75000/150060rs75000.lib)(options "")(descr ""))
+  (lib (name 150060ys75000)(type Legacy)(uri ${KIPRJMOD}/../components/150060ys75000/150060ys75000.lib)(options "")(descr ""))
+  (lib (name 150060vs75000)(type Legacy)(uri ${KIPRJMOD}/../components/150060vs75000/150060vs75000.lib)(options "")(descr ""))
 )
