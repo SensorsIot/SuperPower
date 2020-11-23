@@ -368,9 +368,9 @@ Text Notes 6000 6150 0    50   ~ 0
 If the application does not require temperature\ncontrolled charging, then the thermistor should be\nreplaced with a resistor of equal value to the bias resistor\nRNTCBIAS to continuously simulate 25°C.\n-> See page 20 of the Datasheet.
 Text Notes 7350 5000 0    50   ~ 0
 Batt+ Capacitor :\n-> needed in case of no battery detected after a charging process started.\n10uF or more (see page 32 of the Datasheet)
-Text Notes 850  6900 0    50   ~ 0
+Text Notes 4050 6950 0    50   ~ 0
 1MHz < fosc < 2.5MHz\n\nRt=93.1KOhm @F=1.01MHz (Fmin)\nRT=63.4kOhm @F=1.48MHz (Fdefault)\nRt=46.4Kohm @F=2.02MHz\nRt=37.4Kohm @F=2.51MHz (Fmax)
-Text Notes 3150 6750 0    50   ~ 0
+Text Notes 8800 2900 0    50   ~ 0
 Inductor common values :\n- 4.7uH -> Vin_max=23.5V @Fsw=1.5MHz\n- 6.8uH -> Vin_max=34V @Fsw=1.5MHz
 Wire Wire Line
 	4800 4650 4650 4650
@@ -381,75 +381,46 @@ Wire Wire Line
 Connection ~ 4800 4650
 Connection ~ 4300 4550
 Wire Wire Line
-	3200 5400 3200 4750
+	3750 5400 3750 4750
 $Comp
 L solderjumper_4_open:SolderJumper_4_Open JP1
 U 1 1 5F74EA04
-P 3200 4550
-F 0 "JP1" H 3250 4700 50  0000 L CNN
-F 1 "SolderJumper_4_Open" H 2900 4350 50  0001 L CNN
-F 2 "" H 3200 4550 50  0001 C CNN
-F 3 "~" H 3200 4550 50  0001 C CNN
-	1    3200 4550
+P 3750 4550
+F 0 "JP1" H 3800 4700 50  0000 L CNN
+F 1 "SolderJumper_4_Open" H 3450 4350 50  0001 L CNN
+F 2 "" H 3750 4550 50  0001 C CNN
+F 3 "~" H 3750 4550 50  0001 C CNN
+	1    3750 4550
 	-1   0    0    1   
 $EndComp
-Connection ~ 3900 5400
-Wire Wire Line
-	3200 5400 3900 5400
 $Comp
 L power:GND #PWR08
 U 1 1 5F75B0A7
-P 2950 5150
-F 0 "#PWR08" H 2950 4900 50  0001 C CNN
-F 1 "GND" H 2955 4977 50  0000 C CNN
-F 2 "" H 2950 5150 50  0001 C CNN
-F 3 "" H 2950 5150 50  0001 C CNN
-	1    2950 5150
+P 3350 5150
+F 0 "#PWR08" H 3350 4900 50  0001 C CNN
+F 1 "GND" H 3355 4977 50  0000 C CNN
+F 2 "" H 3350 5150 50  0001 C CNN
+F 3 "" H 3350 5150 50  0001 C CNN
+	1    3350 5150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2950 4550 3000 4550
-Connection ~ 4200 4550
+	3350 4550 3550 4550
 Wire Wire Line
-	3400 4550 4200 4550
+	4500 4350 5000 4350
 Wire Wire Line
-	3900 5400 3900 5000
+	3750 4400 3750 4250
 Wire Wire Line
-	4200 4550 4300 4550
+	4300 4550 4500 4550
 Wire Wire Line
-	4200 4800 4200 4550
-Wire Wire Line
-	4100 4800 4200 4800
-Wire Wire Line
-	3900 4650 3900 4350
-$Comp
-L solderjumper_4_open:SolderJumper_4_Open JP2
-U 1 1 5F74FE6F
-P 3900 4800
-F 0 "JP2" H 4000 4950 50  0000 L CNN
-F 1 "SolderJumper_4_Open" H 3600 5050 50  0001 L CNN
-F 2 "" H 3900 4800 50  0001 C CNN
-F 3 "~" H 3900 4800 50  0001 C CNN
-	1    3900 4800
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3900 4350 5000 4350
-Wire Wire Line
-	4650 5400 3900 5400
-Wire Wire Line
-	3200 4400 3200 4250
-Wire Wire Line
-	4300 4550 5000 4550
-Wire Wire Line
-	3200 4250 5000 4250
-Text Label 4300 4250 0    50   ~ 0
+	3750 4250 5000 4250
+Text Label 4600 4250 0    50   ~ 0
 CELLS0
-Text Label 4300 4350 0    50   ~ 0
+Text Label 4600 4350 0    50   ~ 0
 CELLS1
-Text Label 3500 4550 0    50   ~ 0
+Text Label 4000 4550 0    50   ~ 0
 INTVcc
-Text Label 3500 5400 0    50   ~ 0
+Text Label 3850 5400 0    50   ~ 0
 VCC2P5
 Wire Wire Line
 	6200 3950 7000 3950
@@ -603,14 +574,14 @@ Connection ~ 6600 1350
 Text Notes 8800 5600 0    50   ~ 0
 External NTC connector
 Wire Notes Line
-	650  6150 2600 6150
+	3850 6200 5800 6200
 Wire Notes Line
-	2600 6150 2600 7350
+	5800 6200 5800 7400
 Wire Notes Line
-	2600 7350 650  7350
+	5800 7400 3850 7400
 Wire Notes Line
-	650  7350 650  6150
-Text Notes 1100 6350 0    50   ~ 10
+	3850 7400 3850 6200
+Text Notes 4300 6400 0    50   ~ 10
 Switching Frequency Setting
 Wire Notes Line
 	7600 4600 7600 4750
@@ -621,21 +592,19 @@ Wire Notes Line
 Wire Notes Line
 	6100 5150 6100 5700
 Wire Notes Line
-	2900 6200 5050 6200
+	8550 2350 10700 2350
 Wire Notes Line
-	5050 6200 5050 7300
+	10700 2350 10700 3450
 Wire Notes Line
-	5050 7300 2900 7300
+	10700 3450 8550 3450
 Wire Notes Line
-	2900 7300 2900 6200
+	8550 3450 8550 2350
 Text Notes 3500 1050 0    50   ~ 10
 Max Input Current Setting\n             &\nMax Battery Charging Current Setting (I_bat)
 Text Notes 3050 1400 0    50   ~ 0
  -> 3.2A is the max current value for the chip\nCommon settings : 10mohm -> 3.20A / 16mohm -> 2.00A\nLow Current sett. : 22mohm -> 1.45A / 33mohm -> 0.97A
-Text Notes 3400 6350 0    50   ~ 10
+Text Notes 9050 2500 0    50   ~ 10
 Inductor Value Setting
-Text Notes 950  950  0    50   ~ 0
-TODO :\nAdd Hierachical Block Connectors
 $Comp
 L Connector:Conn_01x02_Male J3
 U 1 1 5F831EE9
@@ -736,56 +705,30 @@ Used as an option and/or debug
 $Comp
 L Device:R_US R4
 U 1 1 5F845E81
-P 900 5100
-F 0 "R4" V 695 5100 50  0000 C CNN
-F 1 "0" V 786 5100 50  0000 C CNN
-F 2 "" V 940 5090 50  0001 C CNN
-F 3 "~" H 900 5100 50  0001 C CNN
-	1    900  5100
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_US R5
-U 1 1 5F846819
-P 1300 5100
-F 0 "R5" V 1095 5100 50  0000 C CNN
-F 1 "0" V 1186 5100 50  0000 C CNN
-F 2 "" V 1340 5090 50  0001 C CNN
-F 3 "~" H 1300 5100 50  0001 C CNN
-	1    1300 5100
+P 1150 2950
+F 0 "R4" V 945 2950 50  0000 C CNN
+F 1 "0" V 1036 2950 50  0000 C CNN
+F 2 "" V 1190 2940 50  0001 C CNN
+F 3 "~" H 1150 2950 50  0001 C CNN
+	1    1150 2950
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	900  5250 900  5400
-Wire Wire Line
-	1300 5400 1300 5250
-Wire Wire Line
-	900  4950 900  4850
-Wire Wire Line
-	1300 4950 1300 4850
-Text Label 900  5400 0    50   ~ 0
+	1150 3100 1150 3250
+Text Label 1150 3250 0    50   ~ 0
 CELLS0
-Text Label 1300 5400 0    50   ~ 0
-CELLS1
-Text Notes 750  4550 0    50   ~ 0
+Text Notes 800  2400 0    50   ~ 0
 Default 1 Cell settings
-Wire Wire Line
-	900  4850 1100 4850
-Wire Wire Line
-	1100 4700 1100 4850
-Connection ~ 1100 4850
-Wire Wire Line
-	1100 4850 1300 4850
-Text Label 1100 4700 0    50   ~ 0
+Text Label 1150 2550 0    50   ~ 0
 INTVcc
 Wire Notes Line
-	650  4400 1750 4400
+	700  2250 1800 2250
 Wire Notes Line
-	1750 4400 1750 5550
+	1800 2250 1800 3400
 Wire Notes Line
-	1750 5550 650  5550
+	1800 3400 700  3400
 Wire Notes Line
-	650  5550 650  4400
+	700  3400 700  2250
 Wire Wire Line
 	5950 850  6300 850 
 Wire Wire Line
@@ -834,22 +777,7 @@ Wire Wire Line
 	5800 5600 5800 5200
 Connection ~ 5800 5200
 Wire Wire Line
-	2950 4550 2950 5150
-$Comp
-L power:GND #PWR09
-U 1 1 5FA22B83
-P 3300 5150
-F 0 "#PWR09" H 3300 4900 50  0001 C CNN
-F 1 "GND" H 3305 4977 50  0000 C CNN
-F 2 "" H 3300 5150 50  0001 C CNN
-F 3 "" H 3300 5150 50  0001 C CNN
-	1    3300 5150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3300 4800 3300 5150
-Wire Wire Line
-	3300 4800 3700 4800
+	3350 4550 3350 5150
 Wire Wire Line
 	6300 950  6300 1350
 Connection ~ 6300 1350
@@ -1069,8 +997,63 @@ F 29 "ManWithNoName" H 2150 3750 50  0001 C CNN "Designer"
 $EndComp
 Text Notes 3450 1750 0    79   Italic 0
 Iin(max) = 32mV/Rsnsi\nIchg(max) = 32mV/Rsnsb
-Text Notes 800  7200 0    79   Italic 0
+Text Notes 4000 7250 0    79   Italic 0
 Fosc(MHz) = 94/Rt(kOhm)
-Text Notes 2950 7050 0    79   Italic 0
+Text Notes 8600 3200 0    79   Italic 0
 L(µH) = 0.3xVin(max)/Fosc(MHz)
+Wire Wire Line
+	3750 5400 4650 5400
+Wire Wire Line
+	3950 4550 4300 4550
+Wire Wire Line
+	4500 4350 4500 4550
+Connection ~ 4500 4550
+Wire Wire Line
+	4500 4550 5000 4550
+Wire Wire Line
+	1150 2550 1150 2800
+Text Notes 700  4500 0    50   ~ 10
+CELLS0 and CELLS1 Pin Mapping to Series Cell Count
+Wire Notes Line
+	650  4350 2850 4350
+Wire Notes Line
+	2850 5350 650  5350
+Wire Notes Line
+	650  5350 650  4350
+Text Notes 800  4700 0    59   ~ 12
+CELLS0
+Text Notes 1600 4700 0    59   ~ 12
+Cell_Count
+Text Notes 800  4900 0    59   ~ 0
+INTVcc
+Text Notes 800  5100 0    59   ~ 0
+VCC2P5
+Text Notes 800  5300 0    59   ~ 0
+GND
+Wire Notes Line
+	1400 4550 1400 5350
+Wire Notes Line
+	650  5150 2850 5150
+Wire Notes Line
+	650  4950 2850 4950
+Wire Notes Line
+	650  4750 2850 4750
+Wire Notes Line
+	650  4550 2850 4550
+Wire Notes Line
+	2850 4350 2850 5350
+Text Notes 2100 4900 2    59   ~ 0
+1 (Default)
+Text Notes 1650 5100 2    59   ~ 0
+2
+Text Notes 1650 5300 2    59   ~ 0
+3
+Wire Notes Line
+	2900 4450 3650 4450
+Wire Notes Line
+	7100 3900 8750 3900
+Wire Notes Line
+	8750 3900 8750 3500
+Wire Notes Line
+	5450 5500 5450 6150
 $EndSCHEMATC
