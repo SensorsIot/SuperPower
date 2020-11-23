@@ -16,9 +16,7 @@ $EndDescr
 Wire Wire Line
 	6950 4100 7450 4100
 Wire Wire Line
-	6950 1900 6950 4100
-Wire Wire Line
-	6550 1900 6950 1900
+	6550 2300 6950 2300
 Wire Wire Line
 	9150 4150 9350 4150
 Wire Wire Line
@@ -50,7 +48,7 @@ Wire Wire Line
 Wire Wire Line
 	3200 4400 2950 4400
 Wire Wire Line
-	8700 3650 9000 3650
+	8700 3650 8800 3650
 Wire Wire Line
 	6450 3650 7450 3650
 Wire Wire Line
@@ -74,15 +72,6 @@ F1 "Pi-Output-Protection.sch" 50
 F2 "Vin" I L 7450 3650 50 
 F3 "Vout" O R 8700 3650 50 
 F4 "OP_Enable" I L 7450 4100 50 
-$EndSheet
-$Sheet
-S 9350 3450 1300 1150
-U 5F6AC9CB
-F0 "Pi-Connection" 50
-F1 "Pi-Connection.sch" 50
-F2 "Vin(5V)" I L 9350 3650 50 
-F3 "SDA" B L 9350 4050 50 
-F4 "SCL" B L 9350 4150 50 
 $EndSheet
 $Sheet
 S 950  3400 1350 1150
@@ -125,7 +114,7 @@ Wire Wire Line
 	2300 3950 3200 3950
 Wire Wire Line
 	3200 4050 2300 4050
-Text Notes 8900 1400 0    50   ~ 0
+Text Notes 8950 900  0    50   ~ 0
 Add extra interfaces block.
 Wire Wire Line
 	5250 2250 4800 2250
@@ -185,19 +174,14 @@ F0 "Pi-MCU" 50
 F1 "Pi-MCU.sch" 50
 F2 "SDA" B L 5250 1750 50 
 F3 "SCL" B L 5250 1850 50 
-F4 "GPIO0" B R 6550 1900 50 
+F4 "GPIO0" B R 6550 2300 50 
 F5 "VBAT_IN" I L 5250 2250 50 
 F6 "nRESET_Buf" I R 6550 1450 50 
 F7 "BOOT0" I R 6550 1600 50 
-F8 "Vin(5V)" I R 6550 1750 50 
+F8 "Vin(5V)" I R 6550 2150 50 
 $EndSheet
 Wire Wire Line
-	6550 1750 9000 1750
-Wire Wire Line
-	9000 1750 9000 3650
-Connection ~ 9000 3650
-Wire Wire Line
-	9000 3650 9350 3650
+	6550 2150 8800 2150
 Wire Wire Line
 	5450 4200 5350 4200
 $Comp
@@ -222,4 +206,26 @@ Wire Wire Line
 	5350 4200 5350 4050
 Wire Wire Line
 	5350 3850 5350 3650
+Wire Wire Line
+	6950 2300 6950 4100
+Wire Wire Line
+	8800 2150 8800 3650
+Text Notes 7150 5450 0    50   ~ 0
+Open Questions:\nShould we add jumper for measuring MCU current. (Yes, if at all possible)\nDotstar?  (Alternative to NeoPixel) Yes\nQWIIC connector DNP? Yes\nATTiny to Dotstar connection requires ATTiny 1614? (Stick with 85, but add dumb LED to GPIO)\nFind overcurrent chip
+$Sheet
+S 9350 2850 1350 1750
+U 5F6AC9CB
+F0 "Pi-Connection" 50
+F1 "Pi-Connection.sch" 50
+F2 "Vin(5V)" I L 9350 3650 50 
+F3 "SDA" B L 9350 4050 50 
+F4 "SCL" B L 9350 4150 50 
+$EndSheet
+Connection ~ 8800 3650
+Wire Wire Line
+	8800 3650 9350 3650
+Text Notes 7150 5800 0    50   ~ 0
+Would be nice:\nUSB output connector to power \nAdd QWIIC to mulitple I2C busses\n
+Text Notes 7150 6100 0    50   ~ 0
+TO DO:\nMove primary I2C to I2C1.\nAdd dumb LED to ATTiny
 $EndSCHEMATC

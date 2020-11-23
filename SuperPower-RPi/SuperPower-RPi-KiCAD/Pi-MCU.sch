@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 8
+Sheet 7 8
 Title ""
 Date ""
 Rev ""
@@ -19,8 +19,6 @@ Text HLabel 4950 3350 2    50   BiDi ~ 0
 SCL
 Text HLabel 3150 4150 0    50   BiDi ~ 0
 GPIO0
-Text Notes 800  7500 0    50   ~ 0
-Add jumper for measuring MCU current.
 Text HLabel 7850 1400 0    50   BiDi ~ 0
 SDA
 Text HLabel 7850 1500 0    50   BiDi ~ 0
@@ -847,8 +845,6 @@ Wire Wire Line
 	2500 2450 2600 2450
 Wire Wire Line
 	2600 2450 2600 2350
-Text Notes 9650 1900 0    50   ~ 0
-Wire Reset to RPi-GPIO?
 $Comp
 L Device:R_Small R19
 U 1 1 5FAC6856
@@ -1107,7 +1103,7 @@ L LED:APA102-2020 D7
 U 1 1 5FBB8F09
 P 7450 5350
 F 0 "D7" H 7250 5600 50  0000 C CNN
-F 1 "APA102-2020" H 7750 5600 50  0000 C CNN
+F 1 "APA102-2020" H 7050 5100 50  0000 C CNN
 F 2 "LED_SMD:LED-APA102-2020" H 7500 5050 50  0001 L TNN
 F 3 "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf" H 7550 4975 50  0001 L TNN
 	1    7450 5350
@@ -1159,4 +1155,105 @@ F 3 "" H 7450 5000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7450 5000 7450 5050
+$Comp
+L Connector_Generic:Conn_01x04 J10
+U 1 1 5FBFB7CE
+P 8650 5150
+F 0 "J10" H 8730 5096 50  0000 L CNN
+F 1 "Conn_01x04" H 8730 5051 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8650 5150 50  0001 C CNN
+F 3 "~" H 8650 5150 50  0001 C CNN
+	1    8650 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 5250 8450 5250
+Wire Wire Line
+	8450 5350 7750 5350
+$Comp
+L power:+3.3V #PWR042
+U 1 1 5FC175FC
+P 8350 5000
+F 0 "#PWR042" H 8350 4850 50  0001 C CNN
+F 1 "+3.3V" H 8365 5173 50  0000 C CNN
+F 2 "" H 8350 5000 50  0001 C CNN
+F 3 "" H 8350 5000 50  0001 C CNN
+	1    8350 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 5150 8350 5150
+Wire Wire Line
+	8350 5150 8350 5000
+$Comp
+L power:GND #PWR043
+U 1 1 5FC1F7CE
+P 8400 5450
+F 0 "#PWR043" H 8400 5200 50  0001 C CNN
+F 1 "GND" H 8405 5277 50  0000 C CNN
+F 2 "" H 8400 5450 50  0001 C CNN
+F 3 "" H 8400 5450 50  0001 C CNN
+	1    8400 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 5450 8400 5050
+Wire Wire Line
+	8400 5050 8450 5050
+$Comp
+L !Seth_Components:QWIIC_Connector J11
+U 1 1 5FC07762
+P 3550 6650
+F 0 "J11" H 3830 6650 50  0000 L CNN
+F 1 "QWIIC_Connector" H 3830 6559 50  0000 L CNN
+F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 5200 6750 50  0001 C CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/eSH.pdf" H 3550 6650 50  0001 C CNN
+F 4 "JST" H 3900 6600 50  0001 C CNN "Mfg"
+F 5 "SM04B-SRSS-TB(LF)(SN)" H 4300 6850 50  0001 C CNN "Mfg PN"
+F 6 "455-1804-1-ND" H 4300 6650 50  0001 C CNN "Digi-Key PN"
+	1    3550 6650
+	1    0    0    -1  
+$EndComp
+Text HLabel 3150 6750 0    50   BiDi ~ 0
+SDA
+Text HLabel 3150 6850 0    50   BiDi ~ 0
+SCL
+Wire Wire Line
+	3150 6750 3350 6750
+Wire Wire Line
+	3350 6850 3150 6850
+$Comp
+L power:GND #PWR045
+U 1 1 5FC4C83C
+P 3300 6900
+F 0 "#PWR045" H 3300 6650 50  0001 C CNN
+F 1 "GND" H 3305 6727 50  0000 C CNN
+F 2 "" H 3300 6900 50  0001 C CNN
+F 3 "" H 3300 6900 50  0001 C CNN
+	1    3300 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 6900 3300 6550
+Wire Wire Line
+	3300 6550 3350 6550
+$Comp
+L power:+3.3V #PWR044
+U 1 1 5FC5549F
+P 3250 6500
+F 0 "#PWR044" H 3250 6350 50  0001 C CNN
+F 1 "+3.3V" H 3265 6673 50  0000 C CNN
+F 2 "" H 3250 6500 50  0001 C CNN
+F 3 "" H 3250 6500 50  0001 C CNN
+	1    3250 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 6500 3250 6650
+Wire Wire Line
+	3250 6650 3350 6650
+Text Label 7850 5250 0    50   ~ 0
+Dotstar_data
+Text Label 7850 5350 0    50   ~ 0
+Dotstar_clk
 $EndSCHEMATC

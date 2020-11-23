@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 8
+Sheet 8 8
 Title ""
 Date ""
 Rev ""
@@ -125,4 +125,6 @@ Text HLabel 5400 2200 0    50   Input ~ 0
 Vin(5V)
 NoConn ~ 5900 2300
 NoConn ~ 6000 2300
+Text Notes 1200 2500 0    50   ~ 0
+Pins to STM32:\nGPIO____ to trigger update\nGPIO____ to indicate reboot/restart
 $EndSCHEMATC
