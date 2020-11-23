@@ -50,6 +50,55 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# 150060ys75000_150060YS75000_0603
+#
+DEF 150060ys75000_150060YS75000_0603 LED 0 40 N N 1 F N
+F0 "LED" 0 100 50 H V C CNN
+F1 "150060ys75000_150060YS75000_0603" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "Wurth Elektronik " 0 0 50 H I C CNN "Mfr_name"
+F5 "150060YS75000" 0 0 50 H I C CNN "Mfr_no"
+F6 "0603" 200 100 50 H I C CNN "Package"
+F7 "Yellow" 450 100 50 H I C CNN "Color"
+F8 "https://octopart.com/search?autosugg_idx=0&currency=USD&oq=150060YS75000&q=150060YS75000&specs=1" 0 0 50 H I C CNN "Octopart_link"
+F9 "https://eu.mouser.com/ProductDetail/Wurth-Elektronik/150060YS75000?qs=LlUlMxKIyB0nKmwefHgtZw%3D%3D" 0 0 50 H I C CNN "Mouser_link"
+F10 "710-150060YS75000 " 0 0 50 H I C CNN "Mouser_ref"
+F11 "2020-11-23" 0 0 50 H I C CNN "Mouser_check_date"
+F12 "$0.151" 150 -200 50 H I C CNN "Mouser_price_qt=1"
+F13 "57491" 0 0 50 H I C CNN "Mouser_stock"
+F14 "https://uk.farnell.com/wurth-elektronik/150060ys75000/led-0603-yellow-120mcd-590nm/dp/2322074?st=150060YS75000" 0 0 50 H I C CNN "Farnell_link"
+F15 "2322074" 0 0 50 H I C CNN "Farnell_ref"
+F16 "2020-11-23" 0 0 50 H I C CNN "Farnell_check_date"
+F17 "£0.144" 0 0 50 H I C CNN "Farnell_price_qt=5"
+F18 "16778" 0 0 50 H I C CNN "Farnell_stock"
+F19 "-" 0 0 50 H I C CNN "LCSC_link"
+F20 "-" 0 0 50 H I C CNN "LCSC_ref"
+F21 "https://fr.rs-online.com/web/p/led/8154219/" 0 0 50 H I C CNN "RS_link"
+F22 "815-4219" 0 0 50 H I C CNN "RS_ref"
+F23 "2020-11-23" 0 0 50 H I C CNN "RS_check_date"
+F24 "0.101€" 0 0 50 H I C CNN "RS_price_qt=100"
+F25 "1100" 0 0 50 H I C CNN "RS_stock"
+F26 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F27 "1.00" 0 0 50 H I C CNN "Release_version"
+F28 "2020-11-23" 0 0 50 H I C CNN "Release_date"
+F29 "ManWithNoName" 0 0 50 H I C CNN "Designer"
+$FPLIST
+ LED*
+ LED_SMD:*
+ LED_THT:*
+$ENDFPLIST
+DRAW
+P 2 0 1 10 -50 -50 -50 50 N
+P 2 0 1 0 -50 0 50 0 N
+P 4 0 1 10 50 -50 50 50 -50 0 50 -50 N
+P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
+P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # AP9101CK6-AYTRG1_AP9101CK6-AYTRG1
 #
 DEF AP9101CK6-AYTRG1_AP9101CK6-AYTRG1 U 0 20 Y Y 1 F N

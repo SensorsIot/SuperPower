@@ -4764,22 +4764,11 @@ Wire Wire Line
 Wire Notes Line
 	7600 700  7600 1050
 $Comp
-L Device:LED D1
-U 1 1 5F83318B
-P 2150 3750
-F 0 "D1" H 2143 3495 50  0000 C CNN
-F 1 "LED" H 2143 3586 50  0000 C CNN
-F 2 "" H 2150 3750 50  0001 C CNN
-F 3 "~" H 2150 3750 50  0001 C CNN
-	1    2150 3750
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:R_US R6
 U 1 1 5F84595F
 P 2550 3750
 F 0 "R6" V 2345 3750 50  0000 C CNN
-F 1 "TBDOhm" V 2436 3750 50  0000 C CNN
+F 1 "2.2k" V 2436 3750 50  0000 C CNN
 F 2 "" V 2590 3740 50  0001 C CNN
 F 3 "~" H 2550 3750 50  0001 C CNN
 	1    2550 3750
@@ -5092,4 +5081,41 @@ Wire Wire Line
 Connection ~ 7400 1350
 Text Label 1650 3650 0    50   ~ 0
 3v3_MCU
+$Comp
+L 150060ys75000:150060YS75000_0603 LED1
+U 1 1 5FC58854
+P 2150 3750
+F 0 "LED1" H 2143 3495 50  0000 C CNN
+F 1 "150060YS75000_0603" H 2143 3586 50  0001 C CNN
+F 2 "" H 2150 3750 50  0001 C CNN
+F 3 "~" H 2150 3750 50  0001 C CNN
+F 4 "Wurth Elektronik " H 2150 3750 50  0001 C CNN "Mfr_name"
+F 5 "150060YS75000" H 2150 3750 50  0001 C CNN "Mfr_no"
+F 6 "0603" H 2350 3850 50  0001 C CNN "Package"
+F 7 "Yellow" H 2143 3586 50  0000 C CNN "Color"
+F 8 "https://octopart.com/search?autosugg_idx=0&currency=USD&oq=150060YS75000&q=150060YS75000&specs=1" H 2150 3750 50  0001 C CNN "Octopart_link"
+F 9 "https://eu.mouser.com/ProductDetail/Wurth-Elektronik/150060YS75000?qs=LlUlMxKIyB0nKmwefHgtZw%3D%3D" H 2150 3750 50  0001 C CNN "Mouser_link"
+F 10 "710-150060YS75000 " H 2150 3750 50  0001 C CNN "Mouser_ref"
+F 11 "2020-11-23" H 2150 3750 50  0001 C CNN "Mouser_check_date"
+F 12 "$0.151" H 2300 3550 50  0001 C CNN "Mouser_price_qt=1"
+F 13 "57491" H 2150 3750 50  0001 C CNN "Mouser_stock"
+F 14 "https://uk.farnell.com/wurth-elektronik/150060ys75000/led-0603-yellow-120mcd-590nm/dp/2322074?st=150060YS75000" H 2150 3750 50  0001 C CNN "Farnell_link"
+F 15 "2322074" H 2150 3750 50  0001 C CNN "Farnell_ref"
+F 16 "2020-11-23" H 2150 3750 50  0001 C CNN "Farnell_check_date"
+F 17 "£0.144" H 2150 3750 50  0001 C CNN "Farnell_price_qt=5"
+F 18 "16778" H 2150 3750 50  0001 C CNN "Farnell_stock"
+F 19 "-" H 2150 3750 50  0001 C CNN "LCSC_link"
+F 20 "-" H 2150 3750 50  0001 C CNN "LCSC_ref"
+F 21 "https://fr.rs-online.com/web/p/led/8154219/" H 2150 3750 50  0001 C CNN "RS_link"
+F 22 "815-4219" H 2150 3750 50  0001 C CNN "RS_ref"
+F 23 "2020-11-23" H 2150 3750 50  0001 C CNN "RS_check_date"
+F 24 "0.101€" H 2150 3750 50  0001 C CNN "RS_price_qt=100"
+F 25 "1100" H 2150 3750 50  0001 C CNN "RS_stock"
+F 26 "TO_CHECK" H 2150 3750 50  0001 C CNN "Status"
+F 27 "1.00" H 2150 3750 50  0001 C CNN "Release_version"
+F 28 "2020-11-23" H 2150 3750 50  0001 C CNN "Release_date"
+F 29 "ManWithNoName" H 2150 3750 50  0001 C CNN "Designer"
+	1    2150 3750
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
