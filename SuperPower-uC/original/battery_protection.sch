@@ -141,17 +141,6 @@ Text Notes 2300 4900 0    50   ~ 0
 TSSOP-8 Package
 Text Notes 4400 4550 0    50   ~ 0
 Compatible pin to pin SOT23-6 ICs List :\n- AP9101CK6 (x65)\n- DW01x (x7)\n- FS312F-G (x1)\n- FS326x (x4)\n- HY2112-xx (x6) for LiFePO4 ONLY\n- HY2113-xxxx (x25) for Lithium ONLY
-$Comp
-L Connector:Conn_01x02_Male J1
-U 1 1 5F7B2996
-P 2650 1550
-F 0 "J1" H 2758 1731 50  0000 C CNN
-F 1 "JST_PH_S2B" H 2600 1650 50  0000 C CNN
-F 2 "Connectors_JST:JST_PH_S2B-PH-K_02x2.00mm_Angled" H 2650 1550 50  0001 C CNN
-F 3 "~" H 2650 1550 50  0001 C CNN
-	1    2650 1550
-	1    0    0    -1  
-$EndComp
 Text Notes 2150 3650 0    50   ~ 0
 AVAILABLE Chips for Lithium-Ion / LiPo or LiFeFO4
 Text Notes 8150 2100 0    50   ~ 0
@@ -410,5 +399,50 @@ F 11 "-" H 2650 4767 50  0001 C CNN "RS_link"
 F 12 "-" H 2650 4676 50  0001 C CNN "RS_ref"
 	1    2650 4400
 	1    0    0    -1  
+$EndComp
+$Comp
+L jst_ph_s2b_thru:JST_PH_S2B_thru J1
+U 1 1 5FBF551D
+P 2650 1650
+F 0 "J1" H 2650 1300 50  0000 C CNN
+F 1 "JST_PH_S2B_thru" H 2700 1400 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" H 2650 1650 50  0001 C CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 2650 1650 50  0001 C CNN
+F 4 "JST" H 2650 1650 50  0001 C CNN "Mfr_name"
+F 5 "S2B-PH-K-S(LF)(SN)" H 2650 1650 50  0001 C CNN "Mfr_no"
+F 6 "PH Right Angle Thru 2pins" H 2650 1650 50  0001 C CNN "Package"
+F 7 "White" H 2650 1650 50  0001 C CNN "Color"
+F 8 "https://octopart.com/s2b-ph-k-s%28lf%29%28sn%29-jst-248883?r=sp" H 2650 1650 50  0001 C CNN "Octopart_link"
+F 9 "https://fr.farnell.com/jst-japan-solderless-terminals/s2b-ph-k-s-lf-sn/embase-entree-laterale-2-voies/dp/9491902?scope=partnumberlookahead&ost=S2B-PH-K-S+%28LF%29%28SN%29&searchref=searchlookahead&exaMfpn=true" H 2650 1650 50  0001 C CNN "Farnell_link"
+F 10 "9491902" H 2650 1650 50  0001 C CNN "Farnell_ref"
+F 11 "2020-11-24" H 2650 1650 50  0001 C CNN "Farnell_check_date"
+F 12 "0.072€" H 2650 1650 50  0001 C CNN "Farnell_price_qt=100"
+F 13 "0.063€" H 2650 1650 50  0001 C CNN "Farnell_price_qt=1000"
+F 14 "0 (available from 2021-02-14)" H 2650 1650 50  0001 C CNN "Farnell_stock"
+F 15 "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_JST-Sales-America-S2B-PH-K-S-LF-SN_C173752.html" H 2650 1650 50  0001 C CNN "LCSC_link"
+F 16 "C173752" H 2650 1650 50  0001 C CNN "LCSC_ref"
+F 17 "2020-11-24" H 2650 1650 50  0001 C CNN "LCSC_check_date"
+F 18 "$0.038" H 2650 1650 50  0001 C CNN "LCSC_price_qt=10"
+F 19 "$0.028" H 2650 1650 50  0001 C CNN "LCSC_price_qt=100"
+F 20 "$0.026" H 2650 1650 50  0001 C CNN "LCSC_price_qt=300"
+F 21 "$0.024" H 2650 1650 50  0001 C CNN "LCSC_price_qt=1000"
+F 22 "55470" H 2650 1650 50  0001 C CNN "LCSC_stock"
+F 23 "-" H 2650 1650 50  0001 C CNN "Mouser_link"
+F 24 "-" H 2650 1650 50  0001 C CNN "Mouser_ref"
+F 25 "2020-11-24" H 2650 1650 50  0001 C CNN "Mouser_check_date"
+F 26 "https://fr.rs-online.com/web/p/embases-circuits-imprimes/8201494/" H 2650 1650 50  0001 C CNN "RS_link"
+F 27 "820-1494" H 2650 1650 50  0001 C CNN "RS_ref"
+F 28 "2020-11-24" H 2650 1650 50  0001 C CNN "RS_check_date"
+F 29 "0.148€" H 2650 1650 50  0001 C CNN "RS_price_qt=5"
+F 30 "0.138€" H 2650 1650 50  0001 C CNN "RS_price_qt=50"
+F 31 "0.088€" H 2650 1650 50  0001 C CNN "RS_price_qt=250"
+F 32 "0.068€" H 2650 1650 50  0001 C CNN "RS_price_qt=500"
+F 33 "275" H 2650 1650 50  0001 C CNN "RS_stock"
+F 34 "TO_CHECK" H 2650 1650 50  0001 C CNN "Status"
+F 35 "1.00" H 2650 1650 50  0001 C CNN "Release_version"
+F 36 "2020-11-24" H 2650 1650 50  0001 C CNN "Release_date"
+F 37 "ManWithNoName" H 2650 1650 50  0001 C CNN "Designer"
+	1    2650 1650
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC

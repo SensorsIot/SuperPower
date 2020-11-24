@@ -383,17 +383,6 @@ Connection ~ 4300 4550
 Wire Wire Line
 	3750 5400 3750 4750
 $Comp
-L solderjumper_4_open:SolderJumper_4_Open JP1
-U 1 1 5F74EA04
-P 3750 4550
-F 0 "JP1" H 3800 4700 50  0000 L CNN
-F 1 "SolderJumper_4_Open" H 3450 4350 50  0001 L CNN
-F 2 "" H 3750 4550 50  0001 C CNN
-F 3 "~" H 3750 4550 50  0001 C CNN
-	1    3750 4550
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:GND #PWR08
 U 1 1 5F75B0A7
 P 3350 5150
@@ -705,30 +694,30 @@ Used as an option and/or debug
 $Comp
 L Device:R_US R4
 U 1 1 5F845E81
-P 1150 2950
-F 0 "R4" V 945 2950 50  0000 C CNN
-F 1 "0" V 1036 2950 50  0000 C CNN
-F 2 "" V 1190 2940 50  0001 C CNN
-F 3 "~" H 1150 2950 50  0001 C CNN
-	1    1150 2950
+P 1950 6650
+F 0 "R4" V 1745 6650 50  0000 C CNN
+F 1 "0" V 1836 6650 50  0000 C CNN
+F 2 "" V 1990 6640 50  0001 C CNN
+F 3 "~" H 1950 6650 50  0001 C CNN
+	1    1950 6650
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1150 3100 1150 3250
-Text Label 1150 3250 0    50   ~ 0
+	1950 6800 1950 6950
+Text Label 1950 6950 0    50   ~ 0
 CELLS0
-Text Notes 800  2400 0    50   ~ 0
+Text Notes 1600 6100 0    50   ~ 0
 Default 1 Cell settings
-Text Label 1150 2550 0    50   ~ 0
+Text Label 1950 6250 0    50   ~ 0
 INTVcc
 Wire Notes Line
-	700  2250 1800 2250
+	1500 5950 2600 5950
 Wire Notes Line
-	1800 2250 1800 3400
+	2600 5950 2600 7100
 Wire Notes Line
-	1800 3400 700  3400
+	2600 7100 1500 7100
 Wire Notes Line
-	700  3400 700  2250
+	1500 7100 1500 5950
 Wire Wire Line
 	5950 850  6300 850 
 Wire Wire Line
@@ -805,9 +794,7 @@ Text Label 1750 1300 2    50   ~ 0
 CHARGER_VIN
 Wire Wire Line
 	1750 1300 1200 1300
-Text Notes 3200 5550 0    50   ~ 10
-Cell count setting (1 to 3)
-Text Notes 3200 5650 0    50   ~ 0
+Text Notes 1400 5450 0    50   ~ 0
 See Table 5 in the datasheet
 Text HLabel 1200 1900 0    50   Input ~ 0
 3v3_I2C
@@ -957,7 +944,7 @@ Wire Wire Line
 	7400 1400 7400 1350
 Connection ~ 7400 1350
 Text Label 1650 3650 0    50   ~ 0
-3v3_MCU
+3v3_I2C
 $Comp
 L 150060ys75000:150060YS75000_0603 LED1
 U 1 1 5FC58854
@@ -1011,42 +998,42 @@ Connection ~ 4500 4550
 Wire Wire Line
 	4500 4550 5000 4550
 Wire Wire Line
-	1150 2550 1150 2800
-Text Notes 700  4500 0    50   ~ 10
-CELLS0 and CELLS1 Pin Mapping to Series Cell Count
+	1950 6250 1950 6500
+Text Notes 1150 4500 0    50   ~ 10
+CELLS1 Pin Mapping to Series Cell Count
 Wire Notes Line
-	650  4350 2850 4350
+	1050 4350 2850 4350
 Wire Notes Line
-	2850 5350 650  5350
+	2850 5350 1050 5350
 Wire Notes Line
-	650  5350 650  4350
-Text Notes 800  4700 0    59   ~ 12
+	1050 5350 1050 4350
+Text Notes 1200 4700 0    59   ~ 12
 CELLS0
-Text Notes 1600 4700 0    59   ~ 12
+Text Notes 2000 4700 0    59   ~ 12
 Cell_Count
-Text Notes 800  4900 0    59   ~ 0
+Text Notes 1200 4900 0    59   ~ 0
 INTVcc
-Text Notes 800  5100 0    59   ~ 0
+Text Notes 1200 5100 0    59   ~ 0
 VCC2P5
-Text Notes 800  5300 0    59   ~ 0
+Text Notes 1200 5300 0    59   ~ 0
 GND
 Wire Notes Line
-	1400 4550 1400 5350
+	1800 4550 1800 5350
 Wire Notes Line
-	650  5150 2850 5150
+	1050 5150 2850 5150
 Wire Notes Line
-	650  4950 2850 4950
+	1050 4950 2850 4950
 Wire Notes Line
-	650  4750 2850 4750
+	1050 4750 2850 4750
 Wire Notes Line
-	650  4550 2850 4550
+	1050 4550 2850 4550
 Wire Notes Line
 	2850 4350 2850 5350
-Text Notes 2100 4900 2    59   ~ 0
+Text Notes 2500 4900 2    59   ~ 0
 1 (Default)
-Text Notes 1650 5100 2    59   ~ 0
+Text Notes 2050 5100 2    59   ~ 0
 2
-Text Notes 1650 5300 2    59   ~ 0
+Text Notes 2050 5300 2    59   ~ 0
 3
 Wire Notes Line
 	2900 4450 3650 4450
@@ -1056,4 +1043,23 @@ Wire Notes Line
 	8750 3900 8750 3500
 Wire Notes Line
 	5450 5500 5450 6150
+Text Label 4600 3750 0    50   ~ 0
+~SMBALERT
+Text HLabel 1200 2350 0    50   Output ~ 0
+~SMBALERT
+Wire Wire Line
+	1750 2350 1200 2350
+Text Label 1750 2350 2    50   ~ 0
+~SMBALERT
+$Comp
+L solderjumper_4_bridged_14:SolderJumper_4_Bridged_14 JP1
+U 1 1 5FC12146
+P 3750 4550
+F 0 "JP1" H 3950 4700 50  0000 R CNN
+F 1 "SolderJumper_4_Bridged_14" H 3506 4620 50  0001 R CNN
+F 2 "" H 3750 4550 50  0001 C CNN
+F 3 "~" H 3750 4550 50  0001 C CNN
+	1    3750 4550
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
