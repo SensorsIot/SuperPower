@@ -20,18 +20,6 @@ F0 "Battery Module" 50
 F1 "battery_protection.sch" 50
 F2 "VBAT" B R 2550 2550 50 
 $EndSheet
-$Sheet
-S 3050 2100 1250 1150
-U 5F639F48
-F0 "Charging Module" 50
-F1 "charger.sch" 50
-F2 "CHARGER_VIN" I L 3050 3100 50 
-F3 "VOUT" O R 4300 2550 50 
-F4 "VBAT" B L 3050 2550 50 
-F5 "SCL" I R 4300 2950 50 
-F6 "SDA" I R 4300 3050 50 
-F7 "3v3_I2C" I R 4300 2850 50 
-$EndSheet
 Wire Wire Line
 	2550 2550 3050 2550
 Wire Wire Line
@@ -211,4 +199,17 @@ Wire Wire Line
 Wire Wire Line
 	4800 2850 4900 2850
 Connection ~ 4800 2850
+$Sheet
+S 3050 2100 1250 1150
+U 5F639F48
+F0 "Charging Module" 50
+F1 "charger.sch" 50
+F2 "CHARGER_VIN" I L 3050 3100 50 
+F3 "VOUT" O R 4300 2550 50 
+F4 "VBAT" B L 3050 2550 50 
+F5 "SCL" I R 4300 2950 50 
+F6 "SDA" I R 4300 3050 50 
+F7 "3v3_I2C" I R 4300 2850 50 
+F8 "~SMBALERT" O R 4300 3150 50 
+$EndSheet
 $EndSCHEMATC

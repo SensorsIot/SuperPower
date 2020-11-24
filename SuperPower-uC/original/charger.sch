@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 7
+Sheet 7 7
 Title "SuperPower-uC"
 Date "2020-09-20"
 Rev "0.1"
@@ -33,7 +33,7 @@ L Device:R_US R7
 U 1 1 5F743F05
 P 4700 2800
 F 0 "R7" V 4495 2800 50  0000 C CNN
-F 1 "11m" V 4586 2800 50  0000 C CNN
+F 1 "68m" V 4586 2800 50  0000 C CNN
 F 2 "" V 4740 2790 50  0001 C CNN
 F 3 "~" H 4700 2800 50  0001 C CNN
 	1    4700 2800
@@ -216,7 +216,7 @@ L Device:R_US R11
 U 1 1 5F7476B1
 P 7000 4150
 F 0 "R11" H 7068 4196 50  0000 L CNN
-F 1 "16m" H 7068 4105 50  0000 L CNN
+F 1 "68m" H 7068 4105 50  0000 L CNN
 F 2 "" V 7040 4140 50  0001 C CNN
 F 3 "~" H 7000 4150 50  0001 C CNN
 	1    7000 4150
@@ -355,15 +355,13 @@ RsnsB
 Text Notes 4600 2950 0    50   ~ 0
 RsnsI
 Wire Notes Line
-	4700 2000 4700 2350
-Wire Notes Line
 	2950 750  5600 750 
 Wire Notes Line
-	5600 750  5600 1950
+	5600 750  5600 2100
 Wire Notes Line
-	2950 1950 2950 750 
+	2950 2100 2950 750 
 Wire Notes Line
-	2950 1950 5600 1950
+	2950 2100 5600 2100
 Text Notes 6000 6150 0    50   ~ 0
 If the application does not require temperature\ncontrolled charging, then the thermistor should be\nreplaced with a resistor of equal value to the bias resistor\nRNTCBIAS to continuously simulate 25°C.\n-> See page 20 of the Datasheet.
 Text Notes 7350 5000 0    50   ~ 0
@@ -590,8 +588,8 @@ Wire Notes Line
 	8550 3450 8550 2350
 Text Notes 3500 1050 0    50   ~ 10
 Max Input Current Setting\n             &\nMax Battery Charging Current Setting (I_bat)
-Text Notes 3050 1400 0    50   ~ 0
- -> 3.2A is the max current value for the chip\nCommon settings : 10mohm -> 3.20A / 16mohm -> 2.00A\nLow Current sett. : 22mohm -> 1.45A / 33mohm -> 0.97A
+Text Notes 3050 1450 0    50   ~ 0
+ -> 3.2A is the max current value for the chip\nCommon settings : 10mohm -> 3.20A / 16mohm -> 2.00A\nLow Current sett. : 22mohm -> 1.45A / 33mohm -> 0.97A\n                                          68mohm -> 0.470A
 Text Notes 9050 2500 0    50   ~ 10
 Inductor Value Setting
 $Comp
@@ -955,7 +953,7 @@ F 29 "ManWithNoName" H 2150 3750 50  0001 C CNN "Designer"
 	1    2150 3750
 	-1   0    0    1   
 $EndComp
-Text Notes 3450 1750 0    79   Italic 0
+Text Notes 3450 1800 0    79   Italic 0
 Iin(max) = 32mV/Rsnsi\nIchg(max) = 32mV/Rsnsb
 Text Notes 4000 7250 0    79   Italic 0
 Fosc(MHz) = 94/Rt(kOhm)
@@ -1033,4 +1031,8 @@ F 3 "~" H 3750 4550 50  0001 C CNN
 	1    3750 4550
 	-1   0    0    1   
 $EndComp
+Text Notes 3000 2050 0    50   ~ 0
+Rem. : Currently limited to less than 500mA to be compatible\n       with USB2 capabilities.
+Wire Notes Line
+	4700 2150 4700 2500
 $EndSCHEMATC
