@@ -691,33 +691,6 @@ Wire Wire Line
 	1650 3750 1650 3650
 Text Notes 1850 3900 0    50   ~ 0
 Used as an option and/or debug
-$Comp
-L Device:R_US R4
-U 1 1 5F845E81
-P 1950 6650
-F 0 "R4" V 1745 6650 50  0000 C CNN
-F 1 "0" V 1836 6650 50  0000 C CNN
-F 2 "" V 1990 6640 50  0001 C CNN
-F 3 "~" H 1950 6650 50  0001 C CNN
-	1    1950 6650
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1950 6800 1950 6950
-Text Label 1950 6950 0    50   ~ 0
-CELLS0
-Text Notes 1600 6100 0    50   ~ 0
-Default 1 Cell settings
-Text Label 1950 6250 0    50   ~ 0
-INTVcc
-Wire Notes Line
-	1500 5950 2600 5950
-Wire Notes Line
-	2600 5950 2600 7100
-Wire Notes Line
-	2600 7100 1500 7100
-Wire Notes Line
-	1500 7100 1500 5950
 Wire Wire Line
 	5950 850  6300 850 
 Wire Wire Line
@@ -997,8 +970,6 @@ Wire Wire Line
 Connection ~ 4500 4550
 Wire Wire Line
 	4500 4550 5000 4550
-Wire Wire Line
-	1950 6250 1950 6500
 Text Notes 1150 4500 0    50   ~ 10
 CELLS1 Pin Mapping to Series Cell Count
 Wire Notes Line
