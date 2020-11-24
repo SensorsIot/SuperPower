@@ -89,13 +89,13 @@ F 3 "" H 2700 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 1150 2050 0    50   Output ~ 0
-3v3_RTC
+3v3_RTC_I2C
 Text Label 1750 2050 2    50   ~ 0
-3v3_RTC
+3v3_RTC_I2C
 Wire Wire Line
 	1150 2050 1750 2050
-Text Label 3050 4950 0    50   ~ 0
-3v3_RTC
+Text Label 3000 4950 0    50   ~ 0
+3v3_RTC_I2C
 Text Notes 950  4550 0    118  ~ 0
 Permanent low IQ\nregulator for RTC and I2C
 Wire Wire Line
@@ -105,8 +105,6 @@ Wire Wire Line
 Connection ~ 2700 5350
 Wire Wire Line
 	2950 5050 2950 4950
-Wire Wire Line
-	2950 4950 3400 4950
 Wire Wire Line
 	2700 5450 2700 5350
 Wire Wire Line
@@ -1089,4 +1087,6 @@ F 3 "https://www.ti.com/lit/gpn/tps709" H 2000 5150 50  0001 L BNN
 	1    2000 5150
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2950 4950 3450 4950
 $EndSCHEMATC

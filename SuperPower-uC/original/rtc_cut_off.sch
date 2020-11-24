@@ -254,7 +254,7 @@ SDA
 Text Label 1650 3850 0    50   ~ 0
 SCL
 Text HLabel 1600 1800 0    50   Input ~ 0
-3v3_RTC
+3v3_RTC_I2C
 Text Label 6850 2650 3    50   ~ 0
 VIN
 Wire Wire Line

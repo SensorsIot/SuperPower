@@ -810,13 +810,13 @@ Cell count setting (1 to 3)
 Text Notes 3200 5650 0    50   ~ 0
 See Table 5 in the datasheet
 Text HLabel 1200 1900 0    50   Input ~ 0
-3v3_MCU
+3v3_I2C
 Wire Wire Line
 	1200 1900 1750 1900
 Text Label 1750 1900 2    50   ~ 0
-3v3_MCU
+3v3_I2C
 Text Label 4600 3850 0    50   ~ 0
-3v3_MCU
+3v3_I2C
 Wire Wire Line
 	4600 3850 5000 3850
 Text Label 7850 1350 2    50   ~ 0
