@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 7
+Sheet 6 7
 Title "SuperPower-uC"
 Date "2020-09-20"
 Rev "0.1"
@@ -239,17 +239,6 @@ $EndComp
 Wire Wire Line
 	6200 4900 6400 4900
 $Comp
-L Device:Thermistor_NTC_US TH1
-U 1 1 5F76FAC8
-P 6400 5100
-F 0 "TH1" H 6497 5146 50  0000 L CNN
-F 1 "10k" H 6497 5055 50  0000 L CNN
-F 2 "" H 6400 5150 50  0001 C CNN
-F 3 "~" H 6400 5150 50  0001 C CNN
-	1    6400 5100
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR017
 U 1 1 5F770480
 P 6400 5350
@@ -362,8 +351,8 @@ Wire Notes Line
 	2950 2100 2950 750 
 Wire Notes Line
 	2950 2100 5600 2100
-Text Notes 6000 6150 0    50   ~ 0
-If the application does not require temperature\ncontrolled charging, then the thermistor should be\nreplaced with a resistor of equal value to the bias resistor\nRNTCBIAS to continuously simulate 25°C.\n-> See page 20 of the Datasheet.
+Text Notes 6000 6200 0    50   ~ 0
+If the application does not require temperature\ncontrolled charging, then the thermistor should be\nreplaced with a resistor of equal value to the bias resistor\nRNTCBIAS to continuously simulate 25°C.\n-> See page 20 of the Datasheet.\nRem. : Default settings is without thermistor. 
 Text Notes 7350 5000 0    50   ~ 0
 Batt+ Capacitor :\n-> needed in case of no battery detected after a charging process started.\n10uF or more (see page 32 of the Datasheet)
 Text Notes 4050 6950 0    50   ~ 0
@@ -575,9 +564,9 @@ Wire Notes Line
 Wire Notes Line
 	7350 4600 7600 4600
 Wire Notes Line
-	6250 5150 6100 5150
+	6250 5100 6100 5100
 Wire Notes Line
-	6100 5150 6100 5700
+	6100 5100 6100 5650
 Wire Notes Line
 	8550 2350 10700 2350
 Wire Notes Line
@@ -1035,4 +1024,15 @@ Text Notes 3000 2050 0    50   ~ 0
 Rem. : Currently limited to less than 500mA to be compatible\n       with USB2 capabilities.
 Wire Notes Line
 	4700 2150 4700 2500
+$Comp
+L Device:R_US R?
+U 1 1 5FC77F18
+P 6400 5100
+F 0 "R?" V 6195 5100 50  0000 C CNN
+F 1 "10k" V 6286 5100 50  0000 C CNN
+F 2 "" V 6440 5090 50  0001 C CNN
+F 3 "~" H 6400 5100 50  0001 C CNN
+	1    6400 5100
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
