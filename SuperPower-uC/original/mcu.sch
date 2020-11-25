@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 7
+Sheet 4 7
 Title "SuperPower-uC"
 Date "2020-09-20"
 Rev "0.1"
@@ -484,7 +484,7 @@ Wire Notes Line
 Text Notes 700  750  0    50   ~ 10
 Interface
 Wire Notes Line
-	650  3050 650  650 
+	650  3500 650  650 
 Wire Notes Line
 	650  650  2300 650 
 Text Label 9500 5500 2    50   ~ 0
@@ -946,32 +946,32 @@ EN_5V
 Text HLabel 1350 2200 0    50   Output ~ 0
 EN_3V3
 Wire Notes Line
-	2300 3050 650  3050
+	2300 3500 650  3500
 Wire Notes Line
-	2300 650  2300 3050
-Text Label 1650 2800 0    50   ~ 0
+	2300 650  2300 3500
+Text Label 1650 3000 0    50   ~ 0
 D-
-Text Label 1650 2950 0    50   ~ 0
+Text Label 1650 3150 0    50   ~ 0
 D+
-Text Label 1650 2500 0    50   ~ 0
+Text Label 1650 2600 0    50   ~ 0
 SCL
-Text Label 1650 2650 0    50   ~ 0
+Text Label 1650 2750 0    50   ~ 0
 SDA
 Wire Wire Line
-	1400 2500 1650 2500
+	1400 2600 1650 2600
 Wire Wire Line
-	1400 2650 1650 2650
-Text HLabel 1400 2500 0    50   Input ~ 0
+	1400 2750 1650 2750
+Text HLabel 1400 2600 0    50   Input ~ 0
 SCL
-Text HLabel 1400 2650 0    50   BiDi ~ 0
+Text HLabel 1400 2750 0    50   BiDi ~ 0
 SDA
 Wire Wire Line
-	1400 2800 1650 2800
+	1400 3000 1650 3000
 Wire Wire Line
-	1400 2950 1650 2950
-Text HLabel 1400 2800 0    50   Input ~ 0
+	1400 3150 1650 3150
+Text HLabel 1400 3000 0    50   Input ~ 0
 D-
-Text HLabel 1400 2950 0    50   Input ~ 0
+Text HLabel 1400 3150 0    50   Input ~ 0
 D+
 $Comp
 L Interface_USB:CP2102N-A01-GQFN28 U4
@@ -1153,4 +1153,26 @@ Text Label 9900 5300 0    50   ~ 0
 RGBW_LED
 Wire Wire Line
 	10400 5300 9900 5300
+Wire Notes Line
+	1150 2850 1200 2850
+Wire Notes Line
+	1150 2500 1200 2500
+Wire Notes Line
+	1150 2500 1150 2850
+Text Notes 1050 2700 2    50   ~ 0
+I2C
+Wire Notes Line
+	1150 2900 1150 3250
+Wire Notes Line
+	1150 3250 1200 3250
+Wire Notes Line
+	1150 2900 1200 2900
+Text Notes 1050 3050 2    50   ~ 0
+USB
+Wire Wire Line
+	1400 3350 1650 3350
+Text HLabel 1400 3350 0    50   Input ~ 0
+~SMBALERT
+Text Label 1650 3350 0    50   ~ 0
+~SMBALERT
 $EndSCHEMATC
