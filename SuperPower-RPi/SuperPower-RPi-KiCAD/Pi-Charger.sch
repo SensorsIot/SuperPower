@@ -121,7 +121,6 @@ F 6 "1276-3047-1-ND" H 8600 3800 50  0001 C CNN "Digi-Key PN"
 	1    8600 3800
 	1    0    0    -1  
 $EndComp
-NoConn ~ 5250 4250
 Wire Wire Line
 	2650 3050 2800 3050
 Wire Wire Line
@@ -184,9 +183,12 @@ L Device:R_Small R8
 U 1 1 5F78F911
 P 4350 3800
 F 0 "R8" H 4291 3754 50  0000 R CNN
-F 1 "DNP" H 4291 3845 50  0000 R CNN
+F 1 "220" H 4291 3845 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4350 3800 50  0001 C CNN
 F 3 "~" H 4350 3800 50  0001 C CNN
+F 4 "Yageo" H 4350 3800 50  0001 C CNN "Mfg"
+F 5 "RC0603FR-07220RL" H 4350 3800 50  0001 C CNN "Mfg PN"
+F 6 "311-220HRCT-ND" H 4350 3800 50  0001 C CNN "Digi-Key PN"
 	1    4350 3800
 	1    0    0    1   
 $EndComp
@@ -197,12 +199,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR013
 U 1 1 5F7917AE
-P 5050 4750
-F 0 "#PWR013" H 5050 4500 50  0001 C CNN
-F 1 "GND" H 5055 4577 50  0000 C CNN
-F 2 "" H 5050 4750 50  0001 C CNN
-F 3 "" H 5050 4750 50  0001 C CNN
-	1    5050 4750
+P 5050 4900
+F 0 "#PWR013" H 5050 4650 50  0001 C CNN
+F 1 "GND" H 5055 4727 50  0000 C CNN
+F 2 "" H 5050 4900 50  0001 C CNN
+F 3 "" H 5050 4900 50  0001 C CNN
+	1    5050 4900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -334,8 +336,6 @@ F 3 "" H 6900 4100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6900 4100 6900 4050
-NoConn ~ 5250 4150
-NoConn ~ 5250 4450
 $Comp
 L power:GND #PWR0108
 U 1 1 5F7A5F2A
@@ -477,16 +477,62 @@ Wire Wire Line
 $Comp
 L Device:Jumper_NC_Small JP3
 U 1 1 5FBBB98D
-P 5050 4550
-F 0 "JP3" V 5100 4750 50  0000 R CNN
-F 1 "NC" V 5000 4750 50  0000 R CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 5050 4550 50  0001 C CNN
-F 3 "~" H 5050 4550 50  0001 C CNN
-	1    5050 4550
+P 5050 4700
+F 0 "JP3" V 5100 4900 50  0000 R CNN
+F 1 "NC" V 5000 4900 50  0000 R CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 5050 4700 50  0001 C CNN
+F 3 "~" H 5050 4700 50  0001 C CNN
+	1    5050 4700
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5050 4450 5050 4350
+	5050 4800 5050 4900
+Text Notes 1700 3750 0    50   ~ 0
+Consider adding connection to ADC pin or device for ILIM
+Text HLabel 4200 3550 0    50   Output ~ 0
+IMEAS
 Wire Wire Line
-	5050 4650 5050 4750
+	4200 3550 4350 3550
+Connection ~ 4350 3550
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FC0654F
+P 5000 4150
+F 0 "TP?" V 5000 4338 50  0000 L CNN
+F 1 "DNP" H 5058 4177 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 5200 4150 50  0001 C CNN
+F 3 "~" H 5200 4150 50  0001 C CNN
+	1    5000 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FC06D49
+P 5000 4250
+F 0 "TP?" V 5000 4438 50  0000 L CNN
+F 1 "DNP" H 5058 4277 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 5200 4250 50  0001 C CNN
+F 3 "~" H 5200 4250 50  0001 C CNN
+	1    5000 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5050 4350 5050 4600
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FC09313
+P 5000 4450
+F 0 "TP?" V 5000 4638 50  0000 L CNN
+F 1 "DNP" H 5058 4477 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 5200 4450 50  0001 C CNN
+F 3 "~" H 5200 4450 50  0001 C CNN
+	1    5000 4450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5000 4450 5250 4450
+Wire Wire Line
+	5250 4250 5000 4250
+Wire Wire Line
+	5000 4150 5250 4150
 $EndSCHEMATC
