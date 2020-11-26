@@ -80,10 +80,6 @@ NoConn ~ 5000 3200
 NoConn ~ 5000 3400
 NoConn ~ 5000 3500
 NoConn ~ 5000 3600
-NoConn ~ 5000 3800
-NoConn ~ 5000 3900
-NoConn ~ 5000 4000
-NoConn ~ 5000 4100
 NoConn ~ 5000 4200
 NoConn ~ 5000 4300
 $Comp
@@ -127,4 +123,20 @@ NoConn ~ 5900 2300
 NoConn ~ 6000 2300
 Text Notes 1200 2500 0    50   ~ 0
 Pins to STM32:\nGPIO____ to trigger update\nGPIO____ to indicate reboot/restart
+Text HLabel 4700 3800 0    50   BiDi ~ 0
+GPIO22
+Wire Wire Line
+	4700 3800 5000 3800
+Text HLabel 4700 3900 0    50   BiDi ~ 0
+GPIO23
+Text HLabel 4700 4000 0    50   BiDi ~ 0
+GPIO24
+Text HLabel 4700 4100 0    50   BiDi ~ 0
+GPIO25
+Wire Wire Line
+	4700 3900 5000 3900
+Wire Wire Line
+	4700 4000 5000 4000
+Wire Wire Line
+	5000 4100 4700 4100
 $EndSCHEMATC

@@ -1256,4 +1256,5 @@ Text Label 7850 5250 0    50   ~ 0
 Dotstar_data
 Text Label 7850 5350 0    50   ~ 0
 Dotstar_clk
+NoConn ~ 5250 3150
 $EndSCHEMATC

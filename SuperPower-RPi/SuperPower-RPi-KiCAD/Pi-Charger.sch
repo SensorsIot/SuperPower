@@ -495,10 +495,10 @@ Wire Wire Line
 	4200 3550 4350 3550
 Connection ~ 4350 3550
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP4
 U 1 1 5FC0654F
 P 5000 4150
-F 0 "TP?" V 5000 4338 50  0000 L CNN
+F 0 "TP4" V 5000 4338 50  0000 L CNN
 F 1 "DNP" H 5058 4177 50  0001 L CNN
 F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 5200 4150 50  0001 C CNN
 F 3 "~" H 5200 4150 50  0001 C CNN
@@ -506,10 +506,10 @@ F 3 "~" H 5200 4150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP5
 U 1 1 5FC06D49
 P 5000 4250
-F 0 "TP?" V 5000 4438 50  0000 L CNN
+F 0 "TP5" V 5000 4438 50  0000 L CNN
 F 1 "DNP" H 5058 4277 50  0001 L CNN
 F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 5200 4250 50  0001 C CNN
 F 3 "~" H 5200 4250 50  0001 C CNN
@@ -519,10 +519,10 @@ $EndComp
 Wire Wire Line
 	5050 4350 5050 4600
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP6
 U 1 1 5FC09313
 P 5000 4450
-F 0 "TP?" V 5000 4638 50  0000 L CNN
+F 0 "TP6" V 5000 4638 50  0000 L CNN
 F 1 "DNP" H 5058 4477 50  0001 L CNN
 F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 5200 4450 50  0001 C CNN
 F 3 "~" H 5200 4450 50  0001 C CNN

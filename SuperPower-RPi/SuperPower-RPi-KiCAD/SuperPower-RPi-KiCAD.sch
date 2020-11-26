@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
-	6950 4100 7450 4100
+	6950 4100 7150 4100
 Wire Wire Line
 	6550 2300 6950 2300
 Wire Wire Line
@@ -48,13 +48,13 @@ Wire Wire Line
 Wire Wire Line
 	3200 4400 2950 4400
 Wire Wire Line
-	8700 3650 8800 3650
+	8400 3650 8500 3650
 Wire Wire Line
-	6450 3650 7450 3650
+	6450 3650 7150 3650
 Wire Wire Line
 	2300 3650 3200 3650
 Wire Wire Line
-	4500 3650 4800 3650
+	4500 3650 5050 3650
 $Sheet
 S 5450 3450 1000 1150
 U 5F6AC4E0
@@ -65,13 +65,13 @@ F3 "Vout" O R 6450 3650 50
 F4 "EN" I L 5450 4200 50 
 $EndSheet
 $Sheet
-S 7450 3450 1250 1150
+S 7150 3450 1250 1150
 U 5F6AC517
 F0 "Pi-Output-Protection" 50
 F1 "Pi-Output-Protection.sch" 50
-F2 "Vin" I L 7450 3650 50 
-F3 "Vout" O R 8700 3650 50 
-F4 "OP_Enable" I L 7450 4100 50 
+F2 "Vin" I L 7150 3650 50 
+F3 "Vout" O R 8400 3650 50 
+F4 "OP_Enable" I L 7150 4100 50 
 $EndSheet
 $Sheet
 S 950  3400 1350 1150
@@ -103,6 +103,7 @@ F6 "SCL" B L 3200 4500 50
 F7 "Thermistor" I R 4500 4350 50 
 F8 "D+" I L 3200 3950 50 
 F9 "D-" I L 3200 4050 50 
+F10 "IMEAS" O R 4500 3950 50 
 $EndSheet
 Wire Wire Line
 	4450 5600 4850 5600
@@ -117,10 +118,10 @@ Wire Wire Line
 Text Notes 8950 900  0    50   ~ 0
 Add extra interfaces block.
 Wire Wire Line
-	5250 2250 4800 2250
-Connection ~ 4800 3650
+	5250 2250 5050 2250
+Connection ~ 5050 3650
 Wire Wire Line
-	4800 2250 4800 3650
+	5050 2250 5050 3650
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5FA3F339
@@ -165,8 +166,6 @@ F 3 "~" H 6050 7150 50  0001 C CNN
 	1    6050 7150
 	1    0    0    -1  
 $EndComp
-NoConn ~ 6550 1450
-NoConn ~ 6550 1600
 $Sheet
 S 5250 1250 1300 1200
 U 5F6AC872
@@ -181,7 +180,7 @@ F7 "BOOT0" I R 6550 1600 50
 F8 "Vin(5V)" I R 6550 2150 50 
 $EndSheet
 Wire Wire Line
-	6550 2150 8800 2150
+	6550 2150 8500 2150
 Wire Wire Line
 	5450 4200 5350 4200
 $Comp
@@ -200,7 +199,7 @@ $EndComp
 Wire Wire Line
 	5350 3650 5450 3650
 Wire Wire Line
-	4800 3650 5350 3650
+	5050 3650 5350 3650
 Connection ~ 5350 3650
 Wire Wire Line
 	5350 4200 5350 4050
@@ -209,9 +208,28 @@ Wire Wire Line
 Wire Wire Line
 	6950 2300 6950 4100
 Wire Wire Line
-	8800 2150 8800 3650
+	8500 2150 8500 3650
 Text Notes 7150 5450 0    50   ~ 0
 Open Questions:\nShould we add jumper for measuring MCU current. (Yes, if at all possible)\nDotstar?  (Alternative to NeoPixel) Yes\nQWIIC connector DNP? Yes\nATTiny to Dotstar connection requires ATTiny 1614? (Stick with 85, but add dumb LED to GPIO)\nFind overcurrent chip
+Connection ~ 8500 3650
+Wire Wire Line
+	8500 3650 9350 3650
+Text Notes 7150 5800 0    50   ~ 0
+Would be nice:\nUSB output connector to power \nAdd QWIIC to mulitple I2C busses\n
+Text Notes 7150 6100 0    50   ~ 0
+TO DO:\nMove primary I2C to I2C1.\nAdd dumb LED to ATTiny
+Wire Wire Line
+	6550 1450 9200 1450
+Wire Wire Line
+	9200 1450 9200 2950
+Wire Wire Line
+	9200 2950 9350 2950
+Wire Wire Line
+	9350 3050 9050 3050
+Wire Wire Line
+	9050 3050 9050 1600
+Wire Wire Line
+	9050 1600 6550 1600
 $Sheet
 S 9350 2850 1350 1750
 U 5F6AC9CB
@@ -220,12 +238,11 @@ F1 "Pi-Connection.sch" 50
 F2 "Vin(5V)" I L 9350 3650 50 
 F3 "SDA" B L 9350 4050 50 
 F4 "SCL" B L 9350 4150 50 
+F5 "GPIO22" B L 9350 2950 50 
+F6 "GPIO23" B L 9350 3050 50 
+F7 "GPIO24" B L 9350 3150 50 
+F8 "GPIO25" B L 9350 3250 50 
 $EndSheet
-Connection ~ 8800 3650
-Wire Wire Line
-	8800 3650 9350 3650
-Text Notes 7150 5800 0    50   ~ 0
-Would be nice:\nUSB output connector to power \nAdd QWIIC to mulitple I2C busses\n
-Text Notes 7150 6100 0    50   ~ 0
-TO DO:\nMove primary I2C to I2C1.\nAdd dumb LED to ATTiny
+NoConn ~ 9350 3250
+NoConn ~ 9350 3150
 $EndSCHEMATC
