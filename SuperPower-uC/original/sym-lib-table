@@ -34,4 +34,5 @@
   (lib (name 150060vs75000)(type Legacy)(uri ${KIPRJMOD}/../components/150060vs75000/150060vs75000.lib)(options "")(descr ""))
   (lib (name jst_ph_s2b_thru)(type Legacy)(uri ${KIPRJMOD}/../components/JST_PH_S2B_THRU.lib/jst_ph_s2b_thru.lib)(options "")(descr ""))
   (lib (name solderjumper_4_bridged_14)(type Legacy)(uri ${KIPRJMOD}/../components/SOLDERJUMPER_4_BRIDGED_14/solderjumper_4_bridged_14.lib)(options "")(descr ""))
+  (lib (name SuperPower-uC-KiCad-rescue)(type Legacy)(uri ${KIPRJMOD}/SuperPower-uC-KiCad-rescue.lib)(options "")(descr ""))
 )

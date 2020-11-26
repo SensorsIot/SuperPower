@@ -13,102 +13,50 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 1150 1400 0    50   Input ~ 0
-INT
-Text HLabel 1150 1750 0    50   Output ~ 0
-3v3
-Text HLabel 1150 1900 0    50   Output ~ 0
-5V
-Text HLabel 1150 950  0    50   Input ~ 0
-EN_3V3
-Text HLabel 1150 1100 0    50   Input ~ 0
-EN_5V
 Wire Wire Line
-	1150 1400 1750 1400
+	1100 6150 1300 6150
 Wire Wire Line
-	1150 950  1750 950 
-Wire Wire Line
-	1150 1100 1750 1100
-Wire Wire Line
-	1150 1750 1750 1750
-Wire Wire Line
-	1150 1900 1750 1900
-Text Label 1750 1400 2    50   ~ 0
-INT
-Text Label 1750 950  2    50   ~ 0
-EN_3V3
-Text Label 1750 1100 2    50   ~ 0
-EN_5V
-Text Label 1750 1750 2    50   ~ 0
-3v3
-Text Label 1750 1900 2    50   ~ 0
-5V
-Text Notes 6400 950  0    118  ~ 0
-MCU Regulator
-Wire Wire Line
-	1150 800  1750 800 
-Text Label 1750 800  2    50   ~ 0
+	800  6150 1100 6150
+Text Label 950  6150 2    50   ~ 0
 VIN
-Text HLabel 1150 800  0    50   Input ~ 0
-VIN
-Text HLabel 1150 1250 0    50   Input ~ 0
-EN_MCU_REG
+Connection ~ 1100 6150
 Wire Wire Line
-	1150 1250 1750 1250
-Text Label 1750 1250 2    50   ~ 0
-EN_MCU_REG
-Wire Wire Line
-	1100 5050 1300 5050
-Wire Wire Line
-	800  5050 1100 5050
-Text Label 950  5050 2    50   ~ 0
-VIN
-Connection ~ 1100 5050
-Wire Wire Line
-	1100 5050 1100 5150
+	1100 6150 1100 6250
 $Comp
 L power:GND #PWR0103
 U 1 1 5FB527F7
-P 1100 5450
-F 0 "#PWR0103" H 1100 5200 50  0001 C CNN
-F 1 "GND" H 1105 5277 50  0000 C CNN
-F 2 "" H 1100 5450 50  0001 C CNN
-F 3 "" H 1100 5450 50  0001 C CNN
-	1    1100 5450
+P 1100 6550
+F 0 "#PWR0103" H 1100 6300 50  0001 C CNN
+F 1 "GND" H 1105 6377 50  0000 C CNN
+F 2 "" H 1100 6550 50  0001 C CNN
+F 3 "" H 1100 6550 50  0001 C CNN
+	1    1100 6550
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0104
 U 1 1 5FB52D3A
-P 2700 5450
-F 0 "#PWR0104" H 2700 5200 50  0001 C CNN
-F 1 "GND" H 2705 5277 50  0000 C CNN
-F 2 "" H 2700 5450 50  0001 C CNN
-F 3 "" H 2700 5450 50  0001 C CNN
-	1    2700 5450
+P 2700 6550
+F 0 "#PWR0104" H 2700 6300 50  0001 C CNN
+F 1 "GND" H 2705 6377 50  0000 C CNN
+F 2 "" H 2700 6550 50  0001 C CNN
+F 3 "" H 2700 6550 50  0001 C CNN
+	1    2700 6550
 	1    0    0    -1  
 $EndComp
-Text HLabel 1150 2050 0    50   Output ~ 0
-3v3_RTC_I2C
-Text Label 1750 2050 2    50   ~ 0
+Text Label 3000 6050 0    50   ~ 0
 3v3_RTC_I2C
 Wire Wire Line
-	1150 2050 1750 2050
-Text Label 3000 4950 0    50   ~ 0
-3v3_RTC_I2C
-Text Notes 950  4550 0    118  ~ 0
-Permanent low IQ\nregulator for RTC and I2C
+	2950 6350 2950 6450
 Wire Wire Line
-	2950 5250 2950 5350
+	2950 6450 2700 6450
+Connection ~ 2700 6450
 Wire Wire Line
-	2950 5350 2700 5350
-Connection ~ 2700 5350
+	2950 6150 2950 6050
 Wire Wire Line
-	2950 5050 2950 4950
+	2700 6550 2700 6450
 Wire Wire Line
-	2700 5450 2700 5350
-Wire Wire Line
-	1100 5350 1100 5450
+	1100 6450 1100 6550
 Wire Wire Line
 	5350 1800 5350 1900
 Text Label 4150 2100 2    50   ~ 0
@@ -320,33 +268,25 @@ Wire Wire Line
 	4050 2100 4300 2100
 Wire Wire Line
 	8200 2150 8950 2150
-Text HLabel 1150 1600 0    50   Output ~ 0
-3v3_MCU
-Wire Wire Line
-	1150 1600 1750 1600
-Text Label 1750 1600 2    50   ~ 0
-3v3_MCU
 Text Label 10500 2150 2    50   ~ 0
 3v3_MCU
-Text Label 1300 3150 0    50   ~ 0
+Text Label 1350 4000 0    50   ~ 0
 EN_3V3
 Wire Wire Line
-	1650 3150 1300 3150
+	1700 4000 1350 4000
 Wire Wire Line
-	1950 2950 1950 2750
+	2000 3800 2000 3600
 Wire Wire Line
-	1950 2750 2350 2750
+	2000 3600 2400 3600
 Wire Wire Line
-	1950 3350 1950 3550
+	2000 4200 2000 4400
 Wire Wire Line
-	1950 3550 2350 3550
-Text Label 2350 3550 2    50   ~ 0
+	2000 4400 2400 4400
+Text Label 2400 4400 2    50   ~ 0
 3v3_MCU
-Text Label 2350 2750 2    50   ~ 0
+Text Label 2400 3600 2    50   ~ 0
 3v3
-Text Notes 950  2500 0    118  ~ 0
-Switch for 3v3 peripheral
-NoConn ~ 1300 4950
+NoConn ~ 1300 6050
 Text Label 4800 1150 0    50   ~ 0
 EN_MCU_REG
 Text Label 4050 1650 0    50   ~ 0
@@ -375,25 +315,23 @@ Wire Notes Line
 Wire Notes Line
 	3750 700  10700 700 
 Wire Notes Line
-	850  2250 3350 2250
+	900  3100 3400 3100
 Wire Notes Line
-	3350 2250 3350 3850
+	3400 3100 3400 4700
 Wire Notes Line
-	3350 3850 800  3850
+	3400 4700 850  4700
 Wire Notes Line
-	800  3850 800  2250
+	850  4700 850  3100
 Wire Notes Line
-	3550 4050 3550 5850
+	3550 5150 3550 6950
 Wire Notes Line
-	3550 5850 650  5850
+	3550 6950 650  6950
 Wire Notes Line
-	650  5850 650  4050
+	650  6950 650  5150
 Wire Notes Line
-	650  4050 3550 4050
+	650  5150 3550 5150
 Text Label 4150 4400 0    50   ~ 0
 EN_5V
-Text Notes 6500 3950 0    118  ~ 0
-5V Boost Regulator
 Wire Wire Line
 	5450 4800 5450 4900
 Text Label 4150 5100 0    50   ~ 0
@@ -639,8 +577,8 @@ Wire Wire Line
 Wire Wire Line
 	9800 2150 10500 2150
 Wire Wire Line
-	2700 4950 2950 4950
-Connection ~ 2950 4950
+	2700 6050 2950 6050
+Connection ~ 2950 6050
 Text Label 4050 1850 0    50   ~ 0
 3v3_RTC
 Wire Wire Line
@@ -923,14 +861,14 @@ $EndComp
 $Comp
 L Device:Q_PMOS_GDS Q?
 U 1 1 60450708
-P 1850 3150
+P 1900 4000
 AR Path="/5F63A00B/60450708" Ref="Q?"  Part="1" 
 AR Path="/5F63A0E9/60450708" Ref="Q702"  Part="1" 
-F 0 "Q702" H 1700 3250 50  0000 C CNN
-F 1 "P-MOS" H 1700 3350 50  0000 C CNN
-F 2 "" H 2050 3250 50  0001 C CNN
-F 3 "~" H 1850 3150 50  0001 C CNN
-	1    1850 3150
+F 0 "Q702" H 1750 4100 50  0000 C CNN
+F 1 "P-MOS" H 1750 4200 50  0000 C CNN
+F 2 "" H 2100 4100 50  0001 C CNN
+F 3 "~" H 1900 4000 50  0001 C CNN
+	1    1900 4000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1057,36 +995,108 @@ $EndComp
 $Comp
 L Device:C_Small C709
 U 1 1 5FB80C1F
-P 2950 5150
-F 0 "C709" H 3042 5196 50  0000 L CNN
-F 1 "2.2μF" H 3042 5105 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 2950 5150 50  0001 C CNN
-F 3 "~" H 2950 5150 50  0001 C CNN
-	1    2950 5150
+P 2950 6250
+F 0 "C709" H 3042 6296 50  0000 L CNN
+F 1 "2.2μF" H 3042 6205 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2950 6250 50  0001 C CNN
+F 3 "~" H 2950 6250 50  0001 C CNN
+	1    2950 6250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C710
 U 1 1 5FB43CB1
-P 1100 5250
-F 0 "C710" H 1192 5296 50  0000 L CNN
-F 1 "2.2μF" H 1192 5205 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 1100 5250 50  0001 C CNN
-F 3 "~" H 1100 5250 50  0001 C CNN
-	1    1100 5250
+P 1100 6350
+F 0 "C710" H 1192 6396 50  0000 L CNN
+F 1 "2.2μF" H 1192 6305 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 1100 6350 50  0001 C CNN
+F 3 "~" H 1100 6350 50  0001 C CNN
+	1    1100 6350
 	1    0    0    -1  
 $EndComp
 $Comp
 L TPS70933DRV:TPS70933DRVT U703
 U 1 1 5FB0A2C4
-P 2000 5150
-F 0 "U703" H 2000 5620 50  0000 C CNN
-F 1 "TPS70933DRVT" H 2000 5529 50  0000 C CNN
-F 2 "TPS70933DRV:SON65P200X200X80-7N" H 2000 5150 50  0001 L BNN
-F 3 "https://www.ti.com/lit/gpn/tps709" H 2000 5150 50  0001 L BNN
-	1    2000 5150
+P 2000 6250
+F 0 "U703" H 2000 6720 50  0000 C CNN
+F 1 "TPS70933DRVT" H 2000 6629 50  0000 C CNN
+F 2 "TPS70933DRV:SON65P200X200X80-7N" H 2000 6250 50  0001 L BNN
+F 3 "https://www.ti.com/lit/gpn/tps709" H 2000 6250 50  0001 L BNN
+	1    2000 6250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2950 4950 3450 4950
+	2950 6050 3450 6050
+Text HLabel 1450 1600 0    50   Input ~ 0
+INT
+Text HLabel 1450 1950 0    50   Output ~ 0
+3v3
+Text HLabel 1450 2100 0    50   Output ~ 0
+5V
+Text HLabel 1450 1150 0    50   Input ~ 0
+EN_3V3
+Text HLabel 1450 1300 0    50   Input ~ 0
+EN_5V
+Wire Wire Line
+	1450 1600 2050 1600
+Wire Wire Line
+	1450 1150 2050 1150
+Wire Wire Line
+	1450 1300 2050 1300
+Wire Wire Line
+	1450 1950 2050 1950
+Wire Wire Line
+	1450 2100 2050 2100
+Text Label 2050 1600 2    50   ~ 0
+INT
+Text Label 2050 1150 2    50   ~ 0
+EN_3V3
+Text Label 2050 1300 2    50   ~ 0
+EN_5V
+Text Label 2050 1950 2    50   ~ 0
+3v3
+Text Label 2050 2100 2    50   ~ 0
+5V
+Wire Wire Line
+	1450 1000 2050 1000
+Text Label 2050 1000 2    50   ~ 0
+VIN
+Text HLabel 1450 1000 0    50   Input ~ 0
+VIN
+Text HLabel 1450 1450 0    50   Input ~ 0
+EN_MCU_REG
+Wire Wire Line
+	1450 1450 2050 1450
+Text Label 2050 1450 2    50   ~ 0
+EN_MCU_REG
+Text HLabel 1450 2250 0    50   Output ~ 0
+3v3_RTC_I2C
+Text Label 2050 2250 2    50   ~ 0
+3v3_RTC_I2C
+Wire Wire Line
+	1450 2250 2050 2250
+Text HLabel 1450 1800 0    50   Output ~ 0
+3v3_MCU
+Wire Wire Line
+	1450 1800 2050 1800
+Text Label 2050 1800 2    50   ~ 0
+3v3_MCU
+Wire Notes Line
+	2200 2350 2200 550 
+Wire Notes Line
+	2200 550  550  550 
+Wire Notes Line
+	550  550  550  2350
+Wire Notes Line
+	550  2350 2200 2350
+Text Notes 600  650  0    50   ~ 10
+Interface
+Text Notes 3800 800  0    50   ~ 10
+MCU Regulator
+Text Notes 3800 3850 0    50   ~ 10
+5V Boost Regulator
+Text Notes 900  3200 0    50   ~ 10
+3v3 Peripheral Switch
+Text Notes 700  5250 0    50   ~ 10
+Permanent low IQ regulator for RTC and I2C
 $EndSCHEMATC

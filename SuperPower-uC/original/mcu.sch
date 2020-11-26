@@ -889,11 +889,7 @@ F 3 "~" H 6200 4900 50  0001 C CNN
 	1    6200 4900
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	1250 1150 1250 1600
-Wire Wire Line
-	1100 1150 1100 1750
-Text Label 1650 1600 0    50   ~ 0
+Text Label 2100 1350 2    50   ~ 0
 3v3
 Wire Wire Line
 	6400 5500 6800 5500
@@ -915,63 +911,45 @@ Text Notes 6750 2750 0    50   ~ 0
 Autoflash/reset circuit:\nAllows the USB-UART\nbridge to reset the MCU\nand to boot the MCU\nin flashing\n(programmation) mode.
 Text Notes 2600 4350 0    50   ~ 0
 USB - UART bridge:\nAllows the MCU to communicate and to be flashed\n(programmed) via the USB bus
-Text HLabel 1100 1150 1    50   Input ~ 0
+Text HLabel 1300 1500 0    50   Input ~ 0
 5V
-Text HLabel 1250 1150 1    50   Input ~ 0
+Text HLabel 1300 1350 0    50   Input ~ 0
 3v3
 Text Label 10150 5600 2    50   ~ 0
 3v3_MCU
-Wire Wire Line
-	1250 1600 1650 1600
-Wire Wire Line
-	1350 2050 1650 2050
-Text Label 1650 2050 0    50   ~ 0
+Text Label 2100 1800 2    50   ~ 0
 EN_MCU_REG
-Text HLabel 1350 2050 0    50   Output ~ 0
+Text HLabel 1300 1800 0    50   Output ~ 0
 EN_MCU_REG
-Wire Wire Line
-	1350 2350 1650 2350
-Wire Wire Line
-	1350 2200 1650 2200
-Text Label 1650 2350 0    50   ~ 0
+Text Label 2100 2100 2    50   ~ 0
 EN_5V
-Text Label 1650 2200 0    50   ~ 0
+Text Label 2100 1950 2    50   ~ 0
 EN_3V3
-Text Label 1650 1750 0    50   ~ 0
+Text Label 2100 1500 2    50   ~ 0
 5V
-Wire Wire Line
-	1100 1750 1650 1750
-Text HLabel 1350 2350 0    50   Output ~ 0
+Text HLabel 1300 2100 0    50   Output ~ 0
 EN_5V
-Text HLabel 1350 2200 0    50   Output ~ 0
+Text HLabel 1300 1950 0    50   Output ~ 0
 EN_3V3
 Wire Notes Line
 	2300 3500 650  3500
 Wire Notes Line
 	2300 650  2300 3500
-Text Label 1650 3000 0    50   ~ 0
+Text Label 2100 2750 2    50   ~ 0
 D-
-Text Label 1650 3150 0    50   ~ 0
+Text Label 2100 2900 2    50   ~ 0
 D+
-Text Label 1650 2600 0    50   ~ 0
+Text Label 2100 2350 2    50   ~ 0
 SCL
-Text Label 1650 2750 0    50   ~ 0
+Text Label 2100 2500 2    50   ~ 0
 SDA
-Wire Wire Line
-	1400 2600 1650 2600
-Wire Wire Line
-	1400 2750 1650 2750
-Text HLabel 1400 2600 0    50   Input ~ 0
+Text HLabel 1350 2350 0    50   Input ~ 0
 SCL
-Text HLabel 1400 2750 0    50   BiDi ~ 0
+Text HLabel 1350 2500 0    50   BiDi ~ 0
 SDA
-Wire Wire Line
-	1400 3000 1650 3000
-Wire Wire Line
-	1400 3150 1650 3150
-Text HLabel 1400 3000 0    50   Input ~ 0
+Text HLabel 1350 2750 0    50   Input ~ 0
 D-
-Text HLabel 1400 3150 0    50   Input ~ 0
+Text HLabel 1350 2900 0    50   Input ~ 0
 D+
 $Comp
 L Interface_USB:CP2102N-A01-GQFN28 U4
@@ -1068,21 +1046,13 @@ Wire Notes Line
 	2450 4600 2450 7650
 Text Label 7400 4300 2    50   ~ 0
 3v3_MCU
-Wire Wire Line
-	1550 1300 1550 1150
-Text HLabel 1550 1150 1    50   Input ~ 0
+Text HLabel 1300 1050 0    50   Input ~ 0
 VBUS
-Wire Wire Line
-	1550 1300 1650 1300
-Text Label 1650 1300 0    50   ~ 0
+Text Label 2100 1050 2    50   ~ 0
 VBUS
-Wire Wire Line
-	1400 1150 1400 1450
-Text HLabel 1400 1150 1    50   Input ~ 0
+Text HLabel 1300 1200 0    50   Input ~ 0
 3v3_MCU
-Wire Wire Line
-	1400 1450 1650 1450
-Text Label 1650 1450 0    50   ~ 0
+Text Label 2100 1200 2    50   ~ 0
 3v3_MCU
 $Comp
 L Device:R_Small R?
@@ -1154,25 +1124,49 @@ RGBW_LED
 Wire Wire Line
 	10400 5300 9900 5300
 Wire Notes Line
-	1150 2850 1200 2850
+	1100 2600 1150 2600
 Wire Notes Line
-	1150 2500 1200 2500
+	1100 2250 1150 2250
 Wire Notes Line
-	1150 2500 1150 2850
-Text Notes 1050 2700 2    50   ~ 0
+	1100 2250 1100 2600
+Text Notes 1000 2450 2    50   ~ 0
 I2C
 Wire Notes Line
-	1150 2900 1150 3250
+	1100 2650 1100 3000
 Wire Notes Line
-	1150 3250 1200 3250
+	1100 3000 1150 3000
 Wire Notes Line
-	1150 2900 1200 2900
-Text Notes 1050 3050 2    50   ~ 0
+	1100 2650 1150 2650
+Text Notes 1000 2800 2    50   ~ 0
 USB
+Text HLabel 1350 3100 0    50   Input ~ 0
+~SMBALERT
+Text Label 2100 3100 2    50   ~ 0
+~SMBALERT
 Wire Wire Line
-	1400 3350 1650 3350
-Text HLabel 1400 3350 0    50   Input ~ 0
-~SMBALERT
-Text Label 1650 3350 0    50   ~ 0
-~SMBALERT
+	2100 1050 1300 1050
+Wire Wire Line
+	1300 1200 2100 1200
+Wire Wire Line
+	2100 1350 1300 1350
+Wire Wire Line
+	1300 1500 2100 1500
+Wire Wire Line
+	1300 1800 2100 1800
+Wire Wire Line
+	1300 1950 2100 1950
+Wire Wire Line
+	1300 2100 2100 2100
+Wire Wire Line
+	1350 2350 2100 2350
+Wire Wire Line
+	1350 2500 2100 2500
+Wire Wire Line
+	1350 2750 2100 2750
+Wire Wire Line
+	1350 2900 2100 2900
+Wire Wire Line
+	1350 3100 2100 3100
+Text Notes 900  6300 0    50   ~ 10
+RGBW LED
 $EndSCHEMATC

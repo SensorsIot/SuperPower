@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 7
+Sheet 5 7
 Title "SuperPower-uC"
 Date "2020-09-20"
 Rev "0.1"
@@ -13,9 +13,9 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 1200 1550 0    50   Output ~ 0
+Text HLabel 1300 1200 0    50   Output ~ 0
 VOUT
-Text HLabel 1200 1650 0    50   BiDi ~ 0
+Text HLabel 1300 1300 0    50   BiDi ~ 0
 VBAT
 $Comp
 L Device:C C2
@@ -444,7 +444,7 @@ Wire Wire Line
 Wire Wire Line
 	4600 3950 5000 3950
 Wire Wire Line
-	1750 1650 1200 1650
+	1850 1300 1300 1300
 $Comp
 L Connector:Conn_01x02_Male J2
 U 1 1 5F8314D1
@@ -640,7 +640,7 @@ Wire Wire Line
 Wire Wire Line
 	7500 950  7500 1350
 Wire Wire Line
-	1750 1550 1200 1550
+	1850 1200 1300 1200
 Wire Notes Line
 	6400 1050 7900 1050
 Wire Notes Line
@@ -748,19 +748,19 @@ Wire Wire Line
 Connection ~ 5300 5550
 Wire Wire Line
 	5300 5550 5300 5500
-Text HLabel 1200 1300 0    50   Input ~ 0
+Text HLabel 1300 950  0    50   Input ~ 0
 CHARGER_VIN
-Text Label 1750 1300 2    50   ~ 0
+Text Label 1850 950  2    50   ~ 0
 CHARGER_VIN
 Wire Wire Line
-	1750 1300 1200 1300
+	1850 950  1300 950 
 Text Notes 1400 5450 0    50   ~ 0
 See Table 5 in the datasheet
-Text HLabel 1200 1900 0    50   Input ~ 0
+Text HLabel 1300 1550 0    50   Input ~ 0
 3v3_I2C
 Wire Wire Line
-	1200 1900 1750 1900
-Text Label 1750 1900 2    50   ~ 0
+	1300 1550 1850 1550
+Text Label 1850 1550 2    50   ~ 0
 3v3_I2C
 Text Label 4600 3850 0    50   ~ 0
 3v3_I2C
@@ -771,23 +771,23 @@ VOUT
 Wire Wire Line
 	7850 1350 7500 1350
 Connection ~ 7500 1350
-Text Label 1750 1550 2    50   ~ 0
+Text Label 1850 1200 2    50   ~ 0
 VOUT
 Text Label 8150 4350 2    50   ~ 0
 VBAT
-Text HLabel 1200 2000 0    50   Input ~ 0
+Text HLabel 1300 1650 0    50   Input ~ 0
 SCL
-Text HLabel 1200 2100 0    50   BiDi ~ 0
+Text HLabel 1300 1750 0    50   BiDi ~ 0
 SDA
 Wire Wire Line
-	1200 2100 1750 2100
+	1300 1750 1850 1750
 Wire Wire Line
-	1200 2000 1750 2000
-Text Label 1750 1650 2    50   ~ 0
+	1300 1650 1850 1650
+Text Label 1850 1300 2    50   ~ 0
 VBAT
-Text Label 1750 2000 2    50   ~ 0
+Text Label 1850 1650 2    50   ~ 0
 SCL
-Text Label 1750 2100 2    50   ~ 0
+Text Label 1850 1750 2    50   ~ 0
 SDA
 Text Label 4600 3950 0    50   ~ 0
 SCL
@@ -1003,11 +1003,11 @@ Wire Notes Line
 	5450 5500 5450 6150
 Text Label 4600 3750 0    50   ~ 0
 ~SMBALERT
-Text HLabel 1200 2350 0    50   Output ~ 0
+Text HLabel 1300 2000 0    50   Output ~ 0
 ~SMBALERT
 Wire Wire Line
-	1750 2350 1200 2350
-Text Label 1750 2350 2    50   ~ 0
+	1850 2000 1300 2000
+Text Label 1850 2000 2    50   ~ 0
 ~SMBALERT
 $Comp
 L solderjumper_4_bridged_14:SolderJumper_4_Bridged_14 JP1
@@ -1035,4 +1035,14 @@ F 3 "~" H 6400 5100 50  0001 C CNN
 	1    6400 5100
 	-1   0    0    1   
 $EndComp
+Text Notes 600  700  0    50   ~ 10
+Interface
+Wire Notes Line
+	550  550  1950 550 
+Wire Notes Line
+	1950 550  1950 2150
+Wire Notes Line
+	1950 2150 550  2150
+Wire Notes Line
+	550  2150 550  550 
 $EndSCHEMATC

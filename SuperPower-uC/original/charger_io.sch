@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 7
+Sheet 3 7
 Title "SuperPower-uC"
 Date "2020-09-20"
 Rev "0.1"
@@ -28,7 +28,7 @@ D-
 Text Label 3500 5850 2    50   ~ 0
 D+
 $Comp
-L Connector:USB_C_Receptacle_USB2.0 J7
+L SuperPower-uC-KiCad-rescue:USB_C_Receptacle_USB2.0-Connector J7
 U 1 1 5F725D86
 P 2500 5750
 AR Path="/5F725D86" Ref="J7"  Part="1" 
@@ -178,15 +178,15 @@ Wire Wire Line
 	7200 3150 7000 3150
 Wire Wire Line
 	7000 3050 7400 3050
-Text Notes 3350 2250 0    50   ~ 0
+Text Notes 3350 2250 0    50   ~ 10
 Barrel Jack\n
-Text Notes 5900 2250 0    50   ~ 0
+Text Notes 5900 2250 0    50   ~ 10
 Screw Terminal
 Wire Notes Line
 	5800 7450 1100 7450
 Wire Notes Line
 	1100 7450 1100 4050
-Text Notes 1200 4250 0    50   ~ 0
+Text Notes 1200 4250 0    50   ~ 10
 USB-C
 Wire Wire Line
 	1950 1050 1300 1050
@@ -405,10 +405,6 @@ Wire Wire Line
 Wire Wire Line
 	9500 4750 9500 4650
 Wire Wire Line
-	9300 4350 9100 4350
-Wire Wire Line
-	9300 2950 9100 2950
-Wire Wire Line
 	9500 3750 9500 3650
 $Comp
 L Diode:1N5819 D?
@@ -462,8 +458,6 @@ Wire Wire Line
 Connection ~ 9500 3350
 Wire Wire Line
 	9500 3350 9500 3450
-Wire Wire Line
-	9100 4750 9200 4750
 Text Label 10450 2950 2    50   ~ 0
 CHARGER_VIN
 Wire Wire Line
@@ -474,17 +468,17 @@ CHARGER_VIN
 Wire Wire Line
 	9800 4350 10450 4350
 Connection ~ 9800 4350
-Text Label 9100 4350 2    50   ~ 0
+Text Label 8800 4350 0    50   ~ 0
 V_CHARGE
-Text Label 9100 2950 2    50   ~ 0
+Text Label 8800 2950 0    50   ~ 0
 VBUS
 Wire Notes Line
 	11050 2100 11050 6450
 Wire Notes Line
 	3250 2100 11050 2100
-Text Notes 8450 2250 0    50   ~ 0
+Text Notes 8450 2250 0    50   ~ 10
 Power oring
-Text Label 9100 4750 2    50   ~ 0
+Text Label 8800 4750 0    50   ~ 0
 VBUS
 Text Notes 8450 6400 0    50   ~ 0
 This circuit (power oring) allows to have concurrent power inputs,\nthe input with the highest voltage (with respect to the ground)\nwill be providing power to the charging IC (CHARGER_VIN).
@@ -563,8 +557,26 @@ Wire Wire Line
 	7000 4500 6800 4500
 Text Label 6800 4500 2    50   ~ 0
 CHARGER_VIN
-Text Notes 5900 4200 0    50   ~ 0
+Text Notes 5900 4200 0    50   ~ 10
 Power Source LED
 Wire Notes Line
 	5800 5800 8400 5800
+Wire Notes Line
+	11050 6450 8400 6450
+Wire Wire Line
+	8800 4750 9200 4750
+Wire Wire Line
+	8800 4350 9300 4350
+Wire Wire Line
+	8800 2950 9300 2950
+Text Notes 600  650  0    50   ~ 10
+Interface
+Wire Notes Line
+	550  550  2050 550 
+Wire Notes Line
+	2050 550  2050 2000
+Wire Notes Line
+	2050 2000 550  2000
+Wire Notes Line
+	550  2000 550  550 
 $EndSCHEMATC

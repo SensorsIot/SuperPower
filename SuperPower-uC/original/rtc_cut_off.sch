@@ -13,11 +13,11 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 1600 1350 0    50   Input ~ 0
+Text HLabel 1250 900  0    50   Input ~ 0
 SCL
-Text HLabel 1600 1500 0    50   BiDi ~ 0
+Text HLabel 1250 1050 0    50   BiDi ~ 0
 SDA
-Text HLabel 1600 1950 0    50   Output ~ 0
+Text HLabel 1250 1500 0    50   Output ~ 0
 INT
 NoConn ~ 5900 3550
 $Comp
@@ -73,18 +73,18 @@ Text Label 4250 3550 0    50   ~ 0
 SCL
 Text Label 4250 3650 0    50   ~ 0
 SDA
-Text Label 1850 1350 2    50   ~ 0
+Text Label 1500 900  2    50   ~ 0
 SCL
-Text Label 1850 1500 2    50   ~ 0
+Text Label 1500 1050 2    50   ~ 0
 SDA
-Text Label 1850 1950 2    50   ~ 0
+Text Label 1500 1500 2    50   ~ 0
 INT
 Wire Wire Line
-	1600 1950 1850 1950
+	1250 1500 1500 1500
 Wire Wire Line
-	1600 1350 1850 1350
+	1250 900  1500 900 
 Wire Wire Line
-	1600 1500 1850 1500
+	1250 1050 1500 1050
 Wire Wire Line
 	4500 3550 4250 3550
 $Comp
@@ -253,7 +253,7 @@ Text Label 2000 3850 0    50   ~ 0
 SDA
 Text Label 1650 3850 0    50   ~ 0
 SCL
-Text HLabel 1600 1800 0    50   Input ~ 0
+Text HLabel 1250 1350 0    50   Input ~ 0
 3v3_RTC_I2C
 Text Label 6850 2650 3    50   ~ 0
 VIN
@@ -270,11 +270,21 @@ VIN
 Text Label 1650 3200 3    50   ~ 0
 VIN
 Wire Wire Line
-	1600 1800 1850 1800
-Text Label 1850 1800 2    50   ~ 0
+	1250 1350 1500 1350
+Text Label 1500 1350 2    50   ~ 0
 VIN
 Wire Wire Line
 	2000 3200 2000 3450
 Wire Wire Line
 	1650 3200 1650 3450
+Text Notes 600  650  0    50   ~ 10
+Interface
+Wire Notes Line
+	550  550  1650 550 
+Wire Notes Line
+	1650 550  1650 1700
+Wire Notes Line
+	1650 1700 550  1700
+Wire Notes Line
+	550  1700 550  550 
 $EndSCHEMATC
