@@ -73,18 +73,18 @@ Text Label 4250 3550 0    50   ~ 0
 SCL
 Text Label 4250 3650 0    50   ~ 0
 SDA
-Text Label 1500 900  2    50   ~ 0
+Text Label 1600 900  2    50   ~ 0
 SCL
-Text Label 1500 1050 2    50   ~ 0
+Text Label 1600 1050 2    50   ~ 0
 SDA
-Text Label 1500 1500 2    50   ~ 0
+Text Label 1600 1500 2    50   ~ 0
 INT
 Wire Wire Line
-	1250 1500 1500 1500
+	1250 1500 1600 1500
 Wire Wire Line
-	1250 900  1500 900 
+	1250 900  1600 900 
 Wire Wire Line
-	1250 1050 1500 1050
+	1250 1050 1600 1050
 Wire Wire Line
 	4500 3550 4250 3550
 $Comp
@@ -204,11 +204,6 @@ Connection ~ 6500 2850
 Connection ~ 6500 3350
 Wire Wire Line
 	6500 3350 6850 3350
-Wire Wire Line
-	6850 2850 7150 2850
-Wire Wire Line
-	6500 2850 6850 2850
-Connection ~ 6850 2850
 $Comp
 L Device:R_Small R?
 U 1 1 5FB76F56
@@ -255,28 +250,26 @@ Text Label 1650 3850 0    50   ~ 0
 SCL
 Text HLabel 1250 1350 0    50   Input ~ 0
 3v3_RTC_I2C
-Text Label 6850 2650 3    50   ~ 0
-VIN
-Wire Wire Line
-	6850 2650 6850 2850
+Text Label 7150 2850 2    50   ~ 0
+3v3_RTC
 Wire Wire Line
 	3850 2900 3850 3150
-Text Label 3850 2900 3    50   ~ 0
-VIN
+Text Label 3500 2900 0    50   ~ 0
+3v3_RTC
 Text Notes 3550 2800 0    50   Italic 0
-External trigger\npin header on board\ntrigger device must handle VIN
-Text Label 2000 3200 3    50   ~ 0
-VIN
-Text Label 1650 3200 3    50   ~ 0
-VIN
+External trigger\npin header on board
+Text Label 2000 3100 3    50   ~ 0
+3v3_RTC
+Text Label 1650 3100 3    50   ~ 0
+3v3_RTC
 Wire Wire Line
-	1250 1350 1500 1350
-Text Label 1500 1350 2    50   ~ 0
-VIN
+	1250 1350 1600 1350
+Text Label 1600 1350 2    50   ~ 0
+3v3_RTC
 Wire Wire Line
-	2000 3200 2000 3450
+	2000 3100 2000 3450
 Wire Wire Line
-	1650 3200 1650 3450
+	1650 3100 1650 3450
 Text Notes 600  650  0    50   ~ 10
 Interface
 Wire Notes Line
@@ -287,4 +280,8 @@ Wire Notes Line
 	1650 1700 550  1700
 Wire Notes Line
 	550  1700 550  550 
+Wire Wire Line
+	3500 2900 3850 2900
+Wire Wire Line
+	6500 2850 7150 2850
 $EndSCHEMATC
