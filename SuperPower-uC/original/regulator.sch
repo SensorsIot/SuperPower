@@ -572,140 +572,77 @@ Wire Wire Line
 	5350 2050 5600 2050
 Wire Wire Line
 	4950 1900 4950 2050
-Connection ~ 4000 4900
+Connection ~ 4000 5400
 Wire Wire Line
-	4350 4550 4350 4650
+	4350 5050 4350 5150
 Wire Wire Line
-	4900 4300 4900 4400
+	4350 5150 4250 5150
+Connection ~ 4350 5150
+Connection ~ 4300 5850
 Wire Wire Line
-	4350 4300 4900 4300
+	4300 5850 4000 5850
 Wire Wire Line
-	4350 4350 4350 4300
-$Comp
-L Device:R_Small R712
-U 1 1 5FFFAB88
-P 4350 4450
-F 0 "R712" H 4300 4400 50  0000 R CNN
-F 1 "1M" H 4300 4500 50  0000 R CNN
-F 2 "Resistors_SMD:R_0603" H 4350 4450 50  0001 C CNN
-F 3 "~" H 4350 4450 50  0001 C CNN
-	1    4350 4450
-	-1   0    0    1   
-$EndComp
+	4300 5600 4300 5850
 Wire Wire Line
-	4350 4650 4250 4650
-Connection ~ 4350 4650
+	4000 5400 4000 5600
 Wire Wire Line
-	4650 4650 4350 4650
-Connection ~ 4300 5350
-Wire Wire Line
-	4300 5350 4000 5350
-Wire Wire Line
-	4300 5100 4300 5350
-Wire Wire Line
-	4950 4850 4950 5100
-Wire Wire Line
-	4000 4900 4000 5100
-Wire Wire Line
-	4000 5300 4000 5350
+	4000 5800 4000 5850
 $Comp
 L power:GND #PWR0703
 U 1 1 5FFFAB71
-P 4300 5350
-F 0 "#PWR0703" H 4300 5100 50  0001 C CNN
-F 1 "GND" H 4305 5177 50  0000 C CNN
-F 2 "" H 4300 5350 50  0001 C CNN
-F 3 "" H 4300 5350 50  0001 C CNN
-	1    4300 5350
+P 4300 5850
+F 0 "#PWR0703" H 4300 5600 50  0001 C CNN
+F 1 "GND" H 4305 5677 50  0000 C CNN
+F 2 "" H 4300 5850 50  0001 C CNN
+F 3 "" H 4300 5850 50  0001 C CNN
+	1    4300 5850
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R713
 U 1 1 5FFFAB67
-P 4000 5200
-F 0 "R713" H 3950 5150 50  0000 R CNN
-F 1 "10k" H 3950 5250 50  0000 R CNN
-F 2 "Resistors_SMD:R_0603" H 4000 5200 50  0001 C CNN
-F 3 "~" H 4000 5200 50  0001 C CNN
-	1    4000 5200
+P 4000 5700
+F 0 "R713" H 3950 5650 50  0000 R CNN
+F 1 "100k" H 3950 5750 50  0000 R CNN
+F 2 "Resistors_SMD:R_0603" H 4000 5700 50  0001 C CNN
+F 3 "~" H 4000 5700 50  0001 C CNN
+	1    4000 5700
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3550 4900 4000 4900
-Text Label 3550 4300 0    50   ~ 0
+	3550 5400 4000 5400
+Text Label 4150 4800 0    50   ~ 0
 VIN
 $Comp
-L dmn3018ssd:DMN3018SSD Q704
+L dmn3018ssd:DMN3018SSD Q702
 U 1 1 5FE6FD9F
-P 4200 4900
-F 0 "Q704" H 4438 4971 50  0000 L CNN
-F 1 "DMN3018SSD" H 4438 4880 50  0000 L CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 4400 4825 50  0001 L CNN
-F 3 "https://www.diodes.com/assets/Datasheets/DMN3018SSD.pdf" H 4200 4900 50  0001 C CNN
-F 4 "https://octopart.com/dmn3018ssd-13-diodes+inc.-26472698?r=sp" H 4200 4900 50  0001 C CNN "Octopart_link"
-F 5 "-" H 4200 4900 50  0001 C CNN "Farnell_link"
-F 6 "-" H 4200 4900 50  0001 C CNN "Farnell_ref"
-F 7 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMN3018SSD-13_C155277.html" H 4200 4900 50  0001 C CNN "LCSC_link"
-F 8 "C155277" H 4200 4900 50  0001 C CNN "LCSC_ref"
-F 9 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMN3018SSD-13?qs=%2Fha2pyFaduhiKtoBktzbgyUAHZPSS%252B8%252Bk9vZNvppSquz1WfnqvfRKg%3D%3D" H 4200 4900 50  0001 C CNN "Mouser_link"
-F 10 "621-DMN3018SSD-13 " H 4200 4900 50  0001 C CNN "Mouser_ref"
-F 11 "https://fr.rs-online.com/web/p/transistors-mosfet/7904592/" H 4200 4900 50  0001 C CNN "RS_link"
-F 12 " 790-4592" H 4200 4900 50  0001 C CNN "RS_ref"
-	1    4200 4900
+P 4200 5400
+F 0 "Q702" H 4438 5471 50  0000 L CNN
+F 1 "DMN3018SSD" H 4438 5380 50  0000 L CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 4400 5325 50  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/DMN3018SSD.pdf" H 4200 5400 50  0001 C CNN
+F 4 "https://octopart.com/dmn3018ssd-13-diodes+inc.-26472698?r=sp" H 4200 5400 50  0001 C CNN "Octopart_link"
+F 5 "-" H 4200 5400 50  0001 C CNN "Farnell_link"
+F 6 "-" H 4200 5400 50  0001 C CNN "Farnell_ref"
+F 7 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMN3018SSD-13_C155277.html" H 4200 5400 50  0001 C CNN "LCSC_link"
+F 8 "C155277" H 4200 5400 50  0001 C CNN "LCSC_ref"
+F 9 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMN3018SSD-13?qs=%2Fha2pyFaduhiKtoBktzbgyUAHZPSS%252B8%252Bk9vZNvppSquz1WfnqvfRKg%3D%3D" H 4200 5400 50  0001 C CNN "Mouser_link"
+F 10 "621-DMN3018SSD-13 " H 4200 5400 50  0001 C CNN "Mouser_ref"
+F 11 "https://fr.rs-online.com/web/p/transistors-mosfet/7904592/" H 4200 5400 50  0001 C CNN "RS_link"
+F 12 " 790-4592" H 4200 5400 50  0001 C CNN "RS_ref"
+	1    4200 5400
 	1    0    0    -1  
 $EndComp
-$Comp
-L dmp3028lsd:DMP3028LSD Q703
-U 1 1 5FE4D9E3
-P 4850 4650
-F 0 "Q703" H 5088 4721 50  0000 L CNN
-F 1 "DMP3028LSD" H 5088 4630 50  0000 L CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 5050 4575 50  0001 L CIN
-F 3 "https://www.diodes.com/assets/Datasheets/DMP3028LSD.pdf" V 4850 4650 50  0001 L CNN
-F 4 "https://octopart.com/dmp3028lsd-13-diodes+inc.-67250487?r=sp" H 4850 4650 50  0001 C CNN "Octopart_link"
-F 5 "-" H 4850 4650 50  0001 C CNN "Farnell_link"
-F 6 "-" H 4850 4650 50  0001 C CNN "Farnell_ref"
-F 7 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMP3028LSD-13_C397949.html" H 4850 4650 50  0001 C CNN "LCSC_link"
-F 8 "C397949" H 4850 4650 50  0001 C CNN "LCSC_ref"
-F 9 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMP3028LSD-13?qs=%2Fha2pyFadugUkRnXWzNfjPB%2F2%2FpUVmcBtenJqlz85NswHo6v693iIw%3D%3D" H 4850 4650 50  0001 C CNN "Mouser_link"
-F 10 "DMP3028LSD-13 " H 4850 4650 50  0001 C CNN "Mouser_ref"
-F 11 "-" H 4850 4650 50  0001 C CNN "RS_link"
-F 12 "-" H 4850 4650 50  0001 C CNN "RS_ref"
-	1    4850 4650
-	1    0    0    -1  
-$EndComp
-Text Label 3550 4900 0    50   ~ 0
+Text Label 3550 5400 0    50   ~ 0
 EN_5V
 Wire Wire Line
 	6150 4800 6150 4900
-$Comp
-L power:GND #PWR0114
-U 1 1 602F5279
-P 6450 5750
-F 0 "#PWR0114" H 6450 5500 50  0001 C CNN
-F 1 "GND" H 6455 5577 50  0000 C CNN
-F 2 "" H 6450 5750 50  0001 C CNN
-F 3 "" H 6450 5750 50  0001 C CNN
-	1    6450 5750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6450 5450 6450 5750
 Wire Wire Line
 	5100 5100 5100 5250
 Wire Wire Line
 	5500 5250 5500 5100
-$Comp
-L power:GND #PWR0115
-U 1 1 602F529B
-P 5300 5750
-F 0 "#PWR0115" H 5300 5500 50  0001 C CNN
-F 1 "GND" H 5305 5577 50  0000 C CNN
-F 2 "" H 5300 5750 50  0001 C CNN
-F 3 "" H 5300 5750 50  0001 C CNN
-	1    5300 5750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5100 5450 5100 5600
 Wire Wire Line
@@ -720,17 +657,6 @@ Wire Wire Line
 Wire Wire Line
 	5950 5250 5950 5100
 Connection ~ 5950 5100
-$Comp
-L power:GND #PWR0116
-U 1 1 602F52B7
-P 5950 5750
-F 0 "#PWR0116" H 5950 5500 50  0001 C CNN
-F 1 "GND" H 5955 5577 50  0000 C CNN
-F 2 "" H 5950 5750 50  0001 C CNN
-F 3 "" H 5950 5750 50  0001 C CNN
-	1    5950 5750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5950 5450 5950 5750
 Wire Wire Line
@@ -762,17 +688,6 @@ Wire Wire Line
 	9850 5150 9850 5300
 Wire Wire Line
 	10250 5300 10250 5150
-$Comp
-L power:GND #PWR0118
-U 1 1 602F530C
-P 10250 5750
-F 0 "#PWR0118" H 10250 5500 50  0001 C CNN
-F 1 "GND" H 10255 5577 50  0000 C CNN
-F 2 "" H 10250 5750 50  0001 C CNN
-F 3 "" H 10250 5750 50  0001 C CNN
-	1    10250 5750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9850 5500 9850 5650
 Wire Wire Line
@@ -797,17 +712,6 @@ Wire Wire Line
 	10600 5650 10600 5500
 Wire Wire Line
 	8900 5400 8900 5150
-$Comp
-L power:GND #PWR0119
-U 1 1 602F5339
-P 8900 5750
-F 0 "#PWR0119" H 8900 5500 50  0001 C CNN
-F 1 "GND" H 8905 5577 50  0000 C CNN
-F 2 "" H 8900 5750 50  0001 C CNN
-F 3 "" H 8900 5750 50  0001 C CNN
-	1    8900 5750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8900 5600 8900 5750
 Wire Wire Line
@@ -818,28 +722,6 @@ Wire Wire Line
 	8150 5350 8450 5350
 Wire Wire Line
 	8450 5350 8450 5400
-$Comp
-L power:GND #PWR0121
-U 1 1 602F5386
-P 8450 5750
-F 0 "#PWR0121" H 8450 5500 50  0001 C CNN
-F 1 "GND" H 8455 5577 50  0000 C CNN
-F 2 "" H 8450 5750 50  0001 C CNN
-F 3 "" H 8450 5750 50  0001 C CNN
-	1    8450 5750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0122
-U 1 1 602F5390
-P 8150 5750
-F 0 "#PWR0122" H 8150 5500 50  0001 C CNN
-F 1 "GND" H 8155 5577 50  0000 C CNN
-F 2 "" H 8150 5750 50  0001 C CNN
-F 3 "" H 8150 5750 50  0001 C CNN
-	1    8150 5750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8450 5600 8450 5750
 Connection ~ 8900 5150
@@ -1014,17 +896,6 @@ Wire Wire Line
 	8900 4100 9050 4100
 Wire Wire Line
 	8500 4100 8500 4250
-$Comp
-L power:GND #PWR0117
-U 1 1 5FCDC3C3
-P 8500 4250
-F 0 "#PWR0117" H 8500 4000 50  0001 C CNN
-F 1 "GND" H 8505 4077 50  0000 C CNN
-F 2 "" H 8500 4250 50  0001 C CNN
-F 3 "" H 8500 4250 50  0001 C CNN
-	1    8500 4250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8700 4100 8500 4100
 Connection ~ 9050 4100
@@ -1060,7 +931,7 @@ Wire Wire Line
 Connection ~ 5100 5100
 $Comp
 L dmp3028lsd:DMP3028LSD Q701
-U 1 1 5FE4CE64
+U 2 1 5FE4CE64
 P 4850 1700
 F 0 "Q701" H 5088 1771 50  0000 L CNN
 F 1 "DMP3028LSD" H 5088 1680 50  0000 L CNN
@@ -1075,7 +946,7 @@ F 9 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMP3028LSD-13?qs=%2
 F 10 "DMP3028LSD-13 " H 4850 1700 50  0001 C CNN "Mouser_ref"
 F 11 "-" H 4850 1700 50  0001 C CNN "RS_link"
 F 12 "-" H 4850 1700 50  0001 C CNN "RS_ref"
-	1    4850 1700
+	2    4850 1700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1100,26 +971,6 @@ F 3 "" H 4600 2850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4600 2850 4600 2400
-$Comp
-L dmn3018ssd:DMN3018SSD Q702
-U 1 1 602EF05D
-P 4500 2200
-F 0 "Q702" H 4400 1950 50  0000 L CNN
-F 1 "DMN3018SSD" H 4050 1850 50  0000 L CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 4700 2125 50  0001 L CNN
-F 3 "https://www.diodes.com/assets/Datasheets/DMN3018SSD.pdf" H 4500 2200 50  0001 C CNN
-F 4 "https://octopart.com/dmn3018ssd-13-diodes+inc.-26472698?r=sp" H 4500 2200 50  0001 C CNN "Octopart_link"
-F 5 "-" H 4500 2200 50  0001 C CNN "Farnell_link"
-F 6 "-" H 4500 2200 50  0001 C CNN "Farnell_ref"
-F 7 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMN3018SSD-13_C155277.html" H 4500 2200 50  0001 C CNN "LCSC_link"
-F 8 "C155277" H 4500 2200 50  0001 C CNN "LCSC_ref"
-F 9 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMN3018SSD-13?qs=%2Fha2pyFaduhiKtoBktzbgyUAHZPSS%252B8%252Bk9vZNvppSquz1WfnqvfRKg%3D%3D" H 4500 2200 50  0001 C CNN "Mouser_link"
-F 10 "621-DMN3018SSD-13 " H 4500 2200 50  0001 C CNN "Mouser_ref"
-F 11 "https://fr.rs-online.com/web/p/transistors-mosfet/7904592/" H 4500 2200 50  0001 C CNN "RS_link"
-F 12 " 790-4592" H 4500 2200 50  0001 C CNN "RS_ref"
-	1    4500 2200
-	1    0    0    -1  
-$EndComp
 $Comp
 L dmn3018ssd:DMN3018SSD Q702
 U 2 1 602FE13E
@@ -1210,13 +1061,7 @@ Wire Notes Line
 Wire Notes Line
 	650  4200 3300 4200
 Wire Wire Line
-	4350 4300 3550 4300
-Connection ~ 4350 4300
-Wire Wire Line
-	5000 4400 5000 4300
-Wire Wire Line
-	5000 4300 4900 4300
-Connection ~ 4900 4300
+	4950 4800 4150 4800
 Wire Wire Line
 	1700 2800 2450 2800
 Wire Wire Line
@@ -1246,17 +1091,8 @@ Wire Wire Line
 Wire Wire Line
 	4600 1700 4650 1700
 Wire Wire Line
-	4550 1950 4550 1850
-Wire Wire Line
-	4550 1850 4600 1850
-Wire Wire Line
-	4650 1850 4650 1950
-Wire Wire Line
-	4600 1700 4600 1850
+	4600 1700 4600 2000
 Connection ~ 4600 1700
-Connection ~ 4600 1850
-Wire Wire Line
-	4600 1850 4650 1850
 Text Label 3700 1650 2    50   ~ 0
 INT
 $Comp
@@ -1294,4 +1130,134 @@ Wire Wire Line
 	3800 2200 3700 2200
 Wire Wire Line
 	3800 1650 3700 1650
+$Comp
+L power:GND1 #PWR?
+U 1 1 5FC36FEC
+P 5300 5750
+F 0 "#PWR?" H 5300 5500 50  0001 C CNN
+F 1 "GND1" H 5305 5577 50  0000 C CNN
+F 2 "" H 5300 5750 50  0001 C CNN
+F 3 "" H 5300 5750 50  0001 C CNN
+	1    5300 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND1 #PWR?
+U 1 1 5FC377FA
+P 5950 5750
+F 0 "#PWR?" H 5950 5500 50  0001 C CNN
+F 1 "GND1" H 5955 5577 50  0000 C CNN
+F 2 "" H 5950 5750 50  0001 C CNN
+F 3 "" H 5950 5750 50  0001 C CNN
+	1    5950 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND1 #PWR?
+U 1 1 5FC37A05
+P 6450 5750
+F 0 "#PWR?" H 6450 5500 50  0001 C CNN
+F 1 "GND1" H 6455 5577 50  0000 C CNN
+F 2 "" H 6450 5750 50  0001 C CNN
+F 3 "" H 6450 5750 50  0001 C CNN
+	1    6450 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND1 #PWR?
+U 1 1 5FC37B2C
+P 8150 5750
+F 0 "#PWR?" H 8150 5500 50  0001 C CNN
+F 1 "GND1" H 8155 5577 50  0000 C CNN
+F 2 "" H 8150 5750 50  0001 C CNN
+F 3 "" H 8150 5750 50  0001 C CNN
+	1    8150 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND1 #PWR?
+U 1 1 5FC37E9E
+P 8450 5750
+F 0 "#PWR?" H 8450 5500 50  0001 C CNN
+F 1 "GND1" H 8455 5577 50  0000 C CNN
+F 2 "" H 8450 5750 50  0001 C CNN
+F 3 "" H 8450 5750 50  0001 C CNN
+	1    8450 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND1 #PWR?
+U 1 1 5FC3802B
+P 8900 5750
+F 0 "#PWR?" H 8900 5500 50  0001 C CNN
+F 1 "GND1" H 8905 5577 50  0000 C CNN
+F 2 "" H 8900 5750 50  0001 C CNN
+F 3 "" H 8900 5750 50  0001 C CNN
+	1    8900 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND1 #PWR?
+U 1 1 5FC381CD
+P 10250 5750
+F 0 "#PWR?" H 10250 5500 50  0001 C CNN
+F 1 "GND1" H 10255 5577 50  0000 C CNN
+F 2 "" H 10250 5750 50  0001 C CNN
+F 3 "" H 10250 5750 50  0001 C CNN
+	1    10250 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND1 #PWR?
+U 1 1 5FC3849A
+P 8500 4250
+F 0 "#PWR?" H 8500 4000 50  0001 C CNN
+F 1 "GND1" H 8505 4077 50  0000 C CNN
+F 2 "" H 8500 4250 50  0001 C CNN
+F 3 "" H 8500 4250 50  0001 C CNN
+	1    8500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND1 #PWR?
+U 1 1 5FC585FB
+P 4700 5800
+F 0 "#PWR?" H 4700 5550 50  0001 C CNN
+F 1 "GND1" H 4705 5627 50  0000 C CNN
+F 2 "" H 4700 5800 50  0001 C CNN
+F 3 "" H 4700 5800 50  0001 C CNN
+	1    4700 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 5050 4350 5050
+Wire Wire Line
+	4700 5050 4700 5800
+Wire Wire Line
+	4950 4800 4950 5100
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5FC79029
+P 4150 5050
+F 0 "#FLG?" H 4150 5125 50  0001 C CNN
+F 1 "PWR_FLAG" V 4150 5177 50  0001 L CNN
+F 2 "" H 4150 5050 50  0001 C CNN
+F 3 "~" H 4150 5050 50  0001 C CNN
+	1    4150 5050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4150 5050 4350 5050
+Connection ~ 4350 5050
+$Comp
+L Device:Q_NMOS_DGS Q703
+U 1 1 5FCA96ED
+P 4500 2200
+F 0 "Q703" H 4704 2246 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 4704 2155 50  0000 L CNN
+F 2 "" H 4700 2300 50  0001 C CNN
+F 3 "~" H 4500 2200 50  0001 C CNN
+	1    4500 2200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
