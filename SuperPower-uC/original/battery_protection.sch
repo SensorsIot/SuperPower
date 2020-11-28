@@ -27,17 +27,6 @@ F 3 "~" H 1750 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C1
-U 1 1 5F78A1AD
-P 1750 4800
-F 0 "C1" H 1865 4846 50  0000 L CNN
-F 1 "0.1µF" H 1865 4755 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 1788 4650 50  0001 C CNN
-F 3 "~" H 1750 4800 50  0001 C CNN
-	1    1750 4800
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR05
 U 1 1 5F78A1B7
 P 3500 6000
@@ -257,6 +246,23 @@ F 9 "621-DMN2019UTS-13" H 2650 5450 50  0001 C CNN "Mouser_ref"
 F 10 "https://octopart.com/dmn2019uts-13-diodes+inc.-21789369?r=sp" H 2650 5450 50  0001 C CNN "Octopart_link"
 F 11 "-" H 2650 5450 50  0001 C CNN "RS_link"
 F 12 "-" H 2650 5450 50  0001 C CNN "RS_ref"
+F 13 "2020-11-28" H 2650 5450 50  0001 C CNN "Farnell_check_date"
+F 14 "2020-11-28" H 2650 5450 50  0001 C CNN "LCSC_check_date"
+F 15 "$0.204" H 2650 5450 50  0001 C CNN "LCSC_price_qt=1"
+F 16 "$0.153" H 2650 5450 50  0001 C CNN "LCSC_price_qt=10"
+F 17 "$0.135" H 2650 5450 50  0001 C CNN "LCSC_price_qt=100"
+F 18 "$0.144" H 2650 5450 50  0001 C CNN "LCSC_price_qt=30"
+F 19 "0" H 2650 5450 50  0001 C CNN "LCSC_stock"
+F 20 "Diodes Incorporated" H 2650 5450 50  0001 C CNN "Mfr_name"
+F 21 "DMN2019UTS-13" H 2650 5450 50  0001 C CNN "Mfr_no"
+F 22 "2020-11-28" H 2650 5450 50  0001 C CNN "Mouser_check_date"
+F 23 "$0.505" H 2650 5450 50  0001 C CNN "Mouser_price_qt=1"
+F 24 "$0.372" H 2650 5450 50  0001 C CNN "Mouser_price_qt=10"
+F 25 "$0.232" H 2650 5450 50  0001 C CNN "Mouser_price_qt=100"
+F 26 "$0.215" H 2650 5450 50  0001 C CNN "Mouser_price_qt=500"
+F 27 "10,295" H 2650 5450 50  0001 C CNN "Mouser_stock"
+F 28 "TSSOP-8" H 2650 5450 50  0001 C CNN "Package"
+F 29 "2020-11-28" H 2650 5450 50  0001 C CNN "RS_check_date"
 	1    2650 5450
 	1    0    0    -1  
 $EndComp
@@ -385,10 +391,31 @@ F 5 "-" H 2650 4650 50  0001 C CNN "Farnell_link"
 F 6 "-" H 2650 4650 50  0001 C CNN "Farnell_ref"
 F 7 "https://lcsc.com/product-detail/PMIC-Battery-Management_Diodes-Incorporated-AP9101CK6-AYTRG1_C507889.html" H 2650 4650 50  0001 C CNN "LCSC_link"
 F 8 "C507889" H 2650 4650 50  0001 C CNN "LCSC_ref"
-F 9 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/AP9101CK6-AYTRG1?qs=%2Fha2pyFaduj314vgBnd2FEjzur%252BdRnlg22EVpjIcgVi4TUljUlcE2A%3D%3D" H 2650 5199 50  0001 C CNN "Mouser_link"
-F 10 "621-AP9101CK6-AYTRG1" H 2650 5108 50  0001 C CNN "Mouser_ref"
-F 11 "-" H 2650 5017 50  0001 C CNN "RS_link"
-F 12 "-" H 2650 4926 50  0001 C CNN "RS_ref"
+F 9 "https://eu.mouser.com/ProductDetail/Diodes-Incorporated/AP9101CK6-AYTRG1?qs=%2Fha2pyFaduj314vgBnd2FEjzur%252BdRnlg22EVpjIcgVi4TUljUlcE2A%3D%3D" H 2650 4650 50  0001 C CNN "Mouser_link"
+F 10 "621-AP9101CK6-AYTRG1" H 2650 4650 50  0001 C CNN "Mouser_ref"
+F 11 "-" H 2650 4650 50  0001 C CNN "RS_link"
+F 12 "-" H 2650 4650 50  0001 C CNN "RS_ref"
+F 13 "ManWithNoName" H 2650 4650 50  0001 C CNN "Designer"
+F 14 "2020-11-28" H 2650 4650 50  0001 C CNN "Farnell_check_date"
+F 15 "2020-11-22" H 2650 4650 50  0001 C CNN "LCSC_check_date"
+F 16 "$0.503" H 2650 4650 50  0001 C CNN "LCSC_price_qt=1"
+F 17 "$0.368" H 2650 4650 50  0001 C CNN "LCSC_price_qt=10"
+F 18 "$0.308" H 2650 4650 50  0001 C CNN "LCSC_price_qt=100"
+F 19 "$0.344" H 2650 4650 50  0001 C CNN "LCSC_price_qt=30"
+F 20 "20" H 2650 4650 50  0001 C CNN "LCSC_stock"
+F 21 "Diodes Incorporated" H 2650 4650 50  0001 C CNN "Mfr_name"
+F 22 "AP9101CK6-AYTRG1 " H 2650 4650 50  0001 C CNN "Mfr_no"
+F 23 "2020-11-22" H 2650 4650 50  0001 C CNN "Mouser_check_date"
+F 24 "$0.444" H 3000 4300 50  0001 C CNN "Mouser_price_qt=1"
+F 25 "$0.326" H 2650 4650 50  0001 C CNN "Mouser_price_qt=10"
+F 26 "$0.167" H 2650 4650 50  0001 C CNN "Mouser_price_qt=100"
+F 27 "$0.125" H 2650 4650 50  0001 C CNN "Mouser_price_qt=1000"
+F 28 "3127" H 2650 4650 50  0001 C CNN "Mouser_stock"
+F 29 "SOT23-6" H 3000 4400 50  0001 C CNN "Package"
+F 30 "2020-11-28" H 2650 4650 50  0001 C CNN "RS_check_date"
+F 31 "2020-11-22" H 2650 4650 50  0001 C CNN "Release_date"
+F 32 "1.00" H 2650 4650 50  0001 C CNN "Release_version"
+F 33 "TO_CHECK" H 2650 4650 50  0001 C CNN "Status"
 	1    2650 4650
 	1    0    0    -1  
 $EndComp
@@ -455,4 +482,57 @@ Wire Notes Line
 	6700 3400 6700 6600
 Wire Notes Line
 	1100 3400 1100 6600
+$Comp
+L cc0603jrx7r9bb104:CC0603JRX7R9BB104 C1
+U 1 1 5FC29D4D
+P 1750 4800
+F 0 "C1" H 1865 4982 50  0000 L CNN
+F 1 "CC0603JRX7R9BB104" H 1775 4700 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1788 4650 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 1750 4800 50  0001 C CNN
+F 4 "Yageo" H 1750 4800 50  0001 C CNN "Mfr_name"
+F 5 "CC0603JRX7R9BB104" H 1750 4800 50  0001 C CNN "Mfr_no"
+F 6 "0603" H 1865 4891 50  0000 L CNN "Package"
+F 7 "X7R" H 1865 4800 50  0000 L CNN "Dielectric"
+F 8 "50V" H 1865 4709 50  0000 L CNN "Voltage"
+F 9 "https://octopart.com/cc0603jrx7r9bb104-yageo-12885108?r=sp" H 1750 4800 50  0001 C CNN "Octopart_link"
+F 10 "https://fr.farnell.com/yageo/cc0603jrx7r9bb104/condensateur-0-1uf-50v-mlcc-0603/dp/3369214?st=CC0603JRX7R9BB104" H 1750 4800 50  0001 C CNN "Farnell_link"
+F 11 "3369214" H 1750 4800 50  0001 C CNN "Farnell_ref"
+F 12 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_YAGEO-CC0603JRX7R9BB104_C91183.html" H 1750 4800 50  0001 C CNN "LCSC_link"
+F 13 "C91183" H 1750 4800 50  0001 C CNN "LCSC_ref"
+F 14 "119,500" H 1750 4800 50  0001 C CNN "LCSC_stock"
+F 15 "2,870" H 1750 4800 50  0001 C CNN "Farnell_stock"
+F 16 "2020-11-27" H 1750 4800 50  0001 C CNN "Farnell_check_date"
+F 17 "2020-11-27" H 1750 4800 50  0001 C CNN "LCSC_check_date"
+F 18 "$0.0093" H 1750 4800 50  0001 C CNN "LCSC_price_qt=50"
+F 19 "0.0475€" H 1750 4800 50  0001 C CNN "Farnell_price_qt=10"
+F 20 "$0.0069" H 1750 4800 50  0001 C CNN "LCSC_price_qt=500"
+F 21 "$0.0065" H 1750 4800 50  0001 C CNN "LCSC_price_qt=1500"
+F 22 "$0.0061" H 1750 4800 50  0001 C CNN "LCSC_price_qt=5000"
+F 23 "0.0309€" H 1750 4800 50  0001 C CNN "Farnell_price_qt=100"
+F 24 "0.0221€" H 1750 4800 50  0001 C CNN "Farnell_price_qt=500"
+F 25 "0.0155€" H 1750 4800 50  0001 C CNN "Farnell_price_qt=1000"
+F 26 "https://eu.mouser.com/ProductDetail/Yageo/CC0603JRX7R9BB104?qs=%2Fha2pyFaduiZbois2HzNxVdO93thVqADUWwLeer1tjY3NrWwFx3PGQ%3D%3D" H 1750 4800 50  0001 C CNN "Mouser_link"
+F 27 "603-CC603JRX7R9BB104 " H 1750 4800 50  0001 C CNN "Mouser_ref"
+F 28 "2020-11-27" H 1750 4800 50  0001 C CNN "Mouser_check_date"
+F 29 "$0.111" H 1750 4800 50  0001 C CNN "Mouser_price_qt=1"
+F 30 "10,249,855 " H 1750 4800 50  0001 C CNN "Mouser_stock"
+F 31 "$0.065" H 1750 4800 50  0001 C CNN "Mouser_price_qt=10"
+F 32 "$0.025" H 1750 4800 50  0001 C CNN "Mouser_price_qt=100"
+F 33 "$0.020" H 1750 4800 50  0001 C CNN "Mouser_price_qt=1000"
+F 34 "https://fr.rs-online.com/web/p/condensateurs-ceramique-multicouches/2006519/" H 1750 4800 50  0001 C CNN "RS_link"
+F 35 "200-6519" H 1750 4800 50  0001 C CNN "RS_ref"
+F 36 "2020-11-27" H 1750 4800 50  0001 C CNN "RS_check_date"
+F 37 "1,800" H 1750 4800 50  0001 C CNN "RS_stock"
+F 38 "0.025€" H 1750 4800 50  0001 C CNN "RS_price_qt=200"
+F 39 "0.021€" H 1750 4800 50  0001 C CNN "RS_price_qt=1000"
+F 40 "0.017€" H 1750 4800 50  0001 C CNN "RS_price_qt=2000"
+F 41 "TO_CHECK" H 1750 4800 50  0001 C CNN "Status"
+F 42 "1.00" H 1750 4800 50  0001 C CNN "Release_version"
+F 43 "2020-11-27" H 1750 4800 50  0001 C CNN "Release_date"
+F 44 "ManWithNoName" H 1750 4800 50  0001 C CNN "Designer"
+F 45 "0.1µF" H 1865 4618 50  0000 L CNN "Cap_value"
+	1    1750 4800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

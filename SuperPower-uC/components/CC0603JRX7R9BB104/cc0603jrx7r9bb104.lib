@@ -1,0 +1,64 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# CC0603JRX7R9BB104
+#
+DEF CC0603JRX7R9BB104 C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "CC0603JRX7R9BB104" 25 -100 50 H I L CNN
+F2 "Capacitor_SMD:C_0805_2012Metric" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "Yageo" 0 0 50 H I C CNN "Mfr_name"
+F5 "CC0603JRX7R9BB104" 0 0 50 H I C CNN "Mfr_no"
+F6 "0603" 125 -175 50 H V C CNN "Package"
+F7 "X7R" 325 -175 50 H V C CNN "Dielectric"
+F8 "50V" 500 -175 50 H V C CNN "Voltage"
+F9 "https://octopart.com/cc0603jrx7r9bb104-yageo-12885108?r=sp" 0 0 50 H I C CNN "Octopart_link"
+F10 "https://fr.farnell.com/yageo/cc0603jrx7r9bb104/condensateur-0-1uf-50v-mlcc-0603/dp/3369214?st=CC0603JRX7R9BB104" 0 0 50 H I C CNN "Farnell_link"
+F11 "3369214" 0 0 50 H I C CNN "Farnell_ref"
+F12 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_YAGEO-CC0603JRX7R9BB104_C91183.html" 0 0 50 H I C CNN "LCSC_link"
+F13 "C91183" 0 0 50 H I C CNN "LCSC_ref"
+F14 "119,500" 0 0 50 H I C CNN "LCSC_stock"
+F15 "2,870" 0 0 50 H I C CNN "Farnell_stock"
+F16 "2020-11-27" 0 0 50 H I C CNN "Farnell_check_date"
+F17 "2020-11-27" 0 0 50 H I C CNN "LCSC_check_date"
+F18 "$0.0093" 0 0 50 H I C CNN "LCSC_price_qt=50"
+F19 "0.0475€" 0 0 50 H I C CNN "Farnell_price_qt=10"
+F20 "$0.0069" 0 0 50 H I C CNN "LCSC_price_qt=500"
+F21 "$0.0065" 0 0 50 H I C CNN "LCSC_price_qt=1500"
+F22 "$0.0061" 0 0 50 H I C CNN "LCSC_price_qt=5000"
+F23 "0.0309€" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F24 "0.0221€" 0 0 50 H I C CNN "Farnell_price_qt=500"
+F25 "0.0155€" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F26 "https://eu.mouser.com/ProductDetail/Yageo/CC0603JRX7R9BB104?qs=%2Fha2pyFaduiZbois2HzNxVdO93thVqADUWwLeer1tjY3NrWwFx3PGQ%3D%3D" 0 0 50 H I C CNN "Mouser_link"
+F27 "603-CC603JRX7R9BB104 " 0 0 50 H I C CNN "Mouser_ref"
+F28 "2020-11-27" 0 0 50 H I C CNN "Mouser_check_date"
+F29 "$0.111" 0 0 50 H I C CNN "Mouser_price_qt=1"
+F30 "10,249,855 " 0 0 50 H I C CNN "Mouser_stock"
+F31 "$0.065" 0 0 50 H I C CNN "Mouser_price_qt=10"
+F32 "$0.025" 0 0 50 H I C CNN "Mouser_price_qt=100"
+F33 "$0.020" 0 0 50 H I C CNN "Mouser_price_qt=1000"
+F34 "https://fr.rs-online.com/web/p/condensateurs-ceramique-multicouches/2006519/" 0 0 50 H I C CNN "RS_link"
+F35 "200-6519" 0 0 50 H I C CNN "RS_ref"
+F36 "2020-11-27" 0 0 50 H I C CNN "RS_check_date"
+F37 "1,800" 0 0 50 H I C CNN "RS_stock"
+F38 "0.025€" 0 0 50 H I C CNN "RS_price_qt=200"
+F39 "0.021€" 0 0 50 H I C CNN "RS_price_qt=1000"
+F40 "0.017€" 0 0 50 H I C CNN "RS_price_qt=2000"
+F41 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F42 "1.00" 0 0 50 H I C CNN "Release_version"
+F43 "2020-11-27" 0 0 50 H I C CNN "Release_date"
+F44 "ManWithNoName" 0 0 50 H I C CNN "Designer"
+F45 "0.1µF" 125 -100 50 H V C CNN "Cap_value"
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
