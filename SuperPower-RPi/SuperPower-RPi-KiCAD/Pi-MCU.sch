@@ -120,42 +120,13 @@ F 3 "" H 11700 7150 50  0001 C CNN
 	1    11700 7150
 	1    0    0    -1  
 $EndComp
-Text HLabel 12550 6150 2    50   BiDi ~ 0
+Text HLabel 12650 6150 2    50   BiDi ~ 0
 SDA_1
-Text HLabel 12550 6350 2    50   BiDi ~ 0
+Text HLabel 12650 6350 2    50   BiDi ~ 0
 SCL_1
-$Comp
-L power:+3.3V #PWR027
-U 1 1 5FA2FF44
-P 13150 6350
-F 0 "#PWR027" H 13150 6200 50  0001 C CNN
-F 1 "+3.3V" H 13165 6523 50  0000 C CNN
-F 2 "" H 13150 6350 50  0001 C CNN
-F 3 "" H 13150 6350 50  0001 C CNN
-	1    13150 6350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R15
-U 1 1 5FA305E2
-P 13150 6500
-F 0 "R15" H 13209 6546 50  0000 L CNN
-F 1 "DNP" H 13209 6455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 13150 6500 50  0001 C CNN
-F 3 "~" H 13150 6500 50  0001 C CNN
-	1    13150 6500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13150 6400 13150 6350
-Wire Wire Line
-	13150 6650 13150 6600
-Wire Wire Line
-	13150 6650 13400 6650
-Connection ~ 13150 6650
 Wire Wire Line
 	11700 7050 11700 7150
-Text HLabel 12550 6250 2    50   BiDi ~ 0
+Text HLabel 12650 6250 2    50   BiDi ~ 0
 GPIO0
 Text Label 5300 7000 2    50   ~ 0
 SWDIO
@@ -497,8 +468,6 @@ Text Notes 13100 8200 0    50   ~ 0
 ATTiny Programming\nVia UPDI
 Text Label 13050 7600 0    50   ~ 0
 nRESET
-Text Label 13400 6650 0    50   ~ 0
-nRESET
 $Comp
 L Device:R_Small R9
 U 1 1 5FA24ECE
@@ -531,7 +500,7 @@ Connection ~ 2800 5900
 Wire Wire Line
 	3200 7300 3450 7300
 Wire Wire Line
-	12550 6250 12300 6250
+	12650 6250 12300 6250
 NoConn ~ 4850 7400
 NoConn ~ 4850 7500
 NoConn ~ 4850 7600
@@ -759,13 +728,10 @@ Wire Wire Line
 Text HLabel 9500 900  0    50   Input ~ 0
 nRESET_Buf
 Wire Wire Line
-	12550 6350 12300 6350
+	12650 6350 12300 6350
 Wire Wire Line
-	12550 6150 12300 6150
-Wire Wire Line
-	12300 6650 13150 6650
+	12650 6150 12300 6150
 NoConn ~ 12300 6550
-NoConn ~ 12300 6450
 Text Notes 5650 10900 0    50   ~ 0
 Voltage divider + diode for\n5v_RPI measurement
 Text HLabel 2250 5900 0    50   Input ~ 0
@@ -1392,4 +1358,88 @@ Wire Wire Line
 	5100 5800 4850 5800
 Wire Wire Line
 	5300 5800 5400 5800
+$Comp
+L Device:LED D?
+U 1 1 5FE31E47
+P 14000 5800
+AR Path="/5F6AC481/5FE31E47" Ref="D?"  Part="1" 
+AR Path="/5F6AC872/5FE31E47" Ref="D?"  Part="1" 
+F 0 "D?" V 14039 5682 50  0000 R CNN
+F 1 "DNP" V 13948 5682 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 14000 5800 50  0001 C CNN
+F 3 "~" H 14000 5800 50  0001 C CNN
+	1    14000 5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FE31E4D
+P 14000 5500
+AR Path="/5F6AC481/5FE31E4D" Ref="R?"  Part="1" 
+AR Path="/5F6AC872/5FE31E4D" Ref="R?"  Part="1" 
+F 0 "R?" H 13941 5454 50  0000 R CNN
+F 1 "DNP" H 13941 5545 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 14000 5500 50  0001 C CNN
+F 3 "~" H 14000 5500 50  0001 C CNN
+	1    14000 5500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	14000 5650 14000 5600
+Wire Wire Line
+	12300 6650 13150 6650
+Text Label 13400 6650 0    50   ~ 0
+nRESET
+Connection ~ 13150 6650
+Wire Wire Line
+	13150 6650 13400 6650
+Wire Wire Line
+	13150 6650 13150 6600
+Wire Wire Line
+	13150 6400 13150 6350
+$Comp
+L Device:R_Small R15
+U 1 1 5FA305E2
+P 13150 6500
+F 0 "R15" H 13209 6546 50  0000 L CNN
+F 1 "DNP" H 13209 6455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 13150 6500 50  0001 C CNN
+F 3 "~" H 13150 6500 50  0001 C CNN
+	1    13150 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR027
+U 1 1 5FA2FF44
+P 13150 6350
+F 0 "#PWR027" H 13150 6200 50  0001 C CNN
+F 1 "+3.3V" H 13165 6523 50  0000 C CNN
+F 2 "" H 13150 6350 50  0001 C CNN
+F 3 "" H 13150 6350 50  0001 C CNN
+	1    13150 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12300 6450 12650 6450
+Text Label 12650 6450 2    50   ~ 0
+LED0
+Text Label 13750 6150 0    50   ~ 0
+LED0
+Wire Wire Line
+	13750 6150 14000 6150
+Wire Wire Line
+	14000 6150 14000 5950
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FEA8AD1
+P 14000 5350
+F 0 "#PWR?" H 14000 5200 50  0001 C CNN
+F 1 "+3.3V" H 14015 5523 50  0000 C CNN
+F 2 "" H 14000 5350 50  0001 C CNN
+F 3 "" H 14000 5350 50  0001 C CNN
+	1    14000 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14000 5400 14000 5350
 $EndSCHEMATC
