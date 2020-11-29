@@ -255,57 +255,35 @@ $EndComp
 Wire Wire Line
 	7800 3600 7800 3500
 Wire Wire Line
-	4800 4750 4800 4650
+	4750 4750 4750 4650
 Wire Wire Line
-	4300 4750 4300 4550
-$Comp
-L Device:C C3
-U 1 1 5F759566
-P 4300 4900
-F 0 "C3" H 4415 4946 50  0000 L CNN
-F 1 "4.7µF" H 4415 4855 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 4338 4750 50  0001 C CNN
-F 3 "~" H 4300 4900 50  0001 C CNN
-	1    4300 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C4
-U 1 1 5F759C55
-P 4800 4900
-F 0 "C4" H 4915 4946 50  0000 L CNN
-F 1 "1µF" H 4915 4855 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 4838 4750 50  0001 C CNN
-F 3 "~" H 4800 4900 50  0001 C CNN
-	1    4800 4900
-	1    0    0    -1  
-$EndComp
+	4250 4750 4250 4550
 $Comp
 L power:GND #PWR012
 U 1 1 5F75A8F8
-P 4300 5150
-F 0 "#PWR012" H 4300 4900 50  0001 C CNN
-F 1 "GND" H 4305 4977 50  0000 C CNN
-F 2 "" H 4300 5150 50  0001 C CNN
-F 3 "" H 4300 5150 50  0001 C CNN
-	1    4300 5150
+P 4250 5150
+F 0 "#PWR012" H 4250 4900 50  0001 C CNN
+F 1 "GND" H 4255 4977 50  0000 C CNN
+F 2 "" H 4250 5150 50  0001 C CNN
+F 3 "" H 4250 5150 50  0001 C CNN
+	1    4250 5150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR013
 U 1 1 5F75ACE4
-P 4800 5150
-F 0 "#PWR013" H 4800 4900 50  0001 C CNN
-F 1 "GND" H 4805 4977 50  0000 C CNN
-F 2 "" H 4800 5150 50  0001 C CNN
-F 3 "" H 4800 5150 50  0001 C CNN
-	1    4800 5150
+P 4750 5150
+F 0 "#PWR013" H 4750 4900 50  0001 C CNN
+F 1 "GND" H 4755 4977 50  0000 C CNN
+F 2 "" H 4750 5150 50  0001 C CNN
+F 3 "" H 4750 5150 50  0001 C CNN
+	1    4750 5150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4300 5150 4300 5050
+	4250 5150 4250 5050
 Wire Wire Line
-	4800 5150 4800 5050
+	4750 5150 4750 5050
 Text Notes 6700 4200 0    50   ~ 0
 RsnsB
 Text Notes 4600 2950 0    50   ~ 0
@@ -327,13 +305,13 @@ Text Notes 4050 6950 0    50   ~ 0
 Text Notes 8800 2900 0    50   ~ 0
 Inductor common values :\n- 4.7uH -> Vin_max=23.5V @Fsw=1.5MHz\n- 6.8uH -> Vin_max=34V @Fsw=1.5MHz
 Wire Wire Line
-	4800 4650 4650 4650
+	4750 4650 4600 4650
 Wire Wire Line
-	4650 4650 4650 5400
+	4600 4650 4600 5400
 Wire Wire Line
-	4800 4650 5000 4650
-Connection ~ 4800 4650
-Connection ~ 4300 4550
+	4750 4650 5000 4650
+Connection ~ 4750 4650
+Connection ~ 4250 4550
 Wire Wire Line
 	3750 5400 3750 4750
 $Comp
@@ -354,14 +332,14 @@ Wire Wire Line
 Wire Wire Line
 	3750 4400 3750 4250
 Wire Wire Line
-	4300 4550 4500 4550
+	4250 4550 4500 4550
 Wire Wire Line
 	3750 4250 5000 4250
 Text Label 4600 4250 0    50   ~ 0
 CELLS0
 Text Label 4600 4350 0    50   ~ 0
 CELLS1
-Text Label 4000 4550 0    50   ~ 0
+Text Label 3950 4550 0    50   ~ 0
 INTVcc
 Text Label 3850 5400 0    50   ~ 0
 VCC2P5
@@ -916,9 +894,9 @@ Fosc(MHz) = 94/Rt(kOhm)
 Text Notes 8600 3200 0    79   Italic 0
 L(µH) = 0.3xVin(max)/Fosc(MHz)
 Wire Wire Line
-	3750 5400 4650 5400
+	3750 5400 4600 5400
 Wire Wire Line
-	3950 4550 4300 4550
+	3950 4550 4250 4550
 Wire Wire Line
 	4500 4350 4500 4550
 Connection ~ 4500 4550
@@ -1169,6 +1147,111 @@ F 43 "1.00" H 3450 3050 50  0001 C CNN "Release_version"
 F 44 "2020-11-27" H 3450 3050 50  0001 C CNN "Release_date"
 F 45 "ManWithNoName" H 3450 3050 50  0001 C CNN "Designer"
 	1    3450 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L cl10b105ko8nnnc:CL10B105KO8NNNC C4
+U 1 1 5FC43D5A
+P 4750 4900
+F 0 "C4" H 4865 5082 50  0000 L CNN
+F 1 "CL10B105KO8NNNC" H 4775 4800 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4788 4750 50  0001 C CNN
+F 3 "" H 4750 4900 50  0001 C CNN
+F 4 "Samsung" H 4750 4900 50  0001 C CNN "Mfr_name"
+F 5 "CL10B105KO8NNNC" H 4750 4900 50  0001 C CNN "Mfr_no"
+F 6 "1µF" H 4865 4991 50  0000 L CNN "Cap_value"
+F 7 "0603" H 4865 4900 50  0000 L CNN "Package"
+F 8 "X7R" H 4865 4809 50  0000 L CNN "Dielectric"
+F 9 "16V" H 4865 4718 50  0000 L CNN "Voltage"
+F 10 "https://octopart.com/cl10b105ko8nnnc-samsung-19018973?r=sp" H 4750 4900 50  0001 C CNN "Octopart_link"
+F 11 "https://fr.farnell.com/samsung-electro-mechanics/cl10b105ko8nnnc/condensateur-1uf-16v-mlcc-0603/dp/3013416?st=CL10B105KO8NNNC" H 4750 4900 50  0001 C CNN "Farnell_link"
+F 12 "3013416" H 4750 4900 50  0001 C CNN "Farnell_ref"
+F 13 "0,0348 €" H 4750 4900 50  0001 C CNN "Farnell_price_qt=10"
+F 14 "0,0282 €" H 4750 4900 50  0001 C CNN "Farnell_price_qt=100"
+F 15 "0,0189 €" H 4750 4900 50  0001 C CNN "Farnell_price_qt=500"
+F 16 "0,014 €" H 4750 4900 50  0001 C CNN "Farnell_price_qt=1000"
+F 17 "2020-11-29" H 4750 4900 50  0001 C CNN "Farnell_check_date"
+F 18 "8,899" H 4750 4900 50  0001 C CNN "Farnell_stock"
+F 19 "2020-11-29" H 4750 4900 50  0001 C CNN "LCSC_check_date"
+F 20 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL10B105KO8NNNC_1uF-105-10-16V_C59782.html" H 4750 4900 50  0001 C CNN "LCSC_link"
+F 21 "C59782" H 4750 4900 50  0001 C CNN "LCSC_ref"
+F 22 "$0.0051" H 4750 4900 50  0001 C CNN "LCSC_price_qt=50"
+F 23 "$0.0037" H 4750 4900 50  0001 C CNN "LCSC_price_qt=500"
+F 24 "$0.0034" H 4750 4900 50  0001 C CNN "LCSC_price_qt=1500"
+F 25 "$0.0032" H 4750 4900 50  0001 C CNN "LCSC_price_qt=5000"
+F 26 "521,550" H 4750 4900 50  0001 C CNN "LCSC_stock"
+F 27 "https://eu.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL10B105KO8NNNC?qs=%2Fha2pyFaduieHDAu2oFb63CEYjc5CYz5gBw28wXw4psj1CqKhO2V6Q%3D%3D" H 4750 4900 50  0001 C CNN "Mouser_link"
+F 28 "187-CL10B105KO8NNNC" H 4750 4900 50  0001 C CNN "Mouser_ref"
+F 29 "2020-11-29" H 4750 4900 50  0001 C CNN "Mouser_check_date"
+F 30 "$0.101 " H 4750 4900 50  0001 C CNN "Mouser_price_qt=1"
+F 31 "$0.05" H 4750 4900 50  0001 C CNN "Mouser_price_qt=10"
+F 32 "$0.023" H 4750 4900 50  0001 C CNN "Mouser_price_qt=100"
+F 33 "$0.015" H 4750 4900 50  0001 C CNN "Mouser_price_qt=500"
+F 34 "579,557" H 4750 4900 50  0001 C CNN "Mouser_stock"
+F 35 "https://fr.rs-online.com/web/p/condensateurs-ceramique-multicouches/7664787/?sra=pmpn" H 4750 4900 50  0001 C CNN "RS_link"
+F 36 "766-4787" H 4750 4900 50  0001 C CNN "RS_ref"
+F 37 "2020-11-29" H 4750 4900 50  0001 C CNN "RS_check_date"
+F 38 "0,008 €" H 4750 4900 50  0001 C CNN "RS_price_qt=4000"
+F 39 "0,008 €" H 4750 4900 50  0001 C CNN "RS_price_qt=8000"
+F 40 "248,000" H 4750 4900 50  0001 C CNN "RS_stock"
+F 41 "TO_CHECK" H 4750 4900 50  0001 C CNN "Status"
+F 42 "1.00" H 4750 4900 50  0001 C CNN "Release_version"
+F 43 "2020-11-29" H 4750 4900 50  0001 C CNN "Release_date"
+F 44 "ManWithNoName" H 4750 4900 50  0001 C CNN "Designer"
+	1    4750 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L tmk212ab7475kg-t:TMK212AB7475KG-T C3
+U 1 1 5FC71278
+P 4250 4900
+F 0 "C3" H 4365 5082 50  0000 L CNN
+F 1 "TMK212AB7475KG-T" H 4275 4800 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4288 4750 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/396/mlcc02_e-1307760.pdf" H 4250 4900 50  0001 C CNN
+F 4 "Taiyo Yuden" H 4250 4900 50  0001 C CNN "Mfr_name"
+F 5 "TMK212AB7475KG-T" H 4250 4900 50  0001 C CNN "Mfr_no"
+F 6 "4.7µF" H 4365 4991 50  0000 L CNN "Cap_value"
+F 7 "0805" H 4365 4900 50  0000 L CNN "Package"
+F 8 "X7R" H 4365 4809 50  0000 L CNN "Dielectric"
+F 9 "25V" H 4365 4718 50  0000 L CNN "Voltage"
+F 10 "https://octopart.com/tmk212ab7475kg-t-taiyo+yuden-20363790?r=sp" H 4250 4900 50  0001 C CNN "Octopart_link"
+F 11 "https://fr.farnell.com/taiyo-yuden/tmk212ab7475kg-t/ceramic-capacitor-4-7uf-25v-x7r/dp/2779199?scope=partnumberlookahead&ost=TMK212AB7475KG-T&searchref=searchlookahead&exaMfpn=true" H 4250 4900 50  0001 C CNN "Farnell_link"
+F 12 "2779199" H 4250 4900 50  0001 C CNN "Farnell_ref"
+F 13 "2020-11-29" H 4250 4900 50  0001 C CNN "Farnell_check_date"
+F 14 "0,0625 €" H 4250 4900 50  0001 C CNN "Farnell_price_qt=3000"
+F 15 "0,0529 €" H 4250 4900 50  0001 C CNN "Farnell_price_qt=6000"
+F 16 "-" H 4250 4900 50  0001 C CNN "Farnell_price_qt=250"
+F 17 "-" H 4250 4900 50  0001 C CNN "Farnell_price_qt=500"
+F 18 "3,000" H 4250 4900 50  0001 C CNN "Farnell_stock"
+F 19 "https://lcsc.com/product-detail/New-Arrivals_Taiyo-Yuden-TMK212AB7475KG-T_C163186.html" H 4250 4900 50  0001 C CNN "LCSC_link"
+F 20 "C163186" H 4250 4900 50  0001 C CNN "LCSC_ref"
+F 21 "134,420" H 4250 4900 50  0001 C CNN "LCSC_stock"
+F 22 "2020-11-29" H 4250 4900 50  0001 C CNN "LCSC_check_date"
+F 23 "$0.035" H 4250 4900 50  0001 C CNN "LCSC_price_qt=20"
+F 24 "$0.0266" H 4250 4900 50  0001 C CNN "LCSC_price_qt=200"
+F 25 "$0.025" H 4250 4900 50  0001 C CNN "LCSC_price_qt=600"
+F 26 "$0.02" H 4250 4900 50  0001 C CNN "LCSC_price_qt=2000"
+F 27 "https://eu.mouser.com/ProductDetail/Taiyo-Yuden/TMK212AB7475KG-T?qs=%2Fha2pyFaduhOmvqoBXaf2AOtUPA8upoo0e72F1hCYb1lacT8UkHI0g%3D%3D" H 4250 4900 50  0001 C CNN "Mouser_link"
+F 28 "963-TMK212AB7475KG-T " H 4250 4900 50  0001 C CNN "Mouser_ref"
+F 29 "2020-11-29" H 4250 4900 50  0001 C CNN "Mouser_check_date"
+F 30 "$0.352 " H 4250 4900 50  0001 C CNN "Mouser_price_qt=1"
+F 31 "$0.245" H 4250 4900 50  0001 C CNN "Mouser_price_qt=10"
+F 32 "$0.138 " H 4250 4900 50  0001 C CNN "Mouser_price_qt=100"
+F 33 "$0.098" H 4250 4900 50  0001 C CNN "Mouser_price_qt=500"
+F 34 "289,016 " H 4250 4900 50  0001 C CNN "Mouser_stock"
+F 35 "https://fr.rs-online.com/web/p/condensateurs-ceramique-multicouches/1034141/" H 4250 4900 50  0001 C CNN "RS_link"
+F 36 "103-4141" H 4250 4900 50  0001 C CNN "RS_ref"
+F 37 "2020-11-29" H 4250 4900 50  0001 C CNN "RS_check_date"
+F 38 "800" H 4250 4900 50  0001 C CNN "RS_stock"
+F 39 "0,118 €" H 4250 4900 50  0001 C CNN "RS_price_qt=50"
+F 40 "0,098 €" H 4250 4900 50  0001 C CNN "RS_price_qt=200"
+F 41 "0,069 €" H 4250 4900 50  0001 C CNN "RS_price_qt=800"
+F 42 "TO_CHECK" H 4250 4900 50  0001 C CNN "Status"
+F 43 "1.00" H 4250 4900 50  0001 C CNN "Release_version"
+F 44 "2020-11-29" H 4250 4900 50  0001 C CNN "Release_date"
+F 45 "ManWithNoName" H 4250 4900 50  0001 C CNN "Designer"
+	1    4250 4900
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
