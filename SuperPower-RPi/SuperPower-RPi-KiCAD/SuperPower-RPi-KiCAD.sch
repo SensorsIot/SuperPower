@@ -210,15 +210,13 @@ Wire Wire Line
 	6950 2300 6950 4100
 Wire Wire Line
 	8500 2150 8500 3650
-Text Notes 7150 5450 0    50   ~ 0
-Open Questions:\nShould we add jumper for measuring MCU current. (DONE)\nDotstar?  (Alternative to NeoPixel) Yes (DONE)\nQWIIC connector DNP? Yes (DONE)\nATTiny to Dotstar connection requires ATTiny 1614? (Stick with 85, but add dumb LED to GPIO) (DONE)\nFind overcurrent chip
 Connection ~ 8500 3650
 Wire Wire Line
 	8500 3650 9350 3650
-Text Notes 7150 5800 0    50   ~ 0
-Would be nice:\nUSB output connector to power \nAdd QWIIC to mulitple I2C busses (DONE)\n
+Text Notes 7150 5850 0    50   ~ 0
+Would be nice:\nUSB output connector to power \n
 Text Notes 7150 6100 0    50   ~ 0
-TO DO:\nMove primary I2C to I2C1. (DONE)\nAdd dumb LED to ATTiny (DONE)\nFind overcurrent IC.
+TO DO:\nFind overcurrent IC.
 Wire Wire Line
 	6550 1450 9200 1450
 Wire Wire Line
