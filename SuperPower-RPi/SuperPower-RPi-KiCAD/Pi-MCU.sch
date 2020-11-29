@@ -1448,4 +1448,6 @@ F 3 "~" H 2500 5900 50  0001 C CNN
 	1    2500 5900
 	1    0    0    -1  
 $EndComp
+Text Notes 1050 2050 0    100  ~ 0
+3.3V LDO Regulator
 $EndSCHEMATC
