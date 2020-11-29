@@ -27,19 +27,6 @@ Text Label 3500 5650 2    50   ~ 0
 D-
 Text Label 3500 5850 2    50   ~ 0
 D+
-$Comp
-L SuperPower-uC-KiCad-rescue:USB_C_Receptacle_USB2.0-Connector J7
-U 1 1 5F725D86
-P 2500 5750
-AR Path="/5F725D86" Ref="J7"  Part="1" 
-AR Path="/5F63B107/5F725D86" Ref="J7"  Part="1" 
-F 0 "J7" H 2607 6617 50  0000 C CNN
-F 1 "USB_C_Receptacle_USB2.0" H 2607 6526 50  0000 C CNN
-F 2 "" H 2650 5750 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 2650 5750 50  0001 C CNN
-	1    2500 5750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3500 5650 3200 5650
 Wire Wire Line
@@ -579,4 +566,15 @@ Wire Notes Line
 	2050 2000 550  2000
 Wire Notes Line
 	550  2000 550  550 
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J?
+U 1 1 5FC49E05
+P 2500 5750
+F 0 "J?" H 2607 6617 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 2607 6526 50  0000 C CNN
+F 2 "" H 2650 5750 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 2650 5750 50  0001 C CNN
+	1    2500 5750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
