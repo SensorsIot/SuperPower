@@ -736,17 +736,6 @@ Text Notes 5650 10900 0    50   ~ 0
 Voltage divider + diode for\n5v_RPI measurement
 Text HLabel 2250 5900 0    50   Input ~ 0
 BOOT0
-$Comp
-L Device:Jumper_NO_Small JP1
-U 1 1 5FAAD012
-P 2500 5900
-F 0 "JP1" H 2500 5800 50  0000 C CNN
-F 1 "Jumper_NO_Small" H 2500 5994 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 2500 5900 50  0001 C CNN
-F 3 "~" H 2500 5900 50  0001 C CNN
-	1    2500 5900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2600 5900 2650 5900
 Wire Wire Line
@@ -1141,34 +1130,11 @@ F 3 "" H 3000 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3950 4250 4200 4250
+	3950 4250 4050 4250
 Wire Wire Line
 	4200 4250 4200 5400
 Wire Wire Line
 	3000 4250 3000 3900
-$Comp
-L Connector_Generic:Conn_01x02 J13
-U 1 1 5FD063A3
-P 3300 4000
-F 0 "J13" V 3400 4050 50  0000 R CNN
-F 1 "DNP" V 3300 3800 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3300 4000 50  0001 C CNN
-F 3 "~" H 3300 4000 50  0001 C CNN
-	1    3300 4000
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3400 4200 3400 4250
-Connection ~ 3400 4250
-Wire Wire Line
-	3400 4250 3950 4250
-Wire Wire Line
-	3300 4200 3300 4250
-Connection ~ 3300 4250
-Wire Wire Line
-	3300 4250 3400 4250
-Wire Wire Line
-	3000 4250 3300 4250
 Wire Wire Line
 	4200 4250 4450 4250
 Connection ~ 4200 4250
@@ -1270,7 +1236,6 @@ $EndComp
 Connection ~ 4450 4250
 Wire Wire Line
 	4450 4250 4450 5000
-Connection ~ 3950 4250
 Wire Wire Line
 	3950 4250 3950 5000
 $Comp
@@ -1348,8 +1313,8 @@ L Device:Jumper_NC_Small JP4
 U 1 1 5FE09D88
 P 5200 5800
 F 0 "JP4" H 5050 5850 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 5200 5921 50  0001 C CNN
-F 2 "" H 5200 5800 50  0001 C CNN
+F 1 "NC" H 5200 5921 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 5200 5800 50  0001 C CNN
 F 3 "~" H 5200 5800 50  0001 C CNN
 	1    5200 5800
 	1    0    0    -1  
@@ -1442,4 +1407,45 @@ F 3 "" H 14650 5950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	14650 6000 14650 5950
+$Comp
+L Device:Jumper_NC_Small JP5
+U 1 1 5FF2721E
+P 3450 4250
+F 0 "JP5" H 3450 4371 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 3450 4371 50  0001 C CNN
+F 2 "SuperPower-RPi-KiCAD:PinHeader_1x02_P2.54mm_Vertical_Shorted" H 3450 4250 50  0001 C CNN
+F 3 "~" H 3450 4250 50  0001 C CNN
+	1    3450 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 4250 3000 4250
+Wire Wire Line
+	3550 4250 3950 4250
+Connection ~ 3950 4250
+$Comp
+L power:PWR_FLAG #FLG0107
+U 1 1 5FF559E5
+P 4050 4250
+F 0 "#FLG0107" H 4050 4325 50  0001 C CNN
+F 1 "PWR_FLAG" H 4050 4423 50  0001 C CNN
+F 2 "" H 4050 4250 50  0001 C CNN
+F 3 "~" H 4050 4250 50  0001 C CNN
+	1    4050 4250
+	1    0    0    -1  
+$EndComp
+Connection ~ 4050 4250
+Wire Wire Line
+	4050 4250 4200 4250
+$Comp
+L Device:Jumper_NO_Small JP1
+U 1 1 5FAAD012
+P 2500 5900
+F 0 "JP1" H 2500 5800 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 2500 5994 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 2500 5900 50  0001 C CNN
+F 3 "~" H 2500 5900 50  0001 C CNN
+	1    2500 5900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

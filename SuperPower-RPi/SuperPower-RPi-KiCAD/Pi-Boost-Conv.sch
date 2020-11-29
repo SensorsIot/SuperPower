@@ -17,8 +17,6 @@ Text HLabel 1400 3400 0    50   Input ~ 0
 Vin
 Text HLabel 10750 3400 2    50   Output ~ 0
 Vout
-Text Notes 4500 5600 0    50   ~ 0
-NOTE:\nC12:  Consider changing to 47n to re-use components.
 $Comp
 L Device:L L1
 U 1 1 5F7396FE
@@ -75,22 +73,11 @@ Wire Wire Line
 Wire Wire Line
 	6150 4000 6550 4000
 $Comp
-L Device:R R4
-U 1 1 5F749D23
-P 7000 4300
-F 0 "R4" H 7100 4250 50  0000 C CNN
-F 1 "R" H 7100 4350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6930 4300 50  0001 C CNN
-F 3 "~" H 7000 4300 50  0001 C CNN
-	1    7000 4300
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C13
 U 1 1 5F74A78E
 P 7000 4700
-F 0 "C13" H 6800 4700 50  0000 C CNN
-F 1 "C" H 6850 4800 50  0000 C CNN
+F 0 "C13" H 6800 4650 50  0000 C CNN
+F 1 "4700pF" H 6750 4750 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7038 4550 50  0001 C CNN
 F 3 "~" H 7000 4700 50  0001 C CNN
 	1    7000 4700
@@ -148,12 +135,12 @@ $EndComp
 $Comp
 L power:GND #PWR04
 U 1 1 5F75C0C7
-P 4300 4800
-F 0 "#PWR04" H 4300 4550 50  0001 C CNN
-F 1 "GND" H 4305 4627 50  0000 C CNN
-F 2 "" H 4300 4800 50  0001 C CNN
-F 3 "" H 4300 4800 50  0001 C CNN
-	1    4300 4800
+P 4200 4800
+F 0 "#PWR04" H 4200 4550 50  0001 C CNN
+F 1 "GND" H 4205 4627 50  0000 C CNN
+F 2 "" H 4200 4800 50  0001 C CNN
+F 3 "" H 4200 4800 50  0001 C CNN
+	1    4200 4800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -262,36 +249,20 @@ Wire Wire Line
 Connection ~ 1800 3400
 Text HLabel 4700 4200 0    50   Input ~ 0
 EN
-$Comp
-L Manual_Lib:TPS61088 U1
-U 1 1 5F7353AC
-P 5450 3900
-AR Path="/5F7353AC" Ref="U1"  Part="1" 
-AR Path="/5F6AC4E0/5F7353AC" Ref="U1"  Part="1" 
-F 0 "U1" H 5475 3827 50  0000 C CNN
-F 1 "TPS61088" H 5475 3736 50  0000 C CNN
-F 2 "SuperPower-RPi-KiCAD:TI_VQFN_3.5x4.5mm" H 5550 3250 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/tps61088.pdf?ts=1601341027862" H 5550 3250 50  0001 C CNN
-F 4 "296-43620-1-ND" H 5450 3900 50  0001 C CNN "Digi-Key PN"
-F 5 "Texas Instruments" H 5450 3900 50  0001 C CNN "Mfg"
-F 6 "TPS61088RHLR" H 5450 3900 50  0001 C CNN "Mfg PN"
-	1    5450 3900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3650 3800 4800 3800
 $Comp
 L Device:C C11
 U 1 1 5F73E11E
-P 4300 4650
-F 0 "C11" H 4050 4700 50  0000 L CNN
-F 1 "1.0uF" H 4000 4600 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4338 4500 50  0001 C CNN
-F 3 "~" H 4300 4650 50  0001 C CNN
-F 4 "1276-1184-1-ND" H 4300 4650 50  0001 C CNN "Digi-Key PN"
-F 5 "Samsung" H 4300 4650 50  0001 C CNN "Mfg"
-F 6 "CL10B105KA8NNNC" H 4300 4650 50  0001 C CNN "Mfg PN"
-	1    4300 4650
+P 4200 4650
+F 0 "C11" H 3950 4700 50  0000 L CNN
+F 1 "1.0uF" H 3900 4600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4238 4500 50  0001 C CNN
+F 3 "~" H 4200 4650 50  0001 C CNN
+F 4 "1276-1184-1-ND" H 4200 4650 50  0001 C CNN "Digi-Key PN"
+F 5 "Samsung" H 4200 4650 50  0001 C CNN "Mfg"
+F 6 "CL10B105KA8NNNC" H 4200 4650 50  0001 C CNN "Mfg PN"
+	1    4200 4650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -300,10 +271,7 @@ Connection ~ 3650 3400
 Wire Wire Line
 	4150 3600 4150 3400
 Wire Wire Line
-	4300 4000 4800 4000
-Wire Wire Line
-	4300 4000 4300 4500
-NoConn ~ 6150 4400
+	4200 4000 4200 4500
 Wire Wire Line
 	5450 5050 5450 4950
 Wire Wire Line
@@ -601,4 +569,50 @@ Wire Wire Line
 Connection ~ 8000 3400
 Wire Wire Line
 	8000 3400 8400 3400
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FF8C39E
+P 4700 4400
+AR Path="/5F6AC481/5FF8C39E" Ref="TP?"  Part="1" 
+AR Path="/5F6AC4E0/5FF8C39E" Ref="TP7"  Part="1" 
+F 0 "TP7" V 4700 4588 50  0000 L CNN
+F 1 "DNP" H 4758 4427 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 4900 4400 50  0001 C CNN
+F 3 "~" H 4900 4400 50  0001 C CNN
+	1    4700 4400
+	0    -1   -1   0   
+$EndComp
+Text Notes 4500 5600 0    50   ~ 0
+NOTE:\nC12:  Consider changing to 47n to re-use components.\nR4 & C13 values are taken from TPS61088 Eval Module schematic.
+$Comp
+L Manual_Lib:TPS61088 U1
+U 1 1 5F7353AC
+P 5450 3900
+AR Path="/5F7353AC" Ref="U1"  Part="1" 
+AR Path="/5F6AC4E0/5F7353AC" Ref="U1"  Part="1" 
+F 0 "U1" H 5475 3827 50  0000 C CNN
+F 1 "TPS61088" H 5475 3736 50  0000 C CNN
+F 2 "SuperPower-RPi-KiCAD:TI_VQFN_3.5x4.5mm" H 5550 3250 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/tps61088.pdf?ts=1601341027862" H 5550 3250 50  0001 C CNN
+F 4 "296-43620-1-ND" H 5450 3900 50  0001 C CNN "Digi-Key PN"
+F 5 "Texas Instruments" H 5450 3900 50  0001 C CNN "Mfg"
+F 6 "TPS61088RHLR" H 5450 3900 50  0001 C CNN "Mfg PN"
+	1    5450 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 4400 4800 4400
+Wire Wire Line
+	4200 4000 4800 4000
+$Comp
+L Device:R R4
+U 1 1 5F749D23
+P 7000 4300
+F 0 "R4" H 6900 4250 50  0000 C CNN
+F 1 "17.4k" H 6850 4350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6930 4300 50  0001 C CNN
+F 3 "~" H 7000 4300 50  0001 C CNN
+	1    7000 4300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
