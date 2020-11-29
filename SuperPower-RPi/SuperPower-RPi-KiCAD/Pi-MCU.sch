@@ -533,8 +533,6 @@ NoConn ~ 4850 7200
 NoConn ~ 4850 6700
 NoConn ~ 4850 6600
 NoConn ~ 4850 6100
-NoConn ~ 4850 6000
-NoConn ~ 4850 5900
 $Comp
 L power:GND #PWR021
 U 1 1 5FA44160
@@ -597,75 +595,62 @@ Wire Wire Line
 Connection ~ 5650 5300
 Wire Wire Line
 	5650 5300 5800 5300
-$Comp
-L Connector_Generic:Conn_01x10 J8
-U 1 1 5FB5F1C8
-P 1250 9250
-F 0 "J8" H 1168 9867 50  0000 C CNN
-F 1 "Conn_01x10" H 1168 9776 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 1250 9250 50  0001 C CNN
-F 3 "~" H 1250 9250 50  0001 C CNN
-	1    1250 9250
-	-1   0    0    -1  
-$EndComp
 Text Notes 1050 10250 0    50   ~ 0
 Temporary\nBreakout Connections
-Text Label 1900 9050 2    50   ~ 0
+Text Label 800  9600 0    50   ~ 0
 CAN1_TX
-Text Label 1900 8950 2    50   ~ 0
+Text Label 800  9500 0    50   ~ 0
 CAN1_RX
 Wire Wire Line
-	1900 8950 1450 8950
+	800  9500 1250 9500
 Wire Wire Line
-	1450 9050 1900 9050
-Text Label 1900 9250 2    50   ~ 0
+	1250 9600 800  9600
+Text Label 800  9800 0    50   ~ 0
 CAN2_TX
 Wire Wire Line
-	1900 9250 1450 9250
-Text Label 1900 9150 2    50   ~ 0
+	800  9800 1250 9800
+Text Label 800  9700 0    50   ~ 0
 CAN2_RX
 Wire Wire Line
-	1900 9150 1450 9150
-Text HLabel 1850 9350 2    50   BiDi ~ 0
+	800  9700 1250 9700
+Text HLabel 2150 9400 2    50   BiDi ~ 0
 SDA_1
-Text HLabel 1850 9450 2    50   BiDi ~ 0
+Text HLabel 2150 9500 2    50   BiDi ~ 0
 SCL_1
 Wire Wire Line
-	1850 9350 1450 9350
+	2150 9400 1750 9400
 Wire Wire Line
-	1450 9450 1850 9450
+	1750 9500 2150 9500
 $Comp
 L power:GND #PWR0111
 U 1 1 5FB7BCC0
-P 1750 9850
-F 0 "#PWR0111" H 1750 9600 50  0001 C CNN
-F 1 "GND" H 1755 9677 50  0000 C CNN
-F 2 "" H 1750 9850 50  0001 C CNN
-F 3 "" H 1750 9850 50  0001 C CNN
-	1    1750 9850
+P 2050 9900
+F 0 "#PWR0111" H 2050 9650 50  0001 C CNN
+F 1 "GND" H 2055 9727 50  0000 C CNN
+F 2 "" H 2050 9900 50  0001 C CNN
+F 3 "" H 2050 9900 50  0001 C CNN
+	1    2050 9900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1750 9850 1750 9750
+	2050 9900 2050 9800
 Wire Wire Line
-	1750 9750 1450 9750
-NoConn ~ 1450 9650
-NoConn ~ 1450 9550
+	2050 9800 1750 9800
 $Comp
 L power:+3.3V #PWR0112
 U 1 1 5FB8ECFD
-P 1650 8750
-F 0 "#PWR0112" H 1650 8600 50  0001 C CNN
-F 1 "+3.3V" H 1665 8923 50  0000 C CNN
-F 2 "" H 1650 8750 50  0001 C CNN
-F 3 "" H 1650 8750 50  0001 C CNN
-	1    1650 8750
-	1    0    0    -1  
+P 1050 9300
+F 0 "#PWR0112" H 1050 9150 50  0001 C CNN
+F 1 "+3.3V" H 1065 9473 50  0000 C CNN
+F 2 "" H 1050 9300 50  0001 C CNN
+F 3 "" H 1050 9300 50  0001 C CNN
+	1    1050 9300
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1650 8750 1650 8850
+	1050 9300 1050 9400
 Wire Wire Line
-	1650 8850 1450 8850
+	1050 9400 1250 9400
 NoConn ~ 1800 7750
 $Comp
 L power:PWR_FLAG #FLG0108
@@ -1450,4 +1435,31 @@ F 3 "~" H 2500 5900 50  0001 C CNN
 $EndComp
 Text Notes 1050 2050 0    100  ~ 0
 3.3V LDO Regulator
+Wire Wire Line
+	4850 5900 5300 5900
+Wire Wire Line
+	4850 6000 5300 6000
+Text Label 5300 6000 2    50   ~ 0
+UART_RX
+Text Label 5300 5900 2    50   ~ 0
+UART_TX
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J8
+U 1 1 5FC8BD2A
+P 1450 9600
+F 0 "J8" H 1500 9925 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 1500 9926 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 1450 9600 50  0001 C CNN
+F 3 "~" H 1450 9600 50  0001 C CNN
+	1    1450 9600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 9600 2200 9600
+Wire Wire Line
+	1750 9700 2200 9700
+Text Label 2200 9700 2    50   ~ 0
+UART_RX
+Text Label 2200 9600 2    50   ~ 0
+UART_TX
 $EndSCHEMATC

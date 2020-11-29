@@ -119,7 +119,7 @@ Vin(5V)
 NoConn ~ 5900 2300
 NoConn ~ 6000 2300
 Text Notes 1200 2500 0    50   ~ 0
-Pins to STM32:\nGPIO____ to trigger update\nGPIO____ to indicate reboot/restart
+Pins to STM32:\nGPIO5 to trigger update\nGPIO4 to indicate reboot/restart
 Text HLabel 6800 3300 2    50   BiDi ~ 0
 GPIO4
 Wire Wire Line
@@ -136,4 +136,7 @@ Wire Wire Line
 	6800 3500 6600 3500
 Wire Wire Line
 	5000 4100 4700 4100
+NoConn ~ 5000 3800
+NoConn ~ 5000 3900
+NoConn ~ 5000 4000
 $EndSCHEMATC

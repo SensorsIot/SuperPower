@@ -115,8 +115,6 @@ Wire Wire Line
 	2300 3950 3200 3950
 Wire Wire Line
 	3200 4050 2300 4050
-Text Notes 8950 900  0    50   ~ 0
-Add extra interfaces block.
 Wire Wire Line
 	5250 2250 5050 2250
 Connection ~ 5050 3650
