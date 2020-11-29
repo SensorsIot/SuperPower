@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CL10B223KB8NNNC
+D MLCC 0603 capacitor 22nF X7R 50V
+K cap capacitor x7r 0603
+$ENDCMP
+#
+#End Doc Library

@@ -878,6 +878,63 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# cl10b223kb8nnnc_CL10B223KB8NNNC
+#
+DEF cl10b223kb8nnnc_CL10B223KB8NNNC C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "cl10b223kb8nnnc_CL10B223KB8NNNC" 25 -100 50 H I L CNN
+F2 "Capacitor_SMD:C_0603_1608Metric" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "CL10B223KB8NNNC" 0 0 50 H I C CNN "Mfr_no"
+F5 "0.022µF" 125 -100 50 H V C CNN "Cap_value"
+F6 "0603" 125 -175 50 H V C CNN "Package"
+F7 "X7R" 325 -175 50 H V C CNN "Dielectric"
+F8 "50V" 500 -175 50 H V C CNN "Voltage"
+F9 "https://octopart.com/cl10b223kb8nnnc-samsung-9299376?r=sp" 0 0 50 H I C CNN "Octopart_link"
+F10 "https://fr.farnell.com/samsung-electro-mechanics/cl10b223kb8nnnc/condensateur-0-022uf-50v-mlcc/dp/3013425?st=CL10B223KB8NNNC#" 0 0 50 H I C CNN "Farnell_link"
+F11 "3013425" 0 0 50 H I C CNN "Farnell_ref"
+F12 "2020-11-29" 0 0 50 H I C CNN "Farnell_check_date"
+F13 "0,0267 €" 0 0 50 H I C CNN "Farnell_price_qt=10"
+F14 "0,0215 €" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F15 "0,0148 €" 0 0 50 H I C CNN "Farnell_price_qt=500"
+F16 "0,0112 €" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F17 "2,659" 0 0 50 H I C CNN "Farnell_stock"
+F18 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL10B223KB8NNNC_22nF-223-10-50V_C21122.html" 0 0 50 H I C CNN "LCSC_link"
+F19 "C21122" 0 0 50 H I C CNN "LCSC_ref"
+F20 "2020-11-29" 0 0 50 H I C CNN "LCSC_check_date"
+F21 "$0.0065" 0 0 50 H I C CNN "LCSC_price_qt=50"
+F22 "$0.0047" 0 0 50 H I C CNN "LCSC_price_qt=500"
+F23 "$0.0043" 0 0 50 H I C CNN "LCSC_price_qt=1500"
+F24 "$0.004" 0 0 50 H I C CNN "LCSC_price_qt=5000"
+F25 "679,900" 0 0 50 H I C CNN "LCSC_stock"
+F26 "https://eu.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL10B223KB8NNNC?qs=%2Fha2pyFadugxvmy74XdKf4%252BsCHDiFFyPnyljb4VWdZsHBz1hx7lVWg%3D%3D" 0 0 50 H I C CNN "Mouser_link"
+F27 "187-CL10B223KB8NNNC" 0 0 50 H I C CNN "Mouser_ref"
+F28 "2020-11-29" 0 0 50 H I C CNN "Mouser_check_date"
+F29 "$0.101" 0 0 50 H I C CNN "Mouser_price_qt=1"
+F30 "$0.038" 0 0 50 H I C CNN "Mouser_price_qt=10"
+F31 "$0.017" 0 0 50 H I C CNN "Mouser_price_qt=100"
+F32 "$0.012" 0 0 50 H I C CNN "Mouser_price_qt=500"
+F33 "151,796 " 0 0 50 H I C CNN "Mouser_stock"
+F34 "https://fr.rs-online.com/web/p/condensateurs-ceramique-multicouches/7665402/?sra=pmpn" 0 0 50 H I C CNN "RS_link"
+F35 "766-5402" 0 0 50 H I C CNN "RS_ref"
+F36 "2020-11-29" 0 0 50 H I C CNN "RS_check_date"
+F37 "0,006 €" 0 0 50 H I C CNN "RS_price_qt=4000"
+F38 "220,000" 0 0 50 H I C CNN "RS_stock"
+F39 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F40 "1.00" 0 0 50 H I C CNN "Release_version"
+F41 "2020-11-29" 0 0 50 H I C CNN "Release_date"
+F42 "ManWithNoName" 0 0 50 H I C CNN "Designer"
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # cl31b106kahnnne_CL31B106KAHNNNE
 #
 DEF cl31b106kahnnne_CL31B106KAHNNNE C 0 10 N Y 1 F N
@@ -1197,6 +1254,59 @@ F36 "2020-11-24" 0 0 50 H I C CNN "Release_date"
 F37 "ManWithNoName" 0 0 50 H I C CNN "Designer"
 $FPLIST
  Connector_JST:JST_PH_?2*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# jst_xh_s2b_thru_JST_XH_S2B_thru
+#
+DEF jst_xh_s2b_thru_JST_XH_S2B_thru J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "jst_xh_s2b_thru_JST_XH_S2B_thru" 0 -200 50 H V C CNN
+F2 "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "JST" 0 0 50 H I C CNN "Mfr_name"
+F5 "S2B-XH-A(LF)(SN)" 0 0 50 H I C CNN "Mfr_no"
+F6 "XH Right Angle Thru 2pins" 0 0 50 H I C CNN "Package"
+F7 "White" 0 0 50 H I C CNN "Color"
+F8 "https://octopart.com/s2b-xh-a%28lf%29%28sn%29-jst-3990369?r=sp#PriceAndStock" 0 0 50 H I C CNN "Octopart_link"
+F9 "https://fr.farnell.com/jst-japan-solderless-terminals/s2b-xh-a-lf-sn/embase-male-90-deg-2-voies/dp/1516289?ost=s2b-xh-a%28lf%29%28sn%29" 0 0 50 H I C CNN "Farnell_link"
+F10 "1516289" 0 0 50 H I C CNN "Farnell_ref"
+F11 "2020-11-24" 0 0 50 H I C CNN "Farnell_check_date"
+F12 "0.099€" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F13 "0.068€" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F14 "53048" 0 0 50 H I C CNN "Farnell_stock"
+F15 "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_JST-Sales-America-S2B-XH-A-LF-SN_C157931.html" 0 0 50 H I C CNN "LCSC_link"
+F16 "C157931" 0 0 50 H I C CNN "LCSC_ref"
+F17 "2020-11-24" 0 0 50 H I C CNN "LCSC_check_date"
+F18 "$0.054" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F19 "$0.040" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F20 "$0.038" 0 0 50 H I C CNN "LCSC_price_qt=300"
+F21 "$0.035" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F22 "23650" 0 0 50 H I C CNN "LCSC_stock"
+F23 "-" 0 0 50 H I C CNN "Mouser_link"
+F24 "-" 0 0 50 H I C CNN "Mouser_ref"
+F25 "2020-11-24" 0 0 50 H I C CNN "Mouser_check_date"
+F26 "https://fr.rs-online.com/web/p/embases-circuits-imprimes/8201582/" 0 0 50 H I C CNN "RS_link"
+F27 "820-1582" 0 0 50 H I C CNN "RS_ref"
+F28 "2020-11-24" 0 0 50 H I C CNN "RS_check_date"
+F29 "0.43€" 0 0 50 H I C CNN "RS_price_qt=5"
+F30 "0.116€" 0 0 50 H I C CNN "RS_price_qt=125"
+F31 "0.108€" 0 0 50 H I C CNN "RS_price_qt=500"
+F32 "0.104€" 0 0 50 H I C CNN "RS_price_qt=1250"
+F33 "5760" 0 0 50 H I C CNN "RS_stock"
+F34 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F35 "1.00" 0 0 50 H I C CNN "Release_version"
+F36 "2020-11-24" 0 0 50 H I C CNN "Release_date"
+F37 "ManWithNoName" 0 0 50 H I C CNN "Designer"
+$FPLIST
+ Connector_JST:JST_XH_?2*
 $ENDFPLIST
 DRAW
 S -50 -95 0 -105 1 1 6 N
