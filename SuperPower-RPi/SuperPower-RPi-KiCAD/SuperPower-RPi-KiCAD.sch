@@ -171,13 +171,14 @@ S 5250 1250 1300 1200
 U 5F6AC872
 F0 "Pi-MCU" 50
 F1 "Pi-MCU.sch" 50
-F2 "SDA" B L 5250 1750 50 
-F3 "SCL" B L 5250 1850 50 
+F2 "SDA_1" B L 5250 1750 50 
+F3 "SCL_1" B L 5250 1850 50 
 F4 "GPIO0" B R 6550 2300 50 
 F5 "VBAT_IN" I L 5250 2250 50 
 F6 "nRESET_Buf" I R 6550 1450 50 
 F7 "BOOT0" I R 6550 1600 50 
 F8 "Vin(5V)" I R 6550 2150 50 
+F9 "I_mon_V_input" I L 5250 2050 50 
 $EndSheet
 Wire Wire Line
 	6550 2150 8500 2150
@@ -210,7 +211,7 @@ Wire Wire Line
 Wire Wire Line
 	8500 2150 8500 3650
 Text Notes 7150 5450 0    50   ~ 0
-Open Questions:\nShould we add jumper for measuring MCU current. (Yes, if at all possible)\nDotstar?  (Alternative to NeoPixel) Yes\nQWIIC connector DNP? Yes\nATTiny to Dotstar connection requires ATTiny 1614? (Stick with 85, but add dumb LED to GPIO)\nFind overcurrent chip
+Open Questions:\nShould we add jumper for measuring MCU current. (DONE)\nDotstar?  (Alternative to NeoPixel) Yes (DONE)\nQWIIC connector DNP? Yes (DONE)\nATTiny to Dotstar connection requires ATTiny 1614? (Stick with 85, but add dumb LED to GPIO)\nFind overcurrent chip
 Connection ~ 8500 3650
 Wire Wire Line
 	8500 3650 9350 3650
@@ -245,4 +246,10 @@ F8 "GPIO25" B L 9350 3250 50
 $EndSheet
 NoConn ~ 9350 3250
 NoConn ~ 9350 3150
+Wire Wire Line
+	5250 2050 4700 2050
+Wire Wire Line
+	4700 2050 4700 3950
+Wire Wire Line
+	4700 3950 4500 3950
 $EndSCHEMATC
