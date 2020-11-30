@@ -149,7 +149,7 @@ F 4 "FIX FOOTPRINT" H 4550 3100 50  0001 C CNN "Mfg"
 $EndComp
 Text HLabel 9550 3000 2    50   Output ~ 0
 Vout
-Text Notes 2450 5900 0    50   ~ 0
+Text Notes 1900 6400 0    50   ~ 0
 NOTE:\nscrew-terminals for solar.  
 $Comp
 L Device:D_Zener_Small D3
