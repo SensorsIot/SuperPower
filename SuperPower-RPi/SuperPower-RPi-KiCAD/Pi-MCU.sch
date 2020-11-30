@@ -23,17 +23,6 @@ Text HLabel 7850 1400 0    50   BiDi ~ 0
 SDA_1
 Text HLabel 7850 1500 0    50   BiDi ~ 0
 SCL_1
-$Comp
-L Device:R_Small R14
-U 1 1 5FA1BDA7
-P 8250 1250
-F 0 "R14" H 8309 1296 50  0000 L CNN
-F 1 "1k" H 8309 1205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 8250 1250 50  0001 C CNN
-F 3 "~" H 8250 1250 50  0001 C CNN
-	1    8250 1250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7850 1400 7950 1400
 Wire Wire Line
@@ -50,17 +39,6 @@ Wire Wire Line
 	7950 1150 7950 1100
 Wire Wire Line
 	7950 1400 7950 1350
-$Comp
-L Device:R_Small R13
-U 1 1 5FA1B85D
-P 7950 1250
-F 0 "R13" H 8009 1296 50  0000 L CNN
-F 1 "1k" H 8009 1205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7950 1250 50  0001 C CNN
-F 3 "~" H 7950 1250 50  0001 C CNN
-	1    7950 1250
-	1    0    0    -1  
-$EndComp
 Connection ~ 8100 1100
 Wire Wire Line
 	8100 1100 8250 1100
@@ -83,17 +61,6 @@ Wire Wire Line
 Connection ~ 4200 5400
 Wire Wire Line
 	4200 5400 4250 5400
-$Comp
-L Device:C_Small C25
-U 1 1 5FA2B8E5
-P 12000 5650
-F 0 "C25" V 11950 5850 50  0000 R CNN
-F 1 "DNP" V 11950 5600 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 12000 5650 50  0001 C CNN
-F 3 "~" H 12000 5650 50  0001 C CNN
-	1    12000 5650
-	0    -1   1    0   
-$EndComp
 Text Notes 8700 3600 0    50   ~ 0
 I2C Pins: (SDA/SCL)\nI2C1: PB7/PB6 <--\nI2C2: PB3/PB10\nI2C3: PC9/PA8 
 Wire Wire Line
@@ -136,17 +103,6 @@ Text Label 5300 7100 2    50   ~ 0
 SWCLK
 Wire Wire Line
 	5300 7100 4850 7100
-$Comp
-L Connector_Generic:Conn_01x06 J5
-U 1 1 5FA35302
-P 1250 7450
-F 0 "J5" H 1168 7775 50  0000 C CNN
-F 1 "Conn_01x06" H 1168 7776 50  0001 C CNN
-F 2 "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical" H 1250 7450 50  0001 C CNN
-F 3 "~" H 1250 7450 50  0001 C CNN
-	1    1250 7450
-	-1   0    0    -1  
-$EndComp
 $Comp
 L power:+3.3V #PWR019
 U 1 1 5FA362EB
@@ -215,48 +171,12 @@ Text Label 5250 8500 2    50   ~ 0
 CAN2_RX
 Wire Wire Line
 	5250 8500 4850 8500
-$Comp
-L Device:C_Small C22
-U 1 1 5FA438D1
-P 3350 6250
-F 0 "C22" H 3259 6204 50  0000 R CNN
-F 1 "4.7uF" H 3259 6295 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3350 6250 50  0001 C CNN
-F 3 "~" H 3350 6250 50  0001 C CNN
-F 4 "1276-1900-1-ND" H 3350 6250 50  0001 C CNN "Digi-Key PN"
-F 5 "Samsung" H 3350 6250 50  0001 C CNN "Mfg"
-F 6 "CL10A475KA8NQNC" H 3350 6250 50  0001 C CNN "Mfg PN"
-	1    3350 6250
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	3350 6400 3350 6350
 Wire Wire Line
 	3350 6150 3350 6100
 Wire Wire Line
 	3350 6100 3450 6100
-$Comp
-L Switch:SW_Push SW1
-U 1 1 5FA488EA
-P 9900 1150
-F 0 "SW1" V 9946 1102 50  0000 R CNN
-F 1 "Tact" V 9855 1102 50  0000 R CNN
-F 2 "Button_Switch_SMD:SW_Push_1P1T-SH_NO_CK_KMR2xxG" H 9900 1350 50  0001 C CNN
-F 3 "~" H 9900 1350 50  0001 C CNN
-	1    9900 1150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C_Small C24
-U 1 1 5FA4ADCC
-P 10250 1100
-F 0 "C24" H 10158 1054 50  0000 R CNN
-F 1 "0.1uF" H 10158 1145 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 10250 1100 50  0001 C CNN
-F 3 "~" H 10250 1100 50  0001 C CNN
-	1    10250 1100
-	-1   0    0    1   
-$EndComp
 $Comp
 L power:GND #PWR024
 U 1 1 5FA4B4BE
@@ -290,47 +210,6 @@ Wire Wire Line
 Wire Wire Line
 	10300 900  10250 900 
 Connection ~ 10250 900 
-$Comp
-L Manual_Lib:ME6210A33M3G U5
-U 1 1 5FA5D721
-P 1750 1150
-F 0 "U5" H 1750 1392 50  0000 C CNN
-F 1 "ME6210A33M3G" H 1750 1301 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 2200 900 50  0001 L CIN
-F 3 "https://datasheet.lcsc.com/szlcsc/1810201611_MICRONE-Nanjing-Micro-One-Elec-ME6210A33PG_C85233.pdf" H 1750 1100 50  0001 C CNN
-F 4 "MicrOne" H 2350 750 50  0001 C CNN "Mfg"
-F 5 "ME6210A33M3G" H 2500 800 50  0001 C CNN "Mfg PN"
-	1    1750 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C21
-U 1 1 5FA5DD96
-P 2150 1350
-F 0 "C21" H 2058 1304 50  0000 R CNN
-F 1 "10uF" H 2058 1395 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2150 1350 50  0001 C CNN
-F 3 "~" H 2150 1350 50  0001 C CNN
-F 4 "490-5523-1-ND" H 2150 1350 50  0001 C CNN "Digi-Key PN"
-F 5 "Murata" H 2150 1350 50  0001 C CNN "Mfg"
-F 6 "GRM21BR61E106KA73L" H 2150 1350 50  0001 C CNN "Mfg PN"
-	1    2150 1350
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C_Small C20
-U 1 1 5FA5E248
-P 1250 1350
-F 0 "C20" H 1158 1304 50  0000 R CNN
-F 1 "10uF" H 1158 1395 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1250 1350 50  0001 C CNN
-F 3 "~" H 1250 1350 50  0001 C CNN
-F 4 "490-5523-1-ND" H 1250 1350 50  0001 C CNN "Digi-Key PN"
-F 5 "Murata" H 1250 1350 50  0001 C CNN "Mfg"
-F 6 "GRM21BR61E106KA73L" H 1250 1350 50  0001 C CNN "Mfg PN"
-	1    1250 1350
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	2050 1150 2150 1150
 Wire Wire Line
@@ -422,17 +301,6 @@ Wire Wire Line
 Wire Wire Line
 	12200 5650 12100 5650
 $Comp
-L Connector_Generic:Conn_01x03 J7
-U 1 1 5FA390FB
-P 13700 7500
-F 0 "J7" H 13780 7496 50  0000 L CNN
-F 1 "Conn_01x03" H 13780 7451 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 13700 7500 50  0001 C CNN
-F 3 "~" H 13700 7500 50  0001 C CNN
-	1    13700 7500
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR031
 U 1 1 5FA3A649
 P 13400 7700
@@ -468,17 +336,6 @@ Text Notes 13100 8200 0    50   ~ 0
 ATTiny Programming\nVia UPDI
 Text Label 13050 7600 0    50   ~ 0
 nRESET
-$Comp
-L Device:R_Small R9
-U 1 1 5FA24ECE
-P 2800 6150
-F 0 "R9" H 2859 6196 50  0000 L CNN
-F 1 "100k" H 2859 6105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2800 6150 50  0001 C CNN
-F 3 "~" H 2800 6150 50  0001 C CNN
-	1    2800 6150
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	2800 6050 2800 5900
 Wire Wire Line
@@ -554,28 +411,6 @@ F 2 "" H 5650 5350 50  0001 C CNN
 F 3 "" H 5650 5350 50  0001 C CNN
 	1    5650 5350
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C30
-U 1 1 5FADB8CB
-P 5400 5150
-F 0 "C30" H 5308 5104 50  0000 R CNN
-F 1 "10nF" H 5308 5195 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5400 5150 50  0001 C CNN
-F 3 "~" H 5400 5150 50  0001 C CNN
-	1    5400 5150
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C32
-U 1 1 5FADBBC4
-P 5800 5150
-F 0 "C32" H 5708 5104 50  0000 R CNN
-F 1 "1.0uF" H 5708 5195 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5800 5150 50  0001 C CNN
-F 3 "~" H 5800 5150 50  0001 C CNN
-	1    5800 5150
-	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	5800 5000 5800 5050
@@ -666,45 +501,10 @@ $EndComp
 Connection ~ 3350 6100
 Wire Wire Line
 	3350 6050 3350 6100
-$Comp
-L MCU_ST_STM32F4:STM32F412RETx U3
-U 1 1 5FA772FA
-P 4150 7200
-F 0 "U3" H 4150 7300 50  0000 C CNN
-F 1 "STM32F412RETx" H 4150 7100 50  0000 C CNN
-F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 3550 5500 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00213872.pdf" H 4150 7200 50  0001 C CNN
-F 4 "ST" H 4150 7200 50  0001 C CNN "Mfg"
-F 5 "STM32F412RET6" H 4150 7200 50  0001 C CNN "Mfg PN"
-	1    4150 7200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J9
-U 1 1 5FA8EFDB
-P 2350 5600
-F 0 "J9" H 2268 5725 50  0000 C CNN
-F 1 "Conn_01x02" H 2268 5726 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2350 5600 50  0001 C CNN
-F 3 "~" H 2350 5600 50  0001 C CNN
-	1    2350 5600
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	2550 5600 2650 5600
 Wire Wire Line
 	2650 5600 2650 5500
-$Comp
-L Device:R_Small R19
-U 1 1 5FAC6856
-P 9650 900
-F 0 "R19" V 9550 950 50  0000 L CNN
-F 1 "DNP" V 9550 750 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9650 900 50  0001 C CNN
-F 3 "~" H 9650 900 50  0001 C CNN
-	1    9650 900 
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	9750 900  9900 900 
 Connection ~ 9900 900 
@@ -778,28 +578,6 @@ F 3 "" H 2250 1050 50  0001 C CNN
 $EndComp
 Connection ~ 2150 1150
 $Comp
-L Device:R_Small R21
-U 1 1 5FAAB54D
-P 6200 10300
-F 0 "R21" H 6259 10346 50  0000 L CNN
-F 1 "100k" H 6259 10255 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 6200 10300 50  0001 C CNN
-F 3 "~" H 6200 10300 50  0001 C CNN
-	1    6200 10300
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R20
-U 1 1 5FAAC000
-P 6200 9950
-F 0 "R20" H 6259 9996 50  0000 L CNN
-F 1 "100k" H 6259 9905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 6200 9950 50  0001 C CNN
-F 3 "~" H 6200 9950 50  0001 C CNN
-	1    6200 9950
-	-1   0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR038
 U 1 1 5FAAC254
 P 6200 10500
@@ -814,18 +592,6 @@ Wire Wire Line
 	6200 10500 6200 10400
 Wire Wire Line
 	6200 10200 6200 10150
-$Comp
-L Device:D_Small D6
-U 1 1 5FAB9400
-P 6200 9650
-F 0 "D6" V 6246 9580 50  0000 R CNN
-F 1 "D_Small" V 6155 9580 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-523" V 6200 9650 50  0001 C CNN
-F 3 "~" V 6200 9650 50  0001 C CNN
-F 4 "FIX FOOTPRINT" H 6200 9650 50  0001 C CNN "Mfg"
-	1    6200 9650
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	6200 9850 6200 9750
 Text HLabel 6250 9450 2    50   Input ~ 0
@@ -847,28 +613,6 @@ Wire Wire Line
 	4450 5000 5400 5000
 Wire Wire Line
 	4850 5700 5250 5700
-$Comp
-L MCU_Microchip_ATtiny:ATtiny85-20SU U4
-U 1 1 5FAE2AC9
-P 11700 6450
-F 0 "U4" H 11300 7100 50  0000 R CNN
-F 1 "ATtiny85-20SU" H 11600 7000 50  0000 R CNN
-F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 11700 6450 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 11700 6450 50  0001 C CNN
-	1    11700 6450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C34
-U 1 1 5FAFC531
-P 3500 5150
-F 0 "C34" H 3408 5104 50  0000 R CNN
-F 1 "0.1uF" H 3408 5195 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3500 5150 50  0001 C CNN
-F 3 "~" H 3500 5150 50  0001 C CNN
-	1    3500 5150
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	2250 1150 2250 1050
 Wire Wire Line
@@ -896,17 +640,6 @@ Wire Wire Line
 Connection ~ 4450 5000
 Wire Wire Line
 	4450 5000 4450 5500
-$Comp
-L LED:APA102-2020 D7
-U 1 1 5FBB8F09
-P 7800 10150
-F 0 "D7" H 7600 10400 50  0000 C CNN
-F 1 "APA102-2020" H 7400 9900 50  0000 C CNN
-F 2 "LED_SMD:LED-APA102-2020" H 7850 9850 50  0001 L TNN
-F 3 "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf" H 7900 9775 50  0001 L TNN
-	1    7800 10150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4850 6200 5300 6200
 Wire Wire Line
@@ -953,17 +686,6 @@ F 3 "" H 7800 9800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7800 9800 7800 9850
-$Comp
-L Connector_Generic:Conn_01x04 J10
-U 1 1 5FBFB7CE
-P 9000 9950
-F 0 "J10" H 9080 9896 50  0000 L CNN
-F 1 "Conn_01x04" H 9080 9851 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 9000 9950 50  0001 C CNN
-F 3 "~" H 9000 9950 50  0001 C CNN
-	1    9000 9950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8100 10050 8800 10050
 Wire Wire Line
@@ -1052,20 +774,6 @@ SCL_3
 Text Label 3050 8200 0    50   ~ 0
 SDA_3
 $Comp
-L !Seth_Components:QWIIC_Connector J12
-U 1 1 5FC65CE3
-P 4250 10200
-F 0 "J12" H 4300 10400 50  0000 L CNN
-F 1 "DNP" H 4200 9900 50  0000 L CNN
-F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 5900 10300 50  0001 C CNN
-F 3 "http://www.jst-mfg.com/product/pdf/eng/eSH.pdf" H 4250 10200 50  0001 C CNN
-F 4 "JST" H 4600 10150 50  0001 C CNN "Mfg"
-F 5 "SM04B-SRSS-TB(LF)(SN)" H 5000 10400 50  0001 C CNN "Mfg PN"
-F 6 "455-1804-1-ND" H 5000 10200 50  0001 C CNN "Digi-Key PN"
-	1    4250 10200
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR047
 U 1 1 5FC65CED
 P 4000 10450
@@ -1135,17 +843,6 @@ Wire Wire Line
 	5850 4550 5850 4500
 Wire Wire Line
 	5450 4550 5850 4550
-$Comp
-L Device:C_Small C33
-U 1 1 5FA8C003
-P 5850 4400
-F 0 "C33" H 5758 4354 50  0000 R CNN
-F 1 "0.1uF" H 5758 4445 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5850 4400 50  0001 C CNN
-F 3 "~" H 5850 4400 50  0001 C CNN
-	1    5850 4400
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	5050 4250 4650 4250
 Connection ~ 5050 4250
@@ -1185,75 +882,17 @@ F 3 "" H 5000 4600 50  0001 C CNN
 	1    5000 4600
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C_Small C31
-U 1 1 5FADB5D2
-P 5450 4400
-F 0 "C31" H 5358 4354 50  0000 R CNN
-F 1 "0.1uF" H 5358 4445 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5450 4400 50  0001 C CNN
-F 3 "~" H 5450 4400 50  0001 C CNN
-	1    5450 4400
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C29
-U 1 1 5FADB2CE
-P 5050 4400
-F 0 "C29" H 4958 4354 50  0000 R CNN
-F 1 "0.1uF" H 4958 4445 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5050 4400 50  0001 C CNN
-F 3 "~" H 5050 4400 50  0001 C CNN
-	1    5050 4400
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C23
-U 1 1 5FA2BF54
-P 4650 4400
-F 0 "C23" H 4558 4354 50  0000 R CNN
-F 1 "0.1uF" H 4558 4445 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4650 4400 50  0001 C CNN
-F 3 "~" H 4650 4400 50  0001 C CNN
-	1    4650 4400
-	-1   0    0    -1  
-$EndComp
 Connection ~ 4450 4250
 Wire Wire Line
 	4450 4250 4450 5000
 Wire Wire Line
 	3950 4250 3950 5000
-$Comp
-L !Seth_Components:QWIIC_Connector J11
-U 1 1 5FC07762
-P 9100 2600
-F 0 "J11" H 9050 2800 50  0000 L CNN
-F 1 "QWIIC_Connector" H 9050 2300 50  0000 L CNN
-F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 10750 2700 50  0001 C CNN
-F 3 "http://www.jst-mfg.com/product/pdf/eng/eSH.pdf" H 9100 2600 50  0001 C CNN
-F 4 "JST" H 9450 2550 50  0001 C CNN "Mfg"
-F 5 "SM04B-SRSS-TB(LF)(SN)" H 9850 2800 50  0001 C CNN "Mfg PN"
-F 6 "455-1804-1-ND" H 9850 2600 50  0001 C CNN "Digi-Key PN"
-	1    9100 2600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3400 9950 3400 9900
 Wire Wire Line
 	3250 9950 3400 9950
 Wire Wire Line
 	3250 10000 3250 9950
-$Comp
-L Device:R_Small R25
-U 1 1 5FDA1C06
-P 3250 10100
-F 0 "R25" H 3309 10146 50  0000 L CNN
-F 1 "DNP" H 3309 10055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 3250 10100 50  0001 C CNN
-F 3 "~" H 3250 10100 50  0001 C CNN
-	1    3250 10100
-	1    0    0    -1  
-$EndComp
 Connection ~ 3400 9950
 Wire Wire Line
 	3400 9950 3550 9950
@@ -1276,64 +915,16 @@ Wire Wire Line
 	3550 10400 4050 10400
 Wire Wire Line
 	3550 9950 3550 10000
-$Comp
-L Device:R_Small R26
-U 1 1 5FDA1BFC
-P 3550 10100
-F 0 "R26" H 3609 10146 50  0000 L CNN
-F 1 "DNP" H 3609 10055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 3550 10100 50  0001 C CNN
-F 3 "~" H 3550 10100 50  0001 C CNN
-	1    3550 10100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3250 10200 3250 10300
 Wire Wire Line
 	3550 10200 3550 10400
 Text HLabel 5400 5800 2    50   Input ~ 0
 I_mon_V_input
-$Comp
-L Device:Jumper_NC_Small JP4
-U 1 1 5FE09D88
-P 5200 5800
-F 0 "JP4" H 5050 5850 50  0000 C CNN
-F 1 "NC" H 5200 5921 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 5200 5800 50  0001 C CNN
-F 3 "~" H 5200 5800 50  0001 C CNN
-	1    5200 5800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5100 5800 4850 5800
 Wire Wire Line
 	5300 5800 5400 5800
-$Comp
-L Device:LED D?
-U 1 1 5FE31E47
-P 14650 6400
-AR Path="/5F6AC481/5FE31E47" Ref="D?"  Part="1" 
-AR Path="/5F6AC872/5FE31E47" Ref="D8"  Part="1" 
-F 0 "D8" V 14689 6282 50  0000 R CNN
-F 1 "DNP" V 14598 6282 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 14650 6400 50  0001 C CNN
-F 3 "~" H 14650 6400 50  0001 C CNN
-	1    14650 6400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5FE31E4D
-P 14650 6100
-AR Path="/5F6AC481/5FE31E4D" Ref="R?"  Part="1" 
-AR Path="/5F6AC872/5FE31E4D" Ref="R27"  Part="1" 
-F 0 "R27" H 14591 6054 50  0000 R CNN
-F 1 "DNP" H 14591 6145 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 14650 6100 50  0001 C CNN
-F 3 "~" H 14650 6100 50  0001 C CNN
-	1    14650 6100
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	14650 6250 14650 6200
 Wire Wire Line
@@ -1347,17 +938,6 @@ Wire Wire Line
 	13150 6650 13150 6600
 Wire Wire Line
 	13150 6400 13150 6350
-$Comp
-L Device:R_Small R15
-U 1 1 5FA305E2
-P 13150 6500
-F 0 "R15" H 13209 6546 50  0000 L CNN
-F 1 "DNP" H 13209 6455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 13150 6500 50  0001 C CNN
-F 3 "~" H 13150 6500 50  0001 C CNN
-	1    13150 6500
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+3.3V #PWR027
 U 1 1 5FA2FF44
@@ -1392,17 +972,6 @@ F 3 "" H 14650 5950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	14650 6000 14650 5950
-$Comp
-L Device:Jumper_NC_Small JP5
-U 1 1 5FF2721E
-P 3450 4250
-F 0 "JP5" H 3450 4371 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 3450 4371 50  0001 C CNN
-F 2 "SuperPower-RPi-KiCAD:PinHeader_1x02_P2.54mm_Vertical_Shorted" H 3450 4250 50  0001 C CNN
-F 3 "~" H 3450 4250 50  0001 C CNN
-	1    3450 4250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3350 4250 3000 4250
 Wire Wire Line
@@ -1422,6 +991,444 @@ $EndComp
 Connection ~ 4050 4250
 Wire Wire Line
 	4050 4250 4200 4250
+Text Notes 1050 2050 0    100  ~ 0
+3.3V LDO Regulator
+Wire Wire Line
+	4850 5900 5300 5900
+Wire Wire Line
+	4850 6000 5300 6000
+Text Label 5300 6000 2    50   ~ 0
+UART_RX
+Text Label 5300 5900 2    50   ~ 0
+UART_TX
+Wire Wire Line
+	1750 9600 2200 9600
+Wire Wire Line
+	1750 9700 2200 9700
+Text Label 2200 9700 2    50   ~ 0
+UART_RX
+Text Label 2200 9600 2    50   ~ 0
+UART_TX
+$Comp
+L Device:R_Small R14
+U 1 1 5FA1BDA7
+P 8250 1250
+F 0 "R14" H 8309 1296 50  0000 L CNN
+F 1 "1k" H 8309 1205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8250 1250 50  0001 C CNN
+F 3 "~" H 8250 1250 50  0001 C CNN
+	1    8250 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R13
+U 1 1 5FA1B85D
+P 7950 1250
+F 0 "R13" H 8009 1296 50  0000 L CNN
+F 1 "1k" H 8009 1205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7950 1250 50  0001 C CNN
+F 3 "~" H 7950 1250 50  0001 C CNN
+	1    7950 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C25
+U 1 1 5FA2B8E5
+P 12000 5650
+F 0 "C25" V 11950 5850 50  0000 R CNN
+F 1 "DNP" V 11950 5600 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 12000 5650 50  0001 C CNN
+F 3 "~" H 12000 5650 50  0001 C CNN
+	1    12000 5650
+	0    -1   1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J5
+U 1 1 5FA35302
+P 1250 7450
+F 0 "J5" H 1168 7775 50  0000 C CNN
+F 1 "Conn_01x06" H 1168 7776 50  0001 C CNN
+F 2 "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical" H 1250 7450 50  0001 C CNN
+F 3 "~" H 1250 7450 50  0001 C CNN
+	1    1250 7450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C22
+U 1 1 5FA438D1
+P 3350 6250
+F 0 "C22" H 3259 6204 50  0000 R CNN
+F 1 "4.7uF" H 3259 6295 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3350 6250 50  0001 C CNN
+F 3 "~" H 3350 6250 50  0001 C CNN
+F 4 "1276-1900-1-ND" H 3350 6250 50  0001 C CNN "Digi-Key PN"
+F 5 "Samsung" H 3350 6250 50  0001 C CNN "Mfg"
+F 6 "CL10A475KA8NQNC" H 3350 6250 50  0001 C CNN "Mfg PN"
+	1    3350 6250
+	1    0    0    1   
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5FA488EA
+P 9900 1150
+F 0 "SW1" V 9946 1102 50  0000 R CNN
+F 1 "Tact" V 9855 1102 50  0000 R CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T-SH_NO_CK_KMR2xxG" H 9900 1350 50  0001 C CNN
+F 3 "~" H 9900 1350 50  0001 C CNN
+	1    9900 1150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C24
+U 1 1 5FA4ADCC
+P 10250 1100
+F 0 "C24" H 10158 1054 50  0000 R CNN
+F 1 "0.1uF" H 10158 1145 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10250 1100 50  0001 C CNN
+F 3 "~" H 10250 1100 50  0001 C CNN
+	1    10250 1100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Manual_Lib:ME6210A33M3G U5
+U 1 1 5FA5D721
+P 1750 1150
+F 0 "U5" H 1750 1392 50  0000 C CNN
+F 1 "ME6210A33M3G" H 1750 1301 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2200 900 50  0001 L CIN
+F 3 "https://datasheet.lcsc.com/szlcsc/1810201611_MICRONE-Nanjing-Micro-One-Elec-ME6210A33PG_C85233.pdf" H 1750 1100 50  0001 C CNN
+F 4 "MicrOne" H 2350 750 50  0001 C CNN "Mfg"
+F 5 "ME6210A33M3G" H 2500 800 50  0001 C CNN "Mfg PN"
+	1    1750 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C21
+U 1 1 5FA5DD96
+P 2150 1350
+F 0 "C21" H 2058 1304 50  0000 R CNN
+F 1 "10uF" H 2058 1395 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2150 1350 50  0001 C CNN
+F 3 "~" H 2150 1350 50  0001 C CNN
+F 4 "490-5523-1-ND" H 2150 1350 50  0001 C CNN "Digi-Key PN"
+F 5 "Murata" H 2150 1350 50  0001 C CNN "Mfg"
+F 6 "GRM21BR61E106KA73L" H 2150 1350 50  0001 C CNN "Mfg PN"
+	1    2150 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C20
+U 1 1 5FA5E248
+P 1250 1350
+F 0 "C20" H 1158 1304 50  0000 R CNN
+F 1 "10uF" H 1158 1395 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1250 1350 50  0001 C CNN
+F 3 "~" H 1250 1350 50  0001 C CNN
+F 4 "490-5523-1-ND" H 1250 1350 50  0001 C CNN "Digi-Key PN"
+F 5 "Murata" H 1250 1350 50  0001 C CNN "Mfg"
+F 6 "GRM21BR61E106KA73L" H 1250 1350 50  0001 C CNN "Mfg PN"
+	1    1250 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J7
+U 1 1 5FA390FB
+P 13700 7500
+F 0 "J7" H 13780 7496 50  0000 L CNN
+F 1 "Conn_01x03" H 13780 7451 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 13700 7500 50  0001 C CNN
+F 3 "~" H 13700 7500 50  0001 C CNN
+	1    13700 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R9
+U 1 1 5FA24ECE
+P 2800 6150
+F 0 "R9" H 2859 6196 50  0000 L CNN
+F 1 "100k" H 2859 6105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2800 6150 50  0001 C CNN
+F 3 "~" H 2800 6150 50  0001 C CNN
+	1    2800 6150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C30
+U 1 1 5FADB8CB
+P 5400 5150
+F 0 "C30" H 5308 5104 50  0000 R CNN
+F 1 "10nF" H 5308 5195 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5400 5150 50  0001 C CNN
+F 3 "~" H 5400 5150 50  0001 C CNN
+	1    5400 5150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C32
+U 1 1 5FADBBC4
+P 5800 5150
+F 0 "C32" H 5708 5104 50  0000 R CNN
+F 1 "1.0uF" H 5708 5195 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5800 5150 50  0001 C CNN
+F 3 "~" H 5800 5150 50  0001 C CNN
+	1    5800 5150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MCU_ST_STM32F4:STM32F412RETx U3
+U 1 1 5FA772FA
+P 4150 7200
+F 0 "U3" H 4150 7300 50  0000 C CNN
+F 1 "STM32F412RETx" H 4150 7100 50  0000 C CNN
+F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 3550 5500 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00213872.pdf" H 4150 7200 50  0001 C CNN
+F 4 "ST" H 4150 7200 50  0001 C CNN "Mfg"
+F 5 "STM32F412RET6" H 4150 7200 50  0001 C CNN "Mfg PN"
+	1    4150 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J9
+U 1 1 5FA8EFDB
+P 2350 5600
+F 0 "J9" H 2268 5725 50  0000 C CNN
+F 1 "Conn_01x02" H 2268 5726 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2350 5600 50  0001 C CNN
+F 3 "~" H 2350 5600 50  0001 C CNN
+	1    2350 5600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R21
+U 1 1 5FAAB54D
+P 6200 10300
+F 0 "R21" H 6259 10346 50  0000 L CNN
+F 1 "100k" H 6259 10255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6200 10300 50  0001 C CNN
+F 3 "~" H 6200 10300 50  0001 C CNN
+	1    6200 10300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R20
+U 1 1 5FAAC000
+P 6200 9950
+F 0 "R20" H 6259 9996 50  0000 L CNN
+F 1 "100k" H 6259 9905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6200 9950 50  0001 C CNN
+F 3 "~" H 6200 9950 50  0001 C CNN
+	1    6200 9950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D6
+U 1 1 5FAB9400
+P 6200 9650
+F 0 "D6" V 6246 9580 50  0000 R CNN
+F 1 "D_Small" V 6155 9580 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-523" V 6200 9650 50  0001 C CNN
+F 3 "~" V 6200 9650 50  0001 C CNN
+F 4 "FIX FOOTPRINT" H 6200 9650 50  0001 C CNN "Mfg"
+	1    6200 9650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MCU_Microchip_ATtiny:ATtiny85-20SU U4
+U 1 1 5FAE2AC9
+P 11700 6450
+F 0 "U4" H 11300 7100 50  0000 R CNN
+F 1 "ATtiny85-20SU" H 11600 7000 50  0000 R CNN
+F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 11700 6450 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 11700 6450 50  0001 C CNN
+	1    11700 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C34
+U 1 1 5FAFC531
+P 3500 5150
+F 0 "C34" H 3408 5104 50  0000 R CNN
+F 1 "0.1uF" H 3408 5195 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3500 5150 50  0001 C CNN
+F 3 "~" H 3500 5150 50  0001 C CNN
+	1    3500 5150
+	1    0    0    1   
+$EndComp
+$Comp
+L LED:APA102-2020 D7
+U 1 1 5FBB8F09
+P 7800 10150
+F 0 "D7" H 7600 10400 50  0000 C CNN
+F 1 "APA102-2020" H 7400 9900 50  0000 C CNN
+F 2 "LED_SMD:LED-APA102-2020" H 7850 9850 50  0001 L TNN
+F 3 "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf" H 7900 9775 50  0001 L TNN
+	1    7800 10150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J10
+U 1 1 5FBFB7CE
+P 9000 9950
+F 0 "J10" H 9080 9896 50  0000 L CNN
+F 1 "Conn_01x04" H 9080 9851 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 9000 9950 50  0001 C CNN
+F 3 "~" H 9000 9950 50  0001 C CNN
+	1    9000 9950
+	1    0    0    -1  
+$EndComp
+$Comp
+L !Seth_Components:QWIIC_Connector J12
+U 1 1 5FC65CE3
+P 4250 10200
+F 0 "J12" H 4300 10400 50  0000 L CNN
+F 1 "DNP" H 4200 9900 50  0000 L CNN
+F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 5900 10300 50  0001 C CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/eSH.pdf" H 4250 10200 50  0001 C CNN
+F 4 "JST" H 4600 10150 50  0001 C CNN "Mfg"
+F 5 "SM04B-SRSS-TB(LF)(SN)" H 5000 10400 50  0001 C CNN "Mfg PN"
+F 6 "455-1804-1-ND" H 5000 10200 50  0001 C CNN "Digi-Key PN"
+	1    4250 10200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C33
+U 1 1 5FA8C003
+P 5850 4400
+F 0 "C33" H 5758 4354 50  0000 R CNN
+F 1 "0.1uF" H 5758 4445 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5850 4400 50  0001 C CNN
+F 3 "~" H 5850 4400 50  0001 C CNN
+	1    5850 4400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C31
+U 1 1 5FADB5D2
+P 5450 4400
+F 0 "C31" H 5358 4354 50  0000 R CNN
+F 1 "0.1uF" H 5358 4445 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5450 4400 50  0001 C CNN
+F 3 "~" H 5450 4400 50  0001 C CNN
+	1    5450 4400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C29
+U 1 1 5FADB2CE
+P 5050 4400
+F 0 "C29" H 4958 4354 50  0000 R CNN
+F 1 "0.1uF" H 4958 4445 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5050 4400 50  0001 C CNN
+F 3 "~" H 5050 4400 50  0001 C CNN
+	1    5050 4400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C23
+U 1 1 5FA2BF54
+P 4650 4400
+F 0 "C23" H 4558 4354 50  0000 R CNN
+F 1 "0.1uF" H 4558 4445 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4650 4400 50  0001 C CNN
+F 3 "~" H 4650 4400 50  0001 C CNN
+	1    4650 4400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L !Seth_Components:QWIIC_Connector J11
+U 1 1 5FC07762
+P 9100 2600
+F 0 "J11" H 9050 2800 50  0000 L CNN
+F 1 "QWIIC_Connector" H 9050 2300 50  0000 L CNN
+F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 10750 2700 50  0001 C CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/eSH.pdf" H 9100 2600 50  0001 C CNN
+F 4 "JST" H 9450 2550 50  0001 C CNN "Mfg"
+F 5 "SM04B-SRSS-TB(LF)(SN)" H 9850 2800 50  0001 C CNN "Mfg PN"
+F 6 "455-1804-1-ND" H 9850 2600 50  0001 C CNN "Digi-Key PN"
+	1    9100 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R25
+U 1 1 5FDA1C06
+P 3250 10100
+F 0 "R25" H 3309 10146 50  0000 L CNN
+F 1 "DNP" H 3309 10055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3250 10100 50  0001 C CNN
+F 3 "~" H 3250 10100 50  0001 C CNN
+	1    3250 10100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R26
+U 1 1 5FDA1BFC
+P 3550 10100
+F 0 "R26" H 3609 10146 50  0000 L CNN
+F 1 "DNP" H 3609 10055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3550 10100 50  0001 C CNN
+F 3 "~" H 3550 10100 50  0001 C CNN
+	1    3550 10100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP4
+U 1 1 5FE09D88
+P 5200 5800
+F 0 "JP4" H 5050 5850 50  0000 C CNN
+F 1 "NC" H 5200 5921 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 5200 5800 50  0001 C CNN
+F 3 "~" H 5200 5800 50  0001 C CNN
+	1    5200 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5FE31E47
+P 14650 6400
+AR Path="/5F6AC481/5FE31E47" Ref="D?"  Part="1" 
+AR Path="/5F6AC872/5FE31E47" Ref="D8"  Part="1" 
+F 0 "D8" V 14689 6282 50  0000 R CNN
+F 1 "DNP" V 14598 6282 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 14650 6400 50  0001 C CNN
+F 3 "~" H 14650 6400 50  0001 C CNN
+	1    14650 6400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FE31E4D
+P 14650 6100
+AR Path="/5F6AC481/5FE31E4D" Ref="R?"  Part="1" 
+AR Path="/5F6AC872/5FE31E4D" Ref="R27"  Part="1" 
+F 0 "R27" H 14591 6054 50  0000 R CNN
+F 1 "DNP" H 14591 6145 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 14650 6100 50  0001 C CNN
+F 3 "~" H 14650 6100 50  0001 C CNN
+	1    14650 6100
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R15
+U 1 1 5FA305E2
+P 13150 6500
+F 0 "R15" H 13209 6546 50  0000 L CNN
+F 1 "DNP" H 13209 6455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 13150 6500 50  0001 C CNN
+F 3 "~" H 13150 6500 50  0001 C CNN
+	1    13150 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP5
+U 1 1 5FF2721E
+P 3450 4250
+F 0 "JP5" H 3450 4371 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 3450 4371 50  0001 C CNN
+F 2 "SuperPower-RPi-KiCAD:PinHeader_1x02_P2.54mm_Vertical_Shorted" H 3450 4250 50  0001 C CNN
+F 3 "~" H 3450 4250 50  0001 C CNN
+	1    3450 4250
+	1    0    0    -1  
+$EndComp
 $Comp
 L Device:Jumper_NO_Small JP1
 U 1 1 5FAAD012
@@ -1433,16 +1440,6 @@ F 3 "~" H 2500 5900 50  0001 C CNN
 	1    2500 5900
 	1    0    0    -1  
 $EndComp
-Text Notes 1050 2050 0    100  ~ 0
-3.3V LDO Regulator
-Wire Wire Line
-	4850 5900 5300 5900
-Wire Wire Line
-	4850 6000 5300 6000
-Text Label 5300 6000 2    50   ~ 0
-UART_RX
-Text Label 5300 5900 2    50   ~ 0
-UART_TX
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J8
 U 1 1 5FC8BD2A
@@ -1454,12 +1451,15 @@ F 3 "~" H 1450 9600 50  0001 C CNN
 	1    1450 9600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1750 9600 2200 9600
-Wire Wire Line
-	1750 9700 2200 9700
-Text Label 2200 9700 2    50   ~ 0
-UART_RX
-Text Label 2200 9600 2    50   ~ 0
-UART_TX
+$Comp
+L Device:Jumper_NO_Small JP6
+U 1 1 5FC7B268
+P 9650 900
+F 0 "JP6" H 9650 800 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 9650 994 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 9650 900 50  0001 C CNN
+F 3 "~" H 9650 900 50  0001 C CNN
+	1    9650 900 
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

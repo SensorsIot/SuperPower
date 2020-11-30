@@ -248,6 +248,6 @@ Wire Wire Line
 	4700 2050 4700 3950
 Wire Wire Line
 	4700 3950 4500 3950
-Text Notes 1350 7100 0    50   ~ 0
-Find ioc file.
+Text Notes 1250 7100 0    50   ~ 0
+1.0uF Cap available in 0402\n4.7uF Cap is available, but rare in 0402.
 $EndSCHEMATC
