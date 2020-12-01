@@ -568,7 +568,7 @@ Wire Notes Line
 	550  2000 550  550 
 $Comp
 L Connector:USB_C_Receptacle_USB2.0 J?
-U 1 1 5FC49E05
+U 1 1 5FC6195A
 P 2500 5750
 F 0 "J?" H 2607 6617 50  0000 C CNN
 F 1 "USB_C_Receptacle_USB2.0" H 2607 6526 50  0000 C CNN
