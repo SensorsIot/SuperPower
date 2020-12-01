@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 7
+Sheet 6 7
 Title "SuperPower-uC"
 Date "2020-09-20"
 Rev "0.1"
@@ -255,7 +255,7 @@ EN_3V3
 Text Label 1650 4400 0    50   ~ 0
 3v3_MCU
 NoConn ~ 1100 6450
-Text Label 2900 2250 0    50   ~ 0
+Text Label 2800 2250 0    50   ~ 0
 EN_MCU_REG
 Wire Wire Line
 	5900 1950 5950 1950
@@ -464,59 +464,57 @@ F 3 "https://www.ti.com/lit/gpn/tps709" H 1800 6650 50  0001 L BNN
 $EndComp
 Wire Wire Line
 	2650 6450 3150 6450
-Text HLabel 1450 1600 0    50   Input ~ 0
+Text HLabel 1250 1600 0    50   Input ~ 0
 INT
-Text HLabel 1450 1950 0    50   Output ~ 0
+Text HLabel 1250 1950 0    50   Output ~ 0
 3v3
-Text HLabel 1450 2100 0    50   Output ~ 0
+Text HLabel 1250 2100 0    50   Output ~ 0
 5V
-Text HLabel 1450 1150 0    50   Input ~ 0
+Text HLabel 1250 1150 0    50   Input ~ 0
 EN_3V3
-Text HLabel 1450 1300 0    50   Input ~ 0
+Text HLabel 1250 1300 0    50   Input ~ 0
 EN_5V
 Wire Wire Line
-	1450 1600 2050 1600
+	1250 1600 1850 1600
 Wire Wire Line
-	1450 1150 2050 1150
+	1250 1150 1850 1150
 Wire Wire Line
-	1450 1300 2050 1300
+	1250 1300 1850 1300
 Wire Wire Line
-	1450 1950 2050 1950
+	1250 1950 1850 1950
 Wire Wire Line
-	1450 2100 2050 2100
-Text Label 2050 1600 2    50   ~ 0
+	1250 2100 1850 2100
+Text Label 1850 1600 2    50   ~ 0
 INT
-Text Label 2050 1150 2    50   ~ 0
+Text Label 1850 1150 2    50   ~ 0
 EN_3V3
-Text Label 2050 1300 2    50   ~ 0
+Text Label 1850 1300 2    50   ~ 0
 EN_5V
-Text Label 2050 1950 2    50   ~ 0
+Text Label 1850 1950 2    50   ~ 0
 3v3
-Text Label 2050 2100 2    50   ~ 0
+Text Label 1850 2100 2    50   ~ 0
 5V
 Wire Wire Line
-	1450 1000 2050 1000
-Text Label 2050 1000 2    50   ~ 0
+	1250 1000 1850 1000
+Text Label 1850 1000 2    50   ~ 0
 VIN
-Text HLabel 1450 1000 0    50   Input ~ 0
+Text HLabel 1250 1000 0    50   Input ~ 0
 VIN
-Text HLabel 1450 1450 0    50   Input ~ 0
+Text HLabel 1250 1450 0    50   Input ~ 0
 EN_MCU_REG
-Wire Wire Line
-	1450 1450 2050 1450
-Text Label 2050 1450 2    50   ~ 0
+Text Label 1850 1450 2    50   ~ 0
 EN_MCU_REG
-Text HLabel 1450 2250 0    50   Output ~ 0
+Text HLabel 1250 2250 0    50   Output ~ 0
 3v3_RTC_I2C
-Text Label 2050 2250 2    50   ~ 0
+Text Label 1850 2250 2    50   ~ 0
 3v3_RTC_I2C
 Wire Wire Line
-	1450 2250 2050 2250
-Text HLabel 1450 1800 0    50   Output ~ 0
+	1250 2250 1850 2250
+Text HLabel 1250 1800 0    50   Output ~ 0
 3v3_MCU
 Wire Wire Line
-	1450 1800 2050 1800
-Text Label 2050 1800 2    50   ~ 0
+	1250 1800 1850 1800
+Text Label 1850 1800 2    50   ~ 0
 3v3_MCU
 Wire Notes Line
 	2200 2350 2200 550 
@@ -1032,10 +1030,10 @@ Wire Wire Line
 Text Label 2150 4550 2    50   ~ 0
 GND_3v3
 $Comp
-L Device:R_Small R?
+L Device:R_Small R16
 U 1 1 5FC5DCF5
 P 4100 1400
-F 0 "R?" H 4050 1350 50  0000 R CNN
+F 0 "R16" H 4050 1350 50  0000 R CNN
 F 1 "1M" H 4050 1450 50  0000 R CNN
 F 2 "Resistors_SMD:R_0603" H 4100 1400 50  0001 C CNN
 F 3 "~" H 4100 1400 50  0001 C CNN
@@ -1109,10 +1107,10 @@ Wire Wire Line
 Wire Wire Line
 	8300 4100 8700 4100
 $Comp
-L Device:D D?
+L Device:D D1
 U 1 1 5FCEA0EA
 P 3550 1700
-F 0 "D?" H 3550 1484 50  0000 C CNN
+F 0 "D1" H 3550 1484 50  0000 C CNN
 F 1 "D" H 3550 1575 50  0000 C CNN
 F 2 "" H 3550 1700 50  0001 C CNN
 F 3 "~" H 3550 1700 50  0001 C CNN
@@ -1120,18 +1118,16 @@ F 3 "~" H 3550 1700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:D D?
+L Device:D D7
 U 1 1 5FCEA2BF
 P 3550 2250
-F 0 "D?" H 3550 2034 50  0000 C CNN
+F 0 "D7" H 3550 2034 50  0000 C CNN
 F 1 "D" H 3550 2125 50  0000 C CNN
 F 2 "" H 3550 2250 50  0001 C CNN
 F 3 "~" H 3550 2250 50  0001 C CNN
 	1    3550 2250
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	2900 2250 3400 2250
 Wire Notes Line
 	600  4200 3250 4200
 Wire Notes Line
@@ -1165,4 +1161,30 @@ Wire Wire Line
 	4100 2700 4100 2450
 Wire Wire Line
 	1650 4550 2400 4550
+Wire Wire Line
+	2800 2250 3400 2250
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5FDF8463
+P 2000 1450
+F 0 "#FLG0103" H 2000 1525 50  0001 C CNN
+F 1 "PWR_FLAG" H 2000 1623 50  0001 C CNN
+F 2 "" H 2000 1450 50  0001 C CNN
+F 3 "~" H 2000 1450 50  0001 C CNN
+	1    2000 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 1450 2000 1450
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 5FE0EB00
+P 8150 6000
+F 0 "#FLG0104" H 8150 6075 50  0001 C CNN
+F 1 "PWR_FLAG" H 8150 6173 50  0001 C CNN
+F 2 "" H 8150 6000 50  0001 C CNN
+F 3 "~" H 8150 6000 50  0001 C CNN
+	1    8150 6000
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC

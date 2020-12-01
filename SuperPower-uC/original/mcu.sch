@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 7
+Sheet 7 7
 Title "SuperPower-uC"
 Date "2020-09-20"
 Rev "0.1"
@@ -864,8 +864,6 @@ Wire Wire Line
 Text Label 6650 5600 2    50   ~ 0
 VBUS
 Wire Wire Line
-	10150 5600 10400 5600
-Wire Wire Line
 	6800 5600 6800 5500
 $Comp
 L power:GND #PWR031
@@ -901,7 +899,7 @@ Text Label 6650 5700 2    50   ~ 0
 5V
 Wire Wire Line
 	10400 5700 10150 5700
-Text Label 10150 5700 2    50   ~ 0
+Text Label 10150 5700 0    50   ~ 0
 3v3
 Text Notes 2500 6150 0    50   ~ 0
 Indicator LEDs showing\nthe serial bus status.\nAn RSTb pull-up resistor
@@ -915,7 +913,7 @@ Text HLabel 1300 1500 0    50   Input ~ 0
 5V
 Text HLabel 1300 1350 0    50   Input ~ 0
 3v3
-Text Label 10150 5600 2    50   ~ 0
+Text Label 9950 5600 0    50   ~ 0
 3v3_MCU
 Text Label 2100 1800 2    50   ~ 0
 EN_MCU_REG
@@ -1055,10 +1053,10 @@ Text HLabel 1300 1200 0    50   Input ~ 0
 Text Label 2100 1200 2    50   ~ 0
 3v3_MCU
 $Comp
-L Device:R_Small R?
+L Device:R_Small R5
 U 1 1 5FBD2E82
 P 2950 2000
-F 0 "R?" H 3009 2046 50  0000 L CNN
+F 0 "R5" H 3009 2046 50  0000 L CNN
 F 1 "10k" H 3009 1955 50  0000 L CNN
 F 2 "" H 2950 2000 50  0001 C CNN
 F 3 "~" H 2950 2000 50  0001 C CNN
@@ -1073,10 +1071,10 @@ Wire Wire Line
 	2800 1850 2800 2100
 Connection ~ 2800 2100
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP1
 U 1 1 5FBB75FF
 P 4700 2400
-F 0 "TP?" V 4700 2600 50  0000 L CNN
+F 0 "TP1" V 4700 2600 50  0000 L CNN
 F 1 "TestPoint" V 4700 2700 50  0001 L CNN
 F 2 "" H 4900 2400 50  0001 C CNN
 F 3 "~" H 4900 2400 50  0001 C CNN
@@ -1084,10 +1082,10 @@ F 3 "~" H 4900 2400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP2
 U 1 1 5FBC1FC0
 P 4700 2500
-F 0 "TP?" V 4700 2688 50  0000 L CNN
+F 0 "TP2" V 4700 2688 50  0000 L CNN
 F 1 "TestPoint" V 4745 2688 50  0001 L CNN
 F 2 "" H 4900 2500 50  0001 C CNN
 F 3 "~" H 4900 2500 50  0001 C CNN
@@ -1095,10 +1093,10 @@ F 3 "~" H 4900 2500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP3
 U 1 1 5FBC21DE
 P 4700 2600
-F 0 "TP?" V 4700 2788 50  0000 L CNN
+F 0 "TP3" V 4700 2788 50  0000 L CNN
 F 1 "TestPoint" V 4745 2788 50  0001 L CNN
 F 2 "" H 4900 2600 50  0001 C CNN
 F 3 "~" H 4900 2600 50  0001 C CNN
@@ -1148,8 +1146,6 @@ Wire Wire Line
 Wire Wire Line
 	1300 1200 2100 1200
 Wire Wire Line
-	2100 1350 1300 1350
-Wire Wire Line
 	1300 1500 2100 1500
 Wire Wire Line
 	1300 1800 2100 1800
@@ -1169,4 +1165,19 @@ Wire Wire Line
 	1350 3100 2100 3100
 Text Notes 900  6300 0    50   ~ 10
 RGBW LED
+Wire Wire Line
+	9950 5600 10400 5600
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5FDEA730
+P 2200 1350
+F 0 "#FLG0102" H 2200 1425 50  0001 C CNN
+F 1 "PWR_FLAG" H 2200 1523 50  0001 C CNN
+F 2 "" H 2200 1350 50  0001 C CNN
+F 3 "~" H 2200 1350 50  0001 C CNN
+	1    2200 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 1350 2200 1350
 $EndSCHEMATC

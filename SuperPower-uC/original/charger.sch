@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 7
+Sheet 4 7
 Title "SuperPower-uC"
 Date "2020-09-20"
 Rev "0.1"
@@ -943,10 +943,10 @@ Rem. : Currently limited to less than 500mA to be compatible\n       with USB2 c
 Wire Notes Line
 	4700 2150 4700 2500
 $Comp
-L Device:R_US R?
+L Device:R_US R14
 U 1 1 5FC77F18
 P 6400 5100
-F 0 "R?" V 6195 5100 50  0000 C CNN
+F 0 "R14" V 6195 5100 50  0000 C CNN
 F 1 "10k" V 6286 5100 50  0000 C CNN
 F 2 "" V 6440 5090 50  0001 C CNN
 F 3 "~" H 6400 5100 50  0001 C CNN

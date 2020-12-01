@@ -182,7 +182,7 @@ Wire Wire Line
 Wire Wire Line
 	4100 5150 3700 5150
 Wire Wire Line
-	3500 5150 3100 5150
+	3500 5150 3250 5150
 $Comp
 L Device:R_Small R34
 U 1 1 5F73032E
@@ -472,10 +472,10 @@ This circuit (power oring) allows to have concurrent power inputs,\nthe input wi
 Text Label 1950 1150 2    50   ~ 0
 CHARGER_VIN
 $Comp
-L 150060vs75000:150060VS75000_0603 LED?
+L 150060vs75000:150060VS75000_0603 LED2
 U 1 1 5FC4B339
 P 7000 4750
-F 0 "LED?" V 7039 4632 50  0000 R CNN
+F 0 "LED2" V 7039 4632 50  0000 R CNN
 F 1 "150060VS75000_0603" V 6948 4632 50  0001 R CNN
 F 2 "" H 7000 4750 50  0001 C CNN
 F 3 "~" H 7000 4750 50  0001 C CNN
@@ -513,8 +513,8 @@ L Device:R_Small R?
 U 1 1 5FC4C6CF
 P 7000 5150
 AR Path="/5F639F48/5FC4C6CF" Ref="R?"  Part="1" 
-AR Path="/5F63B107/5FC4C6CF" Ref="R?"  Part="1" 
-F 0 "R?" H 7059 5196 50  0000 L CNN
+AR Path="/5F63B107/5FC4C6CF" Ref="R4"  Part="1" 
+F 0 "R4" H 7059 5196 50  0000 L CNN
 F 1 "2.2k" H 7059 5105 50  0000 L CNN
 F 2 "" H 7000 5150 50  0001 C CNN
 F 3 "~" H 7000 5150 50  0001 C CNN
@@ -567,14 +567,28 @@ Wire Notes Line
 Wire Notes Line
 	550  2000 550  550 
 $Comp
-L Connector:USB_C_Receptacle_USB2.0 J?
+L Connector:USB_C_Receptacle_USB2.0 J4
 U 1 1 5FC6195A
 P 2500 5750
-F 0 "J?" H 2607 6617 50  0000 C CNN
+F 0 "J4" H 2607 6617 50  0000 C CNN
 F 1 "USB_C_Receptacle_USB2.0" H 2607 6526 50  0000 C CNN
 F 2 "" H 2650 5750 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 2650 5750 50  0001 C CNN
 	1    2500 5750
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5FDD7D70
+P 3250 5150
+F 0 "#FLG0101" H 3250 5225 50  0001 C CNN
+F 1 "PWR_FLAG" H 3250 5323 50  0001 C CNN
+F 2 "" H 3250 5150 50  0001 C CNN
+F 3 "~" H 3250 5150 50  0001 C CNN
+	1    3250 5150
+	1    0    0    -1  
+$EndComp
+Connection ~ 3250 5150
+Wire Wire Line
+	3250 5150 3100 5150
 $EndSCHEMATC
