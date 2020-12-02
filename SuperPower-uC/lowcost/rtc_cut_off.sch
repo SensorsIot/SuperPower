@@ -292,8 +292,6 @@ Text Label 8450 2600 2    50   ~ 0
 VBAT
 Wire Wire Line
 	8200 2600 8450 2600
-Text Label 4750 2750 0    50   ~ 0
-VBAT
 Text Label 6350 4750 2    50   ~ 0
 VBAT
 Wire Wire Line
@@ -464,4 +462,6 @@ Wire Wire Line
 	4750 2750 5050 2750
 Wire Wire Line
 	5050 2750 5050 2850
+Text Label 5050 2750 2    50   ~ 0
+V_I2C
 $EndSCHEMATC
