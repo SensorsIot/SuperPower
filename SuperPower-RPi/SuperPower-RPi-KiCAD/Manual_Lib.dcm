@@ -1,0 +1,14 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ME6210A33M3G
+D Positive Linear Regulator, Fixed Output 3.3V
+K Voltage Regulator 100mA Positive
+F https://datasheet.lcsc.com/szlcsc/1810201611_MICRONE-Nanjing-Micro-One-Elec-ME6210A33PG_C85233.pdf
+$ENDCMP
+#
+$CMP TPS61088
+D  10-A Fully-Integrated Synchronous Boost Converter
+F https://www.ti.com/lit/ds/symlink/tps61088.pdf?ts=1601341027862
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CN1185
+D Low-Power Four Channel Voltage Monitoring Circuit
+F https://seeeddoc.github.io/Battery_kit-3.7V_520_mAh/res/CN1185_Datasheet.pdf
+$ENDCMP
+#
+#End Doc Library

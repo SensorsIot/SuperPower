@@ -1,12 +1,12 @@
 name: kicad-export
 
 on:
-#   push:
-#     paths:
-#     - '**.sch'
-#     - '**.kicad_pcb'
-  pull_request:
-   paths:
+   push:
+     paths:
+     - '**.sch'
+     - '**.kicad_pcb'
+   pull_request:
+     paths:
      - '**.sch'
      - '**.kicad_pcb'
 

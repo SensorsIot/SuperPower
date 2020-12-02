@@ -1,3 +1,5 @@
 (fp_lib_table
-  (lib (name RV-3028-C7)(type KiCad)(uri ${KIPRJMOD}/components/RV-3028-C7)(options "")(descr ""))
+  (lib (name RV-3028-C7)(type KiCad)(uri ${KIPRJMOD}/../components/RV-3028-C7)(options "")(descr ""))
+  (lib (name TPS63070RNM)(type KiCad)(uri ${KIPRJMOD}/../components/TPS63070RNM)(options "")(descr ""))
+  (lib (name TPS70933DRV)(type KiCad)(uri ${KIPRJMOD}/../components/TPS70933DRV)(options "")(descr ""))
 )
