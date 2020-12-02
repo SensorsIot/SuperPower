@@ -180,10 +180,6 @@ Text HLabel 1350 1200 0    50   Input ~ 0
 VBAT
 Wire Wire Line
 	5100 2850 5050 2850
-Wire Wire Line
-	5050 2850 5050 2950
-Wire Wire Line
-	5050 2950 5100 2950
 $Comp
 L power:GND #PWR0109
 U 1 1 5F81AC3F
@@ -231,7 +227,6 @@ NoConn ~ 1200 350
 Wire Wire Line
 	5600 4750 6100 4750
 Connection ~ 6100 4750
-Connection ~ 5050 2850
 Text Label 1750 850  2    50   ~ 0
 SDA
 Text Label 1750 950  2    50   ~ 0
@@ -457,4 +452,8 @@ Text Label 5050 2750 2    50   ~ 0
 V_I2C
 Wire Wire Line
 	4250 3150 5100 3150
+Text Label 4900 2950 0    50   ~ 0
+VBAT
+Wire Wire Line
+	4900 2950 5100 2950
 $EndSCHEMATC
