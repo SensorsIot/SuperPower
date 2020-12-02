@@ -415,7 +415,7 @@ Text GLabel 5950 3450 2    50   Input ~ 0
 exp5
 Text GLabel 5950 3550 2    50   Input ~ 0
 exp4
-Text GLabel 4550 3050 0    50   Input ~ 0
+Text GLabel 3750 2900 0    50   Input ~ 0
 INT_IO
 Wire Wire Line
 	4650 3450 5100 3450
@@ -423,10 +423,6 @@ Wire Wire Line
 	4650 3350 5100 3350
 Wire Wire Line
 	4650 3250 5100 3250
-Wire Wire Line
-	4550 3050 4600 3050
-Wire Wire Line
-	4600 3050 4600 3150
 Text GLabel 4650 3250 0    50   Input ~ 0
 3v3_EN
 Text GLabel 4650 3350 0    50   Input ~ 0
@@ -451,11 +447,6 @@ F 4 "C22827" H 4750 2900 50  0001 C CNN "LCSC"
 	1    4750 2900
 	1    0    0    -1  
 $EndComp
-Connection ~ 4600 3150
-Wire Wire Line
-	4600 3150 4250 3150
-Wire Wire Line
-	4600 3150 5100 3150
 Wire Wire Line
 	4750 3050 5100 3050
 Wire Wire Line
@@ -464,4 +455,6 @@ Wire Wire Line
 	5050 2750 5050 2850
 Text Label 5050 2750 2    50   ~ 0
 V_I2C
+Wire Wire Line
+	4250 3150 5100 3150
 $EndSCHEMATC
