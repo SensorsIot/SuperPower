@@ -141,17 +141,6 @@ MOSFET price range from LCSC (10/2020) :\n$0.174-0.357 @qt=1\n$0.128-0.347 @qt=1
 Text Notes 8650 5450 0    50   ~ 0
 LiFePO4 SOT23-6 ICs List :\n- AP9101CK6-CPTRG1 (3,65V)\n- AP9101CK6-ASTRG1 (3,80V)\n- HY2112-AB (3,75V)\n- HY2112-BB (3,75V)\n- HY2112-CB (3,75V)
 $Comp
-L Device:Battery_Cell BT1
-U 1 1 5F7A1B9D
-P 3500 1700
-F 0 "BT1" H 3618 1796 50  0000 L CNN
-F 1 "3,7V_18650_LiPo_Bat._Holder" H 3618 1705 50  0000 L CNN
-F 2 "Battery_Holders:Keystone_1042_1x18650" V 3500 1760 50  0001 C CNN
-F 3 "~" V 3500 1760 50  0001 C CNN
-	1    3500 1700
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:-BATT #PWR04
 U 1 1 5F7A20F6
 P 3500 2100
@@ -535,4 +524,42 @@ F 45 "ManWithNoName" H 1750 4800 50  0001 C CNN "Designer"
 	1    1750 4800
 	1    0    0    -1  
 $EndComp
+$Comp
+L battery_cell_holder_18650_smt_1042:Battery_Cell_Holder_18650_SMT_1042 BT1
+U 1 1 5FCEA64F
+P 3500 1700
+F 0 "BT1" H 3618 1841 50  0000 L CNN
+F 1 "Battery_Cell_Holder_18650_SMT_1042" H 3600 1700 50  0001 L CNN
+F 2 "Battery:BatteryHolder_Keystone_1042_1x18650" V 3500 1760 50  0001 C CNN
+F 3 "https://www.keyelco.com/product-pdf.cfm?p=918" V 3500 1760 50  0001 C CNN
+F 4 "Keystone" H 3618 1750 50  0000 L CNN "Mfr_name"
+F 5 "1042" H 3618 1659 50  0000 L CNN "Mfr_no"
+F 6 "https://octopart.com/1042-keystone-19977746?r=sp#PriceAndStock" H 3500 1700 50  0001 C CNN "Octopart_link"
+F 7 "https://fr.farnell.com/keystone/1042p/battery-holder-18650-smd/dp/2674338?ost=keystone+1042" H 3500 1700 50  0001 C CNN "Farnell_link"
+F 8 "2020-11-29" H 3500 1700 50  0001 C CNN "Farnell_check_date"
+F 9 "2,94 €" H 3500 1700 50  0001 C CNN "Farnell_price_qt=1"
+F 10 "2,65 €" H 3500 1700 50  0001 C CNN "Farnell_price_qt=10"
+F 11 "2,35 €" H 3500 1700 50  0001 C CNN "Farnell_price_qt=25"
+F 12 "2,30 €" H 3500 1700 50  0001 C CNN "Farnell_price_qt=50"
+F 13 "Available from 2021-01-16" H 3500 1700 50  0001 C CNN "Farnell_stock"
+F 14 "-" H 3500 1700 50  0001 C CNN "LCSC_link"
+F 15 "2020-11-29" H 3500 1700 50  0001 C CNN "LCSC_check_date"
+F 16 "https://eu.mouser.com/ProductDetail/Keystone-Electronics/1042?qs=%2F7TOpeL5Mz4qPdWi9tuLKw%3D%3D" H 3500 1700 50  0001 C CNN "Mouser_link"
+F 17 "2020-11-29" H 3500 1700 50  0001 C CNN "Mouser_check_date"
+F 18 "$3.62" H 3500 1700 50  0001 C CNN "Mouser_price_qt=1"
+F 19 "$3.13" H 3500 1700 50  0001 C CNN "Mouser_price_qt=100"
+F 20 "$2.61" H 3500 1700 50  0001 C CNN "Mouser_price_qt=500"
+F 21 "$2.36" H 3500 1700 50  0001 C CNN "Mouser_price_qt=1000"
+F 22 "3,942" H 3500 1700 50  0001 C CNN "Mouser_stock"
+F 23 "-" H 3500 1700 50  0001 C CNN "RS_link"
+F 24 "2020-11-29" H 3500 1700 50  0001 C CNN "RS_check_date"
+F 25 "TO_CHECK" H 3500 1700 50  0001 C CNN "Status"
+F 26 "1.00" H 3500 1700 50  0001 C CNN "Release_version"
+F 27 "2020-11-29" H 3500 1700 50  0001 C CNN "Release_date"
+F 28 "ManWithNoName" H 3500 1700 50  0001 C CNN "Designer"
+	1    3500 1700
+	1    0    0    -1  
+$EndComp
+Text Notes 3600 1900 0    50   ~ 0
+18650 Battery Holder
 $EndSCHEMATC

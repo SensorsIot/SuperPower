@@ -40,4 +40,6 @@
   (lib (name tmk212ab7475kg-t)(type Legacy)(uri ${KIPRJMOD}/../components/TMK212AB7475KG-T/tmk212ab7475kg-t.lib)(options "")(descr ""))
   (lib (name cl10b223kb8nnnc)(type Legacy)(uri ${KIPRJMOD}/../components/CL10B223KB8NNNC/cl10b223kb8nnnc.lib)(options "")(descr ""))
   (lib (name jst_xh_s2b_thru)(type Legacy)(uri ${KIPRJMOD}/../components/JST_XH_S2B_THRU/jst_xh_s2b_thru.lib)(options "")(descr ""))
+  (lib (name spm6530t-4r7m)(type Legacy)(uri ${KIPRJMOD}/../components/SPM6530T-4R7M/spm6530t-4r7m.lib)(options "")(descr ""))
+  (lib (name battery_cell_holder_18650_smt_1042)(type Legacy)(uri ${KIPRJMOD}/../components/BATTERY_CELL_HOLDER_18650_SMT_1042/battery_cell_holder_18650_smt_1042.lib)(options "")(descr ""))
 )

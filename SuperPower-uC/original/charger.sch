@@ -141,19 +141,6 @@ Wire Wire Line
 Connection ~ 5600 5200
 Wire Wire Line
 	5600 5200 5800 5200
-$Comp
-L pspice:INDUCTOR L1
-U 1 1 5F75E291
-P 7050 3850
-F 0 "L1" H 7050 4050 50  0000 C CNN
-F 1 "6.8µH" H 7050 3950 50  0000 C CNN
-F 2 "" H 7050 3850 50  0001 C CNN
-F 3 "~" H 7050 3850 50  0001 C CNN
-	1    7050 3850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7300 3850 7450 3850
 Connection ~ 7450 3850
 Wire Wire Line
 	7450 3850 7450 3950
@@ -345,8 +332,6 @@ Text Label 3850 5400 0    50   ~ 0
 VCC2P5
 Wire Wire Line
 	6200 3950 7450 3950
-Wire Wire Line
-	6800 3850 6400 3850
 Wire Wire Line
 	6400 3800 6400 3850
 Connection ~ 6400 3850
@@ -1326,4 +1311,65 @@ F 37 "ManWithNoName" H 10100 5950 50  0001 C CNN "Designer"
 	1    10100 5950
 	1    0    0    -1  
 $EndComp
+$Comp
+L spm6530t-4r7m:SPM6530T-4R7M L1
+U 1 1 5FCBF9A3
+P 7050 3850
+F 0 "L1" V 7365 3850 50  0000 C CNN
+F 1 "SPM6530T-4R7M" V 7366 3850 50  0001 C CNN
+F 2 "Inductor_SMD_user:L_TDK_SPM6530T" H 7050 3850 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/inductor_commercial_power_spm6530_en.pdf" H 7050 3850 50  0001 C CNN
+F 4 "https://octopart.com/spm6530t-4r7m-tdk-18903911?r=sp" H 7050 3850 50  0001 C CNN "Octopart_link"
+F 5 "TDK" H 7050 3850 50  0001 C CNN "Mfr_name"
+F 6 "SPM6530T-4R7M" H 7050 3850 50  0001 C CNN "Mfr_no"
+F 7 "4.7µH" V 7274 3850 50  0000 C CNN "Ind_value"
+F 8 "5.6A" H 7050 3850 50  0001 C CNN "Ind_current_max"
+F 9 "6.2A" H 7050 3850 50  0001 C CNN "Ind_current_sat_max"
+F 10 "35.8mOhm" V 7183 3850 50  0000 C CNN "Ind_DCR_typ"
+F 11 "20%" H 7050 3850 50  0001 C CNN "Ind_tol"
+F 12 ">10MHz" H 7050 3850 50  0001 C CNN "Ind_SFR"
+F 13 "6,5x7,1x3,0mm" H 7050 3850 50  0001 C CNN "Package"
+F 14 "https://lcsc.com/product-detail/Power-Inductors_TDK-SPM6530T-4R7M_C76857.html" H 7050 3850 50  0001 C CNN "LCSC_link"
+F 15 "C76857" H 7050 3850 50  0001 C CNN "LCSC_ref"
+F 16 "2020-12-02" H 7050 3850 50  0001 C CNN "LCSC_check_date"
+F 17 "$0.1554" H 7050 3850 50  0001 C CNN "LCSC_price_qt=1"
+F 18 "$0.1152" H 7050 3850 50  0001 C CNN "LCSC_price_qt=10"
+F 19 "$0.1078" H 7050 3850 50  0001 C CNN "LCSC_price_qt=30"
+F 20 "$0.1004" H 7050 3850 50  0001 C CNN "LCSC_price_qt=100"
+F 21 "16,144" H 7050 3850 50  0001 C CNN "LCSC_stock"
+F 22 "https://fr.farnell.com/tdk/spm6530t-4r7m/inductance-4-7uh-20-blindee/dp/2215613?st=SPM6530T-4R7M" H 7050 3850 50  0001 C CNN "Farnell_link"
+F 23 "2215613" H 7050 3850 50  0001 C CNN "Farnell_ref"
+F 24 "2020-12-02" H 7050 3850 50  0001 C CNN "Farnell_check_date"
+F 25 "1,36 €" H 7050 3850 50  0001 C CNN "Farnell_price_qt=1"
+F 26 "0,785 €" H 7050 3850 50  0001 C CNN "Farnell_price_qt=50"
+F 27 "0,738 €" H 7050 3850 50  0001 C CNN "Farnell_price_qt=100"
+F 28 "0,659 €" H 7050 3850 50  0001 C CNN "Farnell_price_qt=250"
+F 29 "500" H 7050 3850 50  0001 C CNN "Farnell_stock"
+F 30 "https://eu.mouser.com/ProductDetail/TDK/SPM6530T-4R7M?qs=chjFIDm9dbpOGKMR3qNvlw%3D%3D" H 7050 3850 50  0001 C CNN "Mouser_link"
+F 31 "810-SPM6530T-4R7M" H 7050 3850 50  0001 C CNN "Mouser_ref"
+F 32 "2020-12-02" H 7050 3850 50  0001 C CNN "Mouser_check_date"
+F 33 "$1.42" H 7050 3850 50  0001 C CNN "Mouser_price_qt=1"
+F 34 "$1.07" H 7050 3850 50  0001 C CNN "Mouser_price_qt=10"
+F 35 "$0.812" H 7050 3850 50  0001 C CNN "Mouser_price_qt=100"
+F 36 "$0.601" H 7050 3850 50  0001 C CNN "Mouser_price_qt=500"
+F 37 "353" H 7050 3850 50  0001 C CNN "Mouser_stock"
+F 38 "https://fr.rs-online.com/web/p/inductances-bobinees-cms/9164260/" H 7050 3850 50  0001 C CNN "RS_link"
+F 39 "916-4260" H 7050 3850 50  0001 C CNN "RS_ref"
+F 40 "2020-12-02" H 7050 3850 50  0001 C CNN "RS_check_date"
+F 41 "515" H 7050 3850 50  0001 C CNN "RS_stock"
+F 42 "1,224 €" H 7050 3850 50  0001 C CNN "RS_price_qt=5"
+F 43 "1,038 €" H 7050 3850 50  0001 C CNN "RS_price_qt=25"
+F 44 "0,92 €" H 7050 3850 50  0001 C CNN "RS_price_qt=50"
+F 45 "0,794 €" H 7050 3850 50  0001 C CNN "RS_price_qt=100"
+F 46 "ManWithNoName" H 7050 3850 50  0001 C CNN "Designer"
+F 47 "2020-12-02" H 7050 3850 50  0001 C CNN "Release_date"
+F 48 "1.00" H 7050 3850 50  0001 C CNN "Release_version"
+F 49 "TO_CHECK" H 7050 3850 50  0001 C CNN "Status"
+	1    7050 3850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6400 3850 6900 3850
+Wire Wire Line
+	7200 3850 7450 3850
 $EndSCHEMATC
