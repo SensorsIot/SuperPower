@@ -271,10 +271,6 @@ Wire Wire Line
 	5900 2950 6150 2950
 Wire Wire Line
 	5900 3050 6150 3050
-Text Label 6150 2850 2    50   ~ 0
-VBAT
-Wire Wire Line
-	5900 2850 6150 2850
 Text Label 8650 2900 2    50   ~ 0
 SDA
 Text Label 8650 3000 2    50   ~ 0
@@ -452,8 +448,40 @@ Text Label 5050 2750 2    50   ~ 0
 V_I2C
 Wire Wire Line
 	4250 3150 5100 3150
-Text Label 4900 2950 0    50   ~ 0
-VBAT
 Wire Wire Line
-	4900 2950 5100 2950
+	5100 2950 5050 2950
+Wire Wire Line
+	5050 2950 5050 2850
+Connection ~ 5050 2850
+Text Label 6450 2850 2    50   ~ 0
+V_I2C
+$Comp
+L Device:C C22
+U 1 1 5FC9C8EC
+P 6450 3050
+F 0 "C22" H 6300 2950 50  0000 L CNN
+F 1 "0.1µF" H 6200 3150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6488 2900 50  0001 C CNN
+F 3 "~" H 6450 3050 50  0001 C CNN
+F 4 "C14858" H 6450 3050 50  0001 C CNN "LCSC"
+	1    6450 3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5900 2850 6450 2850
+$Comp
+L power:GND #PWR?
+U 1 1 5FCA03ED
+P 6450 3250
+F 0 "#PWR?" H 6450 3000 50  0001 C CNN
+F 1 "GND" H 6455 3077 50  0000 C CNN
+F 2 "" H 6450 3250 50  0001 C CNN
+F 3 "" H 6450 3250 50  0001 C CNN
+	1    6450 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 3250 6450 3200
+Wire Wire Line
+	6450 2900 6450 2850
 $EndSCHEMATC
