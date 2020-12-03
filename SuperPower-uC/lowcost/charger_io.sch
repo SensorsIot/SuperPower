@@ -151,30 +151,6 @@ F 4 "C25804" H 8550 2700 50  0001 C CNN "LCSC"
 	0    1    1    0   
 $EndComp
 $Comp
-L Transistor_BJT:S8050 Q4
-U 1 1 5F7D2269
-P 9000 3250
-F 0 "Q4" H 9190 3204 50  0000 L CNN
-F 1 "S8050" H 9190 3295 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 9200 3175 50  0001 L CIN
-F 3 "http://www.unisonic.com.tw/datasheet/S8050.pdf" H 9000 3250 50  0001 L CNN
-F 4 "C111272" H 9000 3250 50  0001 C CNN "LCSC"
-	1    9000 3250
-	1    0    0    1   
-$EndComp
-$Comp
-L Transistor_BJT:S8050 Q3
-U 1 1 5F7D1CC7
-P 9000 2700
-F 0 "Q3" H 9190 2746 50  0000 L CNN
-F 1 "S8050" H 9190 2655 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 9200 2625 50  0001 L CIN
-F 3 "http://www.unisonic.com.tw/datasheet/S8050.pdf" H 9000 2700 50  0001 L CNN
-F 4 "C111272" H 9000 2700 50  0001 C CNN "LCSC"
-	1    9000 2700
-	1    0    0    -1  
-$EndComp
-$Comp
 L AMS1117-3.3:AMS1117-3.3 U6
 U 1 1 5F7CB01B
 P 7050 5150
@@ -531,4 +507,28 @@ Wire Wire Line
 Wire Wire Line
 	3600 3000 4100 3000
 NoConn ~ 3200 3600
+$Comp
+L Transistor_BJT:BC817 Q3
+U 1 1 5FC9B8EE
+P 9000 2700
+F 0 "Q3" H 9190 2746 50  0000 L CNN
+F 1 "S8050" H 9190 2655 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 9200 2625 50  0001 L CIN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811131731_Shikues-S8050_C111272.pdf" H 9000 2700 50  0001 L CNN
+F 4 "C111272" H 9000 2700 50  0001 C CNN "LCSC"
+	1    9000 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC817 Q4
+U 1 1 5FCA504B
+P 9000 3250
+F 0 "Q4" H 9190 3204 50  0000 L CNN
+F 1 "S8050" H 9190 3295 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 9200 3175 50  0001 L CIN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811131731_Shikues-S8050_C111272.pdf" H 9000 3250 50  0001 L CNN
+F 4 "C111272" H 9000 3250 50  0001 C CNN "LCSC"
+	1    9000 3250
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC
