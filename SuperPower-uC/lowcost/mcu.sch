@@ -91,8 +91,6 @@ Wire Wire Line
 	7050 4250 6800 4250
 Wire Wire Line
 	7050 4350 6800 4350
-Wire Wire Line
-	7050 4450 6800 4450
 NoConn ~ 6800 3750
 NoConn ~ 6150 4800
 NoConn ~ 5850 4800
@@ -567,4 +565,22 @@ Wire Wire Line
 Connection ~ 4550 3550
 Wire Wire Line
 	4550 3550 4450 3550
+$Comp
+L Device:R R20
+U 1 1 5FCAF516
+P 7350 4300
+F 0 "R20" H 7420 4346 50  0000 L CNN
+F 1 "10k" H 7420 4255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7280 4300 50  0001 C CNN
+F 3 "~" H 7350 4300 50  0001 C CNN
+F 4 "C25804" H 7350 4300 50  0001 C CNN "LCSC"
+	1    7350 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 4450 7350 4450
+Text Label 7700 4150 2    50   ~ 0
+3v3_MCU
+Wire Wire Line
+	7700 4150 7350 4150
 $EndSCHEMATC
