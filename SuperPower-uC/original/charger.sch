@@ -397,17 +397,6 @@ Wire Wire Line
 Text Label 8650 5850 0    50   ~ 0
 NTC
 $Comp
-L Device:Q_NMOS_DGS Q3
-U 1 1 5F84F43E
-P 6950 2450
-F 0 "Q3" H 7154 2496 50  0000 L CNN
-F 1 "Q_NMOS_DGS" H 7154 2405 50  0000 L CNN
-F 2 "" H 7150 2550 50  0001 C CNN
-F 3 "~" H 6950 2450 50  0001 C CNN
-	1    6950 2450
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_US R13
 U 1 1 5F8508E1
 P 7050 2000
@@ -1372,4 +1361,57 @@ Wire Wire Line
 	6400 3850 6900 3850
 Wire Wire Line
 	7200 3850 7450 3850
+$Comp
+L 2n7002a:2N7002A Q3
+U 1 1 5FCA86A7
+P 6950 2450
+F 0 "Q3" H 7155 2587 50  0000 L CNN
+F 1 "2N7002A" H 7155 2496 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7150 2375 50  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds31360.pdf" H 6950 2450 50  0001 C CNN
+F 4 "Diodes Incorporated" H 6950 2450 50  0001 C CNN "Mfr_name"
+F 5 "2N7002A-7" H 6950 2450 50  0001 C CNN "Mfr_no"
+F 6 "SOT23-3" H 7155 2405 50  0000 L CNN "Package"
+F 7 "60V" H 6950 2450 50  0001 C CNN "VDSS"
+F 8 "6Ω" H 7155 2314 50  0000 L CNN "RDSon"
+F 9 "220mA" H 6950 2450 50  0001 C CNN "IDmax"
+F 10 "1.2-2.0V" H 6950 2450 50  0001 C CNN "VGSth"
+F 11 "20V" H 6950 2450 50  0001 C CNN "VGSS"
+F 12 "https://octopart.com/2n7002a-7-diodes+inc.-12411377?r=sp" H 6950 2450 50  0001 C CNN "Octopart_link"
+F 13 "https://fr.farnell.com/diodes-inc/2n7002a-7/mosfet-canal-n-60v-0-18a-sot-23/dp/3127180?st=2n7002a-7" H 6950 2450 50  0001 C CNN "Farnell_link"
+F 14 "3127180" H 6950 2450 50  0001 C CNN "Farnell_ref"
+F 15 "2020-12-04" H 6950 2450 50  0001 C CNN "Farnell_check_date"
+F 16 "0,211 €" H 6950 2450 50  0001 C CNN "Farnell_price_qt=5"
+F 17 "0,209 €" H 6950 2450 50  0001 C CNN "Farnell_price_qt=25"
+F 18 "0,0964 €" H 6950 2450 50  0001 C CNN "Farnell_price_qt=100"
+F 19 "0,0904 €" H 6950 2450 50  0001 C CNN "Farnell_price_qt=250"
+F 20 "2,238" H 6950 2450 50  0001 C CNN "Farnell_stock"
+F 21 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-2N7002A-7_C139446.html" H 6950 2450 50  0001 C CNN "LCSC_link"
+F 22 "C139446" H 6950 2450 50  0001 C CNN "LCSC_ref"
+F 23 "2020-12-04" H 6950 2450 50  0001 C CNN "LCSC_check_date"
+F 24 "$0.0247" H 6950 2450 50  0001 C CNN "LCSC_price_qt=20"
+F 25 "$0.0184" H 6950 2450 50  0001 C CNN "LCSC_price_qt=200"
+F 26 "$0.0173" H 6950 2450 50  0001 C CNN "LCSC_price_qt=600"
+F 27 "$0.0161" H 6950 2450 50  0001 C CNN "LCSC_price_qt=2000"
+F 28 "20,880" H 6950 2450 50  0001 C CNN "LCSC_stock"
+F 29 "https://eu.mouser.com/ProductDetail/Diodes-Incorporated/2N7002A-7?qs=%2Fha2pyFaduiVkHzHToHS9vYfqHI9tbd78Fpui8SRcmA=" H 6950 2450 50  0001 C CNN "Mouser_link"
+F 30 "621-2N7002A-7" H 6950 2450 50  0001 C CNN "Mouser_ref"
+F 31 "$0.293" H 6950 2450 50  0001 C CNN "Mouser_price_qt=1"
+F 32 "$0.201" H 6950 2450 50  0001 C CNN "Mouser_price_qt=10"
+F 33 "$0.096" H 6950 2450 50  0001 C CNN "Mouser_price_qt=100"
+F 34 "$0.082" H 6950 2450 50  0001 C CNN "Mouser_price_qt=500"
+F 35 "2020-12-04" H 6950 2450 50  0001 C CNN "Mouser_check_date"
+F 36 "21,482" H 6950 2450 50  0001 C CNN "Mouser_stock"
+F 37 "https://fr.rs-online.com/web/p/transistors-mosfet/8228647/" H 6950 2450 50  0001 C CNN "RS_link"
+F 38 "822-8647" H 6950 2450 50  0001 C CNN "RS_ref"
+F 39 "2020-12-04" H 6950 2450 50  0001 C CNN "RS_check_date"
+F 40 "0,079 €" H 6950 2450 50  0001 C CNN "RS_price_qt=150"
+F 41 "1800" H 6950 2450 50  0001 C CNN "RS_stock"
+F 42 "TO_CHECK" H 6950 2450 50  0001 C CNN "Status"
+F 43 "1.00" H 6950 2450 50  0001 C CNN "Release_version"
+F 44 "2020-12-03" H 6950 2450 50  0001 C CNN "Release_date"
+F 45 "ManWithNoName" H 6950 2450 50  0001 C CNN "Designer"
+	1    6950 2450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
