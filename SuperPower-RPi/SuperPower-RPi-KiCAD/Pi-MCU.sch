@@ -1221,18 +1221,6 @@ F 3 "~" H 6200 9950 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D6
-U 1 1 5FAB9400
-P 6200 9650
-F 0 "D6" V 6246 9580 50  0000 R CNN
-F 1 "D_Small" V 6155 9580 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-523" V 6200 9650 50  0001 C CNN
-F 3 "~" V 6200 9650 50  0001 C CNN
-F 4 "FIX FOOTPRINT" H 6200 9650 50  0001 C CNN "Mfg"
-	1    6200 9650
-	0    -1   -1   0   
-$EndComp
-$Comp
 L MCU_Microchip_ATtiny:ATtiny85-20SU U4
 U 1 1 5FAE2AC9
 P 11700 6450
@@ -1462,4 +1450,24 @@ F 3 "~" H 9650 900 50  0001 C CNN
 	1    9650 900 
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:D_Zener_Small D?
+U 1 1 5FCDC76C
+P 6200 9650
+AR Path="/5F6AC66E/5FCDC76C" Ref="D?"  Part="1" 
+AR Path="/5F6AC872/5FCDC76C" Ref="D6"  Part="1" 
+F 0 "D6" V 6154 9720 50  0000 L CNN
+F 1 "BZT585B13T-7" V 6245 9720 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-523" V 6200 9650 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/BZT585BxVxT.pdf" V 6200 9650 50  0001 C CNN
+F 4 "Diodes Incorporated" H 6200 9650 50  0001 C CNN "Mfg"
+F 5 "BZT585B13T-7" H 6200 9650 50  0001 C CNN "Mfg PN"
+F 6 "BZT585B13T-7DICT-ND" H 6200 9650 50  0001 C CNN "Digi-Key PN"
+	1    6200 9650
+	0    -1   -1   0   
+$EndComp
+Text Notes 3500 10800 0    50   ~ 0
+Extra I2C buss conn.
+Text Notes 7950 10850 0    50   ~ 0
+DotStar indicator
 $EndSCHEMATC

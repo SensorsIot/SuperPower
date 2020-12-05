@@ -144,10 +144,12 @@ L Device:D_Zener_Small D3
 U 1 1 5FA88013
 P 4850 3250
 F 0 "D3" V 4804 3320 50  0000 L CNN
-F 1 "D_Zener_Small" V 4895 3320 50  0000 L CNN
+F 1 "BZT585B13T-7" V 4895 3320 50  0000 L CNN
 F 2 "Diode_SMD:D_SOD-523" V 4850 3250 50  0001 C CNN
-F 3 "~" V 4850 3250 50  0001 C CNN
-F 4 "FIX FOOTPRINT" H 4850 3250 50  0001 C CNN "Mfg"
+F 3 "https://www.diodes.com/assets/Datasheets/BZT585BxVxT.pdf" V 4850 3250 50  0001 C CNN
+F 4 "Diodes Incorporated" H 4850 3250 50  0001 C CNN "Mfg"
+F 5 "BZT585B13T-7DICT-ND" H 4850 3250 50  0001 C CNN "Digi-Key PN"
+F 6 "BZT585B13T-7" H 4850 3250 50  0001 C CNN "Mfg PN"
 	1    4850 3250
 	0    1    1    0   
 $EndComp
@@ -203,10 +205,12 @@ L Device:D_Zener_Small D4
 U 1 1 5FA8BED1
 P 6500 3750
 F 0 "D4" V 6454 3820 50  0000 L CNN
-F 1 "D_Zener_Small" V 6545 3820 50  0000 L CNN
+F 1 "BZT585B13T-7" V 6545 3820 50  0000 L CNN
 F 2 "Diode_SMD:D_SOD-523" V 6500 3750 50  0001 C CNN
-F 3 "~" V 6500 3750 50  0001 C CNN
-F 4 "FIX FOOTPRINT" H 6500 3750 50  0001 C CNN "Mfg"
+F 3 "https://www.diodes.com/assets/Datasheets/BZT585BxVxT.pdf" V 6500 3750 50  0001 C CNN
+F 4 "Diodes Incorporated" H 6500 3750 50  0001 C CNN "Mfg"
+F 5 "BZT585B13T-7DICT-ND" H 6500 3750 50  0001 C CNN "Digi-Key PN"
+F 6 "BZT585B13T-7" H 6500 3750 50  0001 C CNN "Mfg PN"
 	1    6500 3750
 	0    1    1    0   
 $EndComp
@@ -229,10 +233,12 @@ L Device:D_Zener_Small D5
 U 1 1 5FA8C733
 P 7200 3250
 F 0 "D5" V 7154 3320 50  0000 L CNN
-F 1 "D_Zener_Small" V 7245 3320 50  0000 L CNN
+F 1 "BZT585B13T-7" V 7245 3320 50  0000 L CNN
 F 2 "Diode_SMD:D_SOD-523" V 7200 3250 50  0001 C CNN
-F 3 "~" V 7200 3250 50  0001 C CNN
-F 4 "FIX FOOTPRINT" H 7200 3250 50  0001 C CNN "Mfg"
+F 3 "https://www.diodes.com/assets/Datasheets/BZT585BxVxT.pdf" V 7200 3250 50  0001 C CNN
+F 4 "Diodes Incorporated" H 7200 3250 50  0001 C CNN "Mfg"
+F 5 "BZT585B13T-7" H 7200 3250 50  0001 C CNN "Mfg PN"
+F 6 "BZT585B13T-7DICT-ND" H 7200 3250 50  0001 C CNN "Digi-Key PN"
 	1    7200 3250
 	0    1    1    0   
 $EndComp
@@ -324,7 +330,7 @@ Reverse Polarity Protection
 Text Notes 6950 4500 0    50   ~ 0
 Overvoltage Protection
 Text Notes 6450 4850 0    50   ~ 0
-Vz(D4) + Vgs(th)(Q2) is critical for overvoltage threshold.
+Vz(D4) + Vgs(th)(Q2) is critical for overvoltage threshold.\nTarget: 15V\n-1<VTH(Q2)<-2.1\nVz = 14?
 $Comp
 L Connector:USB_C_Receptacle_USB2.0 J6
 U 1 1 5FA11947
