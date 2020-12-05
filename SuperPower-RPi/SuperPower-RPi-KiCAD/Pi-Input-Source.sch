@@ -135,18 +135,6 @@ F 3 "" H 4550 3800 50  0001 C CNN
 	1    4550 3800
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Q_PMOS_GSD Q3
-U 1 1 5F703042
-P 4550 3100
-F 0 "Q3" V 4892 3100 50  0000 C CNN
-F 1 "Q_PMOS_GSD" V 4801 3100 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4750 3200 50  0001 C CNN
-F 3 "~" H 4550 3100 50  0001 C CNN
-F 4 "FIX FOOTPRINT" H 4550 3100 50  0001 C CNN "Mfg"
-	1    4550 3100
-	0    -1   -1   0   
-$EndComp
 Text HLabel 9550 3000 2    50   Output ~ 0
 Vout
 Text Notes 1900 6400 0    50   ~ 0
@@ -262,18 +250,6 @@ F 6 "" H 8000 3950 50  0001 C CNN "Mfg PN"
 	1    8000 3950
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Q_PMOS_GSD Q7
-U 1 1 5FA8D6D0
-P 8600 3100
-F 0 "Q7" V 8942 3100 50  0000 C CNN
-F 1 "Q_PMOS_GSD" V 8851 3100 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 8800 3200 50  0001 C CNN
-F 3 "~" H 8600 3100 50  0001 C CNN
-F 4 "FIX FOOTPRINT" H 8600 3100 50  0001 C CNN "Mfg"
-	1    8600 3100
-	0    1    -1   0   
-$EndComp
 Wire Wire Line
 	6500 3350 6500 3550
 $Comp
@@ -314,7 +290,7 @@ Wire Wire Line
 	8000 3350 8000 3000
 Connection ~ 8000 3000
 Wire Wire Line
-	8000 3000 8400 3000
+	8000 3000 8500 3000
 $Comp
 L power:GND #PWR0110
 U 1 1 5FA92B9D
@@ -329,9 +305,9 @@ $EndComp
 Wire Wire Line
 	8000 4100 8000 4050
 Wire Wire Line
-	8000 3800 8600 3800
+	8000 3800 8700 3800
 Wire Wire Line
-	8600 3800 8600 3300
+	8700 3800 8700 3300
 Connection ~ 8000 3800
 Wire Wire Line
 	8000 3800 8000 3750
@@ -349,18 +325,6 @@ Text Notes 6950 4500 0    50   ~ 0
 Overvoltage Protection
 Text Notes 6450 4850 0    50   ~ 0
 Vz(D4) + Vgs(th)(Q2) is critical for overvoltage threshold.
-$Comp
-L Device:Q_PMOS_GSD Q2
-U 1 1 5FA8A6C8
-P 7900 3550
-F 0 "Q2" V 8242 3550 50  0000 C CNN
-F 1 "Q_PMOS_GSD" V 8151 3550 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 8100 3650 50  0001 C CNN
-F 3 "~" H 7900 3550 50  0001 C CNN
-F 4 "FIX FOOTPRINT" H 7900 3550 50  0001 C CNN "Mfg"
-	1    7900 3550
-	1    0    0    1   
-$EndComp
 $Comp
 L Connector:USB_C_Receptacle_USB2.0 J6
 U 1 1 5FA11947
@@ -403,7 +367,49 @@ F 3 "~" H 9150 3000 50  0001 C CNN
 $EndComp
 Connection ~ 9150 3000
 Wire Wire Line
-	9150 3000 8800 3000
+	9150 3000 8900 3000
 Text Notes 1950 1400 0    50   ~ 0
 https://www.adafruit.com/product/724
+$Comp
+L Manual_Lib:Q_PMOS_DMP3056L-7_SOT-23 Q3
+U 1 1 5FCC37BB
+P 4550 3100
+F 0 "Q3" V 4892 3100 50  0000 C CNN
+F 1 "Q_PMOS_DMP3056L-7_SOT-23" H 4750 3050 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4750 3200 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/DMP3056L.pdf" H 4550 3100 50  0001 C CNN
+F 4 "Diodes Incorporated" H 4550 3100 50  0001 C CNN "Mfg"
+F 5 "DMP3056L-7" V 4801 3100 50  0000 C CNN "Mfg PN"
+F 6 "DMP3056L-7DICT-ND" H 4550 3100 50  0001 C CNN "Digi-Key PN"
+	1    4550 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Manual_Lib:Q_PMOS_DMP3056L-7_SOT-23 Q7
+U 1 1 5FCC5BEB
+P 8700 3100
+F 0 "Q7" V 9042 3100 50  0000 C CNN
+F 1 "Q_PMOS_DMP3056L-7_SOT-23" H 8900 3050 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8900 3200 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/DMP3056L.pdf" H 8700 3100 50  0001 C CNN
+F 4 "Diodes Incorporated" H 8700 3100 50  0001 C CNN "Mfg"
+F 5 "DMP3056L-7" V 8951 3100 50  0000 C CNN "Mfg PN"
+F 6 "DMP3056L-7DICT-ND" H 8700 3100 50  0001 C CNN "Digi-Key PN"
+	1    8700 3100
+	0    1    -1   0   
+$EndComp
+$Comp
+L Manual_Lib:Q_PMOS_DMP3056L-7_SOT-23 Q2
+U 1 1 5FCCD8B4
+P 7900 3550
+F 0 "Q2" H 8104 3504 50  0000 L CNN
+F 1 "Q_PMOS_DMP3056L-7_SOT-23" H 8100 3500 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8100 3650 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/DMP3056L.pdf" H 7900 3550 50  0001 C CNN
+F 4 "Diodes Incorporated" H 7900 3550 50  0001 C CNN "Mfg"
+F 5 "DMP3056L-7" H 8104 3595 50  0000 L CNN "Mfg PN"
+F 6 "DMP3056L-7DICT-ND" H 7900 3550 50  0001 C CNN "Digi-Key PN"
+	1    7900 3550
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC

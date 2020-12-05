@@ -78,20 +78,6 @@ F 6 "" H 4950 3500 50  0001 C CNN "Mfg PN"
 	1    4950 3500
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Q_PMOS_GSD Q?
-U 1 1 5F703505
-P 5500 3350
-AR Path="/5F6AC644/5F703505" Ref="Q?"  Part="1" 
-AR Path="/5F6AC517/5F703505" Ref="Q5"  Part="1" 
-F 0 "Q5" V 5842 3350 50  0000 C CNN
-F 1 "Q_PMOS_GSD" V 5751 3350 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5700 3450 50  0001 C CNN
-F 3 "~" H 5500 3350 50  0001 C CNN
-F 4 "FIX FOOTPRINT" H 5500 3350 50  0001 C CNN "Mfg"
-	1    5500 3350
-	0    1    -1   0   
-$EndComp
 Text HLabel 4750 4050 0    50   Input ~ 0
 OP_Enable
 Text HLabel 6350 3250 2    50   Output ~ 0
@@ -112,4 +98,18 @@ $EndComp
 Connection ~ 6100 3250
 Wire Wire Line
 	6100 3250 6350 3250
+$Comp
+L Manual_Lib:Q_PMOS_DMP3056L-7_SOT-23 Q5
+U 1 1 5FCD2BA8
+P 5500 3350
+F 0 "Q5" V 5842 3350 50  0000 C CNN
+F 1 "Q_PMOS_DMP3056L-7_SOT-23" H 5700 3300 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5700 3450 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/DMP3056L.pdf" H 5500 3350 50  0001 C CNN
+F 4 "Diodes Incorporated" H 5500 3350 50  0001 C CNN "Mfg"
+F 5 "DMP3056L-7" V 5751 3350 50  0000 C CNN "Mfg PN"
+F 6 "DMP3056L-7DICT-ND" H 5500 3350 50  0001 C CNN "Digi-Key PN"
+	1    5500 3350
+	0    1    -1   0   
+$EndComp
 $EndSCHEMATC
