@@ -125,9 +125,10 @@ L Mechanical:MountingHole H1
 U 1 1 5FA3F339
 P 9650 6050
 F 0 "H1" H 9750 6050 50  0000 L CNN
-F 1 "MountingHole" H 9750 6005 50  0001 L CNN
+F 1 "DNP" H 9750 6005 50  0001 L CNN
 F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO14580_Pad_TopBottom" H 9650 6050 50  0001 C CNN
 F 3 "~" H 9650 6050 50  0001 C CNN
+F 4 "DNP" H 9650 6050 50  0001 C CNN "Mfg"
 	1    9650 6050
 	1    0    0    -1  
 $EndComp
@@ -136,9 +137,10 @@ L Mechanical:MountingHole H2
 U 1 1 5FA3F7AE
 P 9950 6050
 F 0 "H2" H 10050 6050 50  0000 L CNN
-F 1 "MountingHole" H 10050 6005 50  0001 L CNN
+F 1 "DNP" H 10050 6005 50  0001 L CNN
 F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO14580_Pad_TopBottom" H 9950 6050 50  0001 C CNN
 F 3 "~" H 9950 6050 50  0001 C CNN
+F 4 "DNP" H 9950 6050 50  0001 C CNN "Mfg"
 	1    9950 6050
 	1    0    0    -1  
 $EndComp
@@ -147,9 +149,10 @@ L Mechanical:MountingHole H3
 U 1 1 5FA3F9F0
 P 10250 6050
 F 0 "H3" H 10350 6050 50  0000 L CNN
-F 1 "MountingHole" H 10350 6005 50  0001 L CNN
+F 1 "DNP" H 10350 6005 50  0001 L CNN
 F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO14580_Pad_TopBottom" H 10250 6050 50  0001 C CNN
 F 3 "~" H 10250 6050 50  0001 C CNN
+F 4 "DNP" H 10250 6050 50  0001 C CNN "Mfg"
 	1    10250 6050
 	1    0    0    -1  
 $EndComp
@@ -158,9 +161,10 @@ L Mechanical:MountingHole H4
 U 1 1 5FA3FCA7
 P 10550 6050
 F 0 "H4" H 10650 6050 50  0000 L CNN
-F 1 "MountingHole" H 10650 6005 50  0001 L CNN
+F 1 "DNP" H 10650 6005 50  0001 L CNN
 F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO14580_Pad_TopBottom" H 10550 6050 50  0001 C CNN
 F 3 "~" H 10550 6050 50  0001 C CNN
+F 4 "DNP" H 10550 6050 50  0001 C CNN "Mfg"
 	1    10550 6050
 	1    0    0    -1  
 $EndComp
@@ -192,6 +196,7 @@ F 0 "JP2" V 5400 4150 50  0000 R CNN
 F 1 "NC" V 5300 4150 50  0000 R CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 5350 3950 50  0001 C CNN
 F 3 "~" H 5350 3950 50  0001 C CNN
+F 4 "DNP" H 5350 3950 50  0001 C CNN "Mfg"
 	1    5350 3950
 	0    -1   -1   0   
 $EndComp
