@@ -43,4 +43,5 @@
   (lib (name spm6530t-4r7m)(type Legacy)(uri ${KIPRJMOD}/../components/SPM6530T-4R7M/spm6530t-4r7m.lib)(options "")(descr ""))
   (lib (name battery_cell_holder_18650_smt_1042)(type Legacy)(uri ${KIPRJMOD}/../components/BATTERY_CELL_HOLDER_18650_SMT_1042/battery_cell_holder_18650_smt_1042.lib)(options "")(descr ""))
   (lib (name 2n7002a)(type Legacy)(uri ${KIPRJMOD}/../components/2N7002A/2n7002a.lib)(options "")(descr ""))
+  (lib (name SKRKAEE020)(type Legacy)(uri ${KIPRJMOD}/../components/SKRKAEE020/SKRKAEE020.lib)(options "")(descr ""))
 )

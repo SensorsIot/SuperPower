@@ -116,21 +116,21 @@ $EndComp
 Wire Wire Line
 	5900 3850 6100 3850
 Wire Wire Line
-	3750 3250 3850 3250
+	3500 1650 3500 1550
 Wire Wire Line
-	3750 3150 3850 3150
+	3400 1650 3400 1550
 Wire Wire Line
 	3850 3750 3850 3850
 $Comp
 L Connector:Conn_01x02_Male J601
 U 1 1 5F78D93A
-P 3550 3150
-F 0 "J601" H 3450 3200 50  0000 C CNN
-F 1 "Conn_01x02_Male" H 3200 3100 50  0000 C CNN
-F 2 "" H 3550 3150 50  0001 C CNN
-F 3 "~" H 3550 3150 50  0001 C CNN
-	1    3550 3150
-	1    0    0    -1  
+P 3400 1850
+F 0 "J601" H 3300 1900 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 3050 1800 50  0000 C CNN
+F 2 "" H 3400 1850 50  0001 C CNN
+F 3 "~" H 3400 1850 50  0001 C CNN
+	1    3400 1850
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R604
@@ -154,8 +154,6 @@ F 3 "" H 3850 3850 50  0001 C CNN
 	1    3850 3850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3850 3250 3850 3350
 Wire Wire Line
 	4500 3350 3850 3350
 Wire Wire Line
@@ -252,11 +250,9 @@ Text HLabel 1250 1350 0    50   Input ~ 0
 3v3_RTC_I2C
 Text Label 7800 2500 2    50   ~ 0
 3v3_RTC
-Wire Wire Line
-	3850 2900 3850 3150
-Text Label 3500 2900 0    50   ~ 0
+Text Label 3000 1550 0    50   ~ 0
 3v3_RTC
-Text Notes 3550 2800 0    50   Italic 0
+Text Notes 3800 1400 2    50   Italic 0
 External trigger\npin header on board
 Text Label 2000 3100 3    50   ~ 0
 3v3_RTC
@@ -280,8 +276,6 @@ Wire Notes Line
 	1650 1700 550  1700
 Wire Notes Line
 	550  1700 550  550 
-Wire Wire Line
-	3500 2900 3850 2900
 Wire Wire Line
 	6500 2500 6900 2500
 $Comp
@@ -373,4 +367,35 @@ F 45 "ManWithNoName" H 6800 3350 50  0001 C CNN "Designer"
 	1    6800 3350
 	1    0    0    -1  
 $EndComp
+$Comp
+L SKRKAEE020:SKRKAEE020 SW?
+U 1 1 5FCD718C
+P 5100 1550
+F 0 "SW?" H 5100 1815 50  0000 C CNN
+F 1 "DNP/SKRKAEE020" H 5100 1724 50  0000 C CNN
+F 2 "" H 5100 1550 50  0001 C CNN
+F 3 "" H 5100 1550 50  0001 C CNN
+	1    5100 1550
+	1    0    0    -1  
+$EndComp
+Text Label 3550 3350 0    50   ~ 0
+EVI
+Wire Wire Line
+	3550 3350 3850 3350
+Text Label 3750 1550 2    50   ~ 0
+EVI
+Wire Wire Line
+	3500 1550 3750 1550
+Text Label 5650 1550 2    50   ~ 0
+EVI
+Text Label 4400 1550 0    50   ~ 0
+3v3_RTC
+Wire Wire Line
+	4400 1550 4800 1550
+Wire Wire Line
+	5400 1550 5650 1550
+Wire Wire Line
+	3000 1550 3400 1550
+Text Notes 5450 1200 2    50   Italic 0
+External trigger\nswitch on board (optional)
 $EndSCHEMATC
