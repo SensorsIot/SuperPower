@@ -128,18 +128,6 @@ F 4 "C8545" H 7550 3000 50  0001 C CNN "LCSC"
 	1    7550 3000
 	1    0    0    -1  
 $EndComp
-$Comp
-L Diode:SM4007 D3
-U 1 1 5F7ECCE7
-P 7100 3200
-F 0 "D3" H 7200 3150 50  0000 C CNN
-F 1 "SM4007" H 7100 3050 50  0000 C CNN
-F 2 "Diode_SMD:D_MELF" H 7100 3025 50  0001 C CNN
-F 3 "http://cdn-reichelt.de/documents/datenblatt/A400/SMD1N400%23DIO.pdf" H 7100 3200 50  0001 C CNN
-F 4 "C64898" H 7100 3200 50  0001 C CNN "LCSC"
-	1    7100 3200
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	7250 3000 7100 3000
 Wire Wire Line
@@ -499,4 +487,18 @@ Wire Wire Line
 	5250 5300 5250 5000
 Wire Wire Line
 	5250 5000 4550 5000
+$Comp
+L Device:D_Schottky D?
+U 1 1 5FCDC977
+P 7100 3200
+AR Path="/5F63A0E9/5FCDC977" Ref="D?"  Part="1" 
+AR Path="/5F639F48/5FCDC977" Ref="D3"  Part="1" 
+F 0 "D3" H 7100 2983 50  0000 C CNN
+F 1 "B5819W" H 7100 3074 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 7100 3200 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Changjiang-Electronics-Tech-CJ-B5819W_C8598.pdf" H 7100 3200 50  0001 C CNN
+F 4 " C8598" H 7100 3200 50  0001 C CNN "LCSC"
+	1    7100 3200
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

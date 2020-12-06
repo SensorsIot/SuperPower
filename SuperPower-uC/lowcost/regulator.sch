@@ -692,7 +692,7 @@ L Device:D_Schottky D4
 U 1 1 5F83343D
 P 6800 4950
 F 0 "D4" H 6800 4733 50  0000 C CNN
-F 1 "D_Schottky" H 6800 4824 50  0000 C CNN
+F 1 "B5819W" H 6800 4824 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 6800 4950 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Changjiang-Electronics-Tech-CJ-B5819W_C8598.pdf" H 6800 4950 50  0001 C CNN
 F 4 " C8598" H 6800 4950 50  0001 C CNN "LCSC"
