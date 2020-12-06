@@ -44,5 +44,6 @@
   (lib (name battery_cell_holder_18650_smt_1042)(type Legacy)(uri ${KIPRJMOD}/../components/BATTERY_CELL_HOLDER_18650_SMT_1042/battery_cell_holder_18650_smt_1042.lib)(options "")(descr ""))
   (lib (name 2n7002a)(type Legacy)(uri ${KIPRJMOD}/../components/2N7002A/2n7002a.lib)(options "")(descr ""))
   (lib (name SKRKAEE020)(type Legacy)(uri ${KIPRJMOD}/../components/SKRKAEE020/SKRKAEE020.lib)(options "")(descr ""))
-  (lib (name usb-c)(type Legacy)(uri C:/Users/Informatic0re/Documents/workspace/SuperPower/SuperPower-uC/components/USB-C/usb-c.lib)(options "")(descr ""))
+  (lib (name usb-c)(type Legacy)(uri ${KIPRJMOD}/../components/USB-C/usb-c.lib)(options "")(descr ""))
+  (lib (name jst_zh_s2b_thru)(type Legacy)(uri ${KIPRJMOD}/../components/JST_ZH_S2B_THRU/jst_zh_s2b_thru.lib)(options "")(descr ""))
 )

@@ -361,36 +361,25 @@ Wire Wire Line
 Wire Wire Line
 	1850 1300 1300 1300
 $Comp
-L Connector:Conn_01x02_Male J2
-U 1 1 5F8314D1
-P 8950 5950
-F 0 "J2" H 8922 5924 50  0000 R CNN
-F 1 "NTC connector" H 8922 5833 50  0000 R CNN
-F 2 "" H 8950 5950 50  0001 C CNN
-F 3 "~" H 8950 5950 50  0001 C CNN
-	1    8950 5950
-	-1   0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR021
 U 1 1 5F832657
-P 8650 6150
-F 0 "#PWR021" H 8650 5900 50  0001 C CNN
-F 1 "GND" H 8655 5977 50  0000 C CNN
-F 2 "" H 8650 6150 50  0001 C CNN
-F 3 "" H 8650 6150 50  0001 C CNN
-	1    8650 6150
+P 8550 6150
+F 0 "#PWR021" H 8550 5900 50  0001 C CNN
+F 1 "GND" H 8555 5977 50  0000 C CNN
+F 2 "" H 8550 6150 50  0001 C CNN
+F 3 "" H 8550 6150 50  0001 C CNN
+	1    8550 6150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8650 6150 8650 6050
+	8550 6150 8550 6050
 Wire Wire Line
-	8650 6050 8750 6050
+	8550 6050 8650 6050
 Wire Wire Line
-	8750 5950 8650 5950
+	8650 5950 8550 5950
 Wire Wire Line
-	8650 5950 8650 5850
-Text Label 8650 5850 0    50   ~ 0
+	8550 5950 8550 5850
+Text Label 8550 5850 0    50   ~ 0
 NTC
 $Comp
 L Device:R_US R13
@@ -451,7 +440,7 @@ Wire Wire Line
 Wire Wire Line
 	6600 1450 6300 1450
 Connection ~ 6600 1450
-Text Notes 8650 5600 0    50   ~ 0
+Text Notes 8550 5600 0    50   ~ 0
 External NTC connector
 Wire Notes Line
 	3850 6200 5800 6200
@@ -488,34 +477,34 @@ Inductor Value Setting
 $Comp
 L power:GND #PWR023
 U 1 1 5F831EF3
-P 9800 6150
-F 0 "#PWR023" H 9800 5900 50  0001 C CNN
-F 1 "GND" H 9805 5977 50  0000 C CNN
-F 2 "" H 9800 6150 50  0001 C CNN
-F 3 "" H 9800 6150 50  0001 C CNN
-	1    9800 6150
+P 9850 6150
+F 0 "#PWR023" H 9850 5900 50  0001 C CNN
+F 1 "GND" H 9855 5977 50  0000 C CNN
+F 2 "" H 9850 6150 50  0001 C CNN
+F 3 "" H 9850 6150 50  0001 C CNN
+	1    9850 6150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9800 6150 9800 6050
+	9850 6150 9850 6050
 Wire Wire Line
-	9800 6050 9900 6050
+	9850 6050 9950 6050
 Wire Wire Line
-	9900 5950 9800 5950
+	9950 5950 9850 5950
 Wire Wire Line
-	9800 5950 9800 5850
+	9850 5950 9850 5850
 $Comp
 L power:+BATT #PWR022
 U 1 1 5F837E39
-P 9800 5850
-F 0 "#PWR022" H 9800 5700 50  0001 C CNN
-F 1 "+BATT" H 9815 6023 50  0000 C CNN
-F 2 "" H 9800 5850 50  0001 C CNN
-F 3 "" H 9800 5850 50  0001 C CNN
-	1    9800 5850
+P 9850 5850
+F 0 "#PWR022" H 9850 5700 50  0001 C CNN
+F 1 "+BATT" H 9865 6023 50  0000 C CNN
+F 2 "" H 9850 5850 50  0001 C CNN
+F 3 "" H 9850 5850 50  0001 C CNN
+	1    9850 5850
 	1    0    0    -1  
 $EndComp
-Text Notes 9700 5600 0    50   ~ 0
+Text Notes 9750 5600 0    50   ~ 0
 Battery connector\n(Battery Power Output)
 $Comp
 L Device:R_US R12
@@ -682,13 +671,13 @@ SCL
 Text Label 4600 4050 0    50   ~ 0
 SDA
 Wire Notes Line
-	8500 5300 11050 5300
+	8400 5300 11100 5300
 Wire Notes Line
-	11050 5300 11050 6450
+	11100 5300 11100 6450
 Wire Notes Line
-	11050 6450 8500 6450
+	11100 6450 8400 6450
 Wire Notes Line
-	8500 6450 8500 5300
+	8400 6450 8400 5300
 Wire Wire Line
 	7450 4350 8150 4350
 Wire Wire Line
@@ -1199,46 +1188,46 @@ Wire Notes Line
 $Comp
 L jst_xh_s2b_thru:JST_XH_S2B_thru J3
 U 1 1 5FD03EF0
-P 10100 5950
-F 0 "J3" H 10180 5942 50  0000 L CNN
-F 1 "DNP/JST_XH_S2B_thru" H 10180 5851 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal" H 10100 5950 50  0001 C CNN
-F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 10100 5950 50  0001 C CNN
-F 4 "JST" H 10100 5950 50  0001 C CNN "Mfr_name"
-F 5 "S2B-XH-A(LF)(SN)" H 10100 5950 50  0001 C CNN "Mfr_no"
-F 6 "XH Right Angle Thru 2pins" H 10100 5950 50  0001 C CNN "Package"
-F 7 "White" H 10100 5950 50  0001 C CNN "Color"
-F 8 "https://octopart.com/s2b-xh-a%28lf%29%28sn%29-jst-3990369?r=sp#PriceAndStock" H 10100 5950 50  0001 C CNN "Octopart_link"
-F 9 "https://fr.farnell.com/jst-japan-solderless-terminals/s2b-xh-a-lf-sn/embase-male-90-deg-2-voies/dp/1516289?ost=s2b-xh-a%28lf%29%28sn%29" H 10100 5950 50  0001 C CNN "Farnell_link"
-F 10 "1516289" H 10100 5950 50  0001 C CNN "Farnell_ref"
-F 11 "2020-11-24" H 10100 5950 50  0001 C CNN "Farnell_check_date"
-F 12 "0.099€" H 10100 5950 50  0001 C CNN "Farnell_price_qt=100"
-F 13 "0.068€" H 10100 5950 50  0001 C CNN "Farnell_price_qt=1000"
-F 14 "53048" H 10100 5950 50  0001 C CNN "Farnell_stock"
-F 15 "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_JST-Sales-America-S2B-XH-A-LF-SN_C157931.html" H 10100 5950 50  0001 C CNN "LCSC_link"
-F 16 "C157931" H 10100 5950 50  0001 C CNN "LCSC_ref"
-F 17 "2020-11-24" H 10100 5950 50  0001 C CNN "LCSC_check_date"
-F 18 "$0.054" H 10100 5950 50  0001 C CNN "LCSC_price_qt=10"
-F 19 "$0.040" H 10100 5950 50  0001 C CNN "LCSC_price_qt=100"
-F 20 "$0.038" H 10100 5950 50  0001 C CNN "LCSC_price_qt=300"
-F 21 "$0.035" H 10100 5950 50  0001 C CNN "LCSC_price_qt=1000"
-F 22 "23650" H 10100 5950 50  0001 C CNN "LCSC_stock"
-F 23 "-" H 10100 5950 50  0001 C CNN "Mouser_link"
-F 24 "-" H 10100 5950 50  0001 C CNN "Mouser_ref"
-F 25 "2020-11-24" H 10100 5950 50  0001 C CNN "Mouser_check_date"
-F 26 "https://fr.rs-online.com/web/p/embases-circuits-imprimes/8201582/" H 10100 5950 50  0001 C CNN "RS_link"
-F 27 "820-1582" H 10100 5950 50  0001 C CNN "RS_ref"
-F 28 "2020-11-24" H 10100 5950 50  0001 C CNN "RS_check_date"
-F 29 "0.43€" H 10100 5950 50  0001 C CNN "RS_price_qt=5"
-F 30 "0.116€" H 10100 5950 50  0001 C CNN "RS_price_qt=125"
-F 31 "0.108€" H 10100 5950 50  0001 C CNN "RS_price_qt=500"
-F 32 "0.104€" H 10100 5950 50  0001 C CNN "RS_price_qt=1250"
-F 33 "5760" H 10100 5950 50  0001 C CNN "RS_stock"
-F 34 "TO_CHECK" H 10100 5950 50  0001 C CNN "Status"
-F 35 "1.00" H 10100 5950 50  0001 C CNN "Release_version"
-F 36 "2020-11-24" H 10100 5950 50  0001 C CNN "Release_date"
-F 37 "ManWithNoName" H 10100 5950 50  0001 C CNN "Designer"
-	1    10100 5950
+P 10150 5950
+F 0 "J3" H 10230 5942 50  0000 L CNN
+F 1 "DNP/JST_XH_S2B_thru" H 10230 5851 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal" H 10150 5950 50  0001 C CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 10150 5950 50  0001 C CNN
+F 4 "JST" H 10150 5950 50  0001 C CNN "Mfr_name"
+F 5 "S2B-XH-A(LF)(SN)" H 10150 5950 50  0001 C CNN "Mfr_no"
+F 6 "XH Right Angle Thru 2pins" H 10150 5950 50  0001 C CNN "Package"
+F 7 "White" H 10150 5950 50  0001 C CNN "Color"
+F 8 "https://octopart.com/s2b-xh-a%28lf%29%28sn%29-jst-3990369?r=sp#PriceAndStock" H 10150 5950 50  0001 C CNN "Octopart_link"
+F 9 "https://fr.farnell.com/jst-japan-solderless-terminals/s2b-xh-a-lf-sn/embase-male-90-deg-2-voies/dp/1516289?ost=s2b-xh-a%28lf%29%28sn%29" H 10150 5950 50  0001 C CNN "Farnell_link"
+F 10 "1516289" H 10150 5950 50  0001 C CNN "Farnell_ref"
+F 11 "2020-11-24" H 10150 5950 50  0001 C CNN "Farnell_check_date"
+F 12 "0.099€" H 10150 5950 50  0001 C CNN "Farnell_price_qt=100"
+F 13 "0.068€" H 10150 5950 50  0001 C CNN "Farnell_price_qt=1000"
+F 14 "53048" H 10150 5950 50  0001 C CNN "Farnell_stock"
+F 15 "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_JST-Sales-America-S2B-XH-A-LF-SN_C157931.html" H 10150 5950 50  0001 C CNN "LCSC_link"
+F 16 "C157931" H 10150 5950 50  0001 C CNN "LCSC_ref"
+F 17 "2020-11-24" H 10150 5950 50  0001 C CNN "LCSC_check_date"
+F 18 "$0.054" H 10150 5950 50  0001 C CNN "LCSC_price_qt=10"
+F 19 "$0.040" H 10150 5950 50  0001 C CNN "LCSC_price_qt=100"
+F 20 "$0.038" H 10150 5950 50  0001 C CNN "LCSC_price_qt=300"
+F 21 "$0.035" H 10150 5950 50  0001 C CNN "LCSC_price_qt=1000"
+F 22 "23650" H 10150 5950 50  0001 C CNN "LCSC_stock"
+F 23 "-" H 10150 5950 50  0001 C CNN "Mouser_link"
+F 24 "-" H 10150 5950 50  0001 C CNN "Mouser_ref"
+F 25 "2020-11-24" H 10150 5950 50  0001 C CNN "Mouser_check_date"
+F 26 "https://fr.rs-online.com/web/p/embases-circuits-imprimes/8201582/" H 10150 5950 50  0001 C CNN "RS_link"
+F 27 "820-1582" H 10150 5950 50  0001 C CNN "RS_ref"
+F 28 "2020-11-24" H 10150 5950 50  0001 C CNN "RS_check_date"
+F 29 "0.43€" H 10150 5950 50  0001 C CNN "RS_price_qt=5"
+F 30 "0.116€" H 10150 5950 50  0001 C CNN "RS_price_qt=125"
+F 31 "0.108€" H 10150 5950 50  0001 C CNN "RS_price_qt=500"
+F 32 "0.104€" H 10150 5950 50  0001 C CNN "RS_price_qt=1250"
+F 33 "5760" H 10150 5950 50  0001 C CNN "RS_stock"
+F 34 "TO_CHECK" H 10150 5950 50  0001 C CNN "Status"
+F 35 "1.00" H 10150 5950 50  0001 C CNN "Release_version"
+F 36 "2020-11-24" H 10150 5950 50  0001 C CNN "Release_date"
+F 37 "ManWithNoName" H 10150 5950 50  0001 C CNN "Designer"
+	1    10150 5950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1534,4 +1523,49 @@ Wire Wire Line
 	7400 3100 7500 3100
 Connection ~ 7400 3100
 Connection ~ 7500 3100
+$Comp
+L jst_zh_s2b_thru:JST_ZH_S2B_thru J2
+U 1 1 5FCD96A7
+P 8850 5950
+F 0 "J2" H 8930 5942 50  0000 L CNN
+F 1 "DNP/JST_ZH_S2B_thru" H 8930 5851 50  0000 L CNN
+F 2 "Connector_JST_user:JST_ZH_S2B-ZR_1x02_P1.50mm_Horizontal" H 8850 5950 50  0001 C CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/eZH.pdf" H 8850 5950 50  0001 C CNN
+F 4 "JST" H 8850 5950 50  0001 C CNN "Mfr_name"
+F 5 "S2B-ZR(LF)(SN)" H 8850 5950 50  0001 C CNN "Mfr_no"
+F 6 "ZH Right Angle Thru 2pins" H 8850 5950 50  0001 C CNN "Package"
+F 7 "White" H 8850 5950 50  0001 C CNN "Color"
+F 8 "https://octopart.com/s2b-zr%28lf%29%28sn%29-jst-248833?r=sp" H 8850 5950 50  0001 C CNN "Octopart_link"
+F 9 "https://fr.farnell.com/jst-japan-solderless-terminals/s2b-zr-lf-sn/embase-entree-laterale-2-voies/dp/9491813?scope=partnumberlookahead&ost=9491813&searchref=searchlookahead&exaMfpn=true" H 8850 5950 50  0001 C CNN "Farnell_link"
+F 10 "9491813" H 8850 5950 50  0001 C CNN "Farnell_ref"
+F 11 "2020-11-25" H 8850 5950 50  0001 C CNN "Farnell_check_date"
+F 12 "0.077€" H 8850 5950 50  0001 C CNN "Farnell_price_qt=100"
+F 13 "0.067€" H 8850 5950 50  0001 C CNN "Farnell_price_qt=1000"
+F 14 "24362" H 8850 5950 50  0001 C CNN "Farnell_stock"
+F 15 "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_JST-Sales-America-S2B-ZR-LF-SN_C157930.html" H 8850 5950 50  0001 C CNN "LCSC_link"
+F 16 "C157930" H 8850 5950 50  0001 C CNN "LCSC_ref"
+F 17 "2020-11-25" H 8850 5950 50  0001 C CNN "LCSC_check_date"
+F 18 "$0.050" H 8850 5950 50  0001 C CNN "LCSC_price_qt=10"
+F 19 "$0.036" H 8850 5950 50  0001 C CNN "LCSC_price_qt=100"
+F 20 "$0.034" H 8850 5950 50  0001 C CNN "LCSC_price_qt=300"
+F 21 "$0.031" H 8850 5950 50  0001 C CNN "LCSC_price_qt=1000"
+F 22 "4300" H 8850 5950 50  0001 C CNN "LCSC_stock"
+F 23 "https://eu.mouser.com/ProductDetail/JST/S2B-ZR-LFSN?qs=%2Fha2pyFadugq2jRRAGtYfIV58loDKmQolDnBD3Dd%2FKWMFsJXC%2FTC6g%3D%3D" H 8850 5950 50  0001 C CNN "Mouser_link"
+F 24 "-" H 8850 5950 50  0001 C CNN "Mouser_ref"
+F 25 "2020-11-25" H 8850 5950 50  0001 C CNN "Mouser_check_date"
+F 26 "https://fr.rs-online.com/web/p/embases-circuits-imprimes/7620765/" H 8850 5950 50  0001 C CNN "RS_link"
+F 27 "762-0765" H 8850 5950 50  0001 C CNN "RS_ref"
+F 28 "2020-11-25" H 8850 5950 50  0001 C CNN "RS_check_date"
+F 29 "0.484€" H 8850 5950 50  0001 C CNN "RS_price_qt=5"
+F 30 "0.396€" H 8850 5950 50  0001 C CNN "RS_price_qt=125"
+F 31 "0.364€" H 8850 5950 50  0001 C CNN "RS_price_qt=500"
+F 32 "0.338€" H 8850 5950 50  0001 C CNN "RS_price_qt=2500"
+F 33 "1765" H 8850 5950 50  0001 C CNN "RS_stock"
+F 34 "TO_CHECK" H 8850 5950 50  0001 C CNN "Status"
+F 35 "1.00" H 8850 5950 50  0001 C CNN "Release_version"
+F 36 "2020-11-25" H 8850 5950 50  0001 C CNN "Release_date"
+F 37 "ManWithNoName" H 8850 5950 50  0001 C CNN "Designer"
+	1    8850 5950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

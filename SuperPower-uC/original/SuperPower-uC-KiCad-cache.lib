@@ -427,9 +427,9 @@ $FPLIST
  D_*
 $ENDFPLIST
 DRAW
-P 2 0 1 8 -50 50 -50 -50 N
+P 2 0 1 10 -50 50 -50 -50 N
 P 2 0 1 0 50 0 -50 0 N
-P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
+P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
 X K 1 -150 0 100 R 50 50 1 1 P
 X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
@@ -471,9 +471,9 @@ $FPLIST
  LED_THT:*
 $ENDFPLIST
 DRAW
-P 2 0 1 8 -50 -50 -50 50 N
+P 2 0 1 10 -50 -50 -50 50 N
 P 2 0 1 0 -50 0 50 0 N
-P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
+P 4 0 1 10 50 -50 50 50 -50 0 50 -50 N
 P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
 P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
 X K 1 -150 0 100 R 50 50 1 1 P
@@ -508,25 +508,21 @@ F1 "Device_Q_PMOS_GSD" 200 -50 50 H V L CNN
 F2 "" 200 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
-C 65 0 111 0 1 10 N
-C 100 -70 11 0 1 0 F
-C 100 70 11 0 1 0 F
-P 2 0 1 0 2 0 10 0 N
-P 2 0 1 0 30 -70 100 -70 N
+C 65 0 110 0 1 10 N
+C 100 -70 10 0 1 0 F
+C 100 70 10 0 1 0 F
+P 2 0 1 0 10 0 -100 0 N
+P 2 0 1 10 10 75 10 -75 N
 P 2 0 1 10 30 -50 30 -90 N
-P 2 0 1 0 30 0 100 0 N
 P 2 0 1 10 30 20 30 -20 N
-P 2 0 1 0 30 70 100 70 N
 P 2 0 1 10 30 90 30 50 N
-P 2 0 1 0 100 -70 100 -100 N
-P 2 0 1 0 100 -70 100 0 N
 P 2 0 1 0 100 100 100 70 N
-P 3 0 1 10 10 75 10 -75 10 -75 N
-P 4 0 1 0 90 0 50 -15 50 15 90 0 F
-P 4 0 1 0 100 -70 130 -70 130 70 100 70 N
+P 3 0 1 0 100 -100 100 0 30 0 N
+P 4 0 1 0 30 70 130 70 130 -70 30 -70 N
+P 4 0 1 0 90 0 50 15 50 -15 90 0 F
 P 4 0 1 0 110 -20 115 -15 145 -15 150 -10 N
 P 4 0 1 0 130 -15 115 10 145 10 130 -15 N
-X G 1 -200 0 200 R 50 50 1 1 I
+X G 1 -200 0 100 R 50 50 1 1 I
 X S 2 100 -200 100 U 50 50 1 1 P
 X D 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
@@ -600,8 +596,8 @@ $FPLIST
 $ENDFPLIST
 DRAW
 P 2 0 1 0 50 0 -50 0 N
-P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
-P 6 0 1 8 -75 25 -75 50 -50 50 -50 -50 -25 -50 -25 -25 N
+P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
+P 6 0 1 10 -75 25 -75 50 -50 50 -50 -50 -25 -50 -25 -25 N
 X K 1 -150 0 100 R 50 50 1 1 P
 X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
@@ -1528,6 +1524,59 @@ X Pin_2 2 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# jst_zh_s2b_thru_JST_ZH_S2B_thru
+#
+DEF jst_zh_s2b_thru_JST_ZH_S2B_thru J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "jst_zh_s2b_thru_JST_ZH_S2B_thru" 0 -200 50 H V C CNN
+F2 "Connector_JST_user:JST_ZH_S2B-ZR_1x02_P1.50mm_Horizontal" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "JST" 0 0 50 H I C CNN "Mfr_name"
+F5 "S2B-ZR(LF)(SN)" 0 0 50 H I C CNN "Mfr_no"
+F6 "ZH Right Angle Thru 2pins" 0 0 50 H I C CNN "Package"
+F7 "White" 0 0 50 H I C CNN "Color"
+F8 "https://octopart.com/s2b-zr%28lf%29%28sn%29-jst-248833?r=sp" 0 0 50 H I C CNN "Octopart_link"
+F9 "https://fr.farnell.com/jst-japan-solderless-terminals/s2b-zr-lf-sn/embase-entree-laterale-2-voies/dp/9491813?scope=partnumberlookahead&ost=9491813&searchref=searchlookahead&exaMfpn=true" 0 0 50 H I C CNN "Farnell_link"
+F10 "9491813" 0 0 50 H I C CNN "Farnell_ref"
+F11 "2020-11-25" 0 0 50 H I C CNN "Farnell_check_date"
+F12 "0.077€" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F13 "0.067€" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F14 "24362" 0 0 50 H I C CNN "Farnell_stock"
+F15 "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_JST-Sales-America-S2B-ZR-LF-SN_C157930.html" 0 0 50 H I C CNN "LCSC_link"
+F16 "C157930" 0 0 50 H I C CNN "LCSC_ref"
+F17 "2020-11-25" 0 0 50 H I C CNN "LCSC_check_date"
+F18 "$0.050" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F19 "$0.036" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F20 "$0.034" 0 0 50 H I C CNN "LCSC_price_qt=300"
+F21 "$0.031" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F22 "4300" 0 0 50 H I C CNN "LCSC_stock"
+F23 "https://eu.mouser.com/ProductDetail/JST/S2B-ZR-LFSN?qs=%2Fha2pyFadugq2jRRAGtYfIV58loDKmQolDnBD3Dd%2FKWMFsJXC%2FTC6g%3D%3D" 0 0 50 H I C CNN "Mouser_link"
+F24 "-" 0 0 50 H I C CNN "Mouser_ref"
+F25 "2020-11-25" 0 0 50 H I C CNN "Mouser_check_date"
+F26 "https://fr.rs-online.com/web/p/embases-circuits-imprimes/7620765/" 0 0 50 H I C CNN "RS_link"
+F27 "762-0765" 0 0 50 H I C CNN "RS_ref"
+F28 "2020-11-25" 0 0 50 H I C CNN "RS_check_date"
+F29 "0.484€" 0 0 50 H I C CNN "RS_price_qt=5"
+F30 "0.396€" 0 0 50 H I C CNN "RS_price_qt=125"
+F31 "0.364€" 0 0 50 H I C CNN "RS_price_qt=500"
+F32 "0.338€" 0 0 50 H I C CNN "RS_price_qt=2500"
+F33 "1765" 0 0 50 H I C CNN "RS_stock"
+F34 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F35 "1.00" 0 0 50 H I C CNN "Release_version"
+F36 "2020-11-25" 0 0 50 H I C CNN "Release_date"
+F37 "ManWithNoName" 0 0 50 H I C CNN "Designer"
+$FPLIST
+ Connector_JST:JST_ZH*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # ltc4162eufd-lad_LTC4162EUFD-LAD
 #
 DEF ltc4162eufd-lad_LTC4162EUFD-LAD U 0 40 Y Y 1 F N
@@ -1641,8 +1690,9 @@ F1 "power_VCC" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
-C 0 75 25 0 1 0 N
-P 2 0 1 0 0 0 0 50 N
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
 X VCC 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
@@ -1655,8 +1705,9 @@ F1 "power_VDD" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
-C 0 75 25 0 1 0 N
-P 2 0 1 0 0 0 0 50 N
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
 X VDD 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF

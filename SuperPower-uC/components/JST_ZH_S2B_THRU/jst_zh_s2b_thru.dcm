@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP JST_ZH_S2B_thru
+D JST ZH connector, Pitch 1.5mm, 1Amax, Right Angle, Thru
+K connector JST ZH
+F http://www.jst-mfg.com/product/pdf/eng/eZH.pdf
+$ENDCMP
+#
+#End Doc Library
