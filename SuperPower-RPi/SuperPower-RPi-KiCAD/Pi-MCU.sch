@@ -211,46 +211,6 @@ Wire Wire Line
 	10300 900  10250 900 
 Connection ~ 10250 900 
 Wire Wire Line
-	2050 1150 2150 1150
-Wire Wire Line
-	2150 1150 2150 1250
-$Comp
-L power:GND #PWR020
-U 1 1 5FA628B7
-P 1800 1600
-F 0 "#PWR020" H 1800 1350 50  0001 C CNN
-F 1 "GND" H 1805 1427 50  0000 C CNN
-F 2 "" H 1800 1600 50  0001 C CNN
-F 3 "" H 1800 1600 50  0001 C CNN
-	1    1800 1600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1800 1600 1800 1500
-Wire Wire Line
-	1750 1500 1800 1500
-Wire Wire Line
-	2150 1500 2150 1450
-Wire Wire Line
-	1750 1500 1750 1450
-Connection ~ 1800 1500
-Wire Wire Line
-	1800 1500 2150 1500
-Wire Wire Line
-	1750 1500 1250 1500
-Wire Wire Line
-	1250 1500 1250 1450
-Connection ~ 1750 1500
-Wire Wire Line
-	1250 1250 1250 1150
-Wire Wire Line
-	1250 1150 1450 1150
-Wire Wire Line
-	1250 1150 1200 1150
-Connection ~ 1250 1150
-Text HLabel 1200 1150 0    50   Input ~ 0
-VBAT_IN
-Wire Wire Line
 	4350 9100 4250 9100
 Wire Wire Line
 	3950 9100 3950 9000
@@ -376,7 +336,6 @@ NoConn ~ 3450 8300
 NoConn ~ 3450 8100
 NoConn ~ 3450 8000
 NoConn ~ 3450 7900
-NoConn ~ 3450 7800
 NoConn ~ 3450 7700
 NoConn ~ 3450 7600
 NoConn ~ 3450 7500
@@ -387,7 +346,6 @@ NoConn ~ 3450 6800
 NoConn ~ 4850 7200
 NoConn ~ 4850 6700
 NoConn ~ 4850 6600
-NoConn ~ 4850 6100
 $Comp
 L power:GND #PWR021
 U 1 1 5FA44160
@@ -555,28 +513,8 @@ F 3 "" H 8100 1000 50  0001 C CNN
 	1    8100 1000
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3.3V #PWR016
-U 1 1 5FB90BA7
-P 2250 1050
-F 0 "#PWR016" H 2250 900 50  0001 C CNN
-F 1 "+3.3V" H 2265 1223 50  0000 C CNN
-F 2 "" H 2250 1050 50  0001 C CNN
-F 3 "" H 2250 1050 50  0001 C CNN
-	1    2250 1050
-	1    0    0    -1  
-$EndComp
-Connection ~ 2150 1150
-Text Label 5250 5700 2    50   ~ 0
-V_mon
 Wire Wire Line
 	4450 5000 5400 5000
-Wire Wire Line
-	4850 5700 5250 5700
-Wire Wire Line
-	2250 1150 2250 1050
-Wire Wire Line
-	2150 1150 2250 1150
 Wire Wire Line
 	3950 5000 3500 5000
 Wire Wire Line
@@ -722,7 +660,6 @@ Text Label 8200 10050 0    50   ~ 0
 Dotstar_data
 Text Label 8200 10150 0    50   ~ 0
 Dotstar_clk
-NoConn ~ 5300 6300
 Wire Wire Line
 	4850 8100 5250 8100
 Wire Wire Line
@@ -951,8 +888,6 @@ $EndComp
 Connection ~ 4050 4250
 Wire Wire Line
 	4050 4250 4200 4250
-Text Notes 1050 2050 0    100  ~ 0
-3.3V LDO Regulator
 Wire Wire Line
 	4850 5900 5300 5900
 Wire Wire Line
@@ -1052,47 +987,6 @@ F 1 "0.1uF" H 10158 1145 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 10250 1100 50  0001 C CNN
 F 3 "~" H 10250 1100 50  0001 C CNN
 	1    10250 1100
-	-1   0    0    1   
-$EndComp
-$Comp
-L Manual_Lib:ME6210A33M3G U5
-U 1 1 5FA5D721
-P 1750 1150
-F 0 "U5" H 1750 1392 50  0000 C CNN
-F 1 "ME6210A33M3G" H 1750 1301 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 2200 900 50  0001 L CIN
-F 3 "https://datasheet.lcsc.com/szlcsc/1810201611_MICRONE-Nanjing-Micro-One-Elec-ME6210A33PG_C85233.pdf" H 1750 1100 50  0001 C CNN
-F 4 "MicrOne" H 2350 750 50  0001 C CNN "Mfg"
-F 5 "ME6210A33M3G" H 2500 800 50  0001 C CNN "Mfg PN"
-	1    1750 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C21
-U 1 1 5FA5DD96
-P 2150 1350
-F 0 "C21" H 2058 1304 50  0000 R CNN
-F 1 "10uF" H 2058 1395 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2150 1350 50  0001 C CNN
-F 3 "~" H 2150 1350 50  0001 C CNN
-F 4 "490-5523-1-ND" H 2150 1350 50  0001 C CNN "Digi-Key PN"
-F 5 "Murata" H 2150 1350 50  0001 C CNN "Mfg"
-F 6 "GRM21BR61E106KA73L" H 2150 1350 50  0001 C CNN "Mfg PN"
-	1    2150 1350
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C_Small C20
-U 1 1 5FA5E248
-P 1250 1350
-F 0 "C20" H 1158 1304 50  0000 R CNN
-F 1 "10uF" H 1158 1395 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1250 1350 50  0001 C CNN
-F 3 "~" H 1250 1350 50  0001 C CNN
-F 4 "490-5523-1-ND" H 1250 1350 50  0001 C CNN "Digi-Key PN"
-F 5 "Murata" H 1250 1350 50  0001 C CNN "Mfg"
-F 6 "GRM21BR61E106KA73L" H 1250 1350 50  0001 C CNN "Mfg PN"
-	1    1250 1350
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -1419,4 +1313,100 @@ Wire Wire Line
 	2000 6100 2000 5900
 Text HLabel 1750 6350 0    50   Input ~ 0
 BL_Mode__Shutdown_Mode
+$Comp
+L Connector_Generic:Conn_01x06 J13
+U 1 1 5FD995FB
+P 7750 8100
+F 0 "J13" H 7830 8092 50  0000 L CNN
+F 1 "Conn_01x06" H 7830 8001 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 7750 8100 50  0001 C CNN
+F 3 "~" H 7750 8100 50  0001 C CNN
+	1    7750 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR037
+U 1 1 5FD99B0C
+P 7350 8500
+F 0 "#PWR037" H 7350 8250 50  0001 C CNN
+F 1 "GND" H 7355 8327 50  0000 C CNN
+F 2 "" H 7350 8500 50  0001 C CNN
+F 3 "" H 7350 8500 50  0001 C CNN
+	1    7350 8500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 8500 7350 7900
+Wire Wire Line
+	7350 7900 7550 7900
+Text Label 7000 8100 0    50   ~ 0
+SCK
+Text Label 7000 8200 0    50   ~ 0
+MISO
+Text Label 7000 8300 0    50   ~ 0
+MOSI
+$Comp
+L power:+3.3V #PWR038
+U 1 1 5FDB1EAF
+P 7700 7450
+F 0 "#PWR038" H 7700 7300 50  0001 C CNN
+F 1 "+3.3V" H 7715 7623 50  0000 C CNN
+F 2 "" H 7700 7450 50  0001 C CNN
+F 3 "" H 7700 7450 50  0001 C CNN
+	1    7700 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_3_Bridged12 JP7
+U 1 1 5FDB24E8
+P 7400 7550
+F 0 "JP7" H 7400 7650 50  0000 L CNN
+F 1 "Jumper_3_Bridged12" H 7000 7650 50  0001 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels" H 7400 7550 50  0001 C CNN
+F 3 "~" H 7400 7550 50  0001 C CNN
+	1    7400 7550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 7550 7700 7550
+Wire Wire Line
+	7700 7550 7700 7450
+Wire Wire Line
+	7400 8000 7550 8000
+$Comp
+L power:+5V #PWR049
+U 1 1 5FE3F788
+P 7100 7450
+F 0 "#PWR049" H 7100 7300 50  0001 C CNN
+F 1 "+5V" H 7115 7623 50  0000 C CNN
+F 2 "" H 7100 7450 50  0001 C CNN
+F 3 "" H 7100 7450 50  0001 C CNN
+	1    7100 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 7450 7100 7550
+Wire Wire Line
+	7100 7550 7150 7550
+NoConn ~ 4850 5700
+Wire Wire Line
+	7550 8300 7000 8300
+Wire Wire Line
+	7000 8100 7550 8100
+Wire Wire Line
+	7000 8200 7550 8200
+Wire Wire Line
+	7550 8400 7000 8400
+Text HLabel 3100 7800 0    50   Input ~ 0
+Charger_INT
+Wire Wire Line
+	4850 6100 5300 6100
+Text Label 5300 6100 2    50   ~ 0
+HW_NSS
+Text Label 7000 8400 0    50   ~ 0
+HW_NSS
+Wire Wire Line
+	3100 7800 3450 7800
+Wire Wire Line
+	7400 7700 7400 8000
 $EndSCHEMATC

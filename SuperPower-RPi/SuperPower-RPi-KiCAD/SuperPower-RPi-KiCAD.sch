@@ -51,8 +51,6 @@ Wire Wire Line
 	6450 3650 7150 3650
 Wire Wire Line
 	2300 3650 3200 3650
-Wire Wire Line
-	4500 3650 5050 3650
 $Sheet
 S 5450 3450 1000 1150
 U 5F6AC4E0
@@ -102,6 +100,7 @@ F7 "Thermistor" I R 4500 4350 50
 F8 "D+" I L 3200 3950 50 
 F9 "D-" I L 3200 4050 50 
 F10 "IMEAS" O R 4500 3950 50 
+F11 "INT" O R 4500 4100 50 
 $EndSheet
 Wire Wire Line
 	4450 5600 4850 5600
@@ -113,11 +112,6 @@ Wire Wire Line
 	2300 3950 3200 3950
 Wire Wire Line
 	3200 4050 2300 4050
-Wire Wire Line
-	5250 2250 5050 2250
-Connection ~ 5050 3650
-Wire Wire Line
-	5050 2250 5050 3650
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5FA3F339
@@ -174,10 +168,10 @@ F1 "Pi-MCU.sch" 50
 F2 "SDA_1" B L 5250 1750 50 
 F3 "SCL_1" B L 5250 1850 50 
 F4 "GPIO0" B R 6550 2300 50 
-F5 "VBAT_IN" I L 5250 2250 50 
-F6 "nRESET_Buf" I R 6550 1450 50 
-F7 "I_mon_V_input" I L 5250 2050 50 
-F8 "BL_Mode__Shutdown_Mode" I R 6550 1600 50 
+F5 "nRESET_Buf" I R 6550 1450 50 
+F6 "I_mon_V_input" I L 5250 2050 50 
+F7 "BL_Mode__Shutdown_Mode" I R 6550 1600 50 
+F8 "Charger_INT" I L 5250 2200 50 
 $EndSheet
 Wire Wire Line
 	5450 4200 5350 4200
@@ -197,8 +191,6 @@ F 4 "DNP" H 5350 3950 50  0001 C CNN "Mfg"
 $EndComp
 Wire Wire Line
 	5350 3650 5450 3650
-Wire Wire Line
-	5050 3650 5350 3650
 Connection ~ 5350 3650
 Wire Wire Line
 	5350 4200 5350 4050
@@ -249,4 +241,12 @@ Text Notes 7150 5850 0    50   ~ 0
 Would be nice:\nUSB output connector to power \n
 Wire Wire Line
 	8400 3650 9350 3650
+Wire Wire Line
+	4500 3650 5350 3650
+Wire Wire Line
+	4500 4100 4850 4100
+Wire Wire Line
+	4850 4100 4850 2200
+Wire Wire Line
+	4850 2200 5250 2200
 $EndSCHEMATC
