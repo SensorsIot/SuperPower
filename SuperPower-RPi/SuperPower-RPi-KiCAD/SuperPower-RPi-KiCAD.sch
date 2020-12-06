@@ -178,9 +178,9 @@ F3 "SCL_1" B L 5250 1850 50
 F4 "GPIO0" B R 6550 2300 50 
 F5 "VBAT_IN" I L 5250 2250 50 
 F6 "nRESET_Buf" I R 6550 1450 50 
-F7 "BOOT0" I R 6550 1600 50 
-F8 "Vin(5V)" I R 6550 2150 50 
-F9 "I_mon_V_input" I L 5250 2050 50 
+F7 "Vin(5V)" I R 6550 2150 50 
+F8 "I_mon_V_input" I L 5250 2050 50 
+F9 "BL_Mode__Shutdown_Mode" I R 6550 1600 50 
 $EndSheet
 Wire Wire Line
 	6550 2150 8500 2150
@@ -216,10 +216,6 @@ Wire Wire Line
 Connection ~ 8500 3650
 Wire Wire Line
 	8500 3650 9350 3650
-Text Notes 7150 5850 0    50   ~ 0
-Would be nice:\nUSB output connector to power \n
-Text Notes 7150 6100 0    50   ~ 0
-TO DO:\nFind overcurrent IC.
 Wire Wire Line
 	6550 1450 9200 1450
 Wire Wire Line
@@ -257,4 +253,8 @@ Text Notes 1250 7100 0    50   ~ 0
 1.0uF Cap available in 0402\n4.7uF Cap is available, but rare in 0402.
 Text Notes 750  7400 0    50   ~ 0
 Alternate Parts:\nPMOS: Consider using DMP4025SFGQ-13 for better performance or DMP6023LE-13 for easier soldering.
+Text Notes 7150 6100 0    50   ~ 0
+TO DO:\nFind overcurrent IC.
+Text Notes 7150 5850 0    50   ~ 0
+Would be nice:\nUSB output connector to power \n
 $EndSCHEMATC

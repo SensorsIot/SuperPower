@@ -364,14 +364,12 @@ NoConn ~ 4850 7600
 NoConn ~ 4850 7700
 NoConn ~ 4850 7800
 NoConn ~ 4850 7900
-NoConn ~ 4850 8200
 NoConn ~ 4850 8300
 NoConn ~ 4850 8400
 NoConn ~ 4850 8700
 NoConn ~ 4850 8800
 NoConn ~ 3450 8800
 NoConn ~ 3450 8700
-NoConn ~ 3450 8600
 NoConn ~ 3450 8500
 NoConn ~ 3450 8400
 NoConn ~ 3450 8300
@@ -519,10 +517,6 @@ Wire Wire Line
 NoConn ~ 12300 6550
 Text Notes 5650 10900 0    50   ~ 0
 Voltage divider + diode for\n5v_RPI measurement
-Text HLabel 2250 5900 0    50   Input ~ 0
-BOOT0
-Wire Wire Line
-	2600 5900 2650 5900
 Wire Wire Line
 	2550 5700 2650 5700
 Wire Wire Line
@@ -530,8 +524,6 @@ Wire Wire Line
 Connection ~ 2650 5900
 Wire Wire Line
 	2650 5900 2800 5900
-Wire Wire Line
-	2400 5900 2250 5900
 $Comp
 L power:+3.3V #PWR036
 U 1 1 5FA9023B
@@ -1211,8 +1203,8 @@ L Device:R_Small R21
 U 1 1 5FAAB54D
 P 6200 10300
 F 0 "R21" H 6259 10346 50  0000 L CNN
-F 1 "100k" H 6259 10255 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 6200 10300 50  0001 C CNN
+F 1 "DNP" H 6259 10255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6200 10300 50  0001 C CNN
 F 3 "~" H 6200 10300 50  0001 C CNN
 	1    6200 10300
 	-1   0    0    -1  
@@ -1222,8 +1214,8 @@ L Device:R_Small R20
 U 1 1 5FAAC000
 P 6200 9950
 F 0 "R20" H 6259 9996 50  0000 L CNN
-F 1 "100k" H 6259 9905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 6200 9950 50  0001 C CNN
+F 1 "DNP" H 6259 9905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6200 9950 50  0001 C CNN
 F 3 "~" H 6200 9950 50  0001 C CNN
 	1    6200 9950
 	-1   0    0    -1  
@@ -1433,18 +1425,6 @@ F 4 "DNP" H 3450 4250 50  0001 C CNN "Mfg"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NO_Small JP1
-U 1 1 5FAAD012
-P 2500 5900
-F 0 "JP1" H 2500 5800 50  0000 C CNN
-F 1 "Jumper_NO_Small" H 2500 5994 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 2500 5900 50  0001 C CNN
-F 3 "~" H 2500 5900 50  0001 C CNN
-F 4 "DNP" H 2500 5900 50  0001 C CNN "Mfg"
-	1    2500 5900
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_02x05_Odd_Even J8
 U 1 1 5FC8BD2A
 P 1450 9600
@@ -1474,7 +1454,7 @@ P 6200 9650
 AR Path="/5F6AC66E/5FCDC76C" Ref="D?"  Part="1" 
 AR Path="/5F6AC872/5FCDC76C" Ref="D6"  Part="1" 
 F 0 "D6" V 6154 9720 50  0000 L CNN
-F 1 "BZT585B13T-7" V 6245 9720 50  0000 L CNN
+F 1 "DNP" V 6245 9720 50  0000 L CNN
 F 2 "Diode_SMD:D_SOD-523" V 6200 9650 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/BZT585BxVxT.pdf" V 6200 9650 50  0001 C CNN
 F 4 "Diodes Incorporated" H 6200 9650 50  0001 C CNN "Mfg"
@@ -1483,4 +1463,30 @@ F 6 "BZT585B13T-7DICT-ND" H 6200 9650 50  0001 C CNN "Digi-Key PN"
 	1    6200 9650
 	0    -1   -1   0   
 $EndComp
+NoConn ~ 4850 8200
+Text Label 2550 8600 0    50   ~ 0
+BL_Trigger
+Wire Wire Line
+	2000 8600 3450 8600
+Wire Wire Line
+	2000 5900 2650 5900
+$Comp
+L Jumper:Jumper_3_Bridged12 JP1
+U 1 1 5FD3DAEE
+P 2000 6350
+F 0 "JP1" V 2200 6200 50  0000 L CNN
+F 1 "Jumper_3_Bridged12" H 1600 6450 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels" H 2000 6350 50  0001 C CNN
+F 3 "~" H 2000 6350 50  0001 C CNN
+	1    2000 6350
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2000 8600 2000 6600
+Wire Wire Line
+	1850 6350 1750 6350
+Wire Wire Line
+	2000 6100 2000 5900
+Text HLabel 1750 6350 0    50   Input ~ 0
+BL_Mode__Shutdown_Mode
 $EndSCHEMATC
