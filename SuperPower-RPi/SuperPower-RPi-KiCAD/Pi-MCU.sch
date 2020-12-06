@@ -515,8 +515,6 @@ Wire Wire Line
 Wire Wire Line
 	12650 6150 12300 6150
 NoConn ~ 12300 6550
-Text Notes 5650 10900 0    50   ~ 0
-Voltage divider + diode for\n5v_RPI measurement
 Wire Wire Line
 	2550 5700 2650 5700
 Wire Wire Line
@@ -569,36 +567,6 @@ F 3 "" H 2250 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 2150 1150
-$Comp
-L power:GND #PWR038
-U 1 1 5FAAC254
-P 6200 10500
-F 0 "#PWR038" H 6200 10250 50  0001 C CNN
-F 1 "GND" H 6205 10327 50  0000 C CNN
-F 2 "" H 6200 10500 50  0001 C CNN
-F 3 "" H 6200 10500 50  0001 C CNN
-	1    6200 10500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6200 10500 6200 10400
-Wire Wire Line
-	6200 10200 6200 10150
-Wire Wire Line
-	6200 9850 6200 9750
-Text HLabel 6250 9450 2    50   Input ~ 0
-Vin(5V)
-Wire Wire Line
-	6200 9550 6200 9450
-Wire Wire Line
-	6200 9450 6250 9450
-Text Label 6000 10150 2    50   ~ 0
-V_mon
-Wire Wire Line
-	6000 10150 6200 10150
-Connection ~ 6200 10150
-Wire Wire Line
-	6200 10150 6200 10050
 Text Label 5250 5700 2    50   ~ 0
 V_mon
 Wire Wire Line
@@ -1199,28 +1167,6 @@ F 3 "~" H 2350 5600 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R21
-U 1 1 5FAAB54D
-P 6200 10300
-F 0 "R21" H 6259 10346 50  0000 L CNN
-F 1 "DNP" H 6259 10255 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 6200 10300 50  0001 C CNN
-F 3 "~" H 6200 10300 50  0001 C CNN
-	1    6200 10300
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R20
-U 1 1 5FAAC000
-P 6200 9950
-F 0 "R20" H 6259 9996 50  0000 L CNN
-F 1 "DNP" H 6259 9905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 6200 9950 50  0001 C CNN
-F 3 "~" H 6200 9950 50  0001 C CNN
-	1    6200 9950
-	-1   0    0    -1  
-$EndComp
-$Comp
 L MCU_Microchip_ATtiny:ATtiny85-20SU U4
 U 1 1 5FAE2AC9
 P 11700 6450
@@ -1446,22 +1392,6 @@ F 3 "~" H 9650 900 50  0001 C CNN
 F 4 "DNP" H 9650 900 50  0001 C CNN "Mfg"
 	1    9650 900 
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Zener_Small D?
-U 1 1 5FCDC76C
-P 6200 9650
-AR Path="/5F6AC66E/5FCDC76C" Ref="D?"  Part="1" 
-AR Path="/5F6AC872/5FCDC76C" Ref="D6"  Part="1" 
-F 0 "D6" V 6154 9720 50  0000 L CNN
-F 1 "DNP" V 6245 9720 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-523" V 6200 9650 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/BZT585BxVxT.pdf" V 6200 9650 50  0001 C CNN
-F 4 "Diodes Incorporated" H 6200 9650 50  0001 C CNN "Mfg"
-F 5 "BZT585B13T-7" H 6200 9650 50  0001 C CNN "Mfg PN"
-F 6 "BZT585B13T-7DICT-ND" H 6200 9650 50  0001 C CNN "Digi-Key PN"
-	1    6200 9650
-	0    -1   -1   0   
 $EndComp
 NoConn ~ 4850 8200
 Text Label 2550 8600 0    50   ~ 0

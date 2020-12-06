@@ -48,8 +48,6 @@ Wire Wire Line
 Wire Wire Line
 	3200 4400 2950 4400
 Wire Wire Line
-	8400 3650 8500 3650
-Wire Wire Line
 	6450 3650 7150 3650
 Wire Wire Line
 	2300 3650 3200 3650
@@ -178,12 +176,9 @@ F3 "SCL_1" B L 5250 1850 50
 F4 "GPIO0" B R 6550 2300 50 
 F5 "VBAT_IN" I L 5250 2250 50 
 F6 "nRESET_Buf" I R 6550 1450 50 
-F7 "Vin(5V)" I R 6550 2150 50 
-F8 "I_mon_V_input" I L 5250 2050 50 
-F9 "BL_Mode__Shutdown_Mode" I R 6550 1600 50 
+F7 "I_mon_V_input" I L 5250 2050 50 
+F8 "BL_Mode__Shutdown_Mode" I R 6550 1600 50 
 $EndSheet
-Wire Wire Line
-	6550 2150 8500 2150
 Wire Wire Line
 	5450 4200 5350 4200
 $Comp
@@ -211,11 +206,6 @@ Wire Wire Line
 	5350 3850 5350 3650
 Wire Wire Line
 	6950 2300 6950 4100
-Wire Wire Line
-	8500 2150 8500 3650
-Connection ~ 8500 3650
-Wire Wire Line
-	8500 3650 9350 3650
 Wire Wire Line
 	6550 1450 9200 1450
 Wire Wire Line
@@ -257,4 +247,6 @@ Text Notes 7150 6100 0    50   ~ 0
 TO DO:\nFind overcurrent IC.
 Text Notes 7150 5850 0    50   ~ 0
 Would be nice:\nUSB output connector to power \n
+Wire Wire Line
+	8400 3650 9350 3650
 $EndSCHEMATC
