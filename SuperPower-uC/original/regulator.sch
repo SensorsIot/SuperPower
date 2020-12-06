@@ -570,10 +570,6 @@ Wire Wire Line
 	5350 2050 5600 2050
 Wire Wire Line
 	4950 1900 4950 2050
-Connection ~ 4000 5400
-Wire Wire Line
-	4350 5150 4250 5150
-Connection ~ 4350 5150
 Connection ~ 4300 5850
 Wire Wire Line
 	4300 5850 4000 5850
@@ -609,26 +605,6 @@ Wire Wire Line
 	3550 5400 4000 5400
 Text Label 4150 4800 0    50   ~ 0
 VIN
-$Comp
-L dmn3018ssd:DMN3018SSD Q702
-U 1 1 5FE6FD9F
-P 4200 5400
-F 0 "Q702" H 4438 5471 50  0000 L CNN
-F 1 "DMN3018SSD" H 4438 5380 50  0000 L CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 4400 5325 50  0001 L CNN
-F 3 "https://www.diodes.com/assets/Datasheets/DMN3018SSD.pdf" H 4200 5400 50  0001 C CNN
-F 4 "https://octopart.com/dmn3018ssd-13-diodes+inc.-26472698?r=sp" H 4200 5400 50  0001 C CNN "Octopart_link"
-F 5 "-" H 4200 5400 50  0001 C CNN "Farnell_link"
-F 6 "-" H 4200 5400 50  0001 C CNN "Farnell_ref"
-F 7 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMN3018SSD-13_C155277.html" H 4200 5400 50  0001 C CNN "LCSC_link"
-F 8 "C155277" H 4200 5400 50  0001 C CNN "LCSC_ref"
-F 9 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMN3018SSD-13?qs=%2Fha2pyFaduhiKtoBktzbgyUAHZPSS%252B8%252Bk9vZNvppSquz1WfnqvfRKg%3D%3D" H 4200 5400 50  0001 C CNN "Mouser_link"
-F 10 "621-DMN3018SSD-13 " H 4200 5400 50  0001 C CNN "Mouser_ref"
-F 11 "https://fr.rs-online.com/web/p/transistors-mosfet/7904592/" H 4200 5400 50  0001 C CNN "RS_link"
-F 12 " 790-4592" H 4200 5400 50  0001 C CNN "RS_ref"
-	1    4200 5400
-	1    0    0    -1  
-$EndComp
 Text Label 3550 5400 0    50   ~ 0
 EN_5V
 Wire Wire Line
@@ -908,26 +884,6 @@ Wire Wire Line
 	4950 5100 5100 5100
 Connection ~ 5100 5100
 $Comp
-L dmp3028lsd:DMP3028LSD Q701
-U 2 1 5FE4CE64
-P 4850 1700
-F 0 "Q701" H 5088 1771 50  0000 L CNN
-F 1 "DMP3028LSD" H 5088 1680 50  0000 L CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 5050 1625 50  0001 L CIN
-F 3 "https://www.diodes.com/assets/Datasheets/DMP3028LSD.pdf" V 4850 1700 50  0001 L CNN
-F 4 "https://octopart.com/dmp3028lsd-13-diodes+inc.-67250487?r=sp" H 4850 1700 50  0001 C CNN "Octopart_link"
-F 5 "-" H 4850 1700 50  0001 C CNN "Farnell_link"
-F 6 "-" H 4850 1700 50  0001 C CNN "Farnell_ref"
-F 7 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMP3028LSD-13_C397949.html" H 4850 1700 50  0001 C CNN "LCSC_link"
-F 8 "C397949" H 4850 1700 50  0001 C CNN "LCSC_ref"
-F 9 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMP3028LSD-13?qs=%2Fha2pyFadugUkRnXWzNfjPB%2F2%2FpUVmcBtenJqlz85NswHo6v693iIw%3D%3D" H 4850 1700 50  0001 C CNN "Mouser_link"
-F 10 "DMP3028LSD-13 " H 4850 1700 50  0001 C CNN "Mouser_ref"
-F 11 "-" H 4850 1700 50  0001 C CNN "RS_link"
-F 12 "-" H 4850 1700 50  0001 C CNN "RS_ref"
-	2    4850 1700
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0701
 U 1 1 602ADCD8
 P 4100 2700
@@ -936,26 +892,6 @@ F 1 "GND" H 4105 2527 50  0000 C CNN
 F 2 "" H 4100 2700 50  0001 C CNN
 F 3 "" H 4100 2700 50  0001 C CNN
 	1    4100 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L dmn3018ssd:DMN3018SSD Q702
-U 2 1 602FE13E
-P 1500 5100
-F 0 "Q702" H 1700 5100 50  0000 L CNN
-F 1 "DMN3018SSD" H 1700 5000 50  0000 L CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 1700 5025 50  0001 L CNN
-F 3 "https://www.diodes.com/assets/Datasheets/DMN3018SSD.pdf" H 1500 5100 50  0001 C CNN
-F 4 "https://octopart.com/dmn3018ssd-13-diodes+inc.-26472698?r=sp" H 1500 5100 50  0001 C CNN "Octopart_link"
-F 5 "-" H 1500 5100 50  0001 C CNN "Farnell_link"
-F 6 "-" H 1500 5100 50  0001 C CNN "Farnell_ref"
-F 7 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMN3018SSD-13_C155277.html" H 1500 5100 50  0001 C CNN "LCSC_link"
-F 8 "C155277" H 1500 5100 50  0001 C CNN "LCSC_ref"
-F 9 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMN3018SSD-13?qs=%2Fha2pyFaduhiKtoBktzbgyUAHZPSS%252B8%252Bk9vZNvppSquz1WfnqvfRKg%3D%3D" H 1500 5100 50  0001 C CNN "Mouser_link"
-F 10 "621-DMN3018SSD-13 " H 1500 5100 50  0001 C CNN "Mouser_ref"
-F 11 "https://fr.rs-online.com/web/p/transistors-mosfet/7904592/" H 1500 5100 50  0001 C CNN "RS_link"
-F 12 " 790-4592" H 1500 5100 50  0001 C CNN "RS_ref"
-	2    1500 5100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1092,7 +1028,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 5000 4350 5000
 Wire Wire Line
-	4350 5000 4350 5150
+	4350 5000 4350 5100
 Wire Wire Line
 	8300 4100 8700 4100
 $Comp
@@ -1253,6 +1189,185 @@ F 43 "1.00" H 4000 2250 50  0001 C CNN "Release_version"
 F 44 "2020-12-03" H 4000 2250 50  0001 C CNN "Release_date"
 F 45 "ManWithNoName" H 4000 2250 50  0001 C CNN "Designer"
 	1    4000 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L dmp3028lsd:DMP3028LSD Q701
+U 2 1 5FDD1A36
+P 4850 1700
+F 0 "Q701" H 5088 1862 50  0000 L CNN
+F 1 "DMP3028LSD" H 5088 1771 50  0000 L CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 5050 1625 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/DMP3028LSD.pdf" V 4850 1700 50  0001 L CNN
+F 4 "Diodes Incorporated" H 4850 1700 50  0001 C CNN "Mfr_name"
+F 5 "DMP3028LSD-13" H 4850 1700 50  0001 C CNN "Mfr_no"
+F 6 "SO-8" H 5088 1680 50  0000 L CNN "Package"
+F 7 "P + P" H 4850 1700 50  0001 C CNN "Type"
+F 8 "30V" H 4850 1700 50  0001 C CNN "VDSS"
+F 9 "38mΩ" H 5088 1589 50  0000 L CNN "RDSon"
+F 10 "4.7A" H 4850 1700 50  0001 C CNN "IDmax"
+F 11 "1-3V" H 4850 1700 50  0001 C CNN "VGSth"
+F 12 "20V" H 4850 1700 50  0001 C CNN "VGSS"
+F 13 "https://octopart.com/dmp3028lsd-13-diodes+inc.-67250487?r=sp" H 4850 1700 50  0001 C CNN "Octopart_link"
+F 14 "-" H 4850 1700 50  0001 C CNN "Farnell_link"
+F 15 "-" H 4850 1700 50  0001 C CNN "Farnell_ref"
+F 16 "2020-12-05" H 4850 1700 50  0001 C CNN "Farnell_check_date"
+F 17 "?" H 4850 1700 50  0001 C CNN "Farnell_price_qt=1"
+F 18 "?" H 4850 1700 50  0001 C CNN "Farnell_price_qt=10"
+F 19 "?" H 4850 1700 50  0001 C CNN "Farnell_price_qt=100"
+F 20 "?" H 4850 1700 50  0001 C CNN "Farnell_price_qt=1000"
+F 21 "-" H 4850 1700 50  0001 C CNN "Farnell_stock"
+F 22 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMP3028LSD-13_C397949.html" H 4850 1700 50  0001 C CNN "LCSC_link"
+F 23 "C397949" H 4850 1700 50  0001 C CNN "LCSC_ref"
+F 24 "2020-12-05" H 4850 1700 50  0001 C CNN "LCSC_check_date"
+F 25 "$0.373" H 4850 1700 50  0001 C CNN "LCSC_price_qt=1"
+F 26 "$0.2802" H 4850 1700 50  0001 C CNN "LCSC_price_qt=10"
+F 27 "$0.263" H 4850 1700 50  0001 C CNN "LCSC_price_qt=30"
+F 28 "$0.2475" H 4850 1700 50  0001 C CNN "LCSC_price_qt=100"
+F 29 "4,818" H 4850 1700 50  0001 C CNN "LCSC_stock"
+F 30 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMP3028LSD-13?qs=%2Fha2pyFadugUkRnXWzNfjPB%2F2%2FpUVmcBtenJqlz85NswHo6v693iIw%3D%3D" H 4850 1700 50  0001 C CNN "Mouser_link"
+F 31 "621-DMP3028LSD-13" H 4850 1700 50  0001 C CNN "Mouser_ref"
+F 32 "2020-12-05" H 4850 1700 50  0001 C CNN "Mouser_check_date"
+F 33 "0,474 €" H 4850 1700 50  0001 C CNN "Mouser_price_qt=1"
+F 34 "0,394 €" H 4850 1700 50  0001 C CNN "Mouser_price_qt=10"
+F 35 "0,276 €" H 4850 1700 50  0001 C CNN "Mouser_price_qt=100"
+F 36 "0,239 €" H 4850 1700 50  0001 C CNN "Mouser_price_qt=500"
+F 37 "2,855" H 4850 1700 50  0001 C CNN "Mouser_stock"
+F 38 "-" H 4850 1700 50  0001 C CNN "RS_link"
+F 39 "-" H 4850 1700 50  0001 C CNN "RS_ref"
+F 40 "2020-12-05" H 4850 1700 50  0001 C CNN "RS_check_date"
+F 41 "?" H 4850 1700 50  0001 C CNN "RS_price_qt=1"
+F 42 "?" H 4850 1700 50  0001 C CNN "RS_price_qt=10"
+F 43 "?" H 4850 1700 50  0001 C CNN "RS_price_qt=100"
+F 44 "?" H 4850 1700 50  0001 C CNN "RS_price_qt=1000"
+F 45 "-" H 4850 1700 50  0001 C CNN "RS_stock"
+F 46 "TO_CHECK" H 4850 1700 50  0001 C CNN "Status"
+F 47 "1.01" H 4850 1700 50  0001 C CNN "Release_version"
+F 48 "2020-12-05" H 4850 1700 50  0001 C CNN "Release_date"
+F 49 "ManWithNoName" H 4850 1700 50  0001 C CNN "Designer"
+	2    4850 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L dmn3018ssd:DMN3018SSD Q702
+U 1 1 5FDD7BBB
+P 4200 5400
+F 0 "Q702" H 4438 5562 50  0000 L CNN
+F 1 "DMN3018SSD" H 4438 5471 50  0000 L CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 4400 5325 50  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/DMN3018SSD.pdf" H 4200 5400 50  0001 C CNN
+F 4 "Diodes Incorporated" H 4200 5400 50  0001 C CNN "Mfr_name"
+F 5 "DMN3018SSD-13" H 4200 5400 50  0001 C CNN "Mfr_no"
+F 6 "SO-8" H 4438 5380 50  0000 L CNN "Package"
+F 7 "N + N" H 4200 5400 50  0001 C CNN "Type"
+F 8 "30V" H 4200 5400 50  0001 C CNN "VDSS"
+F 9 "30mΩ" H 4438 5289 50  0000 L CNN "RDSon"
+F 10 "5.3A" H 4200 5400 50  0001 C CNN "IDmax"
+F 11 "1-2.1V" H 4200 5400 50  0001 C CNN "VGSth"
+F 12 "20V" H 4200 5400 50  0001 C CNN "VGSS"
+F 13 "https://octopart.com/dmn3018ssd-13-diodes+inc.-26472698?r=sp" H 4200 5400 50  0001 C CNN "Octopart_link"
+F 14 "-" H 4200 5400 50  0001 C CNN "Farnell_link"
+F 15 "-" H 4200 5400 50  0001 C CNN "Farnell_ref"
+F 16 "2020-12-05" H 4200 5400 50  0001 C CNN "Farnell_check_date"
+F 17 "-" H 4200 5400 50  0001 C CNN "Farnell_price_qt=5"
+F 18 "-" H 4200 5400 50  0001 C CNN "Farnell_price_qt=25"
+F 19 "-" H 4200 5400 50  0001 C CNN "Farnell_price_qt=100"
+F 20 "-" H 4200 5400 50  0001 C CNN "Farnell_price_qt=250"
+F 21 "-" H 4200 5400 50  0001 C CNN "Farnell_stock"
+F 22 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMN3018SSD-13_C155277.html" H 4200 5400 50  0001 C CNN "LCSC_link"
+F 23 "C155277" H 4200 5400 50  0001 C CNN "LCSC_ref"
+F 24 "2020-12-05" H 4200 5400 50  0001 C CNN "LCSC_check_date"
+F 25 "$0.2541" H 4200 5400 50  0001 C CNN "LCSC_price_qt=1"
+F 26 "$0.1893" H 4200 5400 50  0001 C CNN "LCSC_price_qt=10"
+F 27 "$0.1774" H 4200 5400 50  0001 C CNN "LCSC_price_qt=30"
+F 28 "$0.1655" H 4200 5400 50  0001 C CNN "LCSC_price_qt=100"
+F 29 "2,688" H 4200 5400 50  0001 C CNN "LCSC_stock"
+F 30 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMN3018SSD-13?qs=%2Fha2pyFaduhiKtoBktzbgyUAHZPSS%252B8%252Bk9vZNvppSquz1WfnqvfRKg%3D%3D" H 4200 5400 50  0001 C CNN "Mouser_link"
+F 31 "621-DMN3018SSD-13" H 4200 5400 50  0001 C CNN "Mouser_ref"
+F 32 "2020-12-05" H 4200 5400 50  0001 C CNN "Mouser_check_date"
+F 33 "0,432 €" H 4200 5400 50  0001 C CNN "Mouser_price_qt=1"
+F 34 "0,349 €" H 4200 5400 50  0001 C CNN "Mouser_price_qt=10"
+F 35 "0,246 €" H 4200 5400 50  0001 C CNN "Mouser_price_qt=100"
+F 36 "0,202 €" H 4200 5400 50  0001 C CNN "Mouser_price_qt=500"
+F 37 "2,705" H 4200 5400 50  0001 C CNN "Mouser_stock"
+F 38 "https://fr.rs-online.com/web/p/transistors-mosfet/7904592/" H 4200 5400 50  0001 C CNN "RS_link"
+F 39 "790-4592" H 4200 5400 50  0001 C CNN "RS_ref"
+F 40 "2020-12-05" H 4200 5400 50  0001 C CNN "RS_check_date"
+F 41 "0,342 €" H 4200 5400 50  0001 C CNN "RS_price_qt=25"
+F 42 "0,213 €" H 4200 5400 50  0001 C CNN "RS_price_qt=125"
+F 43 "0,203 €" H 4200 5400 50  0001 C CNN "RS_price_qt=625"
+F 44 "0,160 €" H 4200 5400 50  0001 C CNN "RS_price_qt=1250"
+F 45 "2,500" H 4200 5400 50  0001 C CNN "RS_stock"
+F 46 "TO_CHECK" H 4200 5400 50  0001 C CNN "Status"
+F 47 "1.01" H 4200 5400 50  0001 C CNN "Release_version"
+F 48 "2020-12-05" H 4200 5400 50  0001 C CNN "Release_date"
+F 49 "ManWithNoName" H 4200 5400 50  0001 C CNN "Designer"
+	1    4200 5400
+	1    0    0    -1  
+$EndComp
+Connection ~ 4000 5400
+Wire Wire Line
+	4250 5150 4250 5100
+Wire Wire Line
+	4250 5100 4350 5100
+Connection ~ 4350 5100
+Wire Wire Line
+	4350 5100 4350 5150
+$Comp
+L dmn3018ssd:DMN3018SSD Q702
+U 2 1 5FDE84C3
+P 1500 5100
+F 0 "Q702" H 1738 5262 50  0000 L CNN
+F 1 "DMN3018SSD" H 1738 5171 50  0000 L CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 1700 5025 50  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/DMN3018SSD.pdf" H 1500 5100 50  0001 C CNN
+F 4 "Diodes Incorporated" H 1500 5100 50  0001 C CNN "Mfr_name"
+F 5 "DMN3018SSD-13" H 1500 5100 50  0001 C CNN "Mfr_no"
+F 6 "SO-8" H 1738 5080 50  0000 L CNN "Package"
+F 7 "N + N" H 1500 5100 50  0001 C CNN "Type"
+F 8 "30V" H 1500 5100 50  0001 C CNN "VDSS"
+F 9 "30mΩ" H 1738 4989 50  0000 L CNN "RDSon"
+F 10 "5.3A" H 1500 5100 50  0001 C CNN "IDmax"
+F 11 "1-2.1V" H 1500 5100 50  0001 C CNN "VGSth"
+F 12 "20V" H 1500 5100 50  0001 C CNN "VGSS"
+F 13 "https://octopart.com/dmn3018ssd-13-diodes+inc.-26472698?r=sp" H 1500 5100 50  0001 C CNN "Octopart_link"
+F 14 "-" H 1500 5100 50  0001 C CNN "Farnell_link"
+F 15 "-" H 1500 5100 50  0001 C CNN "Farnell_ref"
+F 16 "2020-12-05" H 1500 5100 50  0001 C CNN "Farnell_check_date"
+F 17 "-" H 1500 5100 50  0001 C CNN "Farnell_price_qt=5"
+F 18 "-" H 1500 5100 50  0001 C CNN "Farnell_price_qt=25"
+F 19 "-" H 1500 5100 50  0001 C CNN "Farnell_price_qt=100"
+F 20 "-" H 1500 5100 50  0001 C CNN "Farnell_price_qt=250"
+F 21 "-" H 1500 5100 50  0001 C CNN "Farnell_stock"
+F 22 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMN3018SSD-13_C155277.html" H 1500 5100 50  0001 C CNN "LCSC_link"
+F 23 "C155277" H 1500 5100 50  0001 C CNN "LCSC_ref"
+F 24 "2020-12-05" H 1500 5100 50  0001 C CNN "LCSC_check_date"
+F 25 "$0.2541" H 1500 5100 50  0001 C CNN "LCSC_price_qt=1"
+F 26 "$0.1893" H 1500 5100 50  0001 C CNN "LCSC_price_qt=10"
+F 27 "$0.1774" H 1500 5100 50  0001 C CNN "LCSC_price_qt=30"
+F 28 "$0.1655" H 1500 5100 50  0001 C CNN "LCSC_price_qt=100"
+F 29 "2,688" H 1500 5100 50  0001 C CNN "LCSC_stock"
+F 30 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMN3018SSD-13?qs=%2Fha2pyFaduhiKtoBktzbgyUAHZPSS%252B8%252Bk9vZNvppSquz1WfnqvfRKg%3D%3D" H 1500 5100 50  0001 C CNN "Mouser_link"
+F 31 "621-DMN3018SSD-13" H 1500 5100 50  0001 C CNN "Mouser_ref"
+F 32 "2020-12-05" H 1500 5100 50  0001 C CNN "Mouser_check_date"
+F 33 "0,432 €" H 1500 5100 50  0001 C CNN "Mouser_price_qt=1"
+F 34 "0,349 €" H 1500 5100 50  0001 C CNN "Mouser_price_qt=10"
+F 35 "0,246 €" H 1500 5100 50  0001 C CNN "Mouser_price_qt=100"
+F 36 "0,202 €" H 1500 5100 50  0001 C CNN "Mouser_price_qt=500"
+F 37 "2,705" H 1500 5100 50  0001 C CNN "Mouser_stock"
+F 38 "https://fr.rs-online.com/web/p/transistors-mosfet/7904592/" H 1500 5100 50  0001 C CNN "RS_link"
+F 39 "790-4592" H 1500 5100 50  0001 C CNN "RS_ref"
+F 40 "2020-12-05" H 1500 5100 50  0001 C CNN "RS_check_date"
+F 41 "0,342 €" H 1500 5100 50  0001 C CNN "RS_price_qt=25"
+F 42 "0,213 €" H 1500 5100 50  0001 C CNN "RS_price_qt=125"
+F 43 "0,203 €" H 1500 5100 50  0001 C CNN "RS_price_qt=625"
+F 44 "0,160 €" H 1500 5100 50  0001 C CNN "RS_price_qt=1250"
+F 45 "2,500" H 1500 5100 50  0001 C CNN "RS_stock"
+F 46 "TO_CHECK" H 1500 5100 50  0001 C CNN "Status"
+F 47 "1.01" H 1500 5100 50  0001 C CNN "Release_version"
+F 48 "2020-12-05" H 1500 5100 50  0001 C CNN "Release_date"
+F 49 "ManWithNoName" H 1500 5100 50  0001 C CNN "Designer"
+	2    1500 5100
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

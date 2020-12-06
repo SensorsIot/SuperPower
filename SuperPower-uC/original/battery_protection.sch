@@ -219,43 +219,6 @@ Wire Wire Line
 Text Label 1100 900  0    50   ~ 0
 +BATT
 $Comp
-L dmn2019uts:DMN2019UTS Q1
-U 1 1 5F864512
-P 2650 5450
-F 0 "Q1" H 3094 5446 50  0000 L CNN
-F 1 "DMN2019UTS" H 3000 5300 50  0000 L CNN
-F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 2850 5700 50  0001 L CNN
-F 3 "https://www.diodes.com/assets/Datasheets/DMN2019UTS.pdf" H 2450 5450 50  0001 C CNN
-F 4 "-" H 2650 5450 50  0001 C CNN "Farnell_link"
-F 5 "-" H 2650 5450 50  0001 C CNN "Farnell_ref"
-F 6 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMN2019UTS-13_C260947.html" H 2650 5450 50  0001 C CNN "LCSC_link"
-F 7 "C260947" H 2650 5450 50  0001 C CNN "LCSC_ref"
-F 8 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMN2019UTS-13?qs=%2Fha2pyFadujmJKgyTdcUjBPbN0G7DesuMFVpb9R9LngEBXU4uTGuDw%3D%3D" H 2650 5450 50  0001 C CNN "Mouser_link"
-F 9 "621-DMN2019UTS-13" H 2650 5450 50  0001 C CNN "Mouser_ref"
-F 10 "https://octopart.com/dmn2019uts-13-diodes+inc.-21789369?r=sp" H 2650 5450 50  0001 C CNN "Octopart_link"
-F 11 "-" H 2650 5450 50  0001 C CNN "RS_link"
-F 12 "-" H 2650 5450 50  0001 C CNN "RS_ref"
-F 13 "2020-11-28" H 2650 5450 50  0001 C CNN "Farnell_check_date"
-F 14 "2020-11-28" H 2650 5450 50  0001 C CNN "LCSC_check_date"
-F 15 "$0.204" H 2650 5450 50  0001 C CNN "LCSC_price_qt=1"
-F 16 "$0.153" H 2650 5450 50  0001 C CNN "LCSC_price_qt=10"
-F 17 "$0.135" H 2650 5450 50  0001 C CNN "LCSC_price_qt=100"
-F 18 "$0.144" H 2650 5450 50  0001 C CNN "LCSC_price_qt=30"
-F 19 "0" H 2650 5450 50  0001 C CNN "LCSC_stock"
-F 20 "Diodes Incorporated" H 2650 5450 50  0001 C CNN "Mfr_name"
-F 21 "DMN2019UTS-13" H 2650 5450 50  0001 C CNN "Mfr_no"
-F 22 "2020-11-28" H 2650 5450 50  0001 C CNN "Mouser_check_date"
-F 23 "$0.505" H 2650 5450 50  0001 C CNN "Mouser_price_qt=1"
-F 24 "$0.372" H 2650 5450 50  0001 C CNN "Mouser_price_qt=10"
-F 25 "$0.232" H 2650 5450 50  0001 C CNN "Mouser_price_qt=100"
-F 26 "$0.215" H 2650 5450 50  0001 C CNN "Mouser_price_qt=500"
-F 27 "10,295" H 2650 5450 50  0001 C CNN "Mouser_stock"
-F 28 "TSSOP-8" H 2650 5450 50  0001 C CNN "Package"
-F 29 "2020-11-28" H 2650 5450 50  0001 C CNN "RS_check_date"
-	1    2650 5450
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_US R3
 U 1 1 5F862979
 P 5750 1650
@@ -562,4 +525,61 @@ F 28 "ManWithNoName" H 3500 1700 50  0001 C CNN "Designer"
 $EndComp
 Text Notes 3600 1900 0    50   ~ 0
 18650 Battery Holder
+$Comp
+L dmn2019uts:DMN2019UTS Q?
+U 1 1 5FCF3C74
+P 2650 5450
+F 0 "Q?" H 3094 5537 50  0000 L CNN
+F 1 "DMN2019UTS" H 3094 5446 50  0000 L CNN
+F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 2850 5700 50  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/DMN2019UTS.pdf" H 2450 5450 50  0001 C CNN
+F 4 "Diodes Incorporated" H 2650 5450 50  0001 C CNN "Mfr_name"
+F 5 "DMN2019UTS-13" H 2650 5450 50  0001 C CNN "Mfr_no"
+F 6 "TSSOP-8" H 3094 5355 50  0000 L CNN "Package"
+F 7 "N + N with common drain" H 2650 5450 50  0001 C CNN "Type"
+F 8 "20V" H 2650 5450 50  0001 C CNN "VDSS"
+F 9 "21mΩ" H 3094 5264 50  0000 L CNN "RDSon"
+F 10 "4.3mA" H 2650 5450 50  0001 C CNN "IDmax"
+F 11 "0.35-0.95V" H 2650 5450 50  0001 C CNN "VGSth"
+F 12 "12V" H 2650 5450 50  0001 C CNN "VGSS"
+F 13 "https://octopart.com/dmn2019uts-13-diodes+inc.-21789369?r=sp" H 2650 5450 50  0001 C CNN "Octopart_link"
+F 14 "-" H 2650 5450 50  0001 C CNN "Farnell_link"
+F 15 "-" H 2650 5450 50  0001 C CNN "Farnell_ref"
+F 16 "2020-12-05" H 2650 5450 50  0001 C CNN "Farnell_check_date"
+F 17 "-" H 2650 5450 50  0001 C CNN "Farnell_price_qt=5"
+F 18 "-" H 2650 5450 50  0001 C CNN "Farnell_price_qt=25"
+F 19 "-" H 2650 5450 50  0001 C CNN "Farnell_price_qt=100"
+F 20 "-" H 2650 5450 50  0001 C CNN "Farnell_price_qt=250"
+F 21 "-" H 2650 5450 50  0001 C CNN "Farnell_stock"
+F 22 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMN2019UTS-13_C260947.html" H 2650 5450 50  0001 C CNN "LCSC_link"
+F 23 "C260947" H 2650 5450 50  0001 C CNN "LCSC_ref"
+F 24 "2020-12-05" H 2650 5450 50  0001 C CNN "LCSC_check_date"
+F 25 "$0.2042" H 2650 5450 50  0001 C CNN "LCSC_price_qt=1"
+F 26 "$0.1537" H 2650 5450 50  0001 C CNN "LCSC_price_qt=10"
+F 27 "$0.1444" H 2650 5450 50  0001 C CNN "LCSC_price_qt=30"
+F 28 "$0.1351" H 2650 5450 50  0001 C CNN "LCSC_price_qt=100"
+F 29 "0" H 2650 5450 50  0001 C CNN "LCSC_stock"
+F 30 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMN2019UTS-13?qs=%2Fha2pyFadujmJKgyTdcUjBPbN0G7DesuMFVpb9R9LngEBXU4uTGuDw%3D%3D" H 2650 5450 50  0001 C CNN "Mouser_link"
+F 31 "621-DMN2019UTS-13" H 2650 5450 50  0001 C CNN "Mouser_ref"
+F 32 "2020-12-05" H 2650 5450 50  0001 C CNN "Mouser_check_date"
+F 33 "0,424 €" H 2650 5450 50  0001 C CNN "Mouser_price_qt=1"
+F 34 "0,313 €" H 2650 5450 50  0001 C CNN "Mouser_price_qt=10"
+F 35 "0,195 €" H 2650 5450 50  0001 C CNN "Mouser_price_qt=100"
+F 36 "0,181 €" H 2650 5450 50  0001 C CNN "Mouser_price_qt=500"
+F 37 "10,295" H 2650 5450 50  0001 C CNN "Mouser_stock"
+F 38 "-" H 2650 5450 50  0001 C CNN "RS_link"
+F 39 "-" H 2650 5450 50  0001 C CNN "RS_ref"
+F 40 "2020-12-05" H 2650 5450 50  0001 C CNN "RS_check_date"
+F 41 "-" H 2650 5450 50  0001 C CNN "RS_price_qt=1"
+F 42 "-" H 2650 5450 50  0001 C CNN "RS_price_qt=10"
+F 43 "-" H 2650 5450 50  0001 C CNN "RS_price_qt=100"
+F 44 "-" H 2650 5450 50  0001 C CNN "RS_price_qt=1000"
+F 45 "-" H 2650 5450 50  0001 C CNN "RS_stock"
+F 46 "TO_CHECK" H 2650 5450 50  0001 C CNN "Status"
+F 47 "1.00" H 2650 5450 50  0001 C CNN "Release_version"
+F 48 "2020-12-05" H 2650 5450 50  0001 C CNN "Release_date"
+F 49 "ManWithNoName" H 2650 5450 50  0001 C CNN "Designer"
+	1    2650 5450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
