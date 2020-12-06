@@ -21,7 +21,7 @@ Text HLabel 1300 1650 0    50   Input ~ 0
 D+
 Text HLabel 1300 1750 0    50   Input ~ 0
 D-
-Text Label 4100 5150 2    50   ~ 0
+Text Label 4100 5050 2    50   ~ 0
 VBUS
 Text Label 3500 5650 2    50   ~ 0
 D-
@@ -50,12 +50,12 @@ NoConn ~ 3100 6350
 $Comp
 L power:GND #PWR045
 U 1 1 5F729030
-P 2500 7050
-F 0 "#PWR045" H 2500 6800 50  0001 C CNN
-F 1 "GND" H 2505 6877 50  0000 C CNN
-F 2 "" H 2500 7050 50  0001 C CNN
-F 3 "" H 2500 7050 50  0001 C CNN
-	1    2500 7050
+P 2450 7050
+F 0 "#PWR045" H 2450 6800 50  0001 C CNN
+F 1 "GND" H 2455 6877 50  0000 C CNN
+F 2 "" H 2450 7050 50  0001 C CNN
+F 3 "" H 2450 7050 50  0001 C CNN
+	1    2450 7050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -80,14 +80,6 @@ F 3 "~" H 3950 5650 50  0001 C CNN
 	1    3950 5650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3100 5350 3950 5350
-Wire Wire Line
-	3950 5350 3950 5550
-Wire Wire Line
-	3100 5450 3650 5450
-Wire Wire Line
-	3650 5450 3650 5550
 Text Label 1950 1750 2    50   ~ 0
 D-
 Text Label 1950 1650 2    50   ~ 0
@@ -180,18 +172,18 @@ Wire Wire Line
 Wire Wire Line
 	1950 1150 1300 1150
 Wire Wire Line
-	4100 5150 3700 5150
+	4100 5050 3700 5050
 Wire Wire Line
-	3500 5150 3250 5150
+	3500 5050 3250 5050
 $Comp
 L Device:R_Small R34
 U 1 1 5F73032E
-P 3600 5150
-F 0 "R34" V 3404 5150 50  0000 C CNN
-F 1 "0" V 3495 5150 50  0000 C CNN
-F 2 "" H 3600 5150 50  0001 C CNN
-F 3 "~" H 3600 5150 50  0001 C CNN
-	1    3600 5150
+P 3600 5050
+F 0 "R34" V 3404 5050 50  0000 C CNN
+F 1 "0" V 3495 5050 50  0000 C CNN
+F 2 "" H 3600 5050 50  0001 C CNN
+F 3 "~" H 3600 5050 50  0001 C CNN
+	1    3600 5050
 	0    1    1    0   
 $EndComp
 Wire Notes Line
@@ -205,30 +197,30 @@ Wire Notes Line
 $Comp
 L Device:R_Small R33
 U 1 1 5F75A76F
-P 2200 6850
-F 0 "R33" H 2259 6896 50  0000 L CNN
-F 1 "DNP/0" H 2259 6805 50  0000 L CNN
-F 2 "" H 2200 6850 50  0001 C CNN
-F 3 "~" H 2200 6850 50  0001 C CNN
-	1    2200 6850
+P 2050 6850
+F 0 "R33" H 2109 6896 50  0000 L CNN
+F 1 "DNP/0" H 2109 6805 50  0000 L CNN
+F 2 "" H 2050 6850 50  0001 C CNN
+F 3 "~" H 2050 6850 50  0001 C CNN
+	1    2050 6850
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR044
 U 1 1 5F75ACA2
-P 2200 7050
-F 0 "#PWR044" H 2200 6800 50  0001 C CNN
-F 1 "GND" H 2205 6877 50  0000 C CNN
-F 2 "" H 2200 7050 50  0001 C CNN
-F 3 "" H 2200 7050 50  0001 C CNN
-	1    2200 7050
+P 2050 7050
+F 0 "#PWR044" H 2050 6800 50  0001 C CNN
+F 1 "GND" H 2055 6877 50  0000 C CNN
+F 2 "" H 2050 7050 50  0001 C CNN
+F 3 "" H 2050 7050 50  0001 C CNN
+	1    2050 7050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2200 6650 2200 6750
+	2050 6650 2050 6750
 Wire Wire Line
-	2200 6950 2200 7050
-Text Notes 3300 4850 0    50   ~ 0
+	2050 6950 2050 7050
+Text Notes 3250 4800 0    50   ~ 0
 So you can disable \nVBUS if you only \nneed data\n(5V will have to\nbe provided to\nVBUS)\n
 Text Label 5100 6800 2    50   ~ 0
 VBUS
@@ -269,8 +261,8 @@ F 3 "" H 4500 6750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2500 7050 2500 6650
-Text Notes 1450 6900 0    50   ~ 0
+	2450 7050 2450 6650
+Text Notes 1300 6900 0    50   ~ 0
 The shield should\nstay floating\non device side
 Wire Wire Line
 	3900 6900 3900 6800
@@ -567,28 +559,36 @@ Wire Notes Line
 Wire Notes Line
 	550  2000 550  550 
 $Comp
-L Connector:USB_C_Receptacle_USB2.0 J4
-U 1 1 5FC6195A
-P 2500 5750
-F 0 "J4" H 2607 6617 50  0000 C CNN
-F 1 "USB_C_Receptacle_USB2.0" H 2607 6526 50  0000 C CNN
-F 2 "" H 2650 5750 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 2650 5750 50  0001 C CNN
-	1    2500 5750
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5FDD7D70
-P 3250 5150
-F 0 "#FLG0101" H 3250 5225 50  0001 C CNN
-F 1 "PWR_FLAG" H 3250 5323 50  0001 C CNN
-F 2 "" H 3250 5150 50  0001 C CNN
-F 3 "~" H 3250 5150 50  0001 C CNN
-	1    3250 5150
+P 3250 5050
+F 0 "#FLG0101" H 3250 5125 50  0001 C CNN
+F 1 "PWR_FLAG" H 3250 5223 50  0001 C CNN
+F 2 "" H 3250 5050 50  0001 C CNN
+F 3 "~" H 3250 5050 50  0001 C CNN
+	1    3250 5050
 	1    0    0    -1  
 $EndComp
-Connection ~ 3250 5150
+Connection ~ 3250 5050
 Wire Wire Line
-	3250 5150 3100 5150
+	3250 5050 3100 5050
+$Comp
+L usb-c:USB-C U3
+U 1 1 5FCE877D
+P 2450 6250
+F 0 "U3" H 2050 7400 50  0000 C CNN
+F 1 "USB-C" H 2100 7550 50  0000 C CNB
+F 2 "usb_c:usb-c-usb4110" H 2450 6250 50  0001 C CNN
+F 3 "" H 2450 6250 50  0001 C CNN
+	1    2450 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 5400 3100 5400
+Wire Wire Line
+	3650 5400 3650 5550
+Wire Wire Line
+	3100 5300 3950 5300
+Wire Wire Line
+	3950 5300 3950 5550
 $EndSCHEMATC
