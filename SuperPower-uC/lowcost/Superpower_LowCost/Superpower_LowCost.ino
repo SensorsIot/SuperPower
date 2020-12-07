@@ -136,7 +136,7 @@ void loop() {
   a = B11111101 & WIRE_RX_8(EXP_addr, EXP_OUTPUT);
   WIRE_TX(EXP_addr, EXP_OUTPUT, a);    //turn sensor 3v3(bit1) off
 
-  sleepseconds(60);
+  sleepseconds(5);
   
   delay(20000);
   while(1){
