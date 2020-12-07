@@ -3,7 +3,7 @@ EESchema-DOCLIB  Version 2.0
 $CMP 150060RS75000_0603
 D WL-SMCW SMT Mono-color Chip LED Waterclear, Red, 0603
 K LED diode green 0603
-F ~
+F https://www.we-online.com/catalog/datasheet/150060RS75000.pdf
 $ENDCMP
 #
 #End Doc Library

@@ -464,43 +464,6 @@ This circuit (power oring) allows to have concurrent power inputs,\nthe input wi
 Text Label 1950 1150 2    50   ~ 0
 CHARGER_VIN
 $Comp
-L 150060vs75000:150060VS75000_0603 LED2
-U 1 1 5FC4B339
-P 7000 4750
-F 0 "LED2" V 7039 4632 50  0000 R CNN
-F 1 "150060VS75000_0603" V 6948 4632 50  0001 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 7000 4750 50  0001 C CNN
-F 3 "~" H 7000 4750 50  0001 C CNN
-F 4 "Wurth Elektronik " H 7000 4750 50  0001 C CNN "Mfr_name"
-F 5 "150060VS75000" H 7000 4750 50  0001 C CNN "Mfr_no"
-F 6 "0603" H 7200 4850 50  0001 C CNN "Package"
-F 7 "Green" V 6948 4632 50  0000 R CNN "Color"
-F 8 "https://octopart.com/150060vs75000-w%C3%BCrth+elektronik-29717778?r=sp" H 7000 4750 50  0001 C CNN "Octopart_link"
-F 9 "https://uk.farnell.com/wurth-elektronik/150060vs75000/led-0603-b-green-40mcd-570nm/dp/2322073?st=150060VS75000" H 7000 4750 50  0001 C CNN "Farnell_link"
-F 10 "2322073" H 7000 4750 50  0001 C CNN "Farnell_ref"
-F 11 "2020-11-23" H 7000 4750 50  0001 C CNN "Farnell_check_date"
-F 12 "£0.144" H 7000 4750 50  0001 C CNN "Farnell_price_qt=5"
-F 13 "4457" H 7000 4750 50  0001 C CNN "Farnell_stock"
-F 14 "-" H 7000 4750 50  0001 C CNN "LCSC_link"
-F 15 "-" H 7000 4750 50  0001 C CNN "LCSC_ref"
-F 16 "https://eu.mouser.com/ProductDetail/Wurth-Elektronik/150060VS75000?qs=%2Fha2pyFaduhwKZlJ%252BauMPIjo9WJ3TVadxkDfqVN3kSHKNXazy%252BR78Q==" H 7000 4750 50  0001 C CNN "Mouser_link"
-F 17 "710-150060VS75000" H 7000 4750 50  0001 C CNN "Mouser_ref"
-F 18 "2020-11-23" H 7000 4750 50  0001 C CNN "Mouser_check_date"
-F 19 "$0.151" H 7150 4550 50  0001 C CNN "Mouser_price_qt=1"
-F 20 "127902" H 7000 4750 50  0001 C CNN "Mouser_stock"
-F 21 "https://fr.rs-online.com/web/p/led/8154215/" H 7000 4750 50  0001 C CNN "RS_link"
-F 22 "815-4215" H 7000 4750 50  0001 C CNN "RS_ref"
-F 23 "2020-11-23" H 7000 4750 50  0001 C CNN "RS_check_date"
-F 24 "0.101€" H 7000 4750 50  0001 C CNN "RS_price_qt=100"
-F 25 "500" H 7000 4750 50  0001 C CNN "RS_stock"
-F 26 "1.00" H 7000 4750 50  0001 C CNN "Release_version"
-F 27 "2020-11-23" H 7000 4750 50  0001 C CNN "Release_date"
-F 28 "ManWithNoName" H 7000 4750 50  0001 C CNN "Designer"
-F 29 "TO_CHECK" H 7000 4750 50  0001 C CNN "Status"
-	1    7000 4750
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:R_Small R?
 U 1 1 5FC4C6CF
 P 7000 5150
@@ -591,4 +554,56 @@ Wire Wire Line
 	3100 5300 3950 5300
 Wire Wire Line
 	3950 5300 3950 5550
+$Comp
+L 150060vs75000:150060VS75000_0603 LED2
+U 1 1 5FCFEC6A
+P 7000 4750
+F 0 "LED2" V 7084 4632 50  0000 R CNN
+F 1 "150060VS75000_0603" H 7000 4650 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 7000 4750 50  0001 C CNN
+F 3 "https://www.we-online.com/catalog/datasheet/150060VS75000.pdf" H 7000 4750 50  0001 C CNN
+F 4 "Wurth Elektronik " H 7000 4750 50  0001 C CNN "Mfr_name"
+F 5 "150060VS75000" H 7000 4750 50  0001 C CNN "Mfr_no"
+F 6 "0603" V 6993 4632 50  0000 R CNN "Package"
+F 7 "Green" V 6902 4632 50  0000 R CNN "Color"
+F 8 "https://octopart.com/150060vs75000-w%C3%BCrth+elektronik-29717778?r=sp" H 7000 4750 50  0001 C CNN "Octopart_link"
+F 9 "https://fr.farnell.com/wurth-elektronik/150060vs75000/led-0603-b-vert-40mcd-570nm/dp/2322073?st=150060VS75000" H 7000 4750 50  0001 C CNN "Farnell_link"
+F 10 "2322073" H 7000 4750 50  0001 C CNN "Farnell_ref"
+F 11 "2020-12-07" H 7000 4750 50  0001 C CNN "Farnell_check_date"
+F 12 "-" H 7000 4750 50  0001 C CNN "Farnell_price_qt=1"
+F 13 "0.139€" H 7000 4750 50  0001 C CNN "Farnell_price_qt=10"
+F 14 "0.115€" H 7000 4750 50  0001 C CNN "Farnell_price_qt=100"
+F 15 "0.0979€" H 7000 4750 50  0001 C CNN "Farnell_price_qt=1000"
+F 16 "8,485" H 7000 4750 50  0001 C CNN "Farnell_stock"
+F 17 "-" H 7000 4750 50  0001 C CNN "LCSC_link"
+F 18 "-" H 7000 4750 50  0001 C CNN "LCSC_ref"
+F 19 "2020-12-07" H 7000 4750 50  0001 C CNN "LCSC_check_date"
+F 20 "-" H 7000 4750 50  0001 C CNN "LCSC_price_qt=1"
+F 21 "-" H 7000 4750 50  0001 C CNN "LCSC_price_qt=10"
+F 22 "-" H 7000 4750 50  0001 C CNN "LCSC_price_qt=100"
+F 23 "-" H 7000 4750 50  0001 C CNN "LCSC_price_qt=1000"
+F 24 "-" H 7000 4750 50  0001 C CNN "LCSC_stock"
+F 25 "https://eu.mouser.com/ProductDetail/Wurth-Elektronik/150060VS75000?qs=%2Fha2pyFaduhwKZlJ%252BauMPIjo9WJ3TVadxkDfqVN3kSHKNXazy%252BR78Q==" H 7000 4750 50  0001 C CNN "Mouser_link"
+F 26 "710-150060VS75000" H 7000 4750 50  0001 C CNN "Mouser_ref"
+F 27 "2020-12-07" H 7000 4750 50  0001 C CNN "Mouser_check_date"
+F 28 "$0.151" H 7150 4550 50  0001 C CNN "Mouser_price_qt=1"
+F 29 "$0.151" H 7150 4550 50  0001 C CNN "Mouser_price_qt=10"
+F 30 "$0.115" H 7150 4550 50  0001 C CNN "Mouser_price_qt=100"
+F 31 "$0.107" H 7150 4550 50  0001 C CNN "Mouser_price_qt=1000"
+F 32 "165,393" H 7000 4750 50  0001 C CNN "Mouser_stock"
+F 33 "https://fr.rs-online.com/web/p/led/8154215/" H 7000 4750 50  0001 C CNN "RS_link"
+F 34 "815-4215" H 7000 4750 50  0001 C CNN "RS_ref"
+F 35 "2020-12-07" H 7000 4750 50  0001 C CNN "RS_check_date"
+F 36 "-" H 7000 4750 50  0001 C CNN "RS_price_qt=1"
+F 37 "-" H 7000 4750 50  0001 C CNN "RS_price_qt=10"
+F 38 "0.101€" H 7000 4750 50  0001 C CNN "RS_price_qt=100"
+F 39 "0.074€" H 7000 4750 50  0001 C CNN "RS_price_qt=1000"
+F 40 "800" H 7000 4750 50  0001 C CNN "RS_stock"
+F 41 "TO_CHECK" H 7000 4750 50  0001 C CNN "Status"
+F 42 "1.00" H 7000 4750 50  0001 C CNN "Release_version"
+F 43 "2020-11-23" H 7000 4750 50  0001 C CNN "Release_date"
+F 44 "ManWithNoName" H 7000 4750 50  0001 C CNN "Designer"
+	1    7000 4750
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
