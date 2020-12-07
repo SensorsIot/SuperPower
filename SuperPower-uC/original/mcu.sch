@@ -386,17 +386,6 @@ $EndComp
 Wire Wire Line
 	4600 1400 4500 1400
 $Comp
-L Connector:Conn_01x17_Female J6
-U 1 1 5F892F6D
-P 10600 4900
-F 0 "J6" H 10628 4876 50  0000 L CNN
-F 1 "MCU right headers" H 10100 5850 50  0000 L CNN
-F 2 "" H 10600 4900 50  0001 C CNN
-F 3 "~" H 10600 4900 50  0001 C CNN
-	1    10600 4900
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small R19
 U 1 1 5F89B65F
 P 2650 5100
@@ -515,10 +504,6 @@ Wire Wire Line
 	7650 5300 7400 5300
 Text Label 7400 5300 0    50   ~ 0
 IO27
-Wire Wire Line
-	7650 4900 7400 4900
-Text Label 7400 4900 0    50   ~ 0
-IO32
 Wire Wire Line
 	7650 5000 7400 5000
 Text Label 7400 5000 0    50   ~ 0
@@ -732,10 +717,6 @@ Wire Wire Line
 Text Label 6650 4800 2    50   ~ 0
 IO33
 Wire Wire Line
-	6400 4700 6650 4700
-Text Label 6650 4700 2    50   ~ 0
-IO32
-Wire Wire Line
 	10400 4300 10150 4300
 Text Label 10150 4300 0    50   ~ 0
 SCL
@@ -841,43 +822,24 @@ Wire Wire Line
 	6400 5600 6650 5600
 Text Label 6650 5600 2    50   ~ 0
 VBUS
-Wire Wire Line
-	6800 5600 6800 5500
 $Comp
 L power:GND #PWR031
 U 1 1 5F9E523C
-P 6800 5600
-F 0 "#PWR031" H 6800 5350 50  0001 C CNN
-F 1 "GND" H 6805 5427 50  0000 C CNN
-F 2 "" H 6800 5600 50  0001 C CNN
-F 3 "" H 6800 5600 50  0001 C CNN
-	1    6800 5600
+P 7000 5550
+F 0 "#PWR031" H 7000 5300 50  0001 C CNN
+F 1 "GND" H 7005 5377 50  0000 C CNN
+F 2 "" H 7000 5550 50  0001 C CNN
+F 3 "" H 7000 5550 50  0001 C CNN
+	1    7000 5550
 	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x17_Female J5
-U 1 1 5F88C49E
-P 6200 4900
-F 0 "J5" H 6228 4876 50  0000 L CNN
-F 1 "MCU left headers" H 5800 5850 50  0000 L CNN
-F 2 "" H 6200 4900 50  0001 C CNN
-F 3 "~" H 6200 4900 50  0001 C CNN
-	1    6200 4900
-	-1   0    0    -1  
 $EndComp
 Text Label 2100 1350 2    50   ~ 0
 3v3
 Wire Wire Line
-	6400 5500 6800 5500
-Wire Wire Line
 	9750 5500 10400 5500
-Wire Wire Line
-	6400 5700 6650 5700
-Text Label 6650 5700 2    50   ~ 0
+Text Label 6650 5800 2    50   ~ 0
 5V
-Wire Wire Line
-	10400 5700 10150 5700
-Text Label 10150 5700 0    50   ~ 0
+Text Label 10150 5800 0    50   ~ 0
 3v3
 Text Notes 2500 6150 0    50   ~ 0
 Indicator LEDs showing\nthe serial bus status.\nAn RSTb pull-up resistor
@@ -944,7 +906,7 @@ U 1 1 5FAC41F6
 P 1700 7000
 F 0 "D6" H 2044 7046 50  0000 L CNN
 F 1 "SK6812" H 2044 6955 50  0000 L CNN
-F 2 "LED_SMD:LED_RGB_5050-6" H 1750 6700 50  0001 L TNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 1750 6700 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 1800 6625 50  0001 L TNN
 	1    1700 7000
 	1    0    0    -1  
@@ -1262,4 +1224,72 @@ F 44 "ManWithNoName" H 3050 5450 50  0001 C CNN "Designer"
 	1    3050 5450
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Connector:Conn_01x18_Female J?
+U 1 1 5FD04923
+P 6200 5000
+F 0 "J?" H 6092 3875 50  0000 C CNN
+F 1 "DNP" H 6092 3966 50  0000 C CNN
+F 2 "" H 6200 5000 50  0001 C CNN
+F 3 "~" H 6200 5000 50  0001 C CNN
+	1    6200 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x18_Female J?
+U 1 1 5FD07E44
+P 10600 4900
+F 0 "J?" H 10500 5950 50  0000 L CNN
+F 1 "DNP" H 10450 5850 50  0000 L CNN
+F 2 "" H 10600 4900 50  0001 C CNN
+F 3 "~" H 10600 4900 50  0001 C CNN
+	1    10600 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 5800 10150 5800
+Wire Wire Line
+	6650 5800 6400 5800
+$Comp
+L power:GND #PWR?
+U 1 1 5FD1F549
+P 6850 5750
+F 0 "#PWR?" H 6850 5500 50  0001 C CNN
+F 1 "GND" H 6855 5577 50  0000 C CNN
+F 2 "" H 6850 5750 50  0001 C CNN
+F 3 "" H 6850 5750 50  0001 C CNN
+	1    6850 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FD1F820
+P 9950 5750
+F 0 "#PWR?" H 9950 5500 50  0001 C CNN
+F 1 "GND" H 9955 5577 50  0000 C CNN
+F 2 "" H 9950 5750 50  0001 C CNN
+F 3 "" H 9950 5750 50  0001 C CNN
+	1    9950 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 5700 9950 5750
+Wire Wire Line
+	9950 5700 10400 5700
+Wire Wire Line
+	6850 5700 6850 5750
+Wire Wire Line
+	6400 5700 6850 5700
+Wire Wire Line
+	7000 5500 7000 5550
+Wire Wire Line
+	6400 5500 7000 5500
+Text Label 7250 4900 0    50   ~ 0
+~SMBALERT
+Wire Wire Line
+	7250 4900 7650 4900
+Text Label 6850 4700 2    50   ~ 0
+~SMBALERT
+Wire Wire Line
+	6400 4700 6850 4700
 $EndSCHEMATC
