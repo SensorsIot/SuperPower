@@ -955,7 +955,7 @@ U 1 1 5FC7D0C0
 P 4000 2300
 F 0 "U4" H 3650 1000 50  0000 C CNN
 F 1 "CP2102N-A01-GQFN28" H 3450 900 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm" H 4450 1100 50  0001 L CNN
+F 2 "Housings_DFN_QFN:QFN-28-1EP_5x5mm_Pitch0.5mm" H 4450 1100 50  0001 L CNN
 F 3 "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" H 4050 1550 50  0001 C CNN
 	1    4000 2300
 	1    0    0    -1  
@@ -966,7 +966,7 @@ U 1 1 5FAC41F6
 P 1700 7000
 F 0 "D6" H 2044 7046 50  0000 L CNN
 F 1 "SK6812" H 2044 6955 50  0000 L CNN
-F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 1750 6700 50  0001 L TNN
+F 2 "LEDs:LED_RGB_5050-6" H 1750 6700 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 1800 6625 50  0001 L TNN
 	1    1700 7000
 	1    0    0    -1  

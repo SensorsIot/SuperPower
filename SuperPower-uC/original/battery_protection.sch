@@ -336,7 +336,7 @@ U 1 1 5FAC8F16
 P 2800 3950
 F 0 "U1" H 2800 4317 50  0000 C CNN
 F 1 "AP9101CK6-AYTRG1" H 2800 4226 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 2750 3950 50  0001 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6" H 2750 3950 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/AP9101C.pdf" H 2800 4000 50  0001 C CNN
 F 4 "https://octopart.com/ap9101ck6-aytrg1-diodes+inc.-77041826?r=sp" H 2800 3950 50  0001 C CNN "Octopart_link"
 F 5 "-" H 2800 3950 50  0001 C CNN "Farnell_link"
@@ -377,7 +377,7 @@ U 1 1 5FBF551D
 P 3000 1700
 F 0 "J1" H 3000 1350 50  0000 C CNN
 F 1 "JST_PH_S2B_thru" H 3050 1450 50  0000 C CNN
-F 2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" H 3000 1700 50  0001 C CNN
+F 2 "Connectors_JST:JST_PH_S2B-PH-K_02x2.00mm_Angled" H 3000 1700 50  0001 C CNN
 F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 3000 1700 50  0001 C CNN
 F 4 "JST" H 3000 1700 50  0001 C CNN "Mfr_name"
 F 5 "S2B-PH-K-S(LF)(SN)" H 3000 1700 50  0001 C CNN "Mfr_no"
@@ -493,7 +493,7 @@ U 1 1 5FCEA64F
 P 3500 1700
 F 0 "BT1" H 3618 1841 50  0000 L CNN
 F 1 "Battery_Cell_Holder_18650_SMT_1042" H 3600 1700 50  0001 L CNN
-F 2 "Battery:BatteryHolder_Keystone_1042_1x18650" V 3500 1760 50  0001 C CNN
+F 2 "Battery_Holders:Keystone_1042_1x18650" V 3500 1760 50  0001 C CNN
 F 3 "https://www.keyelco.com/product-pdf.cfm?p=918" V 3500 1760 50  0001 C CNN
 F 4 "Keystone" H 3618 1750 50  0000 L CNN "Mfr_name"
 F 5 "1042" H 3618 1659 50  0000 L CNN "Mfr_no"
