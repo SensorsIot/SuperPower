@@ -289,32 +289,6 @@ Connection ~ 3650 5850
 Wire Wire Line
 	3650 5850 3650 5750
 $Comp
-L Device:Q_PMOS_GSD Q?
-U 1 1 5FA2BED8
-P 9500 3050
-AR Path="/5F639F48/5FA2BED8" Ref="Q?"  Part="1" 
-AR Path="/5F63B107/5FA2BED8" Ref="Q8"  Part="1" 
-F 0 "Q8" V 9842 3050 50  0000 C CNN
-F 1 "Q_PMOS_GSD" V 9751 3050 50  0000 C CNN
-F 2 "" H 9700 3150 50  0001 C CNN
-F 3 "~" H 9500 3050 50  0001 C CNN
-	1    9500 3050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:Q_PMOS_GSD Q?
-U 1 1 5FA2BEDE
-P 9500 4450
-AR Path="/5F639F48/5FA2BEDE" Ref="Q?"  Part="1" 
-AR Path="/5F63B107/5FA2BEDE" Ref="Q9"  Part="1" 
-F 0 "Q9" V 9842 4450 50  0000 C CNN
-F 1 "Q_PMOS_GSD" V 9751 4450 50  0000 C CNN
-F 2 "" H 9700 4550 50  0001 C CNN
-F 3 "~" H 9500 4450 50  0001 C CNN
-	1    9500 4450
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:R_Small R?
 U 1 1 5FA2BEE4
 P 9500 3550
@@ -330,40 +304,40 @@ $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 5FA2BEEA
-P 9500 4950
+P 9500 5250
 AR Path="/5F639F48/5FA2BEEA" Ref="R?"  Part="1" 
 AR Path="/5F63B107/5FA2BEEA" Ref="R39"  Part="1" 
-F 0 "R39" H 9559 4996 50  0000 L CNN
-F 1 "12k" H 9559 4905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9500 4950 50  0001 C CNN
-F 3 "~" H 9500 4950 50  0001 C CNN
-	1    9500 4950
+F 0 "R39" H 9559 5296 50  0000 L CNN
+F 1 "12k" H 9559 5205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9500 5250 50  0001 C CNN
+F 3 "~" H 9500 5250 50  0001 C CNN
+	1    9500 5250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 5FA2BEF0
-P 9300 4750
+P 9300 5050
 AR Path="/5F639F48/5FA2BEF0" Ref="R?"  Part="1" 
 AR Path="/5F63B107/5FA2BEF0" Ref="R37"  Part="1" 
-F 0 "R37" V 9496 4750 50  0000 C CNN
-F 1 "1k" V 9405 4750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9300 4750 50  0001 C CNN
-F 3 "~" H 9300 4750 50  0001 C CNN
-	1    9300 4750
+F 0 "R37" V 9496 5050 50  0000 C CNN
+F 1 "1k" V 9405 5050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9300 5050 50  0001 C CNN
+F 3 "~" H 9300 5050 50  0001 C CNN
+	1    9300 5050
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5FA2BEF8
-P 9500 5150
+P 9500 5450
 AR Path="/5F639F48/5FA2BEF8" Ref="#PWR?"  Part="1" 
 AR Path="/5F63B107/5FA2BEF8" Ref="#PWR052"  Part="1" 
-F 0 "#PWR052" H 9500 4900 50  0001 C CNN
-F 1 "GND" H 9505 4977 50  0000 C CNN
-F 2 "" H 9500 5150 50  0001 C CNN
-F 3 "" H 9500 5150 50  0001 C CNN
-	1    9500 5150
+F 0 "#PWR052" H 9500 5200 50  0001 C CNN
+F 1 "GND" H 9505 5277 50  0000 C CNN
+F 2 "" H 9500 5450 50  0001 C CNN
+F 3 "" H 9500 5450 50  0001 C CNN
+	1    9500 5450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -380,9 +354,9 @@ F 3 "" H 9500 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9500 5050 9500 5150
+	9500 5350 9500 5450
 Wire Wire Line
-	9500 4750 9500 4650
+	9500 5050 9500 4950
 Wire Wire Line
 	9500 3750 9500 3650
 $Comp
@@ -401,29 +375,29 @@ $EndComp
 $Comp
 L Diode:1N5819 D?
 U 1 1 5FA2BF0F
-P 9800 4550
+P 9800 4850
 AR Path="/5F639F48/5FA2BF0F" Ref="D?"  Part="1" 
 AR Path="/5F63B107/5FA2BF0F" Ref="D5"  Part="1" 
-F 0 "D5" V 9754 4630 50  0000 L CNN
-F 1 "1N5819" V 9845 4630 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 9800 4375 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 9800 4550 50  0001 C CNN
-	1    9800 4550
+F 0 "D5" V 9754 4930 50  0000 L CNN
+F 1 "1N5819" V 9845 4930 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 9800 4675 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 9800 4850 50  0001 C CNN
+	1    9800 4850
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9400 4750 9500 4750
+	9400 5050 9500 5050
 Wire Wire Line
-	9500 4750 9500 4850
-Connection ~ 9500 4750
+	9500 5050 9500 5150
+Connection ~ 9500 5050
 Wire Wire Line
-	9500 4750 9800 4750
+	9500 5050 9800 5050
 Wire Wire Line
-	9800 4750 9800 4700
+	9800 5050 9800 5000
 Wire Wire Line
-	9800 4400 9800 4350
+	9800 4700 9800 4650
 Wire Wire Line
-	9800 4350 9700 4350
+	9800 4650 9700 4650
 Wire Wire Line
 	9800 3000 9800 2950
 Wire Wire Line
@@ -442,12 +416,12 @@ CHARGER_VIN
 Wire Wire Line
 	9800 2950 10450 2950
 Connection ~ 9800 2950
-Text Label 10450 4350 2    50   ~ 0
+Text Label 10450 4650 2    50   ~ 0
 CHARGER_VIN
 Wire Wire Line
-	9800 4350 10450 4350
-Connection ~ 9800 4350
-Text Label 8800 4350 0    50   ~ 0
+	9800 4650 10450 4650
+Connection ~ 9800 4650
+Text Label 8800 4650 0    50   ~ 0
 V_CHARGE
 Text Label 8800 2950 0    50   ~ 0
 VBUS
@@ -457,7 +431,7 @@ Wire Notes Line
 	3250 2100 11050 2100
 Text Notes 8450 2250 0    50   ~ 10
 Power oring
-Text Label 8800 4750 0    50   ~ 0
+Text Label 8800 5050 0    50   ~ 0
 VBUS
 Text Notes 8450 6400 0    50   ~ 0
 This circuit (power oring) allows to have concurrent power inputs,\nthe input with the highest voltage (with respect to the ground)\nwill be providing power to the charging IC (CHARGER_VIN).
@@ -506,11 +480,11 @@ Wire Notes Line
 Wire Notes Line
 	11050 6450 8400 6450
 Wire Wire Line
-	8800 4750 9200 4750
+	8800 5050 9200 5050
 Wire Wire Line
-	8800 4350 9300 4350
+	8800 4650 9200 4650
 Wire Wire Line
-	8800 2950 9300 2950
+	8800 2950 9200 2950
 Text Notes 600  650  0    50   ~ 10
 Interface
 Wire Notes Line
@@ -606,4 +580,136 @@ F 44 "ManWithNoName" H 7000 4750 50  0001 C CNN "Designer"
 	1    7000 4750
 	0    -1   -1   0   
 $EndComp
+$Comp
+L dmp3028lsd:DMP3028LSD Q8
+U 1 1 5FD052B5
+P 9500 3050
+F 0 "Q8" V 10057 3075 50  0000 C CNN
+F 1 "DMP3028LSD" V 9966 3075 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 9700 2975 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/DMP3028LSD.pdf" V 9500 3050 50  0001 L CNN
+F 4 "Diodes Incorporated" H 9500 3050 50  0001 C CNN "Mfr_name"
+F 5 "DMP3028LSD-13" H 9500 3050 50  0001 C CNN "Mfr_no"
+F 6 "SO-8" V 9875 3075 50  0000 C CNN "Package"
+F 7 "P + P" H 9500 3050 50  0001 C CNN "Type"
+F 8 "30V" H 9500 3050 50  0001 C CNN "VDSS"
+F 9 "38mΩ" V 9784 3075 50  0000 C CNN "RDSon"
+F 10 "4.7A" H 9500 3050 50  0001 C CNN "IDmax"
+F 11 "1-3V" H 9500 3050 50  0001 C CNN "VGSth"
+F 12 "20V" H 9500 3050 50  0001 C CNN "VGSS"
+F 13 "https://octopart.com/dmp3028lsd-13-diodes+inc.-67250487?r=sp" H 9500 3050 50  0001 C CNN "Octopart_link"
+F 14 "-" H 9500 3050 50  0001 C CNN "Farnell_link"
+F 15 "-" H 9500 3050 50  0001 C CNN "Farnell_ref"
+F 16 "2020-12-05" H 9500 3050 50  0001 C CNN "Farnell_check_date"
+F 17 "?" H 9500 3050 50  0001 C CNN "Farnell_price_qt=1"
+F 18 "?" H 9500 3050 50  0001 C CNN "Farnell_price_qt=10"
+F 19 "?" H 9500 3050 50  0001 C CNN "Farnell_price_qt=100"
+F 20 "?" H 9500 3050 50  0001 C CNN "Farnell_price_qt=1000"
+F 21 "-" H 9500 3050 50  0001 C CNN "Farnell_stock"
+F 22 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMP3028LSD-13_C397949.html" H 9500 3050 50  0001 C CNN "LCSC_link"
+F 23 "C397949" H 9500 3050 50  0001 C CNN "LCSC_ref"
+F 24 "2020-12-05" H 9500 3050 50  0001 C CNN "LCSC_check_date"
+F 25 "$0.373" H 9500 3050 50  0001 C CNN "LCSC_price_qt=1"
+F 26 "$0.2802" H 9500 3050 50  0001 C CNN "LCSC_price_qt=10"
+F 27 "$0.263" H 9500 3050 50  0001 C CNN "LCSC_price_qt=30"
+F 28 "$0.2475" H 9500 3050 50  0001 C CNN "LCSC_price_qt=100"
+F 29 "4,818" H 9500 3050 50  0001 C CNN "LCSC_stock"
+F 30 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMP3028LSD-13?qs=%2Fha2pyFadugUkRnXWzNfjPB%2F2%2FpUVmcBtenJqlz85NswHo6v693iIw%3D%3D" H 9500 3050 50  0001 C CNN "Mouser_link"
+F 31 "621-DMP3028LSD-13" H 9500 3050 50  0001 C CNN "Mouser_ref"
+F 32 "2020-12-05" H 9500 3050 50  0001 C CNN "Mouser_check_date"
+F 33 "0,474 €" H 9500 3050 50  0001 C CNN "Mouser_price_qt=1"
+F 34 "0,394 €" H 9500 3050 50  0001 C CNN "Mouser_price_qt=10"
+F 35 "0,276 €" H 9500 3050 50  0001 C CNN "Mouser_price_qt=100"
+F 36 "0,239 €" H 9500 3050 50  0001 C CNN "Mouser_price_qt=500"
+F 37 "2,855" H 9500 3050 50  0001 C CNN "Mouser_stock"
+F 38 "-" H 9500 3050 50  0001 C CNN "RS_link"
+F 39 "-" H 9500 3050 50  0001 C CNN "RS_ref"
+F 40 "2020-12-05" H 9500 3050 50  0001 C CNN "RS_check_date"
+F 41 "?" H 9500 3050 50  0001 C CNN "RS_price_qt=1"
+F 42 "?" H 9500 3050 50  0001 C CNN "RS_price_qt=10"
+F 43 "?" H 9500 3050 50  0001 C CNN "RS_price_qt=100"
+F 44 "?" H 9500 3050 50  0001 C CNN "RS_price_qt=1000"
+F 45 "-" H 9500 3050 50  0001 C CNN "RS_stock"
+F 46 "TO_CHECK" H 9500 3050 50  0001 C CNN "Status"
+F 47 "1.01" H 9500 3050 50  0001 C CNN "Release_version"
+F 48 "2020-12-05" H 9500 3050 50  0001 C CNN "Release_date"
+F 49 "ManWithNoName" H 9500 3050 50  0001 C CNN "Designer"
+	1    9500 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L dmp3028lsd:DMP3028LSD Q8
+U 2 1 5FD08572
+P 9500 4750
+F 0 "Q8" V 10057 4775 50  0000 C CNN
+F 1 "DMP3028LSD" V 9966 4775 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 9700 4675 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/DMP3028LSD.pdf" V 9500 4750 50  0001 L CNN
+F 4 "Diodes Incorporated" H 9500 4750 50  0001 C CNN "Mfr_name"
+F 5 "DMP3028LSD-13" H 9500 4750 50  0001 C CNN "Mfr_no"
+F 6 "SO-8" V 9875 4775 50  0000 C CNN "Package"
+F 7 "P + P" H 9500 4750 50  0001 C CNN "Type"
+F 8 "30V" H 9500 4750 50  0001 C CNN "VDSS"
+F 9 "38mΩ" V 9784 4775 50  0000 C CNN "RDSon"
+F 10 "4.7A" H 9500 4750 50  0001 C CNN "IDmax"
+F 11 "1-3V" H 9500 4750 50  0001 C CNN "VGSth"
+F 12 "20V" H 9500 4750 50  0001 C CNN "VGSS"
+F 13 "https://octopart.com/dmp3028lsd-13-diodes+inc.-67250487?r=sp" H 9500 4750 50  0001 C CNN "Octopart_link"
+F 14 "-" H 9500 4750 50  0001 C CNN "Farnell_link"
+F 15 "-" H 9500 4750 50  0001 C CNN "Farnell_ref"
+F 16 "2020-12-05" H 9500 4750 50  0001 C CNN "Farnell_check_date"
+F 17 "?" H 9500 4750 50  0001 C CNN "Farnell_price_qt=1"
+F 18 "?" H 9500 4750 50  0001 C CNN "Farnell_price_qt=10"
+F 19 "?" H 9500 4750 50  0001 C CNN "Farnell_price_qt=100"
+F 20 "?" H 9500 4750 50  0001 C CNN "Farnell_price_qt=1000"
+F 21 "-" H 9500 4750 50  0001 C CNN "Farnell_stock"
+F 22 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMP3028LSD-13_C397949.html" H 9500 4750 50  0001 C CNN "LCSC_link"
+F 23 "C397949" H 9500 4750 50  0001 C CNN "LCSC_ref"
+F 24 "2020-12-05" H 9500 4750 50  0001 C CNN "LCSC_check_date"
+F 25 "$0.373" H 9500 4750 50  0001 C CNN "LCSC_price_qt=1"
+F 26 "$0.2802" H 9500 4750 50  0001 C CNN "LCSC_price_qt=10"
+F 27 "$0.263" H 9500 4750 50  0001 C CNN "LCSC_price_qt=30"
+F 28 "$0.2475" H 9500 4750 50  0001 C CNN "LCSC_price_qt=100"
+F 29 "4,818" H 9500 4750 50  0001 C CNN "LCSC_stock"
+F 30 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMP3028LSD-13?qs=%2Fha2pyFadugUkRnXWzNfjPB%2F2%2FpUVmcBtenJqlz85NswHo6v693iIw%3D%3D" H 9500 4750 50  0001 C CNN "Mouser_link"
+F 31 "621-DMP3028LSD-13" H 9500 4750 50  0001 C CNN "Mouser_ref"
+F 32 "2020-12-05" H 9500 4750 50  0001 C CNN "Mouser_check_date"
+F 33 "0,474 €" H 9500 4750 50  0001 C CNN "Mouser_price_qt=1"
+F 34 "0,394 €" H 9500 4750 50  0001 C CNN "Mouser_price_qt=10"
+F 35 "0,276 €" H 9500 4750 50  0001 C CNN "Mouser_price_qt=100"
+F 36 "0,239 €" H 9500 4750 50  0001 C CNN "Mouser_price_qt=500"
+F 37 "2,855" H 9500 4750 50  0001 C CNN "Mouser_stock"
+F 38 "-" H 9500 4750 50  0001 C CNN "RS_link"
+F 39 "-" H 9500 4750 50  0001 C CNN "RS_ref"
+F 40 "2020-12-05" H 9500 4750 50  0001 C CNN "RS_check_date"
+F 41 "?" H 9500 4750 50  0001 C CNN "RS_price_qt=1"
+F 42 "?" H 9500 4750 50  0001 C CNN "RS_price_qt=10"
+F 43 "?" H 9500 4750 50  0001 C CNN "RS_price_qt=100"
+F 44 "?" H 9500 4750 50  0001 C CNN "RS_price_qt=1000"
+F 45 "-" H 9500 4750 50  0001 C CNN "RS_stock"
+F 46 "TO_CHECK" H 9500 4750 50  0001 C CNN "Status"
+F 47 "1.01" H 9500 4750 50  0001 C CNN "Release_version"
+F 48 "2020-12-05" H 9500 4750 50  0001 C CNN "Release_date"
+F 49 "ManWithNoName" H 9500 4750 50  0001 C CNN "Designer"
+	2    9500 4750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9250 2900 9200 2900
+Wire Wire Line
+	9200 2900 9200 2950
+Wire Wire Line
+	9200 3000 9250 3000
+Connection ~ 9200 2950
+Wire Wire Line
+	9200 2950 9200 3000
+Wire Wire Line
+	9250 4600 9200 4600
+Wire Wire Line
+	9200 4600 9200 4650
+Wire Wire Line
+	9200 4700 9250 4700
+Connection ~ 9200 4650
+Wire Wire Line
+	9200 4650 9200 4700
 $EndSCHEMATC
