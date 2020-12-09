@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 7
+Sheet 7 7
 Title "SuperPower-uC"
 Date "2020-09-20"
 Rev "0.1"
@@ -252,11 +252,7 @@ Text Label 11000 2100 2    50   ~ 0
 3v3_MCU
 Text Label 750  5100 0    50   ~ 0
 EN_3V3
-Text Label 1650 4400 0    50   ~ 0
-3v3_MCU
 NoConn ~ 1100 6450
-Text Label 2800 2250 0    50   ~ 0
-EN_MCU_REG
 Wire Wire Line
 	5900 1950 5950 1950
 Wire Wire Line
@@ -500,10 +496,6 @@ Text Label 1850 1000 2    50   ~ 0
 VIN
 Text HLabel 1250 1000 0    50   Input ~ 0
 VIN
-Text HLabel 1250 1450 0    50   Input ~ 0
-EN_MCU_REG
-Text Label 1850 1450 2    50   ~ 0
-EN_MCU_REG
 Text HLabel 1250 2250 0    50   Output ~ 0
 3v3_RTC_I2C
 Text Label 1850 2250 2    50   ~ 0
@@ -886,12 +878,12 @@ Connection ~ 5100 5100
 $Comp
 L power:GND #PWR0701
 U 1 1 602ADCD8
-P 4100 2700
-F 0 "#PWR0701" H 4100 2450 50  0001 C CNN
-F 1 "GND" H 4105 2527 50  0000 C CNN
-F 2 "" H 4100 2700 50  0001 C CNN
-F 3 "" H 4100 2700 50  0001 C CNN
-	1    4100 2700
+P 3600 2700
+F 0 "#PWR0701" H 3600 2450 50  0001 C CNN
+F 1 "GND" H 3605 2527 50  0000 C CNN
+F 2 "" H 3600 2700 50  0001 C CNN
+F 3 "" H 3600 2700 50  0001 C CNN
+	1    3600 2700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -914,19 +906,6 @@ F 3 "~" H 1150 5350 50  0001 C CNN
 	1    1150 5350
 	-1   0    0    1   
 $EndComp
-$Comp
-L power:GND #PWR0702
-U 1 1 60357163
-P 1600 5550
-F 0 "#PWR0702" H 1600 5300 50  0001 C CNN
-F 1 "GND" H 1605 5377 50  0000 C CNN
-F 2 "" H 1600 5550 50  0001 C CNN
-F 3 "" H 1600 5550 50  0001 C CNN
-	1    1600 5550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1600 5300 1600 5500
 Wire Wire Line
 	1150 5250 1150 5100
 Connection ~ 1150 5100
@@ -934,11 +913,6 @@ Wire Wire Line
 	1150 5100 1300 5100
 Wire Wire Line
 	1150 5450 1150 5500
-Wire Wire Line
-	1150 5500 1600 5500
-Connection ~ 1600 5500
-Wire Wire Line
-	1600 5500 1600 5550
 Wire Wire Line
 	5950 1550 6600 1550
 Wire Wire Line
@@ -960,11 +934,7 @@ Wire Notes Line
 Wire Wire Line
 	4950 4800 4150 4800
 Wire Wire Line
-	1650 4400 2400 4400
-Wire Wire Line
 	1650 4550 1650 4750
-Text Label 2150 4550 2    50   ~ 0
-GND_3v3
 $Comp
 L Device:R_Small R16
 U 1 1 5FC5DCF5
@@ -978,19 +948,9 @@ F 3 "~" H 4100 1400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4100 1500 4100 1700
-Text Label 3300 1700 0    50   ~ 0
-INT
 Wire Wire Line
-	3800 2250 3750 2250
-Wire Wire Line
-	3750 2250 3750 1700
-Wire Wire Line
-	3750 1700 3700 1700
-Wire Wire Line
-	3700 2250 3750 2250
-Connection ~ 3750 2250
-Wire Wire Line
-	3400 1700 3300 1700
+	3300 2250 3250 2250
+Connection ~ 3250 2250
 Wire Wire Line
 	4950 4800 4950 5100
 Text Label 5300 6000 1    50   ~ 0
@@ -1031,28 +991,6 @@ Wire Wire Line
 	4350 5000 4350 5100
 Wire Wire Line
 	8300 4100 8700 4100
-$Comp
-L Device:D D1
-U 1 1 5FCEA0EA
-P 3550 1700
-F 0 "D1" H 3550 1484 50  0000 C CNN
-F 1 "D" H 3550 1575 50  0000 C CNN
-F 2 "" H 3550 1700 50  0001 C CNN
-F 3 "~" H 3550 1700 50  0001 C CNN
-	1    3550 1700
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:D D7
-U 1 1 5FCEA2BF
-P 3550 2250
-F 0 "D7" H 3550 2034 50  0000 C CNN
-F 1 "D" H 3550 2125 50  0000 C CNN
-F 2 "" H 3550 2250 50  0001 C CNN
-F 3 "~" H 3550 2250 50  0001 C CNN
-	1    3550 2250
-	-1   0    0    1   
-$EndComp
 Wire Notes Line
 	600  4200 3250 4200
 Wire Notes Line
@@ -1062,13 +1000,10 @@ Wire Notes Line
 Wire Wire Line
 	3300 1150 4100 1150
 Wire Wire Line
-	4650 1700 4100 1700
-Connection ~ 4100 1700
-Wire Wire Line
 	4100 1300 4100 1150
 Connection ~ 4100 1150
 Wire Wire Line
-	4100 1700 4100 2050
+	3600 1700 3600 2050
 Wire Wire Line
 	4100 1150 4950 1150
 Wire Wire Line
@@ -1083,24 +1018,7 @@ Connection ~ 4950 1400
 Wire Wire Line
 	4950 1400 4900 1400
 Wire Wire Line
-	4100 2700 4100 2450
-Wire Wire Line
-	1650 4550 2400 4550
-Wire Wire Line
-	2800 2250 3400 2250
-$Comp
-L power:PWR_FLAG #FLG0103
-U 1 1 5FDF8463
-P 2000 1450
-F 0 "#FLG0103" H 2000 1525 50  0001 C CNN
-F 1 "PWR_FLAG" H 2000 1623 50  0001 C CNN
-F 2 "" H 2000 1450 50  0001 C CNN
-F 3 "~" H 2000 1450 50  0001 C CNN
-	1    2000 1450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1250 1450 2000 1450
+	3600 2700 3600 2450
 $Comp
 L power:PWR_FLAG #FLG0104
 U 1 1 5FE0EB00
@@ -1115,82 +1033,29 @@ $EndComp
 $Comp
 L Device:R_Small R17
 U 1 1 5FC79983
-P 3750 2500
-F 0 "R17" H 3700 2450 50  0000 R CNN
-F 1 "1M" H 3700 2550 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 3750 2500 50  0001 C CNN
-F 3 "~" H 3750 2500 50  0001 C CNN
-	1    3750 2500
+P 3250 2500
+F 0 "R17" H 3200 2450 50  0000 R CNN
+F 1 "1M" H 3200 2550 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3250 2500 50  0001 C CNN
+F 3 "~" H 3250 2500 50  0001 C CNN
+	1    3250 2500
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3750 2250 3750 2400
+	3250 2250 3250 2400
 $Comp
 L power:GND #PWR0115
 U 1 1 5FC83D8B
-P 3750 2700
-F 0 "#PWR0115" H 3750 2450 50  0001 C CNN
-F 1 "GND" H 3755 2527 50  0000 C CNN
-F 2 "" H 3750 2700 50  0001 C CNN
-F 3 "" H 3750 2700 50  0001 C CNN
-	1    3750 2700
+P 3250 2700
+F 0 "#PWR0115" H 3250 2450 50  0001 C CNN
+F 1 "GND" H 3255 2527 50  0000 C CNN
+F 2 "" H 3250 2700 50  0001 C CNN
+F 3 "" H 3250 2700 50  0001 C CNN
+	1    3250 2700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3750 2600 3750 2700
-$Comp
-L 2n7002a:2N7002A Q703
-U 1 1 5FCBA014
-P 4000 2250
-F 0 "Q703" H 4205 2387 50  0000 L CNN
-F 1 "2N7002A" H 4205 2296 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4200 2175 50  0001 L CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds31360.pdf" H 4000 2250 50  0001 C CNN
-F 4 "Diodes Incorporated" H 4000 2250 50  0001 C CNN "Mfr_name"
-F 5 "2N7002A-7" H 4000 2250 50  0001 C CNN "Mfr_no"
-F 6 "SOT23-3" H 4205 2205 50  0000 L CNN "Package"
-F 7 "60V" H 4000 2250 50  0001 C CNN "VDSS"
-F 8 "6Ω" H 4205 2114 50  0000 L CNN "RDSon"
-F 9 "220mA" H 4000 2250 50  0001 C CNN "IDmax"
-F 10 "1.2-2.0V" H 4000 2250 50  0001 C CNN "VGSth"
-F 11 "20V" H 4000 2250 50  0001 C CNN "VGSS"
-F 12 "https://octopart.com/2n7002a-7-diodes+inc.-12411377?r=sp" H 4000 2250 50  0001 C CNN "Octopart_link"
-F 13 "https://fr.farnell.com/diodes-inc/2n7002a-7/mosfet-canal-n-60v-0-18a-sot-23/dp/3127180?st=2n7002a-7" H 4000 2250 50  0001 C CNN "Farnell_link"
-F 14 "3127180" H 4000 2250 50  0001 C CNN "Farnell_ref"
-F 15 "2020-12-04" H 4000 2250 50  0001 C CNN "Farnell_check_date"
-F 16 "0,211 €" H 4000 2250 50  0001 C CNN "Farnell_price_qt=5"
-F 17 "0,209 €" H 4000 2250 50  0001 C CNN "Farnell_price_qt=25"
-F 18 "0,0964 €" H 4000 2250 50  0001 C CNN "Farnell_price_qt=100"
-F 19 "0,0904 €" H 4000 2250 50  0001 C CNN "Farnell_price_qt=250"
-F 20 "2,238" H 4000 2250 50  0001 C CNN "Farnell_stock"
-F 21 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-2N7002A-7_C139446.html" H 4000 2250 50  0001 C CNN "LCSC_link"
-F 22 "C139446" H 4000 2250 50  0001 C CNN "LCSC_ref"
-F 23 "2020-12-04" H 4000 2250 50  0001 C CNN "LCSC_check_date"
-F 24 "$0.0247" H 4000 2250 50  0001 C CNN "LCSC_price_qt=20"
-F 25 "$0.0184" H 4000 2250 50  0001 C CNN "LCSC_price_qt=200"
-F 26 "$0.0173" H 4000 2250 50  0001 C CNN "LCSC_price_qt=600"
-F 27 "$0.0161" H 4000 2250 50  0001 C CNN "LCSC_price_qt=2000"
-F 28 "20,880" H 4000 2250 50  0001 C CNN "LCSC_stock"
-F 29 "https://eu.mouser.com/ProductDetail/Diodes-Incorporated/2N7002A-7?qs=%2Fha2pyFaduiVkHzHToHS9vYfqHI9tbd78Fpui8SRcmA=" H 4000 2250 50  0001 C CNN "Mouser_link"
-F 30 "621-2N7002A-7" H 4000 2250 50  0001 C CNN "Mouser_ref"
-F 31 "$0.293" H 4000 2250 50  0001 C CNN "Mouser_price_qt=1"
-F 32 "$0.201" H 4000 2250 50  0001 C CNN "Mouser_price_qt=10"
-F 33 "$0.096" H 4000 2250 50  0001 C CNN "Mouser_price_qt=100"
-F 34 "$0.082" H 4000 2250 50  0001 C CNN "Mouser_price_qt=500"
-F 35 "2020-12-04" H 4000 2250 50  0001 C CNN "Mouser_check_date"
-F 36 "21,482" H 4000 2250 50  0001 C CNN "Mouser_stock"
-F 37 "https://fr.rs-online.com/web/p/transistors-mosfet/8228647/" H 4000 2250 50  0001 C CNN "RS_link"
-F 38 "822-8647" H 4000 2250 50  0001 C CNN "RS_ref"
-F 39 "2020-12-04" H 4000 2250 50  0001 C CNN "RS_check_date"
-F 40 "0,079 €" H 4000 2250 50  0001 C CNN "RS_price_qt=150"
-F 41 "1800" H 4000 2250 50  0001 C CNN "RS_stock"
-F 42 "TO_CHECK" H 4000 2250 50  0001 C CNN "Status"
-F 43 "1.00" H 4000 2250 50  0001 C CNN "Release_version"
-F 44 "2020-12-03" H 4000 2250 50  0001 C CNN "Release_date"
-F 45 "ManWithNoName" H 4000 2250 50  0001 C CNN "Designer"
-	1    4000 2250
-	1    0    0    -1  
-$EndComp
+	3250 2600 3250 2700
 $Comp
 L dmp3028lsd:DMP3028LSD Q701
 U 2 1 5FDD1A36
@@ -1370,4 +1235,141 @@ F 49 "ManWithNoName" H 1500 5100 50  0001 C CNN "Designer"
 	2    1500 5100
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1600 5300 1600 5500
+Connection ~ 1600 5500
+Wire Wire Line
+	1150 5500 1600 5500
+Wire Wire Line
+	1600 5500 1600 5550
+$Comp
+L power:GND #PWR0702
+U 1 1 60357163
+P 1600 5550
+F 0 "#PWR0702" H 1600 5300 50  0001 C CNN
+F 1 "GND" H 1605 5377 50  0000 C CNN
+F 2 "" H 1600 5550 50  0001 C CNN
+F 3 "" H 1600 5550 50  0001 C CNN
+	1    1600 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 4400 2400 4400
+Wire Wire Line
+	1650 4550 2400 4550
+Text Label 1650 4400 0    50   ~ 0
+3v3_MCU
+Text Label 2800 2250 0    50   ~ 0
+INT
+Text Label 2150 4550 2    50   ~ 0
+GND_3v3
+$Comp
+L Connector:TestPoint TP15
+U 1 1 5FE7EC76
+P 3000 2100
+F 0 "TP15" H 3058 2218 50  0000 L CNN
+F 1 "TestPoint" H 3058 2127 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3200 2100 50  0001 C CNN
+F 3 "~" H 3200 2100 50  0001 C CNN
+	1    3000 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2100 3000 2250
+Wire Wire Line
+	3000 2250 3250 2250
+$Comp
+L 2n7002a:2N7002A Q703
+U 1 1 5FCBA014
+P 3500 2250
+F 0 "Q703" H 3705 2387 50  0000 L CNN
+F 1 "2N7002A" H 3705 2296 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3700 2175 50  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds31360.pdf" H 3500 2250 50  0001 C CNN
+F 4 "Diodes Incorporated" H 3500 2250 50  0001 C CNN "Mfr_name"
+F 5 "2N7002A-7" H 3500 2250 50  0001 C CNN "Mfr_no"
+F 6 "SOT23-3" H 3705 2205 50  0000 L CNN "Package"
+F 7 "60V" H 3500 2250 50  0001 C CNN "VDSS"
+F 8 "6Ω" H 3705 2114 50  0000 L CNN "RDSon"
+F 9 "220mA" H 3500 2250 50  0001 C CNN "IDmax"
+F 10 "1.2-2.0V" H 3500 2250 50  0001 C CNN "VGSth"
+F 11 "20V" H 3500 2250 50  0001 C CNN "VGSS"
+F 12 "https://octopart.com/2n7002a-7-diodes+inc.-12411377?r=sp" H 3500 2250 50  0001 C CNN "Octopart_link"
+F 13 "https://fr.farnell.com/diodes-inc/2n7002a-7/mosfet-canal-n-60v-0-18a-sot-23/dp/3127180?st=2n7002a-7" H 3500 2250 50  0001 C CNN "Farnell_link"
+F 14 "3127180" H 3500 2250 50  0001 C CNN "Farnell_ref"
+F 15 "2020-12-04" H 3500 2250 50  0001 C CNN "Farnell_check_date"
+F 16 "0,211 €" H 3500 2250 50  0001 C CNN "Farnell_price_qt=5"
+F 17 "0,209 €" H 3500 2250 50  0001 C CNN "Farnell_price_qt=25"
+F 18 "0,0964 €" H 3500 2250 50  0001 C CNN "Farnell_price_qt=100"
+F 19 "0,0904 €" H 3500 2250 50  0001 C CNN "Farnell_price_qt=250"
+F 20 "2,238" H 3500 2250 50  0001 C CNN "Farnell_stock"
+F 21 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-2N7002A-7_C139446.html" H 3500 2250 50  0001 C CNN "LCSC_link"
+F 22 "C139446" H 3500 2250 50  0001 C CNN "LCSC_ref"
+F 23 "2020-12-04" H 3500 2250 50  0001 C CNN "LCSC_check_date"
+F 24 "$0.0247" H 3500 2250 50  0001 C CNN "LCSC_price_qt=20"
+F 25 "$0.0184" H 3500 2250 50  0001 C CNN "LCSC_price_qt=200"
+F 26 "$0.0173" H 3500 2250 50  0001 C CNN "LCSC_price_qt=600"
+F 27 "$0.0161" H 3500 2250 50  0001 C CNN "LCSC_price_qt=2000"
+F 28 "20,880" H 3500 2250 50  0001 C CNN "LCSC_stock"
+F 29 "https://eu.mouser.com/ProductDetail/Diodes-Incorporated/2N7002A-7?qs=%2Fha2pyFaduiVkHzHToHS9vYfqHI9tbd78Fpui8SRcmA=" H 3500 2250 50  0001 C CNN "Mouser_link"
+F 30 "621-2N7002A-7" H 3500 2250 50  0001 C CNN "Mouser_ref"
+F 31 "$0.293" H 3500 2250 50  0001 C CNN "Mouser_price_qt=1"
+F 32 "$0.201" H 3500 2250 50  0001 C CNN "Mouser_price_qt=10"
+F 33 "$0.096" H 3500 2250 50  0001 C CNN "Mouser_price_qt=100"
+F 34 "$0.082" H 3500 2250 50  0001 C CNN "Mouser_price_qt=500"
+F 35 "2020-12-04" H 3500 2250 50  0001 C CNN "Mouser_check_date"
+F 36 "21,482" H 3500 2250 50  0001 C CNN "Mouser_stock"
+F 37 "https://fr.rs-online.com/web/p/transistors-mosfet/8228647/" H 3500 2250 50  0001 C CNN "RS_link"
+F 38 "822-8647" H 3500 2250 50  0001 C CNN "RS_ref"
+F 39 "2020-12-04" H 3500 2250 50  0001 C CNN "RS_check_date"
+F 40 "0,079 €" H 3500 2250 50  0001 C CNN "RS_price_qt=150"
+F 41 "1800" H 3500 2250 50  0001 C CNN "RS_stock"
+F 42 "TO_CHECK" H 3500 2250 50  0001 C CNN "Status"
+F 43 "1.00" H 3500 2250 50  0001 C CNN "Release_version"
+F 44 "2020-12-03" H 3500 2250 50  0001 C CNN "Release_date"
+F 45 "ManWithNoName" H 3500 2250 50  0001 C CNN "Designer"
+	1    3500 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2250 2800 2250
+Connection ~ 3000 2250
+$Comp
+L power:GND #PWR?
+U 1 1 5FF351B8
+P 4250 2600
+AR Path="/5F63A00B/5FF351B8" Ref="#PWR?"  Part="1" 
+AR Path="/5F63A0E9/5FF351B8" Ref="#PWR0118"  Part="1" 
+F 0 "#PWR0118" H 4250 2350 50  0001 C CNN
+F 1 "GND" H 4255 2427 50  0000 C CNN
+F 2 "" H 4250 2600 50  0001 C CNN
+F 3 "" H 4250 2600 50  0001 C CNN
+	1    4250 2600
+	1    0    0    -1  
+$EndComp
+Text Notes 4300 2350 0    50   ~ 0
+bypass RTC\n
+Wire Wire Line
+	4100 1700 3600 1700
+Connection ~ 4100 1700
+$Comp
+L Device:Jumper_NC_Small JP2
+U 1 1 5FF53B7C
+P 4250 2200
+F 0 "JP2" V 4250 2275 50  0000 L CNN
+F 1 "Jumper_NC_Small" V 4295 2274 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4250 2200 50  0001 C CNN
+F 3 "~" H 4250 2200 50  0001 C CNN
+	1    4250 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 2300 4250 2600
+Wire Wire Line
+	4100 1700 4250 1700
+Wire Wire Line
+	4250 2100 4250 1700
+Connection ~ 4250 1700
+Wire Wire Line
+	4250 1700 4650 1700
 $EndSCHEMATC

@@ -187,8 +187,6 @@ $EndComp
 Wire Wire Line
 	7800 3200 7800 3350
 Wire Wire Line
-	5900 3350 6500 3350
-Wire Wire Line
 	6500 2950 6500 3350
 Wire Wire Line
 	6500 2500 6500 2650
@@ -398,4 +396,6 @@ Wire Wire Line
 	3000 1550 3400 1550
 Text Notes 5450 1200 2    50   Italic 0
 External trigger\nswitch on board (optional)
+Wire Wire Line
+	5900 3350 6500 3350
 $EndSCHEMATC
