@@ -460,62 +460,36 @@ F 3 "https://www.ti.com/lit/gpn/tps709" H 1800 6650 50  0001 L BNN
 $EndComp
 Wire Wire Line
 	2650 6450 3150 6450
-Text HLabel 1250 1600 0    50   Input ~ 0
+Text HLabel 1200 1900 0    50   Input ~ 0
 INT
-Text HLabel 1250 1950 0    50   Output ~ 0
-3v3
-Text HLabel 1250 2100 0    50   Output ~ 0
-5V
-Text HLabel 1250 1150 0    50   Input ~ 0
+Text HLabel 1200 1200 0    50   Input ~ 0
 EN_3V3
-Text HLabel 1250 1300 0    50   Input ~ 0
+Text HLabel 1200 1400 0    50   Input ~ 0
 EN_5V
 Wire Wire Line
-	1250 1600 1850 1600
+	1200 1900 1800 1900
 Wire Wire Line
-	1250 1150 1850 1150
+	1200 1200 1800 1200
 Wire Wire Line
-	1250 1300 1850 1300
-Wire Wire Line
-	1250 1950 1850 1950
-Wire Wire Line
-	1250 2100 1850 2100
-Text Label 1850 1600 2    50   ~ 0
+	1200 1400 1800 1400
+Text Label 1800 1900 2    50   ~ 0
 INT
-Text Label 1850 1150 2    50   ~ 0
+Text Label 1800 1200 2    50   ~ 0
 EN_3V3
-Text Label 1850 1300 2    50   ~ 0
+Text Label 1800 1400 2    50   ~ 0
 EN_5V
-Text Label 1850 1950 2    50   ~ 0
-3v3
-Text Label 1850 2100 2    50   ~ 0
-5V
 Wire Wire Line
-	1250 1000 1850 1000
-Text Label 1850 1000 2    50   ~ 0
+	1200 1000 1800 1000
+Text Label 1800 1000 2    50   ~ 0
 VIN
-Text HLabel 1250 1000 0    50   Input ~ 0
+Text HLabel 1200 1000 0    50   Input ~ 0
 VIN
-Text HLabel 1250 2250 0    50   Output ~ 0
+Text HLabel 1200 2850 0    50   Output ~ 0
 3v3_RTC_I2C
-Text Label 1850 2250 2    50   ~ 0
+Text Label 1800 2850 2    50   ~ 0
 3v3_RTC_I2C
 Wire Wire Line
-	1250 2250 1850 2250
-Text HLabel 1250 1800 0    50   Output ~ 0
-3v3_MCU
-Wire Wire Line
-	1250 1800 1850 1800
-Text Label 1850 1800 2    50   ~ 0
-3v3_MCU
-Wire Notes Line
-	2200 2350 2200 550 
-Wire Notes Line
-	2200 550  550  550 
-Wire Notes Line
-	550  550  550  2350
-Wire Notes Line
-	550  2350 2200 2350
+	1200 2850 1800 2850
 Text Notes 600  650  0    50   ~ 10
 Interface
 Text Notes 3400 800  0    50   ~ 10
@@ -1372,4 +1346,118 @@ Wire Wire Line
 Connection ~ 4250 1700
 Wire Wire Line
 	4250 1700 4650 1700
+$Comp
+L Connector:TestPoint TP34
+U 1 1 5FD6CA45
+P 1800 1000
+F 0 "TP34" V 1754 1188 50  0000 L CNN
+F 1 "TestPoint" V 1845 1188 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2000 1000 50  0001 C CNN
+F 3 "~" H 2000 1000 50  0001 C CNN
+	1    1800 1000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP35
+U 1 1 5FD6CEEA
+P 1800 1200
+F 0 "TP35" V 1754 1388 50  0000 L CNN
+F 1 "TestPoint" V 1845 1388 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2000 1200 50  0001 C CNN
+F 3 "~" H 2000 1200 50  0001 C CNN
+	1    1800 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP36
+U 1 1 5FD6D0DF
+P 1800 1400
+F 0 "TP36" V 1754 1588 50  0000 L CNN
+F 1 "TestPoint" V 1845 1588 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2000 1400 50  0001 C CNN
+F 3 "~" H 2000 1400 50  0001 C CNN
+	1    1800 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP37
+U 1 1 5FD6D2BD
+P 1800 1900
+F 0 "TP37" V 1754 2088 50  0000 L CNN
+F 1 "TestPoint" V 1845 2088 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2000 1900 50  0001 C CNN
+F 3 "~" H 2000 1900 50  0001 C CNN
+	1    1800 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP41
+U 1 1 5FD6DBEA
+P 1800 2850
+F 0 "TP41" V 1754 3038 50  0000 L CNN
+F 1 "TestPoint" V 1845 3038 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2000 2850 50  0001 C CNN
+F 3 "~" H 2000 2850 50  0001 C CNN
+	1    1800 2850
+	0    1    1    0   
+$EndComp
+Wire Notes Line
+	2450 550  2450 3200
+Wire Notes Line
+	550  3200 2450 3200
+Wire Notes Line
+	550  550  550  3200
+$Comp
+L Connector:TestPoint TP40
+U 1 1 5FD6D959
+P 1800 2650
+F 0 "TP40" V 1754 2838 50  0000 L CNN
+F 1 "TestPoint" V 1845 2838 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2000 2650 50  0001 C CNN
+F 3 "~" H 2000 2650 50  0001 C CNN
+	1    1800 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP39
+U 1 1 5FD6D793
+P 1800 2450
+F 0 "TP39" V 1754 2638 50  0000 L CNN
+F 1 "TestPoint" V 1845 2638 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2000 2450 50  0001 C CNN
+F 3 "~" H 2000 2450 50  0001 C CNN
+	1    1800 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP38
+U 1 1 5FD6D554
+P 1800 2250
+F 0 "TP38" V 1754 2438 50  0000 L CNN
+F 1 "TestPoint" V 1845 2438 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2000 2250 50  0001 C CNN
+F 3 "~" H 2000 2250 50  0001 C CNN
+	1    1800 2250
+	0    1    1    0   
+$EndComp
+Text Label 1800 2250 2    50   ~ 0
+3v3_MCU
+Wire Wire Line
+	1200 2250 1800 2250
+Text HLabel 1200 2250 0    50   Output ~ 0
+3v3_MCU
+Text Label 1800 2650 2    50   ~ 0
+5V
+Text Label 1800 2450 2    50   ~ 0
+3v3
+Wire Wire Line
+	1200 2650 1800 2650
+Wire Wire Line
+	1200 2450 1800 2450
+Text HLabel 1200 2650 0    50   Output ~ 0
+5V
+Text HLabel 1200 2450 0    50   Output ~ 0
+3v3
+Wire Notes Line
+	550  550  2450 550 
 $EndSCHEMATC

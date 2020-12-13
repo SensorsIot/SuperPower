@@ -214,8 +214,6 @@ Wire Notes Line
 	2800 5600 2800 5250
 Wire Notes Line
 	3200 3750 4500 3750
-Wire Wire Line
-	950  900  1100 900 
 Text Label 1100 900  0    50   ~ 0
 +BATT
 $Comp
@@ -419,11 +417,7 @@ $EndComp
 Text Notes 600  650  0    50   ~ 10
 Interface
 Wire Notes Line
-	550  550  1450 550 
-Wire Notes Line
-	1450 550  1450 1450
-Wire Notes Line
-	1450 1450 550  1450
+	2000 550  2000 1450
 Wire Notes Line
 	550  1450 550  550 
 Text Notes 7900 1500 0    50   ~ 10
@@ -582,4 +576,71 @@ F 49 "ManWithNoName" H 2800 4750 50  0001 C CNN "Designer"
 	1    2800 4750
 	1    0    0    -1  
 $EndComp
+Wire Notes Line
+	550  1450 2000 1450
+Wire Notes Line
+	550  550  2000 550 
+$Comp
+L Connector:TestPoint TP16
+U 1 1 5FD97859
+P 1400 900
+F 0 "TP16" V 1354 1088 50  0000 L CNN
+F 1 "TestPoint" V 1445 1088 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1600 900 50  0001 C CNN
+F 3 "~" H 1600 900 50  0001 C CNN
+	1    1400 900 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	950  900  1400 900 
+$Comp
+L Connector:TestPoint TP17
+U 1 1 5FD99F7F
+P 1500 1750
+F 0 "TP17" V 1454 1938 50  0000 L CNN
+F 1 "TestPoint" V 1545 1938 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1700 1750 50  0001 C CNN
+F 3 "~" H 1700 1750 50  0001 C CNN
+	1    1500 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:-BATT #PWR0119
+U 1 1 5FD9A456
+P 1350 1750
+F 0 "#PWR0119" H 1350 1600 50  0001 C CNN
+F 1 "-BATT" H 1365 1923 50  0000 C CNN
+F 2 "" H 1350 1750 50  0001 C CNN
+F 3 "" H 1350 1750 50  0001 C CNN
+	1    1350 1750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1500 1750 1350 1750
+$Comp
+L Connector:TestPoint TP18
+U 1 1 5FDA33F6
+P 1500 2150
+F 0 "TP18" V 1454 2338 50  0000 L CNN
+F 1 "TestPoint" V 1545 2338 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1700 2150 50  0001 C CNN
+F 3 "~" H 1700 2150 50  0001 C CNN
+	1    1500 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 5FDA3698
+P 1350 2250
+F 0 "#PWR0120" H 1350 2000 50  0001 C CNN
+F 1 "GND" H 1355 2077 50  0000 C CNN
+F 2 "" H 1350 2250 50  0001 C CNN
+F 3 "" H 1350 2250 50  0001 C CNN
+	1    1350 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 2150 1350 2150
+Wire Wire Line
+	1350 2150 1350 2250
 $EndSCHEMATC

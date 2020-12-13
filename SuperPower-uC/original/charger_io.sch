@@ -15,9 +15,9 @@ Comment4 ""
 $EndDescr
 Text HLabel 1300 1050 0    50   Output ~ 0
 VBUS
-Text HLabel 1300 1150 0    50   Output ~ 0
+Text HLabel 1300 1250 0    50   Output ~ 0
 CHARGER_VIN
-Text HLabel 1300 1650 0    50   Input ~ 0
+Text HLabel 1300 1550 0    50   Input ~ 0
 D+
 Text HLabel 1300 1750 0    50   Input ~ 0
 D-
@@ -82,12 +82,12 @@ F 3 "~" H 3950 5650 50  0001 C CNN
 $EndComp
 Text Label 1950 1750 2    50   ~ 0
 D-
-Text Label 1950 1650 2    50   ~ 0
+Text Label 1950 1550 2    50   ~ 0
 D+
 Wire Wire Line
 	1950 1750 1300 1750
 Wire Wire Line
-	1950 1650 1300 1650
+	1950 1550 1300 1550
 Text Notes 4250 5750 0    50   ~ 0
 Pull-Down via 5k1\nresistor for 5V 3A PD
 $Comp
@@ -170,7 +170,7 @@ USB-C
 Wire Wire Line
 	1950 1050 1300 1050
 Wire Wire Line
-	1950 1150 1300 1150
+	1950 1250 1300 1250
 Wire Wire Line
 	4100 5050 3700 5050
 Wire Wire Line
@@ -435,7 +435,7 @@ Text Label 8800 5050 0    50   ~ 0
 VBUS
 Text Notes 8450 6400 0    50   ~ 0
 This circuit (power oring) allows to have concurrent power inputs,\nthe input with the highest voltage (with respect to the ground)\nwill be providing power to the charging IC (CHARGER_VIN).
-Text Label 1950 1150 2    50   ~ 0
+Text Label 1950 1250 2    50   ~ 0
 CHARGER_VIN
 $Comp
 L Device:R_Small R?
@@ -488,11 +488,7 @@ Wire Wire Line
 Text Notes 600  650  0    50   ~ 10
 Interface
 Wire Notes Line
-	550  550  2050 550 
-Wire Notes Line
-	2050 550  2050 2000
-Wire Notes Line
-	2050 2000 550  2000
+	2950 550  2950 2000
 Wire Notes Line
 	550  2000 550  550 
 $Comp
@@ -712,4 +708,52 @@ Wire Wire Line
 Connection ~ 9200 4650
 Wire Wire Line
 	9200 4650 9200 4700
+Wire Notes Line
+	550  550  2950 550 
+Wire Notes Line
+	550  2000 2950 2000
+$Comp
+L Connector:TestPoint TP19
+U 1 1 5FD773A4
+P 1950 1050
+F 0 "TP19" V 1904 1238 50  0000 L CNN
+F 1 "TestPoint" V 1995 1238 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2150 1050 50  0001 C CNN
+F 3 "~" H 2150 1050 50  0001 C CNN
+	1    1950 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP20
+U 1 1 5FD77708
+P 1950 1250
+F 0 "TP20" V 1904 1438 50  0000 L CNN
+F 1 "TestPoint" V 1995 1438 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2150 1250 50  0001 C CNN
+F 3 "~" H 2150 1250 50  0001 C CNN
+	1    1950 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP21
+U 1 1 5FD7785B
+P 1950 1550
+F 0 "TP21" V 1904 1738 50  0000 L CNN
+F 1 "TestPoint" V 1995 1738 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2150 1550 50  0001 C CNN
+F 3 "~" H 2150 1550 50  0001 C CNN
+	1    1950 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP22
+U 1 1 5FD77B2F
+P 1950 1750
+F 0 "TP22" V 1904 1938 50  0000 L CNN
+F 1 "TestPoint" V 1995 1938 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2150 1750 50  0001 C CNN
+F 3 "~" H 2150 1750 50  0001 C CNN
+	1    1950 1750
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

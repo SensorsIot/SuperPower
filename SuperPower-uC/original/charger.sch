@@ -13,9 +13,9 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 1300 1200 0    50   Output ~ 0
+Text HLabel 1300 1250 0    50   Output ~ 0
 VOUT
-Text HLabel 1300 1300 0    50   BiDi ~ 0
+Text HLabel 1300 1450 0    50   BiDi ~ 0
 VBAT
 $Comp
 L Device:R_US R7
@@ -359,7 +359,7 @@ Wire Wire Line
 Wire Wire Line
 	4600 3950 5000 3950
 Wire Wire Line
-	1850 1300 1300 1300
+	1850 1450 1300 1450
 $Comp
 L power:GND #PWR021
 U 1 1 5F832657
@@ -522,7 +522,7 @@ Wire Wire Line
 Wire Wire Line
 	7500 850  7500 1450
 Wire Wire Line
-	1850 1200 1300 1200
+	1850 1250 1300 1250
 Wire Notes Line
 	6400 1000 7900 1000
 Wire Notes Line
@@ -633,11 +633,11 @@ Wire Wire Line
 	1850 950  1300 950 
 Text Notes 1400 5450 0    50   ~ 0
 See Table 5 in the datasheet
-Text HLabel 1300 1550 0    50   Input ~ 0
+Text HLabel 1300 1800 0    50   Input ~ 0
 3v3_I2C
 Wire Wire Line
-	1300 1550 1850 1550
-Text Label 1850 1550 2    50   ~ 0
+	1300 1800 1850 1800
+Text Label 1850 1800 2    50   ~ 0
 3v3_I2C
 Text Label 4600 3850 0    50   ~ 0
 3v3_I2C
@@ -648,23 +648,23 @@ VOUT
 Wire Wire Line
 	7850 1450 7500 1450
 Connection ~ 7500 1450
-Text Label 1850 1200 2    50   ~ 0
+Text Label 1850 1250 2    50   ~ 0
 VOUT
 Text Label 8150 4350 2    50   ~ 0
 VBAT
-Text HLabel 1300 1650 0    50   Input ~ 0
+Text HLabel 1300 2000 0    50   Input ~ 0
 SCL
-Text HLabel 1300 1750 0    50   BiDi ~ 0
+Text HLabel 1300 2200 0    50   BiDi ~ 0
 SDA
 Wire Wire Line
-	1300 1750 1850 1750
+	1300 2200 1850 2200
 Wire Wire Line
-	1300 1650 1850 1650
-Text Label 1850 1300 2    50   ~ 0
+	1300 2000 1850 2000
+Text Label 1850 1450 2    50   ~ 0
 VBAT
-Text Label 1850 1650 2    50   ~ 0
+Text Label 1850 2000 2    50   ~ 0
 SCL
-Text Label 1850 1750 2    50   ~ 0
+Text Label 1850 2200 2    50   ~ 0
 SDA
 Text Label 4600 3950 0    50   ~ 0
 SCL
@@ -788,11 +788,11 @@ Wire Notes Line
 	5450 5500 5450 6150
 Text Label 4600 3750 0    50   ~ 0
 ~SMBALERT
-Text HLabel 1300 2000 0    50   Output ~ 0
+Text HLabel 1300 2500 0    50   Output ~ 0
 ~SMBALERT
 Wire Wire Line
-	1850 2000 1300 2000
-Text Label 1850 2000 2    50   ~ 0
+	1850 2500 1300 2500
+Text Label 1850 2500 2    50   ~ 0
 ~SMBALERT
 $Comp
 L solderjumper_4_bridged_14:SolderJumper_4_Bridged_14 JP1
@@ -822,14 +822,6 @@ F 3 "~" H 6400 5100 50  0001 C CNN
 $EndComp
 Text Notes 600  700  0    50   ~ 10
 Interface
-Wire Notes Line
-	550  550  1950 550 
-Wire Notes Line
-	1950 550  1950 2150
-Wire Notes Line
-	1950 2150 550  2150
-Wire Notes Line
-	550  2150 550  550 
 $Comp
 L cl31b106kahnnne:CL31B106KAHNNNE C7
 U 1 1 5FC33A0F
@@ -1583,4 +1575,89 @@ F 44 "ManWithNoName" H 2150 3750 50  0001 C CNN "Designer"
 	1    2150 3750
 	-1   0    0    1   
 $EndComp
+Wire Notes Line
+	550  2650 2750 2650
+Wire Notes Line
+	550  550  2750 550 
+$Comp
+L Connector:TestPoint TP23
+U 1 1 5FD90BDE
+P 1850 950
+F 0 "TP23" V 1804 1138 50  0000 L CNN
+F 1 "TestPoint" V 1895 1138 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2050 950 50  0001 C CNN
+F 3 "~" H 2050 950 50  0001 C CNN
+	1    1850 950 
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP24
+U 1 1 5FD91067
+P 1850 1250
+F 0 "TP24" V 1804 1438 50  0000 L CNN
+F 1 "TestPoint" V 1895 1438 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2050 1250 50  0001 C CNN
+F 3 "~" H 2050 1250 50  0001 C CNN
+	1    1850 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP25
+U 1 1 5FD9140F
+P 1850 1450
+F 0 "TP25" V 1804 1638 50  0000 L CNN
+F 1 "TestPoint" V 1895 1638 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2050 1450 50  0001 C CNN
+F 3 "~" H 2050 1450 50  0001 C CNN
+	1    1850 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP26
+U 1 1 5FD9160B
+P 1850 1800
+F 0 "TP26" V 1804 1988 50  0000 L CNN
+F 1 "TestPoint" V 1895 1988 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2050 1800 50  0001 C CNN
+F 3 "~" H 2050 1800 50  0001 C CNN
+	1    1850 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP27
+U 1 1 5FD91A28
+P 1850 2000
+F 0 "TP27" V 1804 2188 50  0000 L CNN
+F 1 "TestPoint" V 1895 2188 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2050 2000 50  0001 C CNN
+F 3 "~" H 2050 2000 50  0001 C CNN
+	1    1850 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP28
+U 1 1 5FD91C9F
+P 1850 2200
+F 0 "TP28" V 1804 2388 50  0000 L CNN
+F 1 "TestPoint" V 1895 2388 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2050 2200 50  0001 C CNN
+F 3 "~" H 2050 2200 50  0001 C CNN
+	1    1850 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP29
+U 1 1 5FD91E2F
+P 1850 2500
+F 0 "TP29" V 1804 2688 50  0000 L CNN
+F 1 "TestPoint" V 1895 2688 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2050 2500 50  0001 C CNN
+F 3 "~" H 2050 2500 50  0001 C CNN
+	1    1850 2500
+	0    1    1    0   
+$EndComp
+Wire Notes Line
+	2750 550  2750 2650
+Wire Notes Line
+	550  550  550  2650
 $EndSCHEMATC

@@ -15,9 +15,9 @@ Comment4 ""
 $EndDescr
 Text HLabel 1250 900  0    50   Input ~ 0
 SCL
-Text HLabel 1250 1050 0    50   BiDi ~ 0
+Text HLabel 1250 1100 0    50   BiDi ~ 0
 SDA
-Text HLabel 1250 1500 0    50   Output ~ 0
+Text HLabel 1250 1700 0    50   Output ~ 0
 INT
 NoConn ~ 5900 3550
 $Comp
@@ -75,16 +75,16 @@ Text Label 4250 3650 0    50   ~ 0
 SDA
 Text Label 1600 900  2    50   ~ 0
 SCL
-Text Label 1600 1050 2    50   ~ 0
+Text Label 1600 1100 2    50   ~ 0
 SDA
-Text Label 1600 1500 2    50   ~ 0
+Text Label 1600 1700 2    50   ~ 0
 INT
 Wire Wire Line
-	1250 1500 1600 1500
+	1250 1700 1600 1700
 Wire Wire Line
 	1250 900  1600 900 
 Wire Wire Line
-	1250 1050 1600 1050
+	1250 1100 1600 1100
 Wire Wire Line
 	4500 3550 4250 3550
 $Comp
@@ -244,7 +244,7 @@ Text Label 2000 3850 0    50   ~ 0
 SDA
 Text Label 1650 3850 0    50   ~ 0
 SCL
-Text HLabel 1250 1350 0    50   Input ~ 0
+Text HLabel 1250 1500 0    50   Input ~ 0
 3v3_RTC_I2C
 Text Label 7800 2500 2    50   ~ 0
 3v3_RTC
@@ -257,8 +257,8 @@ Text Label 2000 3100 3    50   ~ 0
 Text Label 1650 3100 3    50   ~ 0
 3v3_RTC
 Wire Wire Line
-	1250 1350 1600 1350
-Text Label 1600 1350 2    50   ~ 0
+	1250 1500 1600 1500
+Text Label 1600 1500 2    50   ~ 0
 3v3_RTC
 Wire Wire Line
 	2000 3100 2000 3450
@@ -266,14 +266,6 @@ Wire Wire Line
 	1650 3100 1650 3450
 Text Notes 600  650  0    50   ~ 10
 Interface
-Wire Notes Line
-	550  550  1650 550 
-Wire Notes Line
-	1650 550  1650 1700
-Wire Notes Line
-	1650 1700 550  1700
-Wire Notes Line
-	550  1700 550  550 
 Wire Wire Line
 	6500 2500 6900 2500
 $Comp
@@ -398,4 +390,56 @@ Text Notes 5450 1200 2    50   Italic 0
 External trigger\nswitch on board (optional)
 Wire Wire Line
 	5900 3350 6500 3350
+$Comp
+L Connector:TestPoint TP30
+U 1 1 5FD6FC2A
+P 1600 900
+F 0 "TP30" V 1554 1088 50  0000 L CNN
+F 1 "TestPoint" V 1645 1088 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1800 900 50  0001 C CNN
+F 3 "~" H 1800 900 50  0001 C CNN
+	1    1600 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP31
+U 1 1 5FD6FEB6
+P 1600 1100
+F 0 "TP31" V 1554 1288 50  0000 L CNN
+F 1 "TestPoint" V 1645 1288 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1800 1100 50  0001 C CNN
+F 3 "~" H 1800 1100 50  0001 C CNN
+	1    1600 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP32
+U 1 1 5FD700CA
+P 1600 1500
+F 0 "TP32" V 1554 1688 50  0000 L CNN
+F 1 "TestPoint" V 1645 1688 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1800 1500 50  0001 C CNN
+F 3 "~" H 1800 1500 50  0001 C CNN
+	1    1600 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP33
+U 1 1 5FD702E9
+P 1600 1700
+F 0 "TP33" V 1554 1888 50  0000 L CNN
+F 1 "TestPoint" V 1645 1888 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1800 1700 50  0001 C CNN
+F 3 "~" H 1800 1700 50  0001 C CNN
+	1    1600 1700
+	0    1    1    0   
+$EndComp
+Wire Notes Line
+	550  550  2300 550 
+Wire Notes Line
+	2300 550  2300 1850
+Wire Notes Line
+	550  1850 2300 1850
+Wire Notes Line
+	550  550  550  1850
 $EndSCHEMATC
