@@ -288,8 +288,8 @@ L Device:Q_NPN_CEB Q6
 U 1 1 5F8E617A
 P 8700 2000
 F 0 "Q6" H 8891 2046 50  0000 L CNN
-F 1 "Q_NPN_CEB" H 8891 1955 50  0000 L CNN
-F 2 "" H 8900 2100 50  0001 C CNN
+F 1 "S8050" H 8891 1955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8900 2100 50  0001 C CNN
 F 3 "~" H 8700 2000 50  0001 C CNN
 	1    8700 2000
 	-1   0    0    1   
@@ -302,8 +302,6 @@ Wire Wire Line
 	9300 2000 9200 2000
 Wire Wire Line
 	8600 2200 8600 2300
-Wire Wire Line
-	8600 2300 9450 2300
 Text Label 9450 2300 2    50   ~ 0
 IO0
 Text Label 9450 950  2    50   ~ 0
@@ -332,16 +330,12 @@ Wire Notes Line
 	7200 1650 7200 900 
 Wire Notes Line
 	7600 1050 7600 1650
-Text Notes 8850 850  2    50   ~ 10
+Text Notes 8850 750  2    50   ~ 10
 Autoflash/reset circuit and soft start circuit
 Wire Notes Line
-	7100 750  10550 750 
+	7100 650  10550 650 
 Wire Notes Line
 	10550 2950 7100 2950
-Wire Notes Line
-	7100 2950 7100 750 
-Wire Notes Line
-	10550 750  10550 2950
 Connection ~ 9300 1550
 Wire Notes Line
 	7200 1250 8000 1250
@@ -352,7 +346,7 @@ Wire Notes Line
 Wire Wire Line
 	8600 1550 9300 1550
 Wire Wire Line
-	8600 950  9450 950 
+	8600 950  8950 950 
 Wire Wire Line
 	8600 1050 8600 950 
 Wire Wire Line
@@ -364,8 +358,8 @@ L Device:Q_NPN_CEB Q5
 U 1 1 5F8E1EE6
 P 8700 1250
 F 0 "Q5" H 8891 1296 50  0000 L CNN
-F 1 "Q_NPN_CEB" H 8891 1205 50  0000 L CNN
-F 2 "" H 8900 1350 50  0001 C CNN
+F 1 "S8050" H 8891 1205 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8900 1350 50  0001 C CNN
 F 3 "~" H 8700 1250 50  0001 C CNN
 	1    8700 1250
 	-1   0    0    -1  
@@ -1410,4 +1404,23 @@ F 3 "~" H 2250 2450 50  0001 C CNN
 	1    2050 2450
 	0    1    1    0   
 $EndComp
+$Comp
+L Device:D_Small D?
+U 1 1 5FDAA563
+P 9050 950
+F 0 "D?" H 9050 743 50  0000 C CNN
+F 1 "B5819" H 9050 834 50  0000 C CNN
+F 2 "" V 9050 950 50  0001 C CNN
+F 3 "~" V 9050 950 50  0001 C CNN
+	1    9050 950 
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8600 2300 9450 2300
+Wire Wire Line
+	9150 950  9450 950 
+Wire Notes Line
+	10550 650  10550 2950
+Wire Notes Line
+	7100 650  7100 2950
 $EndSCHEMATC
