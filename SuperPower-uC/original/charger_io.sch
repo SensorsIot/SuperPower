@@ -576,120 +576,6 @@ F 44 "ManWithNoName" H 7000 4750 50  0001 C CNN "Designer"
 	1    7000 4750
 	0    -1   -1   0   
 $EndComp
-$Comp
-L dmp3028lsd:DMP3028LSD Q8
-U 1 1 5FD052B5
-P 9500 3050
-F 0 "Q8" V 10057 3075 50  0000 C CNN
-F 1 "DMP3028LSD" V 9966 3075 50  0000 C CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 9700 2975 50  0001 L CIN
-F 3 "https://www.diodes.com/assets/Datasheets/DMP3028LSD.pdf" V 9500 3050 50  0001 L CNN
-F 4 "Diodes Incorporated" H 9500 3050 50  0001 C CNN "Mfr_name"
-F 5 "DMP3028LSD-13" H 9500 3050 50  0001 C CNN "Mfr_no"
-F 6 "SO-8" V 9875 3075 50  0000 C CNN "Package"
-F 7 "P + P" H 9500 3050 50  0001 C CNN "Type"
-F 8 "30V" H 9500 3050 50  0001 C CNN "VDSS"
-F 9 "38mΩ" V 9784 3075 50  0000 C CNN "RDSon"
-F 10 "4.7A" H 9500 3050 50  0001 C CNN "IDmax"
-F 11 "1-3V" H 9500 3050 50  0001 C CNN "VGSth"
-F 12 "20V" H 9500 3050 50  0001 C CNN "VGSS"
-F 13 "https://octopart.com/dmp3028lsd-13-diodes+inc.-67250487?r=sp" H 9500 3050 50  0001 C CNN "Octopart_link"
-F 14 "-" H 9500 3050 50  0001 C CNN "Farnell_link"
-F 15 "-" H 9500 3050 50  0001 C CNN "Farnell_ref"
-F 16 "2020-12-05" H 9500 3050 50  0001 C CNN "Farnell_check_date"
-F 17 "?" H 9500 3050 50  0001 C CNN "Farnell_price_qt=1"
-F 18 "?" H 9500 3050 50  0001 C CNN "Farnell_price_qt=10"
-F 19 "?" H 9500 3050 50  0001 C CNN "Farnell_price_qt=100"
-F 20 "?" H 9500 3050 50  0001 C CNN "Farnell_price_qt=1000"
-F 21 "-" H 9500 3050 50  0001 C CNN "Farnell_stock"
-F 22 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMP3028LSD-13_C397949.html" H 9500 3050 50  0001 C CNN "LCSC_link"
-F 23 "C397949" H 9500 3050 50  0001 C CNN "LCSC_ref"
-F 24 "2020-12-05" H 9500 3050 50  0001 C CNN "LCSC_check_date"
-F 25 "$0.373" H 9500 3050 50  0001 C CNN "LCSC_price_qt=1"
-F 26 "$0.2802" H 9500 3050 50  0001 C CNN "LCSC_price_qt=10"
-F 27 "$0.263" H 9500 3050 50  0001 C CNN "LCSC_price_qt=30"
-F 28 "$0.2475" H 9500 3050 50  0001 C CNN "LCSC_price_qt=100"
-F 29 "4,818" H 9500 3050 50  0001 C CNN "LCSC_stock"
-F 30 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMP3028LSD-13?qs=%2Fha2pyFadugUkRnXWzNfjPB%2F2%2FpUVmcBtenJqlz85NswHo6v693iIw%3D%3D" H 9500 3050 50  0001 C CNN "Mouser_link"
-F 31 "621-DMP3028LSD-13" H 9500 3050 50  0001 C CNN "Mouser_ref"
-F 32 "2020-12-05" H 9500 3050 50  0001 C CNN "Mouser_check_date"
-F 33 "0,474 €" H 9500 3050 50  0001 C CNN "Mouser_price_qt=1"
-F 34 "0,394 €" H 9500 3050 50  0001 C CNN "Mouser_price_qt=10"
-F 35 "0,276 €" H 9500 3050 50  0001 C CNN "Mouser_price_qt=100"
-F 36 "0,239 €" H 9500 3050 50  0001 C CNN "Mouser_price_qt=500"
-F 37 "2,855" H 9500 3050 50  0001 C CNN "Mouser_stock"
-F 38 "-" H 9500 3050 50  0001 C CNN "RS_link"
-F 39 "-" H 9500 3050 50  0001 C CNN "RS_ref"
-F 40 "2020-12-05" H 9500 3050 50  0001 C CNN "RS_check_date"
-F 41 "?" H 9500 3050 50  0001 C CNN "RS_price_qt=1"
-F 42 "?" H 9500 3050 50  0001 C CNN "RS_price_qt=10"
-F 43 "?" H 9500 3050 50  0001 C CNN "RS_price_qt=100"
-F 44 "?" H 9500 3050 50  0001 C CNN "RS_price_qt=1000"
-F 45 "-" H 9500 3050 50  0001 C CNN "RS_stock"
-F 46 "TO_CHECK" H 9500 3050 50  0001 C CNN "Status"
-F 47 "1.01" H 9500 3050 50  0001 C CNN "Release_version"
-F 48 "2020-12-05" H 9500 3050 50  0001 C CNN "Release_date"
-F 49 "ManWithNoName" H 9500 3050 50  0001 C CNN "Designer"
-	1    9500 3050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L dmp3028lsd:DMP3028LSD Q8
-U 2 1 5FD08572
-P 9500 4750
-F 0 "Q8" V 10057 4775 50  0000 C CNN
-F 1 "DMP3028LSD" V 9966 4775 50  0000 C CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 9700 4675 50  0001 L CIN
-F 3 "https://www.diodes.com/assets/Datasheets/DMP3028LSD.pdf" V 9500 4750 50  0001 L CNN
-F 4 "Diodes Incorporated" H 9500 4750 50  0001 C CNN "Mfr_name"
-F 5 "DMP3028LSD-13" H 9500 4750 50  0001 C CNN "Mfr_no"
-F 6 "SO-8" V 9875 4775 50  0000 C CNN "Package"
-F 7 "P + P" H 9500 4750 50  0001 C CNN "Type"
-F 8 "30V" H 9500 4750 50  0001 C CNN "VDSS"
-F 9 "38mΩ" V 9784 4775 50  0000 C CNN "RDSon"
-F 10 "4.7A" H 9500 4750 50  0001 C CNN "IDmax"
-F 11 "1-3V" H 9500 4750 50  0001 C CNN "VGSth"
-F 12 "20V" H 9500 4750 50  0001 C CNN "VGSS"
-F 13 "https://octopart.com/dmp3028lsd-13-diodes+inc.-67250487?r=sp" H 9500 4750 50  0001 C CNN "Octopart_link"
-F 14 "-" H 9500 4750 50  0001 C CNN "Farnell_link"
-F 15 "-" H 9500 4750 50  0001 C CNN "Farnell_ref"
-F 16 "2020-12-05" H 9500 4750 50  0001 C CNN "Farnell_check_date"
-F 17 "?" H 9500 4750 50  0001 C CNN "Farnell_price_qt=1"
-F 18 "?" H 9500 4750 50  0001 C CNN "Farnell_price_qt=10"
-F 19 "?" H 9500 4750 50  0001 C CNN "Farnell_price_qt=100"
-F 20 "?" H 9500 4750 50  0001 C CNN "Farnell_price_qt=1000"
-F 21 "-" H 9500 4750 50  0001 C CNN "Farnell_stock"
-F 22 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMP3028LSD-13_C397949.html" H 9500 4750 50  0001 C CNN "LCSC_link"
-F 23 "C397949" H 9500 4750 50  0001 C CNN "LCSC_ref"
-F 24 "2020-12-05" H 9500 4750 50  0001 C CNN "LCSC_check_date"
-F 25 "$0.373" H 9500 4750 50  0001 C CNN "LCSC_price_qt=1"
-F 26 "$0.2802" H 9500 4750 50  0001 C CNN "LCSC_price_qt=10"
-F 27 "$0.263" H 9500 4750 50  0001 C CNN "LCSC_price_qt=30"
-F 28 "$0.2475" H 9500 4750 50  0001 C CNN "LCSC_price_qt=100"
-F 29 "4,818" H 9500 4750 50  0001 C CNN "LCSC_stock"
-F 30 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMP3028LSD-13?qs=%2Fha2pyFadugUkRnXWzNfjPB%2F2%2FpUVmcBtenJqlz85NswHo6v693iIw%3D%3D" H 9500 4750 50  0001 C CNN "Mouser_link"
-F 31 "621-DMP3028LSD-13" H 9500 4750 50  0001 C CNN "Mouser_ref"
-F 32 "2020-12-05" H 9500 4750 50  0001 C CNN "Mouser_check_date"
-F 33 "0,474 €" H 9500 4750 50  0001 C CNN "Mouser_price_qt=1"
-F 34 "0,394 €" H 9500 4750 50  0001 C CNN "Mouser_price_qt=10"
-F 35 "0,276 €" H 9500 4750 50  0001 C CNN "Mouser_price_qt=100"
-F 36 "0,239 €" H 9500 4750 50  0001 C CNN "Mouser_price_qt=500"
-F 37 "2,855" H 9500 4750 50  0001 C CNN "Mouser_stock"
-F 38 "-" H 9500 4750 50  0001 C CNN "RS_link"
-F 39 "-" H 9500 4750 50  0001 C CNN "RS_ref"
-F 40 "2020-12-05" H 9500 4750 50  0001 C CNN "RS_check_date"
-F 41 "?" H 9500 4750 50  0001 C CNN "RS_price_qt=1"
-F 42 "?" H 9500 4750 50  0001 C CNN "RS_price_qt=10"
-F 43 "?" H 9500 4750 50  0001 C CNN "RS_price_qt=100"
-F 44 "?" H 9500 4750 50  0001 C CNN "RS_price_qt=1000"
-F 45 "-" H 9500 4750 50  0001 C CNN "RS_stock"
-F 46 "TO_CHECK" H 9500 4750 50  0001 C CNN "Status"
-F 47 "1.01" H 9500 4750 50  0001 C CNN "Release_version"
-F 48 "2020-12-05" H 9500 4750 50  0001 C CNN "Release_date"
-F 49 "ManWithNoName" H 9500 4750 50  0001 C CNN "Designer"
-	2    9500 4750
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	9250 2900 9200 2900
 Wire Wire Line
@@ -755,5 +641,119 @@ F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2150 1750 50  0001 C CNN
 F 3 "~" H 2150 1750 50  0001 C CNN
 	1    1950 1750
 	0    1    1    0   
+$EndComp
+$Comp
+L dmp3028lsd:DMP3028LSD Q8
+U 2 1 5FE301F1
+P 9500 4750
+F 0 "Q8" V 10057 4775 50  0000 C CNN
+F 1 "DMP3028LSD" V 9966 4775 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 9700 4675 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/DMP3028LSD.pdf" V 9500 4750 50  0001 L CNN
+F 4 "Diodes Incorporated" H 9500 4750 50  0001 C CNN "Mfr_name"
+F 5 "DMP3028LSD-13" H 9500 4750 50  0001 C CNN "Mfr_no"
+F 6 "SO-8" V 9875 4775 50  0000 C CNN "Package"
+F 7 "P + P" H 9500 4750 50  0001 C CNN "Type"
+F 8 "30V" H 9500 4750 50  0001 C CNN "VDSS"
+F 9 "38mΩ" V 9784 4775 50  0000 C CNN "RDSon"
+F 10 "4.7A" H 9500 4750 50  0001 C CNN "IDmax"
+F 11 "1-3V" H 9500 4750 50  0001 C CNN "VGSth"
+F 12 "20V" H 9500 4750 50  0001 C CNN "VGSS"
+F 13 "https://octopart.com/dmp3028lsd-13-diodes+inc.-67250487?r=sp" H 9500 4750 50  0001 C CNN "Octopart_link"
+F 14 "-" H 9500 4750 50  0001 C CNN "Farnell_link"
+F 15 "-" H 9500 4750 50  0001 C CNN "Farnell_ref"
+F 16 "2020-12-05" H 9500 4750 50  0001 C CNN "Farnell_check_date"
+F 17 "-" H 9500 4750 50  0001 C CNN "Farnell_price_qt=1"
+F 18 "-" H 9500 4750 50  0001 C CNN "Farnell_price_qt=10"
+F 19 "-" H 9500 4750 50  0001 C CNN "Farnell_price_qt=100"
+F 20 "-" H 9500 4750 50  0001 C CNN "Farnell_price_qt=1000"
+F 21 "-" H 9500 4750 50  0001 C CNN "Farnell_stock"
+F 22 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMP3028LSD-13_C397949.html" H 9500 4750 50  0001 C CNN "LCSC_link"
+F 23 "C397949" H 9500 4750 50  0001 C CNN "LCSC_ref"
+F 24 "2020-12-13" H 9500 4750 50  0001 C CNN "LCSC_check_date"
+F 25 "$0.373" H 9500 4750 50  0001 C CNN "LCSC_price_qt=1"
+F 26 "$0.2802" H 9500 4750 50  0001 C CNN "LCSC_price_qt=10"
+F 27 "$0.2475" H 9500 4750 50  0001 C CNN "LCSC_price_qt=100"
+F 28 "$0.2355" H 9500 4750 50  0001 C CNN "LCSC_price_qt=1000"
+F 29 "4,818" H 9500 4750 50  0001 C CNN "LCSC_stock"
+F 30 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMP3028LSD-13?qs=%2Fha2pyFadugUkRnXWzNfjPB%2F2%2FpUVmcBtenJqlz85NswHo6v693iIw%3D%3D" H 9500 4750 50  0001 C CNN "Mouser_link"
+F 31 "621-DMP3028LSD-13" H 9500 4750 50  0001 C CNN "Mouser_ref"
+F 32 "2020-12-13" H 9500 4750 50  0001 C CNN "Mouser_check_date"
+F 33 "$0.564" H 9500 4750 50  0001 C CNN "Mouser_price_qt=1"
+F 34 "$0.469" H 9500 4750 50  0001 C CNN "Mouser_price_qt=10"
+F 35 "$0.328" H 9500 4750 50  0001 C CNN "Mouser_price_qt=100"
+F 36 "$0.242" H 9500 4750 50  0001 C CNN "Mouser_price_qt=1000"
+F 37 "2,855" H 9500 4750 50  0001 C CNN "Mouser_stock"
+F 38 "-" H 9500 4750 50  0001 C CNN "RS_link"
+F 39 "-" H 9500 4750 50  0001 C CNN "RS_ref"
+F 40 "2020-12-05" H 9500 4750 50  0001 C CNN "RS_check_date"
+F 41 "-" H 9500 4750 50  0001 C CNN "RS_price_qt=1"
+F 42 "-" H 9500 4750 50  0001 C CNN "RS_price_qt=10"
+F 43 "-" H 9500 4750 50  0001 C CNN "RS_price_qt=100"
+F 44 "-" H 9500 4750 50  0001 C CNN "RS_price_qt=1000"
+F 45 "-" H 9500 4750 50  0001 C CNN "RS_stock"
+F 46 "TO_CHECK" H 9500 4750 50  0001 C CNN "Status"
+F 47 "1.02" H 9500 4750 50  0001 C CNN "Release_version"
+F 48 "2020-12-13" H 9500 4750 50  0001 C CNN "Release_date"
+F 49 "ManWithNoName" H 9500 4750 50  0001 C CNN "Designer"
+	2    9500 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L dmp3028lsd:DMP3028LSD Q8
+U 1 1 5FE2DFE6
+P 9500 3050
+F 0 "Q8" V 10057 3075 50  0000 C CNN
+F 1 "DMP3028LSD" V 9966 3075 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 9700 2975 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/DMP3028LSD.pdf" V 9500 3050 50  0001 L CNN
+F 4 "Diodes Incorporated" H 9500 3050 50  0001 C CNN "Mfr_name"
+F 5 "DMP3028LSD-13" H 9500 3050 50  0001 C CNN "Mfr_no"
+F 6 "SO-8" V 9875 3075 50  0000 C CNN "Package"
+F 7 "P + P" H 9500 3050 50  0001 C CNN "Type"
+F 8 "30V" H 9500 3050 50  0001 C CNN "VDSS"
+F 9 "38mΩ" V 9784 3075 50  0000 C CNN "RDSon"
+F 10 "4.7A" H 9500 3050 50  0001 C CNN "IDmax"
+F 11 "1-3V" H 9500 3050 50  0001 C CNN "VGSth"
+F 12 "20V" H 9500 3050 50  0001 C CNN "VGSS"
+F 13 "https://octopart.com/dmp3028lsd-13-diodes+inc.-67250487?r=sp" H 9500 3050 50  0001 C CNN "Octopart_link"
+F 14 "-" H 9500 3050 50  0001 C CNN "Farnell_link"
+F 15 "-" H 9500 3050 50  0001 C CNN "Farnell_ref"
+F 16 "2020-12-05" H 9500 3050 50  0001 C CNN "Farnell_check_date"
+F 17 "-" H 9500 3050 50  0001 C CNN "Farnell_price_qt=1"
+F 18 "-" H 9500 3050 50  0001 C CNN "Farnell_price_qt=10"
+F 19 "-" H 9500 3050 50  0001 C CNN "Farnell_price_qt=100"
+F 20 "-" H 9500 3050 50  0001 C CNN "Farnell_price_qt=1000"
+F 21 "-" H 9500 3050 50  0001 C CNN "Farnell_stock"
+F 22 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMP3028LSD-13_C397949.html" H 9500 3050 50  0001 C CNN "LCSC_link"
+F 23 "C397949" H 9500 3050 50  0001 C CNN "LCSC_ref"
+F 24 "2020-12-13" H 9500 3050 50  0001 C CNN "LCSC_check_date"
+F 25 "$0.373" H 9500 3050 50  0001 C CNN "LCSC_price_qt=1"
+F 26 "$0.2802" H 9500 3050 50  0001 C CNN "LCSC_price_qt=10"
+F 27 "$0.2475" H 9500 3050 50  0001 C CNN "LCSC_price_qt=100"
+F 28 "$0.2355" H 9500 3050 50  0001 C CNN "LCSC_price_qt=1000"
+F 29 "4,818" H 9500 3050 50  0001 C CNN "LCSC_stock"
+F 30 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMP3028LSD-13?qs=%2Fha2pyFadugUkRnXWzNfjPB%2F2%2FpUVmcBtenJqlz85NswHo6v693iIw%3D%3D" H 9500 3050 50  0001 C CNN "Mouser_link"
+F 31 "621-DMP3028LSD-13" H 9500 3050 50  0001 C CNN "Mouser_ref"
+F 32 "2020-12-13" H 9500 3050 50  0001 C CNN "Mouser_check_date"
+F 33 "$0.564" H 9500 3050 50  0001 C CNN "Mouser_price_qt=1"
+F 34 "$0.469" H 9500 3050 50  0001 C CNN "Mouser_price_qt=10"
+F 35 "$0.328" H 9500 3050 50  0001 C CNN "Mouser_price_qt=100"
+F 36 "$0.242" H 9500 3050 50  0001 C CNN "Mouser_price_qt=1000"
+F 37 "2,855" H 9500 3050 50  0001 C CNN "Mouser_stock"
+F 38 "-" H 9500 3050 50  0001 C CNN "RS_link"
+F 39 "-" H 9500 3050 50  0001 C CNN "RS_ref"
+F 40 "2020-12-05" H 9500 3050 50  0001 C CNN "RS_check_date"
+F 41 "-" H 9500 3050 50  0001 C CNN "RS_price_qt=1"
+F 42 "-" H 9500 3050 50  0001 C CNN "RS_price_qt=10"
+F 43 "-" H 9500 3050 50  0001 C CNN "RS_price_qt=100"
+F 44 "-" H 9500 3050 50  0001 C CNN "RS_price_qt=1000"
+F 45 "-" H 9500 3050 50  0001 C CNN "RS_stock"
+F 46 "TO_CHECK" H 9500 3050 50  0001 C CNN "Status"
+F 47 "1.02" H 9500 3050 50  0001 C CNN "Release_version"
+F 48 "2020-12-13" H 9500 3050 50  0001 C CNN "Release_date"
+F 49 "ManWithNoName" H 9500 3050 50  0001 C CNN "Designer"
+	1    9500 3050
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC
