@@ -686,26 +686,6 @@ Text Notes 8550 5450 0    50   ~ 10
 Connectors
 Text Notes 8200 4150 0    59   ~ 12
 ! The battery is implemented on the "Battery Module" Sheet !
-$Comp
-L ltc4162eufd-lad:LTC4162EUFD-LAD U2
-U 1 1 5FA617A3
-P 5600 4000
-F 0 "U2" H 5200 5050 50  0000 C CNN
-F 1 "LTC4162EUFD-LAD" H 5950 5050 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-28-1EP_4x5mm_P0.5mm_EP2.65x3.65mm_ThermalVias" H 5250 5050 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/LTC4162-L.pdf" H 5200 5050 50  0001 C CNN
-F 4 "https://octopart.com/ltc4162eufd-lad%23pbf-analog+devices-92333982?r=sp" H 5600 4000 50  0001 C CNN "Octopart_link"
-F 5 "-" H 5600 4000 50  0001 C CNN "Farnell_link"
-F 6 "-" H 5600 4000 50  0001 C CNN "Farnell_ref"
-F 7 "https://lcsc.com/product-detail/Pre-ordered-Products_Analog-Devices_LTC4162EUFD-LAD-TRPBF_Analog-Devices-ADI-LINEAR-LTC4162EUFD-LAD-TRPBF_C687387.html" H 5600 4000 50  0001 C CNN "LCSC_link"
-F 8 "C687387" H 5600 4000 50  0001 C CNN "LCSC_ref"
-F 9 "https://www.mouser.fr/ProductDetail/Analog-Devices/LTC4162EUFD-LADPBF?qs=MLItCLRbWsx0I%2FnYhNqKzA==" H 5600 4000 50  0001 C CNN "Mouser_link"
-F 10 "584-4162EUFDLADPB " H 5600 4000 50  0001 C CNN "Mouser_ref"
-F 11 "-" H 5600 4000 50  0001 C CNN "RS_link"
-F 12 "-" H 5600 4000 50  0001 C CNN "RS_ref"
-	1    5600 4000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4400 2750 4450 2750
 Wire Wire Line
@@ -822,426 +802,10 @@ F 3 "~" H 6400 5100 50  0001 C CNN
 $EndComp
 Text Notes 600  700  0    50   ~ 10
 Interface
-$Comp
-L cl31b106kahnnne:CL31B106KAHNNNE C7
-U 1 1 5FC33A0F
-P 8300 3350
-F 0 "C7" H 8415 3532 50  0000 L CNN
-F 1 "CL31B106KAHNNNE" H 8325 3250 50  0001 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 8338 3200 50  0001 C CNN
-F 3 "https://eu.mouser.com/datasheet/2/585/MLCC-1837944.pdf" H 8300 3350 50  0001 C CNN
-F 4 "Samsung" H 8300 3350 50  0001 C CNN "Mfr_name"
-F 5 "CL31B106KAHNNNE" H 8300 3350 50  0001 C CNN "Mfr_no"
-F 6 "10µF" H 8415 3441 50  0000 L CNN "Cap_value"
-F 7 "1206" H 8415 3350 50  0000 L CNN "Package"
-F 8 "X7R" H 8415 3259 50  0000 L CNN "Dielectric"
-F 9 "25V" H 8415 3168 50  0000 L CNN "Voltage"
-F 10 "https://octopart.com/cl31b106kahnnne-samsung-18621872?r=sp#PriceAndStock" H 8300 3350 50  0001 C CNN "Octopart_link"
-F 11 "https://fr.farnell.com/samsung-electro-mechanics/cl31b106kahnnne/condensateur-10uf-25v-mlcc-1206/dp/3013526?st=cl31b106kahnnne" H 8300 3350 50  0001 C CNN "Farnell_link"
-F 12 "3013526" H 8300 3350 50  0001 C CNN "Farnell_ref"
-F 13 "2020-11-28" H 8300 3350 50  0001 C CNN "Farnell_check_date"
-F 14 " 0,227 € " H 8300 3350 50  0001 C CNN "Farnell_price_qt=5"
-F 15 " 0,105 € " H 8300 3350 50  0001 C CNN "Farnell_price_qt=50"
-F 16 " 0,0857 € " H 8300 3350 50  0001 C CNN "Farnell_price_qt=250"
-F 17 " 0,0663 € " H 8300 3350 50  0001 C CNN "Farnell_price_qt=500"
-F 18 "22,345" H 8300 3350 50  0001 C CNN "Farnell_stock"
-F 19 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL31B106KAHNNNE_C14860.html" H 8300 3350 50  0001 C CNN "LCSC_link"
-F 20 "C14860" H 8300 3350 50  0001 C CNN "LCSC_ref"
-F 21 "2020-11-28" H 8300 3350 50  0001 C CNN "LCSC_check_date"
-F 22 "$0.0331" H 8300 3350 50  0001 C CNN "LCSC_price_qt=10"
-F 23 "$0.0278" H 8300 3350 50  0001 C CNN "LCSC_price_qt=100"
-F 24 "$0.0263" H 8300 3350 50  0001 C CNN "LCSC_price_qt=300"
-F 25 "$0.025" H 8300 3350 50  0001 C CNN "LCSC_price_qt=1000"
-F 26 "135,960" H 8300 3350 50  0001 C CNN "LCSC_stock"
-F 27 "https://eu.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL31B106KAHNNNE?qs=%2Fha2pyFaduiEUnj6zqZqn3kcK5eMUinJ%2Fz%2F9uc9Zsjkl3KXYGdw53g%3D%3D" H 8300 3350 50  0001 C CNN "Mouser_link"
-F 28 "187-CL31B106KAHNNNE" H 8300 3350 50  0001 C CNN "Mouser_ref"
-F 29 "2020-11-28" H 8300 3350 50  0001 C CNN "Mouser_check_date"
-F 30 "$0.242" H 8300 3350 50  0001 C CNN "Mouser_price_qt=1"
-F 31 "$0.168" H 8300 3350 50  0001 C CNN "Mouser_price_qt=10"
-F 32 "$0.095" H 8300 3350 50  0001 C CNN "Mouser_price_qt=100"
-F 33 "$0.067" H 8300 3350 50  0001 C CNN "Mouser_price_qt=500"
-F 34 "73,742" H 8300 3350 50  0001 C CNN "Mouser_stock"
-F 35 "https://fr.rs-online.com/web/p/condensateurs-ceramique-multicouches/7666773/?relevancy-data=7365617263685F636173636164655F6F726465723D31267365617263685F696E746572666163655F6E616D653D4931384E53656172636847656E65726963267365617263685F6C616E67756167655F757365643D6672267365617263685F6D617463685F6D6F64653D6D61746368616C6C7061727469616C267365617263685F7061747465726E5F6D6174636865643D5E5B5C707B4C7D5C707B4E647D2D2C2F255C2E5D2B24267365617263685F7061747465726E5F6F726465723D313333267365617263685F73745F6E6F726D616C697365643D59267365617263685F726573706F6E73655F616374696F6E3D267365617263685F747970653D4B4559574F52445F53494E474C455F414C5048415F4E554D45524943267365617263685F7370656C6C5F636F72726563745F6170706C6965643D59267365617263685F77696C645F63617264696E675F6D6F64653D4E4F4E45267365617263685F6B6579776F72643D434C3331423130364B41484E4E4E45267365617263685F6B6579776F72645F6170703D434C3331423130364B41484E4E4E45267365617263685F636F6E6669673D3126&searchHistory=%7B%22enabled%22%3Atrue%7D" H 8300 3350 50  0001 C CNN "RS_link"
-F 36 "766-6773" H 8300 3350 50  0001 C CNN "RS_ref"
-F 37 "2020-11-28" H 8300 3350 50  0001 C CNN "RS_check_date"
-F 38 "0,048 €" H 8300 3350 50  0001 C CNN "RS_price_qt=2000"
-F 39 "0,046 €" H 8300 3350 50  0001 C CNN "RS_price_qt=6000"
-F 40 "0,045 €" H 8300 3350 50  0001 C CNN "RS_price_qt=10000"
-F 41 "388,000" H 8300 3350 50  0001 C CNN "RS_stock"
-F 42 "TO_CHECK" H 8300 3350 50  0001 C CNN "Status"
-F 43 "1.00" H 8300 3350 50  0001 C CNN "Release_version"
-F 44 "2020-11-28" H 8300 3350 50  0001 C CNN "Release_date"
-F 45 "ManWithNoName" H 8300 3350 50  0001 C CNN "Designer"
-	1    8300 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L cl31b106kahnnne:CL31B106KAHNNNE C6
-U 1 1 5FC35DA7
-P 7450 4600
-F 0 "C6" H 7565 4782 50  0000 L CNN
-F 1 "CL31B106KAHNNNE" H 7475 4500 50  0001 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 7488 4450 50  0001 C CNN
-F 3 "https://eu.mouser.com/datasheet/2/585/MLCC-1837944.pdf" H 7450 4600 50  0001 C CNN
-F 4 "Samsung" H 7450 4600 50  0001 C CNN "Mfr_name"
-F 5 "CL31B106KAHNNNE" H 7450 4600 50  0001 C CNN "Mfr_no"
-F 6 "10µF" H 7565 4691 50  0000 L CNN "Cap_value"
-F 7 "1206" H 7565 4600 50  0000 L CNN "Package"
-F 8 "X7R" H 7565 4509 50  0000 L CNN "Dielectric"
-F 9 "25V" H 7565 4418 50  0000 L CNN "Voltage"
-F 10 "https://octopart.com/cl31b106kahnnne-samsung-18621872?r=sp#PriceAndStock" H 7450 4600 50  0001 C CNN "Octopart_link"
-F 11 "https://fr.farnell.com/samsung-electro-mechanics/cl31b106kahnnne/condensateur-10uf-25v-mlcc-1206/dp/3013526?st=cl31b106kahnnne" H 7450 4600 50  0001 C CNN "Farnell_link"
-F 12 "3013526" H 7450 4600 50  0001 C CNN "Farnell_ref"
-F 13 "2020-11-28" H 7450 4600 50  0001 C CNN "Farnell_check_date"
-F 14 " 0,227 € " H 7450 4600 50  0001 C CNN "Farnell_price_qt=5"
-F 15 " 0,105 € " H 7450 4600 50  0001 C CNN "Farnell_price_qt=50"
-F 16 " 0,0857 € " H 7450 4600 50  0001 C CNN "Farnell_price_qt=250"
-F 17 " 0,0663 € " H 7450 4600 50  0001 C CNN "Farnell_price_qt=500"
-F 18 "22,345" H 7450 4600 50  0001 C CNN "Farnell_stock"
-F 19 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL31B106KAHNNNE_C14860.html" H 7450 4600 50  0001 C CNN "LCSC_link"
-F 20 "C14860" H 7450 4600 50  0001 C CNN "LCSC_ref"
-F 21 "2020-11-28" H 7450 4600 50  0001 C CNN "LCSC_check_date"
-F 22 "$0.0331" H 7450 4600 50  0001 C CNN "LCSC_price_qt=10"
-F 23 "$0.0278" H 7450 4600 50  0001 C CNN "LCSC_price_qt=100"
-F 24 "$0.0263" H 7450 4600 50  0001 C CNN "LCSC_price_qt=300"
-F 25 "$0.025" H 7450 4600 50  0001 C CNN "LCSC_price_qt=1000"
-F 26 "135,960" H 7450 4600 50  0001 C CNN "LCSC_stock"
-F 27 "https://eu.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL31B106KAHNNNE?qs=%2Fha2pyFaduiEUnj6zqZqn3kcK5eMUinJ%2Fz%2F9uc9Zsjkl3KXYGdw53g%3D%3D" H 7450 4600 50  0001 C CNN "Mouser_link"
-F 28 "187-CL31B106KAHNNNE" H 7450 4600 50  0001 C CNN "Mouser_ref"
-F 29 "2020-11-28" H 7450 4600 50  0001 C CNN "Mouser_check_date"
-F 30 "$0.242" H 7450 4600 50  0001 C CNN "Mouser_price_qt=1"
-F 31 "$0.168" H 7450 4600 50  0001 C CNN "Mouser_price_qt=10"
-F 32 "$0.095" H 7450 4600 50  0001 C CNN "Mouser_price_qt=100"
-F 33 "$0.067" H 7450 4600 50  0001 C CNN "Mouser_price_qt=500"
-F 34 "73,742" H 7450 4600 50  0001 C CNN "Mouser_stock"
-F 35 "https://fr.rs-online.com/web/p/condensateurs-ceramique-multicouches/7666773/?relevancy-data=7365617263685F636173636164655F6F726465723D31267365617263685F696E746572666163655F6E616D653D4931384E53656172636847656E65726963267365617263685F6C616E67756167655F757365643D6672267365617263685F6D617463685F6D6F64653D6D61746368616C6C7061727469616C267365617263685F7061747465726E5F6D6174636865643D5E5B5C707B4C7D5C707B4E647D2D2C2F255C2E5D2B24267365617263685F7061747465726E5F6F726465723D313333267365617263685F73745F6E6F726D616C697365643D59267365617263685F726573706F6E73655F616374696F6E3D267365617263685F747970653D4B4559574F52445F53494E474C455F414C5048415F4E554D45524943267365617263685F7370656C6C5F636F72726563745F6170706C6965643D59267365617263685F77696C645F63617264696E675F6D6F64653D4E4F4E45267365617263685F6B6579776F72643D434C3331423130364B41484E4E4E45267365617263685F6B6579776F72645F6170703D434C3331423130364B41484E4E4E45267365617263685F636F6E6669673D3126&searchHistory=%7B%22enabled%22%3Atrue%7D" H 7450 4600 50  0001 C CNN "RS_link"
-F 36 "766-6773" H 7450 4600 50  0001 C CNN "RS_ref"
-F 37 "2020-11-28" H 7450 4600 50  0001 C CNN "RS_check_date"
-F 38 "0,048 €" H 7450 4600 50  0001 C CNN "RS_price_qt=2000"
-F 39 "0,046 €" H 7450 4600 50  0001 C CNN "RS_price_qt=6000"
-F 40 "0,045 €" H 7450 4600 50  0001 C CNN "RS_price_qt=10000"
-F 41 "388,000" H 7450 4600 50  0001 C CNN "RS_stock"
-F 42 "TO_CHECK" H 7450 4600 50  0001 C CNN "Status"
-F 43 "1.00" H 7450 4600 50  0001 C CNN "Release_version"
-F 44 "2020-11-28" H 7450 4600 50  0001 C CNN "Release_date"
-F 45 "ManWithNoName" H 7450 4600 50  0001 C CNN "Designer"
-	1    7450 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L cc0603jrx7r9bb104:CC0603JRX7R9BB104 C2
-U 1 1 5FC3B19F
-P 3350 3050
-F 0 "C2" H 3465 3232 50  0000 L CNN
-F 1 "CC0603JRX7R9BB104" H 3375 2950 50  0001 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3388 2900 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 3350 3050 50  0001 C CNN
-F 4 "Yageo" H 3350 3050 50  0001 C CNN "Mfr_name"
-F 5 "CC0603JRX7R9BB104" H 3350 3050 50  0001 C CNN "Mfr_no"
-F 6 "0.1µF" H 3465 3141 50  0000 L CNN "Cap_value"
-F 7 "0603" H 3465 3050 50  0000 L CNN "Package"
-F 8 "X7R" H 3465 2959 50  0000 L CNN "Dielectric"
-F 9 "50V" H 3465 2868 50  0000 L CNN "Voltage"
-F 10 "https://octopart.com/cc0603jrx7r9bb104-yageo-12885108?r=sp" H 3350 3050 50  0001 C CNN "Octopart_link"
-F 11 "https://fr.farnell.com/yageo/cc0603jrx7r9bb104/condensateur-0-1uf-50v-mlcc-0603/dp/3369214?st=CC0603JRX7R9BB104" H 3350 3050 50  0001 C CNN "Farnell_link"
-F 12 "3369214" H 3350 3050 50  0001 C CNN "Farnell_ref"
-F 13 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_YAGEO-CC0603JRX7R9BB104_C91183.html" H 3350 3050 50  0001 C CNN "LCSC_link"
-F 14 "C91183" H 3350 3050 50  0001 C CNN "LCSC_ref"
-F 15 "119,500" H 3350 3050 50  0001 C CNN "LCSC_stock"
-F 16 "2,870" H 3350 3050 50  0001 C CNN "Farnell_stock"
-F 17 "2020-11-27" H 3350 3050 50  0001 C CNN "Farnell_check_date"
-F 18 "2020-11-27" H 3350 3050 50  0001 C CNN "LCSC_check_date"
-F 19 "$0.0093" H 3350 3050 50  0001 C CNN "LCSC_price_qt=50"
-F 20 "0.0475€" H 3350 3050 50  0001 C CNN "Farnell_price_qt=10"
-F 21 "$0.0069" H 3350 3050 50  0001 C CNN "LCSC_price_qt=500"
-F 22 "$0.0065" H 3350 3050 50  0001 C CNN "LCSC_price_qt=1500"
-F 23 "$0.0061" H 3350 3050 50  0001 C CNN "LCSC_price_qt=5000"
-F 24 "0.0309€" H 3350 3050 50  0001 C CNN "Farnell_price_qt=100"
-F 25 "0.0221€" H 3350 3050 50  0001 C CNN "Farnell_price_qt=500"
-F 26 "0.0155€" H 3350 3050 50  0001 C CNN "Farnell_price_qt=1000"
-F 27 "https://eu.mouser.com/ProductDetail/Yageo/CC0603JRX7R9BB104?qs=%2Fha2pyFaduiZbois2HzNxVdO93thVqADUWwLeer1tjY3NrWwFx3PGQ%3D%3D" H 3350 3050 50  0001 C CNN "Mouser_link"
-F 28 "603-CC603JRX7R9BB104 " H 3350 3050 50  0001 C CNN "Mouser_ref"
-F 29 "2020-11-27" H 3350 3050 50  0001 C CNN "Mouser_check_date"
-F 30 "$0.111" H 3350 3050 50  0001 C CNN "Mouser_price_qt=1"
-F 31 "10,249,855 " H 3350 3050 50  0001 C CNN "Mouser_stock"
-F 32 "$0.065" H 3350 3050 50  0001 C CNN "Mouser_price_qt=10"
-F 33 "$0.025" H 3350 3050 50  0001 C CNN "Mouser_price_qt=100"
-F 34 "$0.020" H 3350 3050 50  0001 C CNN "Mouser_price_qt=1000"
-F 35 "https://fr.rs-online.com/web/p/condensateurs-ceramique-multicouches/2006519/" H 3350 3050 50  0001 C CNN "RS_link"
-F 36 "200-6519" H 3350 3050 50  0001 C CNN "RS_ref"
-F 37 "2020-11-27" H 3350 3050 50  0001 C CNN "RS_check_date"
-F 38 "1,800" H 3350 3050 50  0001 C CNN "RS_stock"
-F 39 "0.025€" H 3350 3050 50  0001 C CNN "RS_price_qt=200"
-F 40 "0.021€" H 3350 3050 50  0001 C CNN "RS_price_qt=1000"
-F 41 "0.017€" H 3350 3050 50  0001 C CNN "RS_price_qt=2000"
-F 42 "TO_CHECK" H 3350 3050 50  0001 C CNN "Status"
-F 43 "1.00" H 3350 3050 50  0001 C CNN "Release_version"
-F 44 "2020-11-27" H 3350 3050 50  0001 C CNN "Release_date"
-F 45 "ManWithNoName" H 3350 3050 50  0001 C CNN "Designer"
-	1    3350 3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L cl10b105ko8nnnc:CL10B105KO8NNNC C4
-U 1 1 5FC43D5A
-P 4750 4900
-F 0 "C4" H 4865 5082 50  0000 L CNN
-F 1 "CL10B105KO8NNNC" H 4775 4800 50  0001 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4788 4750 50  0001 C CNN
-F 3 "" H 4750 4900 50  0001 C CNN
-F 4 "Samsung" H 4750 4900 50  0001 C CNN "Mfr_name"
-F 5 "CL10B105KO8NNNC" H 4750 4900 50  0001 C CNN "Mfr_no"
-F 6 "1µF" H 4865 4991 50  0000 L CNN "Cap_value"
-F 7 "0603" H 4865 4900 50  0000 L CNN "Package"
-F 8 "X7R" H 4865 4809 50  0000 L CNN "Dielectric"
-F 9 "16V" H 4865 4718 50  0000 L CNN "Voltage"
-F 10 "https://octopart.com/cl10b105ko8nnnc-samsung-19018973?r=sp" H 4750 4900 50  0001 C CNN "Octopart_link"
-F 11 "https://fr.farnell.com/samsung-electro-mechanics/cl10b105ko8nnnc/condensateur-1uf-16v-mlcc-0603/dp/3013416?st=CL10B105KO8NNNC" H 4750 4900 50  0001 C CNN "Farnell_link"
-F 12 "3013416" H 4750 4900 50  0001 C CNN "Farnell_ref"
-F 13 "0,0348 €" H 4750 4900 50  0001 C CNN "Farnell_price_qt=10"
-F 14 "0,0282 €" H 4750 4900 50  0001 C CNN "Farnell_price_qt=100"
-F 15 "0,0189 €" H 4750 4900 50  0001 C CNN "Farnell_price_qt=500"
-F 16 "0,014 €" H 4750 4900 50  0001 C CNN "Farnell_price_qt=1000"
-F 17 "2020-11-29" H 4750 4900 50  0001 C CNN "Farnell_check_date"
-F 18 "8,899" H 4750 4900 50  0001 C CNN "Farnell_stock"
-F 19 "2020-11-29" H 4750 4900 50  0001 C CNN "LCSC_check_date"
-F 20 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL10B105KO8NNNC_1uF-105-10-16V_C59782.html" H 4750 4900 50  0001 C CNN "LCSC_link"
-F 21 "C59782" H 4750 4900 50  0001 C CNN "LCSC_ref"
-F 22 "$0.0051" H 4750 4900 50  0001 C CNN "LCSC_price_qt=50"
-F 23 "$0.0037" H 4750 4900 50  0001 C CNN "LCSC_price_qt=500"
-F 24 "$0.0034" H 4750 4900 50  0001 C CNN "LCSC_price_qt=1500"
-F 25 "$0.0032" H 4750 4900 50  0001 C CNN "LCSC_price_qt=5000"
-F 26 "521,550" H 4750 4900 50  0001 C CNN "LCSC_stock"
-F 27 "https://eu.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL10B105KO8NNNC?qs=%2Fha2pyFaduieHDAu2oFb63CEYjc5CYz5gBw28wXw4psj1CqKhO2V6Q%3D%3D" H 4750 4900 50  0001 C CNN "Mouser_link"
-F 28 "187-CL10B105KO8NNNC" H 4750 4900 50  0001 C CNN "Mouser_ref"
-F 29 "2020-11-29" H 4750 4900 50  0001 C CNN "Mouser_check_date"
-F 30 "$0.101 " H 4750 4900 50  0001 C CNN "Mouser_price_qt=1"
-F 31 "$0.05" H 4750 4900 50  0001 C CNN "Mouser_price_qt=10"
-F 32 "$0.023" H 4750 4900 50  0001 C CNN "Mouser_price_qt=100"
-F 33 "$0.015" H 4750 4900 50  0001 C CNN "Mouser_price_qt=500"
-F 34 "579,557" H 4750 4900 50  0001 C CNN "Mouser_stock"
-F 35 "https://fr.rs-online.com/web/p/condensateurs-ceramique-multicouches/7664787/?sra=pmpn" H 4750 4900 50  0001 C CNN "RS_link"
-F 36 "766-4787" H 4750 4900 50  0001 C CNN "RS_ref"
-F 37 "2020-11-29" H 4750 4900 50  0001 C CNN "RS_check_date"
-F 38 "0,008 €" H 4750 4900 50  0001 C CNN "RS_price_qt=4000"
-F 39 "0,008 €" H 4750 4900 50  0001 C CNN "RS_price_qt=8000"
-F 40 "248,000" H 4750 4900 50  0001 C CNN "RS_stock"
-F 41 "TO_CHECK" H 4750 4900 50  0001 C CNN "Status"
-F 42 "1.00" H 4750 4900 50  0001 C CNN "Release_version"
-F 43 "2020-11-29" H 4750 4900 50  0001 C CNN "Release_date"
-F 44 "ManWithNoName" H 4750 4900 50  0001 C CNN "Designer"
-	1    4750 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L tmk212ab7475kg-t:TMK212AB7475KG-T C3
-U 1 1 5FC71278
-P 4250 4900
-F 0 "C3" H 4365 5082 50  0000 L CNN
-F 1 "TMK212AB7475KG-T" H 4275 4800 50  0001 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4288 4750 50  0001 C CNN
-F 3 "https://eu.mouser.com/datasheet/2/396/mlcc02_e-1307760.pdf" H 4250 4900 50  0001 C CNN
-F 4 "Taiyo Yuden" H 4250 4900 50  0001 C CNN "Mfr_name"
-F 5 "TMK212AB7475KG-T" H 4250 4900 50  0001 C CNN "Mfr_no"
-F 6 "4.7µF" H 4365 4991 50  0000 L CNN "Cap_value"
-F 7 "0805" H 4365 4900 50  0000 L CNN "Package"
-F 8 "X7R" H 4365 4809 50  0000 L CNN "Dielectric"
-F 9 "25V" H 4365 4718 50  0000 L CNN "Voltage"
-F 10 "https://octopart.com/tmk212ab7475kg-t-taiyo+yuden-20363790?r=sp" H 4250 4900 50  0001 C CNN "Octopart_link"
-F 11 "https://fr.farnell.com/taiyo-yuden/tmk212ab7475kg-t/ceramic-capacitor-4-7uf-25v-x7r/dp/2779199?scope=partnumberlookahead&ost=TMK212AB7475KG-T&searchref=searchlookahead&exaMfpn=true" H 4250 4900 50  0001 C CNN "Farnell_link"
-F 12 "2779199" H 4250 4900 50  0001 C CNN "Farnell_ref"
-F 13 "2020-11-29" H 4250 4900 50  0001 C CNN "Farnell_check_date"
-F 14 "0,0625 €" H 4250 4900 50  0001 C CNN "Farnell_price_qt=3000"
-F 15 "0,0529 €" H 4250 4900 50  0001 C CNN "Farnell_price_qt=6000"
-F 16 "-" H 4250 4900 50  0001 C CNN "Farnell_price_qt=250"
-F 17 "-" H 4250 4900 50  0001 C CNN "Farnell_price_qt=500"
-F 18 "3,000" H 4250 4900 50  0001 C CNN "Farnell_stock"
-F 19 "https://lcsc.com/product-detail/New-Arrivals_Taiyo-Yuden-TMK212AB7475KG-T_C163186.html" H 4250 4900 50  0001 C CNN "LCSC_link"
-F 20 "C163186" H 4250 4900 50  0001 C CNN "LCSC_ref"
-F 21 "134,420" H 4250 4900 50  0001 C CNN "LCSC_stock"
-F 22 "2020-11-29" H 4250 4900 50  0001 C CNN "LCSC_check_date"
-F 23 "$0.035" H 4250 4900 50  0001 C CNN "LCSC_price_qt=20"
-F 24 "$0.0266" H 4250 4900 50  0001 C CNN "LCSC_price_qt=200"
-F 25 "$0.025" H 4250 4900 50  0001 C CNN "LCSC_price_qt=600"
-F 26 "$0.02" H 4250 4900 50  0001 C CNN "LCSC_price_qt=2000"
-F 27 "https://eu.mouser.com/ProductDetail/Taiyo-Yuden/TMK212AB7475KG-T?qs=%2Fha2pyFaduhOmvqoBXaf2AOtUPA8upoo0e72F1hCYb1lacT8UkHI0g%3D%3D" H 4250 4900 50  0001 C CNN "Mouser_link"
-F 28 "963-TMK212AB7475KG-T " H 4250 4900 50  0001 C CNN "Mouser_ref"
-F 29 "2020-11-29" H 4250 4900 50  0001 C CNN "Mouser_check_date"
-F 30 "$0.352 " H 4250 4900 50  0001 C CNN "Mouser_price_qt=1"
-F 31 "$0.245" H 4250 4900 50  0001 C CNN "Mouser_price_qt=10"
-F 32 "$0.138 " H 4250 4900 50  0001 C CNN "Mouser_price_qt=100"
-F 33 "$0.098" H 4250 4900 50  0001 C CNN "Mouser_price_qt=500"
-F 34 "289,016 " H 4250 4900 50  0001 C CNN "Mouser_stock"
-F 35 "https://fr.rs-online.com/web/p/condensateurs-ceramique-multicouches/1034141/" H 4250 4900 50  0001 C CNN "RS_link"
-F 36 "103-4141" H 4250 4900 50  0001 C CNN "RS_ref"
-F 37 "2020-11-29" H 4250 4900 50  0001 C CNN "RS_check_date"
-F 38 "800" H 4250 4900 50  0001 C CNN "RS_stock"
-F 39 "0,118 €" H 4250 4900 50  0001 C CNN "RS_price_qt=50"
-F 40 "0,098 €" H 4250 4900 50  0001 C CNN "RS_price_qt=200"
-F 41 "0,069 €" H 4250 4900 50  0001 C CNN "RS_price_qt=800"
-F 42 "TO_CHECK" H 4250 4900 50  0001 C CNN "Status"
-F 43 "1.00" H 4250 4900 50  0001 C CNN "Release_version"
-F 44 "2020-11-29" H 4250 4900 50  0001 C CNN "Release_date"
-F 45 "ManWithNoName" H 4250 4900 50  0001 C CNN "Designer"
-	1    4250 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L cl10b223kb8nnnc:CL10B223KB8NNNC C5
-U 1 1 5FC4F96D
-P 6400 3650
-F 0 "C5" H 6515 3832 50  0000 L CNN
-F 1 "CL10B223KB8NNNC" H 6425 3550 50  0001 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6438 3500 50  0001 C CNN
-F 3 "" H 6400 3650 50  0001 C CNN
-F 4 "CL10B223KB8NNNC" H 6400 3650 50  0001 C CNN "Mfr_no"
-F 5 "0.022µF" H 6515 3741 50  0000 L CNN "Cap_value"
-F 6 "0603" H 6515 3650 50  0000 L CNN "Package"
-F 7 "X7R" H 6515 3559 50  0000 L CNN "Dielectric"
-F 8 "50V" H 6515 3468 50  0000 L CNN "Voltage"
-F 9 "https://octopart.com/cl10b223kb8nnnc-samsung-9299376?r=sp" H 6400 3650 50  0001 C CNN "Octopart_link"
-F 10 "https://fr.farnell.com/samsung-electro-mechanics/cl10b223kb8nnnc/condensateur-0-022uf-50v-mlcc/dp/3013425?st=CL10B223KB8NNNC#" H 6400 3650 50  0001 C CNN "Farnell_link"
-F 11 "3013425" H 6400 3650 50  0001 C CNN "Farnell_ref"
-F 12 "2020-11-29" H 6400 3650 50  0001 C CNN "Farnell_check_date"
-F 13 "0,0267 €" H 6400 3650 50  0001 C CNN "Farnell_price_qt=10"
-F 14 "0,0215 €" H 6400 3650 50  0001 C CNN "Farnell_price_qt=100"
-F 15 "0,0148 €" H 6400 3650 50  0001 C CNN "Farnell_price_qt=500"
-F 16 "0,0112 €" H 6400 3650 50  0001 C CNN "Farnell_price_qt=1000"
-F 17 "2,659" H 6400 3650 50  0001 C CNN "Farnell_stock"
-F 18 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL10B223KB8NNNC_22nF-223-10-50V_C21122.html" H 6400 3650 50  0001 C CNN "LCSC_link"
-F 19 "C21122" H 6400 3650 50  0001 C CNN "LCSC_ref"
-F 20 "2020-11-29" H 6400 3650 50  0001 C CNN "LCSC_check_date"
-F 21 "$0.0065" H 6400 3650 50  0001 C CNN "LCSC_price_qt=50"
-F 22 "$0.0047" H 6400 3650 50  0001 C CNN "LCSC_price_qt=500"
-F 23 "$0.0043" H 6400 3650 50  0001 C CNN "LCSC_price_qt=1500"
-F 24 "$0.004" H 6400 3650 50  0001 C CNN "LCSC_price_qt=5000"
-F 25 "679,900" H 6400 3650 50  0001 C CNN "LCSC_stock"
-F 26 "https://eu.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL10B223KB8NNNC?qs=%2Fha2pyFadugxvmy74XdKf4%252BsCHDiFFyPnyljb4VWdZsHBz1hx7lVWg%3D%3D" H 6400 3650 50  0001 C CNN "Mouser_link"
-F 27 "187-CL10B223KB8NNNC" H 6400 3650 50  0001 C CNN "Mouser_ref"
-F 28 "2020-11-29" H 6400 3650 50  0001 C CNN "Mouser_check_date"
-F 29 "$0.101" H 6400 3650 50  0001 C CNN "Mouser_price_qt=1"
-F 30 "$0.038" H 6400 3650 50  0001 C CNN "Mouser_price_qt=10"
-F 31 "$0.017" H 6400 3650 50  0001 C CNN "Mouser_price_qt=100"
-F 32 "$0.012" H 6400 3650 50  0001 C CNN "Mouser_price_qt=500"
-F 33 "151,796 " H 6400 3650 50  0001 C CNN "Mouser_stock"
-F 34 "https://fr.rs-online.com/web/p/condensateurs-ceramique-multicouches/7665402/?sra=pmpn" H 6400 3650 50  0001 C CNN "RS_link"
-F 35 "766-5402" H 6400 3650 50  0001 C CNN "RS_ref"
-F 36 "2020-11-29" H 6400 3650 50  0001 C CNN "RS_check_date"
-F 37 "0,006 €" H 6400 3650 50  0001 C CNN "RS_price_qt=4000"
-F 38 "220,000" H 6400 3650 50  0001 C CNN "RS_stock"
-F 39 "TO_CHECK" H 6400 3650 50  0001 C CNN "Status"
-F 40 "1.00" H 6400 3650 50  0001 C CNN "Release_version"
-F 41 "2020-11-29" H 6400 3650 50  0001 C CNN "Release_date"
-F 42 "ManWithNoName" H 6400 3650 50  0001 C CNN "Designer"
-	1    6400 3650
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	7750 800  7900 800 
 Wire Notes Line
 	7750 800  7750 950 
-$Comp
-L jst_xh_s2b_thru:JST_XH_S2B_thru J3
-U 1 1 5FD03EF0
-P 10150 5950
-F 0 "J3" H 10230 5942 50  0000 L CNN
-F 1 "DNP/JST_XH_S2B_thru" H 10230 5851 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_S2B-XH-A-1_1x02_P2.50mm_Horizontal" H 10150 5950 50  0001 C CNN
-F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 10150 5950 50  0001 C CNN
-F 4 "JST" H 10150 5950 50  0001 C CNN "Mfr_name"
-F 5 "S2B-XH-A(LF)(SN)" H 10150 5950 50  0001 C CNN "Mfr_no"
-F 6 "XH Right Angle Thru 2pins" H 10150 5950 50  0001 C CNN "Package"
-F 7 "White" H 10150 5950 50  0001 C CNN "Color"
-F 8 "https://octopart.com/s2b-xh-a%28lf%29%28sn%29-jst-3990369?r=sp#PriceAndStock" H 10150 5950 50  0001 C CNN "Octopart_link"
-F 9 "https://fr.farnell.com/jst-japan-solderless-terminals/s2b-xh-a-lf-sn/embase-male-90-deg-2-voies/dp/1516289?ost=s2b-xh-a%28lf%29%28sn%29" H 10150 5950 50  0001 C CNN "Farnell_link"
-F 10 "1516289" H 10150 5950 50  0001 C CNN "Farnell_ref"
-F 11 "2020-11-24" H 10150 5950 50  0001 C CNN "Farnell_check_date"
-F 12 "0.099€" H 10150 5950 50  0001 C CNN "Farnell_price_qt=100"
-F 13 "0.068€" H 10150 5950 50  0001 C CNN "Farnell_price_qt=1000"
-F 14 "53048" H 10150 5950 50  0001 C CNN "Farnell_stock"
-F 15 "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_JST-Sales-America-S2B-XH-A-LF-SN_C157931.html" H 10150 5950 50  0001 C CNN "LCSC_link"
-F 16 "C157931" H 10150 5950 50  0001 C CNN "LCSC_ref"
-F 17 "2020-11-24" H 10150 5950 50  0001 C CNN "LCSC_check_date"
-F 18 "$0.054" H 10150 5950 50  0001 C CNN "LCSC_price_qt=10"
-F 19 "$0.040" H 10150 5950 50  0001 C CNN "LCSC_price_qt=100"
-F 20 "$0.038" H 10150 5950 50  0001 C CNN "LCSC_price_qt=300"
-F 21 "$0.035" H 10150 5950 50  0001 C CNN "LCSC_price_qt=1000"
-F 22 "23650" H 10150 5950 50  0001 C CNN "LCSC_stock"
-F 23 "-" H 10150 5950 50  0001 C CNN "Mouser_link"
-F 24 "-" H 10150 5950 50  0001 C CNN "Mouser_ref"
-F 25 "2020-11-24" H 10150 5950 50  0001 C CNN "Mouser_check_date"
-F 26 "https://fr.rs-online.com/web/p/embases-circuits-imprimes/8201582/" H 10150 5950 50  0001 C CNN "RS_link"
-F 27 "820-1582" H 10150 5950 50  0001 C CNN "RS_ref"
-F 28 "2020-11-24" H 10150 5950 50  0001 C CNN "RS_check_date"
-F 29 "0.43€" H 10150 5950 50  0001 C CNN "RS_price_qt=5"
-F 30 "0.116€" H 10150 5950 50  0001 C CNN "RS_price_qt=125"
-F 31 "0.108€" H 10150 5950 50  0001 C CNN "RS_price_qt=500"
-F 32 "0.104€" H 10150 5950 50  0001 C CNN "RS_price_qt=1250"
-F 33 "5760" H 10150 5950 50  0001 C CNN "RS_stock"
-F 34 "TO_CHECK" H 10150 5950 50  0001 C CNN "Status"
-F 35 "1.00" H 10150 5950 50  0001 C CNN "Release_version"
-F 36 "2020-11-24" H 10150 5950 50  0001 C CNN "Release_date"
-F 37 "ManWithNoName" H 10150 5950 50  0001 C CNN "Designer"
-	1    10150 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L spm6530t-4r7m:SPM6530T-4R7M L1
-U 1 1 5FCBF9A3
-P 7050 3850
-F 0 "L1" V 7365 3850 50  0000 C CNN
-F 1 "SPM6530T-4R7M" V 7366 3850 50  0001 C CNN
-F 2 "Inductor_SMD_user:L_TDK_SPM6530T" H 7050 3850 50  0001 C CNN
-F 3 "https://product.tdk.com/info/en/catalog/datasheets/inductor_commercial_power_spm6530_en.pdf" H 7050 3850 50  0001 C CNN
-F 4 "https://octopart.com/spm6530t-4r7m-tdk-18903911?r=sp" H 7050 3850 50  0001 C CNN "Octopart_link"
-F 5 "TDK" H 7050 3850 50  0001 C CNN "Mfr_name"
-F 6 "SPM6530T-4R7M" H 7050 3850 50  0001 C CNN "Mfr_no"
-F 7 "4.7µH" V 7274 3850 50  0000 C CNN "Ind_value"
-F 8 "5.6A" H 7050 3850 50  0001 C CNN "Ind_current_max"
-F 9 "6.2A" H 7050 3850 50  0001 C CNN "Ind_current_sat_max"
-F 10 "35.8mOhm" V 7183 3850 50  0000 C CNN "Ind_DCR_typ"
-F 11 "20%" H 7050 3850 50  0001 C CNN "Ind_tol"
-F 12 ">10MHz" H 7050 3850 50  0001 C CNN "Ind_SFR"
-F 13 "6,5x7,1x3,0mm" H 7050 3850 50  0001 C CNN "Package"
-F 14 "https://lcsc.com/product-detail/Power-Inductors_TDK-SPM6530T-4R7M_C76857.html" H 7050 3850 50  0001 C CNN "LCSC_link"
-F 15 "C76857" H 7050 3850 50  0001 C CNN "LCSC_ref"
-F 16 "2020-12-02" H 7050 3850 50  0001 C CNN "LCSC_check_date"
-F 17 "$0.1554" H 7050 3850 50  0001 C CNN "LCSC_price_qt=1"
-F 18 "$0.1152" H 7050 3850 50  0001 C CNN "LCSC_price_qt=10"
-F 19 "$0.1078" H 7050 3850 50  0001 C CNN "LCSC_price_qt=30"
-F 20 "$0.1004" H 7050 3850 50  0001 C CNN "LCSC_price_qt=100"
-F 21 "16,144" H 7050 3850 50  0001 C CNN "LCSC_stock"
-F 22 "https://fr.farnell.com/tdk/spm6530t-4r7m/inductance-4-7uh-20-blindee/dp/2215613?st=SPM6530T-4R7M" H 7050 3850 50  0001 C CNN "Farnell_link"
-F 23 "2215613" H 7050 3850 50  0001 C CNN "Farnell_ref"
-F 24 "2020-12-02" H 7050 3850 50  0001 C CNN "Farnell_check_date"
-F 25 "1,36 €" H 7050 3850 50  0001 C CNN "Farnell_price_qt=1"
-F 26 "0,785 €" H 7050 3850 50  0001 C CNN "Farnell_price_qt=50"
-F 27 "0,738 €" H 7050 3850 50  0001 C CNN "Farnell_price_qt=100"
-F 28 "0,659 €" H 7050 3850 50  0001 C CNN "Farnell_price_qt=250"
-F 29 "500" H 7050 3850 50  0001 C CNN "Farnell_stock"
-F 30 "https://eu.mouser.com/ProductDetail/TDK/SPM6530T-4R7M?qs=chjFIDm9dbpOGKMR3qNvlw%3D%3D" H 7050 3850 50  0001 C CNN "Mouser_link"
-F 31 "810-SPM6530T-4R7M" H 7050 3850 50  0001 C CNN "Mouser_ref"
-F 32 "2020-12-02" H 7050 3850 50  0001 C CNN "Mouser_check_date"
-F 33 "$1.42" H 7050 3850 50  0001 C CNN "Mouser_price_qt=1"
-F 34 "$1.07" H 7050 3850 50  0001 C CNN "Mouser_price_qt=10"
-F 35 "$0.812" H 7050 3850 50  0001 C CNN "Mouser_price_qt=100"
-F 36 "$0.601" H 7050 3850 50  0001 C CNN "Mouser_price_qt=500"
-F 37 "353" H 7050 3850 50  0001 C CNN "Mouser_stock"
-F 38 "https://fr.rs-online.com/web/p/inductances-bobinees-cms/9164260/" H 7050 3850 50  0001 C CNN "RS_link"
-F 39 "916-4260" H 7050 3850 50  0001 C CNN "RS_ref"
-F 40 "2020-12-02" H 7050 3850 50  0001 C CNN "RS_check_date"
-F 41 "515" H 7050 3850 50  0001 C CNN "RS_stock"
-F 42 "1,224 €" H 7050 3850 50  0001 C CNN "RS_price_qt=5"
-F 43 "1,038 €" H 7050 3850 50  0001 C CNN "RS_price_qt=25"
-F 44 "0,92 €" H 7050 3850 50  0001 C CNN "RS_price_qt=50"
-F 45 "0,794 €" H 7050 3850 50  0001 C CNN "RS_price_qt=100"
-F 46 "ManWithNoName" H 7050 3850 50  0001 C CNN "Designer"
-F 47 "2020-12-02" H 7050 3850 50  0001 C CNN "Release_date"
-F 48 "1.00" H 7050 3850 50  0001 C CNN "Release_version"
-F 49 "TO_CHECK" H 7050 3850 50  0001 C CNN "Status"
-	1    7050 3850
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	6400 3850 6900 3850
 Wire Wire Line
@@ -1479,51 +1043,6 @@ Wire Wire Line
 Connection ~ 7400 3100
 Connection ~ 7500 3100
 $Comp
-L jst_zh_s2b_thru:JST_ZH_S2B_thru J2
-U 1 1 5FCD96A7
-P 8850 5950
-F 0 "J2" H 8930 5942 50  0000 L CNN
-F 1 "DNP/JST_ZH_S2B_thru" H 8930 5851 50  0000 L CNN
-F 2 "JST_ZH_S2B_THRU:JST_ZH_S2B-ZR_1x02_P1.50mm_Horizontal" H 8850 5950 50  0001 C CNN
-F 3 "http://www.jst-mfg.com/product/pdf/eng/eZH.pdf" H 8850 5950 50  0001 C CNN
-F 4 "JST" H 8850 5950 50  0001 C CNN "Mfr_name"
-F 5 "S2B-ZR(LF)(SN)" H 8850 5950 50  0001 C CNN "Mfr_no"
-F 6 "ZH Right Angle Thru 2pins" H 8850 5950 50  0001 C CNN "Package"
-F 7 "White" H 8850 5950 50  0001 C CNN "Color"
-F 8 "https://octopart.com/s2b-zr%28lf%29%28sn%29-jst-248833?r=sp" H 8850 5950 50  0001 C CNN "Octopart_link"
-F 9 "https://fr.farnell.com/jst-japan-solderless-terminals/s2b-zr-lf-sn/embase-entree-laterale-2-voies/dp/9491813?scope=partnumberlookahead&ost=9491813&searchref=searchlookahead&exaMfpn=true" H 8850 5950 50  0001 C CNN "Farnell_link"
-F 10 "9491813" H 8850 5950 50  0001 C CNN "Farnell_ref"
-F 11 "2020-11-25" H 8850 5950 50  0001 C CNN "Farnell_check_date"
-F 12 "0.077€" H 8850 5950 50  0001 C CNN "Farnell_price_qt=100"
-F 13 "0.067€" H 8850 5950 50  0001 C CNN "Farnell_price_qt=1000"
-F 14 "24362" H 8850 5950 50  0001 C CNN "Farnell_stock"
-F 15 "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_JST-Sales-America-S2B-ZR-LF-SN_C157930.html" H 8850 5950 50  0001 C CNN "LCSC_link"
-F 16 "C157930" H 8850 5950 50  0001 C CNN "LCSC_ref"
-F 17 "2020-11-25" H 8850 5950 50  0001 C CNN "LCSC_check_date"
-F 18 "$0.050" H 8850 5950 50  0001 C CNN "LCSC_price_qt=10"
-F 19 "$0.036" H 8850 5950 50  0001 C CNN "LCSC_price_qt=100"
-F 20 "$0.034" H 8850 5950 50  0001 C CNN "LCSC_price_qt=300"
-F 21 "$0.031" H 8850 5950 50  0001 C CNN "LCSC_price_qt=1000"
-F 22 "4300" H 8850 5950 50  0001 C CNN "LCSC_stock"
-F 23 "https://eu.mouser.com/ProductDetail/JST/S2B-ZR-LFSN?qs=%2Fha2pyFadugq2jRRAGtYfIV58loDKmQolDnBD3Dd%2FKWMFsJXC%2FTC6g%3D%3D" H 8850 5950 50  0001 C CNN "Mouser_link"
-F 24 "-" H 8850 5950 50  0001 C CNN "Mouser_ref"
-F 25 "2020-11-25" H 8850 5950 50  0001 C CNN "Mouser_check_date"
-F 26 "https://fr.rs-online.com/web/p/embases-circuits-imprimes/7620765/" H 8850 5950 50  0001 C CNN "RS_link"
-F 27 "762-0765" H 8850 5950 50  0001 C CNN "RS_ref"
-F 28 "2020-11-25" H 8850 5950 50  0001 C CNN "RS_check_date"
-F 29 "0.484€" H 8850 5950 50  0001 C CNN "RS_price_qt=5"
-F 30 "0.396€" H 8850 5950 50  0001 C CNN "RS_price_qt=125"
-F 31 "0.364€" H 8850 5950 50  0001 C CNN "RS_price_qt=500"
-F 32 "0.338€" H 8850 5950 50  0001 C CNN "RS_price_qt=2500"
-F 33 "1765" H 8850 5950 50  0001 C CNN "RS_stock"
-F 34 "TO_CHECK" H 8850 5950 50  0001 C CNN "Status"
-F 35 "1.00" H 8850 5950 50  0001 C CNN "Release_version"
-F 36 "2020-11-25" H 8850 5950 50  0001 C CNN "Release_date"
-F 37 "ManWithNoName" H 8850 5950 50  0001 C CNN "Designer"
-	1    8850 5950
-	1    0    0    -1  
-$EndComp
-$Comp
 L 150060ys75000:150060YS75000_0603 LED1
 U 1 1 5FCED4FE
 P 2150 3750
@@ -1649,4 +1168,542 @@ Wire Notes Line
 	2750 550  2750 2650
 Wire Notes Line
 	550  550  550  2650
+$Comp
+L ltc4162eufd-lad:LTC4162EUFD-LAD U2
+U 1 1 5FD6B763
+P 5600 4000
+F 0 "U2" H 5250 5050 50  0000 C CNN
+F 1 "LTC4162EUFD-LAD" H 5950 5050 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-28-1EP_4x5mm_P0.5mm_EP2.65x3.65mm_ThermalVias" H 5250 5050 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/LTC4162-L.pdf" H 5200 5050 50  0001 C CNN
+F 4 "Analog Devices" H 5600 4000 50  0001 C CNN "Mfr_name"
+F 5 "LTC4162EUFD-LAD#PBF " H 5600 4000 50  0001 C CNN "Mfr_no"
+F 6 "QFN-28 (2.65x3.65mm)" H 6350 2950 50  0001 C CNN "Package"
+F 7 "https://octopart.com/ltc4162eufd-lad%23pbf-analog+devices-92333982?r=sp" H 5600 4000 50  0001 C CNN "Octopart_link"
+F 8 "-" H 5600 4000 50  0001 C CNN "Farnell_link"
+F 9 "-" H 5600 4000 50  0001 C CNN "Farnell_ref"
+F 10 "2020-11-22" H 5600 4000 50  0001 C CNN "Farnell_check_date"
+F 11 "-" H 5600 4000 50  0001 C CNN "Farnell_price_qt=1"
+F 12 "-" H 5600 4000 50  0001 C CNN "Farnell_price_qt=10"
+F 13 "-" H 5600 4000 50  0001 C CNN "Farnell_price_qt=100"
+F 14 "-" H 5600 4000 50  0001 C CNN "Farnell_price_qt=1000"
+F 15 "-" H 5600 4000 50  0001 C CNN "Farnell_stock"
+F 16 "https://lcsc.com/product-detail/Pre-ordered-Products_Analog-Devices_LTC4162EUFD-LAD-TRPBF_Analog-Devices-ADI-LINEAR-LTC4162EUFD-LAD-TRPBF_C687387.html" H 5600 4000 50  0001 C CNN "LCSC_link"
+F 17 "C687387" H 5600 4000 50  0001 C CNN "LCSC_ref"
+F 18 "2020-12-12" H 5600 4000 50  0001 C CNN "LCSC_check_date"
+F 19 "$11.892" H 5600 4000 50  0001 C CNN "LCSC_price_qt=1"
+F 20 "$11.892" H 5600 4000 50  0001 C CNN "LCSC_price_qt=10"
+F 21 "$11.892" H 5600 4000 50  0001 C CNN "LCSC_price_qt=100"
+F 22 "$4.3605" H 5600 4000 50  0001 C CNN "LCSC_price_qt=1000"
+F 23 "0" H 5600 4000 50  0001 C CNN "LCSC_stock"
+F 24 "https://eu.mouser.com/ProductDetail/Analog-Devices/LTC4162EUFD-LADPBF?qs=MLItCLRbWsx0I%2FnYhNqKzA==" H 5600 4000 50  0001 C CNN "Mouser_link"
+F 25 "584-4162EUFDLADPB " H 5600 4000 50  0001 C CNN "Mouser_ref"
+F 26 "2020-12-12" H 5600 4000 50  0001 C CNN "Mouser_check_date"
+F 27 "$7.39" H 6050 2850 50  0001 C CNN "Mouser_price_qt=1"
+F 28 "$7.39" H 5600 4000 50  0001 C CNN "Mouser_price_qt=10"
+F 29 "$3.90" H 5600 4000 50  0001 C CNN "Mouser_price_qt=100"
+F 30 "$3.75" H 5600 4000 50  0001 C CNN "Mouser_price_qt=1000"
+F 31 "568 (438 Expected 07/16/2021)" H 5600 4000 50  0001 C CNN "Mouser_stock"
+F 32 "-" H 5600 4000 50  0001 C CNN "RS_link"
+F 33 "-" H 5600 4000 50  0001 C CNN "RS_ref"
+F 34 "2020-12-12" H 5600 4000 50  0001 C CNN "RS_check_date"
+F 35 "-" H 5600 4000 50  0001 C CNN "RS_price_qt=1"
+F 36 "-" H 5600 4000 50  0001 C CNN "RS_price_qt=10"
+F 37 "-" H 5600 4000 50  0001 C CNN "RS_price_qt=100"
+F 38 "-" H 5600 4000 50  0001 C CNN "RS_price_qt=1000"
+F 39 "-" H 5600 4000 50  0001 C CNN "RS_stock"
+F 40 "TO_CHECK" H 5600 4000 50  0001 C CNN "Status"
+F 41 "1.01" H 5600 4000 50  0001 C CNN "Release_version"
+F 42 "2020-12-12" H 5600 4000 50  0001 C CNN "Release_date"
+F 43 "ManWithNoName" H 5600 4000 50  0001 C CNN "Designer"
+	1    5600 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L cc0603jrx7r9bb104:CC0603JRX7R9BB104 C2
+U 1 1 5FD742FC
+P 3350 3050
+F 0 "C2" H 3465 3232 50  0000 L CNN
+F 1 "CC0603JRX7R9BB104" H 3375 2950 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3388 2900 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 3350 3050 50  0001 C CNN
+F 4 "Yageo" H 3350 3050 50  0001 C CNN "Mfr_name"
+F 5 "CC0603JRX7R9BB104" H 3350 3050 50  0001 C CNN "Mfr_no"
+F 6 "0.1µF" H 3465 3141 50  0000 L CNN "Cap_value"
+F 7 "0603" H 3465 3050 50  0000 L CNN "Package"
+F 8 "X7R" H 3465 2959 50  0000 L CNN "Dielectric"
+F 9 "50V" H 3465 2868 50  0000 L CNN "Voltage"
+F 10 "https://octopart.com/cc0603jrx7r9bb104-yageo-12885108?r=sp" H 3350 3050 50  0001 C CNN "Octopart_link"
+F 11 "https://fr.farnell.com/yageo/cc0603jrx7r9bb104/condensateur-0-1uf-50v-mlcc-0603/dp/3369214?st=CC0603JRX7R9BB104" H 3350 3050 50  0001 C CNN "Farnell_link"
+F 12 "3369214" H 3350 3050 50  0001 C CNN "Farnell_ref"
+F 13 "2020-11-27" H 3350 3050 50  0001 C CNN "Farnell_check_date"
+F 14 "-" H 3350 3050 50  0001 C CNN "Farnell_price_qt=1"
+F 15 "0.0475€" H 3350 3050 50  0001 C CNN "Farnell_price_qt=10"
+F 16 "0.0309€" H 3350 3050 50  0001 C CNN "Farnell_price_qt=100"
+F 17 "0.0155€" H 3350 3050 50  0001 C CNN "Farnell_price_qt=1000"
+F 18 "2,870" H 3350 3050 50  0001 C CNN "Farnell_stock"
+F 19 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_YAGEO-CC0603JRX7R9BB104_C91183.html" H 3350 3050 50  0001 C CNN "LCSC_link"
+F 20 "C91183" H 3350 3050 50  0001 C CNN "LCSC_ref"
+F 21 "2020-11-27" H 3350 3050 50  0001 C CNN "LCSC_check_date"
+F 22 "-" H 3350 3050 50  0001 C CNN "LCSC_price_qt=1"
+F 23 "-" H 3350 3050 50  0001 C CNN "LCSC_price_qt=10"
+F 24 "$0.0093" H 3350 3050 50  0001 C CNN "LCSC_price_qt=100"
+F 25 "$0.0069" H 3350 3050 50  0001 C CNN "LCSC_price_qt=1000"
+F 26 "119,500" H 3350 3050 50  0001 C CNN "LCSC_stock"
+F 27 "https://eu.mouser.com/ProductDetail/Yageo/CC0603JRX7R9BB104?qs=%2Fha2pyFaduiZbois2HzNxVdO93thVqADUWwLeer1tjY3NrWwFx3PGQ%3D%3D" H 3350 3050 50  0001 C CNN "Mouser_link"
+F 28 "603-CC603JRX7R9BB104 " H 3350 3050 50  0001 C CNN "Mouser_ref"
+F 29 "2020-11-27" H 3350 3050 50  0001 C CNN "Mouser_check_date"
+F 30 "$0.111" H 3350 3050 50  0001 C CNN "Mouser_price_qt=1"
+F 31 "$0.065" H 3350 3050 50  0001 C CNN "Mouser_price_qt=10"
+F 32 "$0.025" H 3350 3050 50  0001 C CNN "Mouser_price_qt=100"
+F 33 "$0.020" H 3350 3050 50  0001 C CNN "Mouser_price_qt=1000"
+F 34 "10,249,855 " H 3350 3050 50  0001 C CNN "Mouser_stock"
+F 35 "https://fr.rs-online.com/web/p/condensateurs-ceramique-multicouches/2006519/" H 3350 3050 50  0001 C CNN "RS_link"
+F 36 "200-6519" H 3350 3050 50  0001 C CNN "RS_ref"
+F 37 "2020-11-27" H 3350 3050 50  0001 C CNN "RS_check_date"
+F 38 "-" H 3350 3050 50  0001 C CNN "RS_price_qt=1"
+F 39 "-" H 3350 3050 50  0001 C CNN "RS_price_qt=10"
+F 40 "0.025€" H 3350 3050 50  0001 C CNN "RS_price_qt=100"
+F 41 "0.021€" H 3350 3050 50  0001 C CNN "RS_price_qt=1000"
+F 42 "1,800" H 3350 3050 50  0001 C CNN "RS_stock"
+F 43 "TO_CHECK" H 3350 3050 50  0001 C CNN "Status"
+F 44 "1.02" H 3350 3050 50  0001 C CNN "Release_version"
+F 45 "2020-12-12" H 3350 3050 50  0001 C CNN "Release_date"
+F 46 "ManWithNoName" H 3350 3050 50  0001 C CNN "Designer"
+	1    3350 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L spm6530t-4r7m:SPM6530T-4R7M L1
+U 1 1 5FD795C7
+P 7050 3850
+F 0 "L1" V 7150 3850 50  0000 C CNN
+F 1 "SPM6530T-4R7M" V 7250 3800 50  0000 C CNN
+F 2 "SPM6530T-4R7M:L_TDK_SPM6530T" H 7050 3850 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/inductor_commercial_power_spm6530_en.pdf" H 7050 3850 50  0001 C CNN
+F 4 "TDK" H 7050 3850 50  0001 C CNN "Mfr_name"
+F 5 "SPM6530T-4R7M" H 7050 3850 50  0001 C CNN "Mfr_no"
+F 6 "6,5x7,1x3,0mm" H 7050 3850 50  0001 C CNN "Package"
+F 7 "4.7µH" V 7150 3650 50  0000 C CNN "Ind_value"
+F 8 "5.6A" H 7050 3850 50  0001 C CNN "Ind_current_max"
+F 9 "6.2A" H 7050 3850 50  0001 C CNN "Ind_current_sat_max"
+F 10 "35.8mOhm" V 7000 3850 50  0000 C CNN "Ind_DCR_typ"
+F 11 "20%" H 7050 3850 50  0001 C CNN "Ind_tol"
+F 12 ">10MHz" H 7050 3850 50  0001 C CNN "Ind_SFR"
+F 13 "https://octopart.com/spm6530t-4r7m-tdk-18903911?r=sp" H 7050 3850 50  0001 C CNN "Octopart_link"
+F 14 "https://lcsc.com/product-detail/Power-Inductors_TDK-SPM6530T-4R7M_C76857.html" H 7050 3850 50  0001 C CNN "LCSC_link"
+F 15 "C76857" H 7050 3850 50  0001 C CNN "LCSC_ref"
+F 16 "2020-12-02" H 7050 3850 50  0001 C CNN "LCSC_check_date"
+F 17 "$0.1554" H 7050 3850 50  0001 C CNN "LCSC_price_qt=1"
+F 18 "$0.1152" H 7050 3850 50  0001 C CNN "LCSC_price_qt=10"
+F 19 "$0.1004" H 7050 3850 50  0001 C CNN "LCSC_price_qt=100"
+F 20 "$0.0955" H 7050 3850 50  0001 C CNN "LCSC_price_qt=1000"
+F 21 "16,144" H 7050 3850 50  0001 C CNN "LCSC_stock"
+F 22 "https://fr.farnell.com/tdk/spm6530t-4r7m/inductance-4-7uh-20-blindee/dp/2215613?st=SPM6530T-4R7M" H 7050 3850 50  0001 C CNN "Farnell_link"
+F 23 "2215613" H 7050 3850 50  0001 C CNN "Farnell_ref"
+F 24 "2020-12-02" H 7050 3850 50  0001 C CNN "Farnell_check_date"
+F 25 "1,36 €" H 7050 3850 50  0001 C CNN "Farnell_price_qt=1"
+F 26 "1,36 €" H 7050 3850 50  0001 C CNN "Farnell_price_qt=10"
+F 27 "0,738 €" H 7050 3850 50  0001 C CNN "Farnell_price_qt=100"
+F 28 "0,454 €" H 7050 3850 50  0001 C CNN "Farnell_price_qt=1000"
+F 29 "500" H 7050 3850 50  0001 C CNN "Farnell_stock"
+F 30 "https://eu.mouser.com/ProductDetail/TDK/SPM6530T-4R7M?qs=chjFIDm9dbpOGKMR3qNvlw%3D%3D" H 7050 3850 50  0001 C CNN "Mouser_link"
+F 31 "810-SPM6530T-4R7M" H 7050 3850 50  0001 C CNN "Mouser_ref"
+F 32 "2020-12-02" H 7050 3850 50  0001 C CNN "Mouser_check_date"
+F 33 "$1.42" H 7050 3850 50  0001 C CNN "Mouser_price_qt=1"
+F 34 "$1.07" H 7050 3850 50  0001 C CNN "Mouser_price_qt=10"
+F 35 "$0.812" H 7050 3850 50  0001 C CNN "Mouser_price_qt=100"
+F 36 "$0.564" H 7050 3850 50  0001 C CNN "Mouser_price_qt=1000"
+F 37 "353" H 7050 3850 50  0001 C CNN "Mouser_stock"
+F 38 "https://fr.rs-online.com/web/p/inductances-bobinees-cms/9164260/" H 7050 3850 50  0001 C CNN "RS_link"
+F 39 "916-4260" H 7050 3850 50  0001 C CNN "RS_ref"
+F 40 "2020-12-02" H 7050 3850 50  0001 C CNN "RS_check_date"
+F 41 "-" H 7050 3850 50  0001 C CNN "RS_price_qt=1"
+F 42 "1,224 €" H 7050 3850 50  0001 C CNN "RS_price_qt=10"
+F 43 "0,92 €" H 7050 3850 50  0001 C CNN "RS_price_qt=100"
+F 44 "0,734 €" H 7050 3850 50  0001 C CNN "RS_price_qt=1000"
+F 45 "515" H 7050 3850 50  0001 C CNN "RS_stock"
+F 46 "TO_CHECK" H 7050 3850 50  0001 C CNN "Status"
+F 47 "1.01" H 7050 3850 50  0001 C CNN "Release_version"
+F 48 "2020-12-12" H 7050 3850 50  0001 C CNN "Release_date"
+F 49 "ManWithNoName" H 7050 3850 50  0001 C CNN "Designer"
+	1    7050 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L tmk212ab7475kg-t:TMK212AB7475KG-T C3
+U 1 1 5FD94024
+P 4250 4900
+F 0 "C3" H 4365 5082 50  0000 L CNN
+F 1 "TMK212AB7475KG-T" H 4275 4800 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4288 4750 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/396/mlcc02_e-1307760.pdf" H 4250 4900 50  0001 C CNN
+F 4 "Taiyo Yuden" H 4250 4900 50  0001 C CNN "Mfr_name"
+F 5 "TMK212AB7475KG-T" H 4250 4900 50  0001 C CNN "Mfr_no"
+F 6 "4.7µF" H 4365 4991 50  0000 L CNN "Cap_value"
+F 7 "0805" H 4365 4900 50  0000 L CNN "Package"
+F 8 "X7R" H 4365 4809 50  0000 L CNN "Dielectric"
+F 9 "25V" H 4365 4718 50  0000 L CNN "Voltage"
+F 10 "https://octopart.com/tmk212ab7475kg-t-taiyo+yuden-20363790?r=sp" H 4250 4900 50  0001 C CNN "Octopart_link"
+F 11 "https://fr.farnell.com/taiyo-yuden/tmk212ab7475kg-t/ceramic-capacitor-4-7uf-25v-x7r/dp/2779199?scope=partnumberlookahead&ost=TMK212AB7475KG-T&searchref=searchlookahead&exaMfpn=true" H 4250 4900 50  0001 C CNN "Farnell_link"
+F 12 "2779199" H 4250 4900 50  0001 C CNN "Farnell_ref"
+F 13 "2020-11-29" H 4250 4900 50  0001 C CNN "Farnell_check_date"
+F 14 "-" H 4250 4900 50  0001 C CNN "Farnell_price_qt=1"
+F 15 "-" H 4250 4900 50  0001 C CNN "Farnell_price_qt=10"
+F 16 "-" H 4250 4900 50  0001 C CNN "Farnell_price_qt=100"
+F 17 "0,0625 € (QT=3000)" H 4250 4900 50  0001 C CNN "Farnell_price_qt=1000"
+F 18 "3,000" H 4250 4900 50  0001 C CNN "Farnell_stock"
+F 19 "https://lcsc.com/product-detail/New-Arrivals_Taiyo-Yuden-TMK212AB7475KG-T_C163186.html" H 4250 4900 50  0001 C CNN "LCSC_link"
+F 20 "C163186" H 4250 4900 50  0001 C CNN "LCSC_ref"
+F 21 "2020-11-29" H 4250 4900 50  0001 C CNN "LCSC_check_date"
+F 22 "-" H 4250 4900 50  0001 C CNN "LCSC_price_qt=1"
+F 23 "-" H 4250 4900 50  0001 C CNN "LCSC_price_qt=10"
+F 24 "$0.035" H 4250 4900 50  0001 C CNN "LCSC_price_qt=100"
+F 25 "$0.025" H 4250 4900 50  0001 C CNN "LCSC_price_qt=1000"
+F 26 "134,420" H 4250 4900 50  0001 C CNN "LCSC_stock"
+F 27 "https://eu.mouser.com/ProductDetail/Taiyo-Yuden/TMK212AB7475KG-T?qs=%2Fha2pyFaduhOmvqoBXaf2AOtUPA8upoo0e72F1hCYb1lacT8UkHI0g%3D%3D" H 4250 4900 50  0001 C CNN "Mouser_link"
+F 28 "963-TMK212AB7475KG-T " H 4250 4900 50  0001 C CNN "Mouser_ref"
+F 29 "2020-11-29" H 4250 4900 50  0001 C CNN "Mouser_check_date"
+F 30 "$0.352 " H 4250 4900 50  0001 C CNN "Mouser_price_qt=1"
+F 31 "$0.245" H 4250 4900 50  0001 C CNN "Mouser_price_qt=10"
+F 32 "$0.138 " H 4250 4900 50  0001 C CNN "Mouser_price_qt=100"
+F 33 "$0.086" H 4250 4900 50  0001 C CNN "Mouser_price_qt=1000"
+F 34 "289,016 " H 4250 4900 50  0001 C CNN "Mouser_stock"
+F 35 "https://fr.rs-online.com/web/p/condensateurs-ceramique-multicouches/1034141/" H 4250 4900 50  0001 C CNN "RS_link"
+F 36 "103-4141" H 4250 4900 50  0001 C CNN "RS_ref"
+F 37 "2020-11-29" H 4250 4900 50  0001 C CNN "RS_check_date"
+F 38 "-" H 4250 4900 50  0001 C CNN "RS_price_qt=1"
+F 39 "-" H 4250 4900 50  0001 C CNN "RS_price_qt=10"
+F 40 "0,118 €" H 4250 4900 50  0001 C CNN "RS_price_qt=100"
+F 41 "0,069 €" H 4250 4900 50  0001 C CNN "RS_price_qt=1000"
+F 42 "800" H 4250 4900 50  0001 C CNN "RS_stock"
+F 43 "TO_CHECK" H 4250 4900 50  0001 C CNN "Status"
+F 44 "1.01" H 4250 4900 50  0001 C CNN "Release_version"
+F 45 "2020-12-12" H 4250 4900 50  0001 C CNN "Release_date"
+F 46 "ManWithNoName" H 4250 4900 50  0001 C CNN "Designer"
+	1    4250 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L cl10b105ko8nnnc:CL10B105KO8NNNC C4
+U 1 1 5FD9A1C2
+P 4750 4900
+F 0 "C4" H 4865 5082 50  0000 L CNN
+F 1 "CL10B105KO8NNNC" H 4775 4800 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4788 4750 50  0001 C CNN
+F 3 "" H 4750 4900 50  0001 C CNN
+F 4 "Samsung" H 4750 4900 50  0001 C CNN "Mfr_name"
+F 5 "CL10B105KO8NNNC" H 4750 4900 50  0001 C CNN "Mfr_no"
+F 6 "1µF" H 4865 4991 50  0000 L CNN "Cap_value"
+F 7 "0603" H 4865 4900 50  0000 L CNN "Package"
+F 8 "X7R" H 4865 4809 50  0000 L CNN "Dielectric"
+F 9 "16V" H 4865 4718 50  0000 L CNN "Voltage"
+F 10 "https://octopart.com/cl10b105ko8nnnc-samsung-19018973?r=sp" H 4750 4900 50  0001 C CNN "Octopart_link"
+F 11 "https://fr.farnell.com/samsung-electro-mechanics/cl10b105ko8nnnc/condensateur-1uf-16v-mlcc-0603/dp/3013416?st=CL10B105KO8NNNC" H 4750 4900 50  0001 C CNN "Farnell_link"
+F 12 "3013416" H 4750 4900 50  0001 C CNN "Farnell_ref"
+F 13 "2020-11-29" H 4750 4900 50  0001 C CNN "Farnell_check_date"
+F 14 "-" H 4750 4900 50  0001 C CNN "Farnell_price_qt=1"
+F 15 "0,0348 €" H 4750 4900 50  0001 C CNN "Farnell_price_qt=10"
+F 16 "0,0282 €" H 4750 4900 50  0001 C CNN "Farnell_price_qt=100"
+F 17 "0,014 €" H 4750 4900 50  0001 C CNN "Farnell_price_qt=1000"
+F 18 "8,899" H 4750 4900 50  0001 C CNN "Farnell_stock"
+F 19 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL10B105KO8NNNC_1uF-105-10-16V_C59782.html" H 4750 4900 50  0001 C CNN "LCSC_link"
+F 20 "C59782" H 4750 4900 50  0001 C CNN "LCSC_ref"
+F 21 "2020-11-29" H 4750 4900 50  0001 C CNN "LCSC_check_date"
+F 22 "-" H 4750 4900 50  0001 C CNN "LCSC_price_qt=1"
+F 23 "-" H 4750 4900 50  0001 C CNN "LCSC_price_qt=10"
+F 24 "$0.0051" H 4750 4900 50  0001 C CNN "LCSC_price_qt=100"
+F 25 "$0.0037" H 4750 4900 50  0001 C CNN "LCSC_price_qt=1000"
+F 26 "521,550" H 4750 4900 50  0001 C CNN "LCSC_stock"
+F 27 "https://eu.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL10B105KO8NNNC?qs=%2Fha2pyFaduieHDAu2oFb63CEYjc5CYz5gBw28wXw4psj1CqKhO2V6Q%3D%3D" H 4750 4900 50  0001 C CNN "Mouser_link"
+F 28 "187-CL10B105KO8NNNC" H 4750 4900 50  0001 C CNN "Mouser_ref"
+F 29 "2020-11-29" H 4750 4900 50  0001 C CNN "Mouser_check_date"
+F 30 "$0.101" H 4750 4900 50  0001 C CNN "Mouser_price_qt=1"
+F 31 "$0.050" H 4750 4900 50  0001 C CNN "Mouser_price_qt=10"
+F 32 "$0.023" H 4750 4900 50  0001 C CNN "Mouser_price_qt=100"
+F 33 "$0.012" H 4750 4900 50  0001 C CNN "Mouser_price_qt=1000"
+F 34 "579,557" H 4750 4900 50  0001 C CNN "Mouser_stock"
+F 35 "https://fr.rs-online.com/web/p/condensateurs-ceramique-multicouches/7664787/?sra=pmpn" H 4750 4900 50  0001 C CNN "RS_link"
+F 36 "766-4787" H 4750 4900 50  0001 C CNN "RS_ref"
+F 37 "2020-11-29" H 4750 4900 50  0001 C CNN "RS_check_date"
+F 38 "-" H 4750 4900 50  0001 C CNN "RS_price_qt=1"
+F 39 "-" H 4750 4900 50  0001 C CNN "RS_price_qt=10"
+F 40 "-" H 4750 4900 50  0001 C CNN "RS_price_qt=100"
+F 41 "0,008 € (QT=4000)" H 4750 4900 50  0001 C CNN "RS_price_qt=1000"
+F 42 "248,000" H 4750 4900 50  0001 C CNN "RS_stock"
+F 43 "TO_CHECK" H 4750 4900 50  0001 C CNN "Status"
+F 44 "1.00" H 4750 4900 50  0001 C CNN "Release_version"
+F 45 "2020-11-29" H 4750 4900 50  0001 C CNN "Release_date"
+F 46 "ManWithNoName" H 4750 4900 50  0001 C CNN "Designer"
+	1    4750 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L cl10b223kb8nnnc:CL10B223KB8NNNC C5
+U 1 1 5FD9F0E3
+P 6400 3650
+F 0 "C5" H 6515 3832 50  0000 L CNN
+F 1 "CL10B223KB8NNNC" H 6425 3550 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6438 3500 50  0001 C CNN
+F 3 "" H 6400 3650 50  0001 C CNN
+F 4 "Samsung" H 6400 3650 50  0001 C CNN "Mfr_name"
+F 5 "CL10B223KB8NNNC" H 6400 3650 50  0001 C CNN "Mfr_no"
+F 6 "0.022µF" H 6515 3741 50  0000 L CNN "Cap_value"
+F 7 "0603" H 6515 3650 50  0000 L CNN "Package"
+F 8 "X7R" H 6515 3559 50  0000 L CNN "Dielectric"
+F 9 "50V" H 6515 3468 50  0000 L CNN "Voltage"
+F 10 "https://octopart.com/cl10b223kb8nnnc-samsung-9299376?r=sp" H 6400 3650 50  0001 C CNN "Octopart_link"
+F 11 "https://fr.farnell.com/samsung-electro-mechanics/cl10b223kb8nnnc/condensateur-0-022uf-50v-mlcc/dp/3013425?st=CL10B223KB8NNNC#" H 6400 3650 50  0001 C CNN "Farnell_link"
+F 12 "3013425" H 6400 3650 50  0001 C CNN "Farnell_ref"
+F 13 "2020-11-29" H 6400 3650 50  0001 C CNN "Farnell_check_date"
+F 14 "-" H 6400 3650 50  0001 C CNN "Farnell_price_qt=1"
+F 15 "0,0267 €" H 6400 3650 50  0001 C CNN "Farnell_price_qt=10"
+F 16 "0,0215 €" H 6400 3650 50  0001 C CNN "Farnell_price_qt=100"
+F 17 "0,0112 €" H 6400 3650 50  0001 C CNN "Farnell_price_qt=1000"
+F 18 "2,659" H 6400 3650 50  0001 C CNN "Farnell_stock"
+F 19 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL10B223KB8NNNC_22nF-223-10-50V_C21122.html" H 6400 3650 50  0001 C CNN "LCSC_link"
+F 20 "C21122" H 6400 3650 50  0001 C CNN "LCSC_ref"
+F 21 "2020-11-29" H 6400 3650 50  0001 C CNN "LCSC_check_date"
+F 22 "-" H 6400 3650 50  0001 C CNN "LCSC_price_qt=1"
+F 23 "-" H 6400 3650 50  0001 C CNN "LCSC_price_qt=10"
+F 24 "$0.0065" H 6400 3650 50  0001 C CNN "LCSC_price_qt=100"
+F 25 "$0.0047" H 6400 3650 50  0001 C CNN "LCSC_price_qt=1000"
+F 26 "679,900" H 6400 3650 50  0001 C CNN "LCSC_stock"
+F 27 "https://eu.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL10B223KB8NNNC?qs=%2Fha2pyFadugxvmy74XdKf4%252BsCHDiFFyPnyljb4VWdZsHBz1hx7lVWg%3D%3D" H 6400 3650 50  0001 C CNN "Mouser_link"
+F 28 "187-CL10B223KB8NNNC" H 6400 3650 50  0001 C CNN "Mouser_ref"
+F 29 "2020-11-29" H 6400 3650 50  0001 C CNN "Mouser_check_date"
+F 30 "$0.101" H 6400 3650 50  0001 C CNN "Mouser_price_qt=1"
+F 31 "$0.038" H 6400 3650 50  0001 C CNN "Mouser_price_qt=10"
+F 32 "$0.017" H 6400 3650 50  0001 C CNN "Mouser_price_qt=100"
+F 33 "$0.010" H 6400 3650 50  0001 C CNN "Mouser_price_qt=1000"
+F 34 "151,796 " H 6400 3650 50  0001 C CNN "Mouser_stock"
+F 35 "https://fr.rs-online.com/web/p/condensateurs-ceramique-multicouches/7665402/?sra=pmpn" H 6400 3650 50  0001 C CNN "RS_link"
+F 36 "766-5402" H 6400 3650 50  0001 C CNN "RS_ref"
+F 37 "2020-11-29" H 6400 3650 50  0001 C CNN "RS_check_date"
+F 38 "-" H 6400 3650 50  0001 C CNN "RS_price_qt=1"
+F 39 "-" H 6400 3650 50  0001 C CNN "RS_price_qt=10"
+F 40 "-" H 6400 3650 50  0001 C CNN "RS_price_qt=100"
+F 41 "0,006 € (QT=4000)" H 6400 3650 50  0001 C CNN "RS_price_qt=1000"
+F 42 "220,000" H 6400 3650 50  0001 C CNN "RS_stock"
+F 43 "TO_CHECK" H 6400 3650 50  0001 C CNN "Status"
+F 44 "1.01" H 6400 3650 50  0001 C CNN "Release_version"
+F 45 "2020-12-12" H 6400 3650 50  0001 C CNN "Release_date"
+F 46 "ManWithNoName" H 6400 3650 50  0001 C CNN "Designer"
+	1    6400 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L cl31b106kahnnne:CL31B106KAHNNNE C6
+U 1 1 5FDA4707
+P 7450 4600
+F 0 "C6" H 7565 4782 50  0000 L CNN
+F 1 "CL31B106KAHNNNE" H 7475 4500 50  0001 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 7488 4450 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/585/MLCC-1837944.pdf" H 7450 4600 50  0001 C CNN
+F 4 "Samsung" H 7450 4600 50  0001 C CNN "Mfr_name"
+F 5 "CL31B106KAHNNNE" H 7450 4600 50  0001 C CNN "Mfr_no"
+F 6 "10µF" H 7565 4691 50  0000 L CNN "Cap_value"
+F 7 "1206" H 7565 4600 50  0000 L CNN "Package"
+F 8 "X7R" H 7565 4509 50  0000 L CNN "Dielectric"
+F 9 "25V" H 7565 4418 50  0000 L CNN "Voltage"
+F 10 "https://octopart.com/cl31b106kahnnne-samsung-18621872?r=sp#PriceAndStock" H 7450 4600 50  0001 C CNN "Octopart_link"
+F 11 "https://fr.farnell.com/samsung-electro-mechanics/cl31b106kahnnne/condensateur-10uf-25v-mlcc-1206/dp/3013526?st=cl31b106kahnnne" H 7450 4600 50  0001 C CNN "Farnell_link"
+F 12 "3013526" H 7450 4600 50  0001 C CNN "Farnell_ref"
+F 13 "2020-11-28" H 7450 4600 50  0001 C CNN "Farnell_check_date"
+F 14 "-" H 7450 4600 50  0001 C CNN "Farnell_price_qt=1"
+F 15 "0,227 €" H 7450 4600 50  0001 C CNN "Farnell_price_qt=10"
+F 16 "0,105 €" H 7450 4600 50  0001 C CNN "Farnell_price_qt=100"
+F 17 "0,0579 €" H 7450 4600 50  0001 C CNN "Farnell_price_qt=1000"
+F 18 "22,345" H 7450 4600 50  0001 C CNN "Farnell_stock"
+F 19 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL31B106KAHNNNE_C14860.html" H 7450 4600 50  0001 C CNN "LCSC_link"
+F 20 "C14860" H 7450 4600 50  0001 C CNN "LCSC_ref"
+F 21 "2020-11-28" H 7450 4600 50  0001 C CNN "LCSC_check_date"
+F 22 "-" H 7450 4600 50  0001 C CNN "LCSC_price_qt=1"
+F 23 "$0.0331" H 7450 4600 50  0001 C CNN "LCSC_price_qt=10"
+F 24 "$0.0278" H 7450 4600 50  0001 C CNN "LCSC_price_qt=100"
+F 25 "$0.025" H 7450 4600 50  0001 C CNN "LCSC_price_qt=1000"
+F 26 "135,960" H 7450 4600 50  0001 C CNN "LCSC_stock"
+F 27 "https://eu.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL31B106KAHNNNE?qs=%2Fha2pyFaduiEUnj6zqZqn3kcK5eMUinJ%2Fz%2F9uc9Zsjkl3KXYGdw53g%3D%3D" H 7450 4600 50  0001 C CNN "Mouser_link"
+F 28 "187-CL31B106KAHNNNE" H 7450 4600 50  0001 C CNN "Mouser_ref"
+F 29 "2020-11-28" H 7450 4600 50  0001 C CNN "Mouser_check_date"
+F 30 "$0.242" H 7450 4600 50  0001 C CNN "Mouser_price_qt=1"
+F 31 "$0.168" H 7450 4600 50  0001 C CNN "Mouser_price_qt=10"
+F 32 "$0.095" H 7450 4600 50  0001 C CNN "Mouser_price_qt=100"
+F 33 "$0.058" H 7450 4600 50  0001 C CNN "Mouser_price_qt=1000"
+F 34 "73,742" H 7450 4600 50  0001 C CNN "Mouser_stock"
+F 35 "https://fr.rs-online.com/web/p/condensateurs-ceramique-multicouches/7666773/?relevancy-data=7365617263685F636173636164655F6F726465723D31267365617263685F696E746572666163655F6E616D653D4931384E53656172636847656E65726963267365617263685F6C616E67756167655F757365643D6672267365617263685F6D617463685F6D6F64653D6D61746368616C6C7061727469616C267365617263685F7061747465726E5F6D6174636865643D5E5B5C707B4C7D5C707B4E647D2D2C2F255C2E5D2B24267365617263685F7061747465726E5F6F726465723D313333267365617263685F73745F6E6F726D616C697365643D59267365617263685F726573706F6E73655F616374696F6E3D267365617263685F747970653D4B4559574F52445F53494E474C455F414C5048415F4E554D45524943267365617263685F7370656C6C5F636F72726563745F6170706C6965643D59267365617263685F77696C645F63617264696E675F6D6F64653D4E4F4E45267365617263685F6B6579776F72643D434C3331423130364B41484E4E4E45267365617263685F6B6579776F72645F6170703D434C3331423130364B41484E4E4E45267365617263685F636F6E6669673D3126&searchHistory=%7B%22enabled%22%3Atrue%7D" H 7450 4600 50  0001 C CNN "RS_link"
+F 36 "766-6773" H 7450 4600 50  0001 C CNN "RS_ref"
+F 37 "2020-11-28" H 7450 4600 50  0001 C CNN "RS_check_date"
+F 38 "-" H 7450 4600 50  0001 C CNN "RS_price_qt=1"
+F 39 "-" H 7450 4600 50  0001 C CNN "RS_price_qt=10"
+F 40 "-" H 7450 4600 50  0001 C CNN "RS_price_qt=100"
+F 41 "0,048 € (QT=2000)" H 7450 4600 50  0001 C CNN "RS_price_qt=1000"
+F 42 "388,000" H 7450 4600 50  0001 C CNN "RS_stock"
+F 43 "TO_CHECK" H 7450 4600 50  0001 C CNN "Status"
+F 44 "1.01" H 7450 4600 50  0001 C CNN "Release_version"
+F 45 "2020-12-12" H 7450 4600 50  0001 C CNN "Release_date"
+F 46 "ManWithNoName" H 7450 4600 50  0001 C CNN "Designer"
+	1    7450 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L cl31b106kahnnne:CL31B106KAHNNNE C7
+U 1 1 5FDA732F
+P 8300 3350
+F 0 "C7" H 8415 3532 50  0000 L CNN
+F 1 "CL31B106KAHNNNE" H 8325 3250 50  0001 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 8338 3200 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/585/MLCC-1837944.pdf" H 8300 3350 50  0001 C CNN
+F 4 "Samsung" H 8300 3350 50  0001 C CNN "Mfr_name"
+F 5 "CL31B106KAHNNNE" H 8300 3350 50  0001 C CNN "Mfr_no"
+F 6 "10µF" H 8415 3441 50  0000 L CNN "Cap_value"
+F 7 "1206" H 8415 3350 50  0000 L CNN "Package"
+F 8 "X7R" H 8415 3259 50  0000 L CNN "Dielectric"
+F 9 "25V" H 8415 3168 50  0000 L CNN "Voltage"
+F 10 "https://octopart.com/cl31b106kahnnne-samsung-18621872?r=sp#PriceAndStock" H 8300 3350 50  0001 C CNN "Octopart_link"
+F 11 "https://fr.farnell.com/samsung-electro-mechanics/cl31b106kahnnne/condensateur-10uf-25v-mlcc-1206/dp/3013526?st=cl31b106kahnnne" H 8300 3350 50  0001 C CNN "Farnell_link"
+F 12 "3013526" H 8300 3350 50  0001 C CNN "Farnell_ref"
+F 13 "2020-11-28" H 8300 3350 50  0001 C CNN "Farnell_check_date"
+F 14 "-" H 8300 3350 50  0001 C CNN "Farnell_price_qt=1"
+F 15 "0,227 €" H 8300 3350 50  0001 C CNN "Farnell_price_qt=10"
+F 16 "0,105 €" H 8300 3350 50  0001 C CNN "Farnell_price_qt=100"
+F 17 "0,0579 €" H 8300 3350 50  0001 C CNN "Farnell_price_qt=1000"
+F 18 "22,345" H 8300 3350 50  0001 C CNN "Farnell_stock"
+F 19 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL31B106KAHNNNE_C14860.html" H 8300 3350 50  0001 C CNN "LCSC_link"
+F 20 "C14860" H 8300 3350 50  0001 C CNN "LCSC_ref"
+F 21 "2020-11-28" H 8300 3350 50  0001 C CNN "LCSC_check_date"
+F 22 "-" H 8300 3350 50  0001 C CNN "LCSC_price_qt=1"
+F 23 "$0.0331" H 8300 3350 50  0001 C CNN "LCSC_price_qt=10"
+F 24 "$0.0278" H 8300 3350 50  0001 C CNN "LCSC_price_qt=100"
+F 25 "$0.025" H 8300 3350 50  0001 C CNN "LCSC_price_qt=1000"
+F 26 "135,960" H 8300 3350 50  0001 C CNN "LCSC_stock"
+F 27 "https://eu.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL31B106KAHNNNE?qs=%2Fha2pyFaduiEUnj6zqZqn3kcK5eMUinJ%2Fz%2F9uc9Zsjkl3KXYGdw53g%3D%3D" H 8300 3350 50  0001 C CNN "Mouser_link"
+F 28 "187-CL31B106KAHNNNE" H 8300 3350 50  0001 C CNN "Mouser_ref"
+F 29 "2020-11-28" H 8300 3350 50  0001 C CNN "Mouser_check_date"
+F 30 "$0.242" H 8300 3350 50  0001 C CNN "Mouser_price_qt=1"
+F 31 "$0.168" H 8300 3350 50  0001 C CNN "Mouser_price_qt=10"
+F 32 "$0.095" H 8300 3350 50  0001 C CNN "Mouser_price_qt=100"
+F 33 "$0.058" H 8300 3350 50  0001 C CNN "Mouser_price_qt=1000"
+F 34 "73,742" H 8300 3350 50  0001 C CNN "Mouser_stock"
+F 35 "https://fr.rs-online.com/web/p/condensateurs-ceramique-multicouches/7666773/?relevancy-data=7365617263685F636173636164655F6F726465723D31267365617263685F696E746572666163655F6E616D653D4931384E53656172636847656E65726963267365617263685F6C616E67756167655F757365643D6672267365617263685F6D617463685F6D6F64653D6D61746368616C6C7061727469616C267365617263685F7061747465726E5F6D6174636865643D5E5B5C707B4C7D5C707B4E647D2D2C2F255C2E5D2B24267365617263685F7061747465726E5F6F726465723D313333267365617263685F73745F6E6F726D616C697365643D59267365617263685F726573706F6E73655F616374696F6E3D267365617263685F747970653D4B4559574F52445F53494E474C455F414C5048415F4E554D45524943267365617263685F7370656C6C5F636F72726563745F6170706C6965643D59267365617263685F77696C645F63617264696E675F6D6F64653D4E4F4E45267365617263685F6B6579776F72643D434C3331423130364B41484E4E4E45267365617263685F6B6579776F72645F6170703D434C3331423130364B41484E4E4E45267365617263685F636F6E6669673D3126&searchHistory=%7B%22enabled%22%3Atrue%7D" H 8300 3350 50  0001 C CNN "RS_link"
+F 36 "766-6773" H 8300 3350 50  0001 C CNN "RS_ref"
+F 37 "2020-11-28" H 8300 3350 50  0001 C CNN "RS_check_date"
+F 38 "-" H 8300 3350 50  0001 C CNN "RS_price_qt=1"
+F 39 "-" H 8300 3350 50  0001 C CNN "RS_price_qt=10"
+F 40 "-" H 8300 3350 50  0001 C CNN "RS_price_qt=100"
+F 41 "0,048 € (QT=2000)" H 8300 3350 50  0001 C CNN "RS_price_qt=1000"
+F 42 "388,000" H 8300 3350 50  0001 C CNN "RS_stock"
+F 43 "TO_CHECK" H 8300 3350 50  0001 C CNN "Status"
+F 44 "1.01" H 8300 3350 50  0001 C CNN "Release_version"
+F 45 "2020-12-12" H 8300 3350 50  0001 C CNN "Release_date"
+F 46 "ManWithNoName" H 8300 3350 50  0001 C CNN "Designer"
+	1    8300 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L jst_xh_s2b_thru:JST_XH_S2B_thru J3
+U 1 1 5FDB2E6B
+P 10150 5950
+F 0 "J3" H 10230 5942 50  0000 L CNN
+F 1 "JST_XH_S2B_thru" H 10230 5851 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal" H 10150 5950 50  0001 C CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 10150 5950 50  0001 C CNN
+F 4 "JST" H 10150 5950 50  0001 C CNN "Mfr_name"
+F 5 "S2B-XH-A(LF)(SN)" H 10150 5950 50  0001 C CNN "Mfr_no"
+F 6 "XH Right Angle Thru 2pins" H 10150 5950 50  0001 C CNN "Package"
+F 7 "White" H 10150 5950 50  0001 C CNN "Color"
+F 8 "https://octopart.com/s2b-xh-a%28lf%29%28sn%29-jst-3990369?r=sp#PriceAndStock" H 10150 5950 50  0001 C CNN "Octopart_link"
+F 9 "https://fr.farnell.com/jst-japan-solderless-terminals/s2b-xh-a-lf-sn/embase-male-90-deg-2-voies/dp/1516289?ost=s2b-xh-a%28lf%29%28sn%29" H 10150 5950 50  0001 C CNN "Farnell_link"
+F 10 "1516289" H 10150 5950 50  0001 C CNN "Farnell_ref"
+F 11 "2020-11-24" H 10150 5950 50  0001 C CNN "Farnell_check_date"
+F 12 "-" H 10150 5950 50  0001 C CNN "Farnell_price_qt=1"
+F 13 "-" H 10150 5950 50  0001 C CNN "Farnell_price_qt=10"
+F 14 "0.099€" H 10150 5950 50  0001 C CNN "Farnell_price_qt=100"
+F 15 "0.068€" H 10150 5950 50  0001 C CNN "Farnell_price_qt=1000"
+F 16 "53048" H 10150 5950 50  0001 C CNN "Farnell_stock"
+F 17 "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_JST-Sales-America-S2B-XH-A-LF-SN_C157931.html" H 10150 5950 50  0001 C CNN "LCSC_link"
+F 18 "C157931" H 10150 5950 50  0001 C CNN "LCSC_ref"
+F 19 "2020-11-24" H 10150 5950 50  0001 C CNN "LCSC_check_date"
+F 20 "-" H 10150 5950 50  0001 C CNN "LCSC_price_qt=1"
+F 21 "$0.054" H 10150 5950 50  0001 C CNN "LCSC_price_qt=10"
+F 22 "$0.040" H 10150 5950 50  0001 C CNN "LCSC_price_qt=100"
+F 23 "$0.035" H 10150 5950 50  0001 C CNN "LCSC_price_qt=1000"
+F 24 "23650" H 10150 5950 50  0001 C CNN "LCSC_stock"
+F 25 "-" H 10150 5950 50  0001 C CNN "Mouser_link"
+F 26 "-" H 10150 5950 50  0001 C CNN "Mouser_ref"
+F 27 "2020-11-24" H 10150 5950 50  0001 C CNN "Mouser_check_date"
+F 28 "-" H 10150 5950 50  0001 C CNN "Mouser_price_qt=1"
+F 29 "-" H 10150 5950 50  0001 C CNN "Mouser_price_qt=10"
+F 30 "-" H 10150 5950 50  0001 C CNN "Mouser_price_qt=100"
+F 31 "-" H 10150 5950 50  0001 C CNN "Mouser_price_qt=1000"
+F 32 "-" H 10150 5950 50  0001 C CNN "Mouser_stock"
+F 33 "https://fr.rs-online.com/web/p/embases-circuits-imprimes/8201582/" H 10150 5950 50  0001 C CNN "RS_link"
+F 34 "820-1582" H 10150 5950 50  0001 C CNN "RS_ref"
+F 35 "2020-11-24" H 10150 5950 50  0001 C CNN "RS_check_date"
+F 36 "-" H 10150 5950 50  0001 C CNN "RS_price_qt=1"
+F 37 "0.43€" H 10150 5950 50  0001 C CNN "RS_price_qt=10"
+F 38 "-" H 10150 5950 50  0001 C CNN "RS_price_qt=100"
+F 39 "0.108€" H 10150 5950 50  0001 C CNN "RS_price_qt=1000"
+F 40 "5760" H 10150 5950 50  0001 C CNN "RS_stock"
+F 41 "TO_CHECK" H 10150 5950 50  0001 C CNN "Status"
+F 42 "1.01" H 10150 5950 50  0001 C CNN "Release_version"
+F 43 "2020-12-12" H 10150 5950 50  0001 C CNN "Release_date"
+F 44 "ManWithNoName" H 10150 5950 50  0001 C CNN "Designer"
+	1    10150 5950
+	1    0    0    -1  
+$EndComp
+Text Notes 8800 6300 0    50   ~ 0
+Do Not Populate\n(Option)
+$Comp
+L jst_zh_s2b_thru:JST_ZH_S2B_thru J2
+U 1 1 5FDBD7C5
+P 8850 5950
+F 0 "J2" H 8930 5942 50  0000 L CNN
+F 1 "DNP/JST_ZH_S2B_thru" H 8930 5851 50  0000 L CNN
+F 2 "Connector_JST_user:JST_ZH_S2B-ZR_1x02_P1.50mm_Horizontal" H 8850 5950 50  0001 C CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/eZH.pdf" H 8850 5950 50  0001 C CNN
+F 4 "JST" H 8850 5950 50  0001 C CNN "Mfr_name"
+F 5 "S2B-ZR(LF)(SN)" H 8850 5950 50  0001 C CNN "Mfr_no"
+F 6 "ZH Right Angle Thru 2pins" H 8850 5950 50  0001 C CNN "Package"
+F 7 "White" H 8850 5950 50  0001 C CNN "Color"
+F 8 "https://octopart.com/s2b-zr%28lf%29%28sn%29-jst-248833?r=sp" H 8850 5950 50  0001 C CNN "Octopart_link"
+F 9 "https://fr.farnell.com/jst-japan-solderless-terminals/s2b-zr-lf-sn/embase-entree-laterale-2-voies/dp/9491813?scope=partnumberlookahead&ost=9491813&searchref=searchlookahead&exaMfpn=true" H 8850 5950 50  0001 C CNN "Farnell_link"
+F 10 "9491813" H 8850 5950 50  0001 C CNN "Farnell_ref"
+F 11 "2020-11-25" H 8850 5950 50  0001 C CNN "Farnell_check_date"
+F 12 "0.077€" H 8850 5950 50  0001 C CNN "Farnell_price_qt=100"
+F 13 "0.067€" H 8850 5950 50  0001 C CNN "Farnell_price_qt=1000"
+F 14 "24362" H 8850 5950 50  0001 C CNN "Farnell_stock"
+F 15 "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_JST-Sales-America-S2B-ZR-LF-SN_C157930.html" H 8850 5950 50  0001 C CNN "LCSC_link"
+F 16 "C157930" H 8850 5950 50  0001 C CNN "LCSC_ref"
+F 17 "2020-11-25" H 8850 5950 50  0001 C CNN "LCSC_check_date"
+F 18 "-" H 8850 5950 50  0001 C CNN "LCSC_price_qt=1"
+F 19 "$0.050" H 8850 5950 50  0001 C CNN "LCSC_price_qt=10"
+F 20 "$0.036" H 8850 5950 50  0001 C CNN "LCSC_price_qt=100"
+F 21 "$0.031" H 8850 5950 50  0001 C CNN "LCSC_price_qt=1000"
+F 22 "4300" H 8850 5950 50  0001 C CNN "LCSC_stock"
+F 23 "https://eu.mouser.com/ProductDetail/JST/S2B-ZR-LFSN?qs=%2Fha2pyFadugq2jRRAGtYfIV58loDKmQolDnBD3Dd%2FKWMFsJXC%2FTC6g%3D%3D" H 8850 5950 50  0001 C CNN "Mouser_link"
+F 24 "-" H 8850 5950 50  0001 C CNN "Mouser_ref"
+F 25 "2020-11-25" H 8850 5950 50  0001 C CNN "Mouser_check_date"
+F 26 "-" H 8850 5950 50  0001 C CNN "Mouser_price_qt=1"
+F 27 "-" H 8850 5950 50  0001 C CNN "Mouser_price_qt=10"
+F 28 "-" H 8850 5950 50  0001 C CNN "Mouser_price_qt=100"
+F 29 "-" H 8850 5950 50  0001 C CNN "Mouser_price_qt=1000"
+F 30 "4300" H 8850 5950 50  0001 C CNN "Mouser_stock"
+F 31 "https://fr.rs-online.com/web/p/embases-circuits-imprimes/7620765/" H 8850 5950 50  0001 C CNN "RS_link"
+F 32 "762-0765" H 8850 5950 50  0001 C CNN "RS_ref"
+F 33 "2020-11-25" H 8850 5950 50  0001 C CNN "RS_check_date"
+F 34 "-" H 8850 5950 50  0001 C CNN "RS_price_qt=1"
+F 35 "0.484€" H 8850 5950 50  0001 C CNN "RS_price_qt=10"
+F 36 "0.484€" H 8850 5950 50  0001 C CNN "RS_price_qt=100"
+F 37 "0.364€" H 8850 5950 50  0001 C CNN "RS_price_qt=1000"
+F 38 "1765" H 8850 5950 50  0001 C CNN "RS_stock"
+F 39 "TO_CHECK" H 8850 5950 50  0001 C CNN "Status"
+F 40 "1.01" H 8850 5950 50  0001 C CNN "Release_version"
+F 41 "2020-12-12" H 8850 5950 50  0001 C CNN "Release_date"
+F 42 "ManWithNoName" H 8850 5950 50  0001 C CNN "Designer"
+	1    8850 5950
+	1    0    0    -1  
+$EndComp
+Text Notes 6750 600  0    50   ~ 0
+Do Not Populate (Default)
 $EndSCHEMATC

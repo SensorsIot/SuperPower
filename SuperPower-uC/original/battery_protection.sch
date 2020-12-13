@@ -143,42 +143,42 @@ LiFePO4 SOT23-6 ICs List :\n- AP9101CK6-CPTRG1 (3,65V)\n- AP9101CK6-ASTRG1 (3,80
 $Comp
 L power:-BATT #PWR04
 U 1 1 5F7A20F6
-P 3500 2100
-F 0 "#PWR04" H 3500 1950 50  0001 C CNN
-F 1 "-BATT" H 3515 2273 50  0000 C CNN
-F 2 "" H 3500 2100 50  0001 C CNN
-F 3 "" H 3500 2100 50  0001 C CNN
-	1    3500 2100
+P 3800 2100
+F 0 "#PWR04" H 3800 1950 50  0001 C CNN
+F 1 "-BATT" H 3815 2273 50  0000 C CNN
+F 2 "" H 3800 2100 50  0001 C CNN
+F 3 "" H 3800 2100 50  0001 C CNN
+	1    3800 2100
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:+BATT #PWR03
 U 1 1 5F7A2546
-P 3500 1300
-F 0 "#PWR03" H 3500 1150 50  0001 C CNN
-F 1 "+BATT" H 3515 1473 50  0000 C CNN
-F 2 "" H 3500 1300 50  0001 C CNN
-F 3 "" H 3500 1300 50  0001 C CNN
-	1    3500 1300
+P 3800 1300
+F 0 "#PWR03" H 3800 1150 50  0001 C CNN
+F 1 "+BATT" H 3815 1473 50  0000 C CNN
+F 2 "" H 3800 1300 50  0001 C CNN
+F 3 "" H 3800 1300 50  0001 C CNN
+	1    3800 1300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3500 1500 3500 1400
+	3800 1500 3800 1400
 Wire Wire Line
-	3500 1800 3500 1900
+	3800 1800 3800 1900
 Wire Wire Line
-	3300 1700 3300 1900
+	3550 1700 3550 1900
 Wire Wire Line
-	3300 1900 3500 1900
+	3550 1900 3800 1900
 Wire Wire Line
-	3500 1900 3500 2000
+	3800 1900 3800 2000
 Wire Wire Line
-	3300 1600 3300 1400
+	3550 1600 3550 1400
 Wire Wire Line
-	3300 1400 3500 1400
-Connection ~ 3500 1400
+	3550 1400 3800 1400
+Connection ~ 3800 1400
 Wire Wire Line
-	3500 1400 3500 1300
+	3800 1400 3800 1300
 Text Notes 8150 2450 0    50   ~ 0
 Chinese Chip price range from LCSC (10/2020) :\n$0.075-0.115 @qt=10\n$0.054-0.087 @qt=100
 Wire Wire Line
@@ -262,21 +262,21 @@ In case of using an external battery\nwith an embedded protection circuit. (or a
 $Comp
 L power:PWR_FLAG #FLG03
 U 1 1 5F8B1179
-P 3850 2100
-F 0 "#FLG03" H 3850 2175 50  0001 C CNN
-F 1 "PWR_FLAG" H 3850 2273 50  0001 C CNN
-F 2 "" H 3850 2100 50  0001 C CNN
-F 3 "~" H 3850 2100 50  0001 C CNN
-	1    3850 2100
+P 4150 2100
+F 0 "#FLG03" H 4150 2175 50  0001 C CNN
+F 1 "PWR_FLAG" H 4150 2273 50  0001 C CNN
+F 2 "" H 4150 2100 50  0001 C CNN
+F 3 "~" H 4150 2100 50  0001 C CNN
+	1    4150 2100
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3850 2100 3850 2000
+	4150 2100 4150 2000
 Wire Wire Line
-	3850 2000 3500 2000
-Connection ~ 3500 2000
+	4150 2000 3800 2000
+Connection ~ 3800 2000
 Wire Wire Line
-	3500 2000 3500 2100
+	3800 2000 3800 2100
 Connection ~ 1900 3350
 Wire Wire Line
 	1900 3350 1900 3450
@@ -318,10 +318,10 @@ Wire Wire Line
 	3850 5200 3850 5300
 Connection ~ 3850 5200
 Wire Wire Line
-	3200 1600 3300 1600
+	3200 1600 3550 1600
 Wire Wire Line
-	3300 1700 3200 1700
-Connection ~ 3500 1900
+	3550 1700 3200 1700
+Connection ~ 3800 1900
 Text Notes 2100 1300 0    50   ~ 0
 External Battery connector
 Wire Notes Line
@@ -342,7 +342,7 @@ Wire Notes Line
 	6850 2700 6850 5900
 Wire Notes Line
 	1250 2700 1250 5900
-Text Notes 3600 1900 0    50   ~ 0
+Text Notes 3900 1900 0    50   ~ 0
 18650 Battery Holder
 Wire Notes Line
 	550  1450 2000 1450
@@ -580,51 +580,51 @@ $EndComp
 $Comp
 L battery_cell_holder_18650_smt_1042:Battery_Cell_Holder_18650_SMT_1042 BT1
 U 1 1 5FD97812
-P 3500 1700
-F 0 "BT1" H 3618 1841 50  0000 L CNN
-F 1 "Battery_Cell_Holder_18650_SMT_1042" H 3600 1700 50  0001 L CNN
-F 2 "Battery:BatteryHolder_Keystone_1042_1x18650" V 3500 1760 50  0001 C CNN
-F 3 "https://www.keyelco.com/product-pdf.cfm?p=918" V 3500 1760 50  0001 C CNN
-F 4 "Keystone" H 3618 1750 50  0000 L CNN "Mfr_name"
-F 5 "1042" H 3618 1659 50  0000 L CNN "Mfr_no"
-F 6 "https://octopart.com/1042-keystone-19977746?r=sp#PriceAndStock" H 3500 1700 50  0001 C CNN "Octopart_link"
-F 7 "https://fr.farnell.com/keystone/1042p/battery-holder-18650-smd/dp/2674338?ost=keystone+1042" H 3500 1700 50  0001 C CNN "Farnell_link"
-F 8 "?" H 3500 1700 50  0001 C CNN "Farnell_ref"
-F 9 "2020-11-29" H 3500 1700 50  0001 C CNN "Farnell_check_date"
-F 10 "2,94 €" H 3500 1700 50  0001 C CNN "Farnell_price_qt=1"
-F 11 "2,65 €" H 3500 1700 50  0001 C CNN "Farnell_price_qt=10"
-F 12 "2,26 €" H 3500 1700 50  0001 C CNN "Farnell_price_qt=100"
-F 13 "1,62 €" H 3500 1700 50  0001 C CNN "Farnell_price_qt=1000"
-F 14 "Available from 2021-01-16" H 3500 1700 50  0001 C CNN "Farnell_stock"
-F 15 "-" H 3500 1700 50  0001 C CNN "LCSC_link"
-F 16 "-" H 3500 1700 50  0001 C CNN "LCSC_ref"
-F 17 "2020-11-29" H 3500 1700 50  0001 C CNN "LCSC_check_date"
-F 18 "-" H 3500 1700 50  0001 C CNN "LCSC_price_qt=1"
-F 19 "-" H 3500 1700 50  0001 C CNN "LCSC_price_qt=10"
-F 20 "-" H 3500 1700 50  0001 C CNN "LCSC_price_qt=100"
-F 21 "-" H 3500 1700 50  0001 C CNN "LCSC_price_qt=1000"
-F 22 "-" H 3500 1700 50  0001 C CNN "LCSC_stock"
-F 23 "https://eu.mouser.com/ProductDetail/Keystone-Electronics/1042?qs=%2F7TOpeL5Mz4qPdWi9tuLKw%3D%3D" H 3500 1700 50  0001 C CNN "Mouser_link"
-F 24 "?" H 3500 1700 50  0001 C CNN "Mouser_ref"
-F 25 "2020-11-29" H 3500 1700 50  0001 C CNN "Mouser_check_date"
-F 26 "$3.62" H 3500 1700 50  0001 C CNN "Mouser_price_qt=1"
-F 27 "-" H 3500 1700 50  0001 C CNN "Mouser_price_qt=10"
-F 28 "$3.13" H 3500 1700 50  0001 C CNN "Mouser_price_qt=100"
-F 29 "$2.36" H 3500 1700 50  0001 C CNN "Mouser_price_qt=1000"
-F 30 "3,942" H 3500 1700 50  0001 C CNN "Mouser_stock"
-F 31 "-" H 3500 1700 50  0001 C CNN "RS_link"
-F 32 "-" H 3500 1700 50  0001 C CNN "RS_ref"
-F 33 "2020-11-29" H 3500 1700 50  0001 C CNN "RS_check_date"
-F 34 "-" H 3500 1700 50  0001 C CNN "RS_price_qt=1"
-F 35 "-" H 3500 1700 50  0001 C CNN "RS_price_qt=10"
-F 36 "-" H 3500 1700 50  0001 C CNN "RS_price_qt=100"
-F 37 "-" H 3500 1700 50  0001 C CNN "RS_price_qt=1000"
-F 38 "-" H 3500 1700 50  0001 C CNN "RS_stock"
-F 39 "TO_CHECK" H 3500 1700 50  0001 C CNN "Status"
-F 40 "1.01" H 3500 1700 50  0001 C CNN "Release_version"
-F 41 "2020-12-12" H 3500 1700 50  0001 C CNN "Release_date"
-F 42 "ManWithNoName" H 3500 1700 50  0001 C CNN "Designer"
-	1    3500 1700
+P 3800 1700
+F 0 "BT1" H 3918 1841 50  0000 L CNN
+F 1 "Battery_Cell_Holder_18650_SMT_1042" H 3900 1700 50  0001 L CNN
+F 2 "Battery:BatteryHolder_Keystone_1042_1x18650" V 3800 1760 50  0001 C CNN
+F 3 "https://www.keyelco.com/product-pdf.cfm?p=918" V 3800 1760 50  0001 C CNN
+F 4 "Keystone" H 3918 1750 50  0000 L CNN "Mfr_name"
+F 5 "1042" H 3918 1659 50  0000 L CNN "Mfr_no"
+F 6 "https://octopart.com/1042-keystone-19977746?r=sp#PriceAndStock" H 3800 1700 50  0001 C CNN "Octopart_link"
+F 7 "https://fr.farnell.com/keystone/1042p/battery-holder-18650-smd/dp/2674338?ost=keystone+1042" H 3800 1700 50  0001 C CNN "Farnell_link"
+F 8 "?" H 3800 1700 50  0001 C CNN "Farnell_ref"
+F 9 "2020-11-29" H 3800 1700 50  0001 C CNN "Farnell_check_date"
+F 10 "2,94 €" H 3800 1700 50  0001 C CNN "Farnell_price_qt=1"
+F 11 "2,65 €" H 3800 1700 50  0001 C CNN "Farnell_price_qt=10"
+F 12 "2,26 €" H 3800 1700 50  0001 C CNN "Farnell_price_qt=100"
+F 13 "1,62 €" H 3800 1700 50  0001 C CNN "Farnell_price_qt=1000"
+F 14 "Available from 2021-01-16" H 3800 1700 50  0001 C CNN "Farnell_stock"
+F 15 "-" H 3800 1700 50  0001 C CNN "LCSC_link"
+F 16 "-" H 3800 1700 50  0001 C CNN "LCSC_ref"
+F 17 "2020-11-29" H 3800 1700 50  0001 C CNN "LCSC_check_date"
+F 18 "-" H 3800 1700 50  0001 C CNN "LCSC_price_qt=1"
+F 19 "-" H 3800 1700 50  0001 C CNN "LCSC_price_qt=10"
+F 20 "-" H 3800 1700 50  0001 C CNN "LCSC_price_qt=100"
+F 21 "-" H 3800 1700 50  0001 C CNN "LCSC_price_qt=1000"
+F 22 "-" H 3800 1700 50  0001 C CNN "LCSC_stock"
+F 23 "https://eu.mouser.com/ProductDetail/Keystone-Electronics/1042?qs=%2F7TOpeL5Mz4qPdWi9tuLKw%3D%3D" H 3800 1700 50  0001 C CNN "Mouser_link"
+F 24 "?" H 3800 1700 50  0001 C CNN "Mouser_ref"
+F 25 "2020-11-29" H 3800 1700 50  0001 C CNN "Mouser_check_date"
+F 26 "$3.62" H 3800 1700 50  0001 C CNN "Mouser_price_qt=1"
+F 27 "-" H 3800 1700 50  0001 C CNN "Mouser_price_qt=10"
+F 28 "$3.13" H 3800 1700 50  0001 C CNN "Mouser_price_qt=100"
+F 29 "$2.36" H 3800 1700 50  0001 C CNN "Mouser_price_qt=1000"
+F 30 "3,942" H 3800 1700 50  0001 C CNN "Mouser_stock"
+F 31 "-" H 3800 1700 50  0001 C CNN "RS_link"
+F 32 "-" H 3800 1700 50  0001 C CNN "RS_ref"
+F 33 "2020-11-29" H 3800 1700 50  0001 C CNN "RS_check_date"
+F 34 "-" H 3800 1700 50  0001 C CNN "RS_price_qt=1"
+F 35 "-" H 3800 1700 50  0001 C CNN "RS_price_qt=10"
+F 36 "-" H 3800 1700 50  0001 C CNN "RS_price_qt=100"
+F 37 "-" H 3800 1700 50  0001 C CNN "RS_price_qt=1000"
+F 38 "-" H 3800 1700 50  0001 C CNN "RS_stock"
+F 39 "TO_CHECK" H 3800 1700 50  0001 C CNN "Status"
+F 40 "1.01" H 3800 1700 50  0001 C CNN "Release_version"
+F 41 "2020-12-12" H 3800 1700 50  0001 C CNN "Release_date"
+F 42 "ManWithNoName" H 3800 1700 50  0001 C CNN "Designer"
+	1    3800 1700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -679,4 +679,6 @@ F 44 "ManWithNoName" H 3000 1700 50  0001 C CNN "Designer"
 	1    3000 1700
 	-1   0    0    1   
 $EndComp
+Text Notes 3150 6550 0    50   ~ 0
+Do Not Populate (Default)
 $EndSCHEMATC
