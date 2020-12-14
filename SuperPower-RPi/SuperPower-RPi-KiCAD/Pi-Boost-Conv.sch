@@ -684,21 +684,6 @@ Wire Wire Line
 Text Notes 2050 2150 0    100  ~ 0
 3.3V LDO Regulator
 $Comp
-L Manual_Lib:ME6210A33M3G U?
-U 1 1 5FE25FFA
-P 2750 1250
-AR Path="/5F6AC872/5FE25FFA" Ref="U?"  Part="1" 
-AR Path="/5F6AC4E0/5FE25FFA" Ref="U5"  Part="1" 
-F 0 "U5" H 2750 1492 50  0000 C CNN
-F 1 "ME6210A33M3G" H 2750 1401 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 3200 1000 50  0001 L CIN
-F 3 "https://datasheet.lcsc.com/szlcsc/1810201611_MICRONE-Nanjing-Micro-One-Elec-ME6210A33PG_C85233.pdf" H 2750 1200 50  0001 C CNN
-F 4 "MicrOne" H 3350 850 50  0001 C CNN "Mfg"
-F 5 "ME6210A33M3G" H 3500 900 50  0001 C CNN "Mfg PN"
-	1    2750 1250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C?
 U 1 1 5FE26003
 P 3150 1450
@@ -748,4 +733,19 @@ Wire Wire Line
 Connection ~ 10600 3400
 Wire Wire Line
 	10600 3400 10750 3400
+$Comp
+L Manual_Lib:ME6210A33M3G U?
+U 1 1 5FE25FFA
+P 2750 1250
+AR Path="/5F6AC872/5FE25FFA" Ref="U?"  Part="1" 
+AR Path="/5F6AC4E0/5FE25FFA" Ref="U5"  Part="1" 
+F 0 "U5" H 2750 1492 50  0000 C CNN
+F 1 "ME6210A33M3G" H 2750 1401 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3200 1000 50  0001 L CIN
+F 3 "https://datasheet.lcsc.com/szlcsc/1810201611_MICRONE-Nanjing-Micro-One-Elec-ME6210A33PG_C85233.pdf" H 2750 1200 50  0001 C CNN
+F 4 "MicrOne" H 3350 850 50  0001 C CNN "Mfg"
+F 5 "ME6210A33M3G" H 3500 900 50  0001 C CNN "Mfg PN"
+	1    2750 1250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
