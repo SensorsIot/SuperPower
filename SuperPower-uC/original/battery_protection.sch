@@ -681,4 +681,6 @@ F 44 "ManWithNoName" H 3000 1700 50  0001 C CNN "Designer"
 $EndComp
 Text Notes 3150 6550 0    50   ~ 0
 Do Not Populate (Default)
+Text Notes 1900 3450 0    50   ~ 0
+0805 - 0.5W
 $EndSCHEMATC

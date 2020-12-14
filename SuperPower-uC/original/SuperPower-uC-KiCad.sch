@@ -26,32 +26,32 @@ Text Notes 1400 2300 0    50   ~ 0
 Battery Holder
 Text Notes 1400 2450 0    50   ~ 0
 Battery Protection
-Text Notes 3450 2300 0    50   ~ 0
-Charger IC
-Text Notes 6000 3000 0    50   ~ 0
-3v3_LDO
-Text Notes 6000 2900 0    50   ~ 0
-3v3_LDO_MCU
-Text Notes 6000 2800 0    50   ~ 0
-5V Buck/Boost
-Text Notes 9150 2450 0    50   ~ 0
-MCU
+Text Notes 3300 2400 0    50   ~ 0
+Battery Charger\n     +\nPower Path
+Text Notes 5850 2750 0    50   ~ 0
+3v3_RTC_I2C_LDO
+Text Notes 5850 2650 0    50   ~ 0
+3v3_MCU_Buck-Boost
+Text Notes 5850 2550 0    50   ~ 0
+5V Buck-Boost
+Text Notes 9100 2400 0    50   ~ 0
+MCU (ESP)
 Text Notes 6150 3950 0    50   ~ 0
 RTC
-Text Notes 6000 2700 0    50   ~ 0
+Text Notes 5850 2450 0    50   ~ 0
 Cut-Off Circuit
-Text Notes 3600 3850 0    50   ~ 0
+Text Notes 3550 3900 0    50   ~ 0
 USB-C
-Text Notes 3600 3950 0    50   ~ 0
-Screw Terminal
-Text Notes 3600 4050 0    50   ~ 0
-Solder Pads
+Text Notes 3300 4000 0    50   ~ 0
+DC Jack 5.5x2.1mm
+Text Notes 3100 4100 0    50   ~ 0
+Solder Pads / Screw Terminal
 Text Notes 6150 4050 0    50   ~ 0
 Manual Wake
-Text Notes 9000 2800 0    50   ~ 0
+Text Notes 9100 2800 0    50   ~ 0
 Permanent\nPower Jumper
-Text Notes 9150 2550 0    50   ~ 0
-FTDI
+Text Notes 9100 2500 0    50   ~ 0
+USB/Serial Bridge
 $Sheet
 S 3050 3500 1250 1150
 U 5F63B107
@@ -213,4 +213,8 @@ F7 "EN_3V3" I R 7000 2450 50
 F8 "EN_5V" I R 7000 2350 50 
 F9 "3v3_RTC_I2C" O L 5750 3150 50 
 $EndSheet
+Text Notes 9100 2600 0    50   ~ 0
+RGB LED
+Text Notes 6150 4150 0    50   ~ 0
+I2C Pull-Up R.
 $EndSCHEMATC
