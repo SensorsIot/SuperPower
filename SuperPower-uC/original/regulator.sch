@@ -420,8 +420,11 @@ U 1 1 5FBFC1E5
 P 6150 1750
 F 0 "L701" V 6300 1750 50  0000 C CNN
 F 1 "1.5μH" V 6200 1750 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" H 6150 1750 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/TDK-MLZ1608A2R2WT000_C76797.pdf" H 6150 1750 50  0001 C CNN
+F 2 "Inductor_SMD:L_Vishay_IHLP-2525" H 6150 1750 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/427/ihlp_2525cz_01-1763244.pdf" H 6150 1750 50  0001 C CNN
+F 4 "1.5µH" H 6150 1750 50  0001 C CNN "Ind_value"
+F 5 "Vishay" H 6150 1750 50  0001 C CNN "Mfr_name"
+F 6 "IHLP2525CZER1R5M01" H 6150 1750 50  0001 C CNN "Mfr_no"
 	1    6150 1750
 	0    -1   -1   0   
 $EndComp
@@ -791,8 +794,11 @@ U 1 1 602F526D
 P 6300 4800
 F 0 "L702" V 6450 4800 50  0000 C CNN
 F 1 "1.5μH" V 6350 4800 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" H 6300 4800 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/TDK-MLZ1608A2R2WT000_C76797.pdf" H 6300 4800 50  0001 C CNN
+F 2 "Inductor_SMD:L_Vishay_IHLP-2525" H 6300 4800 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/427/ihlp_2525cz_01-1763244.pdf" H 6300 4800 50  0001 C CNN
+F 4 "1.5µH" H 6300 4800 50  0001 C CNN "Ind_value"
+F 5 "Vishay" H 6300 4800 50  0001 C CNN "Mfr_name"
+F 6 "IHLP2525CZER1R5M01" H 6300 4800 50  0001 C CNN "Mfr_no"
 	1    6300 4800
 	0    -1   -1   0   
 $EndComp
