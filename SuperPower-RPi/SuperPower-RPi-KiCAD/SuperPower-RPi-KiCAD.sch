@@ -67,7 +67,8 @@ F0 "Pi-Output-Protection" 50
 F1 "Pi-Output-Protection.sch" 50
 F2 "Vin" I L 7150 3650 50 
 F3 "Vout" O R 8400 3650 50 
-F4 "OP_Enable" I L 7150 4100 50 
+F4 "~OP_Enable" I L 7150 4100 50 
+F5 "~FLAG" O L 7150 3950 50 
 $EndSheet
 $Sheet
 S 950  3400 1350 1150
@@ -249,4 +250,5 @@ Wire Wire Line
 	4850 4100 4850 2200
 Wire Wire Line
 	4850 2200 5250 2200
+NoConn ~ 7150 3950
 $EndSCHEMATC
