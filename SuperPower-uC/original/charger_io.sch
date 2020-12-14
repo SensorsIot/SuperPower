@@ -93,39 +93,39 @@ Pull-Down via 5k1\nresistor for 5V 3A PD
 $Comp
 L Connector:Barrel_Jack_Switch J8
 U 1 1 5F72FE29
-P 4350 3000
-F 0 "J8" H 4407 3317 50  0000 C CNN
-F 1 "Barrel_Jack_Switch" H 4407 3226 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 4400 2960 50  0001 C CNN
-F 3 "~" H 4400 2960 50  0001 C CNN
-	1    4350 3000
+P 4200 3000
+F 0 "J8" H 4257 3317 50  0000 C CNN
+F 1 "Barrel_Jack_Switch" H 4257 3226 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 4250 2960 50  0001 C CNN
+F 3 "~" H 4250 2960 50  0001 C CNN
+	1    4200 3000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR048
 U 1 1 5F731685
-P 4750 3200
-F 0 "#PWR048" H 4750 2950 50  0001 C CNN
-F 1 "GND" H 4755 3027 50  0000 C CNN
-F 2 "" H 4750 3200 50  0001 C CNN
-F 3 "" H 4750 3200 50  0001 C CNN
-	1    4750 3200
+P 4600 3200
+F 0 "#PWR048" H 4600 2950 50  0001 C CNN
+F 1 "GND" H 4605 3027 50  0000 C CNN
+F 2 "" H 4600 3200 50  0001 C CNN
+F 3 "" H 4600 3200 50  0001 C CNN
+	1    4600 3200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4750 3200 4750 3100
+	4600 3200 4600 3100
 Wire Wire Line
-	4750 3000 4650 3000
+	4600 3000 4500 3000
 Wire Wire Line
-	4650 3100 4750 3100
-Connection ~ 4750 3100
+	4500 3100 4600 3100
+Connection ~ 4600 3100
 Wire Wire Line
-	4750 3100 4750 3000
+	4600 3100 4600 3000
 Wire Wire Line
-	4650 2900 5100 2900
+	4500 2900 4950 2900
 Text Label 1950 1050 2    50   ~ 0
 VBUS
-Text Label 5100 2900 2    50   ~ 0
+Text Label 4950 2900 2    50   ~ 0
 V_CHARGE
 $Comp
 L Connector:Screw_Terminal_01x02 J9
@@ -844,4 +844,12 @@ F 49 "ManWithNoName" H 9800 4850 50  0001 C CNN "Designer"
 	1    9800 4850
 	0    1    1    0   
 $EndComp
+Text Notes 5350 1300 0    118  ~ 24
+Power Voltage Range : 5-15V
+Text Notes 5000 2900 0    50   ~ 10
+<- 15V Max
+Text Notes 7450 3050 0    50   ~ 10
+<- 15V Max
+Text Notes 6600 2700 0    50   ~ 0
+Dot Not Populate (Default)
 $EndSCHEMATC
