@@ -29,9 +29,9 @@ Battery Protection
 Text Notes 3300 2400 0    50   ~ 0
 Battery Charger\n     +\nPower Path
 Text Notes 5850 2750 0    50   ~ 0
-3v3_RTC_I2C_LDO
+3v3 RTC/I2C LDO
 Text Notes 5850 2650 0    50   ~ 0
-3v3_MCU_Buck-Boost
+3v3 MCU Buck-Boost
 Text Notes 5850 2550 0    50   ~ 0
 5V Buck-Boost
 Text Notes 9100 2400 0    50   ~ 0
