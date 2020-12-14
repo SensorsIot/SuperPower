@@ -359,32 +359,6 @@ Wire Wire Line
 	9500 5050 9500 4950
 Wire Wire Line
 	9500 3750 9500 3650
-$Comp
-L Diode:1N5819 D?
-U 1 1 5FA2BF09
-P 9800 3150
-AR Path="/5F639F48/5FA2BF09" Ref="D?"  Part="1" 
-AR Path="/5F63B107/5FA2BF09" Ref="D4"  Part="1" 
-F 0 "D4" V 9754 3230 50  0000 L CNN
-F 1 "1N5819" V 9845 3230 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 9800 2975 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 9800 3150 50  0001 C CNN
-	1    9800 3150
-	0    1    1    0   
-$EndComp
-$Comp
-L Diode:1N5819 D?
-U 1 1 5FA2BF0F
-P 9800 4850
-AR Path="/5F639F48/5FA2BF0F" Ref="D?"  Part="1" 
-AR Path="/5F63B107/5FA2BF0F" Ref="D5"  Part="1" 
-F 0 "D5" V 9754 4930 50  0000 L CNN
-F 1 "1N5819" V 9845 4930 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 9800 4675 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 9800 4850 50  0001 C CNN
-	1    9800 4850
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	9400 5050 9500 5050
 Wire Wire Line
@@ -755,5 +729,119 @@ F 48 "2020-12-13" H 9500 3050 50  0001 C CNN "Release_date"
 F 49 "ManWithNoName" H 9500 3050 50  0001 C CNN "Designer"
 	1    9500 3050
 	0    -1   -1   0   
+$EndComp
+$Comp
+L dfls230l:DFLS230L D4
+U 1 1 5FD7F081
+P 9800 3150
+F 0 "D4" V 9663 3230 50  0000 L CNN
+F 1 "DFLS230L" V 9754 3230 50  0000 L CNN
+F 2 "Diode_SMD:D_PowerDI-123" H 9800 3150 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30515.pdf" H 9800 3150 50  0001 C CNN
+F 4 "Diodes Incorporated" H 9800 3150 50  0001 C CNN "Mfr_name"
+F 5 "DFLS230L-7" H 9800 3150 50  0001 C CNN "Mfr_no"
+F 6 "PowerDI-123-2" V 9845 3230 50  0000 L CNN "Package"
+F 7 "Single" H 9800 3150 50  0001 C CNN "dio_Cfg"
+F 8 "Schottky" H 9800 3150 50  0001 C CNN "dio_Type"
+F 9 "30V" V 9936 3230 50  0000 L CNN "dio_Vrrm"
+F 10 "2A" H 9800 3150 50  0001 C CNN "dio_If_max"
+F 11 "0.42V" H 9800 3150 50  0001 C CNN "dio_Vf"
+F 12 "1mA" H 9800 3150 50  0001 C CNN "dio_Ir"
+F 13 "https://octopart.com/dfls230l-7-diodes+inc.-328577?r=sp" H 9800 3150 50  0001 C CNN "Octopart_link"
+F 14 "https://fr.farnell.com/diodes-inc/dfls230l-7/diode-recti-schottky-2a-30v-pwrdi123/dp/1858663?st=DFLS230L-7" H 9800 3150 50  0001 C CNN "Farnell_link"
+F 15 "1858663" H 9800 3150 50  0001 C CNN "Farnell_ref"
+F 16 "2020-12-14" H 9800 3150 50  0001 C CNN "Farnell_check_date"
+F 17 "0,656 €" H 9800 3150 50  0001 C CNN "Farnell_price_qt=1"
+F 18 "0,509 €" H 9800 3150 50  0001 C CNN "Farnell_price_qt=10"
+F 19 "0,323 €" H 9800 3150 50  0001 C CNN "Farnell_price_qt=100"
+F 20 "0,238 €" H 9800 3150 50  0001 C CNN "Farnell_price_qt=1000"
+F 21 "1147" H 9800 3150 50  0001 C CNN "Farnell_stock"
+F 22 "https://lcsc.com/product-detail/Schottky-Barrier-Diodes-SBD_Diodes-Incorporated-DFLS230L-7_C124194.html" H 9800 3150 50  0001 C CNN "LCSC_link"
+F 23 "C124194" H 9800 3150 50  0001 C CNN "LCSC_ref"
+F 24 "2020-12-14" H 9800 3150 50  0001 C CNN "LCSC_check_date"
+F 25 "-" H 9800 3150 50  0001 C CNN "LCSC_price_qt=1"
+F 26 "$0.1296" H 9800 3150 50  0001 C CNN "LCSC_price_qt=10"
+F 27 "$0.0964" H 9800 3150 50  0001 C CNN "LCSC_price_qt=100"
+F 28 "$0.0842" H 9800 3150 50  0001 C CNN "LCSC_price_qt=1000"
+F 29 "6785" H 9800 3150 50  0001 C CNN "LCSC_stock"
+F 30 "https://eu.mouser.com/ProductDetail/Diodes-Incorporated/DFLS230L-7?qs=JV7lzlMm3yJ%2Fo9cuLkhj3Q%3D%3D" H 9800 3150 50  0001 C CNN "Mouser_link"
+F 31 "621-DFLS230L-7" H 9800 3150 50  0001 C CNN "Mouser_ref"
+F 32 "2020-12-14" H 9800 3150 50  0001 C CNN "Mouser_check_date"
+F 33 "$0.675" H 9800 3150 50  0001 C CNN "Mouser_price_qt=1"
+F 34 "$0.563" H 9800 3150 50  0001 C CNN "Mouser_price_qt=10"
+F 35 "$0.394" H 9800 3150 50  0001 C CNN "Mouser_price_qt=100"
+F 36 "$0.290" H 9800 3150 50  0001 C CNN "Mouser_price_qt=1000"
+F 37 "3150" H 9800 3150 50  0001 C CNN "Mouser_stock"
+F 38 "https://fr.rs-online.com/web/p/diodes-de-redressement-et-schottky/7513991/" H 9800 3150 50  0001 C CNN "RS_link"
+F 39 "751-3991" H 9800 3150 50  0001 C CNN "RS_ref"
+F 40 "2020-12-14" H 9800 3150 50  0001 C CNN "RS_check_date"
+F 41 "-" H 9800 3150 50  0001 C CNN "RS_price_qt=1"
+F 42 "0,418 €" H 9800 3150 50  0001 C CNN "RS_price_qt=10"
+F 43 "0,396 €" H 9800 3150 50  0001 C CNN "RS_price_qt=100"
+F 44 "0,256 €" H 9800 3150 50  0001 C CNN "RS_price_qt=1000"
+F 45 "7910" H 9800 3150 50  0001 C CNN "RS_stock"
+F 46 "TO_CHECK" H 9800 3150 50  0001 C CNN "Status"
+F 47 "1.00" H 9800 3150 50  0001 C CNN "Release_version"
+F 48 "2020-12-14" H 9800 3150 50  0001 C CNN "Release_date"
+F 49 "ManWithNoName" H 9800 3150 50  0001 C CNN "Designer"
+	1    9800 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L dfls230l:DFLS230L D5
+U 1 1 5FD82A3E
+P 9800 4850
+F 0 "D5" V 9663 4930 50  0000 L CNN
+F 1 "DFLS230L" V 9754 4930 50  0000 L CNN
+F 2 "Diode_SMD:D_PowerDI-123" H 9800 4850 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30515.pdf" H 9800 4850 50  0001 C CNN
+F 4 "Diodes Incorporated" H 9800 4850 50  0001 C CNN "Mfr_name"
+F 5 "DFLS230L-7" H 9800 4850 50  0001 C CNN "Mfr_no"
+F 6 "PowerDI-123-2" V 9845 4930 50  0000 L CNN "Package"
+F 7 "Single" H 9800 4850 50  0001 C CNN "dio_Cfg"
+F 8 "Schottky" H 9800 4850 50  0001 C CNN "dio_Type"
+F 9 "30V" V 9936 4930 50  0000 L CNN "dio_Vrrm"
+F 10 "2A" H 9800 4850 50  0001 C CNN "dio_If_max"
+F 11 "0.42V" H 9800 4850 50  0001 C CNN "dio_Vf"
+F 12 "1mA" H 9800 4850 50  0001 C CNN "dio_Ir"
+F 13 "https://octopart.com/dfls230l-7-diodes+inc.-328577?r=sp" H 9800 4850 50  0001 C CNN "Octopart_link"
+F 14 "https://fr.farnell.com/diodes-inc/dfls230l-7/diode-recti-schottky-2a-30v-pwrdi123/dp/1858663?st=DFLS230L-7" H 9800 4850 50  0001 C CNN "Farnell_link"
+F 15 "1858663" H 9800 4850 50  0001 C CNN "Farnell_ref"
+F 16 "2020-12-14" H 9800 4850 50  0001 C CNN "Farnell_check_date"
+F 17 "0,656 €" H 9800 4850 50  0001 C CNN "Farnell_price_qt=1"
+F 18 "0,509 €" H 9800 4850 50  0001 C CNN "Farnell_price_qt=10"
+F 19 "0,323 €" H 9800 4850 50  0001 C CNN "Farnell_price_qt=100"
+F 20 "0,238 €" H 9800 4850 50  0001 C CNN "Farnell_price_qt=1000"
+F 21 "1147" H 9800 4850 50  0001 C CNN "Farnell_stock"
+F 22 "https://lcsc.com/product-detail/Schottky-Barrier-Diodes-SBD_Diodes-Incorporated-DFLS230L-7_C124194.html" H 9800 4850 50  0001 C CNN "LCSC_link"
+F 23 "C124194" H 9800 4850 50  0001 C CNN "LCSC_ref"
+F 24 "2020-12-14" H 9800 4850 50  0001 C CNN "LCSC_check_date"
+F 25 "-" H 9800 4850 50  0001 C CNN "LCSC_price_qt=1"
+F 26 "$0.1296" H 9800 4850 50  0001 C CNN "LCSC_price_qt=10"
+F 27 "$0.0964" H 9800 4850 50  0001 C CNN "LCSC_price_qt=100"
+F 28 "$0.0842" H 9800 4850 50  0001 C CNN "LCSC_price_qt=1000"
+F 29 "6785" H 9800 4850 50  0001 C CNN "LCSC_stock"
+F 30 "https://eu.mouser.com/ProductDetail/Diodes-Incorporated/DFLS230L-7?qs=JV7lzlMm3yJ%2Fo9cuLkhj3Q%3D%3D" H 9800 4850 50  0001 C CNN "Mouser_link"
+F 31 "621-DFLS230L-7" H 9800 4850 50  0001 C CNN "Mouser_ref"
+F 32 "2020-12-14" H 9800 4850 50  0001 C CNN "Mouser_check_date"
+F 33 "$0.675" H 9800 4850 50  0001 C CNN "Mouser_price_qt=1"
+F 34 "$0.563" H 9800 4850 50  0001 C CNN "Mouser_price_qt=10"
+F 35 "$0.394" H 9800 4850 50  0001 C CNN "Mouser_price_qt=100"
+F 36 "$0.290" H 9800 4850 50  0001 C CNN "Mouser_price_qt=1000"
+F 37 "3150" H 9800 4850 50  0001 C CNN "Mouser_stock"
+F 38 "https://fr.rs-online.com/web/p/diodes-de-redressement-et-schottky/7513991/" H 9800 4850 50  0001 C CNN "RS_link"
+F 39 "751-3991" H 9800 4850 50  0001 C CNN "RS_ref"
+F 40 "2020-12-14" H 9800 4850 50  0001 C CNN "RS_check_date"
+F 41 "-" H 9800 4850 50  0001 C CNN "RS_price_qt=1"
+F 42 "0,418 €" H 9800 4850 50  0001 C CNN "RS_price_qt=10"
+F 43 "0,396 €" H 9800 4850 50  0001 C CNN "RS_price_qt=100"
+F 44 "0,256 €" H 9800 4850 50  0001 C CNN "RS_price_qt=1000"
+F 45 "7910" H 9800 4850 50  0001 C CNN "RS_stock"
+F 46 "TO_CHECK" H 9800 4850 50  0001 C CNN "Status"
+F 47 "1.00" H 9800 4850 50  0001 C CNN "Release_version"
+F 48 "2020-12-14" H 9800 4850 50  0001 C CNN "Release_date"
+F 49 "ManWithNoName" H 9800 4850 50  0001 C CNN "Designer"
+	1    9800 4850
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
