@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 8
+Sheet 8 8
 Title ""
 Date ""
 Rev ""
@@ -67,9 +67,6 @@ NoConn ~ 6600 4000
 NoConn ~ 6600 3900
 NoConn ~ 6600 3800
 NoConn ~ 6600 3700
-NoConn ~ 6600 3500
-NoConn ~ 6600 3400
-NoConn ~ 6600 3300
 NoConn ~ 6600 2800
 NoConn ~ 6600 2700
 NoConn ~ 5000 2700
@@ -80,10 +77,6 @@ NoConn ~ 5000 3200
 NoConn ~ 5000 3400
 NoConn ~ 5000 3500
 NoConn ~ 5000 3600
-NoConn ~ 5000 3800
-NoConn ~ 5000 3900
-NoConn ~ 5000 4000
-NoConn ~ 5000 4100
 NoConn ~ 5000 4200
 NoConn ~ 5000 4300
 $Comp
@@ -125,4 +118,25 @@ Text HLabel 5400 2200 0    50   Input ~ 0
 Vin(5V)
 NoConn ~ 5900 2300
 NoConn ~ 6000 2300
+Text Notes 1200 2500 0    50   ~ 0
+Pins to STM32:\nGPIO5 to trigger update\nGPIO4 to indicate reboot/restart
+Text HLabel 6800 3300 2    50   BiDi ~ 0
+GPIO4
+Wire Wire Line
+	6800 3300 6600 3300
+Text HLabel 6800 3400 2    50   BiDi ~ 0
+GPIO5
+Text HLabel 6800 3500 2    50   BiDi ~ 0
+GPIO6
+Text HLabel 4700 4100 0    50   BiDi ~ 0
+GPIO25
+Wire Wire Line
+	6800 3400 6600 3400
+Wire Wire Line
+	6800 3500 6600 3500
+Wire Wire Line
+	5000 4100 4700 4100
+NoConn ~ 5000 3800
+NoConn ~ 5000 3900
+NoConn ~ 5000 4000
 $EndSCHEMATC
