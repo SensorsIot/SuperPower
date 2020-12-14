@@ -6,6 +6,12 @@ K Voltage Regulator 100mA Positive
 F https://datasheet.lcsc.com/szlcsc/1810201611_MICRONE-Nanjing-Micro-One-Elec-ME6210A33PG_C85233.pdf
 $ENDCMP
 #
+$CMP NCP380LMUAJAATBG
+D Power Switch with Adj. Current Limit
+K Switch, Power, Current Limit, UDFN
+F https://www.onsemi.com/pub/Collateral/NCP380-D.PDF
+$ENDCMP
+#
 $CMP Q_PMOS_DMP3056L-7_SOT-23
 D P-MOSFET transistor, gate/source/drain
 K transistor PMOS P-MOS P-MOSFET
