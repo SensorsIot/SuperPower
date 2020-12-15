@@ -533,4 +533,8 @@ Wire Wire Line
 	4950 4150 5250 4150
 Text HLabel 4950 4150 0    50   Output ~ 0
 INT
+Text Label 6450 4250 0    50   ~ 0
+REGN
+Text Label 6250 3250 0    50   ~ 0
+SW
 $EndSCHEMATC
