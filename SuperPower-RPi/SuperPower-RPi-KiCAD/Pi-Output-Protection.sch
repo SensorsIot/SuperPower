@@ -32,22 +32,6 @@ F 3 "" H 5500 4300 50  0001 C CNN
 $EndComp
 Text HLabel 4200 3850 0    50   Input ~ 0
 ~OP_Enable
-Wire Wire Line
-	5850 3450 6250 3450
-$Comp
-L power:PWR_FLAG #FLG0103
-U 1 1 5F7A8B93
-P 6250 3450
-F 0 "#FLG0103" H 6250 3525 50  0001 C CNN
-F 1 "PWR_FLAG" H 6250 3623 50  0001 C CNN
-F 2 "" H 6250 3450 50  0001 C CNN
-F 3 "~" H 6250 3450 50  0001 C CNN
-	1    6250 3450
-	1    0    0    -1  
-$EndComp
-Connection ~ 6250 3450
-Wire Wire Line
-	6250 3450 6500 3450
 Text HLabel 6500 3450 2    50   Output ~ 0
 Vout
 Text HLabel 4200 3450 0    50   Input ~ 0
@@ -123,4 +107,6 @@ F 6 "NCP380LMUAJAATBGOSCT-ND" H 5500 3650 50  0001 C CNN "Digi-Key PN"
 	1    5500 3650
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5850 3450 6500 3450
 $EndSCHEMATC
