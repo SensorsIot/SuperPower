@@ -870,9 +870,9 @@ $EndComp
 Wire Wire Line
 	14650 6000 14650 5950
 Wire Wire Line
-	3350 4250 3000 4250
+	3250 4250 3000 4250
 Wire Wire Line
-	3550 4250 3950 4250
+	3450 4250 3950 4250
 Connection ~ 3950 4250
 $Comp
 L power:PWR_FLAG #FLG0107
@@ -1255,13 +1255,13 @@ $EndComp
 $Comp
 L Device:Jumper_NC_Small JP5
 U 1 1 5FF2721E
-P 3450 4250
-F 0 "JP5" H 3450 4371 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 3450 4371 50  0001 C CNN
-F 2 "SuperPower-RPi-KiCAD:PinHeader_1x02_P2.54mm_Vertical_Shorted" H 3450 4250 50  0001 C CNN
-F 3 "~" H 3450 4250 50  0001 C CNN
-F 4 "DNP" H 3450 4250 50  0001 C CNN "Mfg"
-	1    3450 4250
+P 3350 4250
+F 0 "JP5" H 3350 4371 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 3350 4371 50  0001 C CNN
+F 2 "SuperPower-RPi-KiCAD:PinHeader_1x02_P2.54mm_Vertical_Shorted" H 3350 4250 50  0001 C CNN
+F 3 "~" H 3350 4250 50  0001 C CNN
+F 4 "DNP" H 3350 4250 50  0001 C CNN "Mfg"
+	1    3350 4250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1409,4 +1409,6 @@ Wire Wire Line
 	3100 7800 3450 7800
 Wire Wire Line
 	7400 7700 7400 8000
+Text Label 3550 4250 0    50   ~ 0
+3.3V_MCU
 $EndSCHEMATC
