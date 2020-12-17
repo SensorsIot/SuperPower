@@ -16,17 +16,6 @@ $EndDescr
 Text HLabel 950  900  0    50   BiDi ~ 0
 VBAT
 $Comp
-L Device:R R1
-U 1 1 5F78A1A3
-P 1900 3600
-F 0 "R1" H 1968 3646 50  0000 L CNN
-F 1 "470" H 1968 3555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 1940 3590 50  0001 C CNN
-F 3 "~" H 1900 3600 50  0001 C CNN
-	1    1900 3600
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR05
 U 1 1 5F78A1B7
 P 3850 5300
@@ -681,6 +670,60 @@ F 44 "ManWithNoName" H 3000 1700 50  0001 C CNN "Designer"
 $EndComp
 Text Notes 3150 6550 0    50   ~ 0
 Do Not Populate (Default)
-Text Notes 1900 3450 0    50   ~ 0
-0805 - 0.5W
+Text Notes 1950 3350 0    50   ~ 0
+0805-0.5W
+$Comp
+L erj-p06f4700v:ERJ-P06F4700V R1
+U 1 1 5FDF12C8
+P 1900 3600
+F 0 "R1" H 1968 3782 50  0000 L CNN
+F 1 "ERJ-P06F4700V" H 1968 3737 50  0001 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1940 3590 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDO0000/AOA0000C331.pdf" H 1900 3600 50  0001 C CNN
+F 4 "Panasonic" H 1900 3600 50  0001 C CNN "Mfr_name"
+F 5 "ERJ-P06F4700V" H 1900 3600 50  0001 C CNN "Mfr_no"
+F 6 "470Ω" H 1968 3691 50  0000 L CNN "res_value"
+F 7 "0805" H 1968 3600 50  0000 L CNN "Package"
+F 8 "0.5W" H 1968 3509 50  0000 L CNN "res_power"
+F 9 "1%" H 1968 3418 50  0000 L CNN "res_tolerance"
+F 10 "https://octopart.com/erj-p06f4700v-panasonic-24987750?r=sp" H 1900 3600 50  0001 C CNN "Octopart_link"
+F 11 "-" H 1900 3600 50  0001 C CNN "Farnell_link"
+F 12 "-" H 1900 3600 50  0001 C CNN "Farnell_ref"
+F 13 "2020-12-17" H 1900 3600 50  0001 C CNN "Farnell_check_date"
+F 14 "-" H 1900 3600 50  0001 C CNN "Farnell_price_qt=1"
+F 15 "-" H 1900 3600 50  0001 C CNN "Farnell_price_qt=10"
+F 16 "-" H 1900 3600 50  0001 C CNN "Farnell_price_qt=100"
+F 17 "-" H 1900 3600 50  0001 C CNN "Farnell_price_qt=1000"
+F 18 "-" H 1900 3600 50  0001 C CNN "Farnell_stock"
+F 19 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_PANASONIC-ERJP06F4700V_C441978.html" H 1900 3600 50  0001 C CNN "LCSC_link"
+F 20 "C441978" H 1900 3600 50  0001 C CNN "LCSC_ref"
+F 21 "2020-12-17" H 1900 3600 50  0001 C CNN "LCSC_check_date"
+F 22 "-" H 1900 3600 50  0001 C CNN "LCSC_price_qt=1"
+F 23 "-" H 1900 3600 50  0001 C CNN "LCSC_price_qt=10"
+F 24 "$0.0314" H 1900 3600 50  0001 C CNN "LCSC_price_qt=100"
+F 25 "$0.0215" H 1900 3600 50  0001 C CNN "LCSC_price_qt=1000"
+F 26 "12,520" H 1900 3600 50  0001 C CNN "LCSC_stock"
+F 27 "https://eu.mouser.com/ProductDetail/Panasonic/ERJ-P06F4700V/?qs=%2Fha2pyFadug2IR%252BKGI4fm0JbELzFWApGleVrDsvCaSwrtnqdozMMLg%3D%3D" H 1900 3600 50  0001 C CNN "Mouser_link"
+F 28 "667-ERJ-P06F4700V" H 1900 3600 50  0001 C CNN "Mouser_ref"
+F 29 "2020-12-17" H 1900 3600 50  0001 C CNN "Mouser_check_date"
+F 30 "$0.151" H 1900 3600 50  0001 C CNN "Mouser_price_qt=1"
+F 31 "$0.087" H 1900 3600 50  0001 C CNN "Mouser_price_qt=10"
+F 32 "$0.049" H 1900 3600 50  0001 C CNN "Mouser_price_qt=100"
+F 33 "$0.023" H 1900 3600 50  0001 C CNN "Mouser_price_qt=1000"
+F 34 "647 (10,000 Expected 01/29/2021)" H 1900 3600 50  0001 C CNN "Mouser_stock"
+F 35 "https://fr.rs-online.com/web/p/resistances-cms/7217722/" H 1900 3600 50  0001 C CNN "RS_link"
+F 36 "721-7722" H 1900 3600 50  0001 C CNN "RS_ref"
+F 37 "2020-12-17" H 1900 3600 50  0001 C CNN "RS_check_date"
+F 38 "-" H 1900 3600 50  0001 C CNN "RS_price_qt=1"
+F 39 "0,14 €" H 1900 3600 50  0001 C CNN "RS_price_qt=10"
+F 40 "0,044 €" H 1900 3600 50  0001 C CNN "RS_price_qt=100"
+F 41 "0,024 €" H 1900 3600 50  0001 C CNN "RS_price_qt=1000"
+F 42 "1850" H 1900 3600 50  0001 C CNN "RS_stock"
+F 43 "TO_CHECK" H 1900 3600 50  0001 C CNN "Status"
+F 44 "1.00" H 1900 3600 50  0001 C CNN "Release_version"
+F 45 "2020-12-17" H 1900 3600 50  0001 C CNN "Release_date"
+F 46 "ManWithNoName" H 1900 3600 50  0001 C CNN "Designer"
+	1    1900 3600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

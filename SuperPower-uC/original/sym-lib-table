@@ -48,4 +48,5 @@
   (lib (name 2n7002a)(type Legacy)(uri ${KIPRJMOD}/../components/2N7002A/2n7002a.lib)(options "")(descr ""))
   (lib (name SKRKAEE020)(type Legacy)(uri ${KIPRJMOD}/../components/SKRKAEE020/SKRKAEE020.lib)(options "")(descr ""))
   (lib (name usb-c)(type Legacy)(uri ${KIPRJMOD}/../components/USB-C/usb-c.lib)(options "")(descr ""))
+  (lib (name erj-p06f4700v)(type Legacy)(uri ${KIPRJMOD}/../components/ERJ-P06f4700V/erj-p06f4700v.lib)(options "")(descr ""))
 )
