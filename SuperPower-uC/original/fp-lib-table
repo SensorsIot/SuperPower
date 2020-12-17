@@ -7,4 +7,5 @@
   (lib (name SKRKAEE020)(type KiCad)(uri ${KIPRJMOD}/../components/SKRKAEE020/SKRKAEE020.pretty)(options "")(descr ""))
   (lib (name usb_c)(type KiCad)(uri ${KIPRJMOD}/../components/USB-C/usb_c.pretty)(options "")(descr ""))
   (lib (name JST_ZH_S2B_THRU)(type KiCad)(uri ${KIPRJMOD}/../components/JST_ZH_S2B_THRU)(options "")(descr ""))
+  (lib (name SOLDERJUMPER_4_BRIDGED_1C)(type KiCad)(uri ${KIPRJMOD}/../components/SOLDERJUMPER_4_BRIDGED_1C)(options "")(descr ""))
 )

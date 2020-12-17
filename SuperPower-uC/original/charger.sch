@@ -759,7 +759,7 @@ Text Notes 2050 5100 2    59   ~ 0
 Text Notes 2050 5300 2    59   ~ 0
 3
 Wire Notes Line
-	2900 4450 3650 4450
+	2900 4500 3650 4500
 Wire Notes Line
 	7550 3900 9000 3900
 Wire Notes Line
@@ -774,17 +774,6 @@ Wire Wire Line
 	1850 2500 1300 2500
 Text Label 1850 2500 2    50   ~ 0
 ~SMBALERT
-$Comp
-L solderjumper_4_bridged_14:SolderJumper_4_Bridged_14 JP1
-U 1 1 5FC12146
-P 3750 4550
-F 0 "JP1" H 3950 4700 50  0000 R CNN
-F 1 "SolderJumper_4_Bridged_14" H 3506 4620 50  0001 R CNN
-F 2 "" H 3750 4550 50  0001 C CNN
-F 3 "~" H 3750 4550 50  0001 C CNN
-	1    3750 4550
-	-1   0    0    1   
-$EndComp
 Text Notes 3000 2050 0    50   ~ 0
 Rem. : Currently limited to less than 500mA to be compatible\n       with USB2 capabilities.
 Wire Notes Line
@@ -1714,4 +1703,15 @@ Wire Notes Line
 	6800 650  6800 750 
 Wire Notes Line
 	6800 750  6900 750 
+$Comp
+L solderjumper_4_bridged_1c:SolderJumper_4_Bridged_1C JP1
+U 1 1 5FDC3AAD
+P 3750 4550
+F 0 "JP1" H 3950 4450 50  0000 R CNN
+F 1 "SolderJumper_4_Bridged_1C" H 3994 4530 50  0001 L CNN
+F 2 "SOLDERJUMPER_4_BRIDGED_1C:SolderJumper-4_P2.0mm_Bridged1C_TrianglePad1.0x1.5mm_NumberLabels" H 3750 4550 50  0001 C CNN
+F 3 "~" H 3750 4550 50  0001 C CNN
+	1    3750 4550
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
