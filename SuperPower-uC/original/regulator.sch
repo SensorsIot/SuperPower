@@ -414,20 +414,6 @@ F 3 "~" H 4950 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:L L701
-U 1 1 5FBFC1E5
-P 6150 1750
-F 0 "L701" V 6300 1750 50  0000 C CNN
-F 1 "1.5μH" V 6200 1750 50  0000 C CNN
-F 2 "Inductor_SMD:L_Vishay_IHLP-2525" H 6150 1750 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/427/ihlp_2525cz_01-1763244.pdf" H 6150 1750 50  0001 C CNN
-F 4 "1.5µH" H 6150 1750 50  0001 C CNN "Ind_value"
-F 5 "Vishay" H 6150 1750 50  0001 C CNN "Mfr_name"
-F 6 "IHLP2525CZER1R5M01" H 6150 1750 50  0001 C CNN "Mfr_no"
-	1    6150 1750
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:C_Small C709
 U 1 1 5FB80C1F
 P 2650 6650
@@ -739,20 +725,6 @@ F 2 "Capacitor_SMD:C_0805_2012Metric" H 5400 5350 50  0001 C CNN
 F 3 "~" H 5400 5350 50  0001 C CNN
 	1    5400 5350
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:L L702
-U 1 1 602F526D
-P 6300 4800
-F 0 "L702" V 6450 4800 50  0000 C CNN
-F 1 "1.5μH" V 6350 4800 50  0000 C CNN
-F 2 "Inductor_SMD:L_Vishay_IHLP-2525" H 6300 4800 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/427/ihlp_2525cz_01-1763244.pdf" H 6300 4800 50  0001 C CNN
-F 4 "1.5µH" H 6300 4800 50  0001 C CNN "Ind_value"
-F 5 "Vishay" H 6300 4800 50  0001 C CNN "Mfr_name"
-F 6 "IHLP2525CZER1R5M01" H 6300 4800 50  0001 C CNN "Mfr_no"
-	1    6300 4800
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	8150 5500 8150 5600
@@ -1604,4 +1576,118 @@ $EndComp
 Wire Wire Line
 	8150 5850 8150 5600
 Connection ~ 8150 5600
+$Comp
+L spm6530t-1r5m:SPM6530T-1R5M L701
+U 1 1 5FDC75EF
+P 6150 1750
+F 0 "L701" V 6250 1850 50  0000 R CNN
+F 1 "SPM6530T-1R5M" V 6100 1900 50  0001 R CNN
+F 2 "SPM6530T-1R5M:L_TDK_SPM6530T" H 6150 1750 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/inductor_commercial_power_spm6530_en.pdf" H 6150 1750 50  0001 C CNN
+F 4 "TDK" H 6150 1750 50  0001 C CNN "Mfr_name"
+F 5 "SPM6530T-1R5M100" H 6150 1750 50  0001 C CNN "Mfr_no"
+F 6 "6,5x7,1x3,0mm" H 6150 1750 50  0001 C CNN "Package"
+F 7 "1.5µH" V 6100 1850 50  0000 R CNN "Ind_value"
+F 8 "11.0A" H 6150 1750 50  0001 C CNN "Ind_current_max"
+F 9 "11.5A" H 6150 1750 50  0001 C CNN "Ind_current_sat_max"
+F 10 "9.70mOhm" V 6100 1850 50  0001 R CNN "Ind_DCR_typ"
+F 11 "20%" H 6150 1750 50  0001 C CNN "Ind_tol"
+F 12 ">10MHz" H 6150 1750 50  0001 C CNN "Ind_SFR"
+F 13 "https://octopart.com/spm6530t-1r5m100-tdk-9518783?r=sp" H 6150 1750 50  0001 C CNN "Octopart_link"
+F 14 "https://fr.farnell.com/tdk/spm6530t-1r5m100/inductance-1-5uh-20-blindee/dp/2215610?st=SPM6530T-1R5M100" H 6150 1750 50  0001 C CNN "Farnell_link"
+F 15 "2215610" H 6150 1750 50  0001 C CNN "Farnell_ref"
+F 16 "2020-12-16" H 6150 1750 50  0001 C CNN "Farnell_check_date"
+F 17 "1,36 €" H 6150 1750 50  0001 C CNN "Farnell_price_qt=1"
+F 18 "1,36 €" H 6150 1750 50  0001 C CNN "Farnell_price_qt=10"
+F 19 "0,738 €" H 6150 1750 50  0001 C CNN "Farnell_price_qt=100"
+F 20 "0,458 €" H 6150 1750 50  0001 C CNN "Farnell_price_qt=1000"
+F 21 "2" H 6150 1750 50  0001 C CNN "Farnell_stock"
+F 22 "https://lcsc.com/product-detail/Power-Inductors_TDK-SPM6530T-1R5M100_C76854.html" H 6150 1750 50  0001 C CNN "LCSC_link"
+F 23 "C76854" H 6150 1750 50  0001 C CNN "LCSC_ref"
+F 24 "2020-12-16" H 6150 1750 50  0001 C CNN "LCSC_check_date"
+F 25 "$0.1717" H 6150 1750 50  0001 C CNN "LCSC_price_qt=1"
+F 26 "$0.1324" H 6150 1750 50  0001 C CNN "LCSC_price_qt=10"
+F 27 "$0.1179" H 6150 1750 50  0001 C CNN "LCSC_price_qt=100"
+F 28 "$0.1131" H 6150 1750 50  0001 C CNN "LCSC_price_qt=1000"
+F 29 "10,496" H 6150 1750 50  0001 C CNN "LCSC_stock"
+F 30 "https://eu.mouser.com/ProductDetail/TDK/SPM6530T-1R5M100/?qs=chjFIDm9dbqQ8Uh0Ilzv2g%3D%3D" H 6150 1750 50  0001 C CNN "Mouser_link"
+F 31 "810-SPM6530T-1R5M100" H 6150 1750 50  0001 C CNN "Mouser_ref"
+F 32 "2020-12-16" H 6150 1750 50  0001 C CNN "Mouser_check_date"
+F 33 "$1.42" H 6150 1750 50  0001 C CNN "Mouser_price_qt=1"
+F 34 "$1.07" H 6150 1750 50  0001 C CNN "Mouser_price_qt=10"
+F 35 "$0.812" H 6150 1750 50  0001 C CNN "Mouser_price_qt=100"
+F 36 "$0.564" H 6150 1750 50  0001 C CNN "Mouser_price_qt=1000"
+F 37 "2,011" H 6150 1750 50  0001 C CNN "Mouser_stock"
+F 38 "-" H 6150 1750 50  0001 C CNN "RS_link"
+F 39 "-" H 6150 1750 50  0001 C CNN "RS_ref"
+F 40 "2020-12-16" H 6150 1750 50  0001 C CNN "RS_check_date"
+F 41 "-" H 6150 1750 50  0001 C CNN "RS_price_qt=1"
+F 42 "-" H 6150 1750 50  0001 C CNN "RS_price_qt=10"
+F 43 "-" H 6150 1750 50  0001 C CNN "RS_price_qt=100"
+F 44 "-" H 6150 1750 50  0001 C CNN "RS_price_qt=1000"
+F 45 "-" H 6150 1750 50  0001 C CNN "RS_stock"
+F 46 "TO_CHECK" H 6150 1750 50  0001 C CNN "Status"
+F 47 "1.00" H 6150 1750 50  0001 C CNN "Release_version"
+F 48 "2020-12-16" H 6150 1750 50  0001 C CNN "Release_date"
+F 49 "ManWithNoName" H 6150 1750 50  0001 C CNN "Designer"
+	1    6150 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L spm6530t-1r5m:SPM6530T-1R5M L702
+U 1 1 5FE1ED88
+P 6300 4800
+F 0 "L702" V 6400 4900 50  0000 R CNN
+F 1 "SPM6530T-1R5M" V 6250 4950 50  0001 R CNN
+F 2 "SPM6530T-1R5M:L_TDK_SPM6530T" H 6300 4800 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/inductor_commercial_power_spm6530_en.pdf" H 6300 4800 50  0001 C CNN
+F 4 "TDK" H 6300 4800 50  0001 C CNN "Mfr_name"
+F 5 "SPM6530T-1R5M100" H 6300 4800 50  0001 C CNN "Mfr_no"
+F 6 "6,5x7,1x3,0mm" H 6300 4800 50  0001 C CNN "Package"
+F 7 "1.5µH" V 6250 4900 50  0000 R CNN "Ind_value"
+F 8 "11.0A" H 6300 4800 50  0001 C CNN "Ind_current_max"
+F 9 "11.5A" H 6300 4800 50  0001 C CNN "Ind_current_sat_max"
+F 10 "9.70mOhm" V 6250 4900 50  0001 R CNN "Ind_DCR_typ"
+F 11 "20%" H 6300 4800 50  0001 C CNN "Ind_tol"
+F 12 ">10MHz" H 6300 4800 50  0001 C CNN "Ind_SFR"
+F 13 "https://octopart.com/spm6530t-1r5m100-tdk-9518783?r=sp" H 6300 4800 50  0001 C CNN "Octopart_link"
+F 14 "https://fr.farnell.com/tdk/spm6530t-1r5m100/inductance-1-5uh-20-blindee/dp/2215610?st=SPM6530T-1R5M100" H 6300 4800 50  0001 C CNN "Farnell_link"
+F 15 "2215610" H 6300 4800 50  0001 C CNN "Farnell_ref"
+F 16 "2020-12-16" H 6300 4800 50  0001 C CNN "Farnell_check_date"
+F 17 "1,36 €" H 6300 4800 50  0001 C CNN "Farnell_price_qt=1"
+F 18 "1,36 €" H 6300 4800 50  0001 C CNN "Farnell_price_qt=10"
+F 19 "0,738 €" H 6300 4800 50  0001 C CNN "Farnell_price_qt=100"
+F 20 "0,458 €" H 6300 4800 50  0001 C CNN "Farnell_price_qt=1000"
+F 21 "2" H 6300 4800 50  0001 C CNN "Farnell_stock"
+F 22 "https://lcsc.com/product-detail/Power-Inductors_TDK-SPM6530T-1R5M100_C76854.html" H 6300 4800 50  0001 C CNN "LCSC_link"
+F 23 "C76854" H 6300 4800 50  0001 C CNN "LCSC_ref"
+F 24 "2020-12-16" H 6300 4800 50  0001 C CNN "LCSC_check_date"
+F 25 "$0.1717" H 6300 4800 50  0001 C CNN "LCSC_price_qt=1"
+F 26 "$0.1324" H 6300 4800 50  0001 C CNN "LCSC_price_qt=10"
+F 27 "$0.1179" H 6300 4800 50  0001 C CNN "LCSC_price_qt=100"
+F 28 "$0.1131" H 6300 4800 50  0001 C CNN "LCSC_price_qt=1000"
+F 29 "10,496" H 6300 4800 50  0001 C CNN "LCSC_stock"
+F 30 "https://eu.mouser.com/ProductDetail/TDK/SPM6530T-1R5M100/?qs=chjFIDm9dbqQ8Uh0Ilzv2g%3D%3D" H 6300 4800 50  0001 C CNN "Mouser_link"
+F 31 "810-SPM6530T-1R5M100" H 6300 4800 50  0001 C CNN "Mouser_ref"
+F 32 "2020-12-16" H 6300 4800 50  0001 C CNN "Mouser_check_date"
+F 33 "$1.42" H 6300 4800 50  0001 C CNN "Mouser_price_qt=1"
+F 34 "$1.07" H 6300 4800 50  0001 C CNN "Mouser_price_qt=10"
+F 35 "$0.812" H 6300 4800 50  0001 C CNN "Mouser_price_qt=100"
+F 36 "$0.564" H 6300 4800 50  0001 C CNN "Mouser_price_qt=1000"
+F 37 "2,011" H 6300 4800 50  0001 C CNN "Mouser_stock"
+F 38 "-" H 6300 4800 50  0001 C CNN "RS_link"
+F 39 "-" H 6300 4800 50  0001 C CNN "RS_ref"
+F 40 "2020-12-16" H 6300 4800 50  0001 C CNN "RS_check_date"
+F 41 "-" H 6300 4800 50  0001 C CNN "RS_price_qt=1"
+F 42 "-" H 6300 4800 50  0001 C CNN "RS_price_qt=10"
+F 43 "-" H 6300 4800 50  0001 C CNN "RS_price_qt=100"
+F 44 "-" H 6300 4800 50  0001 C CNN "RS_price_qt=1000"
+F 45 "-" H 6300 4800 50  0001 C CNN "RS_stock"
+F 46 "TO_CHECK" H 6300 4800 50  0001 C CNN "Status"
+F 47 "1.00" H 6300 4800 50  0001 C CNN "Release_version"
+F 48 "2020-12-16" H 6300 4800 50  0001 C CNN "Release_date"
+F 49 "ManWithNoName" H 6300 4800 50  0001 C CNN "Designer"
+	1    6300 4800
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
