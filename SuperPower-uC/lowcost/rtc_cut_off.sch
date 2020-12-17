@@ -221,7 +221,7 @@ Text HLabel 1350 1450 0    50   Output ~ 0
 3v3V_EN
 Text HLabel 1350 1550 0    50   Output ~ 0
 5V_EN
-Text HLabel 1350 1900 0    50   Output ~ 0
+Text HLabel 1350 2000 0    50   Output ~ 0
 INT
 NoConn ~ 1200 350 
 Wire Wire Line
@@ -233,7 +233,7 @@ Text Label 1750 950  2    50   ~ 0
 SCL
 Text Label 1750 1200 2    50   ~ 0
 VBAT
-Text Label 1750 1900 2    50   ~ 0
+Text Label 1750 2000 2    50   ~ 0
 INT
 Text Label 1750 1450 2    50   ~ 0
 3.3_EN
@@ -252,7 +252,7 @@ INT
 Wire Wire Line
 	5900 3150 6150 3150
 Wire Wire Line
-	1350 1900 1750 1900
+	1350 2000 1750 2000
 Wire Wire Line
 	1350 1550 1750 1550
 Wire Wire Line
@@ -319,14 +319,12 @@ Text Notes 4000 4250 0    50   ~ 0
 RTC\n
 Text Notes 3400 2000 0    50   ~ 0
 IO Expander
-Wire Notes Line
-	550  2150 550  600 
-Text HLabel 1350 2000 0    50   Input ~ 0
+Text HLabel 1350 2100 0    50   Input ~ 0
 CHARGE-DISABLE
-Text Label 1750 2000 2    50   ~ 0
+Text Label 1750 2100 2    50   ~ 0
 CH_DIS
 Wire Wire Line
-	1750 2000 1350 2000
+	1750 2100 1350 2100
 Wire Notes Line
 	6800 3400 8450 3400
 Wire Notes Line
@@ -361,9 +359,7 @@ Text Label 1750 1650 2    50   ~ 0
 Wire Notes Line
 	550  600  1850 600 
 Wire Notes Line
-	1850 600  1850 2150
-Wire Notes Line
-	1850 2150 550  2150
+	1850 2450 550  2450
 Text Label 7000 3900 0    50   ~ 0
 3v3_MCU
 Wire Wire Line
@@ -484,4 +480,14 @@ Wire Wire Line
 	6450 3250 6450 3200
 Wire Wire Line
 	6450 2900 6450 2850
+Wire Notes Line
+	1850 600  1850 2450
+Wire Notes Line
+	550  600  550  2450
+Text HLabel 1350 1750 0    50   Output ~ 0
+3v3_I2C
+Wire Wire Line
+	1350 1750 1750 1750
+Text Label 1750 1750 2    50   ~ 0
+V_I2C
 $EndSCHEMATC
