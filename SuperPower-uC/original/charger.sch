@@ -502,13 +502,13 @@ Wire Wire Line
 Wire Wire Line
 	1850 1250 1300 1250
 Wire Notes Line
-	6400 1000 7900 1000
+	6400 950  7900 950 
 Wire Notes Line
-	7900 1000 7900 3000
+	7900 950  7900 3000
 Wire Notes Line
 	7900 3000 6400 3000
 Wire Notes Line
-	6400 3000 6400 1000
+	6400 3000 6400 950 
 Wire Wire Line
 	6300 2800 6300 3100
 Wire Wire Line
@@ -1620,63 +1620,6 @@ Wire Wire Line
 	7400 3100 7500 3100
 Connection ~ 7400 3100
 Connection ~ 7500 3100
-$Comp
-L dmp3028lsd:DMP3028LSD Q5
-U 1 1 5FDFBA6B
-P 7050 1550
-F 0 "Q5" V 7400 1550 50  0000 C CNN
-F 1 "DMP3028LSD" V 7300 1550 50  0000 C CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 7250 1475 50  0001 L CIN
-F 3 "https://www.diodes.com/assets/Datasheets/DMP3028LSD.pdf" V 7050 1550 50  0001 L CNN
-F 4 "Diodes Incorporated" H 7050 1550 50  0001 C CNN "Mfr_name"
-F 5 "DMP3028LSD-13" H 7050 1550 50  0001 C CNN "Mfr_no"
-F 6 "SO-8" V 7000 1750 50  0000 C CNN "Package"
-F 7 "P + P" H 7050 1550 50  0001 C CNN "Type"
-F 8 "30V" H 7050 1550 50  0001 C CNN "VDSS"
-F 9 "38mΩ" V 6900 1750 50  0000 C CNN "RDSon"
-F 10 "4.7A" H 7050 1550 50  0001 C CNN "IDmax"
-F 11 "1-3V" H 7050 1550 50  0001 C CNN "VGSth"
-F 12 "20V" H 7050 1550 50  0001 C CNN "VGSS"
-F 13 "https://octopart.com/dmp3028lsd-13-diodes+inc.-67250487?r=sp" H 7050 1550 50  0001 C CNN "Octopart_link"
-F 14 "-" H 7050 1550 50  0001 C CNN "Farnell_link"
-F 15 "-" H 7050 1550 50  0001 C CNN "Farnell_ref"
-F 16 "2020-12-05" H 7050 1550 50  0001 C CNN "Farnell_check_date"
-F 17 "-" H 7050 1550 50  0001 C CNN "Farnell_price_qt=1"
-F 18 "-" H 7050 1550 50  0001 C CNN "Farnell_price_qt=10"
-F 19 "-" H 7050 1550 50  0001 C CNN "Farnell_price_qt=100"
-F 20 "-" H 7050 1550 50  0001 C CNN "Farnell_price_qt=1000"
-F 21 "-" H 7050 1550 50  0001 C CNN "Farnell_stock"
-F 22 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMP3028LSD-13_C397949.html" H 7050 1550 50  0001 C CNN "LCSC_link"
-F 23 "C397949" H 7050 1550 50  0001 C CNN "LCSC_ref"
-F 24 "2020-12-13" H 7050 1550 50  0001 C CNN "LCSC_check_date"
-F 25 "$0.373" H 7050 1550 50  0001 C CNN "LCSC_price_qt=1"
-F 26 "$0.2802" H 7050 1550 50  0001 C CNN "LCSC_price_qt=10"
-F 27 "$0.2475" H 7050 1550 50  0001 C CNN "LCSC_price_qt=100"
-F 28 "$0.2355" H 7050 1550 50  0001 C CNN "LCSC_price_qt=1000"
-F 29 "4,818" H 7050 1550 50  0001 C CNN "LCSC_stock"
-F 30 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMP3028LSD-13?qs=%2Fha2pyFadugUkRnXWzNfjPB%2F2%2FpUVmcBtenJqlz85NswHo6v693iIw%3D%3D" H 7050 1550 50  0001 C CNN "Mouser_link"
-F 31 "621-DMP3028LSD-13" H 7050 1550 50  0001 C CNN "Mouser_ref"
-F 32 "2020-12-13" H 7050 1550 50  0001 C CNN "Mouser_check_date"
-F 33 "$0.564" H 7050 1550 50  0001 C CNN "Mouser_price_qt=1"
-F 34 "$0.469" H 7050 1550 50  0001 C CNN "Mouser_price_qt=10"
-F 35 "$0.328" H 7050 1550 50  0001 C CNN "Mouser_price_qt=100"
-F 36 "$0.242" H 7050 1550 50  0001 C CNN "Mouser_price_qt=1000"
-F 37 "2,855" H 7050 1550 50  0001 C CNN "Mouser_stock"
-F 38 "-" H 7050 1550 50  0001 C CNN "RS_link"
-F 39 "-" H 7050 1550 50  0001 C CNN "RS_ref"
-F 40 "2020-12-05" H 7050 1550 50  0001 C CNN "RS_check_date"
-F 41 "-" H 7050 1550 50  0001 C CNN "RS_price_qt=1"
-F 42 "-" H 7050 1550 50  0001 C CNN "RS_price_qt=10"
-F 43 "-" H 7050 1550 50  0001 C CNN "RS_price_qt=100"
-F 44 "-" H 7050 1550 50  0001 C CNN "RS_price_qt=1000"
-F 45 "-" H 7050 1550 50  0001 C CNN "RS_stock"
-F 46 "TO_CHECK" H 7050 1550 50  0001 C CNN "Status"
-F 47 "1.02" H 7050 1550 50  0001 C CNN "Release_version"
-F 48 "2020-12-13" H 7050 1550 50  0001 C CNN "Release_date"
-F 49 "ManWithNoName" H 7050 1550 50  0001 C CNN "Designer"
-	1    7050 1550
-	0    1    -1   0   
-$EndComp
 Wire Notes Line
 	6800 650  6800 750 
 Wire Notes Line
@@ -1800,4 +1743,71 @@ F 46 "ManWithNoName" H 7450 4150 50  0001 C CNN "Designer"
 	1    7450 4150
 	-1   0    0    1   
 $EndComp
+$Comp
+L dmp2035uvt:DMP2035UVT Q12
+U 1 1 5FEA728B
+P 7050 1550
+F 0 "Q12" V 7607 1575 50  0000 C CNN
+F 1 "DMP2035UVT" V 7516 1575 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 7250 1650 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/DMP2035UVT.pdf" H 7050 1550 50  0001 C CNN
+F 4 "Diodes Incorporated" H 7050 1550 50  0001 C CNN "Mfr_name"
+F 5 "DMP2035UVT-7" H 7050 1550 50  0001 C CNN "Mfr_no"
+F 6 "TSOT26" V 7425 1575 50  0000 C CNN "Package"
+F 7 "P" H 7050 1550 50  0001 C CNN "mos_Type"
+F 8 "-20V" H 7050 1550 50  0001 C CNN "mos_VDSS"
+F 9 "35mΩ" V 7334 1575 50  0000 C CNN "mos_RDSon"
+F 10 "-6.0A" H 7050 1550 50  0001 C CNN "mos_IDmax"
+F 11 "-0.4V_to_-1.5V" H 7050 1550 50  0001 C CNN "mos_VGSth"
+F 12 "12V" H 7050 1550 50  0001 C CNN "mos_VGSS"
+F 13 "https://octopart.com/dmp2035uvt-7-diodes+inc.-21789379?r=sp" H 7050 1550 50  0001 C CNN "Octopart_link"
+F 14 "https://fr.farnell.com/diodes-inc/dmp2035uvt-7/mosfet-canal-p-20v-6a-150-1-2w/dp/3405183?st=dmp2035uvt" H 7050 1550 50  0001 C CNN "Farnell_link"
+F 15 "3405183" H 7050 1550 50  0001 C CNN "Farnell_ref"
+F 16 "2020-12-11" H 7050 1550 50  0001 C CNN "Farnell_check_date"
+F 17 "-" H 7050 1550 50  0001 C CNN "Farnell_price_qt=1"
+F 18 "0,52 €" H 7050 1550 50  0001 C CNN "Farnell_price_qt=10"
+F 19 "0,238 €" H 7050 1550 50  0001 C CNN "Farnell_price_qt=100"
+F 20 "0,141 €" H 7050 1550 50  0001 C CNN "Farnell_price_qt=1000"
+F 21 "2,890" H 7050 1550 50  0001 C CNN "Farnell_stock"
+F 22 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMP2035UVT-7_C260934.html" H 7050 1550 50  0001 C CNN "LCSC_link"
+F 23 "C260934" H 7050 1550 50  0001 C CNN "LCSC_ref"
+F 24 "2020-12-11" H 7050 1550 50  0001 C CNN "LCSC_check_date"
+F 25 "-" H 7050 1550 50  0001 C CNN "LCSC_price_qt=1"
+F 26 "$0.1253" H 7050 1550 50  0001 C CNN "LCSC_price_qt=10"
+F 27 "$0.0932" H 7050 1550 50  0001 C CNN "LCSC_price_qt=100"
+F 28 "$0.0814" H 7050 1550 50  0001 C CNN "LCSC_price_qt=1000"
+F 29 "7,535" H 7050 1550 50  0001 C CNN "LCSC_stock"
+F 30 "https://eu.mouser.com/ProductDetail/Diodes-Incorporated/DMP2035UVT-7?qs=F5djdNSOT4Y3SEHDwWTQ6g%3D%3D" H 7050 1550 50  0001 C CNN "Mouser_link"
+F 31 "621-DMP2035UVT-7" H 7050 1550 50  0001 C CNN "Mouser_ref"
+F 32 "2020-12-11" H 7050 1550 50  0001 C CNN "Mouser_check_date"
+F 33 "$0.474" H 7050 1550 50  0001 C CNN "Mouser_price_qt=1"
+F 34 "$0.346" H 7050 1550 50  0001 C CNN "Mouser_price_qt=10"
+F 35 "$0.215" H 7050 1550 50  0001 C CNN "Mouser_price_qt=100"
+F 36 "$0.137" H 7050 1550 50  0001 C CNN "Mouser_price_qt=1000"
+F 37 "19,684" H 7050 1550 50  0001 C CNN "Mouser_stock"
+F 38 "-" H 7050 1550 50  0001 C CNN "RS_link"
+F 39 "-" H 7050 1550 50  0001 C CNN "RS_ref"
+F 40 "2020-12-11" H 7050 1550 50  0001 C CNN "RS_check_date"
+F 41 "-" H 7050 1550 50  0001 C CNN "RS_price_qt=1"
+F 42 "-" H 7050 1550 50  0001 C CNN "RS_price_qt=10"
+F 43 "-" H 7050 1550 50  0001 C CNN "RS_price_qt=100"
+F 44 "-" H 7050 1550 50  0001 C CNN "RS_price_qt=1000"
+F 45 "-" H 7050 1550 50  0001 C CNN "RS_stock"
+F 46 "TO_CHECK" H 7050 1550 50  0001 C CNN "Status"
+F 47 "1.01" H 7050 1550 50  0001 C CNN "Release_version"
+F 48 "2020-12-18" H 7050 1550 50  0001 C CNN "Release_date"
+F 49 "ManWithNoName" H 7050 1550 50  0001 C CNN "Designer"
+	1    7050 1550
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	7300 1600 7400 1600
+Wire Wire Line
+	7400 1600 7400 1500
+Connection ~ 7400 1500
+Wire Wire Line
+	7300 1700 7400 1700
+Wire Wire Line
+	7400 1700 7400 1600
+Connection ~ 7400 1600
 $EndSCHEMATC

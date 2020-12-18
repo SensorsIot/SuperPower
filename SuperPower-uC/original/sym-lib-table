@@ -8,6 +8,7 @@
   (lib (name dmg6968uts)(type Legacy)(uri ${KIPRJMOD}/../components/DMG6968UTS/dmg6968uts.lib)(options "")(descr ""))
   (lib (name dmn2019uts)(type Legacy)(uri ${KIPRJMOD}/../components/DMN2019UTS/dmn2019uts.lib)(options "")(descr ""))
   (lib (name dmn3018ssd)(type Legacy)(uri ${KIPRJMOD}/../components/DMN3018SSD/dmn3018ssd.lib)(options "")(descr ""))
+  (lib (name dmp2035uvt)(type Legacy)(uri ${KIPRJMOD}/../components/DMP2035UVT/dmp2035uvt.lib)(options "")(descr ""))
   (lib (name dmp3028lsd)(type Legacy)(uri ${KIPRJMOD}/../components/DMP3028LSD/dmp3028lsd.lib)(options "")(descr ""))
   (lib (name ESP32-WROOM32)(type Legacy)(uri ${KIPRJMOD}/../components/ESP32-WROOM32/ESP32-WROOM32.lib)(options "")(descr ""))
   (lib (name FP6291LR)(type Legacy)(uri ${KIPRJMOD}/../components/FP6291LR-G1/FP6291LR.lib)(options "")(descr ""))

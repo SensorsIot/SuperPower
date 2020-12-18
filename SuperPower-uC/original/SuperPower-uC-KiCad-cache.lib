@@ -1415,6 +1415,94 @@ X D 6 150 250 100 D 50 50 2 1 P
 ENDDRAW
 ENDDEF
 #
+# dmp2035uvt_DMP2035UVT
+#
+DEF dmp2035uvt_DMP2035UVT Q 0 0 Y N 1 F N
+F0 "Q" 200 75 50 H V L CNN
+F1 "dmp2035uvt_DMP2035UVT" 200 0 50 H V L CNN
+F2 "Package_TO_SOT_SMD:SOT-23-6" 200 100 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "Diodes Incorporated" 0 0 50 H I C CNN "Mfr_name"
+F5 "DMP2035UVT-7" 0 0 50 H I C CNN "Mfr_no"
+F6 "TSOT26" 375 -75 50 H V C CNN "Package"
+F7 "P" 0 0 50 H I C CNN "mos_Type"
+F8 "-20V" 0 0 50 H I C CNN "mos_VDSS"
+F9 "35mΩ" 375 -150 50 H V C CNN "mos_RDSon"
+F10 "-6.0A" 0 0 50 H I C CNN "mos_IDmax"
+F11 "-0.4V_to_-1.5V" 0 0 50 H I C CNN "mos_VGSth"
+F12 "12V" 0 0 50 H I C CNN "mos_VGSS"
+F13 "https://octopart.com/dmp2035uvt-7-diodes+inc.-21789379?r=sp" 0 0 50 H I C CNN "Octopart_link"
+F14 "https://fr.farnell.com/diodes-inc/dmp2035uvt-7/mosfet-canal-p-20v-6a-150-1-2w/dp/3405183?st=dmp2035uvt" 0 0 50 H I C CNN "Farnell_link"
+F15 "3405183" 0 0 50 H I C CNN "Farnell_ref"
+F16 "2020-12-11" 0 0 50 H I C CNN "Farnell_check_date"
+F17 "-" 0 0 50 H I C CNN "Farnell_price_qt=1"
+F18 "0,52 €" 0 0 50 H I C CNN "Farnell_price_qt=10"
+F19 "0,238 €" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F20 "0,141 €" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F21 "2,890" 0 0 50 H I C CNN "Farnell_stock"
+F22 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMP2035UVT-7_C260934.html" 0 0 50 H I C CNN "LCSC_link"
+F23 "C260934" 0 0 50 H I C CNN "LCSC_ref"
+F24 "2020-12-11" 0 0 50 H I C CNN "LCSC_check_date"
+F25 "-" 0 0 50 H I C CNN "LCSC_price_qt=1"
+F26 "$0.1253" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F27 "$0.0932" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F28 "$0.0814" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F29 "7,535" 0 0 50 H I C CNN "LCSC_stock"
+F30 "https://eu.mouser.com/ProductDetail/Diodes-Incorporated/DMP2035UVT-7?qs=F5djdNSOT4Y3SEHDwWTQ6g%3D%3D" 0 0 50 H I C CNN "Mouser_link"
+F31 "621-DMP2035UVT-7" 0 0 50 H I C CNN "Mouser_ref"
+F32 "2020-12-11" 0 0 50 H I C CNN "Mouser_check_date"
+F33 "$0.474" 0 0 50 H I C CNN "Mouser_price_qt=1"
+F34 "$0.346" 0 0 50 H I C CNN "Mouser_price_qt=10"
+F35 "$0.215" 0 0 50 H I C CNN "Mouser_price_qt=100"
+F36 "$0.137" 0 0 50 H I C CNN "Mouser_price_qt=1000"
+F37 "19,684" 0 0 50 H I C CNN "Mouser_stock"
+F38 "-" 0 0 50 H I C CNN "RS_link"
+F39 "-" 0 0 50 H I C CNN "RS_ref"
+F40 "2020-12-11" 0 0 50 H I C CNN "RS_check_date"
+F41 "-" 0 0 50 H I C CNN "RS_price_qt=1"
+F42 "-" 0 0 50 H I C CNN "RS_price_qt=10"
+F43 "-" 0 0 50 H I C CNN "RS_price_qt=100"
+F44 "-" 0 0 50 H I C CNN "RS_price_qt=1000"
+F45 "-" 0 0 50 H I C CNN "RS_stock"
+F46 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F47 "1.01" 0 0 50 H I C CNN "Release_version"
+F48 "2020-12-18" 0 0 50 H I C CNN "Release_date"
+F49 "ManWithNoName" 0 0 50 H I C CNN "Designer"
+DRAW
+C 65 0 110 0 1 10 N
+C 100 -70 10 0 1 0 F
+C 100 70 10 0 1 0 F
+C -90 0 10 1 1 0 F
+C -50 150 10 1 1 0 F
+C 50 150 10 1 1 0 F
+C 100 -150 10 1 1 0 F
+C 100 150 10 1 1 0 F
+S -150 150 150 150 0 1 0 N
+S 100 150 100 75 0 1 0 N
+P 2 0 1 0 10 0 -100 0 N
+P 2 0 1 10 10 75 10 -75 N
+P 2 0 1 10 30 -50 30 -90 N
+P 2 0 1 10 30 20 30 -20 N
+P 2 0 1 10 30 90 30 50 N
+P 3 0 1 0 100 -100 100 0 30 0 N
+P 4 0 1 0 30 70 130 70 130 -70 30 -70 N
+P 4 0 1 0 90 0 50 15 50 -15 90 0 F
+P 4 0 1 0 110 -20 115 -15 145 -15 150 -10 N
+P 4 0 1 0 130 -15 115 10 145 10 130 -15 N
+P 3 1 1 0 100 -150 -90 -150 -90 0 N
+P 4 1 1 0 -40 -170 -35 -165 -35 -135 -30 -130 N
+P 4 1 1 0 -35 -150 -10 -165 -10 -135 -35 -150 N
+P 4 1 1 0 45 -150 20 -135 20 -165 45 -150 N
+P 4 1 1 0 50 -130 45 -135 45 -165 40 -170 N
+X D 1 -150 250 100 D 50 50 1 1 P
+X D 2 -50 250 100 D 50 50 1 1 P
+X G 3 -200 0 100 R 50 50 1 1 I
+X S 4 100 -200 100 U 50 50 1 1 P
+X D 5 50 250 100 D 50 50 1 1 P
+X D 6 150 250 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # dmp3028lsd_DMP3028LSD
 #
 DEF dmp3028lsd_DMP3028LSD Q 0 20 Y N 2 F N
