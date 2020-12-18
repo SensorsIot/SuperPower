@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP RL0805FR-7W0R068L
+D Resistor, 0805, 0.25W, 1%, 68mΩ
+K R res resistor 0805
+F https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RL_Group_521_RoHS_L_2.pdf
+$ENDCMP
+#
+#End Doc Library
