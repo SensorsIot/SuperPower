@@ -203,176 +203,89 @@ Wire Wire Line
 Wire Wire Line
 	9250 5500 9500 5500
 $Comp
-L Device:R_Small R28
-U 1 1 5F8C7F33
-P 9850 1550
-F 0 "R28" H 9909 1596 50  0000 L CNN
-F 1 "12k" H 9909 1505 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9850 1550 50  0001 C CNN
-F 3 "~" H 9850 1550 50  0001 C CNN
-	1    9850 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C12
-U 1 1 5F8C82E0
-P 9850 1850
-F 0 "C12" H 9942 1896 50  0000 L CNN
-F 1 "1µF" H 9942 1805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9850 1850 50  0001 C CNN
-F 3 "~" H 9850 1850 50  0001 C CNN
-	1    9850 1850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9850 1650 9850 1700
-Wire Wire Line
-	9650 1700 9850 1700
-Connection ~ 9850 1700
-Wire Wire Line
-	9850 1700 9850 1750
-Text Label 9650 1700 0    50   ~ 0
-EN
-$Comp
-L power:GND #PWR034
-U 1 1 5F8CBC56
-P 9850 2050
-F 0 "#PWR034" H 9850 1800 50  0001 C CNN
-F 1 "GND" H 9855 1877 50  0000 C CNN
-F 2 "" H 9850 2050 50  0001 C CNN
-F 3 "" H 9850 2050 50  0001 C CNN
-	1    9850 2050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9850 2050 9850 1950
-$Comp
-L Device:R_Small R29
-U 1 1 5F8CDA06
-P 10100 1550
-F 0 "R29" H 10159 1596 50  0000 L CNN
-F 1 "12k" H 10159 1505 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 10100 1550 50  0001 C CNN
-F 3 "~" H 10100 1550 50  0001 C CNN
-	1    10100 1550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10100 1650 10100 1750
-Wire Wire Line
-	10100 1750 10350 1750
-Text Label 10350 1750 2    50   ~ 0
-IO0
-Wire Wire Line
-	9850 1450 9850 1400
-Wire Wire Line
-	9850 1400 10100 1400
-Wire Wire Line
-	10100 1400 10100 1450
-Wire Wire Line
-	9850 1400 9850 1300
-Connection ~ 9850 1400
-$Comp
 L Device:R_Small R27
 U 1 1 5F8DFE5B
-P 9100 2000
-F 0 "R27" V 9200 2100 50  0000 L CNN
-F 1 "12k" V 9200 1950 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9100 2000 50  0001 C CNN
-F 3 "~" H 9100 2000 50  0001 C CNN
-	1    9100 2000
+P 8750 2350
+F 0 "R27" V 8850 2450 50  0000 L CNN
+F 1 "12k" V 8850 2300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8750 2350 50  0001 C CNN
+F 3 "~" H 8750 2350 50  0001 C CNN
+	1    8750 2350
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:Q_NPN_CEB Q6
 U 1 1 5F8E617A
-P 8700 2000
-F 0 "Q6" H 8891 2046 50  0000 L CNN
-F 1 "S8050" H 8891 1955 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 8900 2100 50  0001 C CNN
-F 3 "~" H 8700 2000 50  0001 C CNN
-	1    8700 2000
+P 8350 2350
+F 0 "Q6" H 8541 2396 50  0000 L CNN
+F 1 "S8050" H 8541 2305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8550 2450 50  0001 C CNN
+F 3 "~" H 8350 2350 50  0001 C CNN
+	1    8350 2350
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	8900 2000 9000 2000
+	8550 2350 8650 2350
 Wire Wire Line
-	9300 1550 9300 2000
+	8950 1900 8950 2350
 Wire Wire Line
-	9300 2000 9200 2000
+	8950 2350 8850 2350
 Wire Wire Line
-	8600 2200 8600 2300
-Text Label 9450 2300 2    50   ~ 0
-IO0
-Text Label 9450 950  2    50   ~ 0
-EN
-Wire Wire Line
-	9200 1250 9450 1250
-Text Label 9450 1250 2    50   ~ 0
+	8250 2550 8250 2650
+Text Label 9250 1600 2    50   ~ 0
 DTR
-Text Label 9450 1550 2    50   ~ 0
+Text Label 9250 2350 2    50   ~ 0
 RTS
 Wire Wire Line
-	8600 1800 8600 1700
-Wire Wire Line
-	8600 1700 8400 1700
-Text Label 8400 1700 0    50   ~ 0
-DTR
-Wire Wire Line
-	9300 1550 9450 1550
-Text Notes 7250 1600 0    50   ~ 0
+	8250 2150 8250 2050
+Text Notes 7000 1800 0    50   ~ 0
 Autoflash circuit\n\nDTR RTS   EN IO0\n\n 1   1     1   1\n 0   0     1   1\n 1   0     0   1\n 0   1     1   0
 Wire Notes Line
-	7200 900  8000 900 
+	6950 1100 7750 1100
 Wire Notes Line
-	8000 1650 7200 1650
+	7750 1850 6950 1850
 Wire Notes Line
-	7200 1650 7200 900 
+	6950 1850 6950 1100
 Wire Notes Line
-	7600 1050 7600 1650
-Text Notes 8850 750  2    50   ~ 10
+	7350 1250 7350 1850
+Text Notes 9250 900  2    50   ~ 10
 Autoflash/reset circuit and soft start circuit
 Wire Notes Line
-	7100 650  10550 650 
+	6950 1450 7750 1450
 Wire Notes Line
-	10550 2950 7100 2950
-Connection ~ 9300 1550
+	6950 1250 7750 1250
 Wire Notes Line
-	7200 1250 8000 1250
-Wire Notes Line
-	7200 1050 8000 1050
-Wire Notes Line
-	8000 900  8000 1650
+	7750 1100 7750 1850
 Wire Wire Line
-	8600 1550 9300 1550
+	8250 1900 8950 1900
 Wire Wire Line
-	8600 950  8950 950 
+	8250 1300 8600 1300
 Wire Wire Line
-	8600 1050 8600 950 
+	8250 1400 8250 1300
 Wire Wire Line
-	8600 1450 8600 1550
+	8250 1800 8250 1900
 Wire Wire Line
-	8900 1250 9000 1250
+	8550 1600 8650 1600
 $Comp
 L Device:Q_NPN_CEB Q5
 U 1 1 5F8E1EE6
-P 8700 1250
-F 0 "Q5" H 8891 1296 50  0000 L CNN
-F 1 "S8050" H 8891 1205 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 8900 1350 50  0001 C CNN
-F 3 "~" H 8700 1250 50  0001 C CNN
-	1    8700 1250
+P 8350 1600
+F 0 "Q5" H 8541 1646 50  0000 L CNN
+F 1 "S8050" H 8541 1555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8550 1700 50  0001 C CNN
+F 3 "~" H 8350 1600 50  0001 C CNN
+	1    8350 1600
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R26
 U 1 1 5F8DFE61
-P 9100 1250
-F 0 "R26" V 9200 1300 50  0000 L CNN
-F 1 "12k" V 9200 1150 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9100 1250 50  0001 C CNN
-F 3 "~" H 9100 1250 50  0001 C CNN
-	1    9100 1250
+P 8750 1600
+F 0 "R26" V 8850 1650 50  0000 L CNN
+F 1 "12k" V 8850 1500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8750 1600 50  0001 C CNN
+F 3 "~" H 8750 1600 50  0001 C CNN
+	1    8750 1600
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -412,8 +325,6 @@ Text Label 9500 4400 2    50   ~ 0
 SCL
 Text Label 9500 4700 2    50   ~ 0
 SDA
-Text Label 9850 1300 1    50   ~ 0
-3v3_MCU
 Text Label 5500 2800 2    50   ~ 0
 TXT
 Text Label 3350 2350 0    50   ~ 0
@@ -833,10 +744,8 @@ Text Label 10150 5800 0    50   ~ 0
 3v3
 Text Notes 2500 6150 0    50   ~ 0
 Indicator LEDs showing\nthe serial bus status.\nAn RSTb pull-up resistor
-Text Notes 9650 2850 0    50   ~ 0
+Text Notes 9700 3300 0    50   ~ 0
 Soft start circuit:\nAllows the regulator\nto be in steady state\nbefore starting\nthe MCU\n(prevent brownout)
-Text Notes 8400 2850 0    50   ~ 0
-Autoflash/reset circuit:\nAllows the USB-UART\nbridge to reset the MCU\nand to boot the MCU\nin flashing\n(programmation) mode.
 Text Notes 3000 4350 0    50   ~ 0
 USB - UART bridge:\nAllows the MCU to communicate and to be flashed\n(programmed) via the USB bus
 Text HLabel 1250 1600 0    50   Input ~ 0
@@ -1407,20 +1316,110 @@ $EndComp
 $Comp
 L Device:D_Small D1
 U 1 1 5FDAA563
-P 9050 950
-F 0 "D1" H 9050 743 50  0000 C CNN
-F 1 "B5819" H 9050 834 50  0000 C CNN
-F 2 "" V 9050 950 50  0001 C CNN
-F 3 "~" V 9050 950 50  0001 C CNN
-	1    9050 950 
+P 8700 1300
+F 0 "D1" H 8700 1093 50  0000 C CNN
+F 1 "B5819" H 8700 1184 50  0000 C CNN
+F 2 "" V 8700 1300 50  0001 C CNN
+F 3 "~" V 8700 1300 50  0001 C CNN
+	1    8700 1300
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	8600 2300 9450 2300
+	8850 1600 8900 1600
 Wire Wire Line
-	9150 950  9450 950 
+	8900 1600 8900 2050
+Wire Wire Line
+	8900 2050 8250 2050
+Connection ~ 8900 1600
+Wire Wire Line
+	8900 1600 9250 1600
+Wire Wire Line
+	9250 2350 8950 2350
+Connection ~ 8950 2350
+Wire Wire Line
+	8800 1300 9100 1300
+Text Label 9100 1300 2    50   ~ 0
+EN
+Wire Wire Line
+	8250 2650 9100 2650
+Text Label 9100 2650 2    50   ~ 0
+IO0
+$Comp
+L power:GND #PWR034
+U 1 1 5F8CBC56
+P 10200 1600
+F 0 "#PWR034" H 10200 1350 50  0001 C CNN
+F 1 "GND" H 10205 1427 50  0000 C CNN
+F 2 "" H 10200 1600 50  0001 C CNN
+F 3 "" H 10200 1600 50  0001 C CNN
+	1    10200 1600
+	1    0    0    -1  
+$EndComp
+Text Label 9550 1550 0    50   ~ 0
+EN
+Wire Wire Line
+	9550 1550 9750 1550
+$Comp
+L Device:C_Small C12
+U 1 1 5F8C82E0
+P 9850 1550
+F 0 "C12" H 9942 1596 50  0000 L CNN
+F 1 "1µF" H 9942 1505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9850 1550 50  0001 C CNN
+F 3 "~" H 9850 1550 50  0001 C CNN
+	1    9850 1550
+	0    1    1    0   
+$EndComp
+Text Label 9550 2050 0    50   ~ 0
+EN
+$Comp
+L Device:R_Small R?
+U 1 1 5FE5C5F7
+P 9900 2050
+F 0 "R?" H 9959 2096 50  0000 L CNN
+F 1 "12k" H 9959 2005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9900 2050 50  0001 C CNN
+F 3 "~" H 9900 2050 50  0001 C CNN
+	1    9900 2050
+	0    1    1    0   
+$EndComp
+Text Label 10550 2050 2    50   ~ 0
+3v3_MCU
+Wire Wire Line
+	9550 2050 9800 2050
+Wire Wire Line
+	10000 2050 10550 2050
+$Comp
+L Device:R_Small R?
+U 1 1 5FE7288F
+P 9900 2350
+F 0 "R?" H 9959 2396 50  0000 L CNN
+F 1 "12k" H 9959 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9900 2350 50  0001 C CNN
+F 3 "~" H 9900 2350 50  0001 C CNN
+	1    9900 2350
+	0    1    1    0   
+$EndComp
+Text Label 10550 2350 2    50   ~ 0
+3v3_MCU
+Wire Wire Line
+	9550 2350 9800 2350
+Wire Wire Line
+	10000 2350 10550 2350
+Text Label 9550 2350 0    50   ~ 0
+IO0
+Wire Wire Line
+	10200 1600 10200 1550
+Wire Wire Line
+	10200 1550 9950 1550
+Text Notes 8200 3300 0    50   ~ 0
+Autoflash/reset circuit:\nAllows the USB-UART\nbridge to reset the MCU\nand to boot the MCU\nin flashing\n(programmation) mode.
 Wire Notes Line
-	10550 650  10550 2950
+	6850 750  10700 750 
 Wire Notes Line
-	7100 650  7100 2950
+	10700 750  10700 3400
+Wire Notes Line
+	10700 3400 6850 3400
+Wire Notes Line
+	6850 3400 6850 750 
 $EndSCHEMATC
