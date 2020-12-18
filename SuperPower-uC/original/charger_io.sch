@@ -163,8 +163,6 @@ Text Notes 5900 2250 0    50   ~ 10
 Screw Terminal
 Wire Notes Line
 	5800 7450 1100 7450
-Wire Notes Line
-	1100 7450 1100 4050
 Text Notes 1200 4250 0    50   ~ 10
 USB-C
 Wire Wire Line
@@ -401,8 +399,6 @@ Text Label 8800 2950 0    50   ~ 0
 VBUS
 Wire Notes Line
 	11050 2100 11050 6450
-Wire Notes Line
-	3250 2100 11050 2100
 Text Notes 8450 2250 0    50   ~ 10
 Power oring
 Text Label 8800 5050 0    50   ~ 0
@@ -852,4 +848,106 @@ Text Notes 7450 3050 0    50   ~ 10
 <- 15V Max
 Text Notes 6600 2700 0    50   ~ 0
 Dot Not Populate (Default)
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5FDDE91A
+P 1350 2550
+F 0 "H1" H 1450 2599 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1450 2508 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1350 2550 50  0001 C CNN
+F 3 "~" H 1350 2550 50  0001 C CNN
+	1    1350 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FDE07B4
+P 1350 2750
+F 0 "#PWR?" H 1350 2500 50  0001 C CNN
+F 1 "GND" H 1355 2577 50  0000 C CNN
+F 2 "" H 1350 2750 50  0001 C CNN
+F 3 "" H 1350 2750 50  0001 C CNN
+	1    1350 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 2750 1350 2650
+Wire Notes Line
+	1100 2100 1100 7450
+Wire Notes Line
+	1100 2100 11050 2100
+Text Notes 1200 2250 0    50   ~ 10
+Mounting Holes
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5FDE96CE
+P 2250 2550
+F 0 "H2" H 2350 2599 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2350 2508 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 2250 2550 50  0001 C CNN
+F 3 "~" H 2250 2550 50  0001 C CNN
+	1    2250 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FDE96D4
+P 2250 2750
+F 0 "#PWR?" H 2250 2500 50  0001 C CNN
+F 1 "GND" H 2255 2577 50  0000 C CNN
+F 2 "" H 2250 2750 50  0001 C CNN
+F 3 "" H 2250 2750 50  0001 C CNN
+	1    2250 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 2750 2250 2650
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5FDEB8E4
+P 1350 3300
+F 0 "H3" H 1450 3349 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1450 3258 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1350 3300 50  0001 C CNN
+F 3 "~" H 1350 3300 50  0001 C CNN
+	1    1350 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FDEB8EA
+P 1350 3500
+F 0 "#PWR?" H 1350 3250 50  0001 C CNN
+F 1 "GND" H 1355 3327 50  0000 C CNN
+F 2 "" H 1350 3500 50  0001 C CNN
+F 3 "" H 1350 3500 50  0001 C CNN
+	1    1350 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 3500 1350 3400
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5FDED307
+P 2250 3300
+F 0 "H4" H 2350 3349 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2350 3258 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 2250 3300 50  0001 C CNN
+F 3 "~" H 2250 3300 50  0001 C CNN
+	1    2250 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FDED30D
+P 2250 3500
+F 0 "#PWR?" H 2250 3250 50  0001 C CNN
+F 1 "GND" H 2255 3327 50  0000 C CNN
+F 2 "" H 2250 3500 50  0001 C CNN
+F 3 "" H 2250 3500 50  0001 C CNN
+	1    2250 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 3500 2250 3400
 $EndSCHEMATC
