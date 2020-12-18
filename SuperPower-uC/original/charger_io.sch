@@ -171,8 +171,6 @@ Wire Wire Line
 	1950 1250 1300 1250
 Wire Wire Line
 	4100 5050 3700 5050
-Wire Wire Line
-	3500 5050 3250 5050
 $Comp
 L Device:R_Small R5
 U 1 1 5F73032E
@@ -461,20 +459,6 @@ Wire Notes Line
 	2950 550  2950 2000
 Wire Notes Line
 	550  2000 550  550 
-$Comp
-L power:PWR_FLAG #FLG04
-U 1 1 5FDD7D70
-P 3250 5050
-F 0 "#FLG04" H 3250 5125 50  0001 C CNN
-F 1 "PWR_FLAG" H 3250 5223 50  0001 C CNN
-F 2 "" H 3250 5050 50  0001 C CNN
-F 3 "~" H 3250 5050 50  0001 C CNN
-	1    3250 5050
-	1    0    0    -1  
-$EndComp
-Connection ~ 3250 5050
-Wire Wire Line
-	3250 5050 3100 5050
 $Comp
 L usb-c:USB-C U2
 U 1 1 5FCE877D
@@ -950,4 +934,6 @@ F 3 "" H 2250 3500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2250 3500 2250 3400
+Wire Wire Line
+	3100 5050 3500 5050
 $EndSCHEMATC
