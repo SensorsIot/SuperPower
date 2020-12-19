@@ -619,54 +619,54 @@ $EndComp
 $Comp
 L jst_ph_s2b_thru:JST_PH_S2B_thru J1
 U 1 1 5FD9F213
-P 3000 1700
-F 0 "J1" H 2918 1375 50  0000 C CNN
-F 1 "JST_PH_S2B_thru" H 2918 1466 50  0000 C CNN
-F 2 "Connector_JST_user:JST_ZH_S2B-ZR_1x02_P1.50mm_Horizontal" H 3000 1700 50  0001 C CNN
-F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 3000 1700 50  0001 C CNN
-F 4 "JST" H 3000 1700 50  0001 C CNN "Mfr_name"
-F 5 "S2B-PH-K-S(LF)(SN)" H 3000 1700 50  0001 C CNN "Mfr_no"
-F 6 "PH Right Angle Thru 2pins" H 3000 1700 50  0001 C CNN "Package"
-F 7 "White" H 3000 1700 50  0001 C CNN "Color"
-F 8 "https://octopart.com/s2b-ph-k-s%28lf%29%28sn%29-jst-248883?r=sp" H 3000 1700 50  0001 C CNN "Octopart_link"
-F 9 "https://fr.farnell.com/jst-japan-solderless-terminals/s2b-ph-k-s-lf-sn/embase-entree-laterale-2-voies/dp/9491902?scope=partnumberlookahead&ost=S2B-PH-K-S+%28LF%29%28SN%29&searchref=searchlookahead&exaMfpn=true" H 3000 1700 50  0001 C CNN "Farnell_link"
-F 10 "9491902" H 3000 1700 50  0001 C CNN "Farnell_ref"
-F 11 "2020-11-24" H 3000 1700 50  0001 C CNN "Farnell_check_date"
-F 12 "-" H 3000 1700 50  0001 C CNN "Farnell_price_qt=1"
-F 13 "-" H 3000 1700 50  0001 C CNN "Farnell_price_qt=10"
-F 14 "0.072€" H 3000 1700 50  0001 C CNN "Farnell_price_qt=100"
-F 15 "0.063€" H 3000 1700 50  0001 C CNN "Farnell_price_qt=1000"
-F 16 "0 (available from 2021-02-14)" H 3000 1700 50  0001 C CNN "Farnell_stock"
-F 17 "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_JST-Sales-America-S2B-PH-K-S-LF-SN_C173752.html" H 3000 1700 50  0001 C CNN "LCSC_link"
-F 18 "C173752" H 3000 1700 50  0001 C CNN "LCSC_ref"
-F 19 "2020-11-24" H 3000 1700 50  0001 C CNN "LCSC_check_date"
-F 20 "-" H 3000 1700 50  0001 C CNN "LCSC_price_qt=1"
-F 21 "$0.038" H 3000 1700 50  0001 C CNN "LCSC_price_qt=10"
-F 22 "$0.028" H 3000 1700 50  0001 C CNN "LCSC_price_qt=100"
-F 23 "$0.024" H 3000 1700 50  0001 C CNN "LCSC_price_qt=1000"
-F 24 "55470" H 3000 1700 50  0001 C CNN "LCSC_stock"
-F 25 "-" H 3000 1700 50  0001 C CNN "Mouser_link"
-F 26 "-" H 3000 1700 50  0001 C CNN "Mouser_ref"
-F 27 "2020-11-24" H 3000 1700 50  0001 C CNN "Mouser_check_date"
-F 28 "-" H 3000 1700 50  0001 C CNN "Mouser_price_qt=1"
-F 29 "-" H 3000 1700 50  0001 C CNN "Mouser_price_qt=10"
-F 30 "-" H 3000 1700 50  0001 C CNN "Mouser_price_qt=100"
-F 31 "-" H 3000 1700 50  0001 C CNN "Mouser_price_qt=1000"
-F 32 "-" H 3000 1700 50  0001 C CNN "Mouser_stock"
-F 33 "https://fr.rs-online.com/web/p/embases-circuits-imprimes/8201494/" H 3000 1700 50  0001 C CNN "RS_link"
-F 34 "820-1494" H 3000 1700 50  0001 C CNN "RS_ref"
-F 35 "2020-11-24" H 3000 1700 50  0001 C CNN "RS_check_date"
-F 36 "-" H 3000 1700 50  0001 C CNN "RS_price_qt=1"
-F 37 "0.148€" H 3000 1700 50  0001 C CNN "RS_price_qt=10"
-F 38 "0.138€" H 3000 1700 50  0001 C CNN "RS_price_qt=100"
-F 39 "0.068€" H 3000 1700 50  0001 C CNN "RS_price_qt=1000"
-F 40 "275" H 3000 1700 50  0001 C CNN "RS_stock"
-F 41 "TO_CHECK" H 3000 1700 50  0001 C CNN "Status"
-F 42 "1.01" H 3000 1700 50  0001 C CNN "Release_version"
-F 43 "2020-12-12" H 3000 1700 50  0001 C CNN "Release_date"
-F 44 "ManWithNoName" H 3000 1700 50  0001 C CNN "Designer"
-	1    3000 1700
-	-1   0    0    1   
+P 3000 1600
+F 0 "J1" H 2918 1275 50  0000 C CNN
+F 1 "JST_PH_S2B_thru" H 2918 1366 50  0000 C CNN
+F 2 "Connector_JST_user:JST_ZH_S2B-ZR_1x02_P1.50mm_Horizontal" H 3000 1600 50  0001 C CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 3000 1600 50  0001 C CNN
+F 4 "JST" H 3000 1600 50  0001 C CNN "Mfr_name"
+F 5 "S2B-PH-K-S(LF)(SN)" H 3000 1600 50  0001 C CNN "Mfr_no"
+F 6 "PH Right Angle Thru 2pins" H 3000 1600 50  0001 C CNN "Package"
+F 7 "White" H 3000 1600 50  0001 C CNN "Color"
+F 8 "https://octopart.com/s2b-ph-k-s%28lf%29%28sn%29-jst-248883?r=sp" H 3000 1600 50  0001 C CNN "Octopart_link"
+F 9 "https://fr.farnell.com/jst-japan-solderless-terminals/s2b-ph-k-s-lf-sn/embase-entree-laterale-2-voies/dp/9491902?scope=partnumberlookahead&ost=S2B-PH-K-S+%28LF%29%28SN%29&searchref=searchlookahead&exaMfpn=true" H 3000 1600 50  0001 C CNN "Farnell_link"
+F 10 "9491902" H 3000 1600 50  0001 C CNN "Farnell_ref"
+F 11 "2020-11-24" H 3000 1600 50  0001 C CNN "Farnell_check_date"
+F 12 "-" H 3000 1600 50  0001 C CNN "Farnell_price_qt=1"
+F 13 "-" H 3000 1600 50  0001 C CNN "Farnell_price_qt=10"
+F 14 "0.072€" H 3000 1600 50  0001 C CNN "Farnell_price_qt=100"
+F 15 "0.063€" H 3000 1600 50  0001 C CNN "Farnell_price_qt=1000"
+F 16 "0 (available from 2021-02-14)" H 3000 1600 50  0001 C CNN "Farnell_stock"
+F 17 "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_JST-Sales-America-S2B-PH-K-S-LF-SN_C173752.html" H 3000 1600 50  0001 C CNN "LCSC_link"
+F 18 "C173752" H 3000 1600 50  0001 C CNN "LCSC_ref"
+F 19 "2020-11-24" H 3000 1600 50  0001 C CNN "LCSC_check_date"
+F 20 "-" H 3000 1600 50  0001 C CNN "LCSC_price_qt=1"
+F 21 "$0.038" H 3000 1600 50  0001 C CNN "LCSC_price_qt=10"
+F 22 "$0.028" H 3000 1600 50  0001 C CNN "LCSC_price_qt=100"
+F 23 "$0.024" H 3000 1600 50  0001 C CNN "LCSC_price_qt=1000"
+F 24 "55470" H 3000 1600 50  0001 C CNN "LCSC_stock"
+F 25 "-" H 3000 1600 50  0001 C CNN "Mouser_link"
+F 26 "-" H 3000 1600 50  0001 C CNN "Mouser_ref"
+F 27 "2020-11-24" H 3000 1600 50  0001 C CNN "Mouser_check_date"
+F 28 "-" H 3000 1600 50  0001 C CNN "Mouser_price_qt=1"
+F 29 "-" H 3000 1600 50  0001 C CNN "Mouser_price_qt=10"
+F 30 "-" H 3000 1600 50  0001 C CNN "Mouser_price_qt=100"
+F 31 "-" H 3000 1600 50  0001 C CNN "Mouser_price_qt=1000"
+F 32 "-" H 3000 1600 50  0001 C CNN "Mouser_stock"
+F 33 "https://fr.rs-online.com/web/p/embases-circuits-imprimes/8201494/" H 3000 1600 50  0001 C CNN "RS_link"
+F 34 "820-1494" H 3000 1600 50  0001 C CNN "RS_ref"
+F 35 "2020-11-24" H 3000 1600 50  0001 C CNN "RS_check_date"
+F 36 "-" H 3000 1600 50  0001 C CNN "RS_price_qt=1"
+F 37 "0.148€" H 3000 1600 50  0001 C CNN "RS_price_qt=10"
+F 38 "0.138€" H 3000 1600 50  0001 C CNN "RS_price_qt=100"
+F 39 "0.068€" H 3000 1600 50  0001 C CNN "RS_price_qt=1000"
+F 40 "275" H 3000 1600 50  0001 C CNN "RS_stock"
+F 41 "TO_CHECK" H 3000 1600 50  0001 C CNN "Status"
+F 42 "1.01" H 3000 1600 50  0001 C CNN "Release_version"
+F 43 "2020-12-12" H 3000 1600 50  0001 C CNN "Release_date"
+F 44 "ManWithNoName" H 3000 1600 50  0001 C CNN "Designer"
+	1    3000 1600
+	-1   0    0    -1  
 $EndComp
 Text Notes 3150 6550 0    50   ~ 0
 Do Not Populate (Default)
