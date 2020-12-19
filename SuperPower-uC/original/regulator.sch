@@ -837,9 +837,6 @@ $EndComp
 Wire Wire Line
 	3600 1550 3600 1600
 Wire Wire Line
-	3300 2250 3250 2250
-Connection ~ 3250 2250
-Wire Wire Line
 	8300 4100 8700 4100
 Wire Notes Line
 	600  3600 3250 3600
@@ -856,32 +853,6 @@ Wire Wire Line
 	3600 1300 4100 1300
 Wire Wire Line
 	3600 2700 3600 2450
-$Comp
-L Device:R_Small R40
-U 1 1 5FC79983
-P 3250 2500
-F 0 "R40" H 3200 2450 50  0000 R CNN
-F 1 "1M" H 3200 2550 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 3250 2500 50  0001 C CNN
-F 3 "~" H 3250 2500 50  0001 C CNN
-	1    3250 2500
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3250 2250 3250 2400
-$Comp
-L power:GND #PWR059
-U 1 1 5FC83D8B
-P 3250 2700
-F 0 "#PWR059" H 3250 2450 50  0001 C CNN
-F 1 "GND" H 3255 2527 50  0000 C CNN
-F 2 "" H 3250 2700 50  0001 C CNN
-F 3 "" H 3250 2700 50  0001 C CNN
-	1    3250 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3250 2600 3250 2700
 Wire Wire Line
 	1600 5300 1600 5500
 Connection ~ 1600 5500
@@ -986,8 +957,6 @@ Text HLabel 1200 2450 0    50   Output ~ 0
 3v3
 Wire Notes Line
 	550  550  2450 550 
-Wire Wire Line
-	2800 2250 3250 2250
 $Comp
 L 2n7002a:2N7002A Q10
 U 1 1 5FE90CE1
@@ -1833,4 +1802,6 @@ Wire Wire Line
 Connection ~ 4600 1300
 Wire Wire Line
 	4600 1300 4600 1350
+Wire Wire Line
+	2800 2250 3300 2250
 $EndSCHEMATC
