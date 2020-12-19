@@ -96,7 +96,7 @@ U 1 1 5F72FE29
 P 4200 3000
 F 0 "J2" H 4257 3317 50  0000 C CNN
 F 1 "Barrel_Jack_Switch" H 4257 3226 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 4250 2960 50  0001 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal" H 4250 2960 50  0001 C CNN
 F 3 "~" H 4250 2960 50  0001 C CNN
 	1    4200 3000
 	1    0    0    -1  
