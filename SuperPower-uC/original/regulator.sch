@@ -1156,78 +1156,13 @@ F 3 "~" H 3300 2550 50  0001 C CNN
 	1    3300 2550
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	3300 2150 3300 2250
-Connection ~ 3300 2150
-Wire Wire Line
-	3300 2050 3300 2150
-Connection ~ 3300 2050
 Connection ~ 3300 2250
-Wire Wire Line
-	3300 1950 3300 2050
 Wire Wire Line
 	2600 1300 2600 2000
 Wire Wire Line
 	3100 1300 2600 1300
 Text Label 3100 1300 2    50   ~ 0
 3v3_RTC_I2C
-$Comp
-L dmp2035uvt:DMP2035UVT Q6
-U 1 1 5FE2D544
-P 3050 2100
-F 0 "Q6" V 3607 2125 50  0000 C CNN
-F 1 "DMP2035UVT" V 3516 2125 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 3250 2200 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/DMP2035UVT.pdf" H 3050 2100 50  0001 C CNN
-F 4 "Diodes Incorporated" H 3050 2100 50  0001 C CNN "Mfr_name"
-F 5 "DMP2035UVT-7" H 3050 2100 50  0001 C CNN "Mfr_no"
-F 6 "TSOT26" V 3425 2125 50  0000 C CNN "Package"
-F 7 "P" H 3050 2100 50  0001 C CNN "mos_Type"
-F 8 "-20V" H 3050 2100 50  0001 C CNN "mos_VDSS"
-F 9 "35mΩ" V 3334 2125 50  0000 C CNN "mos_RDSon"
-F 10 "-6.0A" H 3050 2100 50  0001 C CNN "mos_IDmax"
-F 11 "-0.4V_to_-1.5V" H 3050 2100 50  0001 C CNN "mos_VGSth"
-F 12 "12V" H 3050 2100 50  0001 C CNN "mos_VGSS"
-F 13 "https://octopart.com/dmp2035uvt-7-diodes+inc.-21789379?r=sp" H 3050 2100 50  0001 C CNN "Octopart_link"
-F 14 "https://fr.farnell.com/diodes-inc/dmp2035uvt-7/mosfet-canal-p-20v-6a-150-1-2w/dp/3405183?st=dmp2035uvt" H 3050 2100 50  0001 C CNN "Farnell_link"
-F 15 "3405183" H 3050 2100 50  0001 C CNN "Farnell_ref"
-F 16 "2020-12-11" H 3050 2100 50  0001 C CNN "Farnell_check_date"
-F 17 "-" H 3050 2100 50  0001 C CNN "Farnell_price_qt=1"
-F 18 "0,52 €" H 3050 2100 50  0001 C CNN "Farnell_price_qt=10"
-F 19 "0,238 €" H 3050 2100 50  0001 C CNN "Farnell_price_qt=100"
-F 20 "0,141 €" H 3050 2100 50  0001 C CNN "Farnell_price_qt=1000"
-F 21 "2,890" H 3050 2100 50  0001 C CNN "Farnell_stock"
-F 22 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMP2035UVT-7_C260934.html" H 3050 2100 50  0001 C CNN "LCSC_link"
-F 23 "C260934" H 3050 2100 50  0001 C CNN "LCSC_ref"
-F 24 "2020-12-11" H 3050 2100 50  0001 C CNN "LCSC_check_date"
-F 25 "-" H 3050 2100 50  0001 C CNN "LCSC_price_qt=1"
-F 26 "$0.1253" H 3050 2100 50  0001 C CNN "LCSC_price_qt=10"
-F 27 "$0.0932" H 3050 2100 50  0001 C CNN "LCSC_price_qt=100"
-F 28 "$0.0814" H 3050 2100 50  0001 C CNN "LCSC_price_qt=1000"
-F 29 "7,535" H 3050 2100 50  0001 C CNN "LCSC_stock"
-F 30 "https://eu.mouser.com/ProductDetail/Diodes-Incorporated/DMP2035UVT-7?qs=F5djdNSOT4Y3SEHDwWTQ6g%3D%3D" H 3050 2100 50  0001 C CNN "Mouser_link"
-F 31 "621-DMP2035UVT-7" H 3050 2100 50  0001 C CNN "Mouser_ref"
-F 32 "2020-12-11" H 3050 2100 50  0001 C CNN "Mouser_check_date"
-F 33 "$0.474" H 3050 2100 50  0001 C CNN "Mouser_price_qt=1"
-F 34 "$0.346" H 3050 2100 50  0001 C CNN "Mouser_price_qt=10"
-F 35 "$0.215" H 3050 2100 50  0001 C CNN "Mouser_price_qt=100"
-F 36 "$0.137" H 3050 2100 50  0001 C CNN "Mouser_price_qt=1000"
-F 37 "19,684" H 3050 2100 50  0001 C CNN "Mouser_stock"
-F 38 "-" H 3050 2100 50  0001 C CNN "RS_link"
-F 39 "-" H 3050 2100 50  0001 C CNN "RS_ref"
-F 40 "2020-12-11" H 3050 2100 50  0001 C CNN "RS_check_date"
-F 41 "-" H 3050 2100 50  0001 C CNN "RS_price_qt=1"
-F 42 "-" H 3050 2100 50  0001 C CNN "RS_price_qt=10"
-F 43 "-" H 3050 2100 50  0001 C CNN "RS_price_qt=100"
-F 44 "-" H 3050 2100 50  0001 C CNN "RS_price_qt=1000"
-F 45 "-" H 3050 2100 50  0001 C CNN "RS_stock"
-F 46 "TO_CHECK" H 3050 2100 50  0001 C CNN "Status"
-F 47 "1.01" H 3050 2100 50  0001 C CNN "Release_version"
-F 48 "2020-12-18" H 3050 2100 50  0001 C CNN "Release_date"
-F 49 "ManWithNoName" H 3050 2100 50  0001 C CNN "Designer"
-	1    3050 2100
-	0    1    -1   0   
-$EndComp
 Wire Wire Line
 	4600 1300 4600 1350
 Connection ~ 4600 1300
@@ -1927,4 +1862,65 @@ Wire Wire Line
 Connection ~ 2800 2650
 Wire Wire Line
 	2800 2650 2600 2650
+$Comp
+L bss84-7-f:BSS84-7-F Q6
+U 1 1 601C77BD
+P 3050 2100
+F 0 "Q6" V 3574 2100 50  0000 C CNN
+F 1 "BSS84-7-F" V 3483 2100 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3250 2200 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30149.pdf" H 3050 2100 50  0001 C CNN
+F 4 "Diodes Incorporated" H 3050 2100 50  0001 C CNN "Mfr_name"
+F 5 "BSS84-7-F" H 3050 2100 50  0001 C CNN "Mfr_no"
+F 6 "SOT23-3" V 3392 2100 50  0000 C CNN "Package"
+F 7 "P" H 3050 2100 50  0001 C CNN "mos_Type"
+F 8 "-50V" H 3050 2100 50  0001 C CNN "mos_VDSS"
+F 9 "10Ω" V 3301 2100 50  0000 C CNN "mos_RDSon"
+F 10 "-0.13A" H 3050 2100 50  0001 C CNN "mos_IDmax"
+F 11 "-0.8V_to_-2.0V" H 3050 2100 50  0001 C CNN "mos_VGSth"
+F 12 "20V" H 3050 2100 50  0001 C CNN "mos_VGSS"
+F 13 "https://octopart.com/bss84-7-f-diodes+inc.-335925?r=sp#PriceAndStock" H 3050 2100 50  0001 C CNN "Octopart_link"
+F 14 "https://fr.farnell.com/diodes-inc/bss84-7-f/mosfetcanal-p50v0-13asot23-3/dp/1843716" H 3050 2100 50  0001 C CNN "Farnell_link"
+F 15 "1843716" H 3050 2100 50  0001 C CNN "Farnell_ref"
+F 16 "2020-12-20" H 3050 2100 50  0001 C CNN "Farnell_check_date"
+F 17 "-" H 3050 2100 50  0001 C CNN "Farnell_price_qt=1"
+F 18 "0,17 €" H 3050 2100 50  0001 C CNN "Farnell_price_qt=10"
+F 19 "0,0778 €" H 3050 2100 50  0001 C CNN "Farnell_price_qt=100"
+F 20 "0,0233 €" H 3050 2100 50  0001 C CNN "Farnell_price_qt=1000"
+F 21 "23,312" H 3050 2100 50  0001 C CNN "Farnell_stock"
+F 22 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated_BSS84-7-F_Diodes-Incorporated-BSS84-7-F_C85202.html" H 3050 2100 50  0001 C CNN "LCSC_link"
+F 23 "C85202" H 3050 2100 50  0001 C CNN "LCSC_ref"
+F 24 "2020-12-20" H 3050 2100 50  0001 C CNN "LCSC_check_date"
+F 25 "-" H 3050 2100 50  0001 C CNN "LCSC_price_qt=1"
+F 26 "-" H 3050 2100 50  0001 C CNN "LCSC_price_qt=10"
+F 27 "$0.0329" H 3050 2100 50  0001 C CNN "LCSC_price_qt=100"
+F 28 "$0.0236" H 3050 2100 50  0001 C CNN "LCSC_price_qt=1000"
+F 29 "54,480" H 3050 2100 50  0001 C CNN "LCSC_stock"
+F 30 "https://eu.mouser.com/ProductDetail/Diodes-Incorporated/BSS84-7-F/?qs=%2Fha2pyFaduh3xl%252BWGBx4Bd7HaWLSRy%252Bo5kzZv5xjHWA%3D" H 3050 2100 50  0001 C CNN "Mouser_link"
+F 31 "621-BSS84-F" H 3050 2100 50  0001 C CNN "Mouser_ref"
+F 32 "2020-12-20" H 3050 2100 50  0001 C CNN "Mouser_check_date"
+F 33 "$0.232" H 3050 2100 50  0001 C CNN "Mouser_price_qt=1"
+F 34 "$0.159" H 3050 2100 50  0001 C CNN "Mouser_price_qt=10"
+F 35 "$0.076" H 3050 2100 50  0001 C CNN "Mouser_price_qt=100"
+F 36 "$0.045" H 3050 2100 50  0001 C CNN "Mouser_price_qt=1000"
+F 37 "197,827" H 3050 2100 50  0001 C CNN "Mouser_stock"
+F 38 "https://fr.rs-online.com/web/p/transistors-mosfet/7384932/" H 3050 2100 50  0001 C CNN "RS_link"
+F 39 "738-4932" H 3050 2100 50  0001 C CNN "RS_ref"
+F 40 "2020-12-20" H 3050 2100 50  0001 C CNN "RS_check_date"
+F 41 "-" H 3050 2100 50  0001 C CNN "RS_price_qt=1"
+F 42 "-" H 3050 2100 50  0001 C CNN "RS_price_qt=10"
+F 43 "0,066 €" H 3050 2100 50  0001 C CNN "RS_price_qt=100"
+F 44 "0,041 €" H 3050 2100 50  0001 C CNN "RS_price_qt=1000"
+F 45 "14,200" H 3050 2100 50  0001 C CNN "RS_stock"
+F 46 "TO_CHECK" H 3050 2100 50  0001 C CNN "Status"
+F 47 "1.00" H 3050 2100 50  0001 C CNN "Release_version"
+F 48 "2020-12-20" H 3050 2100 50  0001 C CNN "Release_date"
+F 49 "ManWithNoName" H 3050 2100 50  0001 C CNN "Designer"
+	1    3050 2100
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	3300 2000 3300 2250
+Wire Wire Line
+	3300 2000 3250 2000
 $EndSCHEMATC
