@@ -374,18 +374,6 @@ Wire Notes Line
 	3350 4000 6700 4000
 Wire Notes Line
 	6700 1850 6700 4000
-$Comp
-L Connector:TestPoint TP2
-U 1 1 5F96E9B6
-P 3950 2900
-F 0 "TP2" H 4008 3018 50  0000 L CNN
-F 1 "TestPoint" H 4008 2927 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 4150 2900 50  0001 C CNN
-F 3 "~" H 4150 2900 50  0001 C CNN
-	1    3950 2900
-	1    0    0    -1  
-$EndComp
-Connection ~ 3950 2900
 Wire Wire Line
 	5950 3250 5900 3250
 Wire Wire Line
@@ -402,8 +390,6 @@ Text GLabel 5950 3450 2    50   Input ~ 0
 exp5
 Text GLabel 5950 3550 2    50   Input ~ 0
 exp4
-Text GLabel 3750 2900 0    50   Input ~ 0
-INT_IO
 Wire Wire Line
 	4650 3450 5100 3450
 Wire Wire Line
@@ -490,4 +476,6 @@ Wire Wire Line
 	1350 1750 1750 1750
 Text Label 1750 1750 2    50   ~ 0
 V_I2C
+Text GLabel 3750 2900 0    50   Input ~ 0
+INT_IO
 $EndSCHEMATC
