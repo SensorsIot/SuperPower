@@ -397,8 +397,8 @@ MCU
 Text Label 9500 5100 0    50   ~ 0
 5V
 Wire Wire Line
-	9900 2550 9500 2550
-Text Label 9500 2550 0    50   ~ 0
+	9900 2650 9500 2650
+Text Label 9500 2650 0    50   ~ 0
 3v3_MCU
 Text Label 3950 3250 0    50   ~ 0
 3v3_MCU
@@ -464,8 +464,8 @@ Wire Wire Line
 Text Label 1250 2350 0    50   ~ 0
 Vin
 Wire Wire Line
-	9500 2650 9900 2650
-Text Label 9500 2650 0    50   ~ 0
+	9500 2550 9900 2550
+Text Label 9500 2550 0    50   ~ 0
 3v3
 Wire Wire Line
 	9900 3500 9350 3500
