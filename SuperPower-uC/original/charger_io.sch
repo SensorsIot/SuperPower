@@ -127,17 +127,6 @@ Text Label 1950 1050 2    50   ~ 0
 VBUS
 Text Label 4950 2900 2    50   ~ 0
 V_CHARGE
-$Comp
-L Connector:Screw_Terminal_01x02 J3
-U 1 1 5F74DB0F
-P 6800 3150
-F 0 "J3" H 6718 2825 50  0000 C CNN
-F 1 "DNP/Screw_Terminal_01x02" H 6718 2916 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 6800 3150 50  0001 C CNN
-F 3 "~" H 6800 3150 50  0001 C CNN
-	1    6800 3150
-	-1   0    0    1   
-$EndComp
 Text Label 7400 3050 2    50   ~ 0
 V_CHARGE
 $Comp
@@ -153,14 +142,10 @@ F 3 "" H 7200 3250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7200 3250 7200 3150
-Wire Wire Line
-	7200 3150 7000 3150
-Wire Wire Line
-	7000 3050 7400 3050
 Text Notes 3350 2250 0    50   ~ 10
 Barrel Jack\n
 Text Notes 5900 2250 0    50   ~ 10
-Screw Terminal
+External Input Pads
 Wire Notes Line
 	5800 7450 1100 7450
 Text Notes 1200 4250 0    50   ~ 10
@@ -634,8 +619,6 @@ Text Notes 5000 2900 0    50   ~ 10
 <- 15V Max
 Text Notes 7450 3050 0    50   ~ 10
 <- 15V Max
-Text Notes 6600 2700 0    50   ~ 0
-Dot Not Populate (Default)
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 5FDDE91A
@@ -748,4 +731,19 @@ Wire Notes Line
 	11050 2100 11050 4350
 Wire Notes Line
 	11050 4350 8400 4350
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 5FF39CF2
+P 6450 3050
+F 0 "J3" H 6558 3231 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 6558 3140 50  0000 C CNN
+F 2 "ext_input:ext_input_pads" H 6450 3050 50  0001 C CNN
+F 3 "~" H 6450 3050 50  0001 C CNN
+	1    6450 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 3050 7400 3050
+Wire Wire Line
+	6650 3150 7200 3150
 $EndSCHEMATC
