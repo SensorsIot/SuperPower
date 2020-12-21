@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SPM6530T-4R7M
+D Shielded Inductor with metal core, 4.7µH, 5.6A, 35.8mOhm, 6,5x7,1x3,0mm
+K inductor choke coil reactor magnetic
+F https://product.tdk.com/info/en/catalog/datasheets/inductor_commercial_power_spm6530_en.pdf
+$ENDCMP
+#
+#End Doc Library

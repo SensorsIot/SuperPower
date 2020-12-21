@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BSS84-7-F
+D -50V Vds, -0.13A Id, P-Channel MOSFET, SOT23
+K transistor PMOS P-MOS P-MOSFET
+F https://www.diodes.com/assets/Datasheets/ds30149.pdf
+$ENDCMP
+#
+#End Doc Library

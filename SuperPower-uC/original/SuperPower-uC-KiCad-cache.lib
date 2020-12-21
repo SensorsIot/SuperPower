@@ -1,6 +1,215 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# 150060vs75000_150060VS75000_0603
+#
+DEF 150060vs75000_150060VS75000_0603 LED 0 40 N N 1 F N
+F0 "LED" 0 100 50 H V C CNN
+F1 "150060vs75000_150060VS75000_0603" 0 -100 50 H I C CNN
+F2 "LED_SMD:LED_0603_1608Metric" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "Wurth Elektronik " 0 0 50 H I C CNN "Mfr_name"
+F5 "150060VS75000" 0 0 50 H I C CNN "Mfr_no"
+F6 "0603" 200 100 50 H V C CNN "Package"
+F7 "Green" 450 100 50 H V C CNN "Color"
+F8 "https://octopart.com/150060vs75000-w%C3%BCrth+elektronik-29717778?r=sp" 0 0 50 H I C CNN "Octopart_link"
+F9 "https://fr.farnell.com/wurth-elektronik/150060vs75000/led-0603-b-vert-40mcd-570nm/dp/2322073?st=150060VS75000" 0 0 50 H I C CNN "Farnell_link"
+F10 "2322073" 0 0 50 H I C CNN "Farnell_ref"
+F11 "2020-12-07" 0 0 50 H I C CNN "Farnell_check_date"
+F12 "-" 0 0 50 H I C CNN "Farnell_price_qt=1"
+F13 "0.139€" 0 0 50 H I C CNN "Farnell_price_qt=10"
+F14 "0.115€" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F15 "0.0979€" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F16 "8,485" 0 0 50 H I C CNN "Farnell_stock"
+F17 "-" 0 0 50 H I C CNN "LCSC_link"
+F18 "-" 0 0 50 H I C CNN "LCSC_ref"
+F19 "2020-12-07" 0 0 50 H I C CNN "LCSC_check_date"
+F20 "-" 0 0 50 H I C CNN "LCSC_price_qt=1"
+F21 "-" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F22 "-" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F23 "-" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F24 "-" 0 0 50 H I C CNN "LCSC_stock"
+F25 "https://eu.mouser.com/ProductDetail/Wurth-Elektronik/150060VS75000?qs=%2Fha2pyFaduhwKZlJ%252BauMPIjo9WJ3TVadxkDfqVN3kSHKNXazy%252BR78Q==" 0 0 50 H I C CNN "Mouser_link"
+F26 "710-150060VS75000" 0 0 50 H I C CNN "Mouser_ref"
+F27 "2020-12-07" 0 0 50 H I C CNN "Mouser_check_date"
+F28 "$0.151" 150 -200 50 H I C CNN "Mouser_price_qt=1"
+F29 "$0.151" 150 -200 50 H I C CNN "Mouser_price_qt=10"
+F30 "$0.115" 150 -200 50 H I C CNN "Mouser_price_qt=100"
+F31 "$0.107" 150 -200 50 H I C CNN "Mouser_price_qt=1000"
+F32 "165,393" 0 0 50 H I C CNN "Mouser_stock"
+F33 "https://fr.rs-online.com/web/p/led/8154215/" 0 0 50 H I C CNN "RS_link"
+F34 "815-4215" 0 0 50 H I C CNN "RS_ref"
+F35 "2020-12-07" 0 0 50 H I C CNN "RS_check_date"
+F36 "-" 0 0 50 H I C CNN "RS_price_qt=1"
+F37 "-" 0 0 50 H I C CNN "RS_price_qt=10"
+F38 "0.101€" 0 0 50 H I C CNN "RS_price_qt=100"
+F39 "0.074€" 0 0 50 H I C CNN "RS_price_qt=1000"
+F40 "800" 0 0 50 H I C CNN "RS_stock"
+F41 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F42 "1.00" 0 0 50 H I C CNN "Release_version"
+F43 "2020-11-23" 0 0 50 H I C CNN "Release_date"
+F44 "ManWithNoName" 0 0 50 H I C CNN "Designer"
+$FPLIST
+ LED*
+ LED_SMD:*
+ LED_THT:*
+$ENDFPLIST
+DRAW
+P 2 0 1 10 -50 -50 -50 50 N
+P 2 0 1 0 -50 0 50 0 N
+P 4 0 1 10 50 -50 50 50 -50 0 50 -50 N
+P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
+P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# 150060ys75000_150060YS75000_0603
+#
+DEF 150060ys75000_150060YS75000_0603 LED 0 40 N N 1 F N
+F0 "LED" 0 100 50 H V C CNN
+F1 "150060ys75000_150060YS75000_0603" 0 -100 50 H I C CNN
+F2 "LED_SMD:LED_0603_1608Metric" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "Wurth Elektronik " 0 0 50 H I C CNN "Mfr_name"
+F5 "150060YS75000" 0 0 50 H I C CNN "Mfr_no"
+F6 "0603" 200 100 50 H V C CNN "Package"
+F7 "Yellow" 450 100 50 H V C CNN "Color"
+F8 "https://octopart.com/search?autosugg_idx=0&currency=USD&oq=150060YS75000&q=150060YS75000&specs=1" 0 0 50 H I C CNN "Octopart_link"
+F9 "https://fr.farnell.com/wurth-elektronik/150060ys75000/led-0603-jaune-120mcd-590nm/dp/2322074?st=150060ys75000" 0 0 50 H I C CNN "Farnell_link"
+F10 "2322074" 0 0 50 H I C CNN "Farnell_ref"
+F11 "2020-12-07" 0 0 50 H I C CNN "Farnell_check_date"
+F12 "-" 0 0 50 H I C CNN "Farnell_price_qt=1"
+F13 "0.139€" 0 0 50 H I C CNN "Farnell_price_qt=10"
+F14 "0.115€" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F15 "0.0979€" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F16 "15,254" 0 0 50 H I C CNN "Farnell_stock"
+F17 "-" 0 0 50 H I C CNN "LCSC_link"
+F18 "-" 0 0 50 H I C CNN "LCSC_ref"
+F19 "2020-12-07" 0 0 50 H I C CNN "LCSC_check_date"
+F20 "-" 0 0 50 H I C CNN "LCSC_price_qt=1"
+F21 "-" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F22 "-" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F23 "-" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F24 "-" 0 0 50 H I C CNN "LCSC_stock"
+F25 "https://eu.mouser.com/ProductDetail/Wurth-Elektronik/150060YS75000?qs=LlUlMxKIyB0nKmwefHgtZw%3D%3D" 0 0 50 H I C CNN "Mouser_link"
+F26 "710-150060YS75000 " 0 0 50 H I C CNN "Mouser_ref"
+F27 "2020-12-07" 0 0 50 H I C CNN "Mouser_check_date"
+F28 "$0.151" 150 -200 50 H I C CNN "Mouser_price_qt=1"
+F29 "$0.151" 150 -200 50 H I C CNN "Mouser_price_qt=10"
+F30 "$0.115" 150 -200 50 H I C CNN "Mouser_price_qt=100"
+F31 "$0.107" 150 -200 50 H I C CNN "Mouser_price_qt=1000"
+F32 "44,294" 0 0 50 H I C CNN "Mouser_stock"
+F33 "https://fr.rs-online.com/web/p/led/8154219/" 0 0 50 H I C CNN "RS_link"
+F34 "815-4219" 0 0 50 H I C CNN "RS_ref"
+F35 "2020-12-07" 0 0 50 H I C CNN "RS_check_date"
+F36 "-" 0 0 50 H I C CNN "RS_price_qt=1"
+F37 "-" 0 0 50 H I C CNN "RS_price_qt=10"
+F38 "0.101€" 0 0 50 H I C CNN "RS_price_qt=100"
+F39 "0.074€" 0 0 50 H I C CNN "RS_price_qt=1000"
+F40 "400" 0 0 50 H I C CNN "RS_stock"
+F41 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F42 "1.00" 0 0 50 H I C CNN "Release_version"
+F43 "2020-11-23" 0 0 50 H I C CNN "Release_date"
+F44 "ManWithNoName" 0 0 50 H I C CNN "Designer"
+$FPLIST
+ LED*
+ LED_SMD:*
+ LED_THT:*
+$ENDFPLIST
+DRAW
+P 2 0 1 10 -50 -50 -50 50 N
+P 2 0 1 0 -50 0 50 0 N
+P 4 0 1 10 50 -50 50 50 -50 0 50 -50 N
+P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
+P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# 2n7002a_2N7002A
+#
+DEF 2n7002a_2N7002A Q 0 0 Y N 1 F N
+F0 "Q" 200 75 50 H V L CNN
+F1 "2n7002a_2N7002A" 200 0 50 H V L CNN
+F2 "Package_TO_SOT_SMD:SOT-23" 200 -75 50 H I L CNN
+F3 "" 0 0 50 H I C CNN
+F4 "Diodes Incorporated" 0 0 50 H I C CNN "Mfr_name"
+F5 "2N7002A-7" 0 0 50 H I C CNN "Mfr_no"
+F6 "SOT23-3" 375 -75 50 H V C CNN "Package"
+F7 "N" 0 0 50 H I C CNN "mos_Type"
+F8 "60V" 0 0 50 H I C CNN "mos_VDSS"
+F9 "6Ω" 375 -150 50 H V C CNN "mos_RDSon"
+F10 "220mA" 0 0 50 H I C CNN "mos_IDmax"
+F11 "+1.2V_to_+2.0V" 0 0 50 H I C CNN "mos_VGSth"
+F12 "20V" 0 0 50 H I C CNN "mos_VGSS"
+F13 "https://octopart.com/2n7002a-7-diodes+inc.-12411377?r=sp" 0 0 50 H I C CNN "Octopart_link"
+F14 "https://fr.farnell.com/diodes-inc/2n7002a-7/mosfet-canal-n-60v-0-18a-sot-23/dp/3127180?st=2n7002a-7" 0 0 50 H I C CNN "Farnell_link"
+F15 "3127180" 0 0 50 H I C CNN "Farnell_ref"
+F16 "2020-12-11" 0 0 50 H I C CNN "Farnell_check_date"
+F17 "-" 0 0 50 H I C CNN "Farnell_price_qt=1"
+F18 "0,211 €" 0 0 50 H I C CNN "Farnell_price_qt=10"
+F19 "0,0964 €" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F20 "0,0418 €" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F21 "2,238" 0 0 50 H I C CNN "Farnell_stock"
+F22 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-2N7002A-7_C139446.html" 0 0 50 H I C CNN "LCSC_link"
+F23 "C139446" 0 0 50 H I C CNN "LCSC_ref"
+F24 "2020-12-04" 0 0 50 H I C CNN "LCSC_check_date"
+F25 "-" 0 0 50 H I C CNN "LCSC_price_qt=1"
+F26 "-" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F27 "$0.0247" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F28 "$0.0173" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F29 "20,560" 0 0 50 H I C CNN "LCSC_stock"
+F30 "https://eu.mouser.com/ProductDetail/Diodes-Incorporated/2N7002A-7?qs=%2Fha2pyFaduiVkHzHToHS9vYfqHI9tbd78Fpui8SRcmA=" 0 0 50 H I C CNN "Mouser_link"
+F31 "621-2N7002A-7" 0 0 50 H I C CNN "Mouser_ref"
+F32 "2020-12-04" 0 0 50 H I C CNN "Mouser_check_date"
+F33 "$0.293" 0 0 50 H I C CNN "Mouser_price_qt=1"
+F34 "$0.201" 0 0 50 H I C CNN "Mouser_price_qt=10"
+F35 "$0.096" 0 0 50 H I C CNN "Mouser_price_qt=100"
+F36 "$0.057" 0 0 50 H I C CNN "Mouser_price_qt=1000"
+F37 "21,482" 0 0 50 H I C CNN "Mouser_stock"
+F38 "https://fr.rs-online.com/web/p/transistors-mosfet/8228647/" 0 0 50 H I C CNN "RS_link"
+F39 "822-8647" 0 0 50 H I C CNN "RS_ref"
+F40 "2020-12-04" 0 0 50 H I C CNN "RS_check_date"
+F41 "-" 0 0 50 H I C CNN "RS_price_qt=1"
+F42 "-" 0 0 50 H I C CNN "RS_price_qt=10"
+F43 "0,079 €" 0 0 50 H I C CNN "RS_price_qt=100"
+F44 "0,079 €" 0 0 50 H I C CNN "RS_price_qt=1000"
+F45 "4800" 0 0 50 H I C CNN "RS_stock"
+F46 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F47 "1.02" 0 0 50 H I C CNN "Release_version"
+F48 "2020-12-21" 0 0 50 H I C CNN "Release_date"
+F49 "ManWithNoName" 0 0 50 H I C CNN "Designer"
+DRAW
+C -90 0 10 1 1 0 F
+C 65 0 110 1 1 10 N
+C 100 -150 10 1 1 0 F
+C 100 -70 10 1 1 0 F
+C 100 70 10 1 1 0 F
+P 3 0 1 0 100 -150 -90 -150 -90 0 N
+P 2 1 1 0 10 0 -100 0 N
+P 2 1 1 10 10 75 10 -75 N
+P 2 1 1 10 30 -50 30 -90 N
+P 2 1 1 10 30 20 30 -20 N
+P 2 1 1 10 30 90 30 50 N
+P 2 1 1 0 100 100 100 70 N
+P 3 1 1 0 100 -100 100 0 30 0 N
+P 4 1 1 0 -40 -170 -35 -165 -35 -135 -30 -130 N
+P 4 1 1 0 -35 -150 -10 -165 -10 -135 -35 -150 N
+P 4 1 1 0 30 -70 130 -70 130 70 30 70 N
+P 4 1 1 0 40 0 80 15 80 -15 40 0 F
+P 4 1 1 0 45 -150 20 -135 20 -165 45 -150 N
+P 4 1 1 0 50 -130 45 -135 45 -165 40 -170 N
+P 4 1 1 0 110 20 115 15 145 15 150 10 N
+P 4 1 1 0 130 15 115 -10 145 -10 130 15 N
+X G 1 -200 0 100 R 50 50 1 1 I
+X S 2 100 -200 100 U 50 50 1 1 P
+X D 3 100 200 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # AP9101CK6-AYTRG1_AP9101CK6-AYTRG1
 #
 DEF AP9101CK6-AYTRG1_AP9101CK6-AYTRG1 U 0 20 Y Y 1 F N
@@ -8,15 +217,46 @@ F0 "U" -300 250 50 H V L CNN
 F1 "AP9101CK6-AYTRG1_AP9101CK6-AYTRG1" 200 250 50 H V C CNN
 F2 "Package_TO_SOT_SMD:SOT-23-6" -50 0 50 H I C CNN
 F3 "" 0 50 50 H I C CNN
-F4 "https://octopart.com/ap9101ck6-aytrg1-diodes+inc.-77041826?r=sp" 0 0 50 H I C CNN "Octopart_link"
-F5 "-" 0 0 50 H I C CNN "Farnell_link"
-F6 "-" 0 0 50 H I C CNN "Farnell_ref"
-F7 "https://lcsc.com/product-detail/PMIC-Battery-Management_Diodes-Incorporated-AP9101CK6-AYTRG1_C507889.html" 0 0 50 H I C CNN "LCSC_link"
-F8 "C507889" 0 0 50 H I C CNN "LCSC_ref"
-F9 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/AP9101CK6-AYTRG1?qs=%2Fha2pyFaduj314vgBnd2FEjzur%252BdRnlg22EVpjIcgVi4TUljUlcE2A%3D%3D" 0 0 50 H V C CNN "Mouser_link"
-F10 "621-AP9101CK6-AYTRG1" 0 0 50 H V C CNN "Mouser_ref"
-F11 "-" 0 0 50 H V C CNN "RS_link"
-F12 "-" 0 0 50 H V C CNN "RS_ref"
+F4 "Diodes Incorporated" 0 0 50 H I C CNN "Mfr_name"
+F5 "AP9101CK6-AYTRG1 " 0 0 50 H I C CNN "Mfr_no"
+F6 "SOT23-6" 350 -250 50 H I C CNN "Package"
+F7 "https://octopart.com/ap9101ck6-aytrg1-diodes+inc.-77041826?r=sp" 0 0 50 H I C CNN "Octopart_link"
+F8 "-" 0 0 50 H I C CNN "Farnell_link"
+F9 "-" 0 0 50 H I C CNN "Farnell_ref"
+F10 "2020-11-28" 0 0 50 H I C CNN "Farnell_check_date"
+F11 "-" 0 0 50 H I C CNN "Farnell_price_qt=1"
+F12 "-" 0 0 50 H I C CNN "Farnell_price_qt=10"
+F13 "-" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F14 "-" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F15 "-" 0 0 50 H I C CNN "Farnell_stock"
+F16 "https://lcsc.com/product-detail/PMIC-Battery-Management_Diodes-Incorporated-AP9101CK6-AYTRG1_C507889.html" 0 0 50 H I C CNN "LCSC_link"
+F17 "C507889" 0 0 50 H I C CNN "LCSC_ref"
+F18 "$0.1782" 0 0 50 H I C CNN "LCSC_price_qt=1"
+F19 "$0.1304" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F20 "$0.1128" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F21 "$0.107" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F22 "2020-12-12" 0 0 50 H I C CNN "LCSC_check_date"
+F23 "3020" 0 0 50 H I C CNN "LCSC_stock"
+F24 "https://eu.mouser.com/ProductDetail/Diodes-Incorporated/AP9101CK6-AYTRG1?qs=%2Fha2pyFaduj314vgBnd2FEjzur%252BdRnlg22EVpjIcgVi4TUljUlcE2A%3D%3D" 0 0 50 H I C CNN "Mouser_link"
+F25 "621-AP9101CK6-AYTRG1" 0 0 50 H I C CNN "Mouser_ref"
+F26 "2020-11-22" 0 0 50 H I C CNN "Mouser_check_date"
+F27 "$0.444" 325 -325 50 H I C CNN "Mouser_price_qt=1"
+F28 "$0.326" 0 0 50 H I C CNN "Mouser_price_qt=10"
+F29 "$0.167" 0 0 50 H I C CNN "Mouser_price_qt=100"
+F30 "$0.125" 0 0 50 H I C CNN "Mouser_price_qt=1000"
+F31 "3127" 0 0 50 H I C CNN "Mouser_stock"
+F32 "-" 0 0 50 H I C CNN "RS_link"
+F33 "-" 0 0 50 H I C CNN "RS_ref"
+F34 "2020-12-12" 0 0 50 H I C CNN "RS_check_date"
+F35 "-" 0 0 50 H I C CNN "RS_price_qt=1"
+F36 "-" 0 0 50 H I C CNN "RS_price_qt=10"
+F37 "-" 0 0 50 H I C CNN "RS_price_qt=100"
+F38 "-" 0 0 50 H I C CNN "RS_price_qt=1000"
+F39 "-" 0 0 50 H I C CNN "RS_stock"
+F40 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F41 "1.00" 0 0 50 H I C CNN "Release_version"
+F42 "2020-11-23" 0 0 50 H I C CNN "Release_date"
+F43 "ManWithNoName" 0 0 50 H I C CNN "Designer"
 $FPLIST
  SOT?23*
 $ENDFPLIST
@@ -76,17 +316,18 @@ X Pin_2 2 200 -100 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Conn_01x17_Female
+# Connector_Conn_01x18_Female
 #
-DEF Connector_Conn_01x17_Female J 0 40 Y N 1 F N
+DEF Connector_Conn_01x18_Female J 0 40 Y N 1 F N
 F0 "J" 0 900 50 H V C CNN
-F1 "Connector_Conn_01x17_Female" 0 -900 50 H V C CNN
+F1 "Connector_Conn_01x18_Female" 0 -1000 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
  Connector*:*_1x??_*
 $ENDFPLIST
 DRAW
+A 0 -900 20 901 -901 1 1 6 N 0 -880 0 -920
 A 0 -800 20 901 -901 1 1 6 N 0 -780 0 -820
 A 0 -700 20 901 -901 1 1 6 N 0 -680 0 -720
 A 0 -600 20 901 -901 1 1 6 N 0 -580 0 -620
@@ -104,6 +345,7 @@ A 0 500 20 901 -901 1 1 6 N 0 520 0 480
 A 0 600 20 901 -901 1 1 6 N 0 620 0 580
 A 0 700 20 901 -901 1 1 6 N 0 720 0 680
 A 0 800 20 901 -901 1 1 6 N 0 820 0 780
+P 2 1 1 6 -50 -900 -20 -900 N
 P 2 1 1 6 -50 -800 -20 -800 N
 P 2 1 1 6 -50 -700 -20 -700 N
 P 2 1 1 6 -50 -600 -20 -600 N
@@ -130,6 +372,7 @@ X Pin_14 14 -200 -500 150 R 50 50 1 1 P
 X Pin_15 15 -200 -600 150 R 50 50 1 1 P
 X Pin_16 16 -200 -700 150 R 50 50 1 1 P
 X Pin_17 17 -200 -800 150 R 50 50 1 1 P
+X Pin_18 18 -200 -900 150 R 50 50 1 1 P
 X Pin_2 2 -200 700 150 R 50 50 1 1 P
 X Pin_3 3 -200 600 150 R 50 50 1 1 P
 X Pin_4 4 -200 500 150 R 50 50 1 1 P
@@ -141,103 +384,20 @@ X Pin_9 9 -200 0 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Screw_Terminal_01x02
+# Connector_TestPoint
 #
-DEF Connector_Screw_Terminal_01x02 J 0 40 Y N 1 F N
-F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Screw_Terminal_01x02" 0 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+DEF Connector_TestPoint TP 0 30 N N 1 F N
+F0 "TP" 0 270 50 H V C CNN
+F1 "Connector_TestPoint" 0 200 50 H V C CNN
+F2 "" 200 0 50 H I C CNN
+F3 "" 200 0 50 H I C CNN
 $FPLIST
- TerminalBlock*:*
+ Pin*
+ Test*
 $ENDFPLIST
 DRAW
-C 0 -100 25 1 1 6 N
-C 0 0 25 1 1 6 N
-S -50 50 50 -150 1 1 10 f
-P 2 1 1 6 -21 -87 13 -120 N
-P 2 1 1 6 -21 13 13 -20 N
-P 2 1 1 6 -14 -80 20 -113 N
-P 2 1 1 6 -14 20 20 -13 N
-X Pin_1 1 -200 0 150 R 50 50 1 1 P
-X Pin_2 2 -200 -100 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Connector_USB_C_Receptacle_USB2.0
-#
-DEF Connector_USB_C_Receptacle_USB2.0 J 0 40 Y Y 1 F N
-F0 "J" -400 750 50 H V L CNN
-F1 "Connector_USB_C_Receptacle_USB2.0" 750 750 50 H V R CNN
-F2 "" 150 0 50 H I C CNN
-F3 "" 150 0 50 H I C CNN
-$FPLIST
- USB*C*Receptacle*
-$ENDFPLIST
-DRAW
-A -275 -150 75 -1799 -1 0 1 20 N -350 -150 -200 -150
-A -275 -150 25 -1799 -1 0 1 10 N -300 -150 -250 -150
-A -275 -150 25 -1799 -1 0 1 10 F -300 -150 -250 -150
-A -275 150 25 1 1799 0 1 10 F -250 150 -300 150
-A -275 150 25 1 1799 0 1 10 N -250 150 -300 150
-A -275 150 75 1 1799 0 1 20 N -200 150 -350 150
-C -100 45 25 0 1 10 F
-C 0 -230 50 0 1 0 F
-S -10 -700 10 -660 0 0 0 N
-S 400 -590 360 -610 0 0 0 N
-S 400 -490 360 -510 0 0 0 N
-S 400 -190 360 -210 0 0 0 N
-S 400 -90 360 -110 0 0 0 N
-S 400 10 360 -10 0 0 0 N
-S 400 110 360 90 0 0 0 N
-S 400 310 360 290 0 0 0 N
-S 400 410 360 390 0 0 0 N
-S 400 610 360 590 0 0 0 N
-S -400 700 400 -700 0 1 10 f
-S -300 -150 -250 150 0 1 10 F
-S 75 70 125 120 0 1 10 F
-P 2 0 1 20 -350 -150 -350 150 N
-P 2 0 1 20 -200 150 -200 -150 N
-P 2 0 1 20 0 -230 0 170 N
-P 3 0 1 20 0 -130 -100 -30 -100 20 N
-P 3 0 1 20 0 -80 100 20 100 70 N
-P 4 0 1 10 -50 170 0 270 50 170 -50 170 F
-X GND A1 0 -900 200 U 50 50 1 1 P
-X GND A12 0 -900 200 U 50 50 1 1 P N
-X VBUS A4 600 600 200 L 50 50 1 1 P
-X CC1 A5 600 400 200 L 50 50 1 1 B
-X D+ A6 600 -100 200 L 50 50 1 1 B
-X D- A7 600 100 200 L 50 50 1 1 B
-X SBU1 A8 600 -500 200 L 50 50 1 1 B
-X VBUS A9 600 600 200 L 50 50 1 1 P N
-X GND B1 0 -900 200 U 50 50 1 1 P N
-X GND B12 0 -900 200 U 50 50 1 1 P N
-X VBUS B4 600 600 200 L 50 50 1 1 P N
-X CC2 B5 600 300 200 L 50 50 1 1 B
-X D+ B6 600 -200 200 L 50 50 1 1 B
-X D- B7 600 0 200 L 50 50 1 1 B
-X SBU2 B8 600 -600 200 L 50 50 1 1 B
-X VBUS B9 600 600 200 L 50 50 1 1 P N
-X SHIELD S1 -300 -900 200 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_Battery_Cell
-#
-DEF Device_Battery_Cell BT 0 0 N N 1 F N
-F0 "BT" 100 100 50 H V L CNN
-F1 "Device_Battery_Cell" 100 0 50 H V L CNN
-F2 "" 0 60 50 V I C CNN
-F3 "" 0 60 50 V I C CNN
-DRAW
-S -90 70 90 60 0 1 0 F
-S -62 47 58 27 0 1 0 F
-P 2 0 1 0 0 30 0 0 N
-P 2 0 1 0 0 70 0 100 N
-P 2 0 1 10 20 135 60 135 N
-P 2 0 1 10 40 155 40 115 N
-X + 1 0 200 100 D 50 50 1 1 P
-X - 2 0 -100 100 U 50 50 1 1 P
+C 0 130 30 0 1 0 N
+X 1 1 0 0 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -259,26 +419,6 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_CP_Small
-#
-DEF Device_CP_Small C 0 10 N N 1 F N
-F0 "C" 10 70 50 H V L CNN
-F1 "Device_CP_Small" 10 -80 50 H V L CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- CP_*
-$ENDFPLIST
-DRAW
-S -60 -12 60 -27 0 1 0 F
-S -60 27 60 12 0 1 0 N
-P 2 0 1 0 -50 60 -30 60 N
-P 2 0 1 0 -40 50 -40 70 N
-X ~ 1 0 100 73 D 50 50 1 1 P
-X ~ 2 0 -100 73 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Device_C_Small
 #
 DEF Device_C_Small C 0 10 N N 1 F N
@@ -297,77 +437,47 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_L
+# Device_D_Small
 #
-DEF Device_L L 0 40 N N 1 F N
-F0 "L" -50 0 50 V V C CNN
-F1 "Device_L" 75 0 50 V V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+DEF Device_D_Small D 0 10 N N 1 F N
+F0 "D" -50 80 50 H V L CNN
+F1 "Device_D_Small" -150 -80 50 H V L CNN
+F2 "" 0 0 50 V I C CNN
+F3 "" 0 0 50 V I C CNN
 $FPLIST
- Choke_*
- *Coil*
- Inductor_*
- L_*
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
 $ENDFPLIST
 DRAW
-A 0 -75 25 -899 899 0 1 0 N 0 -100 0 -50
-A 0 -25 25 -899 899 0 1 0 N 0 -50 0 0
-A 0 25 25 -899 899 0 1 0 N 0 0 0 50
-A 0 75 25 -899 899 0 1 0 N 0 50 0 100
-X 1 1 0 150 50 D 50 50 1 1 P
-X 2 2 0 -150 50 U 50 50 1 1 P
+P 2 0 1 10 -30 -40 -30 40 N
+P 2 0 1 0 -30 0 30 0 N
+P 4 0 1 10 30 -40 -30 0 30 40 30 -40 N
+X K 1 -100 0 70 R 50 50 1 1 P
+X A 2 100 0 70 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_LED
+# Device_Jumper_NC_Small
 #
-DEF Device_LED D 0 40 N N 1 F N
-F0 "D" 0 100 50 H V C CNN
-F1 "Device_LED" 0 -100 50 H V C CNN
+DEF Device_Jumper_NC_Small JP 0 30 N N 1 F N
+F0 "JP" 0 80 50 H V C CNN
+F1 "Device_Jumper_NC_Small" 10 -60 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- LED*
- LED_SMD:*
- LED_THT:*
+ SolderJumper*Bridged*
+ Jumper*
+ TestPoint*2Pads*
+ TestPoint*Bridge*
 $ENDFPLIST
 DRAW
-P 2 0 1 10 -50 -50 -50 50 N
-P 2 0 1 0 -50 0 50 0 N
-P 4 0 1 10 50 -50 50 50 -50 0 50 -50 N
-P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
-P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
-X K 1 -150 0 100 R 50 50 1 1 P
-X A 2 150 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_Q_NMOS_DGS
-#
-DEF Device_Q_NMOS_DGS Q 0 0 Y N 1 F N
-F0 "Q" 200 50 50 H V L CNN
-F1 "Device_Q_NMOS_DGS" 200 -50 50 H V L CNN
-F2 "" 200 100 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-C 65 0 110 0 1 10 N
-C 100 -70 10 0 1 0 F
-C 100 70 10 0 1 0 F
-P 2 0 1 0 10 0 -100 0 N
-P 2 0 1 10 10 75 10 -75 N
-P 2 0 1 10 30 -50 30 -90 N
-P 2 0 1 10 30 20 30 -20 N
-P 2 0 1 10 30 90 30 50 N
-P 2 0 1 0 100 100 100 70 N
-P 3 0 1 0 100 -100 100 0 30 0 N
-P 4 0 1 0 30 -70 130 -70 130 70 30 70 N
-P 4 0 1 0 40 0 80 15 80 -15 40 0 F
-P 4 0 1 0 110 20 115 15 145 15 150 10 N
-P 4 0 1 0 130 15 115 -10 145 -10 130 15 N
-X D 1 100 200 100 D 50 50 1 1 P
-X G 2 -200 0 100 R 50 50 1 1 I
-X S 3 100 -200 100 U 50 50 1 1 P
+A 0 -10 57 450 1350 0 1 0 N 40 30 -40 30
+C -40 0 20 0 1 0 N
+C 40 0 20 0 1 0 N
+X 1 1 -100 0 40 R 50 50 0 1 P
+X 2 2 100 0 40 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
@@ -387,62 +497,6 @@ P 5 0 1 0 50 -70 70 -50 90 -90 50 -70 50 -70 F
 X C 1 100 200 100 D 50 50 1 1 P
 X E 2 100 -200 100 U 50 50 1 1 P
 X B 3 -200 0 225 R 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# Device_Q_PMOS_GDS
-#
-DEF Device_Q_PMOS_GDS Q 0 0 Y N 1 F N
-F0 "Q" 200 50 50 H V L CNN
-F1 "Device_Q_PMOS_GDS" 200 -50 50 H V L CNN
-F2 "" 200 100 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-C 65 0 110 0 1 10 N
-C 100 -70 10 0 1 0 F
-C 100 70 10 0 1 0 F
-P 2 0 1 0 10 0 -100 0 N
-P 2 0 1 10 10 75 10 -75 N
-P 2 0 1 10 30 -50 30 -90 N
-P 2 0 1 10 30 20 30 -20 N
-P 2 0 1 10 30 90 30 50 N
-P 2 0 1 0 100 100 100 70 N
-P 3 0 1 0 100 -100 100 0 30 0 N
-P 4 0 1 0 30 70 130 70 130 -70 30 -70 N
-P 4 0 1 0 90 0 50 15 50 -15 90 0 F
-P 4 0 1 0 110 -20 115 -15 145 -15 150 -10 N
-P 4 0 1 0 130 -15 115 10 145 10 130 -15 N
-X G 1 -200 0 100 R 50 50 1 1 I
-X D 2 100 200 100 D 50 50 1 1 P
-X S 3 100 -200 100 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_Q_PMOS_GSD
-#
-DEF Device_Q_PMOS_GSD Q 0 0 Y N 1 F N
-F0 "Q" 200 50 50 H V L CNN
-F1 "Device_Q_PMOS_GSD" 200 -50 50 H V L CNN
-F2 "" 200 100 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-C 65 0 110 0 1 10 N
-C 100 -70 10 0 1 0 F
-C 100 70 10 0 1 0 F
-P 2 0 1 0 10 0 -100 0 N
-P 2 0 1 10 10 75 10 -75 N
-P 2 0 1 10 30 -50 30 -90 N
-P 2 0 1 10 30 20 30 -20 N
-P 2 0 1 10 30 90 30 50 N
-P 2 0 1 0 100 100 100 70 N
-P 3 0 1 0 100 -100 100 0 30 0 N
-P 4 0 1 0 30 70 130 70 130 -70 30 -70 N
-P 4 0 1 0 90 0 50 15 50 -15 90 0 F
-P 4 0 1 0 110 -20 115 -15 145 -15 150 -10 N
-P 4 0 1 0 130 -15 115 10 145 10 130 -15 N
-X G 1 -200 0 100 R 50 50 1 1 I
-X S 2 100 -200 100 U 50 50 1 1 P
-X D 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -498,63 +552,6 @@ P 5 0 1 0 0 30 40 15 0 0 -40 -15 0 -30 N
 P 5 0 1 0 0 90 40 75 0 60 -40 45 0 30 N
 X ~ 1 0 150 50 D 50 50 1 1 P
 X ~ 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_Thermistor_NTC_US
-#
-DEF Device_Thermistor_NTC_US TH 0 0 N Y 1 F N
-F0 "TH" -175 0 50 V V C CNN
-F1 "Device_Thermistor_NTC_US" 125 0 50 V V C CNN
-F2 "" 0 50 50 H I C CNN
-F3 "" 0 50 50 H I C CNN
-$FPLIST
- *NTC*
- *Thermistor*
- PIN?ARRAY*
- bornier*
- *Terminal?Block*
- R_*
-$ENDFPLIST
-DRAW
-A -126 88 7 -265 818 0 1 0 N -120 85 -125 95
-A -110 85 10 1800 -900 0 1 0 N -120 85 -110 75
-A -110 85 10 -900 0 0 1 0 N -110 75 -100 85
-A -110 110 10 0 900 0 1 0 N -100 110 -110 120
-A -110 110 10 900 1800 0 1 0 N -110 120 -120 110
-A -110 110 10 1800 -900 0 1 0 N -120 110 -110 100
-A -104 119 20 -1075 -253 0 1 0 N -110 100 -85 110
-P 2 0 1 0 -100 85 -100 110 N
-P 2 0 1 0 0 -90 0 -100 N
-P 2 0 1 0 0 90 0 100 N
-P 4 0 1 0 -70 100 -70 60 70 -60 70 -100 N
-P 5 0 1 0 0 -30 40 -45 0 -60 -40 -75 0 -90 N
-P 5 0 1 0 0 30 40 15 0 0 -40 -15 0 -30 N
-P 5 0 1 0 0 90 40 75 0 60 -40 45 0 30 N
-P 6 0 1 0 -100 -145 -100 -55 -110 -85 -90 -85 -100 -55 -100 -65 F
-P 6 0 1 0 -70 -55 -70 -145 -80 -115 -60 -115 -70 -145 -70 -135 F
-X ~ 1 0 150 50 D 50 50 1 1 P
-X ~ 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Diode_1N5819
-#
-DEF Diode_1N5819 D 0 40 N N 1 F N
-F0 "D" 0 100 50 H V C CNN
-F1 "Diode_1N5819" 0 -100 50 H V C CNN
-F2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" 0 -175 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-ALIAS SB130 SB140 SB150 SB160 1N5817 1N5818 1N5819
-$FPLIST
- D*DO?41*
-$ENDFPLIST
-DRAW
-P 2 0 1 0 50 0 -50 0 N
-P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
-P 6 0 1 10 -75 25 -75 50 -50 50 -50 -50 -25 -50 -25 -25 N
-X K 1 -150 0 100 R 50 50 1 1 P
-X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -620,10 +617,10 @@ F3 "" 0 0 50 H I C CNN
 DRAW
 S 150 -250 -300 150 0 1 0 N
 X ESD 1 -500 50 200 R 50 50 1 1 I
-X GND 2 -500 -50 200 R 50 50 1 1 O
+X GND 2 -500 -50 200 R 50 50 1 1 W
 X ESD 3 -500 -150 200 R 50 50 1 1 I
 X ESD 4 350 -150 200 L 50 50 1 1 O
-X VCC 5 350 -50 200 L 50 50 1 1 I
+X VCC 5 350 -50 200 L 50 50 1 1 W
 X ESD 6 350 50 200 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
@@ -672,21 +669,46 @@ X ~RSTb 9 -500 900 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# LM3671_LM3671
+# LED_SK6812
 #
-DEF LM3671_LM3671 U 0 40 Y Y 1 F N
-F0 "U" 200 200 50 H V C CNN
-F1 "LM3671_LM3671" -100 200 50 H V C CNN
-F2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" 0 -200 50 H I C CNN
-F3 "" 200 200 50 H I C CNN
-F4 "C201586" 0 0 50 H I C CNN "LCSC"
+DEF LED_SK6812 D 0 10 Y Y 1 F N
+F0 "D" 200 225 50 H V R BNN
+F1 "LED_SK6812" 50 -225 50 H V L TNN
+F2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" 50 -300 50 H I L TNN
+F3 "" 100 -375 50 H I L TNN
+$FPLIST
+ LED*SK6812*PLCC*5.0x5.0mm*P3.2mm*
+$ENDFPLIST
 DRAW
-S -250 150 250 -150 0 1 0 N
-X Vin 1 -350 100 100 R 50 50 0 0 W
-X GND 2 -350 0 100 R 50 50 0 0 W
-X EN 3 -350 -100 100 R 50 50 0 0 I
-X FB 4 350 -100 100 L 50 50 0 0 I
-X SW 5 350 100 100 L 50 50 0 0 w
+T 0 90 -165 30 0 0 0 RGB Normal 0 C C
+S 200 200 -200 -200 0 1 10 f
+P 2 0 1 0 50 -140 70 -140 N
+P 2 0 1 0 50 -100 70 -100 N
+P 2 0 1 0 185 -140 105 -140 N
+P 3 0 1 0 90 -100 50 -140 50 -120 N
+P 3 0 1 0 90 -60 50 -100 50 -80 N
+P 3 0 1 0 145 -40 145 -140 145 -160 N
+P 4 0 1 0 185 -60 105 -60 145 -140 185 -60 N
+X VSS 1 0 -300 100 U 50 50 1 1 W
+X DIN 2 -300 0 100 R 50 50 1 1 I
+X VDD 3 0 300 100 D 50 50 1 1 W
+X DOUT 4 300 0 100 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# Mechanical_MountingHole_Pad
+#
+DEF Mechanical_MountingHole_Pad H 0 40 N N 1 F N
+F0 "H" 0 250 50 H V C CNN
+F1 "Mechanical_MountingHole_Pad" 0 175 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*Pad*
+$ENDFPLIST
+DRAW
+C 0 50 50 0 1 50 N
+X 1 1 0 -100 100 U 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
@@ -716,33 +738,505 @@ X EVI 8 -700 100 200 R 40 40 0 0 I
 ENDDRAW
 ENDDEF
 #
-# TPS61032PWPR_TPS61032PWPR
+# SKRKAEE020_SKRKAEE020
 #
-DEF TPS61032PWPR_TPS61032PWPR U 0 40 Y Y 1 L N
-F0 "U" -500 639 50 H V L BNN
-F1 "TPS61032PWPR_TPS61032PWPR" -50 650 50 H V L BNN
-F2 "SOP65P640X120-17N" -400 50 50 H I L BNN
+DEF SKRKAEE020_SKRKAEE020 SW 0 40 Y Y 1 F N
+F0 "SW" 0 -150 50 H V C CNN
+F1 "SKRKAEE020_SKRKAEE020" 0 200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
-P 2 0 0 16 -500 -600 -500 600 N
-P 2 0 0 16 -500 600 500 600 N
-P 2 0 0 16 500 -600 -500 -600 N
-P 2 0 0 16 500 600 500 -600 N
-X SW 1 -700 500 200 R 40 40 0 0 I
-X LBO 10 700 -350 200 L 40 40 0 0 O
-X GND 11 -700 -500 200 R 40 40 0 0 W
-X FB 12 700 -50 200 L 40 40 0 0 I
-X VOUT 13 700 500 200 L 40 40 0 0 O
-X VOUT 14 700 400 200 L 40 40 0 0 P
-X VOUT 15 700 300 200 L 40 40 0 0 P
-X SW 2 -700 400 200 R 40 40 0 0 I
-X PGND 3 -150 -800 200 U 40 40 0 0 W
-X PGND 4 0 -800 200 U 40 40 0 0 W
-X PGND 5 150 -800 200 U 40 40 0 0 W
-X VBAT 6 -700 250 200 R 40 40 0 0 W
-X LBI 7 -700 -50 200 R 40 40 0 0 I
-X SYNC 8 -700 -200 200 R 40 40 0 0 I
-X EN 9 -700 150 200 R 40 40 0 0 I
+C -100 0 5 0 1 0 N
+C 100 0 5 0 1 0 N
+P 2 0 1 0 -100 50 100 50 N
+P 2 0 1 0 0 50 0 100 N
+X ~ 1 -300 0 200 R 50 50 1 1 B
+X ~ 2 300 0 200 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# TPS63070NRM_TPS63070RNMT
+#
+DEF TPS63070NRM_TPS63070RNMT U 0 40 Y Y 1 L N
+F0 "U" -500 639 50 H V L BNN
+F1 "TPS63070NRM_TPS63070RNMT" -500 -757 50 H V L BNN
+F2 "VREG_TPS63070RNMR" -400 -100 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+DRAW
+S -500 -600 500 600 0 0 16 f
+X PS/SYNC 1 -700 100 200 R 40 40 0 0 I
+X PGND 10 700 -400 200 L 40 40 0 0 W
+X L1 11 -700 300 200 R 40 40 0 0 I
+X VIN 12_13 -700 0 200 R 40 40 0 0 I
+X EN 14 -700 500 200 R 40 40 0 0 I
+X VSEL 15 -700 -350 200 R 40 40 0 0 I
+X PG 2 700 400 200 L 40 40 0 0 O
+X VAUX 3 700 -250 200 L 40 40 0 0 O
+X GND 4 700 -500 200 L 40 40 0 0 W
+X FB 5 700 500 200 L 40 40 0 0 I
+X FB2 6 700 50 200 L 40 40 0 0 O
+X VOUT 7_8 700 200 200 L 40 40 0 0 O
+X L2 9 -700 200 200 R 40 40 0 0 I
+ENDDRAW
+ENDDEF
+#
+# TPS70933DRV_TPS70933DRVT
+#
+DEF TPS70933DRV_TPS70933DRVT U 0 40 Y Y 1 L N
+F0 "U" -500 339 50 H V L BNN
+F1 "TPS70933DRV_TPS70933DRVT" -500 -457 50 H V L BNN
+F2 "SON65P200X200X80-7N" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+DRAW
+S -500 -300 500 300 0 0 16 f
+X OUT 1 700 200 200 L 40 40 0 0 O
+X GND 3 700 -200 200 L 40 40 0 0 W
+X EN 4 -700 200 200 R 40 40 0 0 I
+X IN 6 -700 100 200 R 40 40 0 0 I
+ENDDRAW
+ENDDEF
+#
+# battery_cell_holder_18650_smt_1042_Battery_Cell_Holder_18650_SMT_1042
+#
+DEF battery_cell_holder_18650_smt_1042_Battery_Cell_Holder_18650_SMT_1042 BT 0 0 N N 1 F N
+F0 "BT" 100 100 50 H V L CNN
+F1 "battery_cell_holder_18650_smt_1042_Battery_Cell_Holder_18650_SMT_1042" 100 0 50 H I L CNN
+F2 "Battery:BatteryHolder_Keystone_1042_1x18650" 0 60 50 V I C CNN
+F3 "" 0 60 50 V I C CNN
+F4 "Keystone" 200 -25 50 H V C CNN "Mfr_name"
+F5 "1042" 125 -100 50 H V C CNN "Mfr_no"
+F6 "https://octopart.com/1042-keystone-19977746?r=sp#PriceAndStock" 0 0 50 H I C CNN "Octopart_link"
+F7 "https://fr.farnell.com/keystone/1042p/battery-holder-18650-smd/dp/2674338?ost=keystone+1042" 0 0 50 H I C CNN "Farnell_link"
+F8 "?" 0 0 50 H I C CNN "Farnell_ref"
+F9 "2020-11-29" 0 0 50 H I C CNN "Farnell_check_date"
+F10 "2,94 €" 0 0 50 H I C CNN "Farnell_price_qt=1"
+F11 "2,65 €" 0 0 50 H I C CNN "Farnell_price_qt=10"
+F12 "2,26 €" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F13 "1,62 €" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F14 "Available from 2021-01-16" 0 0 50 H I C CNN "Farnell_stock"
+F15 "-" 0 0 50 H I C CNN "LCSC_link"
+F16 "-" 0 0 50 H I C CNN "LCSC_ref"
+F17 "2020-11-29" 0 0 50 H I C CNN "LCSC_check_date"
+F18 "-" 0 0 50 H I C CNN "LCSC_price_qt=1"
+F19 "-" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F20 "-" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F21 "-" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F22 "-" 0 0 50 H I C CNN "LCSC_stock"
+F23 "https://eu.mouser.com/ProductDetail/Keystone-Electronics/1042?qs=%2F7TOpeL5Mz4qPdWi9tuLKw%3D%3D" 0 0 50 H I C CNN "Mouser_link"
+F24 "?" 0 0 50 H I C CNN "Mouser_ref"
+F25 "2020-11-29" 0 0 50 H I C CNN "Mouser_check_date"
+F26 "$3.62" 0 0 50 H I C CNN "Mouser_price_qt=1"
+F27 "-" 0 0 50 H I C CNN "Mouser_price_qt=10"
+F28 "$3.13" 0 0 50 H I C CNN "Mouser_price_qt=100"
+F29 "$2.36" 0 0 50 H I C CNN "Mouser_price_qt=1000"
+F30 "3,942" 0 0 50 H I C CNN "Mouser_stock"
+F31 "-" 0 0 50 H I C CNN "RS_link"
+F32 "-" 0 0 50 H I C CNN "RS_ref"
+F33 "2020-11-29" 0 0 50 H I C CNN "RS_check_date"
+F34 "-" 0 0 50 H I C CNN "RS_price_qt=1"
+F35 "-" 0 0 50 H I C CNN "RS_price_qt=10"
+F36 "-" 0 0 50 H I C CNN "RS_price_qt=100"
+F37 "-" 0 0 50 H I C CNN "RS_price_qt=1000"
+F38 "-" 0 0 50 H I C CNN "RS_stock"
+F39 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F40 "1.01" 0 0 50 H I C CNN "Release_version"
+F41 "2020-12-12" 0 0 50 H I C CNN "Release_date"
+F42 "ManWithNoName" 0 0 50 H I C CNN "Designer"
+DRAW
+S -90 70 90 60 0 1 0 F
+S -62 47 58 27 0 1 0 F
+P 2 0 1 0 0 30 0 0 N
+P 2 0 1 0 0 70 0 100 N
+P 2 0 1 10 20 135 60 135 N
+P 2 0 1 10 40 155 40 115 N
+X + 1 0 200 100 D 50 50 1 1 P
+X - 2 0 -100 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# bss84-7-f_BSS84-7-F
+#
+DEF bss84-7-f_BSS84-7-F Q 0 0 Y N 1 F N
+F0 "Q" 200 75 50 H V L CNN
+F1 "bss84-7-f_BSS84-7-F" 200 0 50 H V L CNN
+F2 "Package_TO_SOT_SMD:SOT-23" 200 100 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "Diodes Incorporated" 0 0 50 H I C CNN "Mfr_name"
+F5 "BSS84-7-F" 0 0 50 H I C CNN "Mfr_no"
+F6 "SOT23-3" 375 -75 50 H V C CNN "Package"
+F7 "P" 0 0 50 H I C CNN "mos_Type"
+F8 "-50V" 0 0 50 H I C CNN "mos_VDSS"
+F9 "10Ω" 375 -150 50 H V C CNN "mos_RDSon"
+F10 "-0.13A" 0 0 50 H I C CNN "mos_IDmax"
+F11 "-0.8V_to_-2.0V" 0 0 50 H I C CNN "mos_VGSth"
+F12 "20V" 0 0 50 H I C CNN "mos_VGSS"
+F13 "https://octopart.com/bss84-7-f-diodes+inc.-335925?r=sp#PriceAndStock" 0 0 50 H I C CNN "Octopart_link"
+F14 "https://fr.farnell.com/diodes-inc/bss84-7-f/mosfetcanal-p50v0-13asot23-3/dp/1843716" 0 0 50 H I C CNN "Farnell_link"
+F15 "1843716" 0 0 50 H I C CNN "Farnell_ref"
+F16 "2020-12-20" 0 0 50 H I C CNN "Farnell_check_date"
+F17 "-" 0 0 50 H I C CNN "Farnell_price_qt=1"
+F18 "0,17 €" 0 0 50 H I C CNN "Farnell_price_qt=10"
+F19 "0,0778 €" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F20 "0,0233 €" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F21 "23,312" 0 0 50 H I C CNN "Farnell_stock"
+F22 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated_BSS84-7-F_Diodes-Incorporated-BSS84-7-F_C85202.html" 0 0 50 H I C CNN "LCSC_link"
+F23 "C85202" 0 0 50 H I C CNN "LCSC_ref"
+F24 "2020-12-20" 0 0 50 H I C CNN "LCSC_check_date"
+F25 "-" 0 0 50 H I C CNN "LCSC_price_qt=1"
+F26 "-" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F27 "$0.0329" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F28 "$0.0236" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F29 "54,480" 0 0 50 H I C CNN "LCSC_stock"
+F30 "https://eu.mouser.com/ProductDetail/Diodes-Incorporated/BSS84-7-F/?qs=%2Fha2pyFaduh3xl%252BWGBx4Bd7HaWLSRy%252Bo5kzZv5xjHWA%3D" 0 0 50 H I C CNN "Mouser_link"
+F31 "621-BSS84-F" 0 0 50 H I C CNN "Mouser_ref"
+F32 "2020-12-20" 0 0 50 H I C CNN "Mouser_check_date"
+F33 "$0.232" 0 0 50 H I C CNN "Mouser_price_qt=1"
+F34 "$0.159" 0 0 50 H I C CNN "Mouser_price_qt=10"
+F35 "$0.076" 0 0 50 H I C CNN "Mouser_price_qt=100"
+F36 "$0.045" 0 0 50 H I C CNN "Mouser_price_qt=1000"
+F37 "197,827" 0 0 50 H I C CNN "Mouser_stock"
+F38 "https://fr.rs-online.com/web/p/transistors-mosfet/7384932/" 0 0 50 H I C CNN "RS_link"
+F39 "738-4932" 0 0 50 H I C CNN "RS_ref"
+F40 "2020-12-20" 0 0 50 H I C CNN "RS_check_date"
+F41 "-" 0 0 50 H I C CNN "RS_price_qt=1"
+F42 "-" 0 0 50 H I C CNN "RS_price_qt=10"
+F43 "0,066 €" 0 0 50 H I C CNN "RS_price_qt=100"
+F44 "0,041 €" 0 0 50 H I C CNN "RS_price_qt=1000"
+F45 "14,200" 0 0 50 H I C CNN "RS_stock"
+F46 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F47 "1.00" 0 0 50 H I C CNN "Release_version"
+F48 "2020-12-20" 0 0 50 H I C CNN "Release_date"
+F49 "ManWithNoName" 0 0 50 H I C CNN "Designer"
+DRAW
+C 65 0 110 0 1 10 N
+C 100 -70 10 0 1 0 F
+C 100 70 10 0 1 0 F
+P 2 0 1 0 10 0 -100 0 N
+P 2 0 1 10 10 75 10 -75 N
+P 2 0 1 10 30 -50 30 -90 N
+P 2 0 1 10 30 20 30 -20 N
+P 2 0 1 10 30 90 30 50 N
+P 2 0 1 0 100 100 100 70 N
+P 3 0 1 0 100 -100 100 0 30 0 N
+P 4 0 1 0 30 70 130 70 130 -70 30 -70 N
+P 4 0 1 0 90 0 50 15 50 -15 90 0 F
+P 4 0 1 0 110 -20 115 -15 145 -15 150 -10 N
+P 4 0 1 0 130 -15 115 10 145 10 130 -15 N
+X G 1 -200 0 100 R 50 50 1 1 I
+X S 2 100 -200 100 U 50 50 1 1 P
+X D 3 100 200 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# cc0603jrx7r9bb104_CC0603JRX7R9BB104
+#
+DEF cc0603jrx7r9bb104_CC0603JRX7R9BB104 C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "cc0603jrx7r9bb104_CC0603JRX7R9BB104" 25 -100 50 H I L CNN
+F2 "Capacitor_SMD:C_0603_1608Metric" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "Yageo" 0 0 50 H I C CNN "Mfr_name"
+F5 "CC0603JRX7R9BB104" 0 0 50 H I C CNN "Mfr_no"
+F6 "0.1µF" 125 -100 50 H V C CNN "cap_Value"
+F7 "0603" 125 -175 50 H V C CNN "Package"
+F8 "X7R" 325 -175 50 H V C CNN "cap_Dielectric"
+F9 "50V" 500 -175 50 H V C CNN "cap_Voltage"
+F10 "https://octopart.com/cc0603jrx7r9bb104-yageo-12885108?r=sp" 0 0 50 H I C CNN "Octopart_link"
+F11 "https://fr.farnell.com/yageo/cc0603jrx7r9bb104/condensateur-0-1uf-50v-mlcc-0603/dp/3369214?st=CC0603JRX7R9BB104" 0 0 50 H I C CNN "Farnell_link"
+F12 "3369214" 0 0 50 H I C CNN "Farnell_ref"
+F13 "2020-11-27" 0 0 50 H I C CNN "Farnell_check_date"
+F14 "-" 0 0 50 H I C CNN "Farnell_price_qt=1"
+F15 "0.0475€" 0 0 50 H I C CNN "Farnell_price_qt=10"
+F16 "0.0309€" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F17 "0.0155€" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F18 "2,870" 0 0 50 H I C CNN "Farnell_stock"
+F19 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_YAGEO-CC0603JRX7R9BB104_C91183.html" 0 0 50 H I C CNN "LCSC_link"
+F20 "C91183" 0 0 50 H I C CNN "LCSC_ref"
+F21 "2020-11-27" 0 0 50 H I C CNN "LCSC_check_date"
+F22 "-" 0 0 50 H I C CNN "LCSC_price_qt=1"
+F23 "-" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F24 "$0.0093" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F25 "$0.0069" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F26 "119,500" 0 0 50 H I C CNN "LCSC_stock"
+F27 "https://eu.mouser.com/ProductDetail/Yageo/CC0603JRX7R9BB104?qs=%2Fha2pyFaduiZbois2HzNxVdO93thVqADUWwLeer1tjY3NrWwFx3PGQ%3D%3D" 0 0 50 H I C CNN "Mouser_link"
+F28 "603-CC603JRX7R9BB104 " 0 0 50 H I C CNN "Mouser_ref"
+F29 "2020-11-27" 0 0 50 H I C CNN "Mouser_check_date"
+F30 "$0.111" 0 0 50 H I C CNN "Mouser_price_qt=1"
+F31 "$0.065" 0 0 50 H I C CNN "Mouser_price_qt=10"
+F32 "$0.025" 0 0 50 H I C CNN "Mouser_price_qt=100"
+F33 "$0.020" 0 0 50 H I C CNN "Mouser_price_qt=1000"
+F34 "10,249,855 " 0 0 50 H I C CNN "Mouser_stock"
+F35 "https://fr.rs-online.com/web/p/condensateurs-ceramique-multicouches/2006519/" 0 0 50 H I C CNN "RS_link"
+F36 "200-6519" 0 0 50 H I C CNN "RS_ref"
+F37 "2020-11-27" 0 0 50 H I C CNN "RS_check_date"
+F38 "-" 0 0 50 H I C CNN "RS_price_qt=1"
+F39 "-" 0 0 50 H I C CNN "RS_price_qt=10"
+F40 "0.025€" 0 0 50 H I C CNN "RS_price_qt=100"
+F41 "0.021€" 0 0 50 H I C CNN "RS_price_qt=1000"
+F42 "1,800" 0 0 50 H I C CNN "RS_stock"
+F43 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F44 "1.03" 0 0 50 H I C CNN "Release_version"
+F45 "2020-12-21" 0 0 50 H I C CNN "Release_date"
+F46 "ManWithNoName" 0 0 50 H I C CNN "Designer"
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# cl10b105ko8nnnc_CL10B105KO8NNNC
+#
+DEF cl10b105ko8nnnc_CL10B105KO8NNNC C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "cl10b105ko8nnnc_CL10B105KO8NNNC" 25 -100 50 H I L CNN
+F2 "Capacitor_SMD:C_0603_1608Metric" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "Samsung" 0 0 50 H I C CNN "Mfr_name"
+F5 "CL10B105KO8NNNC" 0 0 50 H I C CNN "Mfr_no"
+F6 "1µF" 125 -100 50 H V C CNN "cap_Value"
+F7 "0603" 125 -175 50 H V C CNN "Package"
+F8 "X7R" 325 -175 50 H V C CNN "cap_Dielectric"
+F9 "16V" 500 -175 50 H V C CNN "cap_Voltage"
+F10 "https://octopart.com/cl10b105ko8nnnc-samsung-19018973?r=sp" 0 0 50 H I C CNN "Octopart_link"
+F11 "https://fr.farnell.com/samsung-electro-mechanics/cl10b105ko8nnnc/condensateur-1uf-16v-mlcc-0603/dp/3013416?st=CL10B105KO8NNNC" 0 0 50 H I C CNN "Farnell_link"
+F12 "3013416" 0 0 50 H I C CNN "Farnell_ref"
+F13 "2020-11-29" 0 0 50 H I C CNN "Farnell_check_date"
+F14 "-" 0 0 50 H I C CNN "Farnell_price_qt=1"
+F15 "0,0348 €" 0 0 50 H I C CNN "Farnell_price_qt=10"
+F16 "0,0282 €" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F17 "0,014 €" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F18 "8,899" 0 0 50 H I C CNN "Farnell_stock"
+F19 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL10B105KO8NNNC_1uF-105-10-16V_C59782.html" 0 0 50 H I C CNN "LCSC_link"
+F20 "C59782" 0 0 50 H I C CNN "LCSC_ref"
+F21 "2020-11-29" 0 0 50 H I C CNN "LCSC_check_date"
+F22 "-" 0 0 50 H I C CNN "LCSC_price_qt=1"
+F23 "-" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F24 "$0.0051" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F25 "$0.0037" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F26 "521,550" 0 0 50 H I C CNN "LCSC_stock"
+F27 "https://eu.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL10B105KO8NNNC?qs=%2Fha2pyFaduieHDAu2oFb63CEYjc5CYz5gBw28wXw4psj1CqKhO2V6Q%3D%3D" 0 0 50 H I C CNN "Mouser_link"
+F28 "187-CL10B105KO8NNNC" 0 0 50 H I C CNN "Mouser_ref"
+F29 "2020-11-29" 0 0 50 H I C CNN "Mouser_check_date"
+F30 "$0.101" 0 0 50 H I C CNN "Mouser_price_qt=1"
+F31 "$0.050" 0 0 50 H I C CNN "Mouser_price_qt=10"
+F32 "$0.023" 0 0 50 H I C CNN "Mouser_price_qt=100"
+F33 "$0.012" 0 0 50 H I C CNN "Mouser_price_qt=1000"
+F34 "579,557" 0 0 50 H I C CNN "Mouser_stock"
+F35 "https://fr.rs-online.com/web/p/condensateurs-ceramique-multicouches/7664787/?sra=pmpn" 0 0 50 H I C CNN "RS_link"
+F36 "766-4787" 0 0 50 H I C CNN "RS_ref"
+F37 "2020-11-29" 0 0 50 H I C CNN "RS_check_date"
+F38 "-" 0 0 50 H I C CNN "RS_price_qt=1"
+F39 "-" 0 0 50 H I C CNN "RS_price_qt=10"
+F40 "-" 0 0 50 H I C CNN "RS_price_qt=100"
+F41 "0,008 € (QT=4000)" 0 0 50 H I C CNN "RS_price_qt=1000"
+F42 "248,000" 0 0 50 H I C CNN "RS_stock"
+F43 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F44 "1.01" 0 0 50 H I C CNN "Release_version"
+F45 "2020-12-21" 0 0 50 H I C CNN "Release_date"
+F46 "ManWithNoName" 0 0 50 H I C CNN "Designer"
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# cl10b223kb8nnnc_CL10B223KB8NNNC
+#
+DEF cl10b223kb8nnnc_CL10B223KB8NNNC C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "cl10b223kb8nnnc_CL10B223KB8NNNC" 25 -100 50 H I L CNN
+F2 "Capacitor_SMD:C_0603_1608Metric" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "Samsung" 0 0 50 H I C CNN "Mfr_name"
+F5 "CL10B223KB8NNNC" 0 0 50 H I C CNN "Mfr_no"
+F6 "0.022µF" 175 -100 50 H V C CNN "cap_Value"
+F7 "0603" 125 -175 50 H V C CNN "Package"
+F8 "X7R" 325 -175 50 H V C CNN "cap_Dielectric"
+F9 "50V" 500 -175 50 H V C CNN "cap_Voltage"
+F10 "https://octopart.com/cl10b223kb8nnnc-samsung-9299376?r=sp" 0 0 50 H I C CNN "Octopart_link"
+F11 "https://fr.farnell.com/samsung-electro-mechanics/cl10b223kb8nnnc/condensateur-0-022uf-50v-mlcc/dp/3013425?st=CL10B223KB8NNNC#" 0 0 50 H I C CNN "Farnell_link"
+F12 "3013425" 0 0 50 H I C CNN "Farnell_ref"
+F13 "2020-11-29" 0 0 50 H I C CNN "Farnell_check_date"
+F14 "-" 0 0 50 H I C CNN "Farnell_price_qt=1"
+F15 "0,0267 €" 0 0 50 H I C CNN "Farnell_price_qt=10"
+F16 "0,0215 €" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F17 "0,0112 €" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F18 "2,659" 0 0 50 H I C CNN "Farnell_stock"
+F19 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL10B223KB8NNNC_22nF-223-10-50V_C21122.html" 0 0 50 H I C CNN "LCSC_link"
+F20 "C21122" 0 0 50 H I C CNN "LCSC_ref"
+F21 "2020-11-29" 0 0 50 H I C CNN "LCSC_check_date"
+F22 "-" 0 0 50 H I C CNN "LCSC_price_qt=1"
+F23 "-" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F24 "$0.0065" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F25 "$0.0047" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F26 "679,900" 0 0 50 H I C CNN "LCSC_stock"
+F27 "https://eu.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL10B223KB8NNNC?qs=%2Fha2pyFadugxvmy74XdKf4%252BsCHDiFFyPnyljb4VWdZsHBz1hx7lVWg%3D%3D" 0 0 50 H I C CNN "Mouser_link"
+F28 "187-CL10B223KB8NNNC" 0 0 50 H I C CNN "Mouser_ref"
+F29 "2020-11-29" 0 0 50 H I C CNN "Mouser_check_date"
+F30 "$0.101" 0 0 50 H I C CNN "Mouser_price_qt=1"
+F31 "$0.038" 0 0 50 H I C CNN "Mouser_price_qt=10"
+F32 "$0.017" 0 0 50 H I C CNN "Mouser_price_qt=100"
+F33 "$0.010" 0 0 50 H I C CNN "Mouser_price_qt=1000"
+F34 "151,796 " 0 0 50 H I C CNN "Mouser_stock"
+F35 "https://fr.rs-online.com/web/p/condensateurs-ceramique-multicouches/7665402/?sra=pmpn" 0 0 50 H I C CNN "RS_link"
+F36 "766-5402" 0 0 50 H I C CNN "RS_ref"
+F37 "2020-11-29" 0 0 50 H I C CNN "RS_check_date"
+F38 "-" 0 0 50 H I C CNN "RS_price_qt=1"
+F39 "-" 0 0 50 H I C CNN "RS_price_qt=10"
+F40 "-" 0 0 50 H I C CNN "RS_price_qt=100"
+F41 "0,006 € (QT=4000)" 0 0 50 H I C CNN "RS_price_qt=1000"
+F42 "220,000" 0 0 50 H I C CNN "RS_stock"
+F43 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F44 "1.02" 0 0 50 H I C CNN "Release_version"
+F45 "2020-12-21" 0 0 50 H I C CNN "Release_date"
+F46 "ManWithNoName" 0 0 50 H I C CNN "Designer"
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# cl31b106kahnnne_CL31B106KAHNNNE
+#
+DEF cl31b106kahnnne_CL31B106KAHNNNE C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "cl31b106kahnnne_CL31B106KAHNNNE" 25 -100 50 H I L CNN
+F2 "Capacitor_SMD:C_1206_3216Metric" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "Samsung" 0 0 50 H I C CNN "Mfr_name"
+F5 "CL31B106KAHNNNE" 0 0 50 H I C CNN "Mfr_no"
+F6 "10µF" 125 -100 50 H V C CNN "cap_Value"
+F7 "1206" 125 -175 50 H V C CNN "Package"
+F8 "X7R" 325 -175 50 H V C CNN "cap_Dielectric"
+F9 "25V" 500 -175 50 H V C CNN "cap_Voltage"
+F10 "https://octopart.com/cl31b106kahnnne-samsung-18621872?r=sp#PriceAndStock" 0 0 50 H I C CNN "Octopart_link"
+F11 "https://fr.farnell.com/samsung-electro-mechanics/cl31b106kahnnne/condensateur-10uf-25v-mlcc-1206/dp/3013526?st=cl31b106kahnnne" 0 0 50 H I C CNN "Farnell_link"
+F12 "3013526" 0 0 50 H I C CNN "Farnell_ref"
+F13 "2020-11-28" 0 0 50 H I C CNN "Farnell_check_date"
+F14 "-" 0 0 50 H I C CNN "Farnell_price_qt=1"
+F15 "0,227 €" 0 0 50 H I C CNN "Farnell_price_qt=10"
+F16 "0,105 €" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F17 "0,0579 €" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F18 "22,345" 0 0 50 H I C CNN "Farnell_stock"
+F19 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL31B106KAHNNNE_C14860.html" 0 0 50 H I C CNN "LCSC_link"
+F20 "C14860" 0 0 50 H I C CNN "LCSC_ref"
+F21 "2020-11-28" 0 0 50 H I C CNN "LCSC_check_date"
+F22 "-" 0 0 50 H I C CNN "LCSC_price_qt=1"
+F23 "$0.0331" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F24 "$0.0278" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F25 "$0.025" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F26 "135,960" 0 0 50 H I C CNN "LCSC_stock"
+F27 "https://eu.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL31B106KAHNNNE?qs=%2Fha2pyFaduiEUnj6zqZqn3kcK5eMUinJ%2Fz%2F9uc9Zsjkl3KXYGdw53g%3D%3D" 0 0 50 H I C CNN "Mouser_link"
+F28 "187-CL31B106KAHNNNE" 0 0 50 H I C CNN "Mouser_ref"
+F29 "2020-11-28" 0 0 50 H I C CNN "Mouser_check_date"
+F30 "$0.242" 0 0 50 H I C CNN "Mouser_price_qt=1"
+F31 "$0.168" 0 0 50 H I C CNN "Mouser_price_qt=10"
+F32 "$0.095" 0 0 50 H I C CNN "Mouser_price_qt=100"
+F33 "$0.058" 0 0 50 H I C CNN "Mouser_price_qt=1000"
+F34 "73,742" 0 0 50 H I C CNN "Mouser_stock"
+F35 "https://fr.rs-online.com/web/p/condensateurs-ceramique-multicouches/7666773/?relevancy-data=7365617263685F636173636164655F6F726465723D31267365617263685F696E746572666163655F6E616D653D4931384E53656172636847656E65726963267365617263685F6C616E67756167655F757365643D6672267365617263685F6D617463685F6D6F64653D6D61746368616C6C7061727469616C267365617263685F7061747465726E5F6D6174636865643D5E5B5C707B4C7D5C707B4E647D2D2C2F255C2E5D2B24267365617263685F7061747465726E5F6F726465723D313333267365617263685F73745F6E6F726D616C697365643D59267365617263685F726573706F6E73655F616374696F6E3D267365617263685F747970653D4B4559574F52445F53494E474C455F414C5048415F4E554D45524943267365617263685F7370656C6C5F636F72726563745F6170706C6965643D59267365617263685F77696C645F63617264696E675F6D6F64653D4E4F4E45267365617263685F6B6579776F72643D434C3331423130364B41484E4E4E45267365617263685F6B6579776F72645F6170703D434C3331423130364B41484E4E4E45267365617263685F636F6E6669673D3126&searchHistory=%7B%22enabled%22%3Atrue%7D" 0 0 50 H I C CNN "RS_link"
+F36 "766-6773" 0 0 50 H I C CNN "RS_ref"
+F37 "2020-11-28" 0 0 50 H I C CNN "RS_check_date"
+F38 "-" 0 0 50 H I C CNN "RS_price_qt=1"
+F39 "-" 0 0 50 H I C CNN "RS_price_qt=10"
+F40 "-" 0 0 50 H I C CNN "RS_price_qt=100"
+F41 "0,048 € (QT=2000)" 0 0 50 H I C CNN "RS_price_qt=1000"
+F42 "388,000" 0 0 50 H I C CNN "RS_stock"
+F43 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F44 "1.02" 0 0 50 H I C CNN "Release_version"
+F45 "2020-12-21" 0 0 50 H I C CNN "Release_date"
+F46 "ManWithNoName" 0 0 50 H I C CNN "Designer"
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dfls230l_DFLS230L
+#
+DEF dfls230l_DFLS230L D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "dfls230l_DFLS230L" 0 -100 50 H V C CNN
+F2 "Diode_SMD:D_PowerDI-123" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "Diodes Incorporated" 0 0 50 H I C CNN "Mfr_name"
+F5 "DFLS230L-7" 0 0 50 H I C CNN "Mfr_no"
+F6 "PowerDI-123-2" 375 -75 50 H V C CNN "Package"
+F7 "Single" 0 0 50 H I C CNN "dio_Cfg"
+F8 "Schottky" 0 0 50 H I C CNN "dio_Type"
+F9 "30V" 375 -150 50 H V C CNN "dio_Vrrm"
+F10 "2A" 0 0 50 H I C CNN "dio_If_max"
+F11 "0.42V" 0 0 50 H I C CNN "dio_Vf"
+F12 "1mA" 0 0 50 H I C CNN "dio_Ir"
+F13 "https://octopart.com/dfls230l-7-diodes+inc.-328577?r=sp" 0 0 50 H I C CNN "Octopart_link"
+F14 "https://fr.farnell.com/diodes-inc/dfls230l-7/diode-recti-schottky-2a-30v-pwrdi123/dp/1858663?st=DFLS230L-7" 0 0 50 H I C CNN "Farnell_link"
+F15 "1858663" 0 0 50 H I C CNN "Farnell_ref"
+F16 "2020-12-14" 0 0 50 H I C CNN "Farnell_check_date"
+F17 "0,656 €" 0 0 50 H I C CNN "Farnell_price_qt=1"
+F18 "0,509 €" 0 0 50 H I C CNN "Farnell_price_qt=10"
+F19 "0,323 €" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F20 "0,238 €" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F21 "1147" 0 0 50 H I C CNN "Farnell_stock"
+F22 "https://lcsc.com/product-detail/Schottky-Barrier-Diodes-SBD_Diodes-Incorporated-DFLS230L-7_C124194.html" 0 0 50 H I C CNN "LCSC_link"
+F23 "C124194" 0 0 50 H I C CNN "LCSC_ref"
+F24 "2020-12-14" 0 0 50 H I C CNN "LCSC_check_date"
+F25 "-" 0 0 50 H I C CNN "LCSC_price_qt=1"
+F26 "$0.1296" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F27 "$0.0964" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F28 "$0.0842" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F29 "6785" 0 0 50 H I C CNN "LCSC_stock"
+F30 "https://eu.mouser.com/ProductDetail/Diodes-Incorporated/DFLS230L-7?qs=JV7lzlMm3yJ%2Fo9cuLkhj3Q%3D%3D" 0 0 50 H I C CNN "Mouser_link"
+F31 "621-DFLS230L-7" 0 0 50 H I C CNN "Mouser_ref"
+F32 "2020-12-14" 0 0 50 H I C CNN "Mouser_check_date"
+F33 "$0.675" 0 0 50 H I C CNN "Mouser_price_qt=1"
+F34 "$0.563" 0 0 50 H I C CNN "Mouser_price_qt=10"
+F35 "$0.394" 0 0 50 H I C CNN "Mouser_price_qt=100"
+F36 "$0.290" 0 0 50 H I C CNN "Mouser_price_qt=1000"
+F37 "3150" 0 0 50 H I C CNN "Mouser_stock"
+F38 "https://fr.rs-online.com/web/p/diodes-de-redressement-et-schottky/7513991/" 0 0 50 H I C CNN "RS_link"
+F39 "751-3991" 0 0 50 H I C CNN "RS_ref"
+F40 "2020-12-14" 0 0 50 H I C CNN "RS_check_date"
+F41 "-" 0 0 50 H I C CNN "RS_price_qt=1"
+F42 "0,418 €" 0 0 50 H I C CNN "RS_price_qt=10"
+F43 "0,396 €" 0 0 50 H I C CNN "RS_price_qt=100"
+F44 "0,256 €" 0 0 50 H I C CNN "RS_price_qt=1000"
+F45 "7910" 0 0 50 H I C CNN "RS_stock"
+F46 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F47 "1.00" 0 0 50 H I C CNN "Release_version"
+F48 "2020-12-14" 0 0 50 H I C CNN "Release_date"
+F49 "ManWithNoName" 0 0 50 H I C CNN "Designer"
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
+P 6 0 1 10 -75 25 -75 50 -50 50 -50 -50 -25 -50 -25 -25 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -753,15 +1247,52 @@ F0 "Q" -350 150 50 H V L CNN
 F1 "dmn2019uts_DMN2019UTS" 200 150 50 H V L CNN
 F2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" 200 250 50 H I L CNN
 F3 "" -200 0 50 H I C CNN
-F4 "https://octopart.com/dmn2019uts-13-diodes+inc.-21789369?r=sp" 0 0 50 H I C CNN "Octopart_link"
-F5 "-" 0 0 50 H I C CNN "Farnell_link"
-F6 "-" 0 0 50 H I C CNN "Farnell_ref"
-F7 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMN2019UTS-13_C260947.html" 0 0 50 H I C CNN "LCSC_link"
-F8 "C260947" 0 0 50 H I C CNN "LCSC_ref"
-F9 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMN2019UTS-13?qs=%2Fha2pyFadujmJKgyTdcUjBPbN0G7DesuMFVpb9R9LngEBXU4uTGuDw%3D%3D" 0 0 50 H I C CNN "Mouser_link"
-F10 "621-DMN2019UTS-13" 0 0 50 H I C CNN "Mouser_ref"
-F11 "-" 0 0 50 H I C CNN "RS_link"
-F12 "-" 0 0 50 H I C CNN "RS_ref"
+F4 "Diodes Incorporated" 0 0 50 H I C CNN "Mfr_name"
+F5 "DMN2019UTS-13" 0 0 50 H I C CNN "Mfr_no"
+F6 "TSSOP-8" 475 -225 50 H V C CNN "Package"
+F7 "N + N with common drain" 0 0 50 H I C CNN "mos_Type"
+F8 "20V" 0 0 50 H I C CNN "mos_VDSS"
+F9 "21mΩ" 450 -125 50 H V C CNN "mos_RDSon"
+F10 "4.3mA" 0 0 50 H I C CNN "mos_IDmax"
+F11 "0.35-0.95V" 0 0 50 H I C CNN "mos_VGSth"
+F12 "12V" 0 0 50 H I C CNN "mos_VGSS"
+F13 "https://octopart.com/dmn2019uts-13-diodes+inc.-21789369?r=sp" 0 0 50 H I C CNN "Octopart_link"
+F14 "-" 0 0 50 H I C CNN "Farnell_link"
+F15 "-" 0 0 50 H I C CNN "Farnell_ref"
+F16 "2020-12-05" 0 0 50 H I C CNN "Farnell_check_date"
+F17 "-" 0 0 50 H I C CNN "Farnell_price_qt=1"
+F18 "-" 0 0 50 H I C CNN "Farnell_price_qt=10"
+F19 "-" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F20 "-" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F21 "-" 0 0 50 H I C CNN "Farnell_stock"
+F22 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMN2019UTS-13_C260947.html" 0 0 50 H I C CNN "LCSC_link"
+F23 "C260947" 0 0 50 H I C CNN "LCSC_ref"
+F24 "2020-12-05" 0 0 50 H I C CNN "LCSC_check_date"
+F25 "$0.2042" 0 0 50 H I C CNN "LCSC_price_qt=1"
+F26 "$0.1537" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F27 "$0.1351" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F28 "$0.1290" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F29 "0" 0 0 50 H I C CNN "LCSC_stock"
+F30 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMN2019UTS-13?qs=%2Fha2pyFadujmJKgyTdcUjBPbN0G7DesuMFVpb9R9LngEBXU4uTGuDw%3D%3D" 0 0 50 H I C CNN "Mouser_link"
+F31 "621-DMN2019UTS-13" 0 0 50 H I C CNN "Mouser_ref"
+F32 "2020-12-13" 0 0 50 H I C CNN "Mouser_check_date"
+F33 "$0.505" 0 0 50 H I C CNN "Mouser_price_qt=1"
+F34 "$0.372" 0 0 50 H I C CNN "Mouser_price_qt=10"
+F35 "$0.232" 0 0 50 H I C CNN "Mouser_price_qt=100"
+F36 "$0.149" 0 0 50 H I C CNN "Mouser_price_qt=1000"
+F37 "9,645" 0 0 50 H I C CNN "Mouser_stock"
+F38 "-" 0 0 50 H I C CNN "RS_link"
+F39 "-" 0 0 50 H I C CNN "RS_ref"
+F40 "2020-12-05" 0 0 50 H I C CNN "RS_check_date"
+F41 "-" 0 0 50 H I C CNN "RS_price_qt=1"
+F42 "-" 0 0 50 H I C CNN "RS_price_qt=10"
+F43 "-" 0 0 50 H I C CNN "RS_price_qt=100"
+F44 "-" 0 0 50 H I C CNN "RS_price_qt=1000"
+F45 "-" 0 0 50 H I C CNN "RS_stock"
+F46 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F47 "1.02" 0 0 50 H I C CNN "Release_version"
+F48 "2020-12-21" 0 0 50 H I C CNN "Release_date"
+F49 "ManWithNoName" 0 0 50 H I C CNN "Designer"
 $FPLIST
  SOT?523*
 $ENDFPLIST
@@ -833,15 +1364,52 @@ F0 "Q" 200 75 50 H V L CNN
 F1 "dmn3018ssd_DMN3018SSD" 200 0 50 H V L CNN
 F2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" 200 -75 50 H I L CNN
 F3 "" 0 0 50 H I C CNN
-F4 "https://octopart.com/dmn3018ssd-13-diodes+inc.-26472698?r=sp" 0 0 50 H I C CNN "Octopart_link"
-F5 "-" 0 0 50 H I C CNN "Farnell_link"
-F6 "-" 0 0 50 H I C CNN "Farnell_ref"
-F7 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMN3018SSD-13_C155277.html" 0 0 50 H I C CNN "LCSC_link"
-F8 "C155277" 0 0 50 H I C CNN "LCSC_ref"
-F9 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMN3018SSD-13?qs=%2Fha2pyFaduhiKtoBktzbgyUAHZPSS%252B8%252Bk9vZNvppSquz1WfnqvfRKg%3D%3D" 0 0 50 H I C CNN "Mouser_link"
-F10 "621-DMN3018SSD-13 " 0 0 50 H I C CNN "Mouser_ref"
-F11 "https://fr.rs-online.com/web/p/transistors-mosfet/7904592/" 0 0 50 H I C CNN "RS_link"
-F12 " 790-4592" 0 0 50 H I C CNN "RS_ref"
+F4 "Diodes Incorporated" 0 0 50 H I C CNN "Mfr_name"
+F5 "DMN3018SSD-13" 0 0 50 H I C CNN "Mfr_no"
+F6 "SO-8" 375 -75 50 H V C CNN "Package"
+F7 "N + N" 0 0 50 H I C CNN "mos_Type"
+F8 "30V" 0 0 50 H I C CNN "mos_VDSS"
+F9 "30mΩ" 375 -150 50 H V C CNN "mos_RDSon"
+F10 "5.3A" 0 0 50 H I C CNN "mos_IDmax"
+F11 "1-2.1V" 0 0 50 H I C CNN "mos_VGSth"
+F12 "20V" 0 0 50 H I C CNN "mos_VGSS"
+F13 "https://octopart.com/dmn3018ssd-13-diodes+inc.-26472698?r=sp" 0 0 50 H I C CNN "Octopart_link"
+F14 "-" 0 0 50 H I C CNN "Farnell_link"
+F15 "-" 0 0 50 H I C CNN "Farnell_ref"
+F16 "2020-12-05" 0 0 50 H I C CNN "Farnell_check_date"
+F17 "-" 0 0 50 H I C CNN "Farnell_price_qt=1"
+F18 "-" 0 0 50 H I C CNN "Farnell_price_qt=10"
+F19 "-" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F20 "-" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F21 "-" 0 0 50 H I C CNN "Farnell_stock"
+F22 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMN3018SSD-13_C155277.html" 0 0 50 H I C CNN "LCSC_link"
+F23 "C155277" 0 0 50 H I C CNN "LCSC_ref"
+F24 "2020-12-05" 0 0 50 H I C CNN "LCSC_check_date"
+F25 "$0.2541" 0 0 50 H I C CNN "LCSC_price_qt=1"
+F26 "$0.1893" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F27 "$0.1655" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F28 "$0.1576" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F29 "2,688" 0 0 50 H I C CNN "LCSC_stock"
+F30 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMN3018SSD-13?qs=%2Fha2pyFaduhiKtoBktzbgyUAHZPSS%252B8%252Bk9vZNvppSquz1WfnqvfRKg%3D%3D" 0 0 50 H I C CNN "Mouser_link"
+F31 "621-DMN3018SSD-13" 0 0 50 H I C CNN "Mouser_ref"
+F32 "2020-12-12" 0 0 50 H I C CNN "Mouser_check_date"
+F33 "$0.514" 0 0 50 H I C CNN "Mouser_price_qt=1"
+F34 "$0.415" 0 0 50 H I C CNN "Mouser_price_qt=10"
+F35 "$0.293" 0 0 50 H I C CNN "Mouser_price_qt=100"
+F36 "$0.195" 0 0 50 H I C CNN "Mouser_price_qt=1000"
+F37 "2,685" 0 0 50 H I C CNN "Mouser_stock"
+F38 "https://fr.rs-online.com/web/p/transistors-mosfet/7904592/" 0 0 50 H I C CNN "RS_link"
+F39 "790-4592" 0 0 50 H I C CNN "RS_ref"
+F40 "2020-12-05" 0 0 50 H I C CNN "RS_check_date"
+F41 "-" 0 0 50 H I C CNN "RS_price_qt=1"
+F42 "-" 0 0 50 H I C CNN "RS_price_qt=10"
+F43 "0,342 €" 0 0 50 H I C CNN "RS_price_qt=100"
+F44 "0,203 €" 0 0 50 H I C CNN "RS_price_qt=1000"
+F45 "2,500" 0 0 50 H I C CNN "RS_stock"
+F46 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F47 "1.04" 0 0 50 H I C CNN "Release_version"
+F48 "2020-12-21" 0 0 50 H I C CNN "Release_date"
+F49 "ManWithNoName" 0 0 50 H I C CNN "Designer"
 DRAW
 C -90 0 10 1 1 0 F
 C 65 0 110 1 1 10 N
@@ -898,6 +1466,94 @@ X D 6 150 250 100 D 50 50 2 1 P
 ENDDRAW
 ENDDEF
 #
+# dmp2035uvt_DMP2035UVT
+#
+DEF dmp2035uvt_DMP2035UVT Q 0 0 Y N 1 F N
+F0 "Q" 200 75 50 H V L CNN
+F1 "dmp2035uvt_DMP2035UVT" 200 0 50 H V L CNN
+F2 "Package_TO_SOT_SMD:SOT-23-6" 200 100 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "Diodes Incorporated" 0 0 50 H I C CNN "Mfr_name"
+F5 "DMP2035UVT-7" 0 0 50 H I C CNN "Mfr_no"
+F6 "TSOT26" 375 -75 50 H V C CNN "Package"
+F7 "P" 0 0 50 H I C CNN "mos_Type"
+F8 "-20V" 0 0 50 H I C CNN "mos_VDSS"
+F9 "35mΩ" 375 -150 50 H V C CNN "mos_RDSon"
+F10 "-6.0A" 0 0 50 H I C CNN "mos_IDmax"
+F11 "-0.4V_to_-1.5V" 0 0 50 H I C CNN "mos_VGSth"
+F12 "12V" 0 0 50 H I C CNN "mos_VGSS"
+F13 "https://octopart.com/dmp2035uvt-7-diodes+inc.-21789379?r=sp" 0 0 50 H I C CNN "Octopart_link"
+F14 "https://fr.farnell.com/diodes-inc/dmp2035uvt-7/mosfet-canal-p-20v-6a-150-1-2w/dp/3405183?st=dmp2035uvt" 0 0 50 H I C CNN "Farnell_link"
+F15 "3405183" 0 0 50 H I C CNN "Farnell_ref"
+F16 "2020-12-11" 0 0 50 H I C CNN "Farnell_check_date"
+F17 "-" 0 0 50 H I C CNN "Farnell_price_qt=1"
+F18 "0,52 €" 0 0 50 H I C CNN "Farnell_price_qt=10"
+F19 "0,238 €" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F20 "0,141 €" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F21 "2,890" 0 0 50 H I C CNN "Farnell_stock"
+F22 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMP2035UVT-7_C260934.html" 0 0 50 H I C CNN "LCSC_link"
+F23 "C260934" 0 0 50 H I C CNN "LCSC_ref"
+F24 "2020-12-11" 0 0 50 H I C CNN "LCSC_check_date"
+F25 "-" 0 0 50 H I C CNN "LCSC_price_qt=1"
+F26 "$0.1253" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F27 "$0.0932" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F28 "$0.0814" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F29 "7,535" 0 0 50 H I C CNN "LCSC_stock"
+F30 "https://eu.mouser.com/ProductDetail/Diodes-Incorporated/DMP2035UVT-7?qs=F5djdNSOT4Y3SEHDwWTQ6g%3D%3D" 0 0 50 H I C CNN "Mouser_link"
+F31 "621-DMP2035UVT-7" 0 0 50 H I C CNN "Mouser_ref"
+F32 "2020-12-11" 0 0 50 H I C CNN "Mouser_check_date"
+F33 "$0.474" 0 0 50 H I C CNN "Mouser_price_qt=1"
+F34 "$0.346" 0 0 50 H I C CNN "Mouser_price_qt=10"
+F35 "$0.215" 0 0 50 H I C CNN "Mouser_price_qt=100"
+F36 "$0.137" 0 0 50 H I C CNN "Mouser_price_qt=1000"
+F37 "19,684" 0 0 50 H I C CNN "Mouser_stock"
+F38 "-" 0 0 50 H I C CNN "RS_link"
+F39 "-" 0 0 50 H I C CNN "RS_ref"
+F40 "2020-12-11" 0 0 50 H I C CNN "RS_check_date"
+F41 "-" 0 0 50 H I C CNN "RS_price_qt=1"
+F42 "-" 0 0 50 H I C CNN "RS_price_qt=10"
+F43 "-" 0 0 50 H I C CNN "RS_price_qt=100"
+F44 "-" 0 0 50 H I C CNN "RS_price_qt=1000"
+F45 "-" 0 0 50 H I C CNN "RS_stock"
+F46 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F47 "1.01" 0 0 50 H I C CNN "Release_version"
+F48 "2020-12-18" 0 0 50 H I C CNN "Release_date"
+F49 "ManWithNoName" 0 0 50 H I C CNN "Designer"
+DRAW
+C 65 0 110 0 1 10 N
+C 100 -70 10 0 1 0 F
+C 100 70 10 0 1 0 F
+C -90 0 10 1 1 0 F
+C -50 150 10 1 1 0 F
+C 50 150 10 1 1 0 F
+C 100 -150 10 1 1 0 F
+C 100 150 10 1 1 0 F
+S -150 150 150 150 0 1 0 N
+S 100 150 100 75 0 1 0 N
+P 2 0 1 0 10 0 -100 0 N
+P 2 0 1 10 10 75 10 -75 N
+P 2 0 1 10 30 -50 30 -90 N
+P 2 0 1 10 30 20 30 -20 N
+P 2 0 1 10 30 90 30 50 N
+P 3 0 1 0 100 -100 100 0 30 0 N
+P 4 0 1 0 30 70 130 70 130 -70 30 -70 N
+P 4 0 1 0 90 0 50 15 50 -15 90 0 F
+P 4 0 1 0 110 -20 115 -15 145 -15 150 -10 N
+P 4 0 1 0 130 -15 115 10 145 10 130 -15 N
+P 3 1 1 0 100 -150 -90 -150 -90 0 N
+P 4 1 1 0 -40 -170 -35 -165 -35 -135 -30 -130 N
+P 4 1 1 0 -35 -150 -10 -165 -10 -135 -35 -150 N
+P 4 1 1 0 45 -150 20 -135 20 -165 45 -150 N
+P 4 1 1 0 50 -130 45 -135 45 -165 40 -170 N
+X D 1 -150 250 100 D 50 50 1 1 P
+X D 2 -50 250 100 D 50 50 1 1 P
+X G 3 -200 0 100 R 50 50 1 1 I
+X S 4 100 -200 100 U 50 50 1 1 P
+X D 5 50 250 100 D 50 50 1 1 P
+X D 6 150 250 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # dmp3028lsd_DMP3028LSD
 #
 DEF dmp3028lsd_DMP3028LSD Q 0 20 Y N 2 F N
@@ -905,15 +1561,52 @@ F0 "Q" 200 75 50 H V L CNN
 F1 "dmp3028lsd_DMP3028LSD" 200 0 50 H V L CNN
 F2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" 200 -75 50 H I L CIN
 F3 "" 0 0 50 V I L CNN
-F4 "https://octopart.com/dmp3028lsd-13-diodes+inc.-67250487?r=sp" 0 0 50 H I C CNN "Octopart_link"
-F5 "-" 0 0 50 H I C CNN "Farnell_link"
-F6 "-" 0 0 50 H I C CNN "Farnell_ref"
-F7 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMP3028LSD-13_C397949.html" 0 0 50 H I C CNN "LCSC_link"
-F8 "C397949" 0 0 50 H I C CNN "LCSC_ref"
-F9 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMP3028LSD-13?qs=%2Fha2pyFadugUkRnXWzNfjPB%2F2%2FpUVmcBtenJqlz85NswHo6v693iIw%3D%3D" 0 0 50 H I C CNN "Mouser_link"
-F10 "DMP3028LSD-13 " 0 0 50 H I C CNN "Mouser_ref"
-F11 "-" 0 0 50 H I C CNN "RS_link"
-F12 "-" 0 0 50 H I C CNN "RS_ref"
+F4 "Diodes Incorporated" 0 0 50 H I C CNN "Mfr_name"
+F5 "DMP3028LSD-13" 0 0 50 H I C CNN "Mfr_no"
+F6 "SO-8" 300 -75 50 H V C CNN "Package"
+F7 "P + P" 0 0 50 H I C CNN "mos_Type"
+F8 "30V" 0 0 50 H I C CNN "mos_VDSS"
+F9 "38mΩ" 300 -150 50 H V C CNN "mos_RDSon"
+F10 "4.7A" 0 0 50 H I C CNN "mos_IDmax"
+F11 "1-3V" 0 0 50 H I C CNN "mos_VGSth"
+F12 "20V" 0 0 50 H I C CNN "mos_VGSS"
+F13 "https://octopart.com/dmp3028lsd-13-diodes+inc.-67250487?r=sp" 0 0 50 H I C CNN "Octopart_link"
+F14 "-" 0 0 50 H I C CNN "Farnell_link"
+F15 "-" 0 0 50 H I C CNN "Farnell_ref"
+F16 "2020-12-05" 0 0 50 H I C CNN "Farnell_check_date"
+F17 "-" 0 0 50 H I C CNN "Farnell_price_qt=1"
+F18 "-" 0 0 50 H I C CNN "Farnell_price_qt=10"
+F19 "-" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F20 "-" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F21 "-" 0 0 50 H I C CNN "Farnell_stock"
+F22 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMP3028LSD-13_C397949.html" 0 0 50 H I C CNN "LCSC_link"
+F23 "C397949" 0 0 50 H I C CNN "LCSC_ref"
+F24 "2020-12-13" 0 0 50 H I C CNN "LCSC_check_date"
+F25 "$0.373" 0 0 50 H I C CNN "LCSC_price_qt=1"
+F26 "$0.2802" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F27 "$0.2475" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F28 "$0.2355" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F29 "4,818" 0 0 50 H I C CNN "LCSC_stock"
+F30 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMP3028LSD-13?qs=%2Fha2pyFadugUkRnXWzNfjPB%2F2%2FpUVmcBtenJqlz85NswHo6v693iIw%3D%3D" 0 0 50 H I C CNN "Mouser_link"
+F31 "621-DMP3028LSD-13" 0 0 50 H I C CNN "Mouser_ref"
+F32 "2020-12-13" 0 0 50 H I C CNN "Mouser_check_date"
+F33 "$0.564" 0 0 50 H I C CNN "Mouser_price_qt=1"
+F34 "$0.469" 0 0 50 H I C CNN "Mouser_price_qt=10"
+F35 "$0.328" 0 0 50 H I C CNN "Mouser_price_qt=100"
+F36 "$0.242" 0 0 50 H I C CNN "Mouser_price_qt=1000"
+F37 "2,855" 0 0 50 H I C CNN "Mouser_stock"
+F38 "-" 0 0 50 H I C CNN "RS_link"
+F39 "-" 0 0 50 H I C CNN "RS_ref"
+F40 "2020-12-05" 0 0 50 H I C CNN "RS_check_date"
+F41 "-" 0 0 50 H I C CNN "RS_price_qt=1"
+F42 "-" 0 0 50 H I C CNN "RS_price_qt=10"
+F43 "-" 0 0 50 H I C CNN "RS_price_qt=100"
+F44 "-" 0 0 50 H I C CNN "RS_price_qt=1000"
+F45 "-" 0 0 50 H I C CNN "RS_stock"
+F46 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F47 "1.03" 0 0 50 H I C CNN "Release_version"
+F48 "2020-12-21" 0 0 50 H I C CNN "Release_date"
+F49 "ManWithNoName" 0 0 50 H I C CNN "Designer"
 $FPLIST
  Diodes*PowerDI3333*
 $ENDFPLIST
@@ -945,22 +1638,295 @@ X D 6 150 250 100 D 50 50 2 1 P
 ENDDRAW
 ENDDEF
 #
+# erj-p06f4700v_ERJ-P06F4700V
+#
+DEF erj-p06f4700v_ERJ-P06F4700V R 0 0 N Y 1 F N
+F0 "R" 100 0 50 V V C CNN
+F1 "erj-p06f4700v_ERJ-P06F4700V" -100 0 50 V V C CNN
+F2 "Resistor_SMD:R_0805_2012Metric" 40 -10 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "Panasonic" 0 0 50 H I C CNN "Mfr_name"
+F5 "ERJ-P06F4700V" 0 0 50 H I C CNN "Mfr_no"
+F6 "470Ω" 125 -100 50 H V C CNN "res_value"
+F7 "0805" 125 -175 50 H V C CNN "Package"
+F8 "0.5W" 325 -175 50 H V C CNN "res_power"
+F9 "1%" 500 -175 50 H V C CNN "res_tolerance"
+F10 "https://octopart.com/erj-p06f4700v-panasonic-24987750?r=sp" 0 0 50 H I C CNN "Octopart_link"
+F11 "-" 0 0 50 H I C CNN "Farnell_link"
+F12 "-" 0 0 50 H I C CNN "Farnell_ref"
+F13 "2020-12-17" 0 0 50 H I C CNN "Farnell_check_date"
+F14 "-" 0 0 50 H I C CNN "Farnell_price_qt=1"
+F15 "-" 0 0 50 H I C CNN "Farnell_price_qt=10"
+F16 "-" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F17 "-" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F18 "-" 0 0 50 H I C CNN "Farnell_stock"
+F19 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_PANASONIC-ERJP06F4700V_C441978.html" 0 0 50 H I C CNN "LCSC_link"
+F20 "C441978" 0 0 50 H I C CNN "LCSC_ref"
+F21 "2020-12-17" 0 0 50 H I C CNN "LCSC_check_date"
+F22 "-" 0 0 50 H I C CNN "LCSC_price_qt=1"
+F23 "-" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F24 "$0.0314" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F25 "$0.0215" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F26 "12,520" 0 0 50 H I C CNN "LCSC_stock"
+F27 "https://eu.mouser.com/ProductDetail/Panasonic/ERJ-P06F4700V/?qs=%2Fha2pyFadug2IR%252BKGI4fm0JbELzFWApGleVrDsvCaSwrtnqdozMMLg%3D%3D" 0 0 50 H I C CNN "Mouser_link"
+F28 "667-ERJ-P06F4700V" 0 0 50 H I C CNN "Mouser_ref"
+F29 "2020-12-17" 0 0 50 H I C CNN "Mouser_check_date"
+F30 "$0.151" 0 0 50 H I C CNN "Mouser_price_qt=1"
+F31 "$0.087" 0 0 50 H I C CNN "Mouser_price_qt=10"
+F32 "$0.049" 0 0 50 H I C CNN "Mouser_price_qt=100"
+F33 "$0.023" 0 0 50 H I C CNN "Mouser_price_qt=1000"
+F34 "647 (10,000 Expected 01/29/2021)" 0 0 50 H I C CNN "Mouser_stock"
+F35 "https://fr.rs-online.com/web/p/resistances-cms/7217722/" 0 0 50 H I C CNN "RS_link"
+F36 "721-7722" 0 0 50 H I C CNN "RS_ref"
+F37 "2020-12-17" 0 0 50 H I C CNN "RS_check_date"
+F38 "-" 0 0 50 H I C CNN "RS_price_qt=1"
+F39 "0,14 €" 0 0 50 H I C CNN "RS_price_qt=10"
+F40 "0,044 €" 0 0 50 H I C CNN "RS_price_qt=100"
+F41 "0,024 €" 0 0 50 H I C CNN "RS_price_qt=1000"
+F42 "1850" 0 0 50 H I C CNN "RS_stock"
+F43 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F44 "1.00" 0 0 50 H I C CNN "Release_version"
+F45 "2020-12-17" 0 0 50 H I C CNN "Release_date"
+F46 "ManWithNoName" 0 0 50 H I C CNN "Designer"
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 0 -90 0 -100 N
+P 2 0 1 0 0 90 0 100 N
+P 5 0 1 0 0 -30 40 -45 0 -60 -40 -75 0 -90 N
+P 5 0 1 0 0 30 40 15 0 0 -40 -15 0 -30 N
+P 5 0 1 0 0 90 40 75 0 60 -40 45 0 30 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# jst_ph_s2b_thru_JST_PH_S2B_thru
+#
+DEF jst_ph_s2b_thru_JST_PH_S2B_thru J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "jst_ph_s2b_thru_JST_PH_S2B_thru" 0 -200 50 H V C CNN
+F2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "JST" 0 0 50 H I C CNN "Mfr_name"
+F5 "S2B-PH-K-S(LF)(SN)" 0 0 50 H I C CNN "Mfr_no"
+F6 "PH Right Angle Thru 2pins" 0 0 50 H I C CNN "Package"
+F7 "White" 0 0 50 H I C CNN "Color"
+F8 "https://octopart.com/s2b-ph-k-s%28lf%29%28sn%29-jst-248883?r=sp" 0 0 50 H I C CNN "Octopart_link"
+F9 "https://fr.farnell.com/jst-japan-solderless-terminals/s2b-ph-k-s-lf-sn/embase-entree-laterale-2-voies/dp/9491902?scope=partnumberlookahead&ost=S2B-PH-K-S+%28LF%29%28SN%29&searchref=searchlookahead&exaMfpn=true" 0 0 50 H I C CNN "Farnell_link"
+F10 "9491902" 0 0 50 H I C CNN "Farnell_ref"
+F11 "2020-11-24" 0 0 50 H I C CNN "Farnell_check_date"
+F12 "-" 0 0 50 H I C CNN "Farnell_price_qt=1"
+F13 "-" 0 0 50 H I C CNN "Farnell_price_qt=10"
+F14 "0.072€" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F15 "0.063€" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F16 "0 (available from 2021-02-14)" 0 0 50 H I C CNN "Farnell_stock"
+F17 "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_JST-Sales-America-S2B-PH-K-S-LF-SN_C173752.html" 0 0 50 H I C CNN "LCSC_link"
+F18 "C173752" 0 0 50 H I C CNN "LCSC_ref"
+F19 "2020-11-24" 0 0 50 H I C CNN "LCSC_check_date"
+F20 "-" 0 0 50 H I C CNN "LCSC_price_qt=1"
+F21 "$0.038" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F22 "$0.028" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F23 "$0.024" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F24 "55470" 0 0 50 H I C CNN "LCSC_stock"
+F25 "-" 0 0 50 H I C CNN "Mouser_link"
+F26 "-" 0 0 50 H I C CNN "Mouser_ref"
+F27 "2020-11-24" 0 0 50 H I C CNN "Mouser_check_date"
+F28 "-" 0 0 50 H I C CNN "Mouser_price_qt=1"
+F29 "-" 0 0 50 H I C CNN "Mouser_price_qt=10"
+F30 "-" 0 0 50 H I C CNN "Mouser_price_qt=100"
+F31 "-" 0 0 50 H I C CNN "Mouser_price_qt=1000"
+F32 "-" 0 0 50 H I C CNN "Mouser_stock"
+F33 "https://fr.rs-online.com/web/p/embases-circuits-imprimes/8201494/" 0 0 50 H I C CNN "RS_link"
+F34 "820-1494" 0 0 50 H I C CNN "RS_ref"
+F35 "2020-11-24" 0 0 50 H I C CNN "RS_check_date"
+F36 "-" 0 0 50 H I C CNN "RS_price_qt=1"
+F37 "0.148€" 0 0 50 H I C CNN "RS_price_qt=10"
+F38 "0.138€" 0 0 50 H I C CNN "RS_price_qt=100"
+F39 "0.068€" 0 0 50 H I C CNN "RS_price_qt=1000"
+F40 "275" 0 0 50 H I C CNN "RS_stock"
+F41 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F42 "1.01" 0 0 50 H I C CNN "Release_version"
+F43 "2020-12-12" 0 0 50 H I C CNN "Release_date"
+F44 "ManWithNoName" 0 0 50 H I C CNN "Designer"
+$FPLIST
+ Connector_JST:JST_PH_?2*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# jst_xh_s2b_thru_JST_XH_S2B_thru
+#
+DEF jst_xh_s2b_thru_JST_XH_S2B_thru J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "jst_xh_s2b_thru_JST_XH_S2B_thru" 0 -200 50 H V C CNN
+F2 "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "JST" 0 0 50 H I C CNN "Mfr_name"
+F5 "S2B-XH-A(LF)(SN)" 0 0 50 H I C CNN "Mfr_no"
+F6 "XH Right Angle Thru 2pins" 0 0 50 H I C CNN "Package"
+F7 "White" 0 0 50 H I C CNN "Color"
+F8 "https://octopart.com/s2b-xh-a%28lf%29%28sn%29-jst-3990369?r=sp#PriceAndStock" 0 0 50 H I C CNN "Octopart_link"
+F9 "https://fr.farnell.com/jst-japan-solderless-terminals/s2b-xh-a-lf-sn/embase-male-90-deg-2-voies/dp/1516289?ost=s2b-xh-a%28lf%29%28sn%29" 0 0 50 H I C CNN "Farnell_link"
+F10 "1516289" 0 0 50 H I C CNN "Farnell_ref"
+F11 "2020-11-24" 0 0 50 H I C CNN "Farnell_check_date"
+F12 "-" 0 0 50 H I C CNN "Farnell_price_qt=1"
+F13 "-" 0 0 50 H I C CNN "Farnell_price_qt=10"
+F14 "0.099€" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F15 "0.068€" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F16 "53048" 0 0 50 H I C CNN "Farnell_stock"
+F17 "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_JST-Sales-America-S2B-XH-A-LF-SN_C157931.html" 0 0 50 H I C CNN "LCSC_link"
+F18 "C157931" 0 0 50 H I C CNN "LCSC_ref"
+F19 "2020-11-24" 0 0 50 H I C CNN "LCSC_check_date"
+F20 "-" 0 0 50 H I C CNN "LCSC_price_qt=1"
+F21 "$0.054" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F22 "$0.040" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F23 "$0.035" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F24 "23650" 0 0 50 H I C CNN "LCSC_stock"
+F25 "-" 0 0 50 H I C CNN "Mouser_link"
+F26 "-" 0 0 50 H I C CNN "Mouser_ref"
+F27 "2020-11-24" 0 0 50 H I C CNN "Mouser_check_date"
+F28 "-" 0 0 50 H I C CNN "Mouser_price_qt=1"
+F29 "-" 0 0 50 H I C CNN "Mouser_price_qt=10"
+F30 "-" 0 0 50 H I C CNN "Mouser_price_qt=100"
+F31 "-" 0 0 50 H I C CNN "Mouser_price_qt=1000"
+F32 "-" 0 0 50 H I C CNN "Mouser_stock"
+F33 "https://fr.rs-online.com/web/p/embases-circuits-imprimes/8201582/" 0 0 50 H I C CNN "RS_link"
+F34 "820-1582" 0 0 50 H I C CNN "RS_ref"
+F35 "2020-11-24" 0 0 50 H I C CNN "RS_check_date"
+F36 "-" 0 0 50 H I C CNN "RS_price_qt=1"
+F37 "0.43€" 0 0 50 H I C CNN "RS_price_qt=10"
+F38 "-" 0 0 50 H I C CNN "RS_price_qt=100"
+F39 "0.108€" 0 0 50 H I C CNN "RS_price_qt=1000"
+F40 "5760" 0 0 50 H I C CNN "RS_stock"
+F41 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F42 "1.01" 0 0 50 H I C CNN "Release_version"
+F43 "2020-12-12" 0 0 50 H I C CNN "Release_date"
+F44 "ManWithNoName" 0 0 50 H I C CNN "Designer"
+$FPLIST
+ Connector_JST:JST_XH_?2*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# jst_zh_s2b_thru_JST_ZH_S2B_thru
+#
+DEF jst_zh_s2b_thru_JST_ZH_S2B_thru J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "jst_zh_s2b_thru_JST_ZH_S2B_thru" 0 -200 50 H V C CNN
+F2 "Connector_JST_user:JST_ZH_S2B-ZR_1x02_P1.50mm_Horizontal" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "JST" 0 0 50 H I C CNN "Mfr_name"
+F5 "S2B-ZR(LF)(SN)" 0 0 50 H I C CNN "Mfr_no"
+F6 "ZH Right Angle Thru 2pins" 0 0 50 H I C CNN "Package"
+F7 "White" 0 0 50 H I C CNN "Color"
+F8 "https://octopart.com/s2b-zr%28lf%29%28sn%29-jst-248833?r=sp" 0 0 50 H I C CNN "Octopart_link"
+F9 "https://fr.farnell.com/jst-japan-solderless-terminals/s2b-zr-lf-sn/embase-entree-laterale-2-voies/dp/9491813?scope=partnumberlookahead&ost=9491813&searchref=searchlookahead&exaMfpn=true" 0 0 50 H I C CNN "Farnell_link"
+F10 "9491813" 0 0 50 H I C CNN "Farnell_ref"
+F11 "2020-11-25" 0 0 50 H I C CNN "Farnell_check_date"
+F12 "0.077€" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F13 "0.067€" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F14 "24362" 0 0 50 H I C CNN "Farnell_stock"
+F15 "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_JST-Sales-America-S2B-ZR-LF-SN_C157930.html" 0 0 50 H I C CNN "LCSC_link"
+F16 "C157930" 0 0 50 H I C CNN "LCSC_ref"
+F17 "2020-11-25" 0 0 50 H I C CNN "LCSC_check_date"
+F18 "-" 0 0 50 H I C CNN "LCSC_price_qt=1"
+F19 "$0.050" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F20 "$0.036" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F21 "$0.031" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F22 "4300" 0 0 50 H I C CNN "LCSC_stock"
+F23 "https://eu.mouser.com/ProductDetail/JST/S2B-ZR-LFSN?qs=%2Fha2pyFadugq2jRRAGtYfIV58loDKmQolDnBD3Dd%2FKWMFsJXC%2FTC6g%3D%3D" 0 0 50 H I C CNN "Mouser_link"
+F24 "-" 0 0 50 H I C CNN "Mouser_ref"
+F25 "2020-11-25" 0 0 50 H I C CNN "Mouser_check_date"
+F26 "-" 0 0 50 H I C CNN "Mouser_price_qt=1"
+F27 "-" 0 0 50 H I C CNN "Mouser_price_qt=10"
+F28 "-" 0 0 50 H I C CNN "Mouser_price_qt=100"
+F29 "-" 0 0 50 H I C CNN "Mouser_price_qt=1000"
+F30 "4300" 0 0 50 H I C CNN "Mouser_stock"
+F31 "https://fr.rs-online.com/web/p/embases-circuits-imprimes/7620765/" 0 0 50 H I C CNN "RS_link"
+F32 "762-0765" 0 0 50 H I C CNN "RS_ref"
+F33 "2020-11-25" 0 0 50 H I C CNN "RS_check_date"
+F34 "-" 0 0 50 H I C CNN "RS_price_qt=1"
+F35 "0.484€" 0 0 50 H I C CNN "RS_price_qt=10"
+F36 "0.484€" 0 0 50 H I C CNN "RS_price_qt=100"
+F37 "0.364€" 0 0 50 H I C CNN "RS_price_qt=1000"
+F38 "1765" 0 0 50 H I C CNN "RS_stock"
+F39 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F40 "1.01" 0 0 50 H I C CNN "Release_version"
+F41 "2020-12-12" 0 0 50 H I C CNN "Release_date"
+F42 "ManWithNoName" 0 0 50 H I C CNN "Designer"
+$FPLIST
+ Connector_JST:JST_ZH*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # ltc4162eufd-lad_LTC4162EUFD-LAD
 #
 DEF ltc4162eufd-lad_LTC4162EUFD-LAD U 0 40 Y Y 1 F N
 F0 "U" -400 1050 50 H V C CNN
-F1 "ltc4162eufd-lad_LTC4162EUFD-LAD" 300 1050 50 H V C CNN
+F1 "ltc4162eufd-lad_LTC4162EUFD-LAD" 375 1050 50 H V C CNN
 F2 "Package_DFN_QFN:QFN-28-1EP_4x5mm_P0.5mm_EP2.65x3.65mm_ThermalVias" -350 1050 50 H I C CNN
 F3 "" -400 1050 50 H I C CNN
-F4 "https://lcsc.com/product-detail/Pre-ordered-Products_Analog-Devices_LTC4162EUFD-LAD-TRPBF_Analog-Devices-ADI-LINEAR-LTC4162EUFD-LAD-TRPBF_C687387.html" 0 0 50 H I C CNN "LCSC_link"
-F5 "C687387" 0 0 50 H I C CNN "LCSC_ref"
-F6 "https://www.mouser.fr/ProductDetail/Analog-Devices/LTC4162EUFD-LADPBF?qs=MLItCLRbWsx0I%2FnYhNqKzA==" 0 0 50 H I C CNN "Mouser_link"
-F7 "584-4162EUFDLADPB " 0 0 50 H I C CNN "Mouser_ref"
-F8 "-" 0 0 50 H I C CNN "RS_link"
-F9 "-" 0 0 50 H I C CNN "RS_ref"
-F10 "-" 0 0 50 H I C CNN "Farnell_link"
-F11 "-" 0 0 50 H I C CNN "Farnell_ref"
-F12 "https://octopart.com/ltc4162eufd-lad%23pbf-analog+devices-92333982?r=sp" 0 0 50 H I C CNN "Octopart_link"
+F4 "Analog Devices" 0 0 50 H I C CNN "Mfr_name"
+F5 "LTC4162EUFD-LAD#PBF " 0 0 50 H I C CNN "Mfr_no"
+F6 "QFN-28 (2.65x3.65mm)" 750 -1050 50 H I C CNN "Package"
+F7 "https://octopart.com/ltc4162eufd-lad%23pbf-analog+devices-92333982?r=sp" 0 0 50 H I C CNN "Octopart_link"
+F8 "-" 0 0 50 H I C CNN "Farnell_link"
+F9 "-" 0 0 50 H I C CNN "Farnell_ref"
+F10 "2020-11-22" 0 0 50 H I C CNN "Farnell_check_date"
+F11 "-" 0 0 50 H I C CNN "Farnell_price_qt=1"
+F12 "-" 0 0 50 H I C CNN "Farnell_price_qt=10"
+F13 "-" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F14 "-" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F15 "-" 0 0 50 H I C CNN "Farnell_stock"
+F16 "https://lcsc.com/product-detail/Pre-ordered-Products_Analog-Devices_LTC4162EUFD-LAD-TRPBF_Analog-Devices-ADI-LINEAR-LTC4162EUFD-LAD-TRPBF_C687387.html" 0 0 50 H I C CNN "LCSC_link"
+F17 "C687387" 0 0 50 H I C CNN "LCSC_ref"
+F18 "2020-12-12" 0 0 50 H I C CNN "LCSC_check_date"
+F19 "$11.892" 0 0 50 H I C CNN "LCSC_price_qt=1"
+F20 "$11.892" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F21 "$11.892" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F22 "$4.3605" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F23 "0" 0 0 50 H I C CNN "LCSC_stock"
+F24 "https://eu.mouser.com/ProductDetail/Analog-Devices/LTC4162EUFD-LADPBF?qs=MLItCLRbWsx0I%2FnYhNqKzA==" 0 0 50 H I C CNN "Mouser_link"
+F25 "584-4162EUFDLADPB " 0 0 50 H I C CNN "Mouser_ref"
+F26 "2020-12-12" 0 0 50 H I C CNN "Mouser_check_date"
+F27 "$7.39" 450 -1150 50 H I C CNN "Mouser_price_qt=1"
+F28 "$7.39" 0 0 50 H I C CNN "Mouser_price_qt=10"
+F29 "$3.90" 0 0 50 H I C CNN "Mouser_price_qt=100"
+F30 "$3.75" 0 0 50 H I C CNN "Mouser_price_qt=1000"
+F31 "568 (438 Expected 07/16/2021)" 0 0 50 H I C CNN "Mouser_stock"
+F32 "-" 0 0 50 H I C CNN "RS_link"
+F33 "-" 0 0 50 H I C CNN "RS_ref"
+F34 "2020-12-12" 0 0 50 H I C CNN "RS_check_date"
+F35 "-" 0 0 50 H I C CNN "RS_price_qt=1"
+F36 "-" 0 0 50 H I C CNN "RS_price_qt=10"
+F37 "-" 0 0 50 H I C CNN "RS_price_qt=100"
+F38 "-" 0 0 50 H I C CNN "RS_price_qt=1000"
+F39 "-" 0 0 50 H I C CNN "RS_stock"
+F40 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F41 "1.01" 0 0 50 H I C CNN "Release_version"
+F42 "2020-12-12" 0 0 50 H I C CNN "Release_date"
+F43 "ManWithNoName" 0 0 50 H I C CNN "Designer"
 DRAW
 S -500 1000 500 -1000 0 1 10 f
 X BOOST 1 600 550 100 L 50 50 1 1 O
@@ -1080,29 +2046,76 @@ X VDD 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# pspice_INDUCTOR
+# rl0805fr-7w0r068l_RL0805FR-7W0R068L
 #
-DEF pspice_INDUCTOR L 0 0 N Y 1 F N
-F0 "L" 0 100 50 H V C CNN
-F1 "pspice_INDUCTOR" 0 -50 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
+DEF rl0805fr-7w0r068l_RL0805FR-7W0R068L R 0 0 N Y 1 F N
+F0 "R" 100 0 50 V V C CNN
+F1 "rl0805fr-7w0r068l_RL0805FR-7W0R068L" -100 0 50 V V C CNN
+F2 "Resistor_SMD:R_0805_2012Metric" 40 -10 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
+F4 "Yageo" 0 0 50 H I C CNN "Mfr_name"
+F5 "RL0805FR-7W0R068L" 0 0 50 H I C CNN "Mfr_no"
+F6 "68mΩ" 125 -100 50 H V C CNN "res_value"
+F7 "0805" 125 -175 50 H V C CNN "Package"
+F8 "0.25W" 350 -175 50 H V C CNN "res_power"
+F9 "1%" 550 -175 50 H V C CNN "res_tolerance"
+F10 "https://octopart.com/rl0805fr-7w0r068l-yageo-42623477?r=sp" 0 0 50 H I C CNN "Octopart_link"
+F11 "https://fr.farnell.com/yageo/rl0805fr-7w0r068l/res-couche-epaisse-0-068r-1-0/dp/8067694?st=RL0805FR-7W0R068L" 0 0 50 H I C CNN "Farnell_link"
+F12 "8067694" 0 0 50 H I C CNN "Farnell_ref"
+F13 "2020-12-18" 0 0 50 H I C CNN "Farnell_check_date"
+F14 "-" 0 0 50 H I C CNN "Farnell_price_qt=1"
+F15 "0,425 €" 0 0 50 H I C CNN "Farnell_price_qt=10"
+F16 "0,313 €" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F17 "0,188 €" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F18 "3,671" 0 0 50 H I C CNN "Farnell_stock"
+F19 "https://lcsc.com/product-detail/Low-Resistors-Current-Sense-Resistors-Surface-Mount_YAGEO-RL0805FR-7W0R068L_C327058.html" 0 0 50 H I C CNN "LCSC_link"
+F20 "C327058" 0 0 50 H I C CNN "LCSC_ref"
+F21 "2020-12-18" 0 0 50 H I C CNN "LCSC_check_date"
+F22 "-" 0 0 50 H I C CNN "LCSC_price_qt=1"
+F23 "-" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F24 "$0.0107" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F25 "$0.0081" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F26 "3,450" 0 0 50 H I C CNN "LCSC_stock"
+F27 "https://eu.mouser.com/ProductDetail/Yageo/RL0805FR-7W0R068L/?qs=%2Fha2pyFaduj9bpkok1HMDppYrjDK3bZXRH7iIcrAgNVUTh6fOxV3wA%3D%3D" 0 0 50 H I C CNN "Mouser_link"
+F28 "603-RL805FR-7W0R068L" 0 0 50 H I C CNN "Mouser_ref"
+F29 "2020-12-18" 0 0 50 H I C CNN "Mouser_check_date"
+F30 "$0.675" 0 0 50 H I C CNN "Mouser_price_qt=1"
+F31 "$0.376" 0 0 50 H I C CNN "Mouser_price_qt=10"
+F32 "$0.175" 0 0 50 H I C CNN "Mouser_price_qt=100"
+F33 "$0.134" 0 0 50 H I C CNN "Mouser_price_qt=1000"
+F34 "5,178" 0 0 50 H I C CNN "Mouser_stock"
+F35 "-" 0 0 50 H I C CNN "RS_link"
+F36 "-" 0 0 50 H I C CNN "RS_ref"
+F37 "2020-12-18" 0 0 50 H I C CNN "RS_check_date"
+F38 "-" 0 0 50 H I C CNN "RS_price_qt=1"
+F39 "-" 0 0 50 H I C CNN "RS_price_qt=10"
+F40 "-" 0 0 50 H I C CNN "RS_price_qt=100"
+F41 "-" 0 0 50 H I C CNN "RS_price_qt=1000"
+F42 "-" 0 0 50 H I C CNN "RS_stock"
+F43 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F44 "1.00" 0 0 50 H I C CNN "Release_version"
+F45 "2020-12-18" 0 0 50 H I C CNN "Release_date"
+F46 "ManWithNoName" 0 0 50 H I C CNN "Designer"
+$FPLIST
+ R_*
+$ENDFPLIST
 DRAW
-A -150 0 50 1 1799 0 1 0 N -100 0 -200 0
-A -50 0 50 1 1799 0 1 0 N 0 0 -100 0
-A 50 0 50 1 1799 0 1 0 N 100 0 0 0
-A 150 0 50 1 1799 0 1 0 N 200 0 100 0
-X 1 1 -250 0 50 R 30 30 1 1 I
-X 2 2 250 0 50 L 30 30 1 1 I
+P 2 0 1 0 0 -90 0 -100 N
+P 2 0 1 0 0 90 0 100 N
+P 5 0 1 0 0 -30 40 -45 0 -60 -40 -75 0 -90 N
+P 5 0 1 0 0 30 40 15 0 0 -40 -15 0 -30 N
+P 5 0 1 0 0 90 40 75 0 60 -40 45 0 30 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# solderjumper_4_open_SolderJumper_4_Open
+# solderjumper_4_bridged_1c_SolderJumper_4_Bridged_1C
 #
-DEF solderjumper_4_open_SolderJumper_4_Open JP 0 0 Y N 1 F N
+DEF solderjumper_4_bridged_1c_SolderJumper_4_Bridged_1C JP 0 0 Y N 1 F N
 F0 "JP" -100 -100 50 H V C CNN
-F1 "solderjumper_4_open_SolderJumper_4_Open" 500 100 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
+F1 "solderjumper_4_bridged_1c_SolderJumper_4_Bridged_1C" 575 75 50 H V C CNN
+F2 "SOLDERJUMPER_4_BRIDGED_1C:SolderJumper-4_P2.0mm_Bridged1C_TrianglePad1.0x1.5mm_NumberLabels" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
  SolderJumper*Open*
@@ -1114,6 +2127,7 @@ A 0 60 40 1 1799 0 1 0 N 40 60 -40 60
 A 0 60 40 1 1799 0 1 0 F 40 60 -40 60
 A 60 0 40 -899 899 0 1 0 N 60 -40 60 40
 A 60 0 40 -899 899 0 1 0 F 60 -40 60 40
+S -60 20 -40 -20 0 1 0 F
 S -40 40 40 -40 0 1 0 F
 P 2 0 1 0 -120 0 -100 0 N
 P 2 0 1 0 -60 40 -60 -40 N
@@ -1124,7 +2138,239 @@ P 2 0 1 0 120 0 100 0 N
 X A 1 -200 0 100 R 50 50 1 1 P
 X B 2 0 200 100 D 50 50 1 1 P
 X C 3 200 0 100 L 50 50 1 1 P
-X Com 4 0 -150 100 U 50 50 1 1 I
+X Com C 0 -150 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# spm6530t-1r5m_SPM6530T-1R5M
+#
+DEF spm6530t-1r5m_SPM6530T-1R5M L 0 40 N N 1 F N
+F0 "L" -50 0 50 V V C CNN
+F1 "spm6530t-1r5m_SPM6530T-1R5M" 110 0 50 V V C CNN
+F2 "SPM6530T-1R5M:L_TDK_SPM6530T" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "TDK" 0 0 50 H I C CNN "Mfr_name"
+F5 "SPM6530T-1R5M100" 0 0 50 H I C CNN "Mfr_no"
+F6 "6,5x7,1x3,0mm" 0 0 50 H I C CNN "Package"
+F7 "1.5µH" 250 -75 50 H V C CNN "Ind_value"
+F8 "11.0A" 0 0 50 H I C CNN "Ind_current_max"
+F9 "11.5A" 0 0 50 H I C CNN "Ind_current_sat_max"
+F10 "9.70mOhm" 350 -150 50 H V C CNN "Ind_DCR_typ"
+F11 "20%" 0 0 50 H I C CNN "Ind_tol"
+F12 ">10MHz" 0 0 50 H I C CNN "Ind_SFR"
+F13 "https://octopart.com/spm6530t-1r5m100-tdk-9518783?r=sp" 0 0 50 H I C CNN "Octopart_link"
+F14 "https://fr.farnell.com/tdk/spm6530t-1r5m100/inductance-1-5uh-20-blindee/dp/2215610?st=SPM6530T-1R5M100" 0 0 50 H I C CNN "Farnell_link"
+F15 "2215610" 0 0 50 H I C CNN "Farnell_ref"
+F16 "2020-12-16" 0 0 50 H I C CNN "Farnell_check_date"
+F17 "1,36 €" 0 0 50 H I C CNN "Farnell_price_qt=1"
+F18 "1,36 €" 0 0 50 H I C CNN "Farnell_price_qt=10"
+F19 "0,738 €" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F20 "0,458 €" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F21 "2" 0 0 50 H I C CNN "Farnell_stock"
+F22 "https://lcsc.com/product-detail/Power-Inductors_TDK-SPM6530T-1R5M100_C76854.html" 0 0 50 H I C CNN "LCSC_link"
+F23 "C76854" 0 0 50 H I C CNN "LCSC_ref"
+F24 "2020-12-16" 0 0 50 H I C CNN "LCSC_check_date"
+F25 "$0.1717" 0 0 50 H I C CNN "LCSC_price_qt=1"
+F26 "$0.1324" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F27 "$0.1179" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F28 "$0.1131" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F29 "10,496" 0 0 50 H I C CNN "LCSC_stock"
+F30 "https://eu.mouser.com/ProductDetail/TDK/SPM6530T-1R5M100/?qs=chjFIDm9dbqQ8Uh0Ilzv2g%3D%3D" 0 0 50 H I C CNN "Mouser_link"
+F31 "810-SPM6530T-1R5M100" 0 0 50 H I C CNN "Mouser_ref"
+F32 "2020-12-16" 0 0 50 H I C CNN "Mouser_check_date"
+F33 "$1.42" 0 0 50 H I C CNN "Mouser_price_qt=1"
+F34 "$1.07" 0 0 50 H I C CNN "Mouser_price_qt=10"
+F35 "$0.812" 0 0 50 H I C CNN "Mouser_price_qt=100"
+F36 "$0.564" 0 0 50 H I C CNN "Mouser_price_qt=1000"
+F37 "2,011" 0 0 50 H I C CNN "Mouser_stock"
+F38 "-" 0 0 50 H I C CNN "RS_link"
+F39 "-" 0 0 50 H I C CNN "RS_ref"
+F40 "2020-12-16" 0 0 50 H I C CNN "RS_check_date"
+F41 "-" 0 0 50 H I C CNN "RS_price_qt=1"
+F42 "-" 0 0 50 H I C CNN "RS_price_qt=10"
+F43 "-" 0 0 50 H I C CNN "RS_price_qt=100"
+F44 "-" 0 0 50 H I C CNN "RS_price_qt=1000"
+F45 "-" 0 0 50 H I C CNN "RS_stock"
+F46 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F47 "1.00" 0 0 50 H I C CNN "Release_version"
+F48 "2020-12-16" 0 0 50 H I C CNN "Release_date"
+F49 "ManWithNoName" 0 0 50 H I C CNN "Designer"
+$FPLIST
+ Choke_*
+ *Coil*
+ Inductor_*
+ L_*
+$ENDFPLIST
+DRAW
+A 0 -75 25 -899 899 0 1 0 N 0 -100 0 -50
+A 0 -25 25 -899 899 0 1 0 N 0 -50 0 0
+A 0 25 25 -899 899 0 1 0 N 0 0 0 50
+A 0 75 25 -899 899 0 1 0 N 0 50 0 100
+P 2 0 1 0 40 100 40 -100 N
+P 2 0 1 0 60 -100 60 100 N
+X 1 1 0 150 50 D 50 50 1 1 P
+X 2 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# spm6530t-4r7m_SPM6530T-4R7M
+#
+DEF spm6530t-4r7m_SPM6530T-4R7M L 0 40 N N 1 F N
+F0 "L" -50 0 50 V V C CNN
+F1 "spm6530t-4r7m_SPM6530T-4R7M" 110 0 50 V V C CNN
+F2 "Inductor_SMD_user:L_TDK_SPM6530T" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "TDK" 0 0 50 H I C CNN "Mfr_name"
+F5 "SPM6530T-4R7M" 0 0 50 H I C CNN "Mfr_no"
+F6 "6,5x7,1x3,0mm" 0 0 50 H I C CNN "Package"
+F7 "4.7µH" 250 -75 50 H V C CNN "Ind_value"
+F8 "5.6A" 0 0 50 H I C CNN "Ind_current_max"
+F9 "6.2A" 0 0 50 H I C CNN "Ind_current_sat_max"
+F10 "35.8mOhm" 350 -150 50 H V C CNN "Ind_DCR_typ"
+F11 "20%" 0 0 50 H I C CNN "Ind_tol"
+F12 ">10MHz" 0 0 50 H I C CNN "Ind_SFR"
+F13 "https://octopart.com/spm6530t-4r7m-tdk-18903911?r=sp" 0 0 50 H I C CNN "Octopart_link"
+F14 "https://lcsc.com/product-detail/Power-Inductors_TDK-SPM6530T-4R7M_C76857.html" 0 0 50 H I C CNN "LCSC_link"
+F15 "C76857" 0 0 50 H I C CNN "LCSC_ref"
+F16 "2020-12-02" 0 0 50 H I C CNN "LCSC_check_date"
+F17 "$0.1554" 0 0 50 H I C CNN "LCSC_price_qt=1"
+F18 "$0.1152" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F19 "$0.1004" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F20 "$0.0955" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F21 "16,144" 0 0 50 H I C CNN "LCSC_stock"
+F22 "https://fr.farnell.com/tdk/spm6530t-4r7m/inductance-4-7uh-20-blindee/dp/2215613?st=SPM6530T-4R7M" 0 0 50 H I C CNN "Farnell_link"
+F23 "2215613" 0 0 50 H I C CNN "Farnell_ref"
+F24 "2020-12-02" 0 0 50 H I C CNN "Farnell_check_date"
+F25 "1,36 €" 0 0 50 H I C CNN "Farnell_price_qt=1"
+F26 "1,36 €" 0 0 50 H I C CNN "Farnell_price_qt=10"
+F27 "0,738 €" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F28 "0,454 €" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F29 "500" 0 0 50 H I C CNN "Farnell_stock"
+F30 "https://eu.mouser.com/ProductDetail/TDK/SPM6530T-4R7M?qs=chjFIDm9dbpOGKMR3qNvlw%3D%3D" 0 0 50 H I C CNN "Mouser_link"
+F31 "810-SPM6530T-4R7M" 0 0 50 H I C CNN "Mouser_ref"
+F32 "2020-12-02" 0 0 50 H I C CNN "Mouser_check_date"
+F33 "$1.42" 0 0 50 H I C CNN "Mouser_price_qt=1"
+F34 "$1.07" 0 0 50 H I C CNN "Mouser_price_qt=10"
+F35 "$0.812" 0 0 50 H I C CNN "Mouser_price_qt=100"
+F36 "$0.564" 0 0 50 H I C CNN "Mouser_price_qt=1000"
+F37 "353" 0 0 50 H I C CNN "Mouser_stock"
+F38 "https://fr.rs-online.com/web/p/inductances-bobinees-cms/9164260/" 0 0 50 H I C CNN "RS_link"
+F39 "916-4260" 0 0 50 H I C CNN "RS_ref"
+F40 "2020-12-02" 0 0 50 H I C CNN "RS_check_date"
+F41 "-" 0 0 50 H I C CNN "RS_price_qt=1"
+F42 "1,224 €" 0 0 50 H I C CNN "RS_price_qt=10"
+F43 "0,92 €" 0 0 50 H I C CNN "RS_price_qt=100"
+F44 "0,734 €" 0 0 50 H I C CNN "RS_price_qt=1000"
+F45 "515" 0 0 50 H I C CNN "RS_stock"
+F46 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F47 "1.01" 0 0 50 H I C CNN "Release_version"
+F48 "2020-12-12" 0 0 50 H I C CNN "Release_date"
+F49 "ManWithNoName" 0 0 50 H I C CNN "Designer"
+$FPLIST
+ Choke_*
+ *Coil*
+ Inductor_*
+ L_*
+$ENDFPLIST
+DRAW
+A 0 -75 25 -899 899 0 1 0 N 0 -100 0 -50
+A 0 -25 25 -899 899 0 1 0 N 0 -50 0 0
+A 0 25 25 -899 899 0 1 0 N 0 0 0 50
+A 0 75 25 -899 899 0 1 0 N 0 50 0 100
+P 2 0 1 0 40 100 40 -100 N
+P 2 0 1 0 60 -100 60 100 N
+X 1 1 0 150 50 D 50 50 1 1 P
+X 2 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# tmk212ab7475kg-t_TMK212AB7475KG-T
+#
+DEF tmk212ab7475kg-t_TMK212AB7475KG-T C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "tmk212ab7475kg-t_TMK212AB7475KG-T" 25 -100 50 H I L CNN
+F2 "Capacitor_SMD:C_0805_2012Metric" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "Taiyo Yuden" 0 0 50 H I C CNN "Mfr_name"
+F5 "TMK212AB7475KG-T" 0 0 50 H I C CNN "Mfr_no"
+F6 "4.7µF" 125 -100 50 H V C CNN "cap_Value"
+F7 "0805" 125 -175 50 H V C CNN "Package"
+F8 "X7R" 325 -175 50 H V C CNN "cap_Dielectric"
+F9 "25V" 500 -175 50 H V C CNN "cap_Voltage"
+F10 "https://octopart.com/tmk212ab7475kg-t-taiyo+yuden-20363790?r=sp" 0 0 50 H I C CNN "Octopart_link"
+F11 "https://fr.farnell.com/taiyo-yuden/tmk212ab7475kg-t/ceramic-capacitor-4-7uf-25v-x7r/dp/2779199?scope=partnumberlookahead&ost=TMK212AB7475KG-T&searchref=searchlookahead&exaMfpn=true" 0 0 50 H I C CNN "Farnell_link"
+F12 "2779199" 0 0 50 H I C CNN "Farnell_ref"
+F13 "2020-11-29" 0 0 50 H I C CNN "Farnell_check_date"
+F14 "-" 0 0 50 H I C CNN "Farnell_price_qt=1"
+F15 "-" 0 0 50 H I C CNN "Farnell_price_qt=10"
+F16 "-" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F17 "0,0625 € (QT=3000)" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F18 "3,000" 0 0 50 H I C CNN "Farnell_stock"
+F19 "https://lcsc.com/product-detail/New-Arrivals_Taiyo-Yuden-TMK212AB7475KG-T_C163186.html" 0 0 50 H I C CNN "LCSC_link"
+F20 "C163186" 0 0 50 H I C CNN "LCSC_ref"
+F21 "2020-11-29" 0 0 50 H I C CNN "LCSC_check_date"
+F22 "-" 0 0 50 H I C CNN "LCSC_price_qt=1"
+F23 "-" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F24 "$0.035" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F25 "$0.025" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F26 "134,420" 0 0 50 H I C CNN "LCSC_stock"
+F27 "https://eu.mouser.com/ProductDetail/Taiyo-Yuden/TMK212AB7475KG-T?qs=%2Fha2pyFaduhOmvqoBXaf2AOtUPA8upoo0e72F1hCYb1lacT8UkHI0g%3D%3D" 0 0 50 H I C CNN "Mouser_link"
+F28 "963-TMK212AB7475KG-T " 0 0 50 H I C CNN "Mouser_ref"
+F29 "2020-11-29" 0 0 50 H I C CNN "Mouser_check_date"
+F30 "$0.352 " 0 0 50 H I C CNN "Mouser_price_qt=1"
+F31 "$0.245" 0 0 50 H I C CNN "Mouser_price_qt=10"
+F32 "$0.138 " 0 0 50 H I C CNN "Mouser_price_qt=100"
+F33 "$0.086" 0 0 50 H I C CNN "Mouser_price_qt=1000"
+F34 "289,016 " 0 0 50 H I C CNN "Mouser_stock"
+F35 "https://fr.rs-online.com/web/p/condensateurs-ceramique-multicouches/1034141/" 0 0 50 H I C CNN "RS_link"
+F36 "103-4141" 0 0 50 H I C CNN "RS_ref"
+F37 "2020-11-29" 0 0 50 H I C CNN "RS_check_date"
+F38 "-" 0 0 50 H I C CNN "RS_price_qt=1"
+F39 "-" 0 0 50 H I C CNN "RS_price_qt=10"
+F40 "0,118 €" 0 0 50 H I C CNN "RS_price_qt=100"
+F41 "0,069 €" 0 0 50 H I C CNN "RS_price_qt=1000"
+F42 "800" 0 0 50 H I C CNN "RS_stock"
+F43 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F44 "1.02" 0 0 50 H I C CNN "Release_version"
+F45 "2020-12-21" 0 0 50 H I C CNN "Release_date"
+F46 "ManWithNoName" 0 0 50 H I C CNN "Designer"
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# usb-c_USB-C
+#
+DEF usb-c_USB-C U 0 40 Y Y 1 F N
+F0 "U" -450 1200 50 H V C CNN
+F1 "usb-c_USB-C" -350 1300 50 H V C CNB
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S 450 -200 -550 1400 0 1 0 N
+X GND A1 0 -400 200 U 50 50 1 1 W
+X GND A12 0 -400 200 U 50 50 1 1 W N
+X VBUS A4 650 1200 200 L 50 50 1 1 W
+X CC1 A5 650 950 200 L 50 50 1 1 B
+X D+ A6 650 400 200 L 50 50 1 1 B
+X D- A7 650 600 200 L 50 50 1 1 B
+X SBU1 A8 650 0 200 L 50 50 1 1 B
+X VBUS A9 650 1200 200 L 50 50 1 1 W N
+X GND B1 0 -400 200 U 50 50 1 1 W N
+X GND B12 0 -400 200 U 50 50 1 1 W N
+X VBUS B4 650 1200 200 L 50 50 1 1 W N
+X CC2 B5 650 850 200 L 50 50 1 1 B
+X D+ B6 650 300 200 L 50 50 1 1 B
+X D- B7 650 500 200 L 50 50 1 1 B
+X SBU2 B8 650 -100 200 L 50 50 1 1 B
+X VBUS B9 650 1200 200 L 50 50 1 1 W N
+X SHIELD S1 -400 -400 200 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #

@@ -1,7 +1,7 @@
 EESchema-DOCLIB  Version 2.0
 #
 $CMP DMN3018SSD
-D 30V Vds, 5.2A Id, N-Channel MOSFET with ESD protection, SO-8
+D 30V Vds, 5.2A Id, Dual N-Channel MOSFET with ESD protection, SO-8
 K N-Channel MOSFET
 F https://www.diodes.com/assets/Datasheets/DMN3018SSD.pdf
 $ENDCMP

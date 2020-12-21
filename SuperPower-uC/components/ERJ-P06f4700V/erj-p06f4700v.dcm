@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ERJ-P06F4700V
+D Resistor, 0805, 0.5W, 1%, 470Ω
+K R res resistor 0805
+F https://industrial.panasonic.com/cdbs/www-data/pdf/RDO0000/AOA0000C331.pdf
+$ENDCMP
+#
+#End Doc Library

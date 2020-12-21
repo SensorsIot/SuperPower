@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CL10B105KO8NNNC
+D MLCC 0603 capacitor 1µF X7R 16V
+K cap capacitor x7r 0603
+$ENDCMP
+#
+#End Doc Library

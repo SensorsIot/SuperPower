@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CL31B106KAHNNNE
+D MLCC 1206 capacitor 10µF X7R 25V
+K cap capacitor x7r 1206
+F https://eu.mouser.com/datasheet/2/585/MLCC-1837944.pdf
+$ENDCMP
+#
+#End Doc Library
