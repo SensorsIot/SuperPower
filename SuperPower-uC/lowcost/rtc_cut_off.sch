@@ -180,11 +180,6 @@ Text HLabel 1350 1200 0    50   Input ~ 0
 VBAT
 Wire Wire Line
 	5100 2850 5050 2850
-NoConn ~ 5100 3050
-Wire Wire Line
-	5050 2850 5050 2950
-Wire Wire Line
-	5050 2950 5100 2950
 $Comp
 L power:GND #PWR0109
 U 1 1 5F81AC3F
@@ -212,8 +207,6 @@ F 5 "C8545" H 4050 3150 50  0001 C CNN "LCSC"
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	5100 3150 5000 3150
-Wire Wire Line
 	3950 3350 3950 3550
 Connection ~ 3950 3550
 Wire Wire Line
@@ -228,20 +221,19 @@ Text HLabel 1350 1450 0    50   Output ~ 0
 3v3V_EN
 Text HLabel 1350 1550 0    50   Output ~ 0
 5V_EN
-Text HLabel 1350 1900 0    50   Output ~ 0
+Text HLabel 1350 2000 0    50   Output ~ 0
 INT
 NoConn ~ 1200 350 
 Wire Wire Line
 	5600 4750 6100 4750
 Connection ~ 6100 4750
-Connection ~ 5050 2850
 Text Label 1750 850  2    50   ~ 0
 SDA
 Text Label 1750 950  2    50   ~ 0
 SCL
 Text Label 1750 1200 2    50   ~ 0
 VBAT
-Text Label 1750 1900 2    50   ~ 0
+Text Label 1750 2000 2    50   ~ 0
 INT
 Text Label 1750 1450 2    50   ~ 0
 3.3_EN
@@ -260,7 +252,7 @@ INT
 Wire Wire Line
 	5900 3150 6150 3150
 Wire Wire Line
-	1350 1900 1750 1900
+	1350 2000 1750 2000
 Wire Wire Line
 	1350 1550 1750 1550
 Wire Wire Line
@@ -279,10 +271,6 @@ Wire Wire Line
 	5900 2950 6150 2950
 Wire Wire Line
 	5900 3050 6150 3050
-Text Label 6150 2850 2    50   ~ 0
-VBAT
-Wire Wire Line
-	5900 2850 6150 2850
 Text Label 8650 2900 2    50   ~ 0
 SDA
 Text Label 8650 3000 2    50   ~ 0
@@ -295,10 +283,6 @@ Text Label 8450 2600 2    50   ~ 0
 VBAT
 Wire Wire Line
 	8200 2600 8450 2600
-Text Label 4850 2850 0    50   ~ 0
-VBAT
-Wire Wire Line
-	4850 2850 5050 2850
 Text Label 6350 4750 2    50   ~ 0
 VBAT
 Wire Wire Line
@@ -335,14 +319,12 @@ Text Notes 4000 4250 0    50   ~ 0
 RTC\n
 Text Notes 3400 2000 0    50   ~ 0
 IO Expander
-Wire Notes Line
-	550  2150 550  600 
-Text HLabel 1350 2000 0    50   Input ~ 0
+Text HLabel 1350 2100 0    50   Input ~ 0
 CHARGE-DISABLE
-Text Label 1750 2000 2    50   ~ 0
+Text Label 1750 2100 2    50   ~ 0
 CH_DIS
 Wire Wire Line
-	1750 2000 1350 2000
+	1750 2100 1350 2100
 Wire Notes Line
 	6800 3400 8450 3400
 Wire Notes Line
@@ -377,9 +359,7 @@ Text Label 1750 1650 2    50   ~ 0
 Wire Notes Line
 	550  600  1850 600 
 Wire Notes Line
-	1850 600  1850 2150
-Wire Notes Line
-	1850 2150 550  2150
+	1850 2450 550  2450
 Text Label 7000 3900 0    50   ~ 0
 3v3_MCU
 Wire Wire Line
@@ -394,18 +374,6 @@ Wire Notes Line
 	3350 4000 6700 4000
 Wire Notes Line
 	6700 1850 6700 4000
-$Comp
-L Connector:TestPoint TP2
-U 1 1 5F96E9B6
-P 3950 2900
-F 0 "TP2" H 4008 3018 50  0000 L CNN
-F 1 "TestPoint" H 4008 2927 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 4150 2900 50  0001 C CNN
-F 3 "~" H 4150 2900 50  0001 C CNN
-	1    3950 2900
-	1    0    0    -1  
-$EndComp
-Connection ~ 3950 2900
 Wire Wire Line
 	5950 3250 5900 3250
 Wire Wire Line
@@ -422,21 +390,12 @@ Text GLabel 5950 3450 2    50   Input ~ 0
 exp5
 Text GLabel 5950 3550 2    50   Input ~ 0
 exp4
-Text GLabel 4950 3050 0    50   Input ~ 0
-INT_IO
 Wire Wire Line
 	4650 3450 5100 3450
 Wire Wire Line
 	4650 3350 5100 3350
 Wire Wire Line
 	4650 3250 5100 3250
-Wire Wire Line
-	4950 3050 5000 3050
-Wire Wire Line
-	5000 3050 5000 3150
-Connection ~ 5000 3150
-Wire Wire Line
-	5000 3150 4250 3150
 Text GLabel 4650 3250 0    50   Input ~ 0
 3v3_EN
 Text GLabel 4650 3350 0    50   Input ~ 0
@@ -449,4 +408,74 @@ Text Label 4800 3350 0    50   ~ 0
 5V_EN
 Text Label 4800 3450 0    50   ~ 0
 CH_DIS
+$Comp
+L Device:R R4
+U 1 1 5FC6F3D4
+P 4750 2900
+F 0 "R4" H 4650 3000 50  0000 C CNN
+F 1 "180k" H 4600 2900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4680 2900 50  0001 C CNN
+F 3 "~" H 4750 2900 50  0001 C CNN
+F 4 "C22827" H 4750 2900 50  0001 C CNN "LCSC"
+	1    4750 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3050 5100 3050
+Wire Wire Line
+	4750 2750 5050 2750
+Wire Wire Line
+	5050 2750 5050 2850
+Text Label 5050 2750 2    50   ~ 0
+V_I2C
+Wire Wire Line
+	4250 3150 5100 3150
+Wire Wire Line
+	5100 2950 5050 2950
+Wire Wire Line
+	5050 2950 5050 2850
+Connection ~ 5050 2850
+Text Label 6450 2850 2    50   ~ 0
+V_I2C
+$Comp
+L Device:C C22
+U 1 1 5FC9C8EC
+P 6450 3050
+F 0 "C22" H 6300 2950 50  0000 L CNN
+F 1 "1µF" H 6200 3150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6488 2900 50  0001 C CNN
+F 3 "~" H 6450 3050 50  0001 C CNN
+F 4 "C15849" H 6450 3050 50  0001 C CNN "LCSC"
+	1    6450 3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5900 2850 6450 2850
+$Comp
+L power:GND #PWR0110
+U 1 1 5FCA03ED
+P 6450 3250
+F 0 "#PWR0110" H 6450 3000 50  0001 C CNN
+F 1 "GND" H 6455 3077 50  0000 C CNN
+F 2 "" H 6450 3250 50  0001 C CNN
+F 3 "" H 6450 3250 50  0001 C CNN
+	1    6450 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 3250 6450 3200
+Wire Wire Line
+	6450 2900 6450 2850
+Wire Notes Line
+	1850 600  1850 2450
+Wire Notes Line
+	550  600  550  2450
+Text HLabel 1350 1750 0    50   Output ~ 0
+3v3_I2C
+Wire Wire Line
+	1350 1750 1750 1750
+Text Label 1750 1750 2    50   ~ 0
+V_I2C
+Text GLabel 3750 2900 0    50   Input ~ 0
+INT_IO
 $EndSCHEMATC
