@@ -937,10 +937,10 @@ F2 "Capacitor_SMD:C_0603_1608Metric" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "Yageo" 0 0 50 H I C CNN "Mfr_name"
 F5 "CC0603JRX7R9BB104" 0 0 50 H I C CNN "Mfr_no"
-F6 "0.1µF" 125 -100 50 H V C CNN "Cap_value"
+F6 "0.1µF" 125 -100 50 H V C CNN "cap_Value"
 F7 "0603" 125 -175 50 H V C CNN "Package"
-F8 "X7R" 325 -175 50 H V C CNN "Dielectric"
-F9 "50V" 500 -175 50 H V C CNN "Voltage"
+F8 "X7R" 325 -175 50 H V C CNN "cap_Dielectric"
+F9 "50V" 500 -175 50 H V C CNN "cap_Voltage"
 F10 "https://octopart.com/cc0603jrx7r9bb104-yageo-12885108?r=sp" 0 0 50 H I C CNN "Octopart_link"
 F11 "https://fr.farnell.com/yageo/cc0603jrx7r9bb104/condensateur-0-1uf-50v-mlcc-0603/dp/3369214?st=CC0603JRX7R9BB104" 0 0 50 H I C CNN "Farnell_link"
 F12 "3369214" 0 0 50 H I C CNN "Farnell_ref"
@@ -975,8 +975,8 @@ F40 "0.025€" 0 0 50 H I C CNN "RS_price_qt=100"
 F41 "0.021€" 0 0 50 H I C CNN "RS_price_qt=1000"
 F42 "1,800" 0 0 50 H I C CNN "RS_stock"
 F43 "TO_CHECK" 0 0 50 H I C CNN "Status"
-F44 "1.02" 0 0 50 H I C CNN "Release_version"
-F45 "2020-12-12" 0 0 50 H I C CNN "Release_date"
+F44 "1.03" 0 0 50 H I C CNN "Release_version"
+F45 "2020-12-21" 0 0 50 H I C CNN "Release_date"
 F46 "ManWithNoName" 0 0 50 H I C CNN "Designer"
 $FPLIST
  C_*
@@ -998,10 +998,10 @@ F2 "Capacitor_SMD:C_0603_1608Metric" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "Samsung" 0 0 50 H I C CNN "Mfr_name"
 F5 "CL10B105KO8NNNC" 0 0 50 H I C CNN "Mfr_no"
-F6 "1µF" 125 -100 50 H V C CNN "Cap_value"
+F6 "1µF" 125 -100 50 H V C CNN "cap_Value"
 F7 "0603" 125 -175 50 H V C CNN "Package"
-F8 "X7R" 325 -175 50 H V C CNN "Dielectric"
-F9 "16V" 500 -175 50 H V C CNN "Voltage"
+F8 "X7R" 325 -175 50 H V C CNN "cap_Dielectric"
+F9 "16V" 500 -175 50 H V C CNN "cap_Voltage"
 F10 "https://octopart.com/cl10b105ko8nnnc-samsung-19018973?r=sp" 0 0 50 H I C CNN "Octopart_link"
 F11 "https://fr.farnell.com/samsung-electro-mechanics/cl10b105ko8nnnc/condensateur-1uf-16v-mlcc-0603/dp/3013416?st=CL10B105KO8NNNC" 0 0 50 H I C CNN "Farnell_link"
 F12 "3013416" 0 0 50 H I C CNN "Farnell_ref"
@@ -1036,8 +1036,8 @@ F40 "-" 0 0 50 H I C CNN "RS_price_qt=100"
 F41 "0,008 € (QT=4000)" 0 0 50 H I C CNN "RS_price_qt=1000"
 F42 "248,000" 0 0 50 H I C CNN "RS_stock"
 F43 "TO_CHECK" 0 0 50 H I C CNN "Status"
-F44 "1.00" 0 0 50 H I C CNN "Release_version"
-F45 "2020-11-29" 0 0 50 H I C CNN "Release_date"
+F44 "1.01" 0 0 50 H I C CNN "Release_version"
+F45 "2020-12-21" 0 0 50 H I C CNN "Release_date"
 F46 "ManWithNoName" 0 0 50 H I C CNN "Designer"
 $FPLIST
  C_*
@@ -1059,10 +1059,10 @@ F2 "Capacitor_SMD:C_0603_1608Metric" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "Samsung" 0 0 50 H I C CNN "Mfr_name"
 F5 "CL10B223KB8NNNC" 0 0 50 H I C CNN "Mfr_no"
-F6 "0.022µF" 175 -100 50 H V C CNN "Cap_value"
+F6 "0.022µF" 175 -100 50 H V C CNN "cap_Value"
 F7 "0603" 125 -175 50 H V C CNN "Package"
-F8 "X7R" 325 -175 50 H V C CNN "Dielectric"
-F9 "50V" 500 -175 50 H V C CNN "Voltage"
+F8 "X7R" 325 -175 50 H V C CNN "cap_Dielectric"
+F9 "50V" 500 -175 50 H V C CNN "cap_Voltage"
 F10 "https://octopart.com/cl10b223kb8nnnc-samsung-9299376?r=sp" 0 0 50 H I C CNN "Octopart_link"
 F11 "https://fr.farnell.com/samsung-electro-mechanics/cl10b223kb8nnnc/condensateur-0-022uf-50v-mlcc/dp/3013425?st=CL10B223KB8NNNC#" 0 0 50 H I C CNN "Farnell_link"
 F12 "3013425" 0 0 50 H I C CNN "Farnell_ref"
@@ -1097,8 +1097,8 @@ F40 "-" 0 0 50 H I C CNN "RS_price_qt=100"
 F41 "0,006 € (QT=4000)" 0 0 50 H I C CNN "RS_price_qt=1000"
 F42 "220,000" 0 0 50 H I C CNN "RS_stock"
 F43 "TO_CHECK" 0 0 50 H I C CNN "Status"
-F44 "1.01" 0 0 50 H I C CNN "Release_version"
-F45 "2020-12-12" 0 0 50 H I C CNN "Release_date"
+F44 "1.02" 0 0 50 H I C CNN "Release_version"
+F45 "2020-12-21" 0 0 50 H I C CNN "Release_date"
 F46 "ManWithNoName" 0 0 50 H I C CNN "Designer"
 $FPLIST
  C_*
@@ -1120,10 +1120,10 @@ F2 "Capacitor_SMD:C_1206_3216Metric" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "Samsung" 0 0 50 H I C CNN "Mfr_name"
 F5 "CL31B106KAHNNNE" 0 0 50 H I C CNN "Mfr_no"
-F6 "10µF" 125 -100 50 H V C CNN "Cap_value"
+F6 "10µF" 125 -100 50 H V C CNN "cap_Value"
 F7 "1206" 125 -175 50 H V C CNN "Package"
-F8 "X7R" 325 -175 50 H V C CNN "Dielectric"
-F9 "25V" 500 -175 50 H V C CNN "Voltage"
+F8 "X7R" 325 -175 50 H V C CNN "cap_Dielectric"
+F9 "25V" 500 -175 50 H V C CNN "cap_Voltage"
 F10 "https://octopart.com/cl31b106kahnnne-samsung-18621872?r=sp#PriceAndStock" 0 0 50 H I C CNN "Octopart_link"
 F11 "https://fr.farnell.com/samsung-electro-mechanics/cl31b106kahnnne/condensateur-10uf-25v-mlcc-1206/dp/3013526?st=cl31b106kahnnne" 0 0 50 H I C CNN "Farnell_link"
 F12 "3013526" 0 0 50 H I C CNN "Farnell_ref"
@@ -1158,8 +1158,8 @@ F40 "-" 0 0 50 H I C CNN "RS_price_qt=100"
 F41 "0,048 € (QT=2000)" 0 0 50 H I C CNN "RS_price_qt=1000"
 F42 "388,000" 0 0 50 H I C CNN "RS_stock"
 F43 "TO_CHECK" 0 0 50 H I C CNN "Status"
-F44 "1.01" 0 0 50 H I C CNN "Release_version"
-F45 "2020-12-12" 0 0 50 H I C CNN "Release_date"
+F44 "1.02" 0 0 50 H I C CNN "Release_version"
+F45 "2020-12-21" 0 0 50 H I C CNN "Release_date"
 F46 "ManWithNoName" 0 0 50 H I C CNN "Designer"
 $FPLIST
  C_*
@@ -1707,7 +1707,7 @@ ENDDEF
 DEF jst_ph_s2b_thru_JST_PH_S2B_thru J 0 40 Y N 1 F N
 F0 "J" 0 100 50 H V C CNN
 F1 "jst_ph_s2b_thru_JST_PH_S2B_thru" 0 -200 50 H V C CNN
-F2 "Connector_JST_user:JST_ZH_S2B-ZR_1x02_P1.50mm_Horizontal" 0 0 50 H I C CNN
+F2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "JST" 0 0 50 H I C CNN "Mfr_name"
 F5 "S2B-PH-K-S(LF)(SN)" 0 0 50 H I C CNN "Mfr_no"
@@ -2293,10 +2293,10 @@ F2 "Capacitor_SMD:C_0805_2012Metric" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "Taiyo Yuden" 0 0 50 H I C CNN "Mfr_name"
 F5 "TMK212AB7475KG-T" 0 0 50 H I C CNN "Mfr_no"
-F6 "4.7µF" 125 -100 50 H V C CNN "Cap_value"
+F6 "4.7µF" 125 -100 50 H V C CNN "cap_Value"
 F7 "0805" 125 -175 50 H V C CNN "Package"
-F8 "X7R" 325 -175 50 H V C CNN "Dielectric"
-F9 "25V" 500 -175 50 H V C CNN "Voltage"
+F8 "X7R" 325 -175 50 H V C CNN "cap_Dielectric"
+F9 "25V" 500 -175 50 H V C CNN "cap_Voltage"
 F10 "https://octopart.com/tmk212ab7475kg-t-taiyo+yuden-20363790?r=sp" 0 0 50 H I C CNN "Octopart_link"
 F11 "https://fr.farnell.com/taiyo-yuden/tmk212ab7475kg-t/ceramic-capacitor-4-7uf-25v-x7r/dp/2779199?scope=partnumberlookahead&ost=TMK212AB7475KG-T&searchref=searchlookahead&exaMfpn=true" 0 0 50 H I C CNN "Farnell_link"
 F12 "2779199" 0 0 50 H I C CNN "Farnell_ref"
@@ -2331,8 +2331,8 @@ F40 "0,118 €" 0 0 50 H I C CNN "RS_price_qt=100"
 F41 "0,069 €" 0 0 50 H I C CNN "RS_price_qt=1000"
 F42 "800" 0 0 50 H I C CNN "RS_stock"
 F43 "TO_CHECK" 0 0 50 H I C CNN "Status"
-F44 "1.01" 0 0 50 H I C CNN "Release_version"
-F45 "2020-12-12" 0 0 50 H I C CNN "Release_date"
+F44 "1.02" 0 0 50 H I C CNN "Release_version"
+F45 "2020-12-21" 0 0 50 H I C CNN "Release_date"
 F46 "ManWithNoName" 0 0 50 H I C CNN "Designer"
 $FPLIST
  C_*

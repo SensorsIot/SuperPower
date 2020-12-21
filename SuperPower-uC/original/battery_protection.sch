@@ -513,60 +513,6 @@ Text Notes 3150 2900 0    79   ~ 16
 Text Notes 1400 3600 0    50   ~ 0
 +12Vmax
 $Comp
-L cc0603jrx7r9bb104:CC0603JRX7R9BB104 C1
-U 1 1 5FD905F7
-P 1900 4100
-F 0 "C1" H 2015 4282 50  0000 L CNN
-F 1 "CC0603JRX7R9BB104" H 1925 4000 50  0001 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1938 3950 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 1900 4100 50  0001 C CNN
-F 4 "Yageo" H 1900 4100 50  0001 C CNN "Mfr_name"
-F 5 "CC0603JRX7R9BB104" H 1900 4100 50  0001 C CNN "Mfr_no"
-F 6 "0.1µF" H 2015 4191 50  0000 L CNN "Cap_value"
-F 7 "0603" H 2015 4100 50  0000 L CNN "Package"
-F 8 "X7R" H 2015 4009 50  0000 L CNN "Dielectric"
-F 9 "50V" H 2015 3918 50  0000 L CNN "Voltage"
-F 10 "https://octopart.com/cc0603jrx7r9bb104-yageo-12885108?r=sp" H 1900 4100 50  0001 C CNN "Octopart_link"
-F 11 "https://fr.farnell.com/yageo/cc0603jrx7r9bb104/condensateur-0-1uf-50v-mlcc-0603/dp/3369214?st=CC0603JRX7R9BB104" H 1900 4100 50  0001 C CNN "Farnell_link"
-F 12 "3369214" H 1900 4100 50  0001 C CNN "Farnell_ref"
-F 13 "2020-11-27" H 1900 4100 50  0001 C CNN "Farnell_check_date"
-F 14 "-" H 1900 4100 50  0001 C CNN "Farnell_price_qt=1"
-F 15 "0.0475€" H 1900 4100 50  0001 C CNN "Farnell_price_qt=10"
-F 16 "0.0309€" H 1900 4100 50  0001 C CNN "Farnell_price_qt=100"
-F 17 "0.0155€" H 1900 4100 50  0001 C CNN "Farnell_price_qt=1000"
-F 18 "2,870" H 1900 4100 50  0001 C CNN "Farnell_stock"
-F 19 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_YAGEO-CC0603JRX7R9BB104_C91183.html" H 1900 4100 50  0001 C CNN "LCSC_link"
-F 20 "C91183" H 1900 4100 50  0001 C CNN "LCSC_ref"
-F 21 "2020-11-27" H 1900 4100 50  0001 C CNN "LCSC_check_date"
-F 22 "-" H 1900 4100 50  0001 C CNN "LCSC_price_qt=1"
-F 23 "-" H 1900 4100 50  0001 C CNN "LCSC_price_qt=10"
-F 24 "$0.0093" H 1900 4100 50  0001 C CNN "LCSC_price_qt=100"
-F 25 "$0.0069" H 1900 4100 50  0001 C CNN "LCSC_price_qt=1000"
-F 26 "119,500" H 1900 4100 50  0001 C CNN "LCSC_stock"
-F 27 "https://eu.mouser.com/ProductDetail/Yageo/CC0603JRX7R9BB104?qs=%2Fha2pyFaduiZbois2HzNxVdO93thVqADUWwLeer1tjY3NrWwFx3PGQ%3D%3D" H 1900 4100 50  0001 C CNN "Mouser_link"
-F 28 "603-CC603JRX7R9BB104 " H 1900 4100 50  0001 C CNN "Mouser_ref"
-F 29 "2020-11-27" H 1900 4100 50  0001 C CNN "Mouser_check_date"
-F 30 "$0.111" H 1900 4100 50  0001 C CNN "Mouser_price_qt=1"
-F 31 "$0.065" H 1900 4100 50  0001 C CNN "Mouser_price_qt=10"
-F 32 "$0.025" H 1900 4100 50  0001 C CNN "Mouser_price_qt=100"
-F 33 "$0.020" H 1900 4100 50  0001 C CNN "Mouser_price_qt=1000"
-F 34 "10,249,855 " H 1900 4100 50  0001 C CNN "Mouser_stock"
-F 35 "https://fr.rs-online.com/web/p/condensateurs-ceramique-multicouches/2006519/" H 1900 4100 50  0001 C CNN "RS_link"
-F 36 "200-6519" H 1900 4100 50  0001 C CNN "RS_ref"
-F 37 "2020-11-27" H 1900 4100 50  0001 C CNN "RS_check_date"
-F 38 "-" H 1900 4100 50  0001 C CNN "RS_price_qt=1"
-F 39 "-" H 1900 4100 50  0001 C CNN "RS_price_qt=10"
-F 40 "0.025€" H 1900 4100 50  0001 C CNN "RS_price_qt=100"
-F 41 "0.021€" H 1900 4100 50  0001 C CNN "RS_price_qt=1000"
-F 42 "1,800" H 1900 4100 50  0001 C CNN "RS_stock"
-F 43 "TO_CHECK" H 1900 4100 50  0001 C CNN "Status"
-F 44 "1.02" H 1900 4100 50  0001 C CNN "Release_version"
-F 45 "2020-12-12" H 1900 4100 50  0001 C CNN "Release_date"
-F 46 "ManWithNoName" H 1900 4100 50  0001 C CNN "Designer"
-	1    1900 4100
-	1    0    0    -1  
-$EndComp
-$Comp
 L battery_cell_holder_18650_smt_1042:Battery_Cell_Holder_18650_SMT_1042 BT1
 U 1 1 5FD97812
 P 3800 1700
@@ -615,58 +561,6 @@ F 41 "2020-12-12" H 3800 1700 50  0001 C CNN "Release_date"
 F 42 "ManWithNoName" H 3800 1700 50  0001 C CNN "Designer"
 	1    3800 1700
 	1    0    0    -1  
-$EndComp
-$Comp
-L jst_ph_s2b_thru:JST_PH_S2B_thru J1
-U 1 1 5FD9F213
-P 3000 1600
-F 0 "J1" H 2918 1275 50  0000 C CNN
-F 1 "JST_PH_S2B_thru" H 2918 1366 50  0000 C CNN
-F 2 "Connector_JST_user:JST_ZH_S2B-ZR_1x02_P1.50mm_Horizontal" H 3000 1600 50  0001 C CNN
-F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 3000 1600 50  0001 C CNN
-F 4 "JST" H 3000 1600 50  0001 C CNN "Mfr_name"
-F 5 "S2B-PH-K-S(LF)(SN)" H 3000 1600 50  0001 C CNN "Mfr_no"
-F 6 "PH Right Angle Thru 2pins" H 3000 1600 50  0001 C CNN "Package"
-F 7 "White" H 3000 1600 50  0001 C CNN "Color"
-F 8 "https://octopart.com/s2b-ph-k-s%28lf%29%28sn%29-jst-248883?r=sp" H 3000 1600 50  0001 C CNN "Octopart_link"
-F 9 "https://fr.farnell.com/jst-japan-solderless-terminals/s2b-ph-k-s-lf-sn/embase-entree-laterale-2-voies/dp/9491902?scope=partnumberlookahead&ost=S2B-PH-K-S+%28LF%29%28SN%29&searchref=searchlookahead&exaMfpn=true" H 3000 1600 50  0001 C CNN "Farnell_link"
-F 10 "9491902" H 3000 1600 50  0001 C CNN "Farnell_ref"
-F 11 "2020-11-24" H 3000 1600 50  0001 C CNN "Farnell_check_date"
-F 12 "-" H 3000 1600 50  0001 C CNN "Farnell_price_qt=1"
-F 13 "-" H 3000 1600 50  0001 C CNN "Farnell_price_qt=10"
-F 14 "0.072€" H 3000 1600 50  0001 C CNN "Farnell_price_qt=100"
-F 15 "0.063€" H 3000 1600 50  0001 C CNN "Farnell_price_qt=1000"
-F 16 "0 (available from 2021-02-14)" H 3000 1600 50  0001 C CNN "Farnell_stock"
-F 17 "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_JST-Sales-America-S2B-PH-K-S-LF-SN_C173752.html" H 3000 1600 50  0001 C CNN "LCSC_link"
-F 18 "C173752" H 3000 1600 50  0001 C CNN "LCSC_ref"
-F 19 "2020-11-24" H 3000 1600 50  0001 C CNN "LCSC_check_date"
-F 20 "-" H 3000 1600 50  0001 C CNN "LCSC_price_qt=1"
-F 21 "$0.038" H 3000 1600 50  0001 C CNN "LCSC_price_qt=10"
-F 22 "$0.028" H 3000 1600 50  0001 C CNN "LCSC_price_qt=100"
-F 23 "$0.024" H 3000 1600 50  0001 C CNN "LCSC_price_qt=1000"
-F 24 "55470" H 3000 1600 50  0001 C CNN "LCSC_stock"
-F 25 "-" H 3000 1600 50  0001 C CNN "Mouser_link"
-F 26 "-" H 3000 1600 50  0001 C CNN "Mouser_ref"
-F 27 "2020-11-24" H 3000 1600 50  0001 C CNN "Mouser_check_date"
-F 28 "-" H 3000 1600 50  0001 C CNN "Mouser_price_qt=1"
-F 29 "-" H 3000 1600 50  0001 C CNN "Mouser_price_qt=10"
-F 30 "-" H 3000 1600 50  0001 C CNN "Mouser_price_qt=100"
-F 31 "-" H 3000 1600 50  0001 C CNN "Mouser_price_qt=1000"
-F 32 "-" H 3000 1600 50  0001 C CNN "Mouser_stock"
-F 33 "https://fr.rs-online.com/web/p/embases-circuits-imprimes/8201494/" H 3000 1600 50  0001 C CNN "RS_link"
-F 34 "820-1494" H 3000 1600 50  0001 C CNN "RS_ref"
-F 35 "2020-11-24" H 3000 1600 50  0001 C CNN "RS_check_date"
-F 36 "-" H 3000 1600 50  0001 C CNN "RS_price_qt=1"
-F 37 "0.148€" H 3000 1600 50  0001 C CNN "RS_price_qt=10"
-F 38 "0.138€" H 3000 1600 50  0001 C CNN "RS_price_qt=100"
-F 39 "0.068€" H 3000 1600 50  0001 C CNN "RS_price_qt=1000"
-F 40 "275" H 3000 1600 50  0001 C CNN "RS_stock"
-F 41 "TO_CHECK" H 3000 1600 50  0001 C CNN "Status"
-F 42 "1.01" H 3000 1600 50  0001 C CNN "Release_version"
-F 43 "2020-12-12" H 3000 1600 50  0001 C CNN "Release_date"
-F 44 "ManWithNoName" H 3000 1600 50  0001 C CNN "Designer"
-	1    3000 1600
-	-1   0    0    -1  
 $EndComp
 Text Notes 3150 6550 0    50   ~ 0
 Do Not Populate (Default)
@@ -725,5 +619,111 @@ F 45 "2020-12-17" H 1900 3600 50  0001 C CNN "Release_date"
 F 46 "ManWithNoName" H 1900 3600 50  0001 C CNN "Designer"
 	1    1900 3600
 	1    0    0    -1  
+$EndComp
+$Comp
+L cc0603jrx7r9bb104:CC0603JRX7R9BB104 C1
+U 1 1 5FE0B853
+P 1900 4100
+F 0 "C1" H 2015 4282 50  0000 L CNN
+F 1 "CC0603JRX7R9BB104" H 1925 4000 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1938 3950 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 1900 4100 50  0001 C CNN
+F 4 "Yageo" H 1900 4100 50  0001 C CNN "Mfr_name"
+F 5 "CC0603JRX7R9BB104" H 1900 4100 50  0001 C CNN "Mfr_no"
+F 6 "0.1µF" H 2015 4191 50  0000 L CNN "cap_Value"
+F 7 "0603" H 2015 4100 50  0000 L CNN "Package"
+F 8 "X7R" H 2015 4009 50  0000 L CNN "cap_Dielectric"
+F 9 "50V" H 2015 3918 50  0000 L CNN "cap_Voltage"
+F 10 "https://octopart.com/cc0603jrx7r9bb104-yageo-12885108?r=sp" H 1900 4100 50  0001 C CNN "Octopart_link"
+F 11 "https://fr.farnell.com/yageo/cc0603jrx7r9bb104/condensateur-0-1uf-50v-mlcc-0603/dp/3369214?st=CC0603JRX7R9BB104" H 1900 4100 50  0001 C CNN "Farnell_link"
+F 12 "3369214" H 1900 4100 50  0001 C CNN "Farnell_ref"
+F 13 "2020-11-27" H 1900 4100 50  0001 C CNN "Farnell_check_date"
+F 14 "-" H 1900 4100 50  0001 C CNN "Farnell_price_qt=1"
+F 15 "0.0475€" H 1900 4100 50  0001 C CNN "Farnell_price_qt=10"
+F 16 "0.0309€" H 1900 4100 50  0001 C CNN "Farnell_price_qt=100"
+F 17 "0.0155€" H 1900 4100 50  0001 C CNN "Farnell_price_qt=1000"
+F 18 "2,870" H 1900 4100 50  0001 C CNN "Farnell_stock"
+F 19 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_YAGEO-CC0603JRX7R9BB104_C91183.html" H 1900 4100 50  0001 C CNN "LCSC_link"
+F 20 "C91183" H 1900 4100 50  0001 C CNN "LCSC_ref"
+F 21 "2020-11-27" H 1900 4100 50  0001 C CNN "LCSC_check_date"
+F 22 "-" H 1900 4100 50  0001 C CNN "LCSC_price_qt=1"
+F 23 "-" H 1900 4100 50  0001 C CNN "LCSC_price_qt=10"
+F 24 "$0.0093" H 1900 4100 50  0001 C CNN "LCSC_price_qt=100"
+F 25 "$0.0069" H 1900 4100 50  0001 C CNN "LCSC_price_qt=1000"
+F 26 "119,500" H 1900 4100 50  0001 C CNN "LCSC_stock"
+F 27 "https://eu.mouser.com/ProductDetail/Yageo/CC0603JRX7R9BB104?qs=%2Fha2pyFaduiZbois2HzNxVdO93thVqADUWwLeer1tjY3NrWwFx3PGQ%3D%3D" H 1900 4100 50  0001 C CNN "Mouser_link"
+F 28 "603-CC603JRX7R9BB104 " H 1900 4100 50  0001 C CNN "Mouser_ref"
+F 29 "2020-11-27" H 1900 4100 50  0001 C CNN "Mouser_check_date"
+F 30 "$0.111" H 1900 4100 50  0001 C CNN "Mouser_price_qt=1"
+F 31 "$0.065" H 1900 4100 50  0001 C CNN "Mouser_price_qt=10"
+F 32 "$0.025" H 1900 4100 50  0001 C CNN "Mouser_price_qt=100"
+F 33 "$0.020" H 1900 4100 50  0001 C CNN "Mouser_price_qt=1000"
+F 34 "10,249,855 " H 1900 4100 50  0001 C CNN "Mouser_stock"
+F 35 "https://fr.rs-online.com/web/p/condensateurs-ceramique-multicouches/2006519/" H 1900 4100 50  0001 C CNN "RS_link"
+F 36 "200-6519" H 1900 4100 50  0001 C CNN "RS_ref"
+F 37 "2020-11-27" H 1900 4100 50  0001 C CNN "RS_check_date"
+F 38 "-" H 1900 4100 50  0001 C CNN "RS_price_qt=1"
+F 39 "-" H 1900 4100 50  0001 C CNN "RS_price_qt=10"
+F 40 "0.025€" H 1900 4100 50  0001 C CNN "RS_price_qt=100"
+F 41 "0.021€" H 1900 4100 50  0001 C CNN "RS_price_qt=1000"
+F 42 "1,800" H 1900 4100 50  0001 C CNN "RS_stock"
+F 43 "TO_CHECK" H 1900 4100 50  0001 C CNN "Status"
+F 44 "1.03" H 1900 4100 50  0001 C CNN "Release_version"
+F 45 "2020-12-21" H 1900 4100 50  0001 C CNN "Release_date"
+F 46 "ManWithNoName" H 1900 4100 50  0001 C CNN "Designer"
+	1    1900 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L jst_ph_s2b_thru:JST_PH_S2B_thru J1
+U 1 1 5FE35E99
+P 3000 1600
+F 0 "J1" H 2918 1817 50  0000 C CNN
+F 1 "JST_PH_S2B_thru" H 2918 1726 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" H 3000 1600 50  0001 C CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 3000 1600 50  0001 C CNN
+F 4 "JST" H 3000 1600 50  0001 C CNN "Mfr_name"
+F 5 "S2B-PH-K-S(LF)(SN)" H 3000 1600 50  0001 C CNN "Mfr_no"
+F 6 "PH Right Angle Thru 2pins" H 3000 1600 50  0001 C CNN "Package"
+F 7 "White" H 3000 1600 50  0001 C CNN "Color"
+F 8 "https://octopart.com/s2b-ph-k-s%28lf%29%28sn%29-jst-248883?r=sp" H 3000 1600 50  0001 C CNN "Octopart_link"
+F 9 "https://fr.farnell.com/jst-japan-solderless-terminals/s2b-ph-k-s-lf-sn/embase-entree-laterale-2-voies/dp/9491902?scope=partnumberlookahead&ost=S2B-PH-K-S+%28LF%29%28SN%29&searchref=searchlookahead&exaMfpn=true" H 3000 1600 50  0001 C CNN "Farnell_link"
+F 10 "9491902" H 3000 1600 50  0001 C CNN "Farnell_ref"
+F 11 "2020-11-24" H 3000 1600 50  0001 C CNN "Farnell_check_date"
+F 12 "-" H 3000 1600 50  0001 C CNN "Farnell_price_qt=1"
+F 13 "-" H 3000 1600 50  0001 C CNN "Farnell_price_qt=10"
+F 14 "0.072€" H 3000 1600 50  0001 C CNN "Farnell_price_qt=100"
+F 15 "0.063€" H 3000 1600 50  0001 C CNN "Farnell_price_qt=1000"
+F 16 "0 (available from 2021-02-14)" H 3000 1600 50  0001 C CNN "Farnell_stock"
+F 17 "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_JST-Sales-America-S2B-PH-K-S-LF-SN_C173752.html" H 3000 1600 50  0001 C CNN "LCSC_link"
+F 18 "C173752" H 3000 1600 50  0001 C CNN "LCSC_ref"
+F 19 "2020-11-24" H 3000 1600 50  0001 C CNN "LCSC_check_date"
+F 20 "-" H 3000 1600 50  0001 C CNN "LCSC_price_qt=1"
+F 21 "$0.038" H 3000 1600 50  0001 C CNN "LCSC_price_qt=10"
+F 22 "$0.028" H 3000 1600 50  0001 C CNN "LCSC_price_qt=100"
+F 23 "$0.024" H 3000 1600 50  0001 C CNN "LCSC_price_qt=1000"
+F 24 "55470" H 3000 1600 50  0001 C CNN "LCSC_stock"
+F 25 "-" H 3000 1600 50  0001 C CNN "Mouser_link"
+F 26 "-" H 3000 1600 50  0001 C CNN "Mouser_ref"
+F 27 "2020-11-24" H 3000 1600 50  0001 C CNN "Mouser_check_date"
+F 28 "-" H 3000 1600 50  0001 C CNN "Mouser_price_qt=1"
+F 29 "-" H 3000 1600 50  0001 C CNN "Mouser_price_qt=10"
+F 30 "-" H 3000 1600 50  0001 C CNN "Mouser_price_qt=100"
+F 31 "-" H 3000 1600 50  0001 C CNN "Mouser_price_qt=1000"
+F 32 "-" H 3000 1600 50  0001 C CNN "Mouser_stock"
+F 33 "https://fr.rs-online.com/web/p/embases-circuits-imprimes/8201494/" H 3000 1600 50  0001 C CNN "RS_link"
+F 34 "820-1494" H 3000 1600 50  0001 C CNN "RS_ref"
+F 35 "2020-11-24" H 3000 1600 50  0001 C CNN "RS_check_date"
+F 36 "-" H 3000 1600 50  0001 C CNN "RS_price_qt=1"
+F 37 "0.148€" H 3000 1600 50  0001 C CNN "RS_price_qt=10"
+F 38 "0.138€" H 3000 1600 50  0001 C CNN "RS_price_qt=100"
+F 39 "0.068€" H 3000 1600 50  0001 C CNN "RS_price_qt=1000"
+F 40 "275" H 3000 1600 50  0001 C CNN "RS_stock"
+F 41 "TO_CHECK" H 3000 1600 50  0001 C CNN "Status"
+F 42 "1.01" H 3000 1600 50  0001 C CNN "Release_version"
+F 43 "2020-12-12" H 3000 1600 50  0001 C CNN "Release_date"
+F 44 "ManWithNoName" H 3000 1600 50  0001 C CNN "Designer"
+	1    3000 1600
+	-1   0    0    -1  
 $EndComp
 $EndSCHEMATC

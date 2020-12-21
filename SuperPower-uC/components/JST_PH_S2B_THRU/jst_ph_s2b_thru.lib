@@ -6,7 +6,7 @@ EESchema-LIBRARY Version 2.4
 DEF JST_PH_S2B_thru J 0 40 Y N 1 F N
 F0 "J" 0 100 50 H V C CNN
 F1 "JST_PH_S2B_thru" 0 -200 50 H V C CNN
-F2 "Connector_JST_user:JST_ZH_S2B-ZR_1x02_P1.50mm_Horizontal" 0 0 50 H I C CNN
+F2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "JST" 0 0 50 H I C CNN "Mfr_name"
 F5 "S2B-PH-K-S(LF)(SN)" 0 0 50 H I C CNN "Mfr_no"
