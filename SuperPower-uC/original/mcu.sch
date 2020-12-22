@@ -682,16 +682,14 @@ Wire Wire Line
 $Comp
 L power:GND #PWR053
 U 1 1 5F8B01AA
-P 9750 5600
-F 0 "#PWR053" H 9750 5350 50  0001 C CNN
-F 1 "GND" H 9755 5427 50  0000 C CNN
-F 2 "" H 9750 5600 50  0001 C CNN
-F 3 "" H 9750 5600 50  0001 C CNN
-	1    9750 5600
+P 9650 5600
+F 0 "#PWR053" H 9650 5350 50  0001 C CNN
+F 1 "GND" H 9655 5427 50  0000 C CNN
+F 2 "" H 9650 5600 50  0001 C CNN
+F 3 "" H 9650 5600 50  0001 C CNN
+	1    9650 5600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9750 5600 9750 5500
 $Comp
 L power:PWR_FLAG #FLG?
 U 1 1 5F8C8948
@@ -714,7 +712,7 @@ Wire Wire Line
 	4850 950  4850 1000
 Wire Wire Line
 	6400 5600 6650 5600
-Text Label 6650 5600 2    50   ~ 0
+Text Label 10050 6100 0    50   ~ 0
 VBUS1
 $Comp
 L power:GND #PWR050
@@ -729,8 +727,6 @@ F 3 "" H 7000 5550 50  0001 C CNN
 $EndComp
 Text Label 2050 1400 2    50   ~ 0
 3v3
-Wire Wire Line
-	9750 5500 10400 5500
 Text Label 6650 5800 2    50   ~ 0
 5V
 Text Label 10150 5800 0    50   ~ 0
@@ -1117,17 +1113,6 @@ F 3 "~" H 6200 5000 50  0001 C CNN
 	1    6200 5000
 	-1   0    0    1   
 $EndComp
-$Comp
-L Connector:Conn_01x18_Female J8
-U 1 1 5FD07E44
-P 10600 4900
-F 0 "J8" H 10500 5950 50  0000 L CNN
-F 1 "mcu_pinout" H 10450 5850 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x18_P2.54mm_Vertical" H 10600 4900 50  0001 C CNN
-F 3 "~" H 10600 4900 50  0001 C CNN
-	1    10600 4900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10400 5800 10150 5800
 Wire Wire Line
@@ -1146,18 +1131,14 @@ $EndComp
 $Comp
 L power:GND #PWR054
 U 1 1 5FD1F820
-P 9950 5750
-F 0 "#PWR054" H 9950 5500 50  0001 C CNN
-F 1 "GND" H 9955 5577 50  0000 C CNN
-F 2 "" H 9950 5750 50  0001 C CNN
-F 3 "" H 9950 5750 50  0001 C CNN
-	1    9950 5750
+P 9800 5750
+F 0 "#PWR054" H 9800 5500 50  0001 C CNN
+F 1 "GND" H 9805 5577 50  0000 C CNN
+F 2 "" H 9800 5750 50  0001 C CNN
+F 3 "" H 9800 5750 50  0001 C CNN
+	1    9800 5750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9950 5700 9950 5750
-Wire Wire Line
-	9950 5700 10400 5700
 Wire Wire Line
 	6850 5700 6850 5750
 Wire Wire Line
@@ -1478,4 +1459,46 @@ Wire Notes Line
 	6250 3050 6250 650 
 Wire Notes Line
 	2850 650  6250 650 
+$Comp
+L Connector:Conn_01x21_Female J8
+U 1 1 5FEB7A5C
+P 10600 5100
+F 0 "J8" H 10628 5126 50  0000 L CNN
+F 1 "Conn_01x21_Female" H 10100 6250 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x21_P2.54mm_Vertical" H 10600 5100 50  0001 C CNN
+F 3 "~" H 10600 5100 50  0001 C CNN
+	1    10600 5100
+	1    0    0    -1  
+$EndComp
+Text Label 10150 6000 0    50   ~ 0
+3v3
+$Comp
+L power:GND #PWR0108
+U 1 1 5FEBB004
+P 9950 5950
+F 0 "#PWR0108" H 9950 5700 50  0001 C CNN
+F 1 "GND" H 9955 5777 50  0000 C CNN
+F 2 "" H 9950 5950 50  0001 C CNN
+F 3 "" H 9950 5950 50  0001 C CNN
+	1    9950 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 6000 10150 6000
+Wire Wire Line
+	10400 6100 10050 6100
+Wire Wire Line
+	10400 5900 9950 5900
+Wire Wire Line
+	9950 5900 9950 5950
+Wire Wire Line
+	9800 5700 9800 5750
+Wire Wire Line
+	9650 5500 9650 5600
+Wire Wire Line
+	9650 5500 10400 5500
+Wire Wire Line
+	9800 5700 10400 5700
+Text Label 6650 5600 2    50   ~ 0
+5V
 $EndSCHEMATC
