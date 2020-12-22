@@ -1016,8 +1016,8 @@ L jst_xh_s2b_thru:JST_XH_S2B_thru J5
 U 1 1 5FDB2E6B
 P 10150 5950
 F 0 "J5" H 10230 5942 50  0000 L CNN
-F 1 "JST_XH_S2B_thru" H 10230 5851 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal" H 10150 5950 50  0001 C CNN
+F 1 "DNP/JST_XH_S2B_thru" H 10230 5851 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10150 5950 50  0001 C CNN
 F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 10150 5950 50  0001 C CNN
 F 4 "JST" H 10150 5950 50  0001 C CNN "Mfr_name"
 F 5 "S2B-XH-A(LF)(SN)" H 10150 5950 50  0001 C CNN "Mfr_no"
@@ -1071,7 +1071,7 @@ U 1 1 5FDBD7C5
 P 8850 5950
 F 0 "J4" H 8930 5942 50  0000 L CNN
 F 1 "DNP/JST_ZH_S2B_thru" H 8930 5851 50  0000 L CNN
-F 2 "Connector_JST_user:JST_ZH_S2B-ZR_1x02_P1.50mm_Horizontal" H 8850 5950 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 8850 5950 50  0001 C CNN
 F 3 "http://www.jst-mfg.com/product/pdf/eng/eZH.pdf" H 8850 5950 50  0001 C CNN
 F 4 "JST" H 8850 5950 50  0001 C CNN "Mfr_name"
 F 5 "S2B-ZR(LF)(SN)" H 8850 5950 50  0001 C CNN "Mfr_no"
