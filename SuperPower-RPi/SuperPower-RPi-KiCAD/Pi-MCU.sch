@@ -149,8 +149,6 @@ Wire Wire Line
 	1450 7650 1550 7650
 Wire Wire Line
 	1550 7650 1550 7850
-Text Label 1800 7750 2    50   ~ 0
-SWO
 Wire Wire Line
 	1800 7750 1450 7750
 Text Notes 1350 8200 0    50   ~ 0
@@ -321,7 +319,6 @@ Wire Wire Line
 NoConn ~ 4850 7400
 NoConn ~ 4850 7500
 NoConn ~ 4850 7600
-NoConn ~ 4850 7700
 NoConn ~ 4850 7800
 NoConn ~ 4850 7900
 NoConn ~ 4850 8300
@@ -442,7 +439,6 @@ Wire Wire Line
 	1050 9300 1050 9400
 Wire Wire Line
 	1050 9400 1250 9400
-NoConn ~ 1800 7750
 $Comp
 L power:PWR_FLAG #FLG0108
 U 1 1 5FB9A2B2
@@ -1411,4 +1407,10 @@ Wire Wire Line
 	7400 7700 7400 8000
 Text Label 3550 4250 0    50   ~ 0
 3.3V_MCU
+Wire Wire Line
+	4850 7700 5250 7700
+Text Label 5250 7700 2    50   ~ 0
+SWO
+Text Label 1800 7750 2    50   ~ 0
+SWO
 $EndSCHEMATC
