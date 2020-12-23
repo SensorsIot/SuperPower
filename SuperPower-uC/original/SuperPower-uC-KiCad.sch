@@ -205,4 +205,59 @@ Wire Wire Line
 	5100 2550 5100 3750
 Wire Wire Line
 	5500 3600 5500 2950
+$Comp
+L Connector:Conn_01x11_Male J9
+U 1 1 60000B18
+P 7650 5000
+F 0 "J9" H 7758 5681 50  0000 C CNN
+F 1 "Conn_01x11_Male" H 7758 5590 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x11_P2.54mm_Vertical" H 7650 5000 50  0001 C CNN
+F 3 "~" H 7650 5000 50  0001 C CNN
+	1    7650 5000
+	1    0    0    -1  
+$EndComp
+Text Label 8350 4500 2    50   ~ 0
+SCL
+Text Label 8350 4600 2    50   ~ 0
+SDA
+Text Label 8350 4700 2    50   ~ 0
+~SMBALERT
+Text Label 8350 4800 2    50   ~ 0
+D+
+Text Label 8350 4900 2    50   ~ 0
+D-
+Text Label 8350 5000 2    50   ~ 0
+VBUS1
+Text Label 8350 5200 2    50   ~ 0
+3v3
+Text Label 8350 5500 2    50   ~ 0
+EN_5V
+Text Label 8350 5400 2    50   ~ 0
+EN_3V3
+Text Label 8350 5300 2    50   ~ 0
+5V
+Text Label 8350 5100 2    50   ~ 0
+3v3_MCU
+Wire Wire Line
+	7850 4500 8350 4500
+Wire Wire Line
+	8350 4600 7850 4600
+Wire Wire Line
+	7850 4700 8350 4700
+Wire Wire Line
+	8350 4800 7850 4800
+Wire Wire Line
+	7850 4900 8350 4900
+Wire Wire Line
+	8350 5000 7850 5000
+Wire Wire Line
+	7850 5100 8350 5100
+Wire Wire Line
+	8350 5200 7850 5200
+Wire Wire Line
+	7850 5300 8350 5300
+Wire Wire Line
+	8350 5400 7850 5400
+Wire Wire Line
+	7850 5500 8350 5500
 $EndSCHEMATC
