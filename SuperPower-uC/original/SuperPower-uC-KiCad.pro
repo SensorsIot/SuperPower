@@ -1,4 +1,4 @@
-update=21.12.2020 17:13:46
+update=23.12.2020 19:03:06
 version=1
 last_client=kicad
 [general]
@@ -25,8 +25,8 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=SuperPower-uC-KiCad.net
-CopperLayerCount=2
+LastNetListRead=
+CopperLayerCount=4
 BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
@@ -42,6 +42,8 @@ TrackWidth1=0.25
 TrackWidth2=0.4
 ViaDiameter1=0.8
 ViaDrill1=0.4
+ViaDiameter2=0.61
+ViaDrill2=0.305
 dPairWidth1=0.2
 dPairGap1=0.25
 dPairViaGap1=0.25
@@ -76,11 +78,11 @@ Enabled=1
 [pcbnew/Layer.In1.Cu]
 Name=In1.Cu
 Type=0
-Enabled=0
+Enabled=1
 [pcbnew/Layer.In2.Cu]
 Name=In2.Cu
 Type=0
-Enabled=0
+Enabled=1
 [pcbnew/Layer.In3.Cu]
 Name=In3.Cu
 Type=0

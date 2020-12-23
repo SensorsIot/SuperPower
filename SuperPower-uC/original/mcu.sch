@@ -1520,7 +1520,9 @@ $Comp
 L Connector:Conn_01x11_Male J?
 U 1 1 60142F45
 P 1150 4800
-F 0 "J?" H 1258 5481 50  0000 C CNN
+AR Path="/60142F45" Ref="J?"  Part="1" 
+AR Path="/5F63A193/60142F45" Ref="J10"  Part="1" 
+F 0 "J10" H 1258 5481 50  0000 C CNN
 F 1 "Conn_01x11_Male" H 1258 5390 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x11_P2.54mm_Vertical" H 1150 4800 50  0001 C CNN
 F 3 "~" H 1150 4800 50  0001 C CNN
