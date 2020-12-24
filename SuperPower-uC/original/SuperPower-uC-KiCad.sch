@@ -205,17 +205,6 @@ Wire Wire Line
 	5100 2550 5100 3750
 Wire Wire Line
 	5500 3600 5500 2950
-$Comp
-L Connector:Conn_01x11_Male J9
-U 1 1 60000B18
-P 7650 5000
-F 0 "J9" H 7758 5681 50  0000 C CNN
-F 1 "Conn_01x11_Male" H 7758 5590 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x11_P2.54mm_Vertical" H 7650 5000 50  0001 C CNN
-F 3 "~" H 7650 5000 50  0001 C CNN
-	1    7650 5000
-	1    0    0    -1  
-$EndComp
 Text Label 8350 4500 2    50   ~ 0
 SCL
 Text Label 8350 4600 2    50   ~ 0
@@ -270,4 +259,100 @@ Text Label 8300 2700 2    50   ~ 0
 3v3
 Text Label 8300 2800 2    50   ~ 0
 3v3_MCU
+$Comp
+L Connector:Conn_01x12_Male J9
+U 1 1 5FE4755E
+P 7650 5000
+F 0 "J9" H 7758 5681 50  0000 C CNN
+F 1 "Conn_01x12_Male" H 7758 5590 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x12_P2.54mm_Vertical" H 7650 5000 50  0001 C CNN
+F 3 "~" H 7650 5000 50  0001 C CNN
+	1    7650 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 5FE48E31
+P 8150 5650
+F 0 "#PWR0112" H 8150 5400 50  0001 C CNN
+F 1 "GND" H 8155 5477 50  0000 C CNN
+F 2 "" H 8150 5650 50  0001 C CNN
+F 3 "" H 8150 5650 50  0001 C CNN
+	1    8150 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 5650 8150 5600
+Wire Wire Line
+	8150 5600 7850 5600
+$Comp
+L Connector:Conn_01x12_Male J10
+U 1 1 5FE627D1
+P 8950 5000
+F 0 "J10" H 9058 5681 50  0000 C CNN
+F 1 "Conn_01x12_Male" H 9058 5590 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x12_P2.54mm_Vertical" H 8950 5000 50  0001 C CNN
+F 3 "~" H 8950 5000 50  0001 C CNN
+	1    8950 5000
+	1    0    0    -1  
+$EndComp
+Text Label 9650 4500 2    50   ~ 0
+SCL
+Text Label 9650 4600 2    50   ~ 0
+SDA
+Text Label 9650 4700 2    50   ~ 0
+~SMBALERT
+Text Label 9650 4800 2    50   ~ 0
+D+
+Text Label 9650 4900 2    50   ~ 0
+D-
+Text Label 9650 5000 2    50   ~ 0
+VBUS1
+Text Label 9650 5400 2    50   ~ 0
+3v3
+Text Label 9650 5500 2    50   ~ 0
+EN_5V
+Text Label 9650 5200 2    50   ~ 0
+EN_3V3
+Text Label 9650 5100 2    50   ~ 0
+5V
+Text Label 9650 5300 2    50   ~ 0
+3v3_MCU
+Wire Wire Line
+	9150 4500 9650 4500
+Wire Wire Line
+	9650 4600 9150 4600
+Wire Wire Line
+	9150 4700 9650 4700
+Wire Wire Line
+	9650 4800 9150 4800
+Wire Wire Line
+	9150 4900 9650 4900
+Wire Wire Line
+	9650 5000 9150 5000
+Wire Wire Line
+	9150 5100 9650 5100
+Wire Wire Line
+	9650 5200 9150 5200
+Wire Wire Line
+	9150 5300 9650 5300
+Wire Wire Line
+	9650 5400 9150 5400
+Wire Wire Line
+	9150 5500 9650 5500
+$Comp
+L power:GND #PWR0113
+U 1 1 5FE66948
+P 9450 5650
+F 0 "#PWR0113" H 9450 5400 50  0001 C CNN
+F 1 "GND" H 9455 5477 50  0000 C CNN
+F 2 "" H 9450 5650 50  0001 C CNN
+F 3 "" H 9450 5650 50  0001 C CNN
+	1    9450 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 5650 9450 5600
+Wire Wire Line
+	9450 5600 9150 5600
 $EndSCHEMATC
