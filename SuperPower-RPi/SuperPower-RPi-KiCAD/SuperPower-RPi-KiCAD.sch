@@ -16,19 +16,17 @@ $EndDescr
 Wire Wire Line
 	6950 4100 7150 4100
 Wire Wire Line
-	6550 2300 6950 2300
-Wire Wire Line
 	9150 4150 9350 4150
 Wire Wire Line
 	9350 4050 9150 4050
-Text Label 4900 1850 2    50   ~ 0
+Text Label 4900 1550 2    50   ~ 0
 SCL
-Text Label 4900 1750 2    50   ~ 0
+Text Label 4900 1450 2    50   ~ 0
 SDA
 Wire Wire Line
-	5250 1850 4900 1850
+	5250 1550 4900 1550
 Wire Wire Line
-	5250 1750 4900 1750
+	5250 1450 4900 1450
 Wire Wire Line
 	4450 5500 4700 5500
 Wire Wire Line
@@ -50,7 +48,7 @@ Wire Wire Line
 Wire Wire Line
 	6450 3650 7150 3650
 Wire Wire Line
-	2300 3650 3200 3650
+	2300 3650 2700 3650
 $Sheet
 S 5450 3450 1000 1150
 U 5F6AC4E0
@@ -162,17 +160,18 @@ F 4 "DNP" H 10550 6050 50  0001 C CNN "Mfg"
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 5250 1250 1300 1200
+S 5250 1250 1550 1150
 U 5F6AC872
 F0 "Pi-MCU" 50
 F1 "Pi-MCU.sch" 50
-F2 "SDA_1" B L 5250 1750 50 
-F3 "SCL_1" B L 5250 1850 50 
-F4 "GPIO0" B R 6550 2300 50 
-F5 "nRESET_Buf" I R 6550 1450 50 
+F2 "SDA_1" B L 5250 1450 50 
+F3 "SCL_1" B L 5250 1550 50 
+F4 "GPIO0" B R 6800 2300 50 
+F5 "nRESET_Buf" I R 6800 1450 50 
 F6 "I_mon_V_input" I L 5250 2050 50 
-F7 "BL_Mode__Shutdown_Mode" I R 6550 1600 50 
+F7 "BL_Mode__Shutdown_Mode" I R 6800 1600 50 
 F8 "Charger_INT" I L 5250 2200 50 
+F9 "V_ext" I L 5250 1900 50 
 $EndSheet
 Wire Wire Line
 	5450 4200 5350 4200
@@ -200,8 +199,6 @@ Wire Wire Line
 Wire Wire Line
 	6950 2300 6950 4100
 Wire Wire Line
-	6550 1450 9200 1450
-Wire Wire Line
 	9200 1450 9200 2950
 Wire Wire Line
 	9200 2950 9350 2950
@@ -209,8 +206,6 @@ Wire Wire Line
 	9350 3050 9050 3050
 Wire Wire Line
 	9050 3050 9050 1600
-Wire Wire Line
-	9050 1600 6550 1600
 $Sheet
 S 9350 2850 1350 1750
 U 5F6AC9CB
@@ -237,8 +232,8 @@ Text Notes 1250 7100 0    50   ~ 0
 Text Notes 750  7400 0    50   ~ 0
 Alternate Parts:\nPMOS: Consider using DMP4025SFGQ-13 for better performance or DMP6023LE-13 for easier soldering.
 Text Notes 7150 6100 0    50   ~ 0
-TO DO:\nFind overcurrent IC.
-Text Notes 7150 5850 0    50   ~ 0
+TO DO:\nAdd V_ext voltage divider\nAdd Test Points to STM Pins.\nAdd SWD connections between Pi and STM.
+Text Notes 7150 5600 0    50   ~ 0
 Would be nice:\nUSB output connector to power \n
 Wire Wire Line
 	8400 3650 9350 3650
@@ -250,4 +245,17 @@ Wire Wire Line
 	4850 4100 4850 2200
 Wire Wire Line
 	4850 2200 5250 2200
+Wire Wire Line
+	6800 1450 9200 1450
+Wire Wire Line
+	9050 1600 6800 1600
+Wire Wire Line
+	6800 2300 6950 2300
+Wire Wire Line
+	2700 3650 2700 1900
+Wire Wire Line
+	2700 1900 5250 1900
+Connection ~ 2700 3650
+Wire Wire Line
+	2700 3650 3200 3650
 $EndSCHEMATC

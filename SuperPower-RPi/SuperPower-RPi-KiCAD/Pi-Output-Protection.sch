@@ -138,4 +138,22 @@ F 3 "" H 4800 4200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4800 4200 4800 4100
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FF08CAB
+P 6150 3750
+AR Path="/5F6AC481/5FF08CAB" Ref="TP?"  Part="1" 
+AR Path="/5F6AC4E0/5FF08CAB" Ref="TP?"  Part="1" 
+AR Path="/5F6AC517/5FF08CAB" Ref="TP4"  Part="1" 
+F 0 "TP4" V 6150 3938 50  0000 L CNN
+F 1 "DNP" H 6208 3777 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 6350 3750 50  0001 C CNN
+F 3 "~" H 6350 3750 50  0001 C CNN
+F 4 "DNP" H 6150 3750 50  0001 C CNN "Mfg"
+	1    6150 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6150 3750 6000 3750
+Connection ~ 6000 3750
 $EndSCHEMATC

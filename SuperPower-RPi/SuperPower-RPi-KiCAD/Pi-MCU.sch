@@ -1350,7 +1350,6 @@ Wire Wire Line
 	7100 7450 7100 7550
 Wire Wire Line
 	7100 7550 7150 7550
-NoConn ~ 4850 5700
 Wire Wire Line
 	7550 8300 7000 8300
 Wire Wire Line
@@ -1413,4 +1412,78 @@ F 4 "DNP" H 12000 5650 50  0001 C CNN "Mfg"
 	1    12000 5650
 	0    -1   1    0   
 $EndComp
+Entry Bus Bus
+	-5750 8100 -5650 8200
+$Comp
+L Device:R_Small R?
+U 1 1 5FF14314
+P 1600 3250
+AR Path="/5F6AC481/5FF14314" Ref="R?"  Part="1" 
+AR Path="/5F6AC872/5FF14314" Ref="R28"  Part="1" 
+F 0 "R28" H 1541 3204 50  0000 R CNN
+F 1 "5.23k" H 1541 3295 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1600 3250 50  0001 C CNN
+F 3 "~" H 1600 3250 50  0001 C CNN
+	1    1600 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FF1431A
+P 1600 2900
+AR Path="/5F6AC481/5FF1431A" Ref="R?"  Part="1" 
+AR Path="/5F6AC872/5FF1431A" Ref="R21"  Part="1" 
+F 0 "R21" H 1541 2854 50  0000 R CNN
+F 1 "30.1k" H 1541 2945 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1600 2900 50  0001 C CNN
+F 3 "~" H 1600 2900 50  0001 C CNN
+	1    1600 2900
+	-1   0    0    1   
+$EndComp
+Text HLabel 1300 2700 0    50   Input ~ 0
+V_ext
+Wire Wire Line
+	1300 2700 1600 2700
+Wire Wire Line
+	1600 2700 1600 2800
+$Comp
+L power:GND #PWR052
+U 1 1 5FF2E0D9
+P 1600 3450
+F 0 "#PWR052" H 1600 3200 50  0001 C CNN
+F 1 "GND" H 1605 3277 50  0000 C CNN
+F 2 "" H 1600 3450 50  0001 C CNN
+F 3 "" H 1600 3450 50  0001 C CNN
+	1    1600 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 3000 1600 3100
+Wire Wire Line
+	1600 3350 1600 3450
+Text Label 2050 3100 2    50   ~ 0
+V_Ext_Mon
+Wire Wire Line
+	2050 3100 1600 3100
+Connection ~ 1600 3100
+Wire Wire Line
+	1600 3100 1600 3150
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FF68B4A
+P 5250 5700
+AR Path="/5F6AC481/5FF68B4A" Ref="TP?"  Part="1" 
+AR Path="/5F6AC4E0/5FF68B4A" Ref="TP?"  Part="1" 
+AR Path="/5F6AC517/5FF68B4A" Ref="TP?"  Part="1" 
+AR Path="/5F6AC872/5FF68B4A" Ref="TP8"  Part="1" 
+F 0 "TP8" V 5250 5888 50  0000 L CNN
+F 1 "DNP" H 5308 5727 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 5450 5700 50  0001 C CNN
+F 3 "~" H 5450 5700 50  0001 C CNN
+F 4 "DNP" H 5250 5700 50  0001 C CNN "Mfg"
+	1    5250 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 5700 4850 5700
 $EndSCHEMATC
