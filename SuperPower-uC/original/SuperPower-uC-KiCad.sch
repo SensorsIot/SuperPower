@@ -228,15 +228,15 @@ Text Label 8350 4900 2    50   ~ 0
 D-
 Text Label 8350 5000 2    50   ~ 0
 VBUS1
-Text Label 8350 5200 2    50   ~ 0
+Text Label 8350 5400 2    50   ~ 0
 3v3
 Text Label 8350 5500 2    50   ~ 0
 EN_5V
-Text Label 8350 5400 2    50   ~ 0
+Text Label 8350 5200 2    50   ~ 0
 EN_3V3
-Text Label 8350 5300 2    50   ~ 0
-5V
 Text Label 8350 5100 2    50   ~ 0
+5V
+Text Label 8350 5300 2    50   ~ 0
 3v3_MCU
 Wire Wire Line
 	7850 4500 8350 4500
@@ -260,4 +260,14 @@ Wire Wire Line
 	8350 5400 7850 5400
 Wire Wire Line
 	7850 5500 8350 5500
+Text Label 8300 2350 2    50   ~ 0
+EN_5V
+Text Label 8300 2450 2    50   ~ 0
+EN_3V3
+Text Label 8300 2600 2    50   ~ 0
+5V
+Text Label 8300 2700 2    50   ~ 0
+3v3
+Text Label 8300 2800 2    50   ~ 0
+3v3_MCU
 $EndSCHEMATC
