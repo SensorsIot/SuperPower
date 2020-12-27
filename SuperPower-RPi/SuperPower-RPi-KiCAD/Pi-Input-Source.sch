@@ -330,7 +330,7 @@ Reverse Polarity Protection
 Text Notes 6950 4500 0    50   ~ 0
 Overvoltage Protection
 Text Notes 6450 4850 0    50   ~ 0
-Vz(D4) + Vgs(th)(Q2) is critical for overvoltage threshold.\nTarget: 15V\n-1<VTH(Q2)<-2.1\nVz = 14?
+Vz(D4) + Vgs(th)(Q2) is critical for overvoltage threshold.\nTarget: 15V\n-1<VTH(Q2)<-2.1\nVz = 13
 $Comp
 L Connector:USB_C_Receptacle_USB2.0 J6
 U 1 1 5FA11947

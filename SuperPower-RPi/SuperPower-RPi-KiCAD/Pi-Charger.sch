@@ -382,7 +382,7 @@ U 1 1 5FA0FC37
 P 6150 4150
 F 0 "TP3" V 6150 4338 50  0000 L CNN
 F 1 "DNP" H 6208 4177 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 6350 4150 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 6350 4150 50  0001 C CNN
 F 3 "~" H 6350 4150 50  0001 C CNN
 F 4 "DNP" H 6150 4150 50  0001 C CNN "Mfg"
 	1    6150 4150
@@ -500,18 +500,6 @@ Wire Wire Line
 	4200 3550 4350 3550
 Connection ~ 4350 3550
 $Comp
-L Connector:TestPoint TP4
-U 1 1 5FC0654F
-P 5000 4150
-F 0 "TP4" V 5000 4338 50  0000 L CNN
-F 1 "DNP" H 5058 4177 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 5200 4150 50  0001 C CNN
-F 3 "~" H 5200 4150 50  0001 C CNN
-F 4 "DNP" H 5000 4150 50  0001 C CNN "Mfg"
-	1    5000 4150
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Connector:TestPoint TP5
 U 1 1 5FC06D49
 P 5000 4250
@@ -542,5 +530,11 @@ Wire Wire Line
 Wire Wire Line
 	5250 4250 5000 4250
 Wire Wire Line
-	5000 4150 5250 4150
+	4950 4150 5250 4150
+Text HLabel 4950 4150 0    50   Output ~ 0
+INT
+Text Label 6450 4250 0    50   ~ 0
+REGN
+Text Label 6250 3250 0    50   ~ 0
+SW
 $EndSCHEMATC
