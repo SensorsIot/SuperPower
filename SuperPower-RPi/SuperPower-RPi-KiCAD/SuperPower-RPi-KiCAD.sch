@@ -47,8 +47,6 @@ Wire Wire Line
 	3200 4400 2950 4400
 Wire Wire Line
 	6450 3650 7150 3650
-Wire Wire Line
-	2300 3650 2700 3650
 $Sheet
 S 5450 3450 1000 1150
 U 5F6AC4E0
@@ -171,7 +169,6 @@ F5 "nRESET_Buf" I R 6800 1450 50
 F6 "I_mon_V_input" I L 5250 2050 50 
 F7 "BL_Mode__Shutdown_Mode" I R 6800 1600 50 
 F8 "Charger_INT" I L 5250 2200 50 
-F9 "V_ext" I L 5250 1900 50 
 $EndSheet
 Wire Wire Line
 	5450 4200 5350 4200
@@ -252,10 +249,5 @@ Wire Wire Line
 Wire Wire Line
 	6800 2300 6950 2300
 Wire Wire Line
-	2700 3650 2700 1900
-Wire Wire Line
-	2700 1900 5250 1900
-Connection ~ 2700 3650
-Wire Wire Line
-	2700 3650 3200 3650
+	2300 3650 3200 3650
 $EndSCHEMATC
