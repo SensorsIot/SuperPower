@@ -446,7 +446,7 @@ Wire Wire Line
 	12650 6350 12300 6350
 Wire Wire Line
 	12650 6150 12300 6150
-NoConn ~ 12300 6550
+NoConn ~ 12300 6450
 Wire Wire Line
 	2550 5700 2650 5700
 Wire Wire Line
@@ -821,8 +821,8 @@ F 3 "" H 13150 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12300 6450 12650 6450
-Text Label 12650 6450 2    50   ~ 0
+	12300 6550 12650 6550
+Text Label 12650 6550 2    50   ~ 0
 LED0
 Text Label 14400 6750 0    50   ~ 0
 LED0
@@ -1412,8 +1412,6 @@ F 4 "DNP" H 12000 5650 50  0001 C CNN "Mfg"
 	1    12000 5650
 	0    -1   1    0   
 $EndComp
-Entry Bus Bus
-	-5750 8100 -5650 8200
 $Comp
 L Connector:TestPoint TP?
 U 1 1 5FF68B4A
