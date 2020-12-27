@@ -1434,34 +1434,6 @@ Text Notes 4100 6150 0    50   ~ 10
 Mounting Holes
 $Comp
 L Mechanical:MountingHole_Pad H?
-U 1 1 601076D3
-P 5150 6450
-AR Path="/5F63B107/601076D3" Ref="H?"  Part="1" 
-AR Path="/5F63A193/601076D3" Ref="H7"  Part="1" 
-F 0 "H7" H 5250 6499 50  0000 L CNN
-F 1 "MountingHole_Pad" H 5250 6408 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 5150 6450 50  0001 C CNN
-F 3 "~" H 5150 6450 50  0001 C CNN
-	1    5150 6450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 601076D9
-P 5150 6650
-AR Path="/5F63B107/601076D9" Ref="#PWR?"  Part="1" 
-AR Path="/5F63A193/601076D9" Ref="#PWR0109"  Part="1" 
-F 0 "#PWR0109" H 5150 6400 50  0001 C CNN
-F 1 "GND" H 5155 6477 50  0000 C CNN
-F 2 "" H 5150 6650 50  0001 C CNN
-F 3 "" H 5150 6650 50  0001 C CNN
-	1    5150 6650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5150 6650 5150 6550
-$Comp
-L Mechanical:MountingHole_Pad H?
 U 1 1 601076E0
 P 4250 7200
 AR Path="/5F63B107/601076E0" Ref="H?"  Part="1" 
@@ -1488,32 +1460,4 @@ F 3 "" H 4250 7400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4250 7400 4250 7300
-$Comp
-L Mechanical:MountingHole_Pad H?
-U 1 1 601076ED
-P 5150 7200
-AR Path="/5F63B107/601076ED" Ref="H?"  Part="1" 
-AR Path="/5F63A193/601076ED" Ref="H8"  Part="1" 
-F 0 "H8" H 5250 7249 50  0000 L CNN
-F 1 "MountingHole_Pad" H 5250 7158 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 5150 7200 50  0001 C CNN
-F 3 "~" H 5150 7200 50  0001 C CNN
-	1    5150 7200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 601076F3
-P 5150 7400
-AR Path="/5F63B107/601076F3" Ref="#PWR?"  Part="1" 
-AR Path="/5F63A193/601076F3" Ref="#PWR0111"  Part="1" 
-F 0 "#PWR0111" H 5150 7150 50  0001 C CNN
-F 1 "GND" H 5155 7227 50  0000 C CNN
-F 2 "" H 5150 7400 50  0001 C CNN
-F 3 "" H 5150 7400 50  0001 C CNN
-	1    5150 7400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5150 7400 5150 7300
 $EndSCHEMATC
