@@ -169,6 +169,7 @@ F5 "nRESET_Buf" I R 6800 1450 50
 F6 "I_mon_V_input" I L 5250 2050 50 
 F7 "BL_Mode__Shutdown_Mode" I R 6800 1600 50 
 F8 "Charger_INT" I L 5250 2200 50 
+F9 "BATT" I L 5250 2350 50 
 $EndSheet
 Wire Wire Line
 	5450 4200 5350 4200
@@ -229,7 +230,7 @@ Text Notes 1250 7100 0    50   ~ 0
 Text Notes 750  7400 0    50   ~ 0
 Alternate Parts:\nPMOS: Consider using DMP4025SFGQ-13 for better performance or DMP6023LE-13 for easier soldering.
 Text Notes 7150 6100 0    50   ~ 0
-TO DO:\nAdd V_ext voltage divider\nAdd Test Points to STM Pins.\nAdd SWD connections between Pi and STM.
+TO DO:\nAdd Test Points to STM Pins.\nAdd SWD connections between Pi and STM.
 Text Notes 7150 5600 0    50   ~ 0
 Would be nice:\nUSB output connector to power \n
 Wire Wire Line
@@ -250,4 +251,11 @@ Wire Wire Line
 	6800 2300 6950 2300
 Wire Wire Line
 	2300 3650 3200 3650
+Wire Wire Line
+	5250 2350 5000 2350
+Wire Wire Line
+	5000 2350 5000 4450
+Wire Wire Line
+	5000 4450 4700 4450
+Connection ~ 4700 4450
 $EndSCHEMATC

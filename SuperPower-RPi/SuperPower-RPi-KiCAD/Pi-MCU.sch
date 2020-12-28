@@ -490,10 +490,9 @@ $EndComp
 Wire Wire Line
 	4450 5000 5400 5000
 Wire Wire Line
-	3950 5000 3500 5000
+	3950 5000 3900 5000
 Wire Wire Line
 	3500 5000 3500 5050
-Connection ~ 3950 5000
 Wire Wire Line
 	3950 5000 3950 5500
 $Comp
@@ -694,8 +693,6 @@ F 3 "" H 3000 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3950 4250 4050 4250
-Wire Wire Line
 	4200 4250 4200 5400
 Wire Wire Line
 	3000 4250 3000 3900
@@ -756,8 +753,6 @@ $EndComp
 Connection ~ 4450 4250
 Wire Wire Line
 	4450 4250 4450 5000
-Wire Wire Line
-	3950 4250 3950 5000
 Wire Wire Line
 	3400 9950 3400 9900
 Wire Wire Line
@@ -845,9 +840,6 @@ Wire Wire Line
 	14650 6000 14650 5950
 Wire Wire Line
 	3250 4250 3000 4250
-Wire Wire Line
-	3450 4250 3950 4250
-Connection ~ 3950 4250
 $Comp
 L power:PWR_FLAG #FLG0107
 U 1 1 5FF559E5
@@ -1430,4 +1422,43 @@ F 4 "DNP" H 5250 5700 50  0001 C CNN "Mfg"
 $EndComp
 Wire Wire Line
 	5250 5700 4850 5700
+Text HLabel 2800 5000 0    50   Input ~ 0
+BATT
+Connection ~ 3500 5000
+Wire Wire Line
+	3450 4250 4050 4250
+$Comp
+L Device:D_Zener_Small D?
+U 1 1 5FEEA45B
+P 3050 5000
+AR Path="/5F6AC66E/5FEEA45B" Ref="D?"  Part="1" 
+AR Path="/5F6AC872/5FEEA45B" Ref="D6"  Part="1" 
+F 0 "D6" H 3100 4950 50  0000 L CNN
+F 1 "BZT585B13T-7" H 2400 4950 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-523" V 3050 5000 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/BZT585BxVxT.pdf" V 3050 5000 50  0001 C CNN
+F 4 "Diodes Incorporated" H 3050 5000 50  0001 C CNN "Mfg"
+F 5 "BZT585B13T-7DICT-ND" H 3050 5000 50  0001 C CNN "Digi-Key PN"
+F 6 "BZT585B13T-7" H 3050 5000 50  0001 C CNN "Mfg PN"
+	1    3050 5000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3150 5000 3500 5000
+Wire Wire Line
+	2800 5000 2950 5000
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5FF496A5
+P 3900 5000
+F 0 "#FLG0103" H 3900 5075 50  0001 C CNN
+F 1 "PWR_FLAG" H 3900 5173 50  0001 C CNN
+F 2 "" H 3900 5000 50  0001 C CNN
+F 3 "~" H 3900 5000 50  0001 C CNN
+	1    3900 5000
+	1    0    0    -1  
+$EndComp
+Connection ~ 3900 5000
+Wire Wire Line
+	3900 5000 3500 5000
 $EndSCHEMATC
