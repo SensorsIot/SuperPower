@@ -72,13 +72,11 @@ NoConn ~ 6600 2700
 NoConn ~ 5000 2700
 NoConn ~ 5000 2800
 NoConn ~ 5000 3000
-NoConn ~ 5000 3100
 NoConn ~ 5000 3200
 NoConn ~ 5000 3400
 NoConn ~ 5000 3500
 NoConn ~ 5000 3600
 NoConn ~ 5000 4200
-NoConn ~ 5000 4300
 $Comp
 L power:GND #PWR09
 U 1 1 5F7975F1
@@ -126,17 +124,22 @@ Wire Wire Line
 	6800 3300 6600 3300
 Text HLabel 6800 3400 2    50   BiDi ~ 0
 GPIO5
-Text HLabel 6800 3500 2    50   BiDi ~ 0
-GPIO6
-Text HLabel 4700 4100 0    50   BiDi ~ 0
-GPIO25
 Wire Wire Line
 	6800 3400 6600 3400
-Wire Wire Line
-	6800 3500 6600 3500
-Wire Wire Line
-	5000 4100 4700 4100
-NoConn ~ 5000 3800
 NoConn ~ 5000 3900
 NoConn ~ 5000 4000
+NoConn ~ 5000 4100
+NoConn ~ 6600 3500
+Text HLabel 4850 3100 0    50   BiDi ~ 0
+GPIO17
+Wire Wire Line
+	4850 3100 5000 3100
+Text HLabel 4850 4300 0    50   BiDi ~ 0
+GPIO27
+Wire Wire Line
+	4850 4300 5000 4300
+Text HLabel 4850 3800 0    50   BiDi ~ 0
+GPIO22
+Wire Wire Line
+	4850 3800 5000 3800
 $EndSCHEMATC
