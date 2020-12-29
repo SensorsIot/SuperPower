@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 7
+Sheet 6 7
 Title "SuperPower-uC"
 Date "2020-09-20"
 Rev "0.1"
@@ -325,47 +325,12 @@ Text Label 1750 2100 2    50   ~ 0
 CH_DIS
 Wire Wire Line
 	1750 2100 1350 2100
-Wire Notes Line
-	6800 3400 8450 3400
-Wire Notes Line
-	8450 3400 8450 4300
-Wire Notes Line
-	8450 4300 6800 4300
-Wire Notes Line
-	6800 4300 6800 3400
-$Comp
-L Jumper:SolderJumper_2_Open JP4
-U 1 1 5F8A654B
-P 7650 3900
-F 0 "JP4" H 7650 4105 50  0000 C CNN
-F 1 "3v3_MCU_I2C" H 7650 4014 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 7650 3900 50  0001 C CNN
-F 3 "~" H 7650 3900 50  0001 C CNN
-	1    7650 3900
-	1    0    0    -1  
-$EndComp
 Text Label 7450 3000 0    50   ~ 0
 V_I2C
-Wire Wire Line
-	7500 3900 7000 3900
-Text Notes 6850 3500 0    50   ~ 0
-For MCU always on applications
-Text HLabel 1350 1650 0    50   Input ~ 0
-3v3_MCU
-Wire Wire Line
-	1350 1650 1750 1650
-Text Label 1750 1650 2    50   ~ 0
-3v3_MCU
 Wire Notes Line
 	550  600  1850 600 
 Wire Notes Line
 	1850 2450 550  2450
-Text Label 7000 3900 0    50   ~ 0
-3v3_MCU
-Wire Wire Line
-	8150 3900 7800 3900
-Text Label 8150 3900 2    50   ~ 0
-V_I2C
 Wire Notes Line
 	3350 4000 3350 1850
 Wire Notes Line
@@ -470,12 +435,6 @@ Wire Notes Line
 	1850 600  1850 2450
 Wire Notes Line
 	550  600  550  2450
-Text HLabel 1350 1750 0    50   Output ~ 0
-3v3_I2C
-Wire Wire Line
-	1350 1750 1750 1750
-Text Label 1750 1750 2    50   ~ 0
-V_I2C
 Text GLabel 3750 2900 0    50   Input ~ 0
 INT_IO
 $EndSCHEMATC
