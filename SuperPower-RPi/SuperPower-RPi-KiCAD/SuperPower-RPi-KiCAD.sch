@@ -215,8 +215,6 @@ Wire Wire Line
 	4700 2050 4700 3950
 Wire Wire Line
 	4700 3950 4500 3950
-Text Notes 1250 7100 0    50   ~ 0
-1.0uF Cap available in 0402\n4.7uF Cap is available, but rare in 0402.
 Text Notes 750  7400 0    50   ~ 0
 Alternate Parts:\nPMOS: Consider using DMP4025SFGQ-13 for better performance or DMP6023LE-13 for easier soldering.
 Text Notes 7150 6100 0    50   ~ 0
@@ -330,4 +328,6 @@ F 4 "DNP" H 7950 1400 50  0001 C CNN "Mfg"
 $EndComp
 Wire Wire Line
 	8050 1400 8900 1400
+Text Notes 1250 7100 0    50   ~ 0
+1.0uF Cap available in 0402\n4.7uF Cap is available, but rare in 0402.
 $EndSCHEMATC
