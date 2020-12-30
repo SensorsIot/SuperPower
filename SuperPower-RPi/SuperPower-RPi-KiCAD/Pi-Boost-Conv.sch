@@ -553,8 +553,6 @@ F 4 "DNP" H 4700 4400 50  0001 C CNN "Mfg"
 	1    4700 4400
 	0    -1   -1   0   
 $EndComp
-Text Notes 4500 5600 0    50   ~ 0
-NOTE:\nC12:  Consider changing to 47n to re-use components.\nR4 & C13 values are taken from TPS61088 Eval Module schematic.
 $Comp
 L Manual_Lib:TPS61088 U1
 U 1 1 5F7353AC
@@ -772,4 +770,6 @@ F 5 "ME6210A33M3G" H 3500 900 50  0001 C CNN "Mfg PN"
 	1    2750 1250
 	1    0    0    -1  
 $EndComp
+Text Notes 4500 5600 0    50   ~ 0
+NOTE:\nC12:  Original design had 39nF. Changed to 47nF to reuse components.\nR4 & C13 values are taken from TPS61088 Eval Module schematic.
 $EndSCHEMATC

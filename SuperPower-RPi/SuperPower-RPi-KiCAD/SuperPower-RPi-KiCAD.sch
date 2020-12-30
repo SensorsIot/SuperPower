@@ -218,9 +218,7 @@ Wire Wire Line
 Text Notes 750  7400 0    50   ~ 0
 Alternate Parts:\nPMOS: Consider using DMP4025SFGQ-13 for better performance or DMP6023LE-13 for easier soldering.
 Text Notes 7150 6100 0    50   ~ 0
-TO DO:\nAdd Test Points to STM Pins.\nAdd SWD connections between Pi and STM.\nSplit I2C busses.  
-Text Notes 7150 5600 0    50   ~ 0
-Would be nice:\nUSB output connector to power \n
+TO DO:\nAdd Test Points to STM Pins.
 Wire Wire Line
 	8400 3650 9350 3650
 Wire Wire Line
@@ -328,6 +326,6 @@ F 4 "DNP" H 7950 1400 50  0001 C CNN "Mfg"
 $EndComp
 Wire Wire Line
 	8050 1400 8900 1400
-Text Notes 1250 7100 0    50   ~ 0
-1.0uF Cap available in 0402\n4.7uF Cap is available, but rare in 0402.
+Text Notes 7150 5600 0    50   ~ 0
+Would be nice:\nUSB output connector to power \n
 $EndSCHEMATC
