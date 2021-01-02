@@ -36,9 +36,9 @@ Wire Wire Line
 Text Label 2950 4500 2    50   ~ 0
 SCL
 Text Label 9150 4150 2    50   ~ 0
-SCL
+SCL_RPi
 Text Label 9150 4050 2    50   ~ 0
-SDA
+SDA_RPi
 Text Label 2950 4400 2    50   ~ 0
 SDA
 Wire Wire Line
@@ -47,8 +47,6 @@ Wire Wire Line
 	3200 4400 2950 4400
 Wire Wire Line
 	6450 3650 7150 3650
-Wire Wire Line
-	2300 3650 2700 3650
 $Sheet
 S 5450 3450 1000 1150
 U 5F6AC4E0
@@ -160,18 +158,23 @@ F 4 "DNP" H 10550 6050 50  0001 C CNN "Mfg"
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 5250 1250 1550 1150
+S 5250 1000 1550 1550
 U 5F6AC872
 F0 "Pi-MCU" 50
 F1 "Pi-MCU.sch" 50
-F2 "SDA_1" B L 5250 1450 50 
-F3 "SCL_1" B L 5250 1550 50 
+F2 "SDA_INT" B L 5250 1450 50 
+F3 "SCL_INT" B L 5250 1550 50 
 F4 "GPIO0" B R 6800 2300 50 
-F5 "nRESET_Buf" I R 6800 1450 50 
+F5 "nRESET_Buf" I R 6800 1100 50 
 F6 "I_mon_V_input" I L 5250 2050 50 
-F7 "BL_Mode__Shutdown_Mode" I R 6800 1600 50 
+F7 "BL_Mode__Shutdown_Mode" I R 6800 1250 50 
 F8 "Charger_INT" I L 5250 2200 50 
-F9 "V_ext" I L 5250 1900 50 
+F9 "BATT" I L 5250 2350 50 
+F10 "SDA_RPi" B R 6800 2000 50 
+F11 "SCL_RPi" B R 6800 2100 50 
+F12 "SWDIO" B R 6800 1400 50 
+F13 "SWCLK" B R 6800 1500 50 
+F14 "SWO" B R 6800 1600 50 
 $EndSheet
 Wire Wire Line
 	5450 4200 5350 4200
@@ -199,42 +202,23 @@ Wire Wire Line
 Wire Wire Line
 	6950 2300 6950 4100
 Wire Wire Line
-	9200 1450 9200 2950
+	9200 1100 9200 2950
 Wire Wire Line
 	9200 2950 9350 2950
 Wire Wire Line
 	9350 3050 9050 3050
 Wire Wire Line
-	9050 3050 9050 1600
-$Sheet
-S 9350 2850 1350 1750
-U 5F6AC9CB
-F0 "Pi-Connection" 50
-F1 "Pi-Connection.sch" 50
-F2 "Vin(5V)" I L 9350 3650 50 
-F3 "SDA" B L 9350 4050 50 
-F4 "SCL" B L 9350 4150 50 
-F5 "GPIO4" B L 9350 2950 50 
-F6 "GPIO5" B L 9350 3050 50 
-F7 "GPIO6" B L 9350 3150 50 
-F8 "GPIO25" B L 9350 3250 50 
-$EndSheet
-NoConn ~ 9350 3250
-NoConn ~ 9350 3150
+	9050 3050 9050 1250
 Wire Wire Line
 	5250 2050 4700 2050
 Wire Wire Line
 	4700 2050 4700 3950
 Wire Wire Line
 	4700 3950 4500 3950
-Text Notes 1250 7100 0    50   ~ 0
-1.0uF Cap available in 0402\n4.7uF Cap is available, but rare in 0402.
 Text Notes 750  7400 0    50   ~ 0
 Alternate Parts:\nPMOS: Consider using DMP4025SFGQ-13 for better performance or DMP6023LE-13 for easier soldering.
 Text Notes 7150 6100 0    50   ~ 0
-TO DO:\nAdd V_ext voltage divider\nAdd Test Points to STM Pins.\nAdd SWD connections between Pi and STM.
-Text Notes 7150 5600 0    50   ~ 0
-Would be nice:\nUSB output connector to power \n
+TO DO:\nAdd Test Points to STM Pins.
 Wire Wire Line
 	8400 3650 9350 3650
 Wire Wire Line
@@ -246,16 +230,102 @@ Wire Wire Line
 Wire Wire Line
 	4850 2200 5250 2200
 Wire Wire Line
-	6800 1450 9200 1450
+	6800 1100 9200 1100
 Wire Wire Line
-	9050 1600 6800 1600
+	9050 1250 6800 1250
 Wire Wire Line
 	6800 2300 6950 2300
 Wire Wire Line
-	2700 3650 2700 1900
+	2300 3650 3200 3650
 Wire Wire Line
-	2700 1900 5250 1900
-Connection ~ 2700 3650
+	5250 2350 5000 2350
 Wire Wire Line
-	2700 3650 3200 3650
+	5000 2350 5000 4450
+Wire Wire Line
+	5000 4450 4700 4450
+Connection ~ 4700 4450
+Text Label 7350 2100 2    50   ~ 0
+SCL_RPi
+Text Label 7350 2000 2    50   ~ 0
+SDA_RPi
+Wire Wire Line
+	6800 2100 7350 2100
+Wire Wire Line
+	7350 2000 6800 2000
+$Sheet
+S 9350 2850 1350 1750
+U 5F6AC9CB
+F0 "Pi-Connection" 50
+F1 "Pi-Connection.sch" 50
+F2 "Vin(5V)" I L 9350 3650 50 
+F3 "SDA" B L 9350 4050 50 
+F4 "SCL" B L 9350 4150 50 
+F5 "GPIO4" B L 9350 2950 50 
+F6 "GPIO5" B L 9350 3050 50 
+F7 "GPIO17" B L 9350 3150 50 
+F8 "GPIO27" B L 9350 3250 50 
+F9 "GPIO22" B L 9350 3350 50 
+$EndSheet
+Wire Wire Line
+	8900 1400 8900 3150
+Wire Wire Line
+	8900 3150 9350 3150
+Wire Wire Line
+	8800 1500 8800 3250
+Wire Wire Line
+	8800 3250 9350 3250
+Wire Wire Line
+	6800 1600 7850 1600
+Wire Wire Line
+	8700 1600 8700 3350
+Wire Wire Line
+	8700 3350 9350 3350
+Wire Wire Line
+	8050 1600 8700 1600
+$Comp
+L Device:Jumper_NC_Small JP11
+U 1 1 600154EF
+P 7950 1600
+F 0 "JP11" H 7800 1650 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 7950 1721 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 7950 1600 50  0001 C CNN
+F 3 "~" H 7950 1600 50  0001 C CNN
+F 4 "DNP" H 7950 1600 50  0001 C CNN "Mfg"
+	1    7950 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 1400 7850 1400
+Wire Wire Line
+	6800 1500 7850 1500
+$Comp
+L Device:Jumper_NC_Small JP10
+U 1 1 60017247
+P 7950 1500
+F 0 "JP10" H 7800 1550 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 7950 1621 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 7950 1500 50  0001 C CNN
+F 3 "~" H 7950 1500 50  0001 C CNN
+F 4 "DNP" H 7950 1500 50  0001 C CNN "Mfg"
+	1    7950 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 1500 8800 1500
+$Comp
+L Device:Jumper_NC_Small JP9
+U 1 1 600176DF
+P 7950 1400
+F 0 "JP9" H 7800 1450 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 7950 1521 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 7950 1400 50  0001 C CNN
+F 3 "~" H 7950 1400 50  0001 C CNN
+F 4 "DNP" H 7950 1400 50  0001 C CNN "Mfg"
+	1    7950 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 1400 8900 1400
+Text Notes 7150 5600 0    50   ~ 0
+Would be nice:\nUSB output connector to power \n
 $EndSCHEMATC
