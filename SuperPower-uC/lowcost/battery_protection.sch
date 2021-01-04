@@ -89,8 +89,6 @@ F 4 "C14858" H 4950 3400 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 Connection ~ 4950 3550
-Wire Wire Line
-	4950 3550 4300 3550
 Connection ~ 5300 3550
 Wire Wire Line
 	5300 3550 5300 3350
@@ -120,21 +118,15 @@ Connection ~ 6350 3900
 $Comp
 L Connector:Conn_01x02_Male J1
 U 1 1 5F7D5382
-P 3850 3350
-F 0 "J1" H 3958 3531 50  0000 C CNN
-F 1 "Battery connector" H 3958 3440 50  0000 C CNN
-F 2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" H 3850 3350 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1811051822_JST-Sales-America-S2B-XH-A-LF-SN_C157931.pdf" H 3850 3350 50  0001 C CNN
-F 4 "C157931" H 3850 3350 50  0001 C CNN "LCSC"
-	1    3850 3350
+P 3650 2650
+F 0 "J1" H 3600 2700 50  0000 C CNN
+F 1 "Battery connector" H 3750 2800 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" H 3650 2650 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811051822_JST-Sales-America-S2B-XH-A-LF-SN_C157931.pdf" H 3650 2650 50  0001 C CNN
+F 4 "C157931" H 3650 2650 50  0001 C CNN "LCSC"
+	1    3650 2650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4300 3350 4050 3350
-Wire Wire Line
-	4050 3450 4300 3450
-Wire Wire Line
-	4300 3450 4300 3550
 NoConn ~ 5450 4100
 NoConn ~ 6150 4100
 NoConn ~ 5450 3150
@@ -171,10 +163,10 @@ Wire Notes Line
 	550  1750 550  550 
 Text HLabel 850  1050 0    50   BiDi ~ 0
 VBAT
-Text Label 4050 3050 0    50   ~ 0
+Text Label 4100 2650 2    50   ~ 0
 VBAT
 Wire Wire Line
-	4050 3050 4300 3050
+	4100 2650 3850 2650
 Text Label 1100 1050 2    50   ~ 0
 VBAT
 Wire Wire Line
@@ -194,14 +186,7 @@ F 4 "C22775" H 4650 3250 50  0001 C CNN "LCSC"
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4300 3050 4300 3250
-Wire Wire Line
 	4800 3250 4950 3250
-Wire Wire Line
-	4500 3250 4300 3250
-Connection ~ 4300 3250
-Wire Wire Line
-	4300 3250 4300 3350
 Connection ~ 4950 3250
 $Comp
 L power:PWR_FLAG #FLG0101
@@ -217,4 +202,36 @@ $EndComp
 Connection ~ 5150 3250
 Wire Wire Line
 	5150 3250 4950 3250
+Text Label 4050 3250 0    50   ~ 0
+VBAT
+Wire Wire Line
+	4050 3250 4500 3250
+$Comp
+L Connector:Conn_01x02_Male J7
+U 1 1 5FF3831A
+P 4550 2650
+F 0 "J7" H 4500 2700 50  0000 C CNN
+F 1 "Battery connector" H 4650 2800 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4550 2650 50  0001 C CNN
+F 3 "" H 4550 2650 50  0001 C CNN
+F 4 "C157931" H 4550 2650 50  0001 C CNN "LCSC"
+	1    4550 2650
+	1    0    0    -1  
+$EndComp
+Text Label 5000 2650 2    50   ~ 0
+VBAT
+Wire Wire Line
+	5000 2650 4750 2650
+Text Label 4100 2750 2    50   ~ 0
+BAT-
+Text Label 5000 2750 2    50   ~ 0
+BAT-
+Wire Wire Line
+	5000 2750 4750 2750
+Wire Wire Line
+	3850 2750 4100 2750
+Text Label 4050 3550 0    50   ~ 0
+BAT-
+Wire Wire Line
+	4050 3550 4950 3550
 $EndSCHEMATC
