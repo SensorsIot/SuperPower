@@ -17,8 +17,6 @@ Text HLabel 5250 7650 2    50   BiDi ~ 0
 SDA_RPi
 Text HLabel 5250 7550 2    50   BiDi ~ 0
 SCL_RPi
-Text HLabel 3200 6850 0    50   BiDi ~ 0
-GPIO0
 Text HLabel 5200 10000 0    50   BiDi ~ 0
 SDA_INT
 Text HLabel 5200 10100 0    50   BiDi ~ 0
@@ -282,8 +280,6 @@ $EndComp
 Wire Wire Line
 	2800 5850 2800 5800
 Connection ~ 2800 5450
-Wire Wire Line
-	3200 6850 3450 6850
 Wire Wire Line
 	13100 6250 12750 6250
 NoConn ~ 4850 6950
@@ -1524,4 +1520,45 @@ F 4 "DNP" H 11750 5550 50  0001 C CNN "Mfg"
 	1    11750 5550
 	-1   0    0    -1  
 $EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FF7D092
+P 9800 3350
+AR Path="/5F6AC517/5FF7D092" Ref="R?"  Part="1" 
+AR Path="/5F6AC872/5FF7D092" Ref="R20"  Part="1" 
+F 0 "R20" H 9850 3300 50  0000 L CNN
+F 1 "100k" H 9850 3400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 9800 3350 50  0001 C CNN
+F 3 "~" H 9800 3350 50  0001 C CNN
+F 4 "311-100KLRCT-ND" H 9800 3350 50  0001 C CNN "Digi-Key PN"
+F 5 "Yageo" H 9800 3350 50  0001 C CNN "Mfg"
+F 6 "RC0402FR-07100KL" H 9800 3350 50  0001 C CNN "Mfg PN"
+	1    9800 3350
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3200 6850 3450 6850
+Text HLabel 3200 6850 0    50   BiDi ~ 0
+GPIO0
+Text HLabel 9750 3550 0    50   BiDi ~ 0
+GPIO0
+$Comp
+L power:+3.3V #PWR0115
+U 1 1 5FFCED0F
+P 9800 3150
+F 0 "#PWR0115" H 9800 3000 50  0001 C CNN
+F 1 "+3.3V" H 9815 3323 50  0000 C CNN
+F 2 "" H 9800 3150 50  0001 C CNN
+F 3 "" H 9800 3150 50  0001 C CNN
+	1    9800 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 3550 9800 3550
+Wire Wire Line
+	9800 3550 9800 3450
+Wire Wire Line
+	9800 3250 9800 3150
+Text Notes 9250 3800 0    50   ~ 0
+Pull Up for NCP380 device.
 $EndSCHEMATC

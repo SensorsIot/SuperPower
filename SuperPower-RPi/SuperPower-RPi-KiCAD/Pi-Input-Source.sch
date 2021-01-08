@@ -96,34 +96,10 @@ F 5 "724" H 2400 1850 50  0001 C CNN "Mfg PN"
 	1    2400 1850
 	-1   0    0    1   
 $EndComp
-Text Notes 2050 5150 0    50   ~ 0
-Primary USB Power Input
 Wire Wire Line
 	3050 3000 3450 3000
 Wire Wire Line
 	4750 3000 4850 3000
-Wire Wire Line
-	2300 4650 2450 4650
-Connection ~ 2300 4650
-Wire Wire Line
-	2300 4750 2300 4650
-Wire Wire Line
-	2450 4650 2450 4500
-Wire Wire Line
-	2150 4650 2300 4650
-Wire Wire Line
-	2150 4500 2150 4650
-$Comp
-L power:GND #PWR0102
-U 1 1 5F709AD2
-P 2300 4750
-F 0 "#PWR0102" H 2300 4500 50  0001 C CNN
-F 1 "GND" H 2305 4577 50  0000 C CNN
-F 2 "" H 2300 4750 50  0001 C CNN
-F 3 "" H 2300 4750 50  0001 C CNN
-	1    2300 4750
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0101
 U 1 1 5F703EB6
@@ -418,4 +394,28 @@ F 6 "DMP3056L-7DICT-ND" H 7900 3550 50  0001 C CNN "Digi-Key PN"
 	1    7900 3550
 	1    0    0    1   
 $EndComp
+Text Notes 2050 5150 0    50   ~ 0
+Primary USB Power Input
+$Comp
+L power:GND #PWR0102
+U 1 1 5F709AD2
+P 2300 4750
+F 0 "#PWR0102" H 2300 4500 50  0001 C CNN
+F 1 "GND" H 2305 4577 50  0000 C CNN
+F 2 "" H 2300 4750 50  0001 C CNN
+F 3 "" H 2300 4750 50  0001 C CNN
+	1    2300 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 4650 2300 4650
+Wire Wire Line
+	2450 4650 2450 4500
+Wire Wire Line
+	2300 4750 2300 4650
+Connection ~ 2300 4650
+Wire Wire Line
+	2300 4650 2450 4650
+Wire Wire Line
+	2150 4500 2150 4650
 $EndSCHEMATC
