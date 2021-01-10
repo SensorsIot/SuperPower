@@ -95,8 +95,6 @@ Wire Wire Line
 Wire Wire Line
 	5300 3550 5300 3900
 Wire Wire Line
-	6350 3900 6150 3900
-Wire Wire Line
 	6150 4000 6150 3900
 Connection ~ 6150 3900
 Wire Wire Line
@@ -234,4 +232,36 @@ Text Label 4050 3550 0    50   ~ 0
 BAT-
 Wire Wire Line
 	4050 3550 4950 3550
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5FFB2253
+P 6200 2700
+AR Path="/5F63A00B/5FFB2253" Ref="JP?"  Part="1" 
+AR Path="/5F639CFE/5FFB2253" Ref="JP2"  Part="1" 
+F 0 "JP2" H 6200 2905 50  0000 C CNN
+F 1 "Protection bypass" H 6200 2814 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 6200 2700 50  0001 C CNN
+F 3 "~" H 6200 2700 50  0001 C CNN
+	1    6200 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3900 6150 3900
+Text Label 5800 2700 0    50   ~ 0
+BAT-
+Wire Wire Line
+	5800 2700 6050 2700
+$Comp
+L power:GND #PWR?
+U 1 1 5FFB56AA
+P 6550 2700
+F 0 "#PWR?" H 6550 2450 50  0001 C CNN
+F 1 "GND" H 6555 2527 50  0000 C CNN
+F 2 "" H 6550 2700 50  0001 C CNN
+F 3 "" H 6550 2700 50  0001 C CNN
+	1    6550 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 2700 6350 2700
 $EndSCHEMATC
