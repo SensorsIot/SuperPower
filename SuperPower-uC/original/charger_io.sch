@@ -14,15 +14,13 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text HLabel 1300 1050 0    50   Output ~ 0
-VBUS1
+VBUS
 Text HLabel 1300 1250 0    50   Output ~ 0
 CHARGER_VIN
 Text HLabel 1300 1550 0    50   Input ~ 0
 D+
 Text HLabel 1300 1750 0    50   Input ~ 0
 D-
-Text Label 4100 5050 2    50   ~ 0
-VBUS1
 Text Label 3500 5650 2    50   ~ 0
 D-
 Text Label 3500 5850 2    50   ~ 0
@@ -123,8 +121,6 @@ Wire Wire Line
 	4600 3100 4600 3000
 Wire Wire Line
 	4500 2900 4950 2900
-Text Label 1950 1050 2    50   ~ 0
-VBUS1
 Text Label 4950 2900 2    50   ~ 0
 V_CHARGE
 Text Label 7400 3050 2    50   ~ 0
@@ -154,19 +150,6 @@ Wire Wire Line
 	1950 1050 1300 1050
 Wire Wire Line
 	1950 1250 1300 1250
-Wire Wire Line
-	4100 5050 3700 5050
-$Comp
-L Device:R_Small R5
-U 1 1 5F73032E
-P 3600 5050
-F 0 "R5" V 3404 5050 50  0000 C CNN
-F 1 "0" V 3495 5050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 3600 5050 50  0001 C CNN
-F 3 "~" H 3600 5050 50  0001 C CNN
-	1    3600 5050
-	0    1    1    0   
-$EndComp
 Wire Notes Line
 	3250 4050 3250 2100
 Wire Notes Line
@@ -313,8 +296,6 @@ Text Label 8650 2950 0    50   ~ 0
 V_CHARGE
 Text Notes 8450 2250 0    50   ~ 10
 Power ORing
-Text Label 8650 3350 0    50   ~ 0
-VBUS1
 Text Notes 8450 4300 0    50   ~ 0
 This circuit (power ORing) allows to have concurrent power inputs,\nthe input with the highest voltage (with respect to the ground)\nwill be providing power to the charging IC (CHARGER_VIN).
 Text Label 1950 1250 2    50   ~ 0
@@ -780,6 +761,10 @@ Wire Wire Line
 	4850 6700 5250 6700
 Wire Wire Line
 	4850 6800 5250 6800
-Text Label 3350 5050 2    50   ~ 0
+Text Label 3500 5050 2    50   ~ 0
+VBUS
+Text Label 8650 3350 0    50   ~ 0
+VBUS
+Text Label 1950 1050 2    50   ~ 0
 VBUS
 $EndSCHEMATC

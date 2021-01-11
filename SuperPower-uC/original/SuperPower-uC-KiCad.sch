@@ -60,7 +60,7 @@ F1 "charger_io.sch" 50
 F2 "D+" I R 4300 4300 50 
 F3 "D-" I R 4300 4400 50 
 F4 "CHARGER_VIN" O L 3050 3650 50 
-F5 "VBUS1" O R 4300 4500 50 
+F5 "VBUS" O R 4300 4500 50 
 $EndSheet
 Wire Wire Line
 	3050 3100 2950 3100
@@ -136,7 +136,7 @@ Wire Wire Line
 Wire Wire Line
 	4850 3150 4300 3150
 Text Label 4600 4500 2    50   ~ 0
-VBUS1
+VBUS
 Text Label 4600 4400 2    50   ~ 0
 D-
 Text Label 4600 4300 2    50   ~ 0
@@ -148,7 +148,7 @@ Wire Wire Line
 Wire Wire Line
 	4600 4500 4300 4500
 Text Label 10150 3150 2    50   ~ 0
-VBUS1
+VBUS
 Text Label 10150 3050 2    50   ~ 0
 D-
 Text Label 10150 2950 2    50   ~ 0
@@ -178,7 +178,7 @@ F8 "3v3" I L 8600 2700 50
 F9 "EN_3V3" O L 8600 2450 50 
 F10 "EN_5V" O L 8600 2350 50 
 F11 "~SMBALERT" I L 8600 3150 50 
-F12 "VBUS1" I R 9850 3150 50 
+F12 "VBUS" I R 9850 3150 50 
 $EndSheet
 $Sheet
 S 5750 2100 1250 1150
