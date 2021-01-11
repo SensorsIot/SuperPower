@@ -50,8 +50,6 @@ F 4 "C15127" H 6950 3150 50  0001 C CNN "LCSC"
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	7150 3050 7500 3050
-Wire Wire Line
 	2500 3200 2350 3200
 $Comp
 L Transistor_FET:2N7002 Q7
@@ -336,20 +334,6 @@ Wire Notes Line
 	600  1850 600  600 
 Text Notes 650  700  0    50   ~ 0
 labels\n
-$Comp
-L Connector:TestPoint TP8
-U 1 1 5F9B95A1
-P 7500 3050
-F 0 "TP8" H 7450 3250 50  0000 L CNN
-F 1 "TestPoint" H 7558 3077 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 7700 3050 50  0001 C CNN
-F 3 "~" H 7700 3050 50  0001 C CNN
-	1    7500 3050
-	1    0    0    -1  
-$EndComp
-Connection ~ 7500 3050
-Wire Wire Line
-	7500 3050 7800 3050
 Connection ~ 3400 3200
 Wire Wire Line
 	3400 3200 3450 3200
@@ -801,4 +785,6 @@ F 4 "C31850" H 5600 5450 50  0001 C CNN "LCSC"
 	1    5600 5450
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7150 3050 7800 3050
 $EndSCHEMATC
