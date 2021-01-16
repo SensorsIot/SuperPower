@@ -204,64 +204,43 @@ Text Label 4050 3250 0    50   ~ 0
 VBAT
 Wire Wire Line
 	4050 3250 4500 3250
-$Comp
-L Connector:Conn_01x02_Male J7
-U 1 1 5FF3831A
-P 4550 2650
-F 0 "J7" H 4500 2700 50  0000 C CNN
-F 1 "Battery connector" H 4650 2800 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4550 2650 50  0001 C CNN
-F 3 "" H 4550 2650 50  0001 C CNN
-F 4 "" H 4550 2650 50  0001 C CNN "LCSC"
-	1    4550 2650
-	1    0    0    -1  
-$EndComp
 Text Label 5000 2650 2    50   ~ 0
 VBAT
 Wire Wire Line
 	5000 2650 4750 2650
 Text Label 4100 2750 2    50   ~ 0
 BAT-
-Text Label 5000 2750 2    50   ~ 0
-BAT-
-Wire Wire Line
-	5000 2750 4750 2750
 Wire Wire Line
 	3850 2750 4100 2750
 Text Label 4050 3550 0    50   ~ 0
 BAT-
 Wire Wire Line
 	4050 3550 4950 3550
-$Comp
-L Jumper:SolderJumper_2_Open JP?
-U 1 1 5FFB2253
-P 6200 2700
-AR Path="/5F63A00B/5FFB2253" Ref="JP?"  Part="1" 
-AR Path="/5F639CFE/5FFB2253" Ref="JP2"  Part="1" 
-F 0 "JP2" H 6200 2905 50  0000 C CNN
-F 1 "Protection bypass" H 6200 2814 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 6200 2700 50  0001 C CNN
-F 3 "~" H 6200 2700 50  0001 C CNN
-	1    6200 2700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6350 3900 6150 3900
-Text Label 5800 2700 0    50   ~ 0
-BAT-
-Wire Wire Line
-	5800 2700 6050 2700
+$Comp
+L Connector:Conn_01x02_Male J7
+U 1 1 60035EFF
+P 4550 2650
+F 0 "J7" H 4500 2700 50  0000 C CNN
+F 1 "DNP" H 4650 2800 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" H 4550 2650 50  0001 C CNN
+F 3 "" H 4550 2650 50  0001 C CNN
+F 4 "" H 4550 2650 50  0001 C CNN "LCSC"
+	1    4550 2650
+	1    0    0    -1  
+$EndComp
 $Comp
 L power:GND #PWR0129
-U 1 1 5FFB56AA
-P 6550 2700
-F 0 "#PWR0129" H 6550 2450 50  0001 C CNN
-F 1 "GND" H 6555 2527 50  0000 C CNN
-F 2 "" H 6550 2700 50  0001 C CNN
-F 3 "" H 6550 2700 50  0001 C CNN
-	1    6550 2700
+U 1 1 60037B5A
+P 4950 2750
+F 0 "#PWR0129" H 4950 2500 50  0001 C CNN
+F 1 "GND" H 4955 2577 50  0000 C CNN
+F 2 "" H 4950 2750 50  0001 C CNN
+F 3 "" H 4950 2750 50  0001 C CNN
+	1    4950 2750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6550 2700 6350 2700
+	4950 2750 4750 2750
 $EndSCHEMATC
