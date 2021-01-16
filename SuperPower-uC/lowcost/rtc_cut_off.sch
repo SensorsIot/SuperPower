@@ -391,7 +391,7 @@ exp5
 Text GLabel 5950 3550 2    50   Input ~ 0
 exp4
 Wire Wire Line
-	4650 3450 5100 3450
+	4800 3450 5100 3450
 Wire Wire Line
 	4650 3350 5100 3350
 Wire Wire Line
@@ -400,8 +400,6 @@ Text GLabel 4650 3250 0    50   Input ~ 0
 3v3_EN
 Text GLabel 4650 3350 0    50   Input ~ 0
 5V_EN
-Text GLabel 4650 3450 0    50   Input ~ 0
-CH_DIS
 Text Label 4800 3250 0    50   ~ 0
 3.3_EN
 Text Label 4800 3350 0    50   ~ 0
@@ -478,4 +476,12 @@ Text Label 1750 1750 2    50   ~ 0
 V_I2C
 Text GLabel 3750 2900 0    50   Input ~ 0
 INT_IO
+Text Notes 3400 2150 0    50   ~ 0
+If not populated add pulldowns to the 3v3 and 5v EN pins
+Text Notes 6850 3250 0    50   ~ 0
+Pullups can be swapped for lower value if needed
+Text Notes 8950 2500 0    50   ~ 0
+!!!make sure the connected I2C devices don't\nhave internal pull-ups. Overwise they may cause\nhigh quiecent current and problems with the\nonboard communication if those are\nconnected to the AUX 3v3 and 5v pins!!!
+Text Notes 6850 4200 0    50   ~ 0
+Only to be used if the I2C REG is not\npopulated and the mcu bridge is closed.
 $EndSCHEMATC
