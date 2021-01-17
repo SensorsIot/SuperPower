@@ -260,17 +260,6 @@ Text Label 8300 2700 2    50   ~ 0
 Text Label 8300 2800 2    50   ~ 0
 3v3_MCU
 $Comp
-L Connector:Conn_01x12_Male J9
-U 1 1 5FE4755E
-P 7650 5000
-F 0 "J9" H 7758 5681 50  0000 C CNN
-F 1 "Conn_01x12_Male" H 7758 5590 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x12_P2.54mm_Vertical" H 7650 5000 50  0001 C CNN
-F 3 "~" H 7650 5000 50  0001 C CNN
-	1    7650 5000
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0112
 U 1 1 5FE48E31
 P 8150 5650
@@ -285,17 +274,6 @@ Wire Wire Line
 	8150 5650 8150 5600
 Wire Wire Line
 	8150 5600 7850 5600
-$Comp
-L Connector:Conn_01x12_Male J10
-U 1 1 5FE627D1
-P 8950 5000
-F 0 "J10" H 9058 5681 50  0000 C CNN
-F 1 "Conn_01x12_Male" H 9058 5590 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x12_P2.54mm_Vertical" H 8950 5000 50  0001 C CNN
-F 3 "~" H 8950 5000 50  0001 C CNN
-	1    8950 5000
-	1    0    0    -1  
-$EndComp
 Text Label 9650 4500 2    50   ~ 0
 SCL
 Text Label 9650 4600 2    50   ~ 0
@@ -355,4 +333,56 @@ Wire Wire Line
 	9450 5650 9450 5600
 Wire Wire Line
 	9450 5600 9150 5600
+$Comp
+L Connector:Conn_01x13_Female J9
+U 1 1 600940E1
+P 7650 5000
+F 0 "J9" H 7542 5785 50  0000 C CNN
+F 1 "Conn_01x13_Female" H 7542 5694 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x13_P2.54mm_Vertical" H 7650 5000 50  0001 C CNN
+F 3 "~" H 7650 5000 50  0001 C CNN
+	1    7650 5000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x13_Male J10
+U 1 1 600965AF
+P 8950 5000
+F 0 "J10" H 9058 5781 50  0000 C CNN
+F 1 "Conn_01x13_Male" H 9058 5690 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x13_P2.54mm_Vertical" H 8950 5000 50  0001 C CNN
+F 3 "~" H 8950 5000 50  0001 C CNN
+	1    8950 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 6009915B
+P 9900 4450
+F 0 "#PWR0109" H 9900 4200 50  0001 C CNN
+F 1 "GND" H 9905 4277 50  0000 C CNN
+F 2 "" H 9900 4450 50  0001 C CNN
+F 3 "" H 9900 4450 50  0001 C CNN
+	1    9900 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 60099602
+P 8550 4450
+F 0 "#PWR0111" H 8550 4200 50  0001 C CNN
+F 1 "GND" H 8555 4277 50  0000 C CNN
+F 2 "" H 8550 4450 50  0001 C CNN
+F 3 "" H 8550 4450 50  0001 C CNN
+	1    8550 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 4400 9900 4400
+Wire Wire Line
+	9900 4400 9900 4450
+Wire Wire Line
+	7850 4400 8550 4400
+Wire Wire Line
+	8550 4400 8550 4450
 $EndSCHEMATC
