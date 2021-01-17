@@ -209,17 +209,17 @@ Text Label 8350 4500 2    50   ~ 0
 SCL
 Text Label 8350 4600 2    50   ~ 0
 SDA
-Text Label 8350 4700 2    50   ~ 0
+Text Label 8350 5500 2    50   ~ 0
 ~SMBALERT
-Text Label 8350 4800 2    50   ~ 0
+Text Label 8350 4700 2    50   ~ 0
 D+
-Text Label 8350 4900 2    50   ~ 0
+Text Label 8350 4800 2    50   ~ 0
 D-
-Text Label 8350 5000 2    50   ~ 0
-VBUS1
+Text Label 8350 4900 2    50   ~ 0
+VBUS
 Text Label 8350 5400 2    50   ~ 0
 3v3
-Text Label 8350 5500 2    50   ~ 0
+Text Label 8350 5000 2    50   ~ 0
 EN_5V
 Text Label 8350 5200 2    50   ~ 0
 EN_3V3
@@ -300,17 +300,17 @@ Text Label 9650 4500 2    50   ~ 0
 SCL
 Text Label 9650 4600 2    50   ~ 0
 SDA
-Text Label 9650 4700 2    50   ~ 0
+Text Label 9650 5500 2    50   ~ 0
 ~SMBALERT
-Text Label 9650 4800 2    50   ~ 0
+Text Label 9650 4700 2    50   ~ 0
 D+
-Text Label 9650 4900 2    50   ~ 0
+Text Label 9650 4800 2    50   ~ 0
 D-
-Text Label 9650 5000 2    50   ~ 0
-VBUS1
+Text Label 9650 4900 2    50   ~ 0
+VBUS
 Text Label 9650 5400 2    50   ~ 0
 3v3
-Text Label 9650 5500 2    50   ~ 0
+Text Label 9650 5000 2    50   ~ 0
 EN_5V
 Text Label 9650 5200 2    50   ~ 0
 EN_3V3
