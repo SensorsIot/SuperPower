@@ -195,9 +195,9 @@ $EndComp
 Text Label 8850 2950 0    50   ~ 0
 VBUS_2
 Text Label 8850 3150 0    50   ~ 0
-D+_2
+D2+
 Text Label 8850 3050 0    50   ~ 0
-D-_2
+D2-
 Wire Wire Line
 	8850 2950 8650 2950
 Wire Wire Line
@@ -216,14 +216,14 @@ Wire Wire Line
 	7400 3000 7250 3000
 Wire Wire Line
 	7250 2850 7400 2850
-Text Label 5300 6400 0    50   ~ 0
-VBUS_2
 Text Label 5300 6300 0    50   ~ 0
-D-_2
+VBUS_2
+Text Label 5300 6200 0    50   ~ 0
+D2-
 Wire Wire Line
-	5300 6400 5100 6400
+	5300 6300 5100 6300
 Wire Wire Line
-	5100 6300 5300 6300
+	5100 6200 5300 6200
 Text Label 5300 6700 0    50   ~ 0
 3v3_MCU_2
 Text Label 5300 5900 0    50   ~ 0
@@ -237,9 +237,9 @@ Wire Wire Line
 Wire Wire Line
 	5300 6700 5100 6700
 Wire Wire Line
-	5300 6200 5100 6200
-Text Label 5300 6200 0    50   ~ 0
-D+_2
+	5300 6100 5100 6100
+Text Label 5300 6100 0    50   ~ 0
+D2+
 $Comp
 L power:GND #PWR0111
 U 1 1 60017CDB
@@ -282,33 +282,30 @@ Text Label 7250 2550 2    50   ~ 0
 EN_5v
 Text Label 7250 2650 2    50   ~ 0
 EN_3v3
-Text Label 5300 6100 0    50   ~ 0
-~SMBALERT
 Text Label 5300 6900 0    50   ~ 0
+~SMBALERT
+Text Label 5300 6500 0    50   ~ 0
 EN_5v
 Text Label 5300 6600 0    50   ~ 0
 EN_3v3
 Wire Wire Line
-	5300 6900 5100 6900
+	5300 6500 5100 6500
 Wire Wire Line
 	5100 6600 5300 6600
-NoConn ~ 5100 6500
-NoConn ~ 5100 6800
-Text Label 3550 6400 0    50   ~ 0
-VBUS_1
 Text Label 3550 6300 0    50   ~ 0
-D-_1
-Wire Wire Line
-	3550 6400 3950 6400
-Wire Wire Line
-	3950 6300 3550 6300
-Wire Wire Line
-	3550 6200 3950 6200
+VBUS_1
 Text Label 3550 6200 0    50   ~ 0
-D+_1
+D1-
 Wire Wire Line
-	5300 6100 5100 6100
-NoConn ~ 3950 6100
+	3550 6300 3950 6300
+Wire Wire Line
+	3950 6200 3550 6200
+Wire Wire Line
+	3550 6100 3950 6100
+Text Label 3550 6100 0    50   ~ 0
+D1+
+Wire Wire Line
+	5300 6900 5100 6900
 Text Label 3550 5900 0    50   ~ 0
 SCL_1
 Text Label 3550 6000 0    50   ~ 0
@@ -347,18 +344,14 @@ Wire Wire Line
 	6300 2400 6150 2400
 Wire Wire Line
 	6150 2250 6300 2250
-Text Label 3550 6800 0    50   ~ 0
+Text Label 3550 6900 0    50   ~ 0
 3v3
-Text Label 3550 6500 0    50   ~ 0
+Text Label 3550 6400 0    50   ~ 0
 5v
 Wire Wire Line
-	3550 6500 3950 6500
+	3550 6400 3950 6400
 Wire Wire Line
-	3950 6800 3550 6800
-Text Label 4200 4850 0    50   ~ 0
-D-_1
-Text Label 4200 4750 0    50   ~ 0
-D+_1
+	3950 6900 3550 6900
 Text Label 4200 5000 0    50   ~ 0
 VBUS_1
 Wire Wire Line
@@ -375,12 +368,19 @@ Text Label 6300 2550 0    50   ~ 0
 3v3_MCU_1
 Wire Wire Line
 	6300 2550 6150 2550
-Text GLabel 3550 6900 0    50   Input ~ 0
-3v3_EN
 Text GLabel 3550 6600 0    50   Input ~ 0
+3v3_EN
+Text GLabel 3550 6500 0    50   Input ~ 0
 5V_EN
 Wire Wire Line
-	3950 6600 3550 6600
+	3950 6500 3550 6500
 Wire Wire Line
-	3950 6900 3550 6900
+	3950 6600 3550 6600
+NoConn ~ 5100 6400
+NoConn ~ 5100 6800
+NoConn ~ 3950 6800
+Text Label 4200 4750 0    50   ~ 0
+D1+
+Text Label 4200 4850 0    50   ~ 0
+D1-
 $EndSCHEMATC
