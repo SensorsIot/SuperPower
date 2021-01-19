@@ -1410,7 +1410,7 @@ AR Path="/5F63B107/601076C5" Ref="H?"  Part="1"
 AR Path="/5F63A193/601076C5" Ref="H5"  Part="1" 
 F 0 "H5" H 4350 6499 50  0000 L CNN
 F 1 "MountingHole_Pad" H 4350 6408 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 4250 6450 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad_Via" H 4250 6450 50  0001 C CNN
 F 3 "~" H 4250 6450 50  0001 C CNN
 	1    4250 6450
 	1    0    0    -1  
@@ -1440,7 +1440,7 @@ AR Path="/5F63B107/601076E0" Ref="H?"  Part="1"
 AR Path="/5F63A193/601076E0" Ref="H6"  Part="1" 
 F 0 "H6" H 4350 7249 50  0000 L CNN
 F 1 "MountingHole_Pad" H 4350 7158 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 4250 7200 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad_Via" H 4250 7200 50  0001 C CNN
 F 3 "~" H 4250 7200 50  0001 C CNN
 	1    4250 7200
 	1    0    0    -1  
