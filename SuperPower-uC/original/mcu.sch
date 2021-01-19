@@ -312,7 +312,7 @@ Wire Wire Line
 Wire Wire Line
 	2650 5200 2650 5300
 Text Label 3200 1200 2    50   ~ 0
-VBUS
+VBUS_1
 Wire Wire Line
 	3200 1550 3200 1600
 Connection ~ 3200 1600
@@ -548,7 +548,7 @@ $EndComp
 Text Notes 3000 3450 0    39   ~ 0
 Note 1: place the \ncapacitors near VDD
 Text Label 4850 850  2    50   ~ 0
-VBUS
+VBUS_1
 Wire Wire Line
 	4850 850  4850 950 
 Wire Notes Line
@@ -835,9 +835,9 @@ Wire Notes Line
 Text Label 7250 4300 0    50   ~ 0
 3v3_MCU
 Text HLabel 1250 1000 0    50   Input ~ 0
-VBUS
+VBUS_1
 Text Label 2050 1000 2    50   ~ 0
-VBUS
+VBUS_1
 Text HLabel 1250 1200 0    50   Input ~ 0
 3v3_MCU
 Text Label 2050 1200 2    50   ~ 0
