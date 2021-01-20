@@ -469,17 +469,6 @@ Wire Wire Line
 	9950 5950 9850 5950
 Wire Wire Line
 	9850 5950 9850 5850
-$Comp
-L power:+BATT #PWR036
-U 1 1 5F837E39
-P 9850 5850
-F 0 "#PWR036" H 9850 5700 50  0001 C CNN
-F 1 "+BATT" H 9865 6023 50  0000 C CNN
-F 2 "" H 9850 5850 50  0001 C CNN
-F 3 "" H 9850 5850 50  0001 C CNN
-	1    9850 5850
-	1    0    0    -1  
-$EndComp
 Text Notes 9750 5600 0    50   ~ 0
 Battery connector\n(Battery Power Output)
 $Comp
@@ -1710,4 +1699,6 @@ F 3 "~" H 4150 2900 50  0001 C CNN
 	1    4150 2900
 	0    1    -1   0   
 $EndComp
+Text Label 9850 5850 0    50   ~ 0
+VBAT
 $EndSCHEMATC
