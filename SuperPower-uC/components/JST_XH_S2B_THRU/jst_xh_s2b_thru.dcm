@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP JST_XH_S2B_thru
+D JST XH connector, Pitch 2.5mm, 3Amax, Right Angle, Thru
+K connector JST XH
+F http://www.jst-mfg.com/product/pdf/eng/eXH.pdf
+$ENDCMP
+#
+#End Doc Library

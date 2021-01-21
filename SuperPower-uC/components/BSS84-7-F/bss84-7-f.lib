@@ -1,0 +1,78 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# BSS84-7-F
+#
+DEF BSS84-7-F Q 0 0 Y N 1 F N
+F0 "Q" 200 75 50 H V L CNN
+F1 "BSS84-7-F" 200 0 50 H V L CNN
+F2 "Package_TO_SOT_SMD:SOT-23" 200 100 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "Diodes Incorporated" 0 0 50 H I C CNN "Mfr_name"
+F5 "BSS84-7-F" 0 0 50 H I C CNN "Mfr_no"
+F6 "SOT23-3" 375 -75 50 H V C CNN "Package"
+F7 "P" 0 0 50 H I C CNN "mos_Type"
+F8 "-50V" 0 0 50 H I C CNN "mos_VDSS"
+F9 "10Ω" 375 -150 50 H V C CNN "mos_RDSon"
+F10 "-0.13A" 0 0 50 H I C CNN "mos_IDmax"
+F11 "-0.8V_to_-2.0V" 0 0 50 H I C CNN "mos_VGSth"
+F12 "20V" 0 0 50 H I C CNN "mos_VGSS"
+F13 "https://octopart.com/bss84-7-f-diodes+inc.-335925?r=sp#PriceAndStock" 0 0 50 H I C CNN "Octopart_link"
+F14 "https://fr.farnell.com/diodes-inc/bss84-7-f/mosfetcanal-p50v0-13asot23-3/dp/1843716" 0 0 50 H I C CNN "Farnell_link"
+F15 "1843716" 0 0 50 H I C CNN "Farnell_ref"
+F16 "2020-12-20" 0 0 50 H I C CNN "Farnell_check_date"
+F17 "-" 0 0 50 H I C CNN "Farnell_price_qt=1"
+F18 "0,17 €" 0 0 50 H I C CNN "Farnell_price_qt=10"
+F19 "0,0778 €" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F20 "0,0233 €" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F21 "23,312" 0 0 50 H I C CNN "Farnell_stock"
+F22 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated_BSS84-7-F_Diodes-Incorporated-BSS84-7-F_C85202.html" 0 0 50 H I C CNN "LCSC_link"
+F23 "C85202" 0 0 50 H I C CNN "LCSC_ref"
+F24 "2020-12-20" 0 0 50 H I C CNN "LCSC_check_date"
+F25 "-" 0 0 50 H I C CNN "LCSC_price_qt=1"
+F26 "-" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F27 "$0.0329" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F28 "$0.0236" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F29 "54,480" 0 0 50 H I C CNN "LCSC_stock"
+F30 "https://eu.mouser.com/ProductDetail/Diodes-Incorporated/BSS84-7-F/?qs=%2Fha2pyFaduh3xl%252BWGBx4Bd7HaWLSRy%252Bo5kzZv5xjHWA%3D" 0 0 50 H I C CNN "Mouser_link"
+F31 "621-BSS84-F" 0 0 50 H I C CNN "Mouser_ref"
+F32 "2020-12-20" 0 0 50 H I C CNN "Mouser_check_date"
+F33 "$0.232" 0 0 50 H I C CNN "Mouser_price_qt=1"
+F34 "$0.159" 0 0 50 H I C CNN "Mouser_price_qt=10"
+F35 "$0.076" 0 0 50 H I C CNN "Mouser_price_qt=100"
+F36 "$0.045" 0 0 50 H I C CNN "Mouser_price_qt=1000"
+F37 "197,827" 0 0 50 H I C CNN "Mouser_stock"
+F38 "https://fr.rs-online.com/web/p/transistors-mosfet/7384932/" 0 0 50 H I C CNN "RS_link"
+F39 "738-4932" 0 0 50 H I C CNN "RS_ref"
+F40 "2020-12-20" 0 0 50 H I C CNN "RS_check_date"
+F41 "-" 0 0 50 H I C CNN "RS_price_qt=1"
+F42 "-" 0 0 50 H I C CNN "RS_price_qt=10"
+F43 "0,066 €" 0 0 50 H I C CNN "RS_price_qt=100"
+F44 "0,041 €" 0 0 50 H I C CNN "RS_price_qt=1000"
+F45 "14,200" 0 0 50 H I C CNN "RS_stock"
+F46 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F47 "1.00" 0 0 50 H I C CNN "Release_version"
+F48 "2020-12-20" 0 0 50 H I C CNN "Release_date"
+F49 "ManWithNoName" 0 0 50 H I C CNN "Designer"
+DRAW
+C 65 0 110 0 1 10 N
+C 100 -70 10 0 1 0 F
+C 100 70 10 0 1 0 F
+P 2 0 1 0 10 0 -100 0 N
+P 2 0 1 10 10 75 10 -75 N
+P 2 0 1 10 30 -50 30 -90 N
+P 2 0 1 10 30 20 30 -20 N
+P 2 0 1 10 30 90 30 50 N
+P 2 0 1 0 100 100 100 70 N
+P 3 0 1 0 100 -100 100 0 30 0 N
+P 4 0 1 0 30 70 130 70 130 -70 30 -70 N
+P 4 0 1 0 90 0 50 15 50 -15 90 0 F
+P 4 0 1 0 110 -20 115 -15 145 -15 150 -10 N
+P 4 0 1 0 130 -15 115 10 145 10 130 -15 N
+X G 1 -200 0 100 R 50 50 1 1 I
+X S 2 100 -200 100 U 50 50 1 1 P
+X D 3 100 200 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

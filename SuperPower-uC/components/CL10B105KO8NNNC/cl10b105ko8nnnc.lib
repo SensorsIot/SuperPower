@@ -1,0 +1,65 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# CL10B105KO8NNNC
+#
+DEF CL10B105KO8NNNC C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "CL10B105KO8NNNC" 25 -100 50 H I L CNN
+F2 "Capacitor_SMD:C_0603_1608Metric" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "Samsung" 0 0 50 H I C CNN "Mfr_name"
+F5 "CL10B105KO8NNNC" 0 0 50 H I C CNN "Mfr_no"
+F6 "1µF" 125 -100 50 H V C CNN "cap_Value"
+F7 "0603" 125 -175 50 H V C CNN "Package"
+F8 "X7R" 325 -175 50 H V C CNN "cap_Dielectric"
+F9 "16V" 500 -175 50 H V C CNN "cap_Voltage"
+F10 "https://octopart.com/cl10b105ko8nnnc-samsung-19018973?r=sp" 0 0 50 H I C CNN "Octopart_link"
+F11 "https://fr.farnell.com/samsung-electro-mechanics/cl10b105ko8nnnc/condensateur-1uf-16v-mlcc-0603/dp/3013416?st=CL10B105KO8NNNC" 0 0 50 H I C CNN "Farnell_link"
+F12 "3013416" 0 0 50 H I C CNN "Farnell_ref"
+F13 "2020-11-29" 0 0 50 H I C CNN "Farnell_check_date"
+F14 "-" 0 0 50 H I C CNN "Farnell_price_qt=1"
+F15 "0,0348 €" 0 0 50 H I C CNN "Farnell_price_qt=10"
+F16 "0,0282 €" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F17 "0,014 €" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F18 "8,899" 0 0 50 H I C CNN "Farnell_stock"
+F19 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL10B105KO8NNNC_1uF-105-10-16V_C59782.html" 0 0 50 H I C CNN "LCSC_link"
+F20 "C59782" 0 0 50 H I C CNN "LCSC_ref"
+F21 "2020-11-29" 0 0 50 H I C CNN "LCSC_check_date"
+F22 "-" 0 0 50 H I C CNN "LCSC_price_qt=1"
+F23 "-" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F24 "$0.0051" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F25 "$0.0037" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F26 "521,550" 0 0 50 H I C CNN "LCSC_stock"
+F27 "https://eu.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL10B105KO8NNNC?qs=%2Fha2pyFaduieHDAu2oFb63CEYjc5CYz5gBw28wXw4psj1CqKhO2V6Q%3D%3D" 0 0 50 H I C CNN "Mouser_link"
+F28 "187-CL10B105KO8NNNC" 0 0 50 H I C CNN "Mouser_ref"
+F29 "2020-11-29" 0 0 50 H I C CNN "Mouser_check_date"
+F30 "$0.101" 0 0 50 H I C CNN "Mouser_price_qt=1"
+F31 "$0.050" 0 0 50 H I C CNN "Mouser_price_qt=10"
+F32 "$0.023" 0 0 50 H I C CNN "Mouser_price_qt=100"
+F33 "$0.012" 0 0 50 H I C CNN "Mouser_price_qt=1000"
+F34 "579,557" 0 0 50 H I C CNN "Mouser_stock"
+F35 "https://fr.rs-online.com/web/p/condensateurs-ceramique-multicouches/7664787/?sra=pmpn" 0 0 50 H I C CNN "RS_link"
+F36 "766-4787" 0 0 50 H I C CNN "RS_ref"
+F37 "2020-11-29" 0 0 50 H I C CNN "RS_check_date"
+F38 "-" 0 0 50 H I C CNN "RS_price_qt=1"
+F39 "-" 0 0 50 H I C CNN "RS_price_qt=10"
+F40 "-" 0 0 50 H I C CNN "RS_price_qt=100"
+F41 "0,008 € (QT=4000)" 0 0 50 H I C CNN "RS_price_qt=1000"
+F42 "248,000" 0 0 50 H I C CNN "RS_stock"
+F43 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F44 "1.01" 0 0 50 H I C CNN "Release_version"
+F45 "2020-12-21" 0 0 50 H I C CNN "Release_date"
+F46 "ManWithNoName" 0 0 50 H I C CNN "Designer"
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
