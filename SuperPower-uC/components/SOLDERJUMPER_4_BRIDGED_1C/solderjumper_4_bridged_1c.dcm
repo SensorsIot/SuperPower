@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SolderJumper_4_Bridged_1C
+D Solder Jumper, 4-pole, pins 1+C closed/bridged
+K Solder Jumper
+F ~
+$ENDCMP
+#
+#End Doc Library

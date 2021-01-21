@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Battery_Cell_Holder_18650_SMT_1042
+D Single-cell battery holder, 18650, SMT, Keystone 1042
+K battery cell
+F https://www.keyelco.com/product-pdf.cfm?p=918
+$ENDCMP
+#
+#End Doc Library

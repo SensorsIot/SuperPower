@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP JST_PH_S2B_thru
+D JST PH connector, Pitch 2mm, 2Amax, Right Angle, Thru
+K connector JST PH
+F http://www.jst-mfg.com/product/pdf/eng/ePH.pdf
+$ENDCMP
+#
+#End Doc Library

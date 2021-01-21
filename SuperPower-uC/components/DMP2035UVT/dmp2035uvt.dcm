@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DMP2035UVT
+D -20V Vds, -6.0A Id, P-Channel MOSFET with ESD protection, TSOT26
+K transistor PMOS P-MOS P-MOSFET
+F https://www.diodes.com/assets/Datasheets/DMP2035UVT.pdf
+$ENDCMP
+#
+#End Doc Library

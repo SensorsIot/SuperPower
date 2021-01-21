@@ -1,0 +1,75 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# SPM6530T-4R7M
+#
+DEF SPM6530T-4R7M L 0 40 N N 1 F N
+F0 "L" -50 0 50 V V C CNN
+F1 "SPM6530T-4R7M" 110 0 50 V V C CNN
+F2 "Inductor_SMD_user:L_TDK_SPM6530T" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "TDK" 0 0 50 H I C CNN "Mfr_name"
+F5 "SPM6530T-4R7M" 0 0 50 H I C CNN "Mfr_no"
+F6 "6,5x7,1x3,0mm" 0 0 50 H I C CNN "Package"
+F7 "4.7µH" 250 -75 50 H V C CNN "Ind_value"
+F8 "5.6A" 0 0 50 H I C CNN "Ind_current_max"
+F9 "6.2A" 0 0 50 H I C CNN "Ind_current_sat_max"
+F10 "35.8mOhm" 350 -150 50 H V C CNN "Ind_DCR_typ"
+F11 "20%" 0 0 50 H I C CNN "Ind_tol"
+F12 ">10MHz" 0 0 50 H I C CNN "Ind_SFR"
+F13 "https://octopart.com/spm6530t-4r7m-tdk-18903911?r=sp" 0 0 50 H I C CNN "Octopart_link"
+F14 "https://lcsc.com/product-detail/Power-Inductors_TDK-SPM6530T-4R7M_C76857.html" 0 0 50 H I C CNN "LCSC_link"
+F15 "C76857" 0 0 50 H I C CNN "LCSC_ref"
+F16 "2020-12-02" 0 0 50 H I C CNN "LCSC_check_date"
+F17 "$0.1554" 0 0 50 H I C CNN "LCSC_price_qt=1"
+F18 "$0.1152" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F19 "$0.1004" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F20 "$0.0955" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F21 "16,144" 0 0 50 H I C CNN "LCSC_stock"
+F22 "https://fr.farnell.com/tdk/spm6530t-4r7m/inductance-4-7uh-20-blindee/dp/2215613?st=SPM6530T-4R7M" 0 0 50 H I C CNN "Farnell_link"
+F23 "2215613" 0 0 50 H I C CNN "Farnell_ref"
+F24 "2020-12-02" 0 0 50 H I C CNN "Farnell_check_date"
+F25 "1,36 €" 0 0 50 H I C CNN "Farnell_price_qt=1"
+F26 "1,36 €" 0 0 50 H I C CNN "Farnell_price_qt=10"
+F27 "0,738 €" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F28 "0,454 €" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F29 "500" 0 0 50 H I C CNN "Farnell_stock"
+F30 "https://eu.mouser.com/ProductDetail/TDK/SPM6530T-4R7M?qs=chjFIDm9dbpOGKMR3qNvlw%3D%3D" 0 0 50 H I C CNN "Mouser_link"
+F31 "810-SPM6530T-4R7M" 0 0 50 H I C CNN "Mouser_ref"
+F32 "2020-12-02" 0 0 50 H I C CNN "Mouser_check_date"
+F33 "$1.42" 0 0 50 H I C CNN "Mouser_price_qt=1"
+F34 "$1.07" 0 0 50 H I C CNN "Mouser_price_qt=10"
+F35 "$0.812" 0 0 50 H I C CNN "Mouser_price_qt=100"
+F36 "$0.564" 0 0 50 H I C CNN "Mouser_price_qt=1000"
+F37 "353" 0 0 50 H I C CNN "Mouser_stock"
+F38 "https://fr.rs-online.com/web/p/inductances-bobinees-cms/9164260/" 0 0 50 H I C CNN "RS_link"
+F39 "916-4260" 0 0 50 H I C CNN "RS_ref"
+F40 "2020-12-02" 0 0 50 H I C CNN "RS_check_date"
+F41 "-" 0 0 50 H I C CNN "RS_price_qt=1"
+F42 "1,224 €" 0 0 50 H I C CNN "RS_price_qt=10"
+F43 "0,92 €" 0 0 50 H I C CNN "RS_price_qt=100"
+F44 "0,734 €" 0 0 50 H I C CNN "RS_price_qt=1000"
+F45 "515" 0 0 50 H I C CNN "RS_stock"
+F46 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F47 "1.01" 0 0 50 H I C CNN "Release_version"
+F48 "2020-12-12" 0 0 50 H I C CNN "Release_date"
+F49 "ManWithNoName" 0 0 50 H I C CNN "Designer"
+$FPLIST
+ Choke_*
+ *Coil*
+ Inductor_*
+ L_*
+$ENDFPLIST
+DRAW
+A 0 -75 25 -899 899 0 1 0 N 0 -100 0 -50
+A 0 -25 25 -899 899 0 1 0 N 0 -50 0 0
+A 0 25 25 -899 899 0 1 0 N 0 0 0 50
+A 0 75 25 -899 899 0 1 0 N 0 50 0 100
+P 2 0 1 0 40 100 40 -100 N
+P 2 0 1 0 60 -100 60 100 N
+X 1 1 0 150 50 D 50 50 1 1 P
+X 2 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

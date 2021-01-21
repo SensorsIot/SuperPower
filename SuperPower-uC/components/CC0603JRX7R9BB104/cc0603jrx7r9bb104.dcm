@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CC0603JRX7R9BB104
+D MLCC 0603 capacitor 100nF X7R 50V
+K cap capacitor x7r 0603
+F https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,64 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# JST_XH_S2B_thru
+#
+DEF JST_XH_S2B_thru J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "JST_XH_S2B_thru" 0 -200 50 H V C CNN
+F2 "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "JST" 0 0 50 H I C CNN "Mfr_name"
+F5 "S2B-XH-A(LF)(SN)" 0 0 50 H I C CNN "Mfr_no"
+F6 "XH Right Angle Thru 2pins" 0 0 50 H I C CNN "Package"
+F7 "White" 0 0 50 H I C CNN "Color"
+F8 "https://octopart.com/s2b-xh-a%28lf%29%28sn%29-jst-3990369?r=sp#PriceAndStock" 0 0 50 H I C CNN "Octopart_link"
+F9 "https://fr.farnell.com/jst-japan-solderless-terminals/s2b-xh-a-lf-sn/embase-male-90-deg-2-voies/dp/1516289?ost=s2b-xh-a%28lf%29%28sn%29" 0 0 50 H I C CNN "Farnell_link"
+F10 "1516289" 0 0 50 H I C CNN "Farnell_ref"
+F11 "2020-11-24" 0 0 50 H I C CNN "Farnell_check_date"
+F12 "-" 0 0 50 H I C CNN "Farnell_price_qt=1"
+F13 "-" 0 0 50 H I C CNN "Farnell_price_qt=10"
+F14 "0.099€" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F15 "0.068€" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F16 "53048" 0 0 50 H I C CNN "Farnell_stock"
+F17 "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_JST-Sales-America-S2B-XH-A-LF-SN_C157931.html" 0 0 50 H I C CNN "LCSC_link"
+F18 "C157931" 0 0 50 H I C CNN "LCSC_ref"
+F19 "2020-11-24" 0 0 50 H I C CNN "LCSC_check_date"
+F20 "-" 0 0 50 H I C CNN "LCSC_price_qt=1"
+F21 "$0.054" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F22 "$0.040" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F23 "$0.035" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F24 "23650" 0 0 50 H I C CNN "LCSC_stock"
+F25 "-" 0 0 50 H I C CNN "Mouser_link"
+F26 "-" 0 0 50 H I C CNN "Mouser_ref"
+F27 "2020-11-24" 0 0 50 H I C CNN "Mouser_check_date"
+F28 "-" 0 0 50 H I C CNN "Mouser_price_qt=1"
+F29 "-" 0 0 50 H I C CNN "Mouser_price_qt=10"
+F30 "-" 0 0 50 H I C CNN "Mouser_price_qt=100"
+F31 "-" 0 0 50 H I C CNN "Mouser_price_qt=1000"
+F32 "-" 0 0 50 H I C CNN "Mouser_stock"
+F33 "https://fr.rs-online.com/web/p/embases-circuits-imprimes/8201582/" 0 0 50 H I C CNN "RS_link"
+F34 "820-1582" 0 0 50 H I C CNN "RS_ref"
+F35 "2020-11-24" 0 0 50 H I C CNN "RS_check_date"
+F36 "-" 0 0 50 H I C CNN "RS_price_qt=1"
+F37 "0.43€" 0 0 50 H I C CNN "RS_price_qt=10"
+F38 "-" 0 0 50 H I C CNN "RS_price_qt=100"
+F39 "0.108€" 0 0 50 H I C CNN "RS_price_qt=1000"
+F40 "5760" 0 0 50 H I C CNN "RS_stock"
+F41 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F42 "1.01" 0 0 50 H I C CNN "Release_version"
+F43 "2020-12-12" 0 0 50 H I C CNN "Release_date"
+F44 "ManWithNoName" 0 0 50 H I C CNN "Designer"
+$FPLIST
+ Connector_JST:JST_XH_?2*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

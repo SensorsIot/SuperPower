@@ -1,0 +1,64 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# JST_PH_S2B_thru
+#
+DEF JST_PH_S2B_thru J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "JST_PH_S2B_thru" 0 -200 50 H V C CNN
+F2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "JST" 0 0 50 H I C CNN "Mfr_name"
+F5 "S2B-PH-K-S(LF)(SN)" 0 0 50 H I C CNN "Mfr_no"
+F6 "PH Right Angle Thru 2pins" 0 0 50 H I C CNN "Package"
+F7 "White" 0 0 50 H I C CNN "Color"
+F8 "https://octopart.com/s2b-ph-k-s%28lf%29%28sn%29-jst-248883?r=sp" 0 0 50 H I C CNN "Octopart_link"
+F9 "https://fr.farnell.com/jst-japan-solderless-terminals/s2b-ph-k-s-lf-sn/embase-entree-laterale-2-voies/dp/9491902?scope=partnumberlookahead&ost=S2B-PH-K-S+%28LF%29%28SN%29&searchref=searchlookahead&exaMfpn=true" 0 0 50 H I C CNN "Farnell_link"
+F10 "9491902" 0 0 50 H I C CNN "Farnell_ref"
+F11 "2020-11-24" 0 0 50 H I C CNN "Farnell_check_date"
+F12 "-" 0 0 50 H I C CNN "Farnell_price_qt=1"
+F13 "-" 0 0 50 H I C CNN "Farnell_price_qt=10"
+F14 "0.072€" 0 0 50 H I C CNN "Farnell_price_qt=100"
+F15 "0.063€" 0 0 50 H I C CNN "Farnell_price_qt=1000"
+F16 "0 (available from 2021-02-14)" 0 0 50 H I C CNN "Farnell_stock"
+F17 "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_JST-Sales-America-S2B-PH-K-S-LF-SN_C173752.html" 0 0 50 H I C CNN "LCSC_link"
+F18 "C173752" 0 0 50 H I C CNN "LCSC_ref"
+F19 "2020-11-24" 0 0 50 H I C CNN "LCSC_check_date"
+F20 "-" 0 0 50 H I C CNN "LCSC_price_qt=1"
+F21 "$0.038" 0 0 50 H I C CNN "LCSC_price_qt=10"
+F22 "$0.028" 0 0 50 H I C CNN "LCSC_price_qt=100"
+F23 "$0.024" 0 0 50 H I C CNN "LCSC_price_qt=1000"
+F24 "55470" 0 0 50 H I C CNN "LCSC_stock"
+F25 "-" 0 0 50 H I C CNN "Mouser_link"
+F26 "-" 0 0 50 H I C CNN "Mouser_ref"
+F27 "2020-11-24" 0 0 50 H I C CNN "Mouser_check_date"
+F28 "-" 0 0 50 H I C CNN "Mouser_price_qt=1"
+F29 "-" 0 0 50 H I C CNN "Mouser_price_qt=10"
+F30 "-" 0 0 50 H I C CNN "Mouser_price_qt=100"
+F31 "-" 0 0 50 H I C CNN "Mouser_price_qt=1000"
+F32 "-" 0 0 50 H I C CNN "Mouser_stock"
+F33 "https://fr.rs-online.com/web/p/embases-circuits-imprimes/8201494/" 0 0 50 H I C CNN "RS_link"
+F34 "820-1494" 0 0 50 H I C CNN "RS_ref"
+F35 "2020-11-24" 0 0 50 H I C CNN "RS_check_date"
+F36 "-" 0 0 50 H I C CNN "RS_price_qt=1"
+F37 "0.148€" 0 0 50 H I C CNN "RS_price_qt=10"
+F38 "0.138€" 0 0 50 H I C CNN "RS_price_qt=100"
+F39 "0.068€" 0 0 50 H I C CNN "RS_price_qt=1000"
+F40 "275" 0 0 50 H I C CNN "RS_stock"
+F41 "TO_CHECK" 0 0 50 H I C CNN "Status"
+F42 "1.01" 0 0 50 H I C CNN "Release_version"
+F43 "2020-12-12" 0 0 50 H I C CNN "Release_date"
+F44 "ManWithNoName" 0 0 50 H I C CNN "Designer"
+$FPLIST
+ Connector_JST:JST_PH_?2*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

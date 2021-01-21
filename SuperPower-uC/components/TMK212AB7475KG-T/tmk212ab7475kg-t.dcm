@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TMK212AB7475KG-T
+D MLCC 0805 capacitor 4.7µF X7R 25V
+K cap capacitor x7r 0805
+F https://eu.mouser.com/datasheet/2/396/mlcc02_e-1307760.pdf
+$ENDCMP
+#
+#End Doc Library
