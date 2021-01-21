@@ -35,9 +35,9 @@ NoConn ~ 7750 3200
 NoConn ~ 7750 3300
 NoConn ~ 7750 3400
 Wire Wire Line
-	3600 3200 3900 3200
+	3250 3400 3550 3400
 Wire Wire Line
-	4900 2700 4900 2850
+	4550 2900 4550 3050
 Connection ~ 6500 3700
 Wire Wire Line
 	6500 3300 6500 3700
@@ -188,60 +188,60 @@ $EndComp
 $Comp
 L power:PWR_FLAG #FLG0104
 U 1 1 5F8735A3
-P 4900 2700
-F 0 "#FLG0104" H 4900 2775 50  0001 C CNN
-F 1 "PWR_FLAG" H 4900 2873 50  0000 C CNN
-F 2 "" H 4900 2700 50  0001 C CNN
-F 3 "~" H 4900 2700 50  0001 C CNN
-	1    4900 2700
+P 4550 2900
+F 0 "#FLG0104" H 4550 2975 50  0001 C CNN
+F 1 "PWR_FLAG" H 4550 3073 50  0000 C CNN
+F 2 "" H 4550 2900 50  0001 C CNN
+F 3 "~" H 4550 2900 50  0001 C CNN
+	1    4550 2900
 	1    0    0    -1  
 $EndComp
-Connection ~ 4900 2700
+Connection ~ 4550 2900
 Wire Wire Line
-	5100 3000 5400 3000
+	4750 3200 5050 3200
 $Comp
 L Connector:Conn_01x02_Male J4
 U 1 1 5F7CE401
-P 5600 3000
-F 0 "J4" H 5708 3181 50  0000 C CNN
-F 1 "Solar in" H 5708 3090 50  0000 C CNN
-F 2 "Connector_JST:JST_EH_S2B-EH_1x02_P2.50mm_Horizontal" H 5600 3000 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1811051822_JST-Sales-America-S2B-XH-A-LF-SN_C157931.pdf" H 5600 3000 50  0001 C CNN
-F 4 "C157931" H 5600 3000 50  0001 C CNN "LCSC"
-	1    5600 3000
+P 5250 3200
+F 0 "J4" H 5358 3381 50  0000 C CNN
+F 1 "Solar in" H 5358 3290 50  0000 C CNN
+F 2 "Connector_JST:JST_EH_S2B-EH_1x02_P2.50mm_Horizontal" H 5250 3200 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811051822_JST-Sales-America-S2B-XH-A-LF-SN_C157931.pdf" H 5250 3200 50  0001 C CNN
+F 4 "C157931" H 5250 3200 50  0001 C CNN "LCSC"
+	1    5250 3200
 	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0123
 U 1 1 5F7E4D0C
-P 5150 3150
-F 0 "#PWR0123" H 5150 2900 50  0001 C CNN
-F 1 "GND" H 5155 2977 50  0000 C CNN
-F 2 "" H 5150 3150 50  0001 C CNN
-F 3 "" H 5150 3150 50  0001 C CNN
-	1    5150 3150
+P 4800 3350
+F 0 "#PWR0123" H 4800 3100 50  0001 C CNN
+F 1 "GND" H 4805 3177 50  0000 C CNN
+F 2 "" H 4800 3350 50  0001 C CNN
+F 3 "" H 4800 3350 50  0001 C CNN
+	1    4800 3350
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	5400 3100 5150 3100
+	5050 3300 4800 3300
 Wire Wire Line
-	5150 3100 5150 3150
+	4800 3300 4800 3350
 $Comp
 L Jumper:SolderJumper_3_Open JP1
 U 1 1 5F7FF752
-P 4900 3000
-F 0 "JP1" H 4750 2950 50  0000 C CNN
-F 1 "CHRG_Jumper" H 4950 3100 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 4900 3000 50  0001 C CNN
-F 3 "~" H 4900 3000 50  0001 C CNN
-	1    4900 3000
+P 4550 3200
+F 0 "JP1" H 4400 3150 50  0000 C CNN
+F 1 "CHRG_Jumper" H 4600 3300 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 4550 3200 50  0001 C CNN
+F 3 "~" H 4550 3200 50  0001 C CNN
+	1    4550 3200
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	7050 5400 7050 5600
 Text Label 7600 5600 2    50   ~ 0
 3v3FTDI
-Text Label 4300 3000 0    50   ~ 0
+Text Label 3950 3200 0    50   ~ 0
 VBUS
 Text Label 7600 5200 2    50   ~ 0
 VBUS
@@ -267,36 +267,36 @@ $EndComp
 $Comp
 L Device:C C21
 U 1 1 5F8B56C8
-P 4100 3150
-F 0 "C21" H 4200 3200 50  0000 L CNN
-F 1 "1µF" H 4200 3100 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4138 3000 50  0001 C CNN
-F 3 "~" H 4100 3150 50  0001 C CNN
-F 4 "C15849" H 4100 3150 50  0001 C CNN "LCSC"
-	1    4100 3150
+P 3750 3350
+F 0 "C21" H 3850 3400 50  0000 L CNN
+F 1 "1µF" H 3850 3300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3788 3200 50  0001 C CNN
+F 3 "~" H 3750 3350 50  0001 C CNN
+F 4 "C15849" H 3750 3350 50  0001 C CNN "LCSC"
+	1    3750 3350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0127
 U 1 1 5F8BD7AC
-P 4100 3300
-F 0 "#PWR0127" H 4100 3050 50  0001 C CNN
-F 1 "GND" H 4105 3127 50  0000 C CNN
-F 2 "" H 4100 3300 50  0001 C CNN
-F 3 "" H 4100 3300 50  0001 C CNN
-	1    4100 3300
+P 3750 3500
+F 0 "#PWR0127" H 3750 3250 50  0001 C CNN
+F 1 "GND" H 3755 3327 50  0000 C CNN
+F 2 "" H 3750 3500 50  0001 C CNN
+F 3 "" H 3750 3500 50  0001 C CNN
+	1    3750 3500
 	-1   0    0    -1  
 $EndComp
-Connection ~ 4100 3000
+Connection ~ 3750 3200
 Text Label 8100 2700 2    50   ~ 0
 3v3FTDI
 Wire Wire Line
 	7750 2700 8100 2700
 Wire Wire Line
-	3600 3300 3900 3300
-Text Label 3900 3200 2    50   ~ 0
+	3250 3500 3550 3500
+Text Label 3550 3400 2    50   ~ 0
 D+
-Text Label 3900 3300 2    50   ~ 0
+Text Label 3550 3500 2    50   ~ 0
 D-
 Text Label 6750 3100 0    50   ~ 0
 D+
@@ -335,7 +335,7 @@ Wire Notes Line
 Wire Notes Line
 	2300 4850 2300 2200
 Text Notes 2350 2350 0    50   ~ 0
-USB C Input\n
+USB micro-B Input\n
 Text HLabel 1150 950  0    50   Output ~ 0
 VCHARGE
 Text HLabel 1150 1250 0    50   Input ~ 0
@@ -382,10 +382,10 @@ Text Label 6750 2800 0    50   ~ 0
 TX
 Text Label 6750 2900 0    50   ~ 0
 RX
-Text Label 5350 2700 2    50   ~ 0
+Text Label 5000 2900 2    50   ~ 0
 VCHARGE
 Wire Wire Line
-	4900 2700 5350 2700
+	4550 2900 5000 2900
 Wire Notes Line
 	550  550  1900 550 
 Wire Notes Line
@@ -402,47 +402,36 @@ Wire Wire Line
 	1150 850  1600 850 
 Text Label 1600 850  2    50   ~ 0
 Vin_header
-Text Label 4400 2700 0    50   ~ 0
+Text Label 4050 2900 0    50   ~ 0
 Vin_header
 Wire Wire Line
-	4400 2700 4900 2700
+	4050 2900 4550 2900
 Wire Wire Line
-	3300 3600 3300 3650
+	2950 3800 2950 3850
 $Comp
 L power:GND #PWR0122
 U 1 1 5F7EBB3E
-P 3300 3650
-F 0 "#PWR0122" H 3300 3400 50  0001 C CNN
-F 1 "GND" H 3305 3477 50  0000 C CNN
-F 2 "" H 3300 3650 50  0001 C CNN
-F 3 "" H 3300 3650 50  0001 C CNN
-	1    3300 3650
+P 2950 3850
+F 0 "#PWR0122" H 2950 3600 50  0001 C CNN
+F 1 "GND" H 2955 3677 50  0000 C CNN
+F 2 "" H 2950 3850 50  0001 C CNN
+F 3 "" H 2950 3850 50  0001 C CNN
+	1    2950 3850
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:USB_B_Micro J3
 U 1 1 5F937C28
-P 3300 3200
-F 0 "J3" H 3357 3667 50  0000 C CNN
-F 1 "USB_B_Micro" H 3357 3576 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 3357 3575 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/2002271812_XKB-Connectivity-U254-051T-4BH23-S2B_C319164.pdf" H 3450 3150 50  0001 C CNN
-F 4 "C319164" H 3300 3200 50  0001 C CNN "LCSC"
-	1    3300 3200
+P 2950 3400
+F 0 "J3" H 3007 3867 50  0000 C CNN
+F 1 "USB_B_Micro" H 3007 3776 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 3007 3775 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/2002271812_XKB-Connectivity-U254-051T-4BH23-S2B_C319164.pdf" H 3100 3350 50  0001 C CNN
+F 4 "C319164" H 2950 3400 50  0001 C CNN "LCSC"
+	1    2950 3400
 	1    0    0    -1  
 $EndComp
-NoConn ~ 3600 3400
-$Comp
-L Connector:TestPoint TP1
-U 1 1 5F960985
-P 7200 5550
-F 0 "TP1" H 7250 5700 50  0000 L CNN
-F 1 "TestPoint" H 7258 5577 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 7400 5550 50  0001 C CNN
-F 3 "~" H 7400 5550 50  0001 C CNN
-	1    7200 5550
-	1    0    0    -1  
-$EndComp
+NoConn ~ 3250 3600
 Wire Wire Line
 	6700 5200 6550 5200
 Wire Wire Line
@@ -466,14 +455,7 @@ Wire Wire Line
 	6550 5600 7050 5600
 Connection ~ 7050 5600
 Wire Wire Line
-	7050 5600 7200 5600
-Wire Wire Line
-	7200 5550 7200 5600
-Connection ~ 7200 5600
-Wire Wire Line
-	7200 5600 7600 5600
-Wire Wire Line
-	4100 3000 4700 3000
+	3750 3200 4350 3200
 $Comp
 L Connector:TestPoint TP6
 U 1 1 5F9E682C
@@ -505,8 +487,8 @@ Wire Wire Line
 Wire Wire Line
 	8000 3000 8250 3000
 Wire Wire Line
-	3600 3000 4100 3000
-NoConn ~ 3200 3600
+	3250 3200 3750 3200
+NoConn ~ 2850 3800
 $Comp
 L Transistor_BJT:BC817 Q3
 U 1 1 5FC9B8EE
@@ -548,4 +530,10 @@ F 4 " C8598" H 9200 3500 50  0001 C CNN "LCSC"
 $EndComp
 Wire Wire Line
 	9050 3500 9000 3500
+Text Notes 4700 3800 0    50   ~ 0
+Maximum Input voltage is 8V\n(6v panels reccomended)
+Text Notes 3200 4300 0    50   ~ 0
+!!! If the CHRG_Jumper is fully bridged,\ndo not connect USB and solar at the same time !!!
+Wire Wire Line
+	7050 5600 7600 5600
 $EndSCHEMATC
