@@ -410,35 +410,16 @@ Wire Wire Line
 	3300 2500 3550 2500
 Connection ~ 3550 2500
 $Comp
-L Connector:Conn_01x02_Male J2
-U 1 1 5F7ECA21
-P 4150 3400
-F 0 "J2" H 4258 3581 50  0000 C CNN
-F 1 "Thermistor" H 4258 3490 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4150 3400 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/TDK-NTCG163JF103FT1_C76589.pdf" H 4150 3400 50  0001 C CNN
-F 4 "C76589" H 4150 3400 50  0001 C CNN "LCSC"
-	1    4150 3400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4650 3200 4650 3400
-Wire Wire Line
-	4650 3400 4350 3400
-Connection ~ 4650 3200
-$Comp
 L power:GND #PWR0104
 U 1 1 5F7EE01C
-P 4450 3500
-F 0 "#PWR0104" H 4450 3250 50  0001 C CNN
-F 1 "GND" H 4455 3327 50  0000 C CNN
-F 2 "" H 4450 3500 50  0001 C CNN
-F 3 "" H 4450 3500 50  0001 C CNN
-	1    4450 3500
+P 4650 3600
+F 0 "#PWR0104" H 4650 3350 50  0001 C CNN
+F 1 "GND" H 4655 3427 50  0000 C CNN
+F 2 "" H 4650 3600 50  0001 C CNN
+F 3 "" H 4650 3600 50  0001 C CNN
+	1    4650 3600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4350 3500 4450 3500
 $Comp
 L Device:R R?
 U 1 1 5FD8F02D
@@ -487,4 +468,25 @@ F 4 " C8598" H 7100 3200 50  0001 C CNN "LCSC"
 	1    7100 3200
 	0    1    1    0   
 $EndComp
+$Comp
+L Device:R J2
+U 1 1 600A8086
+P 4650 3400
+F 0 "J2" H 4720 3446 50  0000 L CNN
+F 1 "10k" H 4720 3355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4580 3400 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/TDK-NTCG163JF103FT1_C76589.pdf" H 4650 3400 50  0001 C CNN
+F 4 "C76589" H 4650 3400 50  0001 C CNN "LCSC"
+	1    4650 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 3550 4650 3600
+Wire Wire Line
+	4650 3250 4650 3200
+Connection ~ 4650 3200
+Text Notes 6100 3900 0    50   ~ 0
+This cirquit automatically pulls down the INT line when first powerd on
+Text Notes 3000 3800 0    50   ~ 0
+If thermistor is not in use,\nalso do not populate R3 and R2
 $EndSCHEMATC

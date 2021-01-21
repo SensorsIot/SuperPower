@@ -437,4 +437,10 @@ Wire Notes Line
 	550  600  550  2450
 Text GLabel 3750 2900 0    50   Input ~ 0
 INT_IO
+Text Notes 9000 2500 0    50   ~ 0
+!!!make sure the connected I2C devices don't\nhave internal pull-ups. Overwise they may cause\nhigh quiecent current and problems with the\nonboard communication if those are\nconnected to the AUX 3v3 and 5v pins!!!
+Text Notes 6850 3250 0    50   ~ 0
+Pullups can be swapped for lower value if needed
+Text Notes 3400 2150 0    50   ~ 0
+If not populated add pulldowns to the 3v3 and 5v EN pins
 $EndSCHEMATC

@@ -120,8 +120,8 @@ P 7050 3250
 F 0 "J1" H 7000 3300 50  0000 C CNN
 F 1 "Battery connector" H 7150 3400 50  0000 C CNN
 F 2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" H 7050 3250 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1811051822_JST-Sales-America-S2B-XH-A-LF-SN_C157931.pdf" H 7050 3250 50  0001 C CNN
-F 4 "C157931" H 7050 3250 50  0001 C CNN "LCSC"
+F 3 "https://datasheet.lcsc.com/szlcsc/1810261120_JST-Sales-America-S2B-PH-K-S-GW_C157932.pdf" H 7050 3250 50  0001 C CNN
+F 4 "C157932" H 7050 3250 50  0001 C CNN "LCSC"
 	1    7050 3250
 	1    0    0    -1  
 $EndComp

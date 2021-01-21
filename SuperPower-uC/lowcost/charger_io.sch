@@ -532,8 +532,8 @@ Wire Wire Line
 	9050 3500 9000 3500
 Text Notes 4700 3800 0    50   ~ 0
 Maximum Input voltage is 8V\n(6v panels reccomended)
-Text Notes 3200 4300 0    50   ~ 0
-!!! If the CHRG_Jumper is fully bridged,\ndo not connect USB and solar at the same time !!!
 Wire Wire Line
 	7050 5600 7600 5600
+Text Notes 3200 4300 0    50   ~ 0
+!!! If the CHRG_Jumper is fully bridged,\ndo not connect USB and solar at the same time !!!
 $EndSCHEMATC
