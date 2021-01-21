@@ -170,28 +170,6 @@ F3 "D+" I R 4100 4750 50
 F4 "D-" O R 4100 4850 50 
 F5 "VBUS" O R 4100 5000 50 
 $EndSheet
-$Comp
-L Connector:Conn_01x12_Female J7
-U 1 1 5FFBF918
-P 4150 6400
-F 0 "J7" H 4200 6400 50  0000 L CNN
-F 1 "Conn_01x12_Female" H 4178 6285 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x12_P2.54mm_Vertical" H 4150 6400 50  0001 C CNN
-F 3 "~" H 4150 6400 50  0001 C CNN
-	1    4150 6400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x12_Female J8
-U 1 1 5FFC3858
-P 4900 6400
-F 0 "J8" H 5000 6400 50  0000 C CNN
-F 1 "MCU_Board" H 4928 6285 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x12_P2.54mm_Vertical" H 4900 6400 50  0001 C CNN
-F 3 "~" H 4900 6400 50  0001 C CNN
-	1    4900 6400
-	-1   0    0    -1  
-$EndComp
 Text Label 8850 2950 0    50   ~ 0
 VBUS_2
 Text Label 8850 3150 0    50   ~ 0
@@ -258,18 +236,18 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0119
 U 1 1 6001A97E
-P 3750 7050
-F 0 "#PWR0119" H 3750 6800 50  0001 C CNN
-F 1 "GND" H 3755 6877 50  0000 C CNN
-F 2 "" H 3750 7050 50  0001 C CNN
-F 3 "" H 3750 7050 50  0001 C CNN
-	1    3750 7050
+P 2750 7050
+F 0 "#PWR0119" H 2750 6800 50  0001 C CNN
+F 1 "GND" H 2755 6877 50  0000 C CNN
+F 2 "" H 2750 7050 50  0001 C CNN
+F 3 "" H 2750 7050 50  0001 C CNN
+	1    2750 7050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3750 7000 3750 7050
+	2750 7000 2750 7050
 Wire Wire Line
-	3750 7000 3950 7000
+	2750 7000 2950 7000
 Wire Wire Line
 	7400 2650 7250 2650
 Wire Wire Line
@@ -292,28 +270,28 @@ Wire Wire Line
 	5300 6500 5100 6500
 Wire Wire Line
 	5100 6600 5300 6600
-Text Label 3550 6300 0    50   ~ 0
+Text Label 2550 6300 0    50   ~ 0
 VBUS_1
-Text Label 3550 6200 0    50   ~ 0
+Text Label 2550 6200 0    50   ~ 0
 D1-
 Wire Wire Line
-	3550 6300 3950 6300
+	2550 6300 2950 6300
 Wire Wire Line
-	3950 6200 3550 6200
+	2950 6200 2550 6200
 Wire Wire Line
-	3550 6100 3950 6100
-Text Label 3550 6100 0    50   ~ 0
+	2550 6100 2950 6100
+Text Label 2550 6100 0    50   ~ 0
 D1+
 Wire Wire Line
 	5300 6900 5100 6900
-Text Label 3550 5900 0    50   ~ 0
+Text Label 2550 5900 0    50   ~ 0
 SCL_1
-Text Label 3550 6000 0    50   ~ 0
+Text Label 2550 6000 0    50   ~ 0
 SDA_1
 Wire Wire Line
-	3550 6000 3950 6000
+	2550 6000 2950 6000
 Wire Wire Line
-	3950 5900 3550 5900
+	2950 5900 2550 5900
 Wire Wire Line
 	4650 2700 4650 3450
 Wire Wire Line
@@ -344,14 +322,14 @@ Wire Wire Line
 	6300 2400 6150 2400
 Wire Wire Line
 	6150 2250 6300 2250
-Text Label 3550 6900 0    50   ~ 0
+Text Label 2550 6800 0    50   ~ 0
 3v3
-Text Label 3550 6400 0    50   ~ 0
+Text Label 2550 6400 0    50   ~ 0
 5v
 Wire Wire Line
-	3550 6400 3950 6400
+	2550 6400 2950 6400
 Wire Wire Line
-	3950 6900 3550 6900
+	2950 6800 2550 6800
 Text Label 4200 5000 0    50   ~ 0
 VBUS_1
 Wire Wire Line
@@ -360,27 +338,79 @@ Wire Wire Line
 	4200 4850 4100 4850
 Wire Wire Line
 	4200 4750 4100 4750
-Text Label 3550 6700 0    50   ~ 0
+Text Label 2550 6700 0    50   ~ 0
 3v3_MCU_1
 Wire Wire Line
-	3550 6700 3950 6700
+	2550 6700 2950 6700
 Text Label 6300 2550 0    50   ~ 0
 3v3_MCU_1
 Wire Wire Line
 	6300 2550 6150 2550
-Text GLabel 3550 6600 0    50   Input ~ 0
+Text GLabel 2550 6600 0    50   Input ~ 0
 3v3_EN
-Text GLabel 3550 6500 0    50   Input ~ 0
+Text GLabel 2550 6500 0    50   Input ~ 0
 5V_EN
 Wire Wire Line
-	3950 6500 3550 6500
+	2950 6500 2550 6500
 Wire Wire Line
-	3950 6600 3550 6600
+	2950 6600 2550 6600
 NoConn ~ 5100 6400
 NoConn ~ 5100 6800
-NoConn ~ 3950 6800
 Text Label 4200 4750 0    50   ~ 0
 D1+
 Text Label 4200 4850 0    50   ~ 0
 D1-
+$Comp
+L Connector:Conn_01x13_Female J9
+U 1 1 600A49CD
+P 4900 6400
+F 0 "J9" H 5000 6450 50  0000 C CNN
+F 1 "MCU board" H 5150 6350 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x13_P2.54mm_Vertical" H 4900 6400 50  0001 C CNN
+F 3 "~" H 4900 6400 50  0001 C CNN
+	1    4900 6400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0126
+U 1 1 600B7CED
+P 5850 5850
+F 0 "#PWR0126" H 5850 5600 50  0001 C CNN
+F 1 "GND" H 5855 5677 50  0000 C CNN
+F 2 "" H 5850 5850 50  0001 C CNN
+F 3 "" H 5850 5850 50  0001 C CNN
+	1    5850 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 5800 5850 5850
+Wire Wire Line
+	5100 5800 5850 5800
+Wire Wire Line
+	2200 5800 2200 5850
+Wire Wire Line
+	2200 5800 2950 5800
+$Comp
+L power:GND #PWR0129
+U 1 1 600BC8A4
+P 2200 5850
+F 0 "#PWR0129" H 2200 5600 50  0001 C CNN
+F 1 "GND" H 2205 5677 50  0000 C CNN
+F 2 "" H 2200 5850 50  0001 C CNN
+F 3 "" H 2200 5850 50  0001 C CNN
+	1    2200 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x13_Female J8
+U 1 1 60096DD5
+P 3150 6400
+F 0 "J8" H 3200 6450 50  0000 L CNN
+F 1 "regulator board" H 3200 6350 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x13_P2.54mm_Vertical" H 3150 6400 50  0001 C CNN
+F 3 "~" H 3150 6400 50  0001 C CNN
+	1    3150 6400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2950 6900
 $EndSCHEMATC
