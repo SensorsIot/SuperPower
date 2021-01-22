@@ -262,12 +262,12 @@ Text Label 7250 2650 2    50   ~ 0
 EN_3v3
 Text Label 5300 6900 0    50   ~ 0
 ~SMBALERT
-Text Label 5300 6500 0    50   ~ 0
+Text Label 5300 6400 0    50   ~ 0
 EN_5v
 Text Label 5300 6600 0    50   ~ 0
 EN_3v3
 Wire Wire Line
-	5300 6500 5100 6500
+	5300 6400 5100 6400
 Wire Wire Line
 	5100 6600 5300 6600
 Text Label 2550 6300 0    50   ~ 0
@@ -324,10 +324,10 @@ Wire Wire Line
 	6150 2250 6300 2250
 Text Label 2550 6800 0    50   ~ 0
 3v3
-Text Label 2550 6400 0    50   ~ 0
+Text Label 2550 6500 0    50   ~ 0
 5v
 Wire Wire Line
-	2550 6400 2950 6400
+	2550 6500 2950 6500
 Wire Wire Line
 	2950 6800 2550 6800
 Text Label 4200 5000 0    50   ~ 0
@@ -348,13 +348,12 @@ Wire Wire Line
 	6300 2550 6150 2550
 Text GLabel 2550 6600 0    50   Input ~ 0
 3v3_EN
-Text GLabel 2550 6500 0    50   Input ~ 0
+Text GLabel 2550 6400 0    50   Input ~ 0
 5V_EN
 Wire Wire Line
-	2950 6500 2550 6500
+	2950 6400 2550 6400
 Wire Wire Line
 	2950 6600 2550 6600
-NoConn ~ 5100 6400
 NoConn ~ 5100 6800
 Text Label 4200 4750 0    50   ~ 0
 D1+
@@ -413,4 +412,5 @@ F 3 "~" H 3150 6400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 2950 6900
+NoConn ~ 5100 6500
 $EndSCHEMATC
