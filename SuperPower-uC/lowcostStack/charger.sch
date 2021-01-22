@@ -487,6 +487,35 @@ Wire Wire Line
 Connection ~ 4650 3200
 Text Notes 6100 3900 0    50   ~ 0
 This cirquit automatically pulls down the INT line when first powerd on
-Text Notes 3000 3800 0    50   ~ 0
+Text Notes 2650 3850 0    50   ~ 0
 If thermistor is not in use,\nalso do not populate R3 and R2
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 60103514
+P 4000 3300
+AR Path="/5F639CFE/60103514" Ref="J?"  Part="1" 
+AR Path="/5F639F48/60103514" Ref="J10"  Part="1" 
+F 0 "J10" H 3900 3200 50  0000 C CNN
+F 1 "External NTC" H 3700 3300 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4000 3300 50  0001 C CNN
+F 3 "" H 4000 3300 50  0001 C CNN
+F 4 "" H 4000 3300 50  0001 C CNN "LCSC"
+	1    4000 3300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4650 3200 4200 3200
+$Comp
+L power:GND #PWR0131
+U 1 1 60107260
+P 4200 3350
+F 0 "#PWR0131" H 4200 3100 50  0001 C CNN
+F 1 "GND" H 4205 3177 50  0000 C CNN
+F 2 "" H 4200 3350 50  0001 C CNN
+F 3 "" H 4200 3350 50  0001 C CNN
+	1    4200 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3300 4200 3350
 $EndSCHEMATC
