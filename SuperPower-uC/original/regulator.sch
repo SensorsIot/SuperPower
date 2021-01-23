@@ -1696,4 +1696,57 @@ Wire Wire Line
 Connection ~ 3200 2250
 Wire Wire Line
 	3200 2250 3000 2250
+Text Label 2350 6700 2    50   ~ 0
+3v3
+Text Label 2300 6900 2    50   ~ 0
+5V
+$Comp
+L power:GND #PWR?
+U 1 1 600D7141
+P 2300 7100
+AR Path="/5F63A00B/600D7141" Ref="#PWR?"  Part="1" 
+AR Path="/5F63A0E9/600D7141" Ref="#PWR0114"  Part="1" 
+F 0 "#PWR0114" H 2300 6850 50  0001 C CNN
+F 1 "GND" H 2305 6927 50  0000 C CNN
+F 2 "" H 2300 7100 50  0001 C CNN
+F 3 "" H 2300 7100 50  0001 C CNN
+	1    2300 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 600D761B
+P 2450 6900
+AR Path="/5F63A00B/600D761B" Ref="#PWR?"  Part="1" 
+AR Path="/5F63A0E9/600D761B" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H 2450 6650 50  0001 C CNN
+F 1 "GND" H 2455 6727 50  0000 C CNN
+F 2 "" H 2450 6900 50  0001 C CNN
+F 3 "" H 2450 6900 50  0001 C CNN
+	1    2450 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 7100 2300 7000
+Wire Wire Line
+	2300 7000 1850 7000
+Wire Wire Line
+	1850 6900 2300 6900
+Wire Wire Line
+	1850 6700 2350 6700
+$Comp
+L Connector:Conn_01x04_Male J11
+U 1 1 6011FDD8
+P 1650 6800
+F 0 "J11" H 1758 7081 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 1758 6990 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 1650 6800 50  0001 C CNN
+F 3 "~" H 1650 6800 50  0001 C CNN
+	1    1650 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 6900 2450 6800
+Wire Wire Line
+	1850 6800 2450 6800
 $EndSCHEMATC
