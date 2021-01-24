@@ -1,4 +1,4 @@
-(module SKRKAEE020 (layer F.Cu) (tedit 5FCCACFB)
+(module SKRKAEE020 (layer F.Cu) (tedit 600DCA68)
   (fp_text reference REF** (at 0.0762 2.4003) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -18,9 +18,9 @@
   (fp_line (start 2.667 1.651) (end 2.667 -1.651) (layer F.CrtYd) (width 0.03))
   (pad 1 smd rect (at -2.0955 0) (size 0.8 2) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 2.0955 0) (size 0.8 2) (layers F.Cu F.Paste F.Mask))
-  (model C:/Users/Informatic0re/Documents/workspace/SuperPower/SuperPower-uC/components/SKRKAEE020/SKRKAEE020.stp
+  (model ${KIPRJMOD}/../components/SKRKAEE020/SKRKAE.STEP
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
+    (rotate (xyz -90 0 0))
   )
 )

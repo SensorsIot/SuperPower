@@ -418,7 +418,7 @@ U 1 1 5FAE4A6B
 P 8450 4600
 F 0 "U7" H 8450 5415 50  0000 C CNN
 F 1 "ESP32-WROOM32" H 8450 5324 50  0000 C CNN
-F 2 "RF_Module:ESP32-WROOM-32" H 8500 5300 50  0001 C CNN
+F 2 "ESP32-WROOM32:ESP32-WROOM-32_EPAD_3x3_ThermalVias" H 8500 5300 50  0001 C CNN
 F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 8450 4500 50  0001 C CNN
 F 4 "C82899" H 8450 4600 50  0001 C CNN "LCSC"
 	1    8450 4600
@@ -745,7 +745,7 @@ U 1 1 5FC7D0C0
 P 4950 2300
 F 0 "U6" H 4600 1000 50  0000 C CNN
 F 1 "CP2102N-A01-GQFN28" H 4400 900 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm" H 5400 1100 50  0001 L CNN
+F 2 "Package_DFN_QFN:QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm_ThermalVias" H 5400 1100 50  0001 L CNN
 F 3 "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" H 5000 1550 50  0001 C CNN
 	1    4950 2300
 	1    0    0    -1  
