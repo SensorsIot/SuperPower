@@ -518,4 +518,46 @@ F 3 "" H 4200 3350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4200 3300 4200 3350
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 601AEE0F
+P 3200 4500
+AR Path="/5F63A193/601AEE0F" Ref="SW?"  Part="1" 
+AR Path="/5F639F48/601AEE0F" Ref="SW2"  Part="1" 
+F 0 "SW2" H 3200 4735 50  0000 C CNN
+F 1 "DNP" H 3200 4644 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK" H 3200 4500 50  0001 C CNN
+F 3 "~" H 3200 4500 50  0001 C CNN
+	1    3200 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 601AEE17
+P 3500 4550
+F 0 "#PWR?" H 3500 4300 50  0001 C CNN
+F 1 "GND" H 3505 4377 50  0000 C CNN
+F 2 "" H 3500 4550 50  0001 C CNN
+F 3 "" H 3500 4550 50  0001 C CNN
+	1    3500 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 4550 3500 4500
+Wire Wire Line
+	3400 4500 3500 4500
+Text Label 2800 4500 0    50   ~ 0
+INT
+Wire Wire Line
+	3000 4500 2800 4500
+Text Notes 2900 4700 0    50   ~ 0
+INT trigger
+Wire Notes Line
+	2500 4100 3700 4100
+Wire Notes Line
+	3700 4100 3700 5000
+Wire Notes Line
+	3700 5000 2500 5000
+Wire Notes Line
+	2500 5000 2500 4100
 $EndSCHEMATC
