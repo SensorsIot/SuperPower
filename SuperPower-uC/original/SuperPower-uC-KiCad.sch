@@ -405,4 +405,86 @@ Wire Wire Line
 	8700 5100 8700 5050
 Wire Wire Line
 	7950 5050 8700 5050
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 600EABA0
+P 1550 5800
+F 0 "H1" H 1650 5846 50  0000 L CNN
+F 1 "MountingHole" H 1650 5755 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 1550 5800 50  0001 C CNN
+F 3 "~" H 1550 5800 50  0001 C CNN
+	1    1550 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 600EB152
+P 1550 6100
+F 0 "H2" H 1650 6146 50  0000 L CNN
+F 1 "MountingHole" H 1650 6055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 1550 6100 50  0001 C CNN
+F 3 "~" H 1550 6100 50  0001 C CNN
+	1    1550 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 600EB37A
+P 1550 6400
+F 0 "H3" H 1650 6446 50  0000 L CNN
+F 1 "MountingHole" H 1650 6355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 1550 6400 50  0001 C CNN
+F 3 "~" H 1550 6400 50  0001 C CNN
+	1    1550 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 600EB596
+P 1550 6700
+F 0 "H4" H 1650 6746 50  0000 L CNN
+F 1 "MountingHole" H 1650 6655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 1550 6700 50  0001 C CNN
+F 3 "~" H 1550 6700 50  0001 C CNN
+	1    1550 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 600EB783
+P 2900 5800
+F 0 "H5" H 3000 5846 50  0000 L CNN
+F 1 "MountingHole" H 3000 5755 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 2900 5800 50  0001 C CNN
+F 3 "~" H 2900 5800 50  0001 C CNN
+	1    2900 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 600EBA62
+P 2900 6100
+F 0 "H6" H 3000 6146 50  0000 L CNN
+F 1 "MountingHole" H 3000 6055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 2900 6100 50  0001 C CNN
+F 3 "~" H 2900 6100 50  0001 C CNN
+	1    2900 6100
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	1300 5350 1300 7050
+Wire Notes Line
+	1300 7050 2550 7050
+Wire Notes Line
+	2550 7050 2550 5350
+Wire Notes Line
+	3700 5350 3700 6400
+Wire Notes Line
+	3700 6400 2550 6400
+Wire Notes Line
+	1300 5350 3700 5350
+Text Notes 1350 5500 0    50   ~ 10
+Mounting Hole Charger 
+Text Notes 2600 5500 0    50   ~ 10
+Mounting Hole MCU 
 $EndSCHEMATC
