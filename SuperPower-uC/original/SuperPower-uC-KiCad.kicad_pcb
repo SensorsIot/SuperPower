@@ -420,8 +420,8 @@
     (tags "QFN NoLead")
     (path /5F63A193/5FC7D0C0)
     (attr smd)
-    (fp_text reference U6 (at 0 -3.8) (layer F.SilkS)
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text reference U6 (at 0 -0.46736) (layer F.SilkS) hide
+      (effects (font (size 0.6 0.6) (thickness 0.15)))
     )
     (fp_text value CP2102N-A01-GQFN28 (at 0 3.8) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -655,8 +655,8 @@
     (tags "Single 2.4 GHz Wi-Fi and Bluetooth combo  chip")
     (path /5F63A193/5FAE4A6B)
     (attr smd)
-    (fp_text reference U7 (at -10.61 8.43 90) (layer F.SilkS)
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text reference U7 (at 2.93624 -7.09676 180) (layer F.SilkS) hide
+      (effects (font (size 0.6 0.6) (thickness 0.15)))
     )
     (fp_text value ESP32-WROOM32 (at 0 11.5) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
