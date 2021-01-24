@@ -860,39 +860,6 @@ Wire Wire Line
 Wire Wire Line
 	3200 1850 3200 2100
 Connection ~ 3200 2100
-$Comp
-L Connector:TestPoint TP29
-U 1 1 5FBB75FF
-P 5650 2400
-F 0 "TP29" V 5650 2600 50  0000 L CNN
-F 1 "TestPoint" V 5650 2700 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5850 2400 50  0001 C CNN
-F 3 "~" H 5850 2400 50  0001 C CNN
-	1    5650 2400
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP30
-U 1 1 5FBC1FC0
-P 5650 2500
-F 0 "TP30" V 5650 2688 50  0000 L CNN
-F 1 "TestPoint" V 5695 2688 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5850 2500 50  0001 C CNN
-F 3 "~" H 5850 2500 50  0001 C CNN
-	1    5650 2500
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP31
-U 1 1 5FBC21DE
-P 5650 2600
-F 0 "TP31" V 5650 2788 50  0000 L CNN
-F 1 "TestPoint" V 5695 2788 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5850 2600 50  0001 C CNN
-F 3 "~" H 5850 2600 50  0001 C CNN
-	1    5650 2600
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	5650 2400 5450 2400
 Wire Wire Line
@@ -1401,5 +1368,38 @@ F 2 "Connector_PinSocket_2.54mm:PinSocket_1x14_P2.54mm_Vertical" H 10500 4800 50
 F 3 "~" H 10500 4800 50  0001 C CNN
 	1    10500 4800
 	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP31
+U 1 1 5FBC21DE
+P 5650 2600
+F 0 "TP31" V 5650 2788 50  0000 L CNN
+F 1 "TestPoint" V 5695 2788 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5850 2600 50  0001 C CNN
+F 3 "~" H 5850 2600 50  0001 C CNN
+	1    5650 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP30
+U 1 1 5FBC1FC0
+P 5650 2500
+F 0 "TP30" V 5650 2688 50  0000 L CNN
+F 1 "TestPoint" V 5695 2688 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5850 2500 50  0001 C CNN
+F 3 "~" H 5850 2500 50  0001 C CNN
+	1    5650 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP29
+U 1 1 5FBB75FF
+P 5650 2400
+F 0 "TP29" V 5650 2600 50  0000 L CNN
+F 1 "TestPoint" V 5650 2700 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5850 2400 50  0001 C CNN
+F 3 "~" H 5850 2400 50  0001 C CNN
+	1    5650 2400
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
