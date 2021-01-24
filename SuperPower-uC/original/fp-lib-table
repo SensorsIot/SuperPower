@@ -10,4 +10,5 @@
   (lib (name SOLDERJUMPER_4_BRIDGED_1C)(type KiCad)(uri ${KIPRJMOD}/../components/SOLDERJUMPER_4_BRIDGED_1C)(options "")(descr ""))
   (lib (name ext_input)(type KiCad)(uri ${KIPRJMOD}/../components/ext_input/ext_input.pretty)(options "")(descr ""))
   (lib (name logo)(type KiCad)(uri ${KIPRJMOD}/logo.pretty)(options "")(descr ""))
+  (lib (name ESP32-WROOM32)(type KiCad)(uri ${KIPRJMOD}/../components/ESP32-WROOM32)(options "")(descr ""))
 )
