@@ -8,5 +8,6 @@
   (lib (name usb_c)(type KiCad)(uri ${KIPRJMOD}/../components/USB-C/usb_c.pretty)(options "")(descr ""))
   (lib (name JST_ZH_S2B_THRU)(type KiCad)(uri ${KIPRJMOD}/../components/JST_ZH_S2B_THRU)(options "")(descr ""))
   (lib (name SOLDERJUMPER_4_BRIDGED_1C)(type KiCad)(uri ${KIPRJMOD}/../components/SOLDERJUMPER_4_BRIDGED_1C)(options "")(descr ""))
-  (lib (name ext_input)(type KiCad)(uri C:/Users/Informatic0re/Documents/workspace/SuperPower/SuperPower-uC/components/ext_input/ext_input.pretty)(options "")(descr ""))
+  (lib (name ext_input)(type KiCad)(uri ${KIPRJMOD}/../components/ext_input/ext_input.pretty)(options "")(descr ""))
+  (lib (name logo)(type KiCad)(uri ${KIPRJMOD}/logo.pretty)(options "")(descr ""))
 )

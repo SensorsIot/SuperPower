@@ -62,17 +62,6 @@ Wire Wire Line
 	1900 3850 1900 3950
 Connection ~ 1900 4350
 $Comp
-L power:+BATT #PWR03
-U 1 1 5F78A1E8
-P 1900 3250
-F 0 "#PWR03" H 1900 3100 50  0001 C CNN
-F 1 "+BATT" H 1915 3423 50  0000 C CNN
-F 2 "" H 1900 3250 50  0001 C CNN
-F 3 "" H 1900 3250 50  0001 C CNN
-	1    1900 3250
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:-BATT #PWR04
 U 1 1 5F78A1F2
 P 1900 5350
@@ -140,17 +129,6 @@ F 3 "" H 3800 2100 50  0001 C CNN
 	1    3800 2100
 	-1   0    0    1   
 $EndComp
-$Comp
-L power:+BATT #PWR07
-U 1 1 5F7A2546
-P 3800 1300
-F 0 "#PWR07" H 3800 1150 50  0001 C CNN
-F 1 "+BATT" H 3815 1473 50  0000 C CNN
-F 2 "" H 3800 1300 50  0001 C CNN
-F 3 "" H 3800 1300 50  0001 C CNN
-	1    3800 1300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3800 1500 3800 1400
 Wire Wire Line
@@ -204,7 +182,7 @@ Wire Notes Line
 Wire Notes Line
 	3200 3750 4500 3750
 Text Label 1100 900  0    50   ~ 0
-+BATT
+VBAT
 $Comp
 L Device:R_US R2
 U 1 1 5F862979
@@ -269,8 +247,6 @@ Wire Wire Line
 Connection ~ 1900 3350
 Wire Wire Line
 	1900 3350 1900 3450
-Wire Wire Line
-	1900 3250 1900 3350
 Wire Wire Line
 	1550 3350 1900 3350
 Wire Wire Line
@@ -342,7 +318,7 @@ L Connector:TestPoint TP1
 U 1 1 5FD97859
 P 1400 900
 F 0 "TP1" V 1354 1088 50  0000 L CNN
-F 1 "BATT+" V 1445 1088 50  0000 L CNN
+F 1 "VBAT" V 1445 1088 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1600 900 50  0001 C CNN
 F 3 "~" H 1600 900 50  0001 C CNN
 	1    1400 900 
@@ -726,4 +702,14 @@ F 44 "ManWithNoName" H 3000 1600 50  0001 C CNN "Designer"
 	1    3000 1600
 	-1   0    0    -1  
 $EndComp
+Text Label 3550 1300 0    50   ~ 0
+VBAT
+Wire Wire Line
+	3550 1300 3800 1300
+Text Label 1700 3200 0    50   ~ 0
+VBAT
+Wire Wire Line
+	1700 3200 1900 3200
+Wire Wire Line
+	1900 3200 1900 3350
 $EndSCHEMATC

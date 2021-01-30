@@ -589,15 +589,11 @@ V_I2C
 Text Label 9500 5200 0    50   ~ 0
 V_I2C
 Wire Wire Line
-	9850 5600 9900 5600
-Wire Wire Line
 	9850 5500 9900 5500
 Wire Wire Line
 	9850 5400 9900 5400
 Wire Wire Line
 	9850 5300 9900 5300
-Text GLabel 9850 5600 0    50   Input ~ 0
-CH_DIS
 Text GLabel 9850 5500 0    50   Input ~ 0
 5V_EN
 Text GLabel 9850 5400 0    50   Input ~ 0
@@ -606,4 +602,17 @@ Text GLabel 9850 5300 0    50   Input ~ 0
 INT_IO
 Wire Wire Line
 	9500 5200 9900 5200
+$Comp
+L power:GND #PWR?
+U 1 1 6007582C
+P 9350 5600
+F 0 "#PWR?" H 9350 5350 50  0001 C CNN
+F 1 "GND" H 9355 5427 50  0000 C CNN
+F 2 "" H 9350 5600 50  0001 C CNN
+F 3 "" H 9350 5600 50  0001 C CNN
+	1    9350 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 5600 9900 5600
 $EndSCHEMATC

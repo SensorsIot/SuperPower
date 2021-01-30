@@ -72,8 +72,6 @@ Wire Wire Line
 Wire Wire Line
 	4150 3100 4150 3400
 Wire Wire Line
-	4450 2800 4450 2850
-Wire Wire Line
 	4950 2800 4950 3100
 Wire Wire Line
 	4950 2800 5600 2800
@@ -471,17 +469,6 @@ Wire Wire Line
 	9950 5950 9850 5950
 Wire Wire Line
 	9850 5950 9850 5850
-$Comp
-L power:+BATT #PWR036
-U 1 1 5F837E39
-P 9850 5850
-F 0 "#PWR036" H 9850 5700 50  0001 C CNN
-F 1 "+BATT" H 9865 6023 50  0000 C CNN
-F 2 "" H 9850 5850 50  0001 C CNN
-F 3 "" H 9850 5850 50  0001 C CNN
-	1    9850 5850
-	1    0    0    -1  
-$EndComp
 Text Notes 9750 5600 0    50   ~ 0
 Battery connector\n(Battery Power Output)
 $Comp
@@ -664,16 +651,6 @@ Text Notes 8550 5450 0    50   ~ 10
 Connectors
 Text Notes 8200 4150 0    59   ~ 12
 ! The battery is implemented on the "Battery Module" Sheet !
-Wire Wire Line
-	4400 2750 4450 2750
-Wire Wire Line
-	4450 2750 4450 2800
-Connection ~ 4450 2800
-Wire Wire Line
-	4400 2850 4450 2850
-Connection ~ 4450 2850
-Wire Wire Line
-	4450 2850 4450 3250
 Wire Wire Line
 	7300 1400 7400 1400
 Wire Wire Line
@@ -1016,8 +993,8 @@ L jst_xh_s2b_thru:JST_XH_S2B_thru J5
 U 1 1 5FDB2E6B
 P 10150 5950
 F 0 "J5" H 10230 5942 50  0000 L CNN
-F 1 "JST_XH_S2B_thru" H 10230 5851 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal" H 10150 5950 50  0001 C CNN
+F 1 "DNP/JST_XH_S2B_thru" H 10230 5851 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10150 5950 50  0001 C CNN
 F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 10150 5950 50  0001 C CNN
 F 4 "JST" H 10150 5950 50  0001 C CNN "Mfr_name"
 F 5 "S2B-XH-A(LF)(SN)" H 10150 5950 50  0001 C CNN "Mfr_no"
@@ -1071,7 +1048,7 @@ U 1 1 5FDBD7C5
 P 8850 5950
 F 0 "J4" H 8930 5942 50  0000 L CNN
 F 1 "DNP/JST_ZH_S2B_thru" H 8930 5851 50  0000 L CNN
-F 2 "Connector_JST_user:JST_ZH_S2B-ZR_1x02_P1.50mm_Horizontal" H 8850 5950 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 8850 5950 50  0001 C CNN
 F 3 "http://www.jst-mfg.com/product/pdf/eng/eZH.pdf" H 8850 5950 50  0001 C CNN
 F 4 "JST" H 8850 5950 50  0001 C CNN "Mfr_name"
 F 5 "S2B-ZR(LF)(SN)" H 8850 5950 50  0001 C CNN "Mfr_no"
@@ -1689,125 +1666,39 @@ F 46 "ManWithNoName" H 6400 3650 50  0001 C CNN "Designer"
 	1    0    0    -1  
 $EndComp
 $Comp
-L dmn3018ssd:DMN3018SSD Q3
-U 1 1 5FE2C4E3
-P 4150 2900
-F 0 "Q3" V 4707 2925 50  0000 C CNN
-F 1 "DMN3018SSD" V 4616 2925 50  0000 C CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 4350 2825 50  0001 L CNN
-F 3 "https://www.diodes.com/assets/Datasheets/DMN3018SSD.pdf" H 4150 2900 50  0001 C CNN
-F 4 "Diodes Incorporated" H 4150 2900 50  0001 C CNN "Mfr_name"
-F 5 "DMN3018SSD-13" H 4150 2900 50  0001 C CNN "Mfr_no"
-F 6 "SO-8" V 4525 2925 50  0000 C CNN "Package"
-F 7 "N + N" H 4150 2900 50  0001 C CNN "mos_Type"
-F 8 "30V" H 4150 2900 50  0001 C CNN "mos_VDSS"
-F 9 "30mΩ" V 4434 2925 50  0000 C CNN "mos_RDSon"
-F 10 "5.3A" H 4150 2900 50  0001 C CNN "mos_IDmax"
-F 11 "1-2.1V" H 4150 2900 50  0001 C CNN "mos_VGSth"
-F 12 "20V" H 4150 2900 50  0001 C CNN "mos_VGSS"
-F 13 "https://octopart.com/dmn3018ssd-13-diodes+inc.-26472698?r=sp" H 4150 2900 50  0001 C CNN "Octopart_link"
-F 14 "-" H 4150 2900 50  0001 C CNN "Farnell_link"
-F 15 "-" H 4150 2900 50  0001 C CNN "Farnell_ref"
-F 16 "2020-12-05" H 4150 2900 50  0001 C CNN "Farnell_check_date"
-F 17 "-" H 4150 2900 50  0001 C CNN "Farnell_price_qt=1"
-F 18 "-" H 4150 2900 50  0001 C CNN "Farnell_price_qt=10"
-F 19 "-" H 4150 2900 50  0001 C CNN "Farnell_price_qt=100"
-F 20 "-" H 4150 2900 50  0001 C CNN "Farnell_price_qt=1000"
-F 21 "-" H 4150 2900 50  0001 C CNN "Farnell_stock"
-F 22 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMN3018SSD-13_C155277.html" H 4150 2900 50  0001 C CNN "LCSC_link"
-F 23 "C155277" H 4150 2900 50  0001 C CNN "LCSC_ref"
-F 24 "2020-12-05" H 4150 2900 50  0001 C CNN "LCSC_check_date"
-F 25 "$0.2541" H 4150 2900 50  0001 C CNN "LCSC_price_qt=1"
-F 26 "$0.1893" H 4150 2900 50  0001 C CNN "LCSC_price_qt=10"
-F 27 "$0.1655" H 4150 2900 50  0001 C CNN "LCSC_price_qt=100"
-F 28 "$0.1576" H 4150 2900 50  0001 C CNN "LCSC_price_qt=1000"
-F 29 "2,688" H 4150 2900 50  0001 C CNN "LCSC_stock"
-F 30 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMN3018SSD-13?qs=%2Fha2pyFaduhiKtoBktzbgyUAHZPSS%252B8%252Bk9vZNvppSquz1WfnqvfRKg%3D%3D" H 4150 2900 50  0001 C CNN "Mouser_link"
-F 31 "621-DMN3018SSD-13" H 4150 2900 50  0001 C CNN "Mouser_ref"
-F 32 "2020-12-12" H 4150 2900 50  0001 C CNN "Mouser_check_date"
-F 33 "$0.514" H 4150 2900 50  0001 C CNN "Mouser_price_qt=1"
-F 34 "$0.415" H 4150 2900 50  0001 C CNN "Mouser_price_qt=10"
-F 35 "$0.293" H 4150 2900 50  0001 C CNN "Mouser_price_qt=100"
-F 36 "$0.195" H 4150 2900 50  0001 C CNN "Mouser_price_qt=1000"
-F 37 "2,685" H 4150 2900 50  0001 C CNN "Mouser_stock"
-F 38 "https://fr.rs-online.com/web/p/transistors-mosfet/7904592/" H 4150 2900 50  0001 C CNN "RS_link"
-F 39 "790-4592" H 4150 2900 50  0001 C CNN "RS_ref"
-F 40 "2020-12-05" H 4150 2900 50  0001 C CNN "RS_check_date"
-F 41 "-" H 4150 2900 50  0001 C CNN "RS_price_qt=1"
-F 42 "-" H 4150 2900 50  0001 C CNN "RS_price_qt=10"
-F 43 "0,342 €" H 4150 2900 50  0001 C CNN "RS_price_qt=100"
-F 44 "0,203 €" H 4150 2900 50  0001 C CNN "RS_price_qt=1000"
-F 45 "2,500" H 4150 2900 50  0001 C CNN "RS_stock"
-F 46 "TO_CHECK" H 4150 2900 50  0001 C CNN "Status"
-F 47 "1.04" H 4150 2900 50  0001 C CNN "Release_version"
-F 48 "2020-12-21" H 4150 2900 50  0001 C CNN "Release_date"
-F 49 "ManWithNoName" H 4150 2900 50  0001 C CNN "Designer"
-	1    4150 2900
-	0    1    -1   0   
-$EndComp
-$Comp
-L dmn3018ssd:DMN3018SSD Q3
-U 2 1 5FE2F944
+L Device:Q_NMOS_DGS Q15
+U 1 1 60069647
 P 7350 3350
-F 0 "Q3" H 7588 3512 50  0000 L CNN
-F 1 "DMN3018SSD" H 7588 3421 50  0000 L CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 7550 3275 50  0001 L CNN
-F 3 "https://www.diodes.com/assets/Datasheets/DMN3018SSD.pdf" H 7350 3350 50  0001 C CNN
-F 4 "Diodes Incorporated" H 7350 3350 50  0001 C CNN "Mfr_name"
-F 5 "DMN3018SSD-13" H 7350 3350 50  0001 C CNN "Mfr_no"
-F 6 "SO-8" H 7588 3330 50  0000 L CNN "Package"
-F 7 "N + N" H 7350 3350 50  0001 C CNN "mos_Type"
-F 8 "30V" H 7350 3350 50  0001 C CNN "mos_VDSS"
-F 9 "30mΩ" H 7588 3239 50  0000 L CNN "mos_RDSon"
-F 10 "5.3A" H 7350 3350 50  0001 C CNN "mos_IDmax"
-F 11 "1-2.1V" H 7350 3350 50  0001 C CNN "mos_VGSth"
-F 12 "20V" H 7350 3350 50  0001 C CNN "mos_VGSS"
-F 13 "https://octopart.com/dmn3018ssd-13-diodes+inc.-26472698?r=sp" H 7350 3350 50  0001 C CNN "Octopart_link"
-F 14 "-" H 7350 3350 50  0001 C CNN "Farnell_link"
-F 15 "-" H 7350 3350 50  0001 C CNN "Farnell_ref"
-F 16 "2020-12-05" H 7350 3350 50  0001 C CNN "Farnell_check_date"
-F 17 "-" H 7350 3350 50  0001 C CNN "Farnell_price_qt=1"
-F 18 "-" H 7350 3350 50  0001 C CNN "Farnell_price_qt=10"
-F 19 "-" H 7350 3350 50  0001 C CNN "Farnell_price_qt=100"
-F 20 "-" H 7350 3350 50  0001 C CNN "Farnell_price_qt=1000"
-F 21 "-" H 7350 3350 50  0001 C CNN "Farnell_stock"
-F 22 "https://lcsc.com/product-detail/MOSFET_Diodes-Incorporated-DMN3018SSD-13_C155277.html" H 7350 3350 50  0001 C CNN "LCSC_link"
-F 23 "C155277" H 7350 3350 50  0001 C CNN "LCSC_ref"
-F 24 "2020-12-05" H 7350 3350 50  0001 C CNN "LCSC_check_date"
-F 25 "$0.2541" H 7350 3350 50  0001 C CNN "LCSC_price_qt=1"
-F 26 "$0.1893" H 7350 3350 50  0001 C CNN "LCSC_price_qt=10"
-F 27 "$0.1655" H 7350 3350 50  0001 C CNN "LCSC_price_qt=100"
-F 28 "$0.1576" H 7350 3350 50  0001 C CNN "LCSC_price_qt=1000"
-F 29 "2,688" H 7350 3350 50  0001 C CNN "LCSC_stock"
-F 30 "https://www.mouser.fr/ProductDetail/Diodes-Incorporated/DMN3018SSD-13?qs=%2Fha2pyFaduhiKtoBktzbgyUAHZPSS%252B8%252Bk9vZNvppSquz1WfnqvfRKg%3D%3D" H 7350 3350 50  0001 C CNN "Mouser_link"
-F 31 "621-DMN3018SSD-13" H 7350 3350 50  0001 C CNN "Mouser_ref"
-F 32 "2020-12-12" H 7350 3350 50  0001 C CNN "Mouser_check_date"
-F 33 "$0.514" H 7350 3350 50  0001 C CNN "Mouser_price_qt=1"
-F 34 "$0.415" H 7350 3350 50  0001 C CNN "Mouser_price_qt=10"
-F 35 "$0.293" H 7350 3350 50  0001 C CNN "Mouser_price_qt=100"
-F 36 "$0.195" H 7350 3350 50  0001 C CNN "Mouser_price_qt=1000"
-F 37 "2,685" H 7350 3350 50  0001 C CNN "Mouser_stock"
-F 38 "https://fr.rs-online.com/web/p/transistors-mosfet/7904592/" H 7350 3350 50  0001 C CNN "RS_link"
-F 39 "790-4592" H 7350 3350 50  0001 C CNN "RS_ref"
-F 40 "2020-12-05" H 7350 3350 50  0001 C CNN "RS_check_date"
-F 41 "-" H 7350 3350 50  0001 C CNN "RS_price_qt=1"
-F 42 "-" H 7350 3350 50  0001 C CNN "RS_price_qt=10"
-F 43 "0,342 €" H 7350 3350 50  0001 C CNN "RS_price_qt=100"
-F 44 "0,203 €" H 7350 3350 50  0001 C CNN "RS_price_qt=1000"
-F 45 "2,500" H 7350 3350 50  0001 C CNN "RS_stock"
-F 46 "TO_CHECK" H 7350 3350 50  0001 C CNN "Status"
-F 47 "1.04" H 7350 3350 50  0001 C CNN "Release_version"
-F 48 "2020-12-21" H 7350 3350 50  0001 C CNN "Release_date"
-F 49 "ManWithNoName" H 7350 3350 50  0001 C CNN "Designer"
-	2    7350 3350
+F 0 "Q15" H 7554 3396 50  0000 L CNN
+F 1 "DMN3023L" H 7554 3305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7550 3450 50  0001 C CNN
+F 3 "~" H 7350 3350 50  0001 C CNN
+	1    7350 3350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6300 3100 7400 3100
+	6300 3100 7450 3100
 Wire Wire Line
-	7500 3100 8300 3100
+	4450 2800 4450 3250
 Wire Wire Line
-	7400 3100 7500 3100
-Connection ~ 7400 3100
-Connection ~ 7500 3100
+	4450 2800 4350 2800
+Connection ~ 4450 2800
+Wire Wire Line
+	7450 3150 7450 3100
+Connection ~ 7450 3100
+Wire Wire Line
+	7450 3100 8300 3100
+$Comp
+L Device:Q_NMOS_DGS Q3
+U 1 1 60066FDA
+P 4150 2900
+F 0 "Q3" V 4492 2900 50  0000 C CNN
+F 1 "DMN3023L" V 4401 2900 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4350 3000 50  0001 C CNN
+F 3 "~" H 4150 2900 50  0001 C CNN
+	1    4150 2900
+	0    1    -1   0   
+$EndComp
+Text Label 9850 5850 0    50   ~ 0
+VBAT
 $EndSCHEMATC
