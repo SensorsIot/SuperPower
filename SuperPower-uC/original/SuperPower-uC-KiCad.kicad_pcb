@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 211)
+    (drawings 212)
     (tracks 1311)
     (zones 0)
     (modules 150)
@@ -6981,6 +6981,9 @@
     )
   )
 
+  (gr_text "ESP32 Shield" (at 114.3 98.8695) (layer B.SilkS)
+    (effects (font (size 0.6 0.6) (thickness 0.15)) (justify mirror))
+  )
   (gr_line (start 170.434 82.169) (end 172.2755 82.169) (layer F.SilkS) (width 0.12) (tstamp 60157FAD))
   (gr_line (start 175.768 78.8035) (end 175.768 76.5175) (layer F.SilkS) (width 0.12))
   (gr_line (start 172.2755 78.8035) (end 175.768 78.8035) (layer F.SilkS) (width 0.12))
