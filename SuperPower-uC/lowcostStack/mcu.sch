@@ -84,15 +84,8 @@ Wire Wire Line
 Wire Wire Line
 	7900 2450 7650 2450
 Wire Wire Line
-	7900 2550 7650 2550
-Wire Wire Line
-	7900 2650 7650 2650
-Wire Wire Line
 	7900 2750 7650 2750
 NoConn ~ 7650 2150
-NoConn ~ 7000 3200
-NoConn ~ 6700 3200
-NoConn ~ 6600 3200
 NoConn ~ 6900 3200
 NoConn ~ 6800 3200
 Wire Wire Line
@@ -103,7 +96,6 @@ Wire Wire Line
 	6500 3450 6500 3200
 Wire Wire Line
 	6400 3450 6400 3200
-NoConn ~ 7100 3200
 $Comp
 L ESP32-WROOM32:ESP32-WROOM32 U13
 U 1 1 5F88B55B
@@ -433,21 +425,21 @@ Wire Wire Line
 $Comp
 L Device:R R20
 U 1 1 5FCAF516
-P 8200 2700
-F 0 "R20" H 8270 2746 50  0000 L CNN
-F 1 "10k" H 8270 2655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8130 2700 50  0001 C CNN
-F 3 "~" H 8200 2700 50  0001 C CNN
-F 4 "C25804" H 8200 2700 50  0001 C CNN "LCSC"
-	1    8200 2700
-	1    0    0    -1  
+P 8150 2850
+F 0 "R20" H 8220 2896 50  0000 L CNN
+F 1 "10k" H 8220 2805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8080 2850 50  0001 C CNN
+F 3 "~" H 8150 2850 50  0001 C CNN
+F 4 "C25804" H 8150 2850 50  0001 C CNN "LCSC"
+	1    8150 2850
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7650 2850 8200 2850
-Text Label 8550 2550 2    50   ~ 0
+	7650 2850 8000 2850
+Text Label 8650 2850 2    50   ~ 0
 3v3_MCU
 Wire Wire Line
-	8550 2550 8200 2550
+	8650 2850 8300 2850
 Wire Notes Line
 	11000 700  11000 5800
 Wire Notes Line
@@ -897,4 +889,149 @@ Wire Notes Line
 	4100 2450 4100 3850
 Text Notes 2600 3550 0    50   ~ 0
 For standalone MCU board operation
+$Comp
+L Memory_Flash:W25Q32JVSS U14
+U 1 1 60173F8E
+P 7850 5050
+F 0 "U14" H 8000 5500 50  0000 C CNN
+F 1 "W25Q32JVSS" H 8150 5400 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm" H 7850 5050 50  0001 C CNN
+F 3 "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf" H 7850 5050 50  0001 C CNN
+F 4 "DNP" H 7850 5050 50  0001 C CNN "DNP"
+	1    7850 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 4650 7850 4550
+Text Label 6900 4950 0    50   ~ 0
+PSRAM_~CS
+Wire Wire Line
+	6900 5150 7350 5150
+Text Label 6900 5150 0    50   ~ 0
+PSRAM_CLK
+Text Label 8800 4850 2    50   ~ 0
+PSRAM_SD1
+Wire Wire Line
+	8350 4950 8800 4950
+Wire Wire Line
+	8350 4850 8800 4850
+Wire Wire Line
+	8350 5150 8800 5150
+Wire Wire Line
+	8350 5250 8800 5250
+Wire Wire Line
+	7850 5450 7850 5550
+$Comp
+L power:GND #PWR0135
+U 1 1 601F0B47
+P 7850 5550
+F 0 "#PWR0135" H 7850 5300 50  0001 C CNN
+F 1 "GND" H 7855 5377 50  0000 C CNN
+F 2 "" H 7850 5550 50  0001 C CNN
+F 3 "" H 7850 5550 50  0001 C CNN
+	1    7850 5550
+	1    0    0    -1  
+$EndComp
+Text Label 8800 4950 2    50   ~ 0
+PSRAM_SD0
+Text Label 8800 5150 2    50   ~ 0
+PSRAM_SD3
+Text Label 8800 5250 2    50   ~ 0
+PSRAM_SD2
+Text Label 7500 4550 0    50   ~ 0
+3v3_MCU
+$Comp
+L Device:R R?
+U 1 1 601F22E9
+P 7350 4750
+AR Path="/5F63B107/601F22E9" Ref="R?"  Part="1" 
+AR Path="/5F63A193/601F22E9" Ref="R23"  Part="1" 
+F 0 "R23" H 7200 4750 50  0000 C CNN
+F 1 "10k" H 7200 4850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7280 4750 50  0001 C CNN
+F 3 "~" H 7350 4750 50  0001 C CNN
+F 4 "C25804" H 7350 4750 50  0001 C CNN "LCSC"
+F 5 "DNP" H 7350 4750 50  0001 C CNN "DNP"
+	1    7350 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 4950 7350 4950
+Wire Wire Line
+	7500 4550 7850 4550
+Text Label 6450 4200 0    50   ~ 0
+3v3_MCU
+Wire Wire Line
+	6450 4200 6800 4200
+Wire Wire Line
+	7350 4900 7350 4950
+Wire Wire Line
+	7350 4550 7350 4600
+Wire Notes Line
+	6350 3950 8850 3950
+Wire Notes Line
+	8850 3950 8850 5800
+Wire Notes Line
+	8850 5800 6350 5800
+Wire Notes Line
+	6350 5800 6350 3950
+Text Notes 6400 4050 0    50   ~ 0
+External PSRAM
+Connection ~ 7350 4950
+$Comp
+L Device:C C26
+U 1 1 60274C26
+P 6800 4400
+F 0 "C26" H 6915 4446 50  0000 L CNN
+F 1 "0.1µF" H 6915 4355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6838 4250 50  0001 C CNN
+F 3 "~" H 6800 4400 50  0001 C CNN
+F 4 "C14858" H 6800 4400 50  0001 C CNN "LCSC"
+F 5 "DNP" H 6800 4400 50  0001 C CNN "DNP"
+	1    6800 4400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6800 4200 6800 4250
+Wire Wire Line
+	6800 4550 6800 4650
+$Comp
+L power:GND #PWR0136
+U 1 1 6029864C
+P 6800 4650
+F 0 "#PWR0136" H 6800 4400 50  0001 C CNN
+F 1 "GND" H 6805 4477 50  0000 C CNN
+F 2 "" H 6800 4650 50  0001 C CNN
+F 3 "" H 6800 4650 50  0001 C CNN
+	1    6800 4650
+	1    0    0    -1  
+$EndComp
+Text Label 7000 4550 0    50   ~ 0
+3v3_MCU
+Wire Wire Line
+	7000 4550 7350 4550
+Text Label 8400 2650 2    50   ~ 0
+PSRAM_~CS
+Wire Wire Line
+	7650 2650 8400 2650
+Text Label 8400 2550 2    50   ~ 0
+PSRAM_CLK
+Wire Wire Line
+	7650 2550 8400 2550
+Text Label 7100 3700 1    50   ~ 0
+PSRAM_SD1
+Wire Wire Line
+	7000 3200 7000 3700
+Wire Wire Line
+	7100 3200 7100 3700
+Wire Wire Line
+	6700 3200 6700 3700
+Wire Wire Line
+	6600 3200 6600 3700
+Text Label 7000 3700 1    50   ~ 0
+PSRAM_SD0
+Text Label 6700 3700 1    50   ~ 0
+PSRAM_SD3
+Text Label 6600 3700 1    50   ~ 0
+PSRAM_SD2
 $EndSCHEMATC
