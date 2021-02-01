@@ -209,15 +209,15 @@ Wire Notes Line
 	9100 3950 6050 3950
 Wire Notes Line
 	6050 3950 6050 2050
-Text HLabel 1450 1250 0    50   BiDi ~ 0
+Text HLabel 1450 1500 0    50   BiDi ~ 0
 SDA
-Text HLabel 1450 1350 0    50   Input ~ 0
+Text HLabel 1450 1600 0    50   Input ~ 0
 SCL
-Text HLabel 1450 1550 0    50   Output ~ 0
+Text HLabel 1450 1800 0    50   Output ~ 0
 INT
 Text HLabel 1450 1050 0    50   BiDi ~ 0
 VBAT
-Text HLabel 1450 1700 0    50   Input ~ 0
+Text HLabel 1450 1950 0    50   Input ~ 0
 CHARGE-DISABLE
 Text HLabel 1450 950  0    50   Input ~ 0
 VCHARGE
@@ -226,25 +226,25 @@ Wire Wire Line
 Wire Wire Line
 	1800 1050 1450 1050
 Wire Wire Line
-	1800 1250 1450 1250
+	1800 1500 1450 1500
 Wire Wire Line
-	1800 1350 1450 1350
+	1800 1600 1450 1600
 Wire Wire Line
-	1450 1550 1800 1550
+	1450 1800 1800 1800
 Text Label 1800 950  2    50   ~ 0
 VCHARGE
 Text Label 1800 1050 2    50   ~ 0
 VBAT
-Text Label 1800 1250 2    50   ~ 0
+Text Label 1800 1500 2    50   ~ 0
 SDA
-Text Label 1800 1350 2    50   ~ 0
+Text Label 1800 1600 2    50   ~ 0
 SCL
-Text Label 1800 1550 2    50   ~ 0
+Text Label 1800 1800 2    50   ~ 0
 INT
-Text Label 2150 1700 2    50   ~ 0
+Text Label 2150 1950 2    50   ~ 0
 CHARGE_DISABLE
 Wire Wire Line
-	1450 1700 2150 1700
+	1450 1950 2150 1950
 Text Label 4050 4400 0    50   ~ 0
 VCHARGE
 Text Label 7200 5500 2    50   ~ 0
@@ -262,11 +262,7 @@ Wire Wire Line
 Wire Notes Line
 	600  600  2350 600 
 Wire Notes Line
-	2350 600  2350 1850
-Wire Notes Line
-	2350 1850 600  1850
-Wire Notes Line
-	600  1850 600  600 
+	2350 2100 600  2100
 Text Notes 650  750  0    50   ~ 0
 Labels\n
 Text Label 5500 4600 0    50   ~ 0
@@ -560,4 +556,143 @@ Wire Notes Line
 	3700 5000 2500 5000
 Wire Notes Line
 	2500 5000 2500 4100
+Wire Notes Line
+	2350 600  2350 2100
+Wire Notes Line
+	600  600  600  2100
+Text HLabel 1450 1150 0    50   Output ~ 0
+VOUT
+Wire Wire Line
+	1450 1150 1800 1150
+Text Label 1800 1150 2    50   ~ 0
+VBAT
+Text Notes 2300 7200 0    50   ~ 0
+Pullups can be swapped for lower value if needed
+Text Notes 4450 6450 0    50   ~ 0
+!!!make sure the connected I2C devices don't\nhave internal pull-ups. Overwise they may cause\nhigh quiecent current and problems with the\nonboard communication if those are\nconnected to the AUX 3v3 and 5v pins!!!
+Text Label 2900 6950 0    50   ~ 0
+3v3_I2C
+Text Notes 2250 6150 0    50   ~ 0
+I2C pullup\n
+Wire Notes Line
+	2250 7250 4350 7250
+Wire Notes Line
+	2250 7250 2250 6050
+Wire Notes Line
+	4350 6050 4350 7250
+Wire Notes Line
+	2250 6050 4350 6050
+Wire Wire Line
+	3650 6550 3900 6550
+Text Label 3900 6550 2    50   ~ 0
+VBAT
+Wire Wire Line
+	3850 6950 4100 6950
+Wire Wire Line
+	3850 6850 4100 6850
+Text Label 4100 6950 2    50   ~ 0
+SCL
+Text Label 4100 6850 2    50   ~ 0
+SDA
+Wire Wire Line
+	2800 6550 2550 6550
+$Comp
+L power:GND #PWR?
+U 1 1 6026DD90
+P 2550 6550
+AR Path="/5F63A00B/6026DD90" Ref="#PWR?"  Part="1" 
+AR Path="/5F63A0E9/6026DD90" Ref="#PWR?"  Part="1" 
+AR Path="/5F639F48/6026DD90" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H 2550 6300 50  0001 C CNN
+F 1 "GND" H 2555 6377 50  0000 C CNN
+F 2 "" H 2550 6550 50  0001 C CNN
+F 3 "" H 2550 6550 50  0001 C CNN
+	1    2550 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 6950 3550 6950
+Wire Wire Line
+	3300 6850 3300 6950
+Wire Wire Line
+	3300 6850 3550 6850
+$Comp
+L Device:R R?
+U 1 1 6026DD9A
+P 3700 6850
+AR Path="/5F63A00B/6026DD9A" Ref="R?"  Part="1" 
+AR Path="/5F63A0E9/6026DD9A" Ref="R?"  Part="1" 
+AR Path="/5F639F48/6026DD9A" Ref="R11"  Part="1" 
+F 0 "R11" V 3600 6900 50  0000 C CNN
+F 1 "10k" V 3600 6750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3630 6850 50  0001 C CNN
+F 3 "~" H 3700 6850 50  0001 C CNN
+F 4 "C25804" H 3700 6850 50  0001 C CNN "LCSC"
+	1    3700 6850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6026DDA1
+P 3700 6950
+AR Path="/5F63A00B/6026DDA1" Ref="R?"  Part="1" 
+AR Path="/5F63A0E9/6026DDA1" Ref="R?"  Part="1" 
+AR Path="/5F639F48/6026DDA1" Ref="R12"  Part="1" 
+F 0 "R12" V 3800 7000 50  0000 C CNN
+F 1 "10k" V 3800 6850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3630 6950 50  0001 C CNN
+F 3 "~" H 3700 6950 50  0001 C CNN
+F 4 "C25804" H 3700 6950 50  0001 C CNN "LCSC"
+	1    3700 6950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2800 6950 2800 6900
+Connection ~ 3300 6950
+Wire Wire Line
+	3300 6950 2800 6950
+Connection ~ 3300 6850
+Wire Wire Line
+	3300 6750 3300 6850
+Wire Wire Line
+	2800 6550 2800 6600
+Connection ~ 2800 6550
+Wire Wire Line
+	2950 6550 2800 6550
+$Comp
+L Device:C C?
+U 1 1 6026DDB0
+P 2800 6750
+AR Path="/5F63A00B/6026DDB0" Ref="C?"  Part="1" 
+AR Path="/5F63A0E9/6026DDB0" Ref="C?"  Part="1" 
+AR Path="/5F639F48/6026DDB0" Ref="C9"  Part="1" 
+F 0 "C9" H 2915 6796 50  0000 L CNN
+F 1 "0.1µF" H 2915 6705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2838 6600 50  0001 C CNN
+F 3 "~" H 2800 6750 50  0001 C CNN
+F 4 "C14858" H 2800 6750 50  0001 C CNN "LCSC"
+	1    2800 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L XC6206P332MR:XC6206P332MR U?
+U 1 1 6026DDB7
+P 3300 6450
+AR Path="/5F63A00B/6026DDB7" Ref="U?"  Part="1" 
+AR Path="/5F63A0E9/6026DDB7" Ref="U?"  Part="1" 
+AR Path="/5F639F48/6026DDB7" Ref="U8"  Part="1" 
+F 0 "U8" H 3300 6665 50  0000 C CNN
+F 1 "XC6206P332MR" H 3300 6574 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 3350 6100 50  0001 C CNN
+F 3 "https://www.torexsemi.com/file/xc6206/XC6206.pdf" H 3500 6450 50  0001 C CNN
+F 4 "C5446" H 3300 6450 50  0001 C CNN "LCSC"
+	1    3300 6450
+	1    0    0    -1  
+$EndComp
+Text HLabel 1450 1250 0    50   Output ~ 0
+3v3_I2C
+Wire Wire Line
+	1450 1250 1550 1250
+Text Label 1550 1250 0    50   ~ 0
+3v3_I2C
 $EndSCHEMATC
