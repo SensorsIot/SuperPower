@@ -140,9 +140,9 @@ Wire Wire Line
 Text Label 10850 3150 2    50   ~ 0
 VBUS_1
 Text Label 10850 3050 2    50   ~ 0
-D-_1
+D1-
 Text Label 10850 2950 2    50   ~ 0
-D+_1
+D1+
 Wire Wire Line
 	10850 2950 10550 2950
 Wire Wire Line
@@ -374,9 +374,9 @@ Wire Wire Line
 Wire Wire Line
 	8800 2800 9300 2800
 Text Label 10350 4350 2    50   ~ 0
-D+_1
+D1+
 Text Label 10350 4450 2    50   ~ 0
-D-_1
+D1-
 Text Label 8450 4450 2    50   ~ 0
 D-
 Text Label 8450 4350 2    50   ~ 0
