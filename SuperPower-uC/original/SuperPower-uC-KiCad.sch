@@ -140,9 +140,9 @@ Wire Wire Line
 Text Label 10850 3150 2    50   ~ 0
 VBUS_1
 Text Label 10850 3050 2    50   ~ 0
-D-_1
+D1-
 Text Label 10850 2950 2    50   ~ 0
-D+_1
+D1+
 Wire Wire Line
 	10850 2950 10550 2950
 Wire Wire Line
@@ -195,15 +195,15 @@ Wire Wire Line
 	5100 2550 5100 3750
 Wire Wire Line
 	5500 3600 5500 2950
-Text Label 8450 4150 2    50   ~ 0
+Text Label 8450 4050 2    50   ~ 0
 SCL
-Text Label 8450 4250 2    50   ~ 0
+Text Label 8450 4150 2    50   ~ 0
 SDA
-Text Label 8450 5150 2    50   ~ 0
+Text Label 8450 5250 2    50   ~ 0
 ~SMBALERT
 Text Label 8450 4550 2    50   ~ 0
 VBUS
-Text Label 8450 5050 2    50   ~ 0
+Text Label 8450 5150 2    50   ~ 0
 3v3
 Text Label 8450 4650 2    50   ~ 0
 EN_5V
@@ -215,8 +215,6 @@ Text Label 8450 4950 2    50   ~ 0
 3v3_MCU
 Wire Wire Line
 	7950 4150 8450 4150
-Wire Wire Line
-	8450 4250 7950 4250
 Wire Wire Line
 	7950 4350 8450 4350
 Wire Wire Line
@@ -232,8 +230,6 @@ Wire Wire Line
 Wire Wire Line
 	7950 4950 8450 4950
 Wire Wire Line
-	8450 5050 7950 5050
-Wire Wire Line
 	7950 5150 8450 5150
 Text Label 7500 2350 2    50   ~ 0
 EN_5V
@@ -248,21 +244,17 @@ Text Label 7500 2800 2    50   ~ 0
 $Comp
 L power:GND #PWR0112
 U 1 1 5FE48E31
-P 10000 5300
-F 0 "#PWR0112" H 10000 5050 50  0001 C CNN
-F 1 "GND" H 10005 5127 50  0000 C CNN
-F 2 "" H 10000 5300 50  0001 C CNN
-F 3 "" H 10000 5300 50  0001 C CNN
-	1    10000 5300
+P 10550 5100
+F 0 "#PWR0112" H 10550 4850 50  0001 C CNN
+F 1 "GND" H 10555 4927 50  0000 C CNN
+F 2 "" H 10550 5100 50  0001 C CNN
+F 3 "" H 10550 5100 50  0001 C CNN
+	1    10550 5100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10000 5300 10000 5250
-Wire Wire Line
-	10000 5250 9700 5250
-Text Label 10350 4150 2    50   ~ 0
+Text Label 10350 4050 2    50   ~ 0
 SCL_1
-Text Label 10350 4250 2    50   ~ 0
+Text Label 10350 4150 2    50   ~ 0
 SDA_1
 Text Label 10350 4550 2    50   ~ 0
 VBUS_1
@@ -277,18 +269,14 @@ Text Label 10350 4950 2    50   ~ 0
 $Comp
 L power:GND #PWR0113
 U 1 1 5FE66948
-P 8250 5300
-F 0 "#PWR0113" H 8250 5050 50  0001 C CNN
-F 1 "GND" H 8255 5127 50  0000 C CNN
-F 2 "" H 8250 5300 50  0001 C CNN
-F 3 "" H 8250 5300 50  0001 C CNN
-	1    8250 5300
+P 8700 5100
+F 0 "#PWR0113" H 8700 4850 50  0001 C CNN
+F 1 "GND" H 8705 4927 50  0000 C CNN
+F 2 "" H 8700 5100 50  0001 C CNN
+F 3 "" H 8700 5100 50  0001 C CNN
+	1    8700 5100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8250 5300 8250 5250
-Wire Wire Line
-	8250 5250 7950 5250
 $Comp
 L Connector:Conn_01x13_Female J9
 U 1 1 600940E1
@@ -314,41 +302,31 @@ $EndComp
 $Comp
 L power:GND #PWR0109
 U 1 1 6009915B
-P 8700 4100
-F 0 "#PWR0109" H 8700 3850 50  0001 C CNN
-F 1 "GND" H 8705 3927 50  0000 C CNN
-F 2 "" H 8700 4100 50  0001 C CNN
-F 3 "" H 8700 4100 50  0001 C CNN
-	1    8700 4100
+P 8700 4300
+F 0 "#PWR0109" H 8700 4050 50  0001 C CNN
+F 1 "GND" H 8705 4127 50  0000 C CNN
+F 2 "" H 8700 4300 50  0001 C CNN
+F 3 "" H 8700 4300 50  0001 C CNN
+	1    8700 4300
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0111
 U 1 1 60099602
-P 10400 4100
-F 0 "#PWR0111" H 10400 3850 50  0001 C CNN
-F 1 "GND" H 10405 3927 50  0000 C CNN
-F 2 "" H 10400 4100 50  0001 C CNN
-F 3 "" H 10400 4100 50  0001 C CNN
-	1    10400 4100
+P 10550 4300
+F 0 "#PWR0111" H 10550 4050 50  0001 C CNN
+F 1 "GND" H 10555 4127 50  0000 C CNN
+F 2 "" H 10550 4300 50  0001 C CNN
+F 3 "" H 10550 4300 50  0001 C CNN
+	1    10550 4300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7950 4050 8700 4050
-Wire Wire Line
-	8700 4050 8700 4100
-Wire Wire Line
-	9700 4050 10400 4050
-Wire Wire Line
-	10400 4050 10400 4100
-Text Label 10350 5050 2    50   ~ 0
-3v3_1
 Text Label 10350 5150 2    50   ~ 0
+3v3_1
+Text Label 10350 5250 2    50   ~ 0
 ~SMBALERT_1
 Wire Wire Line
 	9700 4150 10350 4150
-Wire Wire Line
-	9700 4250 10350 4250
 Wire Wire Line
 	9700 4350 10350 4350
 Wire Wire Line
@@ -363,8 +341,6 @@ Wire Wire Line
 	9700 4850 10350 4850
 Wire Wire Line
 	9700 4950 10350 4950
-Wire Wire Line
-	9700 5050 10350 5050
 Wire Wire Line
 	9700 5150 10350 5150
 Text Label 8800 2350 0    50   ~ 0
@@ -398,11 +374,117 @@ Wire Wire Line
 Wire Wire Line
 	8800 2800 9300 2800
 Text Label 10350 4350 2    50   ~ 0
-D+_1
+D1+
 Text Label 10350 4450 2    50   ~ 0
-D-_1
+D1-
 Text Label 8450 4450 2    50   ~ 0
 D-
 Text Label 8450 4350 2    50   ~ 0
 D+
+Wire Wire Line
+	10550 4300 10550 4250
+Wire Wire Line
+	9700 4250 10550 4250
+Wire Wire Line
+	10350 4050 9700 4050
+Wire Wire Line
+	8450 4050 7950 4050
+Wire Wire Line
+	8700 4300 8700 4250
+Wire Wire Line
+	7950 4250 8700 4250
+Wire Wire Line
+	9700 5250 10350 5250
+Wire Wire Line
+	10550 5100 10550 5050
+Wire Wire Line
+	9700 5050 10550 5050
+Wire Wire Line
+	7950 5250 8450 5250
+Wire Wire Line
+	8700 5100 8700 5050
+Wire Wire Line
+	7950 5050 8700 5050
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 600EABA0
+P 1550 5800
+F 0 "H1" H 1650 5846 50  0000 L CNN
+F 1 "MountingHole" H 1650 5755 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm" H 1550 5800 50  0001 C CNN
+F 3 "~" H 1550 5800 50  0001 C CNN
+	1    1550 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 600EB152
+P 1550 6100
+F 0 "H2" H 1650 6146 50  0000 L CNN
+F 1 "MountingHole" H 1650 6055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm" H 1550 6100 50  0001 C CNN
+F 3 "~" H 1550 6100 50  0001 C CNN
+	1    1550 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 600EB37A
+P 1550 6400
+F 0 "H3" H 1650 6446 50  0000 L CNN
+F 1 "MountingHole" H 1650 6355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm" H 1550 6400 50  0001 C CNN
+F 3 "~" H 1550 6400 50  0001 C CNN
+	1    1550 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 600EB596
+P 1550 6700
+F 0 "H4" H 1650 6746 50  0000 L CNN
+F 1 "MountingHole" H 1650 6655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm" H 1550 6700 50  0001 C CNN
+F 3 "~" H 1550 6700 50  0001 C CNN
+	1    1550 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 600EB783
+P 2900 5800
+F 0 "H5" H 3000 5846 50  0000 L CNN
+F 1 "MountingHole" H 3000 5755 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm" H 2900 5800 50  0001 C CNN
+F 3 "~" H 2900 5800 50  0001 C CNN
+	1    2900 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 600EBA62
+P 2900 6100
+F 0 "H6" H 3000 6146 50  0000 L CNN
+F 1 "MountingHole" H 3000 6055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm" H 2900 6100 50  0001 C CNN
+F 3 "~" H 2900 6100 50  0001 C CNN
+	1    2900 6100
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	1300 5350 1300 7050
+Wire Notes Line
+	1300 7050 2550 7050
+Wire Notes Line
+	2550 7050 2550 5350
+Wire Notes Line
+	3700 5350 3700 6400
+Wire Notes Line
+	3700 6400 2550 6400
+Wire Notes Line
+	1300 5350 3700 5350
+Text Notes 1350 5500 0    50   ~ 10
+Mounting Hole Charger 
+Text Notes 2600 5500 0    50   ~ 10
+Mounting Hole MCU 
 $EndSCHEMATC

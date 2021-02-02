@@ -418,7 +418,7 @@ U 1 1 5FAE4A6B
 P 8450 4600
 F 0 "U7" H 8450 5415 50  0000 C CNN
 F 1 "ESP32-WROOM32" H 8450 5324 50  0000 C CNN
-F 2 "RF_Module:ESP32-WROOM-32" H 8500 5300 50  0001 C CNN
+F 2 "ESP32-WROOM32:ESP32-WROOM-32_EPAD_3x3_ThermalVias" H 8500 5300 50  0001 C CNN
 F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 8450 4500 50  0001 C CNN
 F 4 "C82899" H 8450 4600 50  0001 C CNN "LCSC"
 	1    8450 4600
@@ -745,7 +745,7 @@ U 1 1 5FC7D0C0
 P 4950 2300
 F 0 "U6" H 4600 1000 50  0000 C CNN
 F 1 "CP2102N-A01-GQFN28" H 4400 900 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm" H 5400 1100 50  0001 L CNN
+F 2 "Package_DFN_QFN:QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm_ThermalVias" H 5400 1100 50  0001 L CNN
 F 3 "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" H 5000 1550 50  0001 C CNN
 	1    4950 2300
 	1    0    0    -1  
@@ -860,39 +860,6 @@ Wire Wire Line
 Wire Wire Line
 	3200 1850 3200 2100
 Connection ~ 3200 2100
-$Comp
-L Connector:TestPoint TP29
-U 1 1 5FBB75FF
-P 5650 2400
-F 0 "TP29" V 5650 2600 50  0000 L CNN
-F 1 "TestPoint" V 5650 2700 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5850 2400 50  0001 C CNN
-F 3 "~" H 5850 2400 50  0001 C CNN
-	1    5650 2400
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP30
-U 1 1 5FBC1FC0
-P 5650 2500
-F 0 "TP30" V 5650 2688 50  0000 L CNN
-F 1 "TestPoint" V 5695 2688 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5850 2500 50  0001 C CNN
-F 3 "~" H 5850 2500 50  0001 C CNN
-	1    5650 2500
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP31
-U 1 1 5FBC21DE
-P 5650 2600
-F 0 "TP31" V 5650 2788 50  0000 L CNN
-F 1 "TestPoint" V 5695 2788 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5850 2600 50  0001 C CNN
-F 3 "~" H 5850 2600 50  0001 C CNN
-	1    5650 2600
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	5650 2400 5450 2400
 Wire Wire Line
@@ -1403,61 +1370,36 @@ F 3 "~" H 10500 4800 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H?
-U 1 1 601076C5
-P 4250 6450
-AR Path="/5F63B107/601076C5" Ref="H?"  Part="1" 
-AR Path="/5F63A193/601076C5" Ref="H5"  Part="1" 
-F 0 "H5" H 4350 6499 50  0000 L CNN
-F 1 "MountingHole_Pad" H 4350 6408 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm_Pad_Via" H 4250 6450 50  0001 C CNN
-F 3 "~" H 4250 6450 50  0001 C CNN
-	1    4250 6450
-	1    0    0    -1  
+L Connector:TestPoint TP31
+U 1 1 5FBC21DE
+P 5650 2600
+F 0 "TP31" V 5650 2788 50  0000 L CNN
+F 1 "TestPoint" V 5695 2788 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5850 2600 50  0001 C CNN
+F 3 "~" H 5850 2600 50  0001 C CNN
+	1    5650 2600
+	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 601076CB
-P 4250 6650
-AR Path="/5F63B107/601076CB" Ref="#PWR?"  Part="1" 
-AR Path="/5F63A193/601076CB" Ref="#PWR0108"  Part="1" 
-F 0 "#PWR0108" H 4250 6400 50  0001 C CNN
-F 1 "GND" H 4255 6477 50  0000 C CNN
-F 2 "" H 4250 6650 50  0001 C CNN
-F 3 "" H 4250 6650 50  0001 C CNN
-	1    4250 6650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4250 6650 4250 6550
-Text Notes 4100 6150 0    50   ~ 10
-Mounting Holes
-$Comp
-L Mechanical:MountingHole_Pad H?
-U 1 1 601076E0
-P 4250 7200
-AR Path="/5F63B107/601076E0" Ref="H?"  Part="1" 
-AR Path="/5F63A193/601076E0" Ref="H6"  Part="1" 
-F 0 "H6" H 4350 7249 50  0000 L CNN
-F 1 "MountingHole_Pad" H 4350 7158 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm_Pad_Via" H 4250 7200 50  0001 C CNN
-F 3 "~" H 4250 7200 50  0001 C CNN
-	1    4250 7200
-	1    0    0    -1  
+L Connector:TestPoint TP30
+U 1 1 5FBC1FC0
+P 5650 2500
+F 0 "TP30" V 5650 2688 50  0000 L CNN
+F 1 "TestPoint" V 5695 2688 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5850 2500 50  0001 C CNN
+F 3 "~" H 5850 2500 50  0001 C CNN
+	1    5650 2500
+	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 601076E6
-P 4250 7400
-AR Path="/5F63B107/601076E6" Ref="#PWR?"  Part="1" 
-AR Path="/5F63A193/601076E6" Ref="#PWR0110"  Part="1" 
-F 0 "#PWR0110" H 4250 7150 50  0001 C CNN
-F 1 "GND" H 4255 7227 50  0000 C CNN
-F 2 "" H 4250 7400 50  0001 C CNN
-F 3 "" H 4250 7400 50  0001 C CNN
-	1    4250 7400
-	1    0    0    -1  
+L Connector:TestPoint TP29
+U 1 1 5FBB75FF
+P 5650 2400
+F 0 "TP29" V 5650 2600 50  0000 L CNN
+F 1 "TestPoint" V 5650 2700 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5850 2400 50  0001 C CNN
+F 3 "~" H 5850 2400 50  0001 C CNN
+	1    5650 2400
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4250 7400 4250 7300
 $EndSCHEMATC
