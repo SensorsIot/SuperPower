@@ -1,5 +1,4 @@
-# Super Power PRi Project
+# Super Power RPi Project
 
-[Schematic](/SuperPower-RPi/schematic.md)
+[Documentation](https://superpower.readthedocs.io/en/latest/rpi/overview.html)
 
-[Layout](/SuperPower-RPi/layout.md)
