@@ -98,7 +98,7 @@ U 1 1 5F6B08E8
 P 5800 3600
 F 0 "J1" H 5150 4850 50  0000 C CNN
 F 1 "Raspberry_Pi_2_3" H 6450 4850 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 5800 3600 50  0001 C CNN
+F 2 "SuperPower-RPi-KiCAD:PinSocket_2x20_P2.54mm_Vertical_With_Pogo" H 5800 3600 50  0001 C CNN
 F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 5800 3600 50  0001 C CNN
 F 4 "DNP" H 5800 3600 50  0001 C CNN "Mfg"
 	1    5800 3600

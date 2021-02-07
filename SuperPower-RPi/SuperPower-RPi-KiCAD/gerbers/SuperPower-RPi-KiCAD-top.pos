@@ -1,4 +1,4 @@
-### Module positions - created on 12/29/20 13:22:55 ###
+### Module positions - created on 01/11/21 10:12:04 ###
 ### Printed by Pcbnew version kicad (5.1.8)-1
 ## Unit = mm, Angle = deg.
 ## Side : top
@@ -26,7 +26,7 @@ C20       10uF                      C_0805_2012Metric                           
 C21       10uF                      C_0805_2012Metric                                   97.0000   -80.3000   90.0000  top
 C22       4.7uF                     C_0603_1608Metric                                  101.9000   -70.8000  270.0000  top
 C23       0.1uF                     C_0402_1005Metric                                  103.5000   -69.4000  270.0000  top
-C24       0.1uF                     C_0402_1005Metric                                   72.9000   -67.9500    0.0000  top
+C24       0.1uF                     C_0402_1005Metric                                   72.4100   -67.8600    0.0000  top
 C26       1.0uF                     C_0402_1005Metric                                   88.1000   -91.7000  270.0000  top
 C27       22uF                      C_1206_3216Metric                                   65.2500   -62.5000    0.0000  top
 C28       22uF                      C_1206_3216Metric                                   57.5000   -63.2500  180.0000  top
@@ -36,6 +36,7 @@ C31       0.1uF                     C_0402_1005Metric                           
 C32       1.0uF                     C_0402_1005Metric                                   89.1900   -73.5600   90.0000  top
 C33       0.1uF                     C_0402_1005Metric                                   96.3300   -58.7200    0.0000  top
 C34       0.1uF                     C_0402_1005Metric                                   84.6000   -69.5000    0.0000  top
+C35       0.1uF                     C_0402_1005Metric                                  101.2000   -91.4000    0.0000  top
 D1        BZT585B13T-7              D_SOD-523                                           72.4000   -97.9000  270.0000  top
 D2        DNP                       LED_0603_1608Metric                                 70.3000   -94.9000  270.0000  top
 D3        BZT585B13T-7              D_SOD-523                                           67.3000   -92.8000  270.0000  top
@@ -68,16 +69,18 @@ R14       1.8k                      R_0603_1608Metric                           
 R16       100k                      R_0402_1005Metric                                   55.7000   -89.2000    0.0000  top
 R17       100k                      R_0402_1005Metric                                   57.1000   -86.2000  180.0000  top
 R18       100k                      R_0402_1005Metric                                   63.6000   -86.9000   90.0000  top
-R19       5.23k                     R_0603_1608Metric                                   55.0000   -58.0000  180.0000  top
-R20       100k                      R_0402_1005Metric                                   70.8000   -67.2500   90.0000  top
+R19       DNP                       R_0603_1608Metric                                   55.0000   -58.0000  180.0000  top
+R20       100k                      R_0402_1005Metric                                   75.3400   -68.1000   90.0000  top
+R21       100k                      R_0402_1005Metric                                  104.2000   -91.4000    0.0000  top
 R23       5.23k                     R_0603_1608Metric                                   92.5000   -94.6000   90.0000  top
 R24       30.1k                     R_0603_1608Metric                                   91.6000   -98.8000    0.0000  top
 R25       DNP                       R_0603_1608Metric                                   99.0000   -95.0000  180.0000  top
 R26       DNP                       R_0603_1608Metric                                   99.0000   -97.0000  180.0000  top
 SW1       Tact                      SW_Push_1P1T-SH_NO_CK_KMR2xxG                       75.0000   -64.7500    0.0000  top
+SW2       Tact                      SW_Push_1P1T-SH_NO_CK_KMR2xxG                      102.7000   -86.3000  180.0000  top
 U1        TPS61088                  TI_VQFN_3.5x4.5mm                                   60.2500   -70.5000   90.0000  top
 U2        BQ25895RTW                Texas_S-PWQFN-N24_EP2.7x2.7mm_ThermalVias           73.9000   -90.3000    0.0000  top
 U3        STM32F412RETx             LQFP-64_10x10mm_P0.5mm                              93.6000   -66.9000   45.0000  top
 U5        ME6210A33M3G              SOT-23                                              93.8000   -78.7700    0.0000  top
-U6        NCP380LMUAJAATBG          UDFN-6-1EP_2x2mm_P0.65mm_EP0.95x1.7mm               58.2500   -59.7500  270.0000  top
+U6        NCP380HMU21AATBG          UDFN-6-1EP_2x2mm_P0.65mm_EP0.95x1.7mm               58.2500   -59.7500  270.0000  top
 ## End
