@@ -191,10 +191,8 @@ Wire Wire Line
 	5900 2950 6150 2950
 Wire Wire Line
 	5900 3050 6150 3050
-Text Label 6350 4750 2    50   ~ 0
-VBAT
 Wire Wire Line
-	6100 4750 6350 4750
+	6100 4750 6450 4750
 Text Label 5900 4950 2    50   ~ 0
 SCL
 Wire Wire Line
@@ -341,4 +339,6 @@ Wire Wire Line
 	1350 1300 1750 1300
 Text Label 1750 1300 2    50   ~ 0
 VBAT
+Text Label 6450 4750 2    50   ~ 0
+3v3_I2C
 $EndSCHEMATC

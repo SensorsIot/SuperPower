@@ -132,7 +132,6 @@ F5 "5V_EN" O R 6150 4500 50
 F6 "CHARGE-DISABLE" I L 4900 4450 50 
 F7 "3v3V_EN" O R 6150 4600 50 
 F8 "3v3_I2C" I L 4900 4350 50 
-F9 "VBAT" I L 4900 4550 50 
 $EndSheet
 $Sheet
 S 2850 4000 1250 1150
@@ -386,8 +385,6 @@ NoConn ~ 2950 7000
 Wire Wire Line
 	5100 6800 5800 6800
 Wire Wire Line
-	2550 2550 2850 2550
-Wire Wire Line
 	4300 2200 4900 2200
 Wire Wire Line
 	4900 2500 4800 2500
@@ -403,14 +400,71 @@ Wire Wire Line
 Wire Wire Line
 	4700 4350 4900 4350
 Wire Wire Line
-	4500 4550 4500 3600
-Wire Wire Line
-	4500 3600 2850 3600
-Wire Wire Line
-	2850 3600 2850 2550
-Wire Wire Line
-	4500 4550 4900 4550
-Connection ~ 2850 2550
-Wire Wire Line
-	2850 2550 3050 2550
+	2550 2550 3050 2550
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 60293912
+P 8050 6150
+F 0 "H1" H 8150 6196 50  0000 L CNN
+F 1 "MountingHole" H 8150 6105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 8050 6150 50  0001 C CNN
+F 3 "~" H 8050 6150 50  0001 C CNN
+	1    8050 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 6029420D
+P 8050 5950
+F 0 "H2" H 8150 5996 50  0000 L CNN
+F 1 "MountingHole" H 8150 5905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 8050 5950 50  0001 C CNN
+F 3 "~" H 8050 5950 50  0001 C CNN
+	1    8050 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 60294686
+P 8050 5750
+F 0 "H3" H 8150 5796 50  0000 L CNN
+F 1 "MountingHole" H 8150 5705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 8050 5750 50  0001 C CNN
+F 3 "~" H 8050 5750 50  0001 C CNN
+	1    8050 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 602990FB
+P 7300 6150
+F 0 "H4" H 7400 6196 50  0000 L CNN
+F 1 "MountingHole" H 7400 6105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 7300 6150 50  0001 C CNN
+F 3 "~" H 7300 6150 50  0001 C CNN
+	1    7300 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 60299211
+P 7300 5950
+F 0 "H5" H 7400 5996 50  0000 L CNN
+F 1 "MountingHole" H 7400 5905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 7300 5950 50  0001 C CNN
+F 3 "~" H 7300 5950 50  0001 C CNN
+	1    7300 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 6029921B
+P 7300 5750
+F 0 "H6" H 7400 5796 50  0000 L CNN
+F 1 "MountingHole" H 7400 5705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 7300 5750 50  0001 C CNN
+F 3 "~" H 7300 5750 50  0001 C CNN
+	1    7300 5750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
