@@ -188,4 +188,43 @@ Text Notes 4500 3550 0    50   ~ 0
 Maximum Input voltage is 8V\n(6v panels reccomended)
 Text Notes 3450 3950 0    50   ~ 0
 !!! If the CHRG_Jumper is fully bridged,\ndo not connect USB and solar at the same time !!!
+$Comp
+L IP4220CZ6:IP4220CZ6 U15
+U 1 1 602323ED
+P 4050 4500
+F 0 "U15" H 3975 4815 50  0000 C CNN
+F 1 "IP4220CZ6" H 3975 4724 50  0000 C CNN
+F 2 "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm" H 4050 4500 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/IP4220CZ6.pdf" H 4050 4500 50  0001 C CNN
+F 4 "DNP" H 4050 4500 50  0001 C CNN "DNP"
+	1    4050 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 4450 3250 4450
+Text Label 3250 4450 0    50   ~ 0
+D+
+Wire Wire Line
+	4400 4450 4700 4450
+Text Label 4700 4450 2    50   ~ 0
+D-
+Text Label 4700 4550 2    50   ~ 0
+VBUS
+$Comp
+L power:GND #PWR0137
+U 1 1 602337F2
+P 3250 4600
+F 0 "#PWR0137" H 3250 4350 50  0001 C CNN
+F 1 "GND" H 3255 4427 50  0000 C CNN
+F 2 "" H 3250 4600 50  0001 C CNN
+F 3 "" H 3250 4600 50  0001 C CNN
+	1    3250 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 4600 3250 4550
+Wire Wire Line
+	3250 4550 3550 4550
+Wire Wire Line
+	4400 4550 4700 4550
 $EndSCHEMATC
