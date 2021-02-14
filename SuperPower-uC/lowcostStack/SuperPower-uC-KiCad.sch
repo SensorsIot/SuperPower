@@ -407,7 +407,7 @@ U 1 1 60293912
 P 8050 6150
 F 0 "H1" H 8150 6196 50  0000 L CNN
 F 1 "MountingHole" H 8150 6105 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 8050 6150 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO7380" H 8050 6150 50  0001 C CNN
 F 3 "~" H 8050 6150 50  0001 C CNN
 	1    8050 6150
 	1    0    0    -1  
@@ -418,7 +418,7 @@ U 1 1 6029420D
 P 8050 5950
 F 0 "H2" H 8150 5996 50  0000 L CNN
 F 1 "MountingHole" H 8150 5905 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 8050 5950 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO7380" H 8050 5950 50  0001 C CNN
 F 3 "~" H 8050 5950 50  0001 C CNN
 	1    8050 5950
 	1    0    0    -1  
@@ -429,7 +429,7 @@ U 1 1 60294686
 P 8050 5750
 F 0 "H3" H 8150 5796 50  0000 L CNN
 F 1 "MountingHole" H 8150 5705 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 8050 5750 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO7380" H 8050 5750 50  0001 C CNN
 F 3 "~" H 8050 5750 50  0001 C CNN
 	1    8050 5750
 	1    0    0    -1  
@@ -440,7 +440,7 @@ U 1 1 602990FB
 P 7300 6150
 F 0 "H4" H 7400 6196 50  0000 L CNN
 F 1 "MountingHole" H 7400 6105 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 7300 6150 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO7380" H 7300 6150 50  0001 C CNN
 F 3 "~" H 7300 6150 50  0001 C CNN
 	1    7300 6150
 	1    0    0    -1  
@@ -451,7 +451,7 @@ U 1 1 60299211
 P 7300 5950
 F 0 "H5" H 7400 5996 50  0000 L CNN
 F 1 "MountingHole" H 7400 5905 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 7300 5950 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO7380" H 7300 5950 50  0001 C CNN
 F 3 "~" H 7300 5950 50  0001 C CNN
 	1    7300 5950
 	1    0    0    -1  
@@ -462,7 +462,7 @@ U 1 1 6029921B
 P 7300 5750
 F 0 "H6" H 7400 5796 50  0000 L CNN
 F 1 "MountingHole" H 7400 5705 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 7300 5750 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO7380" H 7300 5750 50  0001 C CNN
 F 3 "~" H 7300 5750 50  0001 C CNN
 	1    7300 5750
 	1    0    0    -1  
