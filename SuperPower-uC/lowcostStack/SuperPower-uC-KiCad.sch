@@ -327,7 +327,7 @@ U 1 1 600A49CD
 P 4900 6400
 F 0 "J9" H 5000 6450 50  0000 C CNN
 F 1 "MCU board" H 5150 6350 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x13_P2.54mm_Vertical" H 4900 6400 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x13_P2.54mm_Vertical" H 4900 6400 50  0001 C CNN
 F 3 "~" H 4900 6400 50  0001 C CNN
 	1    4900 6400
 	-1   0    0    -1  
