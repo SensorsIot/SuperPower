@@ -59,7 +59,7 @@ P 4450 4750
 F 0 "Y2" H 4450 5018 50  0000 C CNN
 F 1 "32.768KHz" H 4450 4927 50  0000 C CNN
 F 2 "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm" H 4450 4750 50  0001 C CNN
-F 3 "1901081604_Seiko-Epson-Q13FC1350000400_C32346.pdf" H 4450 4750 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1810171817_Seiko-Epson-Q13FC1350000400_C32346.pdf" H 4450 4750 50  0001 C CNN
 F 4 "C32346" H 4450 4750 50  0001 C CNN "LCSC"
 	1    4450 4750
 	1    0    0    -1  
@@ -85,86 +85,6 @@ Wire Wire Line
 	4300 4850 4800 4850
 NoConn ~ 5600 4850
 $Comp
-L XC6206P332MR:XC6206P332MR U8
-U 1 1 5F806B5A
-P 7850 2500
-F 0 "U8" H 7850 2715 50  0000 C CNN
-F 1 "XC6206P332MR" H 7850 2624 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 7900 2150 50  0001 C CNN
-F 3 "https://www.torexsemi.com/file/xc6206/XC6206.pdf" H 8050 2500 50  0001 C CNN
-F 4 "C5446" H 7850 2500 50  0001 C CNN "LCSC"
-	1    7850 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C9
-U 1 1 5F8078F3
-P 7350 2800
-F 0 "C9" H 7465 2846 50  0000 L CNN
-F 1 "0.1µF" H 7465 2755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7388 2650 50  0001 C CNN
-F 3 "~" H 7350 2800 50  0001 C CNN
-F 4 "C14858" H 7350 2800 50  0001 C CNN "LCSC"
-	1    7350 2800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7500 2600 7350 2600
-Wire Wire Line
-	7350 2600 7350 2650
-Wire Wire Line
-	7850 2800 7850 2900
-Wire Wire Line
-	7850 3000 7350 3000
-Wire Wire Line
-	7350 3000 7350 2950
-$Comp
-L Device:R R12
-U 1 1 5F8095DB
-P 8250 3000
-F 0 "R12" V 8350 3050 50  0000 C CNN
-F 1 "10k" V 8350 2900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8180 3000 50  0001 C CNN
-F 3 "~" H 8250 3000 50  0001 C CNN
-F 4 "C25804" H 8250 3000 50  0001 C CNN "LCSC"
-	1    8250 3000
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R11
-U 1 1 5F80A0C7
-P 8250 2900
-F 0 "R11" V 8150 2950 50  0000 C CNN
-F 1 "10k" V 8150 2800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8180 2900 50  0001 C CNN
-F 3 "~" H 8250 2900 50  0001 C CNN
-F 4 "C25804" H 8250 2900 50  0001 C CNN "LCSC"
-	1    8250 2900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7850 2900 8100 2900
-Connection ~ 7850 2900
-Wire Wire Line
-	7850 2900 7850 3000
-Wire Wire Line
-	7850 3000 8100 3000
-Connection ~ 7850 3000
-$Comp
-L power:GND #PWR0108
-U 1 1 5F80C4A4
-P 7100 2600
-F 0 "#PWR0108" H 7100 2350 50  0001 C CNN
-F 1 "GND" H 7105 2427 50  0000 C CNN
-F 2 "" H 7100 2600 50  0001 C CNN
-F 3 "" H 7100 2600 50  0001 C CNN
-	1    7100 2600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7350 2600 7100 2600
-Connection ~ 7350 2600
-$Comp
 L TCA6408APWR:TCA6408A U9
 U 1 1 5F8103C2
 P 5500 3000
@@ -177,7 +97,7 @@ F 4 "C206177" H 5750 3650 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 Text HLabel 1350 1200 0    50   Input ~ 0
-VBAT
+3v3_I2C
 Wire Wire Line
 	5100 2850 5050 2850
 $Comp
@@ -232,7 +152,7 @@ SDA
 Text Label 1750 950  2    50   ~ 0
 SCL
 Text Label 1750 1200 2    50   ~ 0
-VBAT
+3v3_I2C
 Text Label 1750 2000 2    50   ~ 0
 INT
 Text Label 1750 1450 2    50   ~ 0
@@ -271,22 +191,8 @@ Wire Wire Line
 	5900 2950 6150 2950
 Wire Wire Line
 	5900 3050 6150 3050
-Text Label 8650 2900 2    50   ~ 0
-SDA
-Text Label 8650 3000 2    50   ~ 0
-SCL
 Wire Wire Line
-	8400 2900 8650 2900
-Wire Wire Line
-	8400 3000 8650 3000
-Text Label 8450 2600 2    50   ~ 0
-VBAT
-Wire Wire Line
-	8200 2600 8450 2600
-Text Label 6350 4750 2    50   ~ 0
-VBAT
-Wire Wire Line
-	6100 4750 6350 4750
+	6100 4750 6450 4750
 Text Label 5900 4950 2    50   ~ 0
 SCL
 Wire Wire Line
@@ -305,16 +211,6 @@ Wire Notes Line
 	6650 5650 3950 5650
 Wire Notes Line
 	3950 5650 3950 4100
-Wire Notes Line
-	6800 2100 8900 2100
-Wire Notes Line
-	8900 2100 8900 3300
-Wire Notes Line
-	6800 3300 6800 2100
-Wire Notes Line
-	6800 3300 8900 3300
-Text Notes 6800 2200 0    50   ~ 0
-I2C pullup\n
 Text Notes 4000 4250 0    50   ~ 0
 RTC\n
 Text Notes 3400 2000 0    50   ~ 0
@@ -325,8 +221,6 @@ Text Label 1750 2100 2    50   ~ 0
 CH_DIS
 Wire Wire Line
 	1750 2100 1350 2100
-Text Label 7450 3000 0    50   ~ 0
-V_I2C
 Wire Notes Line
 	550  600  1850 600 
 Wire Notes Line
@@ -392,7 +286,7 @@ Wire Wire Line
 Wire Wire Line
 	5050 2750 5050 2850
 Text Label 5050 2750 2    50   ~ 0
-V_I2C
+3v3_I2C
 Wire Wire Line
 	4250 3150 5100 3150
 Wire Wire Line
@@ -401,7 +295,7 @@ Wire Wire Line
 	5050 2950 5050 2850
 Connection ~ 5050 2850
 Text Label 6450 2850 2    50   ~ 0
-V_I2C
+3v3_I2C
 $Comp
 L Device:C C22
 U 1 1 5FC9C8EC
@@ -437,10 +331,14 @@ Wire Notes Line
 	550  600  550  2450
 Text GLabel 3750 2900 0    50   Input ~ 0
 INT_IO
-Text Notes 9000 2500 0    50   ~ 0
-!!!make sure the connected I2C devices don't\nhave internal pull-ups. Overwise they may cause\nhigh quiecent current and problems with the\nonboard communication if those are\nconnected to the AUX 3v3 and 5v pins!!!
-Text Notes 6850 3250 0    50   ~ 0
-Pullups can be swapped for lower value if needed
 Text Notes 3400 2150 0    50   ~ 0
 If not populated add pulldowns to the 3v3 and 5v EN pins
+Text HLabel 1350 1300 0    50   Input ~ 0
+VBAT
+Wire Wire Line
+	1350 1300 1750 1300
+Text Label 1750 1300 2    50   ~ 0
+VBAT
+Text Label 6450 4750 2    50   ~ 0
+3v3_I2C
 $EndSCHEMATC

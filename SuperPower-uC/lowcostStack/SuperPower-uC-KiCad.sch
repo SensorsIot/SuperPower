@@ -27,10 +27,12 @@ F0 "Charging Module" 50
 F1 "charger.sch" 50
 F2 "SCL" I R 4300 2850 50 
 F3 "SDA" I R 4300 2950 50 
-F4 "INT" O R 4300 2700 50 
+F4 "INT" O R 4300 2500 50 
 F5 "VCHARGE" I L 3050 3000 50 
 F6 "CHARGE-DISABLE" I R 4300 3100 50 
 F7 "VBAT" B L 3050 2550 50 
+F8 "VOUT" O R 4300 2200 50 
+F9 "3v3_I2C" O R 4300 2750 50 
 $EndSheet
 $Sheet
 S 4900 2100 1250 1150
@@ -42,8 +44,8 @@ F3 "5V" O R 6150 2400 50
 F4 "3v3_EN" I R 6150 2750 50 
 F5 "5V_EN" I R 6150 2900 50 
 F6 "3v3_MCU" O R 6150 2550 50 
-F7 "INT" I R 6150 3100 50 
-F8 "VBAT" I L 4900 2550 50 
+F7 "INT" I L 4900 2500 50 
+F8 "VIN" I L 4900 2200 50 
 $EndSheet
 $Sheet
 S 7400 2100 1250 1150
@@ -66,21 +68,13 @@ Wire Wire Line
 	2750 4350 2750 3000
 Wire Wire Line
 	2750 3000 3050 3000
-Wire Wire Line
-	2550 2550 2900 2550
-Wire Wire Line
-	4800 4100 4700 4100
-Wire Wire Line
-	4700 4100 4700 3600
-Wire Wire Line
-	4700 2550 4900 2550
 Text Notes 1400 2300 0    50   ~ 0
 Battery Holder
 Text Notes 1400 2450 0    50   ~ 0
 Battery Protection
-Text Notes 3450 2300 0    50   ~ 0
+Text Notes 3400 2300 0    50   ~ 0
 Charger
-Text Notes 3450 2400 0    50   ~ 0
+Text Notes 3400 2400 0    50   ~ 0
 Fuel Gauge
 Text Notes 5150 2300 0    50   ~ 0
 3v3_LDO
@@ -90,7 +84,7 @@ Text Notes 5150 2500 0    50   ~ 0
 5V Buck/Boost
 Text Notes 7950 2450 0    50   ~ 0
 MCU
-Text Notes 5100 4350 0    50   ~ 0
+Text Notes 5250 4150 0    50   ~ 0
 RTC
 Text Notes 3400 4350 0    50   ~ 0
 USB-microB
@@ -98,68 +92,47 @@ Text Notes 3400 4450 0    50   ~ 0
 Solar input
 Text Notes 3400 4550 0    50   ~ 0
 Solder Pads
-Text Notes 5100 4550 0    50   ~ 0
+Text Notes 3400 2800 0    50   ~ 0
 Manual Wake
-Text Notes 5100 4650 0    50   ~ 0
+Text Notes 3400 2700 0    50   ~ 0
 Bypass Jumper
-Text Notes 3450 2500 0    50   ~ 0
+Text Notes 3400 2500 0    50   ~ 0
 Power on INT
-Text Notes 3400 4650 0    50   ~ 0
+Text Notes 7950 2550 0    50   ~ 0
 FTDI
-Wire Wire Line
-	4700 3600 2900 3600
-Wire Wire Line
-	2900 3600 2900 2550
-Connection ~ 4700 3600
-Wire Wire Line
-	4700 3600 4700 2550
-Connection ~ 2900 2550
-Wire Wire Line
-	2900 2550 3050 2550
-Text Notes 5100 4450 0    50   ~ 0
+Text Notes 5250 4250 0    50   ~ 0
 IO Expander
-Text Notes 5100 4750 0    50   ~ 0
+Text Notes 3400 2600 0    50   ~ 0
 I2C pullup
 Wire Wire Line
-	6500 4600 6500 2750
+	6650 4600 6650 2750
 Wire Wire Line
-	6050 4600 6500 4600
+	6150 4600 6650 4600
 Wire Wire Line
-	6150 2750 6500 2750
+	6150 2750 6650 2750
 Wire Wire Line
-	6150 2900 6450 2900
+	6150 2900 6600 2900
 Wire Wire Line
-	6450 2900 6450 4500
+	6600 2900 6600 4500
 Wire Wire Line
-	6450 4500 6050 4500
+	6600 4500 6150 4500
 Wire Wire Line
-	4300 3100 4500 3100
+	4300 3100 4600 3100
 Wire Wire Line
-	4500 5000 4800 5000
+	4600 4450 4900 4450
 $Sheet
-S 4800 4000 1250 1150
+S 4900 4000 1250 1150
 U 5F63A00B
 F0 "RTC and Cut-Off Module" 50
 F1 "rtc_cut_off.sch" 50
-F2 "SCL" I R 6050 4100 50 
-F3 "SDA" B R 6050 4200 50 
-F4 "INT" O R 6050 4350 50 
-F5 "VBAT" I L 4800 4100 50 
-F6 "5V_EN" O R 6050 4500 50 
-F7 "CHARGE-DISABLE" I L 4800 5000 50 
-F8 "3v3V_EN" O R 6050 4600 50 
+F2 "SCL" I R 6150 4100 50 
+F3 "SDA" B R 6150 4200 50 
+F4 "INT" O L 4900 4250 50 
+F5 "5V_EN" O R 6150 4500 50 
+F6 "CHARGE-DISABLE" I L 4900 4450 50 
+F7 "3v3V_EN" O R 6150 4600 50 
+F8 "3v3_I2C" I L 4900 4350 50 
 $EndSheet
-Wire Wire Line
-	6050 4350 6400 4350
-Wire Wire Line
-	6400 3100 6150 3100
-Wire Wire Line
-	6400 3450 6400 3100
-Wire Wire Line
-	6400 4350 6400 3450
-Connection ~ 6400 3450
-Wire Wire Line
-	4650 3450 6400 3450
 $Sheet
 S 2850 4000 1250 1150
 U 5F63B107
@@ -289,19 +262,17 @@ Wire Wire Line
 Wire Wire Line
 	2950 5800 2550 5800
 Wire Wire Line
-	4650 2700 4650 3450
-Wire Wire Line
-	4300 2700 4650 2700
-Text Label 6150 4100 0    50   ~ 0
+	4300 2500 4800 2500
+Text Label 6300 4100 0    50   ~ 0
 SCL_1
-Text Label 6150 4200 0    50   ~ 0
+Text Label 6300 4200 0    50   ~ 0
 SDA_1
 Wire Wire Line
-	4500 3100 4500 5000
+	4600 3100 4600 4450
 Wire Wire Line
-	6150 4100 6050 4100
+	6300 4100 6150 4100
 Wire Wire Line
-	6050 4200 6150 4200
+	6150 4200 6300 4200
 Text Label 4400 2850 0    50   ~ 0
 SCL_1
 Text Label 4400 2950 0    50   ~ 0
@@ -356,7 +327,7 @@ U 1 1 600A49CD
 P 4900 6400
 F 0 "J9" H 5000 6450 50  0000 C CNN
 F 1 "MCU board" H 5150 6350 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x13_P2.54mm_Vertical" H 4900 6400 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x13_P2.54mm_Vertical" H 4900 6400 50  0001 C CNN
 F 3 "~" H 4900 6400 50  0001 C CNN
 	1    4900 6400
 	-1   0    0    -1  
@@ -413,4 +384,87 @@ NoConn ~ 5100 6900
 NoConn ~ 2950 7000
 Wire Wire Line
 	5100 6800 5800 6800
+Wire Wire Line
+	4300 2200 4900 2200
+Wire Wire Line
+	4900 2500 4800 2500
+Connection ~ 4800 2500
+Wire Wire Line
+	4800 4250 4900 4250
+Wire Wire Line
+	4800 2500 4800 4250
+Wire Wire Line
+	4300 2750 4700 2750
+Wire Wire Line
+	4700 2750 4700 4350
+Wire Wire Line
+	4700 4350 4900 4350
+Wire Wire Line
+	2550 2550 3050 2550
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 60293912
+P 8050 6150
+F 0 "H1" H 8150 6196 50  0000 L CNN
+F 1 "MountingHole" H 8150 6105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO7380" H 8050 6150 50  0001 C CNN
+F 3 "~" H 8050 6150 50  0001 C CNN
+	1    8050 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 6029420D
+P 8050 5950
+F 0 "H2" H 8150 5996 50  0000 L CNN
+F 1 "MountingHole" H 8150 5905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO7380" H 8050 5950 50  0001 C CNN
+F 3 "~" H 8050 5950 50  0001 C CNN
+	1    8050 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 60294686
+P 8050 5750
+F 0 "H3" H 8150 5796 50  0000 L CNN
+F 1 "MountingHole" H 8150 5705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO7380" H 8050 5750 50  0001 C CNN
+F 3 "~" H 8050 5750 50  0001 C CNN
+	1    8050 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 602990FB
+P 7300 6150
+F 0 "H4" H 7400 6196 50  0000 L CNN
+F 1 "MountingHole" H 7400 6105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO7380" H 7300 6150 50  0001 C CNN
+F 3 "~" H 7300 6150 50  0001 C CNN
+	1    7300 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 60299211
+P 7300 5950
+F 0 "H5" H 7400 5996 50  0000 L CNN
+F 1 "MountingHole" H 7400 5905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO7380" H 7300 5950 50  0001 C CNN
+F 3 "~" H 7300 5950 50  0001 C CNN
+	1    7300 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 6029921B
+P 7300 5750
+F 0 "H6" H 7400 5796 50  0000 L CNN
+F 1 "MountingHole" H 7400 5705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO7380" H 7300 5750 50  0001 C CNN
+F 3 "~" H 7300 5750 50  0001 C CNN
+	1    7300 5750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

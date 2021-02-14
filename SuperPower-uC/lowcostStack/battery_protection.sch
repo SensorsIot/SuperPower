@@ -165,14 +165,8 @@ Wire Notes Line
 	550  1750 550  550 
 Text HLabel 850  1050 0    50   BiDi ~ 0
 VBAT
-Text Label 3850 3250 0    50   ~ 0
-VBAT
 Wire Wire Line
 	3850 3250 4100 3250
-Text Label 1100 1050 2    50   ~ 0
-VBAT
-Wire Wire Line
-	1100 1050 850  1050
 Text Notes 600  650  0    50   ~ 0
 Labels\n
 $Comp
@@ -220,14 +214,8 @@ Text Label 3850 3550 0    50   ~ 0
 BAT-
 Text Label 7250 3250 2    50   ~ 0
 BAT-
-Text Label 7250 3150 2    50   ~ 0
-VBAT
 Wire Wire Line
 	7250 3150 7000 3150
-Text Label 7250 2550 2    50   ~ 0
-VBAT
-Wire Wire Line
-	7250 2550 7000 2550
 Wire Wire Line
 	3850 3550 4550 3550
 $Comp
@@ -245,4 +233,16 @@ Wire Wire Line
 	7250 2650 7000 2650
 Text Notes 5650 2300 0    50   ~ 0
 This connector bypasses the Protection if needed
+Text Label 7250 3150 2    50   ~ 0
+BAT+
+Text Label 3850 3250 0    50   ~ 0
+BAT+
+Text Label 7250 2550 2    50   ~ 0
+BAT+
+Wire Wire Line
+	7000 2550 7250 2550
+Text Label 1100 1050 2    50   ~ 0
+BAT+
+Wire Wire Line
+	1100 1050 850  1050
 $EndSCHEMATC
