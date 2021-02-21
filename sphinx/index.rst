@@ -3,45 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to SuperPower's documentation!
-======================================
+The SuperPower's documentation has moved
+========================================
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Project
-
-   project/README.md
-   project/guidelines.rst
-   project/licence.rst
+https://superpower.github.io/
 
 
-.. toctree::
-   :maxdepth: 2
-   :caption: ESP32 Solar
-
-   uc/overview.rst
-   uc/original/overview.rst
-   uc/low/overview.rst
-   uc/requirements.rst
-   uc/development.md
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Raspi Power pack
-
-   rpi/overview.md
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Common
-
-   README.md
-   uc/design.rst
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
