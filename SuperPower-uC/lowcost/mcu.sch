@@ -116,7 +116,7 @@ F 0 "U13" H 6000 4365 50  0000 C CNN
 F 1 "ESP32-WROOM32" H 6000 4274 50  0000 C CNN
 F 2 "RF_Module:ESP32-WROOM-32" H 6050 4250 50  0001 C CNN
 F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 6000 3450 50  0001 C CNN
-F 4 "C82899" H 6000 3550 50  0001 C CNN "LCSC"
+F 4 "C82899" H 6000 3550 50  0001 C CNN "lcsc#"
 	1    6000 3550
 	1    0    0    -1  
 $EndComp
@@ -128,7 +128,7 @@ F 0 "C19" H 4565 3546 50  0000 L CNN
 F 1 "0.1µF" H 4565 3455 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4488 3350 50  0001 C CNN
 F 3 "~" H 4450 3500 50  0001 C CNN
-F 4 "C14858" H 4450 3500 50  0001 C CNN "LCSC"
+F 4 "C14858" H 4450 3500 50  0001 C CNN "lcsc#"
 	1    4450 3500
 	1    0    0    -1  
 $EndComp
@@ -360,7 +360,7 @@ F 0 "C20" H 4465 3146 50  0000 L CNN
 F 1 "0.1µF" H 4465 3055 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4388 2950 50  0001 C CNN
 F 3 "~" H 4350 3100 50  0001 C CNN
-F 4 "C14858" H 4350 3100 50  0001 C CNN "LCSC"
+F 4 "C14858" H 4350 3100 50  0001 C CNN "lcsc#"
 	1    4350 3100
 	1    0    0    -1  
 $EndComp
